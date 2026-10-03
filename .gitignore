@@ -1,0 +1,4 @@
+*.npz
+base2_gpu/
+base2_stream
+*.log
