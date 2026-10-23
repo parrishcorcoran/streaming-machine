@@ -1,0 +1,28 @@
+
+fine: 91,073 of 97,385 write lines with a nonzero constant; values past 16 places 33  -> zerosum_gpt2.npz (181 MB, 16s)
+  lit places attention-out : 1s    45,079,703 ->    45,086,821 ( +0.016%)   single-wave    33,920,429 ->    33,908,724 ( -0.035%)
+  lit places biases        : 1s       120,348 ->       120,990 ( +0.533%)   single-wave        90,262 ->        90,411 ( +0.165%)
+  lit places MLP-out       : 1s   175,811,750 ->   175,815,588 ( +0.002%)   single-wave   132,677,364 ->   132,629,731 ( -0.036%)
+  lit places word rows     : 1s   258,344,046 ->   258,590,802 ( +0.096%)   single-wave   193,445,720 ->   193,548,330 ( +0.053%)
+  lit places position rows : 1s     3,623,101 ->     3,838,456 ( +5.944%)   single-wave     2,841,856 ->     2,984,706 ( +5.027%)
+  lit places all writes    : 1s   482,978,948 ->   483,452,657 ( +0.098%)   single-wave   362,975,631 ->   363,161,902 ( +0.051%)
+cut: arrays changed: ['proj.11.b']
+     proj.11.b constant -2048 stream units
+
+cut: 1 of 97,385 write lines with a nonzero constant; values past 16 places 0  -> zerosum_gpt2_cut.npz (0 MB, 17s)
+  lit places attention-out : 1s    45,079,703 ->    45,079,703 ( +0.000%)   single-wave    33,920,429 ->    33,920,429 ( +0.000%)
+  lit places biases        : 1s       120,348 ->       120,333 ( -0.012%)   single-wave        90,262 ->        90,243 ( -0.021%)
+  lit places MLP-out       : 1s   175,811,750 ->   175,811,750 ( +0.000%)   single-wave   132,677,364 ->   132,677,364 ( +0.000%)
+  lit places word rows     : 1s   258,344,046 ->   258,344,046 ( +0.000%)   single-wave   193,445,720 ->   193,445,720 ( +0.000%)
+  lit places position rows : 1s     3,623,101 ->     3,623,101 ( +0.000%)   single-wave     2,841,856 ->     2,841,856 ( +0.000%)
+  lit places all writes    : 1s   482,978,948 ->   482,978,933 ( -0.000%)   single-wave   362,975,631 ->   362,975,612 ( -0.000%)
+
+ctl: 91,073 of 97,385 write lines with a nonzero constant; values past 16 places 44  -> zerosum_gpt2_ctl.npz (182 MB, 34s)
+  lit places attention-out : 1s    45,079,703 ->    45,091,880 ( +0.027%)   single-wave    33,920,429 ->    33,910,944 ( -0.028%)
+  lit places biases        : 1s       120,348 ->       120,811 ( +0.385%)   single-wave        90,262 ->        90,380 ( +0.131%)
+  lit places MLP-out       : 1s   175,811,750 ->   175,824,780 ( +0.007%)   single-wave   132,677,364 ->   132,631,784 ( -0.034%)
+  lit places word rows     : 1s   258,344,046 ->   258,584,333 ( +0.093%)   single-wave   193,445,720 ->   193,545,853 ( +0.052%)
+  lit places position rows : 1s     3,623,101 ->     3,826,546 ( +5.615%)   single-wave     2,841,856 ->     2,975,310 ( +4.696%)
+  lit places all writes    : 1s   482,978,948 ->   483,448,350 ( +0.097%)   single-wave   362,975,631 ->   363,154,271 ( +0.049%)
+
+done (34s)

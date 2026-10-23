@@ -1,0 +1,122 @@
+RECHECK_INDEP: P = 648, texts 30 (19-24 tokens)
+
+qkv.8: light (648, 768), plate (768, 2304), |x| max 32688; x @ w rows differing from plain_refs: 0
+  plain 36,993,931,368 vs 36,993,931,368 SAME; landings 11,845,936,216 vs 11,845,936,216 SAME; landings (a) 11,845,936,216 vs 11,845,936,216 SAME
+  (a) cancel 1s 25.01% (theirs 25.01%), signed 21.74%; walk 45.50% of plain; landings 32.02%; walk+landings 77.52%; equal neighbours 0.3%
+     (a) v1 2,556,887 vs 2,556,887 SAME
+     (a) g1 1,917,387 vs 1,917,387 SAME
+     (a) vsd 1,972,529 vs 1,972,529 SAME
+     (a) gsd 1,543,707 vs 1,543,707 SAME
+     (a) walk 16,832,099,914 vs 16,832,099,914 SAME
+     (a) entries 496,324 vs 496,324 SAME
+     (a) nzgap 494,948 vs 494,948 SAME
+     (a) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (a) order-free (tokens in a random order): piles and counts IDENTICAL
+  (b) cancel 1s 65.14% (theirs 65.14%), signed 58.98%; walk 23.85% of plain; landings 32.02%; walk+landings 55.87%; equal neighbours 9.4%
+     (b) v1 2,556,887 vs 2,556,887 SAME
+     (b) g1 891,204 vs 891,204 SAME
+     (b) vsd 1,972,529 vs 1,972,529 SAME
+     (b) gsd 809,141 vs 809,141 SAME
+     (b) walk 8,821,765,137 vs 8,821,765,137 SAME
+     (b) entries 496,324 vs 496,324 SAME
+     (b) nzgap 449,872 vs 449,872 SAME
+     (b) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (b) order-free (tokens in a random order): piles and counts IDENTICAL
+  (39s)
+
+proj.2: light (648, 768), plate (768, 768), |x| max 32767; x @ w rows differing from plain_refs: 0
+  plain 13,047,808,762 vs 13,047,808,762 SAME; landings 4,065,610,040 vs 4,065,610,040 SAME; landings (a) 4,065,610,040 vs 4,065,610,040 SAME
+  (a) cancel 1s 28.29% (theirs 28.29%), signed 24.84%; walk 43.41% of plain; landings 31.16%; walk+landings 74.57%; equal neighbours 0.4%
+     (a) v1 2,711,493 vs 2,711,493 SAME
+     (a) g1 1,944,400 vs 1,944,400 SAME
+     (a) vsd 2,078,146 vs 2,078,146 SAME
+     (a) gsd 1,561,988 vs 1,561,988 SAME
+     (a) walk 5,664,563,081 vs 5,664,563,081 SAME
+     (a) entries 497,490 vs 497,490 SAME
+     (a) nzgap 495,568 vs 495,568 SAME
+     (a) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (a) order-free (tokens in a random order): piles and counts IDENTICAL
+  (b) cancel 1s 64.98% (theirs 64.98%), signed 59.01%; walk 23.67% of plain; landings 31.16%; walk+landings 54.83%; equal neighbours 8.8%
+     (b) v1 2,711,493 vs 2,711,493 SAME
+     (b) g1 949,486 vs 949,486 SAME
+     (b) vsd 2,078,146 vs 2,078,146 SAME
+     (b) gsd 851,742 vs 851,742 SAME
+     (b) walk 3,088,660,387 vs 3,088,660,387 SAME
+     (b) entries 497,490 vs 497,490 SAME
+     (b) nzgap 453,768 vs 453,768 SAME
+     (b) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (b) order-free (tokens in a random order): piles and counts IDENTICAL
+  SHUFFLE CONTROL (lineup.py's shuffle): plain 13,051,980,568 | (a) cancel 20.42% walk 47.43% landings 31.15% whole(walk+land) 78.58% piles vs own direct differ 0, bad 0 [theirs: cancel 20.42% walk 47.43% land True plain True] | (b) cancel 60.16% walk 26.44% landings 31.15% whole(walk+land) 57.59% piles vs own direct differ 0, bad 0 [theirs: cancel 60.16% walk 26.44% land True plain True]
+  SHUFFLE CONTROL (own shuffle): plain 13,052,067,526 | (a) cancel 20.44% walk 47.43% landings 31.15% whole(walk+land) 78.58% piles vs own direct differ 0, bad 0 | (b) cancel 60.16% walk 26.44% landings 31.15% whole(walk+land) 57.58% piles vs own direct differ 0, bad 0
+  (24s)
+
+fc.6: light (648, 768), plate (768, 3072), |x| max 32763; x @ w rows differing from plain_refs: 0
+  plain 48,890,530,361 vs 48,890,530,361 SAME; landings 15,732,621,608 vs 15,732,621,608 SAME; landings (a) 15,732,621,608 vs 15,732,621,608 SAME
+  (a) cancel 1s 24.91% (theirs 24.91%), signed 21.77%; walk 45.57% of plain; landings 32.18%; walk+landings 77.75%; equal neighbours 0.3%
+     (a) v1 2,528,170 vs 2,528,170 SAME
+     (a) g1 1,898,390 vs 1,898,390 SAME
+     (a) vsd 1,955,509 vs 1,955,509 SAME
+     (a) gsd 1,529,704 vs 1,529,704 SAME
+     (a) walk 22,281,463,659 vs 22,281,463,659 SAME
+     (a) entries 496,341 vs 496,341 SAME
+     (a) nzgap 494,850 vs 494,850 SAME
+     (a) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (a) order-free (tokens in a random order): piles and counts IDENTICAL
+  (b) cancel 1s 65.27% (theirs 65.27%), signed 59.21%; walk 23.76% of plain; landings 32.18%; walk+landings 55.94%; equal neighbours 10.0%
+     (b) v1 2,528,170 vs 2,528,170 SAME
+     (b) g1 878,114 vs 878,114 SAME
+     (b) vsd 1,955,509 vs 1,955,509 SAME
+     (b) gsd 797,710 vs 797,710 SAME
+     (b) walk 11,618,069,766 vs 11,618,069,766 SAME
+     (b) entries 496,341 vs 496,341 SAME
+     (b) nzgap 446,884 vs 446,884 SAME
+     (b) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (b) order-free (tokens in a random order): piles and counts IDENTICAL
+  (66s)
+
+mproj.11: light (648, 3072), plate (3072, 768), |x| max 32724; x @ w rows differing from plain_refs: 0
+  plain 46,933,222,367 vs 46,933,222,367 SAME; landings 15,419,085,458 vs 15,419,085,458 SAME; landings (a) 15,419,085,458 vs 15,419,085,458 SAME
+  (a) cancel 1s 34.90% (theirs 34.90%), signed 32.75%; walk 40.55% of plain; landings 32.85%; walk+landings 73.41%; equal neighbours 1.7%
+     (a) v1 9,970,538 vs 9,970,538 SAME
+     (a) g1 6,491,130 vs 6,491,130 SAME
+     (a) vsd 7,958,908 vs 7,958,908 SAME
+     (a) gsd 5,352,220 vs 5,352,220 SAME
+     (a) walk 19,033,651,468 vs 19,033,651,468 SAME
+     (a) entries 1,983,366 vs 1,983,366 SAME
+     (a) nzgap 1,949,498 vs 1,949,498 SAME
+     (a) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (a) order-free (tokens in a random order): piles and counts IDENTICAL
+  (b) cancel 1s 74.57% (theirs 74.57%), signed 70.64%; walk 17.69% of plain; landings 32.85%; walk+landings 50.54%; equal neighbours 25.4%
+     (b) v1 9,970,538 vs 9,970,538 SAME
+     (b) g1 2,535,202 vs 2,535,202 SAME
+     (b) vsd 7,958,908 vs 7,958,908 SAME
+     (b) gsd 2,336,803 vs 2,336,803 SAME
+     (b) walk 8,300,887,937 vs 8,300,887,937 SAME
+     (b) entries 1,983,366 vs 1,983,366 SAME
+     (b) nzgap 1,478,883 vs 1,478,883 SAME
+     (b) walk piles differing from plain_refs 0, from x @ w 0; running products differing from w x x 0
+     (b) order-free (tokens in a random order): piles and counts IDENTICAL
+  (47s)
+position 0 at qkv.0: 17 distinct rows among 30 texts, largest group 12
+position 0 at qkv.6: 17 distinct rows among 30 texts, largest group 12
+position 0 at qkv.11: 17 distinct rows among 30 texts, largest group 12
+
+RECHECK PASSED (176s)
+      175.94 real       174.95 user         0.88 sys
+           440975360  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               68425  page reclaims
+                  19  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  15  voluntary context switches
+                1003  involuntary context switches
+       2883327481662  instructions retired
+        718844408383  cycles elapsed
+           420217480  peak memory footprint

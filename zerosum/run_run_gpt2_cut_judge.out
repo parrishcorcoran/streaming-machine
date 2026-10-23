@@ -1,0 +1,20 @@
+gpt2, file zerosum_gpt2_cut.npz: ['proj.11.b']...
+loaded the way judge5.py loads it (3s, 1362 MB)
+plain run: 30 texts (22s, 2033 MB)
+  reads 16200: S1 = 0 at 0; the water level's log the same with S1 left out at 2460 (15.2%)
+zerosum run (41s, 2094 MB)
+  reads 16200: S1 = 0 at 0; the water level's log the same with S1 left out at 2487 (15.4%)
+
+THE ZEROSUM FILE (cut) AGAINST THE PLAIN MACHINE
+  calls digested 206,244: identical 205,944, different 300
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 0/648
+  positions where some read's cut power (the top 1 of the largest lane) moved: 0; positions that differ BEFORE the first such position in their text: 648
+  texts whose top scores (every position, every word) are the same whole numbers: 0/30
+  race winner the same 648/648; top 5 same in order 648/648, same as a set 648/648
+  first different call per text: fc.11 product x30
+  different calls by stage: fc.11 60, bend.11 30, mproj.11 60, stream.11 30, top 60, top-out 60
+
+JUDGE5 with the zerosum file (cut): in the reference top 5 6000/6000, top word the same 6000/6000 (221s)
+
+done (221s, peak 2094 MB)

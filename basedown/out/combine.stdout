@@ -1,0 +1,74 @@
+BASEDOWN/COMBINE: the light's line-up through the group machine's piles (g = 12, the confirmed groups), 48 banks, 648 positions
+  qkv.0    group machine  20.57%  combination (a)  22.82% (b)  18.06%  [reads on gaps/light (a)  95.7% (b)  72.6%; Q' landed  3.13%]  ctl: gm  20.44% comb (b)  24.26%  (8s, 328 MB)
+  proj.0   group machine  25.61%  combination (a)  27.91% (b)  27.29%  [reads on gaps/light (a)  96.6% (b)  94.1%; Q' landed  3.19%]  ctl: gm  25.62% comb (b)  29.58%  (4s, 398 MB)
+  fc.0     group machine  25.11%  combination (a)  27.58% (b)  26.74%  [reads on gaps/light (a)  94.8% (b)  91.5%; Q' landed  3.76%]  ctl: gm  24.57% comb (b)  29.79%  (11s, 601 MB)
+  mproj.0  group machine  25.36%  combination (a)  26.77% (b)  25.30%  [reads on gaps/light (a)  93.2% (b)  87.5%; Q' landed  3.33%]  ctl: gm  25.37% comb (b)  28.02%  (14s, 643 MB)
+  qkv.1    group machine  21.77%  combination (a)  24.65% (b)  23.66%  [reads on gaps/light (a)  97.6% (b)  93.1%; Q' landed  3.39%]  ctl: gm  21.74% comb (b)  26.02%  (8s, 643 MB)
+  proj.1   group machine  25.87%  combination (a)  27.15% (b)  26.82%  [reads on gaps/light (a)  92.6% (b)  91.2%; Q' landed  3.27%]  ctl: gm  25.94% comb (b)  29.94%  (4s, 643 MB)
+  fc.1     group machine  20.11%  combination (a)  23.02% (b)  22.35%  [reads on gaps/light (a)  97.9% (b)  94.6%; Q' landed  3.31%]  ctl: gm  20.15% comb (b)  24.28%  (11s, 643 MB)
+  mproj.1  group machine  25.26%  combination (a)  28.14% (b)  26.92%  [reads on gaps/light (a)  98.8% (b)  94.1%; Q' landed  3.28%]  ctl: gm  25.26% comb (b)  28.77%  (15s, 643 MB)
+  qkv.2    group machine  21.82%  combination (a)  25.02% (b)  24.12%  [reads on gaps/light (a)  99.0% (b)  94.9%; Q' landed  3.40%]  ctl: gm  21.86% comb (b)  26.30%  (9s, 643 MB)
+  proj.2   group machine  25.82%  combination (a)  27.93% (b)  27.45%  [reads on gaps/light (a)  95.7% (b)  93.8%; Q' landed  3.23%]  ctl: gm  25.76% comb (b)  29.88%  (4s, 643 MB)
+  fc.2     group machine  19.96%  combination (a)  23.12% (b)  22.46%  [reads on gaps/light (a)  99.3% (b)  96.0%; Q' landed  3.28%]  ctl: gm  19.99% comb (b)  24.20%  (11s, 643 MB)
+  mproj.2  group machine  25.63%  combination (a)  28.60% (b)  27.05%  [reads on gaps/light (a)  99.0% (b)  93.1%; Q' landed  3.30%]  ctl: gm  25.64% comb (b)  28.93%  (15s, 643 MB)
+  qkv.3    group machine  21.58%  combination (a)  24.99% (b)  24.25%  [reads on gaps/light (a) 100.3% (b)  96.8%; Q' landed  3.33%]  ctl: gm  21.54% comb (b)  26.01%  (9s, 643 MB)
+  proj.3   group machine  25.55%  combination (a)  28.20% (b)  27.63%  [reads on gaps/light (a)  97.8% (b)  95.5%; Q' landed  3.22%]  ctl: gm  25.58% comb (b)  29.72%  (4s, 643 MB)
+  fc.3     group machine  20.68%  combination (a)  24.13% (b)  23.50%  [reads on gaps/light (a) 100.8% (b)  97.8%; Q' landed  3.27%]  ctl: gm  20.65% comb (b)  25.00%  (11s, 643 MB)
+  mproj.3  group machine  25.52%  combination (a)  28.44% (b)  26.83%  [reads on gaps/light (a)  98.9% (b)  92.7%; Q' landed  3.29%]  ctl: gm  25.55% comb (b)  28.56%  (15s, 643 MB)
+  qkv.4    group machine  21.35%  combination (a)  25.03% (b)  24.37%  [reads on gaps/light (a) 101.7% (b)  98.6%; Q' landed  3.30%]  ctl: gm  21.38% comb (b)  25.81%  (9s, 643 MB)
+  proj.4   group machine  25.26%  combination (a)  27.90% (b)  27.42%  [reads on gaps/light (a)  98.3% (b)  96.4%; Q' landed  3.09%]  ctl: gm  25.28% comb (b)  29.05%  (4s, 643 MB)
+  fc.4     group machine  19.85%  combination (a)  23.48% (b)  22.93%  [reads on gaps/light (a) 101.8% (b)  99.1%; Q' landed  3.26%]  ctl: gm  19.90% comb (b)  24.19%  (11s, 643 MB)
+  mproj.4  group machine  25.21%  combination (a)  28.05% (b)  26.48%  [reads on gaps/light (a)  99.0% (b)  92.8%; Q' landed  3.20%]  ctl: gm  25.22% comb (b)  28.03%  (15s, 643 MB)
+  qkv.5    group machine  20.45%  combination (a)  24.18% (b)  23.62%  [reads on gaps/light (a) 102.1% (b)  99.4%; Q' landed  3.28%]  ctl: gm  20.48% comb (b)  24.84%  (8s, 643 MB)
+  proj.5   group machine  26.60%  combination (a)  28.98% (b)  28.60%  [reads on gaps/light (a)  96.5% (b)  94.9%; Q' landed  3.35%]  ctl: gm  26.57% comb (b)  31.06%  (4s, 643 MB)
+  fc.5     group machine  20.56%  combination (a)  24.33% (b)  23.79%  [reads on gaps/light (a) 102.3% (b)  99.7%; Q' landed  3.29%]  ctl: gm  20.57% comb (b)  24.94%  (11s, 643 MB)
+  mproj.5  group machine  25.46%  combination (a)  28.29% (b)  26.69%  [reads on gaps/light (a)  98.8% (b)  92.6%; Q' landed  3.23%]  ctl: gm  25.47% comb (b)  28.21%  (15s, 643 MB)
+  qkv.6    group machine  20.63%  combination (a)  24.36% (b)  23.79%  [reads on gaps/light (a) 102.0% (b)  99.2%; Q' landed  3.31%]  ctl: gm  20.58% comb (b)  24.96%  (8s, 643 MB)
+  proj.6   group machine  24.56%  combination (a)  27.01% (b)  26.66%  [reads on gaps/light (a)  97.5% (b)  96.0%; Q' landed  3.11%]  ctl: gm  24.55% comb (b)  28.37%  (4s, 643 MB)
+  fc.6     group machine  20.59%  combination (a)  24.30% (b)  23.76%  [reads on gaps/light (a) 101.9% (b)  99.3%; Q' landed  3.30%]  ctl: gm  20.59% comb (b)  24.90%  (11s, 643 MB)
+  mproj.6  group machine  25.27%  combination (a)  28.04% (b)  26.40%  [reads on gaps/light (a)  98.9% (b)  92.4%; Q' landed  3.18%]  ctl: gm  25.28% comb (b)  27.96%  (15s, 643 MB)
+  qkv.7    group machine  20.48%  combination (a)  24.10% (b)  23.56%  [reads on gaps/light (a) 101.5% (b)  98.9%; Q' landed  3.29%]  ctl: gm  20.45% comb (b)  24.75%  (8s, 643 MB)
+  proj.7   group machine  24.84%  combination (a)  27.36% (b)  26.93%  [reads on gaps/light (a)  97.8% (b)  96.0%; Q' landed  3.13%]  ctl: gm  24.80% comb (b)  28.67%  (4s, 643 MB)
+  fc.7     group machine  20.57%  combination (a)  24.18% (b)  23.68%  [reads on gaps/light (a) 101.5% (b)  99.1%; Q' landed  3.29%]  ctl: gm  20.54% comb (b)  24.80%  (11s, 669 MB)
+  mproj.7  group machine  25.08%  combination (a)  27.60% (b)  26.08%  [reads on gaps/light (a)  97.9% (b)  91.9%; Q' landed  3.21%]  ctl: gm  25.09% comb (b)  27.46%  (15s, 669 MB)
+  qkv.8    group machine  21.04%  combination (a)  24.72% (b)  24.19%  [reads on gaps/light (a) 101.8% (b)  99.3%; Q' landed  3.28%]  ctl: gm  21.06% comb (b)  25.35%  (9s, 669 MB)
+  proj.8   group machine  24.32%  combination (a)  26.74% (b)  26.45%  [reads on gaps/light (a)  97.5% (b)  96.3%; Q' landed  3.05%]  ctl: gm  24.30% comb (b)  27.98%  (4s, 669 MB)
+  fc.8     group machine  19.88%  combination (a)  23.45% (b)  22.97%  [reads on gaps/light (a) 101.5% (b)  99.1%; Q' landed  3.26%]  ctl: gm  19.84% comb (b)  24.04%  (11s, 684 MB)
+  mproj.8  group machine  25.15%  combination (a)  27.94% (b)  26.40%  [reads on gaps/light (a)  98.6% (b)  92.6%; Q' landed  3.31%]  ctl: gm  25.15% comb (b)  27.77%  (15s, 692 MB)
+  qkv.9    group machine  21.02%  combination (a)  24.80% (b)  24.31%  [reads on gaps/light (a) 102.3% (b) 100.0%; Q' landed  3.28%]  ctl: gm  21.06% comb (b)  25.40%  (9s, 692 MB)
+  proj.9   group machine  24.92%  combination (a)  27.30% (b)  26.87%  [reads on gaps/light (a)  97.3% (b)  95.5%; Q' landed  3.12%]  ctl: gm  24.90% comb (b)  28.76%  (4s, 692 MB)
+  fc.9     group machine  19.92%  combination (a)  23.57% (b)  23.16%  [reads on gaps/light (a) 101.9% (b)  99.8%; Q' landed  3.27%]  ctl: gm  19.90% comb (b)  24.19%  (11s, 692 MB)
+  mproj.9  group machine  25.27%  combination (a)  27.98% (b)  26.38%  [reads on gaps/light (a)  98.3% (b)  92.0%; Q' landed  3.31%]  ctl: gm  25.26% comb (b)  27.77%  (15s, 692 MB)
+  qkv.10   group machine  21.14%  combination (a)  24.87% (b)  24.40%  [reads on gaps/light (a) 101.8% (b)  99.6%; Q' landed  3.32%]  ctl: gm  21.14% comb (b)  25.54%  (9s, 692 MB)
+  proj.10  group machine  25.16%  combination (a)  27.43% (b)  27.01%  [reads on gaps/light (a)  96.6% (b)  94.8%; Q' landed  3.16%]  ctl: gm  25.13% comb (b)  29.11%  (4s, 692 MB)
+  fc.10    group machine  20.51%  combination (a)  24.06% (b)  23.67%  [reads on gaps/light (a) 101.1% (b)  99.2%; Q' landed  3.33%]  ctl: gm  20.50% comb (b)  24.84%  (11s, 692 MB)
+  mproj.10 group machine  25.76%  combination (a)  28.48% (b)  26.93%  [reads on gaps/light (a)  98.2% (b)  92.3%; Q' landed  3.32%]  ctl: gm  25.76% comb (b)  28.41%  (15s, 692 MB)
+  qkv.11   group machine  21.35%  combination (a)  25.04% (b)  24.59%  [reads on gaps/light (a) 101.4% (b)  99.3%; Q' landed  3.37%]  ctl: gm  21.30% comb (b)  25.82%  (9s, 692 MB)
+  proj.11  group machine  26.35%  combination (a)  28.19% (b)  27.65%  [reads on gaps/light (a)  94.9% (b)  92.8%; Q' landed  3.22%]  ctl: gm  26.40% comb (b)  30.60%  (4s, 692 MB)
+  fc.11    group machine  20.70%  combination (a)  23.81% (b)  23.43%  [reads on gaps/light (a)  98.4% (b)  96.6%; Q' landed  3.43%]  ctl: gm  20.59% comb (b)  25.08%  (11s, 705 MB)
+  mproj.11 group machine  26.30%  combination (a)  29.05% (b)  27.67%  [reads on gaps/light (a)  98.2% (b)  92.9%; Q' landed  3.39%]  ctl: gm  26.30% comb (b)  29.18%  (15s, 713 MB)
+
+CHECKS: gm_ref 0, gm_ctl_direct 0, ref 0, gd_bad 0, qbad 0, of_piles 0, of_counts 0, ctl_direct 0, ctl_qbad 0, ctl_gd_bad 0
+  gm_* the group machine rebuilt (piles vs plain_refs; shuffled vs its direct product); ref = the combination's piles vs plain_refs;
+  gd_bad = the gaps' group piles vs their direct product; qbad = Q' checks failing; of_* order-free; ctl_* the shuffle control
+
+REAL LIGHT: % of plain (a token = total / 648)
+  qkv   plain   679,699,985  group machine  21.09% | a: comb  24.53% (+3.44 pts), Q'  3.31%, reads 100.6% of gm's, gaps' signed digits 101.7% of the light's | b: comb  23.53% (+2.44 pts), Q'  3.31%, reads  95.8% of gm's, gaps' signed digits  96.4% of the light's
+  proj  plain   248,461,379  group machine  25.38% | a: comb  27.66% (+2.28 pts), Q'  3.18%, reads  96.6% of gm's, gaps' signed digits  95.2% of the light's | b: comb  27.22% (+1.84 pts), Q'  3.18%, reads  94.8% of gm's, gaps' signed digits  94.1% of the light's
+  fc    plain   895,020,740  group machine  20.63% | a: comb  24.03% (+3.40 pts), Q'  3.33%, reads 100.3% of gm's, gaps' signed digits 101.6% of the light's | b: comb  23.48% (+2.85 pts), Q'  3.33%, reads  97.6% of gm's, gaps' signed digits  98.5% of the light's
+  mproj plain   914,738,348  group machine  25.43% | a: comb  28.11% (+2.68 pts), Q'  3.28%, reads  98.2% of gm's, gaps' signed digits  92.3% of the light's | b: comb  26.59% (+1.16 pts), Q'  3.28%, reads  92.3% of gm's, gaps' signed digits  86.6% of the light's
+  ALL   plain 2,737,920,452  group machine  22.78% | a: comb  25.85% (+3.07 pts), Q'  3.29%, reads  99.3% of gm's, gaps' signed digits  95.3% of the light's | b: comb  24.87% (+2.09 pts), Q'  3.29%, reads  95.2% of gm's, gaps' signed digits  90.7% of the light's
+    by item (REAL LIGHT, ALL), % of plain: group machine light 0.01, table 1.64, pwrite 2.50, reads 17.30, sdreads 1.29, xsum 0.01, xoff 0.02
+    a: light 0.01, table 1.57, pwrite 2.47, reads 17.20, sdreads 1.27, xsum 0.01, xoff 0.02, formed 0.01, qland 3.29; Q' as the true group part (count only) 3.16; compares a token 26,880
+    b: light 0.01, table 1.49, pwrite 2.35, reads 16.47, sdreads 1.22, xsum 0.01, xoff 0.02, formed 0.01, qland 3.29; Q' as the true group part (count only) 3.16; compares a token 53,760
+
+SHUFFLE CONTROL: % of plain (a token = total / 648)
+  qkv   plain   680,334,405  group machine  21.08% | a_ctl: comb  25.61% (+4.54 pts), Q'  3.32%, reads 105.7% of gm's, gaps' signed digits 105.9% of the light's | b_ctl: comb  25.41% (+4.33 pts), Q'  3.32%, reads 104.8% of gm's, gaps' signed digits 103.8% of the light's
+  proj  plain   248,604,777  group machine  25.38% | a_ctl: comb  29.57% (+4.19 pts), Q'  3.18%, reads 103.7% of gm's, gaps' signed digits 105.2% of the light's | b_ctl: comb  29.36% (+3.98 pts), Q'  3.18%, reads 103.0% of gm's, gaps' signed digits 103.5% of the light's
+  fc    plain   897,271,726  group machine  20.59% | a_ctl: comb  25.13% (+4.54 pts), Q'  3.36%, reads 105.7% of gm's, gaps' signed digits 106.0% of the light's | b_ctl: comb  24.95% (+4.36 pts), Q'  3.36%, reads 104.8% of gm's, gaps' signed digits 103.9% of the light's
+  mproj plain   915,212,293  group machine  25.44% | a_ctl: comb  29.14% (+3.70 pts), Q'  3.28%, reads 102.0% of gm's, gaps' signed digits  97.1% of the light's | b_ctl: comb  28.25% (+2.81 pts), Q'  3.28%, reads  98.6% of gm's, gaps' signed digits  93.7% of the light's
+  ALL   plain 2,741,423,201  group machine  22.76% | a_ctl: comb  26.99% (+4.23 pts), Q'  3.31%, reads 104.3% of gm's, gaps' signed digits 100.7% of the light's | b_ctl: comb  26.56% (+3.80 pts), Q'  3.31%, reads 102.6% of gm's, gaps' signed digits  98.0% of the light's
+    by item (SHUFFLE CONTROL, ALL), % of plain: group machine light 0.01, table 1.64, pwrite 2.50, reads 17.27, sdreads 1.31, xsum 0.01, xoff 0.02
+    a_ctl: light 0.01, table 1.65, pwrite 2.60, reads 18.04, sdreads 1.34, xsum 0.01, xoff 0.02, formed 0.01, qland 3.31; Q' as the true group part (count only) 3.18; compares a token 26,880
+    b_ctl: light 0.01, table 1.61, pwrite 2.54, reads 17.75, sdreads 1.31, xsum 0.01, xoff 0.02, formed 0.01, qland 3.31; Q' as the true group part (count only) 3.18; compares a token 53,760
+done (459s, max memory 713 MB)

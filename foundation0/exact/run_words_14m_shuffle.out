@@ -1,0 +1,20 @@
+remove_exact.py  size 14m  order shuffle  texts 30  greedy True  cases ['fin', 'k', 'p']
+  c from the never-built rows 6.112010e-04 -> 656272 x 2^-30;  the settings' product 3.865910e-04 -> 415099 x 2^-30
+  fin: the finished machine's word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to ../pythia_base2.py's run in 30 of 30 texts (lanes shuffled)
+  k    top-1  99.04%  top-5 100.00%  (of 622);  16 continuation top-1  99.38% [pairing-broken  5.4%];  greedy words 460/480 texts 27/30;  piles identical: positions 0/622 texts 0/30;  3.6s  peak 0.74 GB
+       the finished word's lead moved by: median 0.01276  99th pct 0.05374  max 0.11453 logits
+       positions lost (finished lead -> here): t1p8 0.0340->-0.0158, t17p0 0.0226->-0.0280, t17p17 0.0086->-0.0050, t20p11 0.0011->-0.0060, t23p0 0.0006->-0.0168, t25p1 0.0104->-0.0103
+       weights changed on the grid: 12,799,302 of 14,057,472 (91.05%), mean |change| 3.63 grains, largest 20; inside the finished weight's own 11-place grain 26.7%
+       by kind: qkv 89.9% mean 3.52 max 20 in-grain 28%  proj 91.5% mean 3.76 max 20 in-grain 27%  fc 91.3% mean 3.69 max 20 in-grain 22%  mproj 91.2% mean 3.67 max 20 in-grain 27%  head 90.9% mean 3.57 max 20 in-grain 28%  embed 91.3% mean 3.69 max 20 in-grain 26%
+       text 1 'Once upon a time': here ', we have a few of the most important things.\n\nThe first time'  finished ', we have a few minutes to get the first time, and we have a'
+       text 17 'I think therefore': here ', the\n\n"I\'m not sure what you\'re going to do,"'  finished ', the\n\n"I\'m not sure what you\'re going to do."'
+       text 20 'The meaning of life is': here ' the same as the fact that the life of the people is not the same as'  finished ' the same as the fact that the first one is the same as the second one'
+  p    top-1  99.52%  top-5 100.00%  (of 622);  16 continuation top-1 100.00% [pairing-broken  5.4%];  greedy words 480/480 texts 30/30;  piles identical: positions 0/622 texts 0/30;  3.4s  peak 0.74 GB
+       the finished word's lead moved by: median 0.00829  99th pct 0.04257  max 0.14287 logits
+       positions lost (finished lead -> here): t17p0 0.0226->-0.0164, t23p0 0.0006->-0.0044, t25p1 0.0104->-0.0042
+       weights changed on the grid: 12,076,583 of 14,057,472 (85.91%), mean |change| 2.29 grains, largest 13; inside the finished weight's own 11-place grain 39.2%
+       by kind: qkv 84.4% mean 2.22 max 13 in-grain 39%  proj 86.6% mean 2.37 max 13 in-grain 40%  fc 86.2% mean 2.33 max 13 in-grain 33%  mproj 86.1% mean 2.32 max 13 in-grain 39%  head 85.6% mean 2.25 max 13 in-grain 40%  embed 86.2% mean 2.33 max 13 in-grain 39%
+  order-free check, fin: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, k: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, p: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+done 11s  peak memory 0.74 GB

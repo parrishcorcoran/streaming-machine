@@ -1,0 +1,140 @@
+{
+ "plate": "head",
+ "b": 1,
+ "digits_removed": 19293680,
+ "rows": 6000,
+ "proven": 2316,
+ "blown_at_top": 0,
+ "bound_median": 3031,
+ "bound_max": 5106,
+ "bound_min": 2195,
+ "real_median": 1232,
+ "real_max": 1594,
+ "top5_changed": 221,
+ "top5_changed_rows": [
+  35,
+  76,
+  164,
+  171,
+  181,
+  199,
+  243,
+  301,
+  317,
+  329,
+  349,
+  376,
+  419,
+  457,
+  473,
+  498,
+  526,
+  533,
+  549,
+  550,
+  634,
+  649,
+  686,
+  702,
+  715,
+  717,
+  766,
+  824,
+  850,
+  869,
+  975,
+  998,
+  1009,
+  1021,
+  1036,
+  1063,
+  1112,
+  1128,
+  1139,
+  1145,
+  1156,
+  1227,
+  1229,
+  1248,
+  1263,
+  1285,
+  1303,
+  1323,
+  1332,
+  1385
+ ],
+ "bound_over_real_median": 2.4487755383290266,
+ "worst_rows": [
+  {
+   "row": 3450,
+   "gap": 2,
+   "bound": 3565,
+   "real": 1192,
+   "proven": false
+  },
+  {
+   "row": 2783,
+   "gap": 2,
+   "bound": 3032,
+   "real": 1200,
+   "proven": false
+  },
+  {
+   "row": 1424,
+   "gap": 3,
+   "bound": 2953,
+   "real": 1220,
+   "proven": false
+  },
+  {
+   "row": 4763,
+   "gap": 3,
+   "bound": 2969,
+   "real": 1184,
+   "proven": false
+  },
+  {
+   "row": 4232,
+   "gap": 4,
+   "bound": 3898,
+   "real": 1231,
+   "proven": false
+  },
+  {
+   "row": 3129,
+   "gap": 4,
+   "bound": 3266,
+   "real": 1184,
+   "proven": false
+  },
+  {
+   "row": 1427,
+   "gap": 4,
+   "bound": 2914,
+   "real": 1183,
+   "proven": false
+  },
+  {
+   "row": 1263,
+   "gap": 5,
+   "bound": 2932,
+   "real": 1266,
+   "proven": false
+  },
+  {
+   "row": 3232,
+   "gap": 7,
+   "bound": 3015,
+   "real": 1211,
+   "proven": false
+  },
+  {
+   "row": 3194,
+   "gap": 7,
+   "bound": 3157,
+   "real": 1227,
+   "proven": false
+  }
+ ],
+ "layers": []
+}

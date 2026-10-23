@@ -1,0 +1,11 @@
+/Users/abundancemachine/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+checker_remove.py size 160m: fp32 Pythia from its own fp16 files, 30 texts, cases 6
+  fin      checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker 100.0%  base-2 100.0%  (0.7s)
+  cb       checker word = base-2 case word at 331/622 ( 53.2%);  finished words kept: checker  61.9%  base-2  58.4%  (2.9s)
+  b_head   checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  85.9%  base-2  85.9%  (0.8s)
+  b_emb    checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  98.1%  base-2  98.2%  (0.8s)
+  a_head   checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker   6.3%  base-2   6.3%  (0.8s)
+  a_emb    checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  25.7%  base-2  25.7%  (0.8s)
+peak memory 2.52 GB

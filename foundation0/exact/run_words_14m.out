@@ -1,0 +1,60 @@
+remove_exact.py  size 14m  order plain  texts 30  greedy True  cases ['fin', 'k', 'p', 'ck1', 'ck2', 'ck3', 'cp1', 'cp2', 'cp3']
+  c from the never-built rows 6.112010e-04 -> 656272 x 2^-30;  the settings' product 3.865910e-04 -> 415099 x 2^-30
+  fin: the finished machine's word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to ../pythia_base2.py's run in 30 of 30 texts
+  k    top-1  99.04%  top-5 100.00%  (of 622);  16 continuation top-1  99.38% [pairing-broken  5.4%];  greedy words 460/480 texts 27/30;  piles identical: positions 0/622 texts 0/30;  3.5s  peak 0.73 GB
+       the finished word's lead moved by: median 0.01276  99th pct 0.05374  max 0.11453 logits
+       positions lost (finished lead -> here): t1p8 0.0340->-0.0158, t17p0 0.0226->-0.0280, t17p17 0.0086->-0.0050, t20p11 0.0011->-0.0060, t23p0 0.0006->-0.0168, t25p1 0.0104->-0.0103
+       weights changed on the grid: 12,799,302 of 14,057,472 (91.05%), mean |change| 3.63 grains, largest 20; inside the finished weight's own 11-place grain 26.7%
+       by kind: qkv 89.9% mean 3.52 max 20 in-grain 28%  proj 91.5% mean 3.76 max 20 in-grain 27%  fc 91.3% mean 3.69 max 20 in-grain 22%  mproj 91.2% mean 3.67 max 20 in-grain 27%  head 90.9% mean 3.57 max 20 in-grain 28%  embed 91.3% mean 3.69 max 20 in-grain 26%
+       text 1 'Once upon a time': here ', we have a few of the most important things.\n\nThe first time'  finished ', we have a few minutes to get the first time, and we have a'
+       text 17 'I think therefore': here ', the\n\n"I\'m not sure what you\'re going to do,"'  finished ', the\n\n"I\'m not sure what you\'re going to do."'
+       text 20 'The meaning of life is': here ' the same as the fact that the life of the people is not the same as'  finished ' the same as the fact that the first one is the same as the second one'
+  p    top-1  99.52%  top-5 100.00%  (of 622);  16 continuation top-1 100.00% [pairing-broken  5.4%];  greedy words 480/480 texts 30/30;  piles identical: positions 0/622 texts 0/30;  3.4s  peak 0.73 GB
+       the finished word's lead moved by: median 0.00829  99th pct 0.04257  max 0.14287 logits
+       positions lost (finished lead -> here): t17p0 0.0226->-0.0164, t23p0 0.0006->-0.0044, t25p1 0.0104->-0.0042
+       weights changed on the grid: 12,076,583 of 14,057,472 (85.91%), mean |change| 2.29 grains, largest 13; inside the finished weight's own 11-place grain 39.2%
+       by kind: qkv 84.4% mean 2.22 max 13 in-grain 39%  proj 86.6% mean 2.37 max 13 in-grain 40%  fc 86.2% mean 2.33 max 13 in-grain 33%  mproj 86.1% mean 2.32 max 13 in-grain 39%  head 85.6% mean 2.25 max 13 in-grain 40%  embed 86.2% mean 2.33 max 13 in-grain 39%
+  ck1  top-1  99.04%  top-5 100.00%  (of 622);  16 continuation top-1  99.79% [pairing-broken  5.4%];  greedy words 479/480 texts 29/30;  piles identical: positions 0/622 texts 0/30;  4.3s  peak 0.77 GB
+       the finished word's lead moved by: median 0.01335  99th pct 0.08380  max 0.13174 logits
+       positions lost (finished lead -> here): t9p6 0.0455->-0.0160, t17p0 0.0226->-0.0565, t22p1 0.0364->-0.0042, t23p0 0.0006->-0.0484, t23p1 0.0166->-0.0160, t25p1 0.0104->-0.0131
+       weights changed on the grid: 12,798,546 of 14,057,472 (91.04%), mean |change| 3.64 grains, largest 43; inside the finished weight's own 11-place grain 26.7%
+       by kind: qkv 89.9% mean 3.52 max 35 in-grain 28%  proj 91.5% mean 3.76 max 28 in-grain 27%  fc 91.3% mean 3.70 max 38 in-grain 23%  mproj 91.2% mean 3.67 max 21 in-grain 27%  head 90.9% mean 3.58 max 43 in-grain 28%  embed 91.3% mean 3.70 max 41 in-grain 26%
+       text 9 'Two plus two equals': here ' the first and third.\n\nThe first is the first.\n\nThe'  finished ' the first and second.\n\nThe first is the first.\n\nThe'
+  ck2  top-1  98.87%  top-5 100.00%  (of 622);  16 continuation top-1  98.96% [pairing-broken  5.4%];  greedy words 435/480 texts 25/30;  piles identical: positions 0/622 texts 0/30;  4.9s  peak 0.77 GB
+       the finished word's lead moved by: median 0.01295  99th pct 0.07422  max 0.10846 logits
+       positions lost (finished lead -> here): t4p11 0.0078->-0.0105, t6p11 0.0242->-0.0003, t9p6 0.0455->-0.0310, t14p1 0.0084->-0.0249, t22p4 0.0474->-0.0135, t29p2 0.0162->-0.0923, t29p8 0.0236->-0.0019
+       weights changed on the grid: 12,799,525 of 14,057,472 (91.05%), mean |change| 3.64 grains, largest 42; inside the finished weight's own 11-place grain 26.7%
+       by kind: qkv 89.9% mean 3.53 max 32 in-grain 28%  proj 91.5% mean 3.76 max 34 in-grain 28%  fc 91.3% mean 3.70 max 42 in-grain 23%  mproj 91.2% mean 3.67 max 21 in-grain 27%  head 90.9% mean 3.58 max 39 in-grain 28%  embed 91.3% mean 3.70 max 42 in-grain 26%
+       text 4 'Water boils at': here ' the end of the day, and the day after the day, the day after'  finished ' the end of the day, and the sun was shining.\n\nThe sun'
+       text 6 'The theory of relativity states that': here ' is the same as in the theory of relativity.\n\nThe theory of relativity'  finished ' is the same as in the Einstein-Jupiter spacetime, the Einstein-J'
+       text 9 'Two plus two equals': here ' the first and third.\n\nThe first is the first.\n\nThe'  finished ' the first and second.\n\nThe first is the first.\n\nThe'
+       text 22 'The cat sat on the': here " side of the cat's lap, and the cat's lap was a little bit"  finished ' day of the day, and the cat sat on the day of the day.'
+  ck3  top-1  98.07%  top-5 100.00%  (of 622);  16 continuation top-1  98.54% [pairing-broken  5.4%];  greedy words 442/480 texts 26/30;  piles identical: positions 0/622 texts 0/30;  4.8s  peak 0.77 GB
+       the finished word's lead moved by: median 0.01445  99th pct 0.07749  max 0.11758 logits
+       positions lost (finished lead -> here): t1p6 0.0088->-0.0118, t1p8 0.0340->-0.0477, t6p3 0.0026->-0.0168, t6p4 0.0207->-0.0125, t6p11 0.0242->-0.0025, t10p6 0.0039->-0.0156, t13p6 0.0474->-0.0420, t14p1 0.0084->-0.0018, t20p11 0.0011->-0.0278, t20p12 0.0189->-0.0300, t28p7 0.0074->-0.0202, t28p8 0.0030->-0.0196
+       weights changed on the grid: 12,798,673 of 14,057,472 (91.05%), mean |change| 3.64 grains, largest 40; inside the finished weight's own 11-place grain 26.7%
+       by kind: qkv 90.0% mean 3.53 max 37 in-grain 28%  proj 91.5% mean 3.77 max 33 in-grain 27%  fc 91.3% mean 3.70 max 35 in-grain 23%  mproj 91.2% mean 3.67 max 21 in-grain 27%  head 90.9% mean 3.58 max 40 in-grain 28%  embed 91.3% mean 3.70 max 40 in-grain 26%
+       text 1 'Once upon a time': here ', we have to take a look at the first time, and we have to'  finished ', we have a few minutes to get the first time, and we have a'
+       text 6 'The theory of relativity states that': here ' is the same as in the theory of relativity.\n\nThe theory of relativity'  finished ' is the same as in the Einstein-Jupiter spacetime, the Einstein-J'
+       text 20 'The meaning of life is': here ' the same as the fact that the life of the world is not the same as'  finished ' the same as the fact that the first one is the same as the second one'
+       text 28 'My name is John and I': here ' have been in the United States since the first year of the war.\n\n'  finished ' have been a bit confused about the problem.\n\nI have a lot of'
+  cp1  top-1  99.52%  top-5 100.00%  (of 622);  16 continuation top-1 100.00% [pairing-broken  5.4%];  greedy words 480/480 texts 30/30;  piles identical: positions 0/622 texts 0/30;  4.5s  peak 0.77 GB
+       the finished word's lead moved by: median 0.00958  99th pct 0.05293  max 0.08415 logits
+       positions lost (finished lead -> here): t17p0 0.0226->-0.0222, t23p0 0.0006->-0.0310, t25p1 0.0104->-0.0089
+       weights changed on the grid: 12,075,350 of 14,057,472 (85.90%), mean |change| 2.30 grains, largest 27; inside the finished weight's own 11-place grain 39.2%
+       by kind: qkv 84.4% mean 2.22 max 22 in-grain 39%  proj 86.6% mean 2.37 max 18 in-grain 40%  fc 86.2% mean 2.33 max 24 in-grain 34%  mproj 86.1% mean 2.32 max 13 in-grain 39%  head 85.6% mean 2.25 max 27 in-grain 40%  embed 86.2% mean 2.33 max 26 in-grain 39%
+  cp2  top-1  99.52%  top-5 100.00%  (of 622);  16 continuation top-1  99.79% [pairing-broken  5.4%];  greedy words 472/480 texts 29/30;  piles identical: positions 0/622 texts 0/30;  4.5s  peak 0.77 GB
+       the finished word's lead moved by: median 0.00885  99th pct 0.05152  max 0.10551 logits
+       positions lost (finished lead -> here): t4p11 0.0078->-0.0004, t14p1 0.0084->-0.0048, t29p2 0.0162->-0.0463
+       weights changed on the grid: 12,075,453 of 14,057,472 (85.90%), mean |change| 2.30 grains, largest 26; inside the finished weight's own 11-place grain 39.2%
+       by kind: qkv 84.4% mean 2.22 max 20 in-grain 39%  proj 86.6% mean 2.37 max 22 in-grain 40%  fc 86.2% mean 2.33 max 26 in-grain 34%  mproj 86.1% mean 2.32 max 13 in-grain 39%  head 85.6% mean 2.25 max 24 in-grain 40%  embed 86.2% mean 2.33 max 26 in-grain 39%
+       text 4 'Water boils at': here ' the end of the day, and the day after the day, the day after'  finished ' the end of the day, and the sun was shining.\n\nThe sun'
+  cp3  top-1  98.39%  top-5 100.00%  (of 622);  16 continuation top-1  99.17% [pairing-broken  5.4%];  greedy words 447/480 texts 27/30;  piles identical: positions 0/622 texts 0/30;  4.7s  peak 0.77 GB
+       the finished word's lead moved by: median 0.00939  99th pct 0.05654  max 0.07768 logits
+       positions lost (finished lead -> here): t1p8 0.0340->-0.0217, t6p3 0.0026->-0.0097, t6p4 0.0207->-0.0054, t10p6 0.0039->-0.0083, t13p6 0.0474->-0.0140, t14p1 0.0084->-0.0004, t20p11 0.0011->-0.0016, t20p12 0.0189->-0.0168, t25p1 0.0104->-0.0152, t28p7 0.0074->-0.0148
+       weights changed on the grid: 12,075,401 of 14,057,472 (85.90%), mean |change| 2.30 grains, largest 26; inside the finished weight's own 11-place grain 39.2%
+       by kind: qkv 84.4% mean 2.22 max 23 in-grain 39%  proj 86.6% mean 2.37 max 21 in-grain 40%  fc 86.2% mean 2.33 max 22 in-grain 34%  mproj 86.1% mean 2.32 max 13 in-grain 39%  head 85.6% mean 2.25 max 26 in-grain 40%  embed 86.2% mean 2.33 max 25 in-grain 39%
+       text 1 'Once upon a time': here ', we have a few of the most important things.\n\nThe first time'  finished ', we have a few minutes to get the first time, and we have a'
+       text 20 'The meaning of life is': here ' the same as the fact that the life of the world is not the same as'  finished ' the same as the fact that the first one is the same as the second one'
+       text 28 'My name is John and I': here ' have been in the United States since the first year of the war.\n\n'  finished ' have been a bit confused about the problem.\n\nI have a lot of'
+done 38s  peak memory 0.77 GB

@@ -1,0 +1,32 @@
+waiting: another python process over 1.5 GB
+START machine set=refs seed=7 07:54:01
+  layer 27 done (305s, 1318 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0, "light at the slabs vs capture's record (rows differing)": 0}
+  checks: {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0, "light at the slabs vs capture's record (rows differing)": 0}
+done, max memory 1318 MB
+END machine set=refs seed=7 07:59:07
+START top set=refs seed=7 07:59:07
+  checks: {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+  top 5 = the plain read's 613/613, race winner 613/613
+done, max memory 1731 MB
+END top set=refs seed=7 08:00:41
+START machine set=words seed=1 08:00:41
+  layer 27 done (301s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  checks: {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+done, max memory 1117 MB
+END machine set=words seed=1 08:05:42
+START top set=words seed=1 08:05:42
+  checks: {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+  top 5 = the plain read's 480/480, race winner 480/480
+done, max memory 1731 MB
+END top set=words seed=1 08:07:00
+START machine set=orderfree seed=1 reorder=4242 08:07:00
+  layer 27 done (73s, 680 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0, "light at the slabs vs capture's record (rows differing)": 0}
+  checks: {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0, "light at the slabs vs capture's record (rows differing)": 0}
+done, max memory 680 MB
+END machine set=orderfree seed=1 reorder=4242 08:08:13
+START top set=orderfree seed=1 reorder=4242 wordperm=1 08:08:13
+  checks: {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+  top 5 = the plain read's 63/63, race winner 63/63
+done, max memory 1759 MB
+END top set=orderfree seed=1 reorder=4242 wordperm=1 08:08:38
+ALLDONE

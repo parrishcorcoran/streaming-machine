@@ -1,0 +1,4 @@
+base2_stream.swift (one command buffer, so only prompt included): 220.0 (214.3-221.7)
+fr3        incl  231.3 (227.2-233.5)  after  245.1 (241.4-247.0)  vs fr3: incl +0.0% after +0.0%  vs base2_stream.swift incl +5.1%  words = fr3 30/30, = fp32 29/30  ms/token after 4.080
+fr2nofuse  incl  264.8 (259.9-266.6)  after  285.4 (279.1-286.9)  vs fr3: incl +14.5% after +16.4%  vs base2_stream.swift incl +20.4%  words = fr3 30/30, = fp32 29/30  ms/token after 3.504
+fr2        incl  273.9 (269.7-276.1)  after  297.2 (291.3-299.5)  vs fr3: incl +18.4% after +21.3%  vs base2_stream.swift incl +24.5%  words = fr3 30/30, = fp32 29/30  ms/token after 3.364

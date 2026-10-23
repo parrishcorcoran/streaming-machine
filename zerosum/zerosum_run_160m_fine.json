@@ -1,0 +1,27 @@
+{
+ "machine": "160m",
+ "variant": "fine",
+ "plain_stats": {
+  "reads": 15550,
+  "S1=0": 0
+ },
+ "zerosum_stats": {
+  "reads": 15550,
+  "S1=0": 20
+ },
+ "compare": {
+  "calls": 142018,
+  "diff_calls": 106857,
+  "same_positions": 0,
+  "power_moved": 21,
+  "differ_before_power_moved": 431,
+  "positions": 622,
+  "scores_same_texts": 0,
+  "win_same": 622,
+  "top5_same": 606,
+  "top5_set_same": 615,
+  "first": {
+   "proj.0 product": 30
+  }
+ }
+}

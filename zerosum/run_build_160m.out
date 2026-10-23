@@ -1,0 +1,17 @@
+
+fine: 90,920 of 96,408 write lines with a nonzero constant; values past 16 places 19  -> zerosum_pythia-160m.npz (163 MB, 15s)
+  lit places attention-out : 1s    40,023,503 ->    41,199,597 ( +2.939%)   single-wave    30,528,391 ->    31,319,721 ( +2.592%)
+  lit places biases        : 1s        98,886 ->       105,356 ( +6.543%)   single-wave        76,039 ->        80,365 ( +5.689%)
+  lit places MLP-out       : 1s   159,568,399 ->   161,228,756 ( +1.041%)   single-wave   121,765,807 ->   122,894,018 ( +0.927%)
+  lit places word rows     : 1s   219,715,786 ->   225,477,726 ( +2.622%)   single-wave   167,456,306 ->   171,327,447 ( +2.312%)
+  lit places all writes    : 1s   419,406,574 ->   428,011,435 ( +2.052%)   single-wave   319,826,543 ->   325,621,551 ( +1.812%)
+cut: Pythia-160m has no nonzero constant at the grain that passes; no file
+
+ctl: 90,920 of 96,408 write lines with a nonzero constant; values past 16 places 23  -> zerosum_pythia-160m_ctl.npz (165 MB, 31s)
+  lit places attention-out : 1s    40,023,503 ->    41,194,946 ( +2.927%)   single-wave    30,528,391 ->    31,321,824 ( +2.599%)
+  lit places biases        : 1s        98,886 ->       105,284 ( +6.470%)   single-wave        76,039 ->        80,344 ( +5.662%)
+  lit places MLP-out       : 1s   159,568,399 ->   161,218,978 ( +1.034%)   single-wave   121,765,807 ->   122,891,745 ( +0.925%)
+  lit places word rows     : 1s   219,715,786 ->   225,475,548 ( +2.621%)   single-wave   167,456,306 ->   171,325,465 ( +2.311%)
+  lit places all writes    : 1s   419,406,574 ->   427,994,756 ( +2.048%)   single-wave   319,826,543 ->   325,619,378 ( +1.811%)
+
+done (31s)

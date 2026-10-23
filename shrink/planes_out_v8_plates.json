@@ -1,0 +1,396 @@
+{
+ "values": 84934656,
+ "stored_16bit_MB": 169.869,
+ "order0_bits": 14.5136,
+ "v8a_bits": 14.537,
+ "v8a_MB": 154.336,
+ "v8b_bits": 14.5443,
+ "v8b_MB": 154.415,
+ "all_roundtrip_ok": true,
+ "plates": [
+  {
+   "plate": "qkv.0",
+   "order0": 14.6591,
+   "v8a": 14.6835,
+   "v8b": 14.7811,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.0",
+   "order0": 14.4465,
+   "v8a": 14.5051,
+   "v8b": 14.5878,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.0",
+   "order0": 14.1685,
+   "v8a": 14.1837,
+   "v8b": 13.9982,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.0",
+   "order0": 14.2969,
+   "v8a": 14.3132,
+   "v8b": 14.2506,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.1",
+   "order0": 14.5091,
+   "v8a": 14.5343,
+   "v8b": 14.5487,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.1",
+   "order0": 14.4529,
+   "v8a": 14.5089,
+   "v8b": 14.6191,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.1",
+   "order0": 14.7125,
+   "v8a": 14.7314,
+   "v8b": 14.8008,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.1",
+   "order0": 14.3434,
+   "v8a": 14.3596,
+   "v8b": 14.2755,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.2",
+   "order0": 14.3883,
+   "v8a": 14.4131,
+   "v8b": 14.302,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.2",
+   "order0": 14.4065,
+   "v8a": 14.4699,
+   "v8b": 14.5732,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.2",
+   "order0": 14.7098,
+   "v8a": 14.7288,
+   "v8b": 14.8266,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.2",
+   "order0": 14.3918,
+   "v8a": 14.4089,
+   "v8b": 14.3504,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.3",
+   "order0": 14.5063,
+   "v8a": 14.5305,
+   "v8b": 14.5242,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.3",
+   "order0": 14.4108,
+   "v8a": 14.4655,
+   "v8b": 14.6045,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.3",
+   "order0": 14.6401,
+   "v8a": 14.6593,
+   "v8b": 14.7481,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.3",
+   "order0": 14.3979,
+   "v8a": 14.4149,
+   "v8b": 14.3756,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.4",
+   "order0": 14.5804,
+   "v8a": 14.6054,
+   "v8b": 14.6295,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.4",
+   "order0": 14.5023,
+   "v8a": 14.5552,
+   "v8b": 14.6686,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.4",
+   "order0": 14.6507,
+   "v8a": 14.67,
+   "v8b": 14.7208,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.4",
+   "order0": 14.4562,
+   "v8a": 14.4731,
+   "v8b": 14.4495,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.5",
+   "order0": 14.6944,
+   "v8a": 14.7202,
+   "v8b": 14.7724,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.5",
+   "order0": 14.5485,
+   "v8a": 14.601,
+   "v8b": 14.7609,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.5",
+   "order0": 14.5804,
+   "v8a": 14.5994,
+   "v8b": 14.6343,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.5",
+   "order0": 14.4732,
+   "v8a": 14.4912,
+   "v8b": 14.4453,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.6",
+   "order0": 14.624,
+   "v8a": 14.6498,
+   "v8b": 14.6769,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.6",
+   "order0": 14.7582,
+   "v8a": 14.8209,
+   "v8b": 14.9504,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.6",
+   "order0": 14.5775,
+   "v8a": 14.5965,
+   "v8b": 14.6246,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.6",
+   "order0": 14.4846,
+   "v8a": 14.5034,
+   "v8b": 14.4309,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.7",
+   "order0": 14.6364,
+   "v8a": 14.6617,
+   "v8b": 14.7078,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.7",
+   "order0": 14.735,
+   "v8a": 14.8001,
+   "v8b": 14.9217,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.7",
+   "order0": 14.5767,
+   "v8a": 14.5955,
+   "v8b": 14.6162,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.7",
+   "order0": 14.3622,
+   "v8a": 14.3808,
+   "v8b": 14.33,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.8",
+   "order0": 14.534,
+   "v8a": 14.5594,
+   "v8b": 14.5901,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.8",
+   "order0": 14.8401,
+   "v8a": 14.9057,
+   "v8b": 15.031,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.8",
+   "order0": 14.6519,
+   "v8a": 14.6711,
+   "v8b": 14.6951,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.8",
+   "order0": 14.205,
+   "v8a": 14.2224,
+   "v8b": 14.2139,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.9",
+   "order0": 14.552,
+   "v8a": 14.5763,
+   "v8b": 14.6354,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.9",
+   "order0": 14.781,
+   "v8a": 14.8535,
+   "v8b": 14.9252,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.9",
+   "order0": 14.6708,
+   "v8a": 14.69,
+   "v8b": 14.7142,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.9",
+   "order0": 14.2982,
+   "v8a": 14.314,
+   "v8b": 14.3306,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.10",
+   "order0": 14.5279,
+   "v8a": 14.5514,
+   "v8b": 14.6021,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.10",
+   "order0": 14.7151,
+   "v8a": 14.7882,
+   "v8b": 14.8516,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.10",
+   "order0": 14.5328,
+   "v8a": 14.552,
+   "v8b": 14.5887,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.10",
+   "order0": 14.4006,
+   "v8a": 14.4178,
+   "v8b": 14.3705,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "qkv.11",
+   "order0": 14.4918,
+   "v8a": 14.5165,
+   "v8b": 14.5425,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "proj.11",
+   "order0": 14.5675,
+   "v8a": 14.6376,
+   "v8b": 14.7174,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "fc.11",
+   "order0": 14.7807,
+   "v8a": 14.7996,
+   "v8b": 14.8361,
+   "ok_a": true,
+   "ok_b": true
+  },
+  {
+   "plate": "mproj.11",
+   "order0": 14.3068,
+   "v8a": 14.3246,
+   "v8b": 14.1825,
+   "ok_a": true,
+   "ok_b": true
+  }
+ ]
+}

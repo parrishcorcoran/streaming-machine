@@ -1,0 +1,34 @@
+{
+ "machine": "gpt2",
+ "variant": "cut",
+ "plain_stats": {
+  "reads": 16200,
+  "S1=0": 0,
+  "log same without S1": 2460
+ },
+ "zerosum_stats": {
+  "reads": 16200,
+  "S1=0": 0,
+  "log same without S1": 2487
+ },
+ "compare": {
+  "calls": 206244,
+  "diff_calls": 300,
+  "same_positions": 0,
+  "power_moved": 0,
+  "differ_before_power_moved": 648,
+  "positions": 648,
+  "scores_same_texts": 0,
+  "win_same": 648,
+  "top5_same": 648,
+  "top5_set_same": 648,
+  "first": {
+   "fc.11 product": 30
+  }
+ },
+ "judge5": {
+  "in_top5": 6000,
+  "top1_same": 6000,
+  "judged": 6000
+ }
+}

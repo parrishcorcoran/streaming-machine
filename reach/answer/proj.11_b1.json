@@ -1,0 +1,178 @@
+{
+ "plate": "proj.11",
+ "b": 1,
+ "digits_removed": 295409,
+ "rows": 6000,
+ "proven": 0,
+ "blown_at_top": 0,
+ "bound_median": 1422536,
+ "bound_max": 7058529,
+ "bound_min": 572840,
+ "real_median": 322,
+ "real_max": 1734,
+ "top5_changed": 15,
+ "top5_changed_rows": [
+  112,
+  301,
+  975,
+  1338,
+  1876,
+  1891,
+  2088,
+  2783,
+  3299,
+  3320,
+  3854,
+  4425,
+  4650,
+  4965,
+  5198
+ ],
+ "bound_over_real_median": 4464.2099586848,
+ "worst_rows": [
+  {
+   "row": 3450,
+   "gap": 2,
+   "bound": 1903464,
+   "real": 290,
+   "proven": false
+  },
+  {
+   "row": 2783,
+   "gap": 2,
+   "bound": 1606121,
+   "real": 241,
+   "proven": false
+  },
+  {
+   "row": 1424,
+   "gap": 3,
+   "bound": 1173276,
+   "real": 295,
+   "proven": false
+  },
+  {
+   "row": 4763,
+   "gap": 3,
+   "bound": 995285,
+   "real": 374,
+   "proven": false
+  },
+  {
+   "row": 4232,
+   "gap": 4,
+   "bound": 2120178,
+   "real": 250,
+   "proven": false
+  },
+  {
+   "row": 3129,
+   "gap": 4,
+   "bound": 2074364,
+   "real": 395,
+   "proven": false
+  },
+  {
+   "row": 1427,
+   "gap": 4,
+   "bound": 1404427,
+   "real": 194,
+   "proven": false
+  },
+  {
+   "row": 1263,
+   "gap": 5,
+   "bound": 1192353,
+   "real": 462,
+   "proven": false
+  },
+  {
+   "row": 3232,
+   "gap": 7,
+   "bound": 1327161,
+   "real": 301,
+   "proven": false
+  },
+  {
+   "row": 3194,
+   "gap": 7,
+   "bound": 1942715,
+   "real": 587,
+   "proven": false
+  }
+ ],
+ "layers": [
+  {
+   "where": "qkv.11",
+   "blown_rows": 0,
+   "real_max": 0,
+   "real_row_median": 0,
+   "missed": 0,
+   "range_max": 0,
+   "range_row_median": 0
+  },
+  {
+   "where": "arrival.11",
+   "blown_rows": 0,
+   "real_max": 0,
+   "real_row_median": 0,
+   "missed": 0,
+   "range_max": 0,
+   "range_row_median": 0
+  },
+  {
+   "where": "proj.11",
+   "blown_rows": 0,
+   "real_max": 1433,
+   "real_row_median": 215,
+   "missed": 0,
+   "range_max": 7761,
+   "range_row_median": 2892
+  },
+  {
+   "where": "stream a 11",
+   "blown_rows": 0,
+   "real_max": 1433,
+   "real_row_median": 215,
+   "missed": 0,
+   "range_max": 7761,
+   "range_row_median": 2892
+  },
+  {
+   "where": "fc.11",
+   "blown_rows": 0,
+   "real_max": 256,
+   "real_row_median": 46,
+   "missed": 0,
+   "range_max": 4802,
+   "range_row_median": 1974
+  },
+  {
+   "where": "bend.11",
+   "blown_rows": 0,
+   "real_max": 230,
+   "real_row_median": 31,
+   "missed": 0,
+   "range_max": 3871,
+   "range_row_median": 1185
+  },
+  {
+   "where": "mproj.11",
+   "blown_rows": 0,
+   "real_max": 4051,
+   "real_row_median": 328,
+   "missed": 0,
+   "range_max": 625784,
+   "range_row_median": 198863
+  },
+  {
+   "where": "stream 11",
+   "blown_rows": 0,
+   "real_max": 3915,
+   "real_row_median": 401,
+   "missed": 0,
+   "range_max": 627833,
+   "range_row_median": 201328
+  }
+ ]
+}

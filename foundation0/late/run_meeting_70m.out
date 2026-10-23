@@ -1,0 +1,18 @@
+level_meeting.py  size 70m  layers [4, 5]  (a look in real numbers at the machine's own whole-number q and k)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: divide by zero encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: overflow encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: invalid value encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+  layer 4: finished meeting |q||k|/sqrt(hs) median 32831.4 e-folds; row height median 26.3 (x1249.6); median |cos(q,k)| 0.927; bias part of |q| 0.006, of |k| 0.985
+    b:qkv.4            the relief's share of the light leaving the plate: |dq|/|q| 0.002  |dk|/|k| 0.007  (plate share rho 0.020)
+    cb:qkv.4@20261006  the relief's share of the light leaving the plate: |dq|/|q| 0.002  |dk|/|k| 0.007  (plate share rho 0.020)
+    cb:qkv.4@2         the relief's share of the light leaving the plate: |dq|/|q| 0.002  |dk|/|k| 0.007  (plate share rho 0.020)
+    cb:qkv.4@3         the relief's share of the light leaving the plate: |dq|/|q| 0.002  |dk|/|k| 0.007  (plate share rho 0.020)
+  layer 5: finished meeting |q||k|/sqrt(hs) median 54589.6 e-folds; row height median 37.1 (x1472.4); median |cos(q,k)| 0.930; bias part of |q| 0.005, of |k| 0.994
+    b:qkv.5            the relief's share of the light leaving the plate: |dq|/|q| 0.005  |dk|/|k| 0.015  (plate share rho 0.032)
+    cb:qkv.5@20261006  the relief's share of the light leaving the plate: |dq|/|q| 0.005  |dk|/|k| 0.015  (plate share rho 0.032)
+    cb:qkv.5@2         the relief's share of the light leaving the plate: |dq|/|q| 0.005  |dk|/|k| 0.015  (plate share rho 0.032)
+    cb:qkv.5@3         the relief's share of the light leaving the plate: |dq|/|q| 0.005  |dk|/|k| 0.015  (plate share rho 0.032)
+done  peak memory 0.91 GB

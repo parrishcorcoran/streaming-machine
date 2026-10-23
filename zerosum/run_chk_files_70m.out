@@ -1,0 +1,4 @@
+fine: 65,676 write lines rebuilt in fractions, 63,404 with a nonzero constant; lines that differ from the file: 0  (2s)
+cut: 65,676 write lines rebuilt in fractions, 2 with a nonzero constant; lines that differ from the file: 0  (4s)
+ctl: 65,676 write lines rebuilt in fractions, 63,404 with a nonzero constant; lines that differ from the file: 0  (6s)
+done (6s)

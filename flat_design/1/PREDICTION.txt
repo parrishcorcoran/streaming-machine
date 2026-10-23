@@ -1,0 +1,48 @@
+DESIGNER 1 (plate side first). Written 2026-10-08, before sizes.py runs. The session's prediction, not his.
+
+THE RELATION (from the plate alone and the light's measured digits; no sweep, no winner picked by result)
+  Work a weight at one plate, in photons (every add counted, table and writing included):
+      W(g) = (S / g) * dT  +  2^(g-1) * (dstep + dwrite) / (M * g)  +  sd reads  +  X
+  S      up/hole sheets a weight's group reads: 14.3 (1.19 reads a weight at g = 12, groups2 compare.json)
+  dT     photons a ready packet: 4.65 (qkv, fc, mproj), 5.03 (proj)      (compare.json read / read_n)
+  dstep  photons a table step: the light's signed digits, 3.9-4.2
+  dwrite photons to write a read packet in signed digits: its 1s, about 6.5
+  M      gates (neurons) that read one light: 2,304 qkv, 768 proj, 3,072 fc, 768 mproj
+  Going from g to g+1 pays only while  M*S*dT*(1/g - 1/(g+1))  >  (2^g/(g+1) - 2^(g-1)/g) * (dstep + dwrite).
+  That gives g = 11 at the 768-gate plates (proj, mproj) and g = 12 at qkv and fc (13 does not pay there).
+
+PREDICTION FOR THE SAMPLE (layer 5, the 48 positions of excess_sample.py, every pile checked against x @ w)
+  proj.5 and mproj.5: g = 11 below g = 12 by 1.5-2.5 points of their plain photons.
+  qkv.5 and fc.5:     g = 12 below g = 13 by 0.2-1.0 point.
+  Every pile identical at every g (asserted). Shuffle control (each position's light shuffled across its lines):
+  within 0.1 point of the real light at each g.
+
+PREDICTION FOR THE WHOLE GPT-2 MACHINE (base2_groups.py with only g changed at proj and mproj)
+  711,431,068 a token now; about 15M less at mproj and 4M less at proj: about 692M a token = 18.9% of plain.
+  judge5 6000/6000 unchanged (every pile identical by construction).
+
+WHAT THIS CANNOT DO (the relation's own limit, written before any run)
+  The reads already sit at the plate's information: 14.3 sheets a weight against the stored floor of 14.4 bits a
+  weight. A read carries one g-bit address. So no exact machine that adds one ready packet a sheet can go below
+  about (14.4 / g) x 4.65 photons a weight, about 17% of plain at GPT-2's widths, whatever the plate is rewritten as.
+
+RESULTS (2026-10-08, after the runs; layer 5, 48 positions; every pile identical everywhere, asserted)
+  sizes.py (sizes.json):
+    proj.5   g=11 24.82%  g=12 26.60%   -1.78 points   (predicted 1.5-2.5: held)
+    mproj.5  g=11 23.68%  g=12 25.39%   -1.71 points   (held)
+    qkv.5    g=12 20.53%  g=13 21.38%   12 lower by 0.85 (predicted 0.2-1.0: held)
+    fc.5     g=12 20.58%  g=13 21.01%   12 lower by 0.43 (held)
+    shuffle control: within 0.09 point at every plate and size (predicted within 0.1: held)
+  excess_sample.py (excess_sample.json; its prediction is in its own header, written before it ran):
+    up/hole tips 2.88% (768 lines), 1.445% (3,072) of up/hole meetings = 7.39 / 3.70 photons a weight
+      = 23.2% / 11.0% of plain (held)
+    sign-and-1s tips 6.6% / 3.3% of plain (predicted 8% / 4%: missed low)
+    signed-digit tips 5.2-5.35% / 2.63% (predicted about 6%: missed low); paired by diagonal 1.88% / 0.93% (held)
+    each place pair's net count added as one number 1.34-1.38% / 0.41%; each diagonal's 0.22% / 0.06%
+    shuffle: within 0.16 point (the sign-and-1s tips moved 0.11-0.16, over the predicted 0.1; the rest within 0.1)
+    the matmul printed numpy's divide/overflow warnings; the rebuild of every pile from its tips passed in all three
+    writings, so the tips are exact
+  flat_between.py (flat_between.json): of the photons a gate adds as packets, 1.74-1.98% are left after the groups
+    pair off at each place (768 lines) and 0.47% at mproj; 0.05-0.24% are left in the whole pile. Shuffle the same.
+    (predicted 98% / 99.5% flat: held)
+  Whole GPT-2 machine (not run): 711.4M - 4.4M (proj) - 15.6M (mproj) = about 691M a token = 18.86% of plain.

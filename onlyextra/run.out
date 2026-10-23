@@ -1,0 +1,42 @@
+=== start 11:26:33: 
+=== ONLYEXTRA 2026-10-08 11:26:33  cases ['full', 'full_printed', 'light_j3', 'light_j2', 'k1_jfull', 'k1_j3', 'k1_j2', 'k2_jfull', 'k2_j3', 'k2_j2', 'k3_jfull', 'k3_j3', 'k3_j2', 'k1_plates_only', 'k2_plates_only', 'k1_table_only', 'k2_table_only', 'ctrl_random_k1', 'ctrl_random_k2', 'ctrl_random_k3', 'ctrl_shuffle_k1', 'ctrl_shuffle_k2', 'ctrl_shuffle_k3', 'order_k2_j3']  windows 300  (loaded, 515 peak, 503 now MB)
+    plates built (1080 peak, 1054 now MB)
+    word table and top table built (1349 peak, 1317 now MB)
+[full] built (0s, 1658 peak, 1619 now MB): plates lit 4.726 -> 4.726 a weight, changed 0.0%; word table lit 5.012 -> 5.012, changed 0.0%; top table 3.816 lit a value, 0.0% of its values differ from the machine's
+[full] full machine's word in the case's top 5 6000/6000 (100.00%); case's word in the full top 5 6000/6000 (100.00%); same top word 6000/6000 (100.00%); top 5 in set and order 6000; greedy vs full 480/480 words, 30/30 texts; vs fp32 468/480, 29/30
+[full] work a token: plates 1,616,347,553 single-wave meetings (2,756,902,598 in plain ones), top read 554,983,829 (916,045,415)  (38s, 1912 peak, 1625 now MB)
+    plates built (1912 peak, 1154 now MB)
+    word table and top table built (1912 peak, 1416 now MB)
+[full_printed] built (1s, 1912 peak, 1718 now MB): plates lit 4.726 -> 4.726 a weight, changed 0.0%; word table lit 5.012 -> 5.012, changed 0.0%; top table 3.816 lit a value, 2.3% of its values differ from the machine's
+[full_printed] full machine's word in the case's top 5 6000/6000 (100.00%); case's word in the full top 5 6000/6000 (100.00%); same top word 5997/6000 (99.95%); top 5 in set and order 5955; greedy vs full 480/480 words, 30/30 texts; vs fp32 468/480, 29/30
+[full_printed] work a token: plates 1,616,347,553 single-wave meetings (2,756,902,598 in plain ones), top read 554,987,449 (916,043,384)  (39s, 1912 peak, 1614 now MB)
+    plates built (1912 peak, 1166 now MB)
+    word table and top table built (1912 peak, 1429 now MB)
+[light_j3] built (0s, 1912 peak, 1730 now MB): plates lit 4.726 -> 4.726 a weight, changed 0.0%; word table lit 5.012 -> 5.012, changed 0.0%; top table 3.816 lit a value, 0.0% of its values differ from the machine's
+[light_j3] full machine's word in the case's top 5 6000/6000 (100.00%); case's word in the full top 5 6000/6000 (100.00%); same top word 5866/6000 (97.77%); top 5 in set and order 4311; greedy vs full 411/480 words, 22/30 texts; vs fp32 411/480, 22/30
+[light_j3] work a token: plates 1,163,258,742 single-wave meetings (1,984,501,713 in plain ones), top read 425,011,037 (707,386,321)  (49s, 1912 peak, 1585 now MB)
+  waiting: another python process over 1.5 GB is running (91978)
+  waiting: another python process over 1.5 GB is running (91978)
+    plates built (1912 peak, 826 now MB)
+    word table and top table built (1912 peak, 1240 now MB)
+[light_j2] built (0s, 1912 peak, 1541 now MB): plates lit 4.726 -> 4.726 a weight, changed 0.0%; word table lit 5.012 -> 5.012, changed 0.0%; top table 3.816 lit a value, 0.0% of its values differ from the machine's
+[light_j2] full machine's word in the case's top 5 5971/6000 (99.52%); case's word in the full top 5 5978/6000 (99.63%); same top word 5282/6000 (88.03%); top 5 in set and order 1403; greedy vs full 231/480 words, 7/30 texts; vs fp32 230/480, 7/30
+[light_j2] work a token: plates 795,462,713 single-wave meetings (1,295,358,758 in plain ones), top read 292,569,781 (467,059,224)  (47s, 1912 peak, 1546 now MB)
+    plates built (1912 peak, 962 now MB)
+    word table and top table built (1912 peak, 1642 now MB)
+[k1_jfull] built (5s, 1990 peak, 1943 now MB): plates lit 4.726 -> 1.000 a weight, changed 99.7%; word table lit 5.012 -> 1.000, changed 99.9%; top table 3.901 lit a value, 99.4% of its values differ from the machine's
+[k1_jfull] full machine's word in the case's top 5 4995/6000 (83.25%); case's word in the full top 5 4773/6000 (79.55%); same top word 3106/6000 (51.77%); top 5 in set and order 31; greedy vs full 38/480 words, 0/30 texts; vs fp32 38/480, 0/30
+[k1_jfull] work a token: plates 341,097,704 single-wave meetings (439,391,812 in plain ones), top read 570,690,545 (908,305,492)  (42s, 2067 peak, 1420 now MB)
+    plates built (2067 peak, 1510 now MB)
+    word table and top table built (2067 peak, 1888 now MB)
+[k1_j3] built (5s, 2242 peak, 2189 now MB): plates lit 4.726 -> 1.000 a weight, changed 99.7%; word table lit 5.012 -> 1.000, changed 99.9%; top table 3.901 lit a value, 99.4% of its values differ from the machine's
+[k1_j3] full machine's word in the case's top 5 4995/6000 (83.25%); case's word in the full top 5 4776/6000 (79.60%); same top word 3114/6000 (51.90%); top 5 in set and order 34; greedy vs full 47/480 words, 0/30 texts; vs fp32 47/480, 0/30
+[k1_j3] work a token: plates 246,170,920 single-wave meetings (317,462,315 in plain ones), top read 435,154,475 (697,839,721)  (50s, 2293 peak, 1466 now MB)
+    plates built (2293 peak, 1507 now MB)
+    word table and top table built (2293 peak, 1885 now MB)
+[k1_j2] built (5s, 2293 peak, 2187 now MB): plates lit 4.726 -> 1.000 a weight, changed 99.7%; word table lit 5.012 -> 1.000, changed 99.9%; top table 3.901 lit a value, 99.4% of its values differ from the machine's
+[k1_j2] full machine's word in the case's top 5 4922/6000 (82.03%); case's word in the full top 5 4669/6000 (77.82%); same top word 3019/6000 (50.32%); top 5 in set and order 30; greedy vs full 44/480 words, 0/30 texts; vs fp32 44/480, 0/30
+[k1_j2] work a token: plates 168,412,683 single-wave meetings (207,767,363 in plain ones), top read 299,231,183 (459,749,059)  (51s, 2293 peak, 1651 now MB)
+    plates built (2293 peak, 1644 now MB)
+    word table and top table built (2293 peak, 2112 now MB)
+[k2_jfull] built (7s, 2471 peak, 2391 now MB): plates lit 4.726 -> 1.997 a weight, changed 97.5%; word table lit 5.012 -> 1.999, changed 98.6%; top table 3.811 lit a value, 96.7% of its values differ from the machine's

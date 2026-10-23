@@ -1,0 +1,67 @@
+{
+ "v12 A=8": {
+  "file": "plates_v12_A8.bin",
+  "file_bytes": 56742543,
+  "parts_bytes": {
+   "header": 672,
+   "neuron_power": 82944,
+   "neuron_term": 82944,
+   "line_offset": 64512,
+   "photons": 56511471
+  },
+  "sum_parts": 56742543,
+  "MB": 56.743,
+  "bits_per_weight": 5.3446,
+  "single_wave_photons_per_weight": 1.694,
+  "nearest_mismatch_plates": 0,
+  "changed_share": 0.9977,
+  "words": 30,
+  "secs": 8.6
+ },
+ "v14 A=6": {
+  "file": "plates_v14_A6.bin",
+  "file_bytes": 45859605,
+  "parts_bytes": {
+   "header": 672,
+   "neuron_power": 82944,
+   "neuron_term": 82944,
+   "line_offset": 64512,
+   "photons": 45628533
+  },
+  "sum_parts": 45859605,
+  "MB": 45.86,
+  "bits_per_weight": 4.3195,
+  "single_wave_photons_per_weight": 1.343,
+  "nearest_mismatch_plates": 0,
+  "changed_share": 0.9989,
+  "words": 29,
+  "secs": 8.0
+ },
+ "v14 A=6 + 2 photons": {
+  "file": "plates_v14_A6_p_2_photons.bin",
+  "file_bytes": 45260466,
+  "parts_bytes": {
+   "header": 672,
+   "neuron_power": 82944,
+   "neuron_term": 82944,
+   "line_offset": 64512,
+   "photons": 45029394
+  },
+  "sum_parts": 45260466,
+  "MB": 45.26,
+  "bits_per_weight": 4.2631,
+  "single_wave_photons_per_weight": 1.318,
+  "nearest_mismatch_plates": null,
+  "changed_share": 0.9989,
+  "words": 28,
+  "secs": 7.8
+ },
+ "v1 lossless": {
+  "coded_bytes": 153528218,
+  "side_bytes": 83136,
+  "MB": 153.611,
+  "bits_per_weight": 14.4687,
+  "roundtrip_ok": true,
+  "secs": 20.0
+ }
+}

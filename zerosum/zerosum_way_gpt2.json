@@ -1,0 +1,36 @@
+{
+ "W0_vs_P0": {
+  "same": 0,
+  "positions": 648,
+  "win_same": 648,
+  "first": {
+   "read qkv.0": 30
+  }
+ },
+ "W1_vs_W0": {
+  "same": 648,
+  "positions": 648,
+  "win_same": 648,
+  "first": {}
+ },
+ "P1_vs_P0": {
+  "same": 0,
+  "positions": 648,
+  "win_same": 648,
+  "first": {
+   "read qkv.0": 30
+  }
+ },
+ "W2_vs_W0": {
+  "same": 0,
+  "positions": 648,
+  "win_same": 648,
+  "first": {
+   "write proj.0": 30
+  }
+ },
+ "refs": {
+  "P0": 479,
+  "W0": 479
+ }
+}

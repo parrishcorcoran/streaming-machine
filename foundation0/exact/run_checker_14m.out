@@ -1,0 +1,24 @@
+checker_exact.py  size 14m  v30 {'k': 656272, 'p': 415099}
+  fin: head piles at every position identical (sha256) to remove_exact.py's in 30 of 30 texts   peak 0.37 GB
+  k: head piles at every position identical (sha256) to remove_exact.py's in 30 of 30 texts;  top-1 against the finished machine 99.04% (remove_exact.py 99.04%)   peak 0.44 GB
+     qkv    weights changed: 265,177 here, 265,177 in remove_exact.py  same
+     proj   weights changed: 89,923 here, 89,923 in remove_exact.py  same
+     fc     weights changed: 358,890 here, 358,890 in remove_exact.py  same
+     mproj  weights changed: 358,763 here, 358,763 in remove_exact.py  same
+     head   weights changed: 5,850,494 here, 5,850,494 in remove_exact.py  same
+     embed  weights changed: 5,876,055 here, 5,876,055 in remove_exact.py  same
+  p: head piles at every position identical (sha256) to remove_exact.py's in 30 of 30 texts;  top-1 against the finished machine 99.52% (remove_exact.py 99.52%)   peak 0.46 GB
+     qkv    weights changed: 248,874 here, 248,874 in remove_exact.py  same
+     proj   weights changed: 85,089 here, 85,089 in remove_exact.py  same
+     fc     weights changed: 339,092 here, 339,092 in remove_exact.py  same
+     mproj  weights changed: 338,473 here, 338,473 in remove_exact.py  same
+     head   weights changed: 5,512,485 here, 5,512,485 in remove_exact.py  same
+     embed  weights changed: 5,552,570 here, 5,552,570 in remove_exact.py  same
+  storage (lit places a weight; bits a weight at the floor), here vs store_exact.py:
+     qkv    W lit 4.225789/4.225789 bits 13.9323212/13.9323212 same   Dk lit 4.567284/4.567284 bits 13.9320321/13.9320321 same   Dp lit 4.557844/4.557844 bits 13.9321374/13.9321374 same
+     proj   W lit 4.278035/4.278035 bits 14.2205636/14.2205636 same   Dk lit 4.670746/4.670746 bits 14.2204018/14.2204018 same   Dp lit 4.664449/4.664449 bits 14.2204606/14.2204606 same
+     fc     W lit 4.243029/4.243029 bits 13.8045051/13.8045051 same   Dk lit 4.543365/4.543365 bits 13.8040025/13.8040025 same   Dp lit 4.545464/4.545464 bits 13.8041871/13.8041871 same
+     mproj  W lit 4.276705/4.276705 bits 14.1466821/14.1466821 same   Dk lit 4.644750/4.644750 bits 14.1464569/14.1464569 same   Dp lit 4.644450/4.644450 bits 14.1465396/14.1465396 same
+     head   W lit 4.274540/4.274540 bits 14.1411580/14.1411580 same   Dk lit 4.642557/4.642557 bits 14.1411537/14.1411537 same   Dp lit 4.639550/4.639550 bits 14.1411550/14.1411550 same
+     embed  W lit 4.264282/4.264282 bits 14.0505434/14.0505434 same   Dk lit 4.618517/4.618517 bits 14.0303195/14.0303195 same   Dp lit 4.621102/4.621102 bits 14.0439068/14.0439068 same
+ALL CHECKS PASS   peak memory 0.46 GB

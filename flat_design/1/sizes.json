@@ -1,0 +1,226 @@
+{
+ "qkv.5": {
+  "plain": 2704252188,
+  "plain_shuffle": 2706485387,
+  "g12": {
+   "items": {
+    "light": 184396,
+    "pwrite": 37925837,
+    "table": 24412072,
+    "xsum": 142500,
+    "xoff": 594432,
+    "reads|qkv": 484365974,
+    "sdreads|qkv": 7595590
+   },
+   "total": 555220801,
+   "up_places": 15
+  },
+  "g12_shuffle": {
+   "items": {
+    "light": 184396,
+    "pwrite": 37998215,
+    "table": 24454731,
+    "xsum": 142500,
+    "xoff": 594432,
+    "reads|qkv": 485012648,
+    "sdreads|qkv": 7656244
+   },
+   "total": 556043166,
+   "up_places": 15
+  },
+  "g13": {
+   "items": {
+    "light": 184396,
+    "pwrite": 70134766,
+    "table": 45035836,
+    "xsum": 142500,
+    "xoff": 594432,
+    "reads|qkv": 454541770,
+    "sdreads|qkv": 7595590
+   },
+   "total": 578229290,
+   "up_places": 15
+  },
+  "g13_shuffle": {
+   "items": {
+    "light": 184396,
+    "pwrite": 70619832,
+    "table": 45179863,
+    "xsum": 142500,
+    "xoff": 594432,
+    "reads|qkv": 456829413,
+    "sdreads|qkv": 7656244
+   },
+   "total": 581206680,
+   "up_places": 15
+  }
+ },
+ "proj.5": {
+  "plain": 921730646,
+  "plain_shuffle": 922026074,
+  "g11": {
+   "items": {
+    "light": 188389,
+    "pwrite": 21845443,
+    "table": 13623810,
+    "xsum": 145155,
+    "xoff": 215808,
+    "reads|proj": 174056794,
+    "sdreads|proj": 18699814
+   },
+   "total": 228775213,
+   "up_places": 14
+  },
+  "g11_shuffle": {
+   "items": {
+    "light": 188389,
+    "pwrite": 21767681,
+    "table": 13568724,
+    "xsum": 145133,
+    "xoff": 215808,
+    "reads|proj": 173734436,
+    "sdreads|proj": 18799799
+   },
+   "total": 228419970,
+   "up_places": 14
+  },
+  "g12": {
+   "items": {
+    "light": 188389,
+    "pwrite": 40506319,
+    "table": 24980104,
+    "xsum": 145155,
+    "xoff": 215808,
+    "reads|proj": 160475057,
+    "sdreads|proj": 18699814
+   },
+   "total": 245210646,
+   "up_places": 14
+  },
+  "g12_shuffle": {
+   "items": {
+    "light": 188389,
+    "pwrite": 40409998,
+    "table": 24960587,
+    "xsum": 145133,
+    "xoff": 215808,
+    "reads|proj": 160183090,
+    "sdreads|proj": 18799799
+   },
+   "total": 244902804,
+   "up_places": 14
+  }
+ },
+ "fc.5": {
+  "plain": 3606020381,
+  "plain_shuffle": 3608854461,
+  "g12": {
+   "items": {
+    "light": 186406,
+    "pwrite": 38169651,
+    "table": 24738909,
+    "xsum": 143719,
+    "xoff": 752640,
+    "reads|fc": 606216284,
+    "sdreads|fc": 71790218
+   },
+   "total": 741997827,
+   "up_places": 14
+  },
+  "g12_shuffle": {
+   "items": {
+    "light": 186406,
+    "pwrite": 38177018,
+    "table": 24737772,
+    "xsum": 143721,
+    "xoff": 752640,
+    "reads|fc": 606425762,
+    "sdreads|fc": 72189573
+   },
+   "total": 742612892,
+   "up_places": 14
+  },
+  "g13": {
+   "items": {
+    "light": 186406,
+    "pwrite": 70703365,
+    "table": 45116905,
+    "xsum": 143719,
+    "xoff": 752640,
+    "reads|fc": 568914288,
+    "sdreads|fc": 71790218
+   },
+   "total": 757607541,
+   "up_places": 14
+  },
+  "g13_shuffle": {
+   "items": {
+    "light": 186406,
+    "pwrite": 70569520,
+    "table": 45476765,
+    "xsum": 143721,
+    "xoff": 752640,
+    "reads|fc": 568987853,
+    "sdreads|fc": 72189573
+   },
+   "total": 758306478,
+   "up_places": 14
+  }
+ },
+ "mproj.5": {
+  "plain": 3813393993,
+  "plain_shuffle": 3815700944,
+  "g11": {
+   "items": {
+    "light": 792898,
+    "pwrite": 87003693,
+    "table": 58645516,
+    "xsum": 622783,
+    "xoff": 294144,
+    "reads|mproj": 689680280,
+    "sdreads|mproj": 66028105
+   },
+   "total": 903067419,
+   "up_places": 14
+  },
+  "g11_shuffle": {
+   "items": {
+    "light": 792898,
+    "pwrite": 86911660,
+    "table": 58416772,
+    "xsum": 622756,
+    "xoff": 294144,
+    "reads|mproj": 689200043,
+    "sdreads|mproj": 67026833
+   },
+   "total": 903265106,
+   "up_places": 14
+  },
+  "g12": {
+   "items": {
+    "light": 792898,
+    "pwrite": 159636839,
+    "table": 106983447,
+    "xsum": 622783,
+    "xoff": 294144,
+    "reads|mproj": 633804228,
+    "sdreads|mproj": 66028105
+   },
+   "total": 968162444,
+   "up_places": 14
+  },
+  "g12_shuffle": {
+   "items": {
+    "light": 792898,
+    "pwrite": 159576379,
+    "table": 106685503,
+    "xsum": 622756,
+    "xoff": 294144,
+    "reads|mproj": 633502076,
+    "sdreads|mproj": 67026833
+   },
+   "total": 968500589,
+   "up_places": 14
+  }
+ }
+}

@@ -1,0 +1,253 @@
+  requirement 0 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 0 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 90.6%); exact needed at 100.0%
+  requirement 0 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 0 A: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 0 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 0 Mw: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 1 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 1 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 86.1%); exact needed at 100.0%
+  requirement 1 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 1 A: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 1 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 1 Mw: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 2 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 2 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 95.2%); exact needed at 100.0%
+  requirement 2 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 2 A: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 2 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 2 Mw: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 3 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 99.5%); exact needed at 100.0%
+  requirement 3 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 95.7%); exact needed at 100.0%
+  requirement 3 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 3 A: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 3 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 3 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.8%); exact needed at 100.0%
+  requirement 4 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 99.7%); exact needed at 100.0%
+  requirement 4 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 94.6%); exact needed at 100.0%
+  requirement 4 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 4 A: read by later tokens: exact digits (req.py's own box: exact at 99.8%); exact needed at 100.0%
+  requirement 4 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 4 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.8%); exact needed at 100.0%
+  requirement 5 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 98.9%); exact needed at 100.0%
+  requirement 5 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 94.3%); exact needed at 100.0%
+  requirement 5 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 99.1%); exact needed at 100.0%
+  requirement 5 A: read by later tokens: exact digits (req.py's own box: exact at 99.5%); exact needed at 100.0%
+  requirement 5 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 5 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.5%); exact needed at 100.0%
+  requirement 6 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 97.5%); exact needed at 100.0%
+  requirement 6 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 94.6%); exact needed at 100.0%
+  requirement 6 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 6 A: read by later tokens: exact digits (req.py's own box: exact at 99.5%); exact needed at 100.0%
+  requirement 6 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 6 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.4%); exact needed at 100.0%
+  requirement 7 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 98.9%); exact needed at 100.0%
+  requirement 7 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 96.1%); exact needed at 100.0%
+  requirement 7 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 98.6%); exact needed at 100.0%
+  requirement 7 A: read by later tokens: exact digits (req.py's own box: exact at 99.4%); exact needed at 100.0%
+  requirement 7 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 7 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.2%); exact needed at 100.0%
+  requirement 8 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 99.4%); exact needed at 100.0%
+  requirement 8 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 95.7%); exact needed at 100.0%
+  requirement 8 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 8 A: read by later tokens: exact digits (req.py's own box: exact at 99.2%); exact needed at 100.0%
+  requirement 8 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 8 Mw: read by later tokens: exact digits (req.py's own box: exact at 99.2%); exact needed at 100.0%
+  requirement 9 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 99.8%); exact needed at 100.0%
+  requirement 9 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 94.6%); exact needed at 100.0%
+  requirement 9 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 98.5%); exact needed at 100.0%
+  requirement 9 A: read by later tokens: exact digits (req.py's own box: exact at 99.2%); exact needed at 100.0%
+  requirement 9 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 9 Mw: read by later tokens: exact digits (req.py's own box: exact at 98.9%); exact needed at 100.0%
+  requirement 10 QKV:q: read by later tokens: exact digits (req.py's own box: exact at 99.5%); exact needed at 100.0%
+  requirement 10 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 94.0%); exact needed at 100.0%
+  requirement 10 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 97.5%); exact needed at 100.0%
+  requirement 10 A: read by later tokens: exact digits (req.py's own box: exact at 97.1%); exact needed at 100.0%
+  requirement 10 H: read by later tokens: exact digits (req.py's own box: exact at 100.0%); exact needed at 100.0%
+  requirement 10 Mw: read by later tokens: exact digits (req.py's own box: exact at 95.8%); exact needed at 100.0%
+  requirement 11 QKV:q: req_refs_L11.npz; exact needed at 99.8%
+  requirement 11 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 82.9%); exact needed at 100.0%
+  requirement 11 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 71.0%); exact needed at 100.0%
+  requirement 11 A: req_refs_L11.npz; exact needed at 33.2%
+  requirement 11 H: req_refs_L11.npz; exact needed at 15.3%
+  requirement 11 Mw: req_refs_L11.npz; exact needed at 0.2%
+  layer 0 done (98s; 98s, 2797 MB)
+  layer 1 done (41s; 139s, 3124 MB)
+  layer 2 done (37s; 176s, 3124 MB)
+  layer 3 done (37s; 214s, 3203 MB)
+  layer 4 done (38s; 251s, 3203 MB)
+  layer 5 done (55s; 306s, 3203 MB)
+  layer 6 done (37s; 344s, 3203 MB)
+  layer 7 done (38s; 381s, 3203 MB)
+  layer 8 done (37s; 419s, 3203 MB)
+  layer 9 done (38s; 456s, 3203 MB)
+  layer 10 done (42s; 499s, 3203 MB)
+  layer 11 done (49s; 548s, 3203 MB)
+
+NEEDED WORK BY PLATE (refs, 648 positions): photon meetings of the diagonals read, against plain and the extra
+plate        plain/pos   extra | (a) needed  x extra piles early | (b) needed  x extra piles early
+qkv.0       61,818,770   7.04% |     95.79%     13.6      98.00% |     95.79%     13.6      98.00%
+proj.0      20,506,844   6.57% |     96.39%     14.7      95.35% |     96.39%     14.7      95.35%
+fc.0        61,305,666   7.67% |     91.63%     12.0      98.06% |     91.63%     12.0      98.06%
+mproj.0     73,459,015   3.42% |     99.63%     29.1      46.14% |     99.63%     29.1      46.14%
+qkv.1       54,767,011   7.21% |     96.58%     13.4      95.11% |     96.58%     13.4      95.11%
+proj.1      19,630,238   6.45% |     98.49%     15.3      90.22% |     98.49%     15.3      90.22%
+fc.1        75,853,547   6.82% |     90.75%     13.3      99.24% |     90.75%     13.3      99.24%
+mproj.1     76,060,231   3.28% |     99.49%     30.4      61.15% |     99.49%     30.4      61.15%
+qkv.2       54,381,626   7.01% |     96.75%     13.8      94.36% |     96.75%     13.8      94.36%
+proj.2      20,135,507   6.49% |     98.10%     15.1      92.78% |     98.10%     15.1      92.78%
+fc.2        76,681,482   6.75% |     90.11%     13.3      99.20% |     90.11%     13.3      99.20%
+mproj.2     75,868,162   3.28% |     99.49%     30.3      60.85% |     99.49%     30.3      60.85%
+qkv.3       55,980,157   6.75% |     96.41%     14.3      94.50% |     96.41%     14.3      94.50%
+proj.3      20,167,055   6.46% |     98.06%     15.2      93.21% |     98.06%     15.2      93.21%
+fc.3        76,776,783   6.74% |     90.13%     13.4      99.23% |     90.13%     13.4      99.23%
+mproj.3     76,115,465   3.24% |     99.51%     30.7      60.18% |     99.51%     30.7      60.18%
+qkv.4       56,917,869   6.66% |     96.44%     14.5      93.98% |     96.44%     14.5      93.98%
+proj.4      21,368,147   6.38% |     97.79%     15.3      95.18% |     97.79%     15.3      95.18%
+fc.4        77,197,483   6.73% |     91.05%     13.5      99.06% |     91.05%     13.5      99.06%
+mproj.4     79,470,869   3.26% |     99.48%     30.5      65.14% |     99.48%     30.5      65.14%
+qkv.5       57,285,599   6.65% |     96.56%     14.5      92.36% |     96.56%     14.5      92.36%
+proj.5      19,299,096   6.57% |     98.37%     15.0      91.24% |     98.37%     15.0      91.24%
+fc.5        75,968,698   6.71% |     90.93%     13.6      98.94% |     90.93%     13.6      98.94%
+mproj.5     78,483,922   3.27% |     99.54%     30.4      59.19% |     99.54%     30.4      59.19%
+qkv.6       56,449,873   6.61% |     96.62%     14.6      91.72% |     96.62%     14.6      91.72%
+proj.6      21,345,009   6.40% |     97.89%     15.3      94.93% |     97.89%     15.3      94.93%
+fc.6        75,448,349   6.72% |     91.57%     13.6      98.71% |     91.57%     13.6      98.71%
+mproj.6     80,293,500   3.21% |     99.55%     31.0      56.19% |     99.55%     31.0      56.19%
+qkv.7       56,893,487   6.63% |     96.77%     14.6      91.44% |     96.77%     14.6      91.44%
+proj.7      21,361,910   6.47% |     97.61%     15.1      95.44% |     97.61%     15.1      95.44%
+fc.7        75,931,891   6.70% |     90.96%     13.6      99.01% |     90.96%     13.6      99.01%
+mproj.7     78,497,467   3.18% |     99.67%     31.4      42.40% |     99.67%     31.4      42.40%
+qkv.8       57,089,400   6.63% |     96.80%     14.6      91.91% |     96.80%     14.6      91.91%
+proj.8      22,227,647   6.38% |     97.80%     15.3      95.16% |     97.80%     15.3      95.16%
+fc.8        77,207,267   6.70% |     88.83%     13.3      99.39% |     88.83%     13.3      99.39%
+mproj.8     74,442,906   3.18% |     99.86%     31.4      18.39% |     99.86%     31.4      18.39%
+qkv.9       57,288,556   6.61% |     96.84%     14.7      91.28% |     96.84%     14.7      91.28%
+proj.9      21,395,254   6.41% |     97.86%     15.3      94.17% |     97.86%     15.3      94.17%
+fc.9        76,753,202   6.74% |     88.43%     13.1      99.31% |     88.43%     13.1      99.31%
+mproj.9     74,742,275   3.15% |     99.88%     31.7      14.93% |     99.88%     31.7      14.93%
+qkv.10      56,049,286   6.59% |     97.29%     14.8      89.34% |     97.29%     14.8      89.34%
+proj.10     20,845,543   6.45% |     98.34%     15.2      91.28% |     98.34%     15.2      91.28%
+fc.10       74,475,285   6.79% |     89.10%     13.1      99.20% |     89.10%     13.1      99.20%
+mproj.10    74,876,724   3.17% |     99.91%     31.5      12.04% |     99.91%     31.5      12.04%
+qkv.11      54,778,349   6.64% |     97.70%     14.7      83.86% |     97.70%     14.7      83.86%
+proj.11     20,179,129   6.50% |     99.08%     15.2      80.23% |     97.28%     15.0      93.69%
+fc.11       71,421,088   7.02% |     89.20%     12.7      98.94% |     88.79%     12.7      99.83%
+mproj.11    72,427,812   3.34% |     89.67%     26.8      99.57% |     84.67%     25.3     100.00%
+banks     2,737,920,452   5.58% |     95.41%     17.1             |     95.25%     17.1
+
+WHERE EACH PILE STOPS (D = the lowest diagonal read; D = 0: the whole pile; shares of the plate's piles, D >= 1 only)
+  qkv.0     (a) D=0 2.00%; D1:8.02% D2:23.87% D3:40.55% D4:23.58% D5:1.94% D6:0.04%
+  qkv.0     (b) D=0 2.00%; D1:8.02% D2:23.87% D3:40.55% D4:23.58% D5:1.94% D6:0.04%
+  proj.0    (a) D=0 4.65%; D1:17.56% D2:26.15% D3:30.16% D4:19.35% D5:2.13%
+  proj.0    (b) D=0 4.65%; D1:17.56% D2:26.15% D3:30.16% D4:19.35% D5:2.13%
+  fc.0      (a) D=0 1.94%; D1:7.29% D2:17.08% D3:24.72% D4:29.07% D5:13.69% D6:3.83% D7:1.25% D8:0.48% D9:0.27% D10:0.11% D11:0.05% D12:0.04% D13:0.05% D14:0.06% D15:0.06% D16:0.02% D17:0.00%
+  fc.0      (b) D=0 1.94%; D1:7.29% D2:17.08% D3:24.72% D4:29.07% D5:13.69% D6:3.83% D7:1.25% D8:0.48% D9:0.27% D10:0.11% D11:0.05% D12:0.04% D13:0.05% D14:0.06% D15:0.06% D16:0.02% D17:0.00%
+  mproj.0   (a) D=0 53.86%; D1:46.14%
+  mproj.0   (b) D=0 53.86%; D1:46.14%
+  qkv.1     (a) D=0 4.89%; D1:19.62% D2:35.60% D3:28.58% D4:9.00% D5:2.21% D6:0.10%
+  qkv.1     (b) D=0 4.89%; D1:19.62% D2:35.60% D3:28.58% D4:9.00% D5:2.21% D6:0.10%
+  proj.1    (a) D=0 9.78%; D1:36.13% D2:52.99% D3:1.10%
+  proj.1    (b) D=0 9.78%; D1:36.13% D2:52.99% D3:1.10%
+  fc.1      (a) D=0 0.76%; D1:3.02% D2:8.69% D3:20.01% D4:30.00% D5:21.84% D6:10.10% D7:3.10% D8:1.32% D9:0.56% D10:0.20% D11:0.12% D12:0.06% D13:0.03% D14:0.02% D15:0.03% D16:0.05% D17:0.05% D18:0.03% D19:0.00% D20:0.00% D21:0.00%
+  fc.1      (b) D=0 0.76%; D1:3.02% D2:8.69% D3:20.01% D4:30.00% D5:21.84% D6:10.10% D7:3.10% D8:1.32% D9:0.56% D10:0.20% D11:0.12% D12:0.06% D13:0.03% D14:0.02% D15:0.03% D16:0.05% D17:0.05% D18:0.03% D19:0.00% D20:0.00% D21:0.00%
+  mproj.1   (a) D=0 38.85%; D1:58.69% D2:2.45%
+  mproj.1   (b) D=0 38.85%; D1:58.69% D2:2.45%
+  qkv.2     (a) D=0 5.64%; D1:21.33% D2:36.27% D3:26.28% D4:9.04% D5:1.34% D6:0.09% D7:0.00%
+  qkv.2     (b) D=0 5.64%; D1:21.33% D2:36.27% D3:26.28% D4:9.04% D5:1.34% D6:0.09% D7:0.00%
+  proj.2    (a) D=0 7.22%; D1:28.05% D2:52.43% D3:12.30%
+  proj.2    (b) D=0 7.22%; D1:28.05% D2:52.43% D3:12.30%
+  fc.2      (a) D=0 0.80%; D1:3.20% D2:9.15% D3:20.12% D4:25.87% D5:21.23% D6:11.15% D7:3.75% D8:1.69% D9:0.94% D10:0.52% D11:0.40% D12:0.26% D13:0.17% D14:0.16% D15:0.20% D16:0.16% D17:0.10% D18:0.06% D19:0.02% D20:0.01% D21:0.01% D22:0.01% D23:0.01% D24:0.00% D25:0.01% D26:0.00%
+  fc.2      (b) D=0 0.80%; D1:3.20% D2:9.15% D3:20.12% D4:25.87% D5:21.23% D6:11.15% D7:3.75% D8:1.69% D9:0.94% D10:0.52% D11:0.40% D12:0.26% D13:0.17% D14:0.16% D15:0.20% D16:0.16% D17:0.10% D18:0.06% D19:0.02% D20:0.01% D21:0.01% D22:0.01% D23:0.01% D24:0.00% D25:0.01% D26:0.00%
+  mproj.2   (a) D=0 39.15%; D1:58.47% D2:2.38%
+  mproj.2   (b) D=0 39.15%; D1:58.47% D2:2.38%
+  qkv.3     (a) D=0 5.50%; D1:20.25% D2:28.70% D3:28.72% D4:15.05% D5:1.77% D6:0.01%
+  qkv.3     (b) D=0 5.50%; D1:20.25% D2:28.70% D3:28.72% D4:15.05% D5:1.77% D6:0.01%
+  proj.3    (a) D=0 6.79%; D1:26.99% D2:53.18% D3:12.86% D4:0.15% D5:0.03%
+  proj.3    (b) D=0 6.79%; D1:26.99% D2:53.18% D3:12.86% D4:0.15% D5:0.03%
+  fc.3      (a) D=0 0.77%; D1:3.11% D2:8.72% D3:18.66% D4:24.24% D5:22.45% D6:13.06% D7:5.17% D8:2.12% D9:0.90% D10:0.34% D11:0.18% D12:0.09% D13:0.05% D14:0.06% D15:0.05% D16:0.03% D17:0.00% D18:0.00% D19:0.00%
+  fc.3      (b) D=0 0.77%; D1:3.11% D2:8.72% D3:18.66% D4:24.24% D5:22.45% D6:13.06% D7:5.17% D8:2.12% D9:0.90% D10:0.34% D11:0.18% D12:0.09% D13:0.05% D14:0.06% D15:0.05% D16:0.03% D17:0.00% D18:0.00% D19:0.00%
+  mproj.3   (a) D=0 39.82%; D1:58.40% D2:1.78%
+  mproj.3   (b) D=0 39.82%; D1:58.40% D2:1.78%
+  qkv.4     (a) D=0 6.02%; D1:21.66% D2:27.14% D3:26.99% D4:15.77% D5:2.39% D6:0.02%
+  qkv.4     (b) D=0 6.02%; D1:21.66% D2:27.14% D3:26.99% D4:15.77% D5:2.39% D6:0.02%
+  proj.4    (a) D=0 4.82%; D1:19.43% D2:51.82% D3:23.56% D4:0.19% D5:0.14% D6:0.03%
+  proj.4    (b) D=0 4.82%; D1:19.43% D2:51.82% D3:23.56% D4:0.19% D5:0.14% D6:0.03%
+  fc.4      (a) D=0 0.94%; D1:3.73% D2:10.41% D3:21.11% D4:25.82% D5:20.28% D6:11.25% D7:3.87% D8:1.46% D9:0.62% D10:0.23% D11:0.11% D12:0.05% D13:0.03% D14:0.03% D15:0.03% D16:0.02% D17:0.00% D18:0.00% D19:0.00% D20:0.00%
+  fc.4      (b) D=0 0.94%; D1:3.73% D2:10.41% D3:21.11% D4:25.82% D5:20.28% D6:11.25% D7:3.87% D8:1.46% D9:0.62% D10:0.23% D11:0.11% D12:0.05% D13:0.03% D14:0.03% D15:0.03% D16:0.02% D17:0.00% D18:0.00% D19:0.00% D20:0.00%
+  mproj.4   (a) D=0 34.86%; D1:62.49% D2:2.65%
+  mproj.4   (b) D=0 34.86%; D1:62.49% D2:2.65%
+  qkv.5     (a) D=0 7.64%; D1:24.97% D2:22.84% D3:25.63% D4:17.08% D5:1.84%
+  qkv.5     (b) D=0 7.64%; D1:24.97% D2:22.84% D3:25.63% D4:17.08% D5:1.84%
+  proj.5    (a) D=0 8.76%; D1:34.80% D2:53.30% D3:2.96% D4:0.18% D5:0.01%
+  proj.5    (b) D=0 8.76%; D1:34.80% D2:53.30% D3:2.96% D4:0.18% D5:0.01%
+  fc.5      (a) D=0 1.06%; D1:4.15% D2:11.22% D3:20.99% D4:24.32% D5:20.36% D6:11.16% D7:4.06% D8:1.52% D9:0.63% D10:0.25% D11:0.11% D12:0.05% D13:0.04% D14:0.03% D15:0.03% D16:0.01% D17:0.00% D18:0.00% D19:0.00% D20:0.00% D22:0.00% D23:0.00%
+  fc.5      (b) D=0 1.06%; D1:4.15% D2:11.22% D3:20.99% D4:24.32% D5:20.36% D6:11.16% D7:4.06% D8:1.52% D9:0.63% D10:0.25% D11:0.11% D12:0.05% D13:0.04% D14:0.03% D15:0.03% D16:0.01% D17:0.00% D18:0.00% D19:0.00% D20:0.00% D22:0.00% D23:0.00%
+  mproj.5   (a) D=0 40.81%; D1:57.77% D2:1.42%
+  mproj.5   (b) D=0 40.81%; D1:57.77% D2:1.42%
+  qkv.6     (a) D=0 8.28%; D1:27.10% D2:21.61% D3:25.30% D4:15.55% D5:2.11% D6:0.04%
+  qkv.6     (b) D=0 8.28%; D1:27.10% D2:21.61% D3:25.30% D4:15.55% D5:2.11% D6:0.04%
+  proj.6    (a) D=0 5.07%; D1:20.19% D2:54.33% D3:20.22% D4:0.16% D5:0.04%
+  proj.6    (b) D=0 5.07%; D1:20.19% D2:54.33% D3:20.22% D4:0.16% D5:0.04%
+  fc.6      (a) D=0 1.29%; D1:5.12% D2:12.89% D3:22.35% D4:24.73% D5:18.72% D6:9.60% D7:3.36% D8:1.19% D9:0.45% D10:0.15% D11:0.07% D12:0.03% D13:0.02% D14:0.01% D15:0.01% D16:0.00% D17:0.00% D18:0.00% D22:0.00%
+  fc.6      (b) D=0 1.29%; D1:5.12% D2:12.89% D3:22.35% D4:24.73% D5:18.72% D6:9.60% D7:3.36% D8:1.19% D9:0.45% D10:0.15% D11:0.07% D12:0.03% D13:0.02% D14:0.01% D15:0.01% D16:0.00% D17:0.00% D18:0.00% D22:0.00%
+  mproj.6   (a) D=0 43.81%; D1:53.24% D2:2.93% D3:0.02%
+  mproj.6   (b) D=0 43.81%; D1:53.24% D2:2.93% D3:0.02%
+  qkv.7     (a) D=0 8.56%; D1:28.93% D2:19.46% D3:26.86% D4:15.17% D5:1.03% D6:0.00%
+  qkv.7     (b) D=0 8.56%; D1:28.93% D2:19.46% D3:26.86% D4:15.17% D5:1.03% D6:0.00%
+  proj.7    (a) D=0 4.56%; D1:18.19% D2:45.47% D3:31.38% D4:0.25% D5:0.12% D6:0.03%
+  proj.7    (b) D=0 4.56%; D1:18.19% D2:45.47% D3:31.38% D4:0.25% D5:0.12% D6:0.03%
+  fc.7      (a) D=0 0.99%; D1:3.83% D2:10.46% D3:20.30% D4:25.24% D5:21.77% D6:11.76% D7:3.59% D8:1.28% D9:0.50% D10:0.13% D11:0.05% D12:0.03% D13:0.02% D14:0.02% D15:0.02% D16:0.01% D17:0.00% D18:0.00% D19:0.00% D21:0.00% D22:0.00%
+  fc.7      (b) D=0 0.99%; D1:3.83% D2:10.46% D3:20.30% D4:25.24% D5:21.77% D6:11.76% D7:3.59% D8:1.28% D9:0.50% D10:0.13% D11:0.05% D12:0.03% D13:0.02% D14:0.02% D15:0.02% D16:0.01% D17:0.00% D18:0.00% D19:0.00% D21:0.00% D22:0.00%
+  mproj.7   (a) D=0 57.60%; D1:41.74% D2:0.49% D3:0.15% D4:0.01%
+  mproj.7   (b) D=0 57.60%; D1:41.74% D2:0.49% D3:0.15% D4:0.01%
+  qkv.8     (a) D=0 8.09%; D1:29.37% D2:19.98% D3:27.52% D4:13.43% D5:1.58% D6:0.03%
+  qkv.8     (b) D=0 8.09%; D1:29.37% D2:19.98% D3:27.52% D4:13.43% D5:1.58% D6:0.03%
+  proj.8    (a) D=0 4.84%; D1:19.35% D2:47.97% D3:27.46% D4:0.20% D5:0.13% D6:0.05%
+  proj.8    (b) D=0 4.84%; D1:19.35% D2:47.97% D3:27.46% D4:0.20% D5:0.13% D6:0.05%
+  fc.8      (a) D=0 0.61%; D1:2.40% D2:6.72% D3:14.50% D4:21.55% D5:23.23% D6:18.49% D7:8.05% D8:2.60% D9:1.02% D10:0.47% D11:0.26% D12:0.05% D13:0.01% D14:0.01% D15:0.01% D16:0.01% D17:0.00% D18:0.00% D19:0.00%
+  fc.8      (b) D=0 0.61%; D1:2.40% D2:6.72% D3:14.50% D4:21.55% D5:23.23% D6:18.49% D7:8.05% D8:2.60% D9:1.02% D10:0.47% D11:0.26% D12:0.05% D13:0.01% D14:0.01% D15:0.01% D16:0.01% D17:0.00% D18:0.00% D19:0.00%
+  mproj.8   (a) D=0 81.61%; D1:18.38% D2:0.01%
+  mproj.8   (b) D=0 81.61%; D1:18.38% D2:0.01%
+  qkv.9     (a) D=0 8.72%; D1:28.24% D2:20.68% D3:27.54% D4:13.58% D5:1.20% D6:0.05%
+  qkv.9     (b) D=0 8.72%; D1:28.24% D2:20.68% D3:27.54% D4:13.58% D5:1.20% D6:0.05%
+  proj.9    (a) D=0 5.83%; D1:23.42% D2:46.46% D3:24.01% D4:0.12% D5:0.10% D6:0.06%
+  proj.9    (b) D=0 5.83%; D1:23.42% D2:46.46% D3:24.01% D4:0.12% D5:0.10% D6:0.06%
+  fc.9      (a) D=0 0.69%; D1:2.80% D2:7.50% D3:14.53% D4:19.50% D5:21.67% D6:18.84% D7:9.25% D8:2.99% D9:1.17% D10:0.63% D11:0.29% D12:0.05% D13:0.02% D14:0.02% D15:0.02% D16:0.01% D17:0.00% D18:0.00% D20:0.00% D21:0.00%
+  fc.9      (b) D=0 0.69%; D1:2.80% D2:7.50% D3:14.53% D4:19.50% D5:21.67% D6:18.84% D7:9.25% D8:2.99% D9:1.17% D10:0.63% D11:0.29% D12:0.05% D13:0.02% D14:0.02% D15:0.02% D16:0.01% D17:0.00% D18:0.00% D20:0.00% D21:0.00%
+  mproj.9   (a) D=0 85.07%; D1:14.79% D2:0.12% D3:0.02%
+  mproj.9   (b) D=0 85.07%; D1:14.79% D2:0.12% D3:0.02%
+  qkv.10    (a) D=0 10.66%; D1:31.20% D2:23.25% D3:26.74% D4:7.97% D5:0.18% D6:0.00%
+  qkv.10    (b) D=0 10.66%; D1:31.20% D2:23.25% D3:26.74% D4:7.97% D5:0.18% D6:0.00%
+  proj.10   (a) D=0 8.72%; D1:33.15% D2:49.28% D3:8.79% D4:0.04%
+  proj.10   (b) D=0 8.72%; D1:33.15% D2:49.28% D3:8.79% D4:0.04%
+  fc.10     (a) D=0 0.80%; D1:3.20% D2:8.62% D3:16.95% D4:21.10% D5:22.62% D6:15.78% D7:6.47% D8:2.37% D9:1.01% D10:0.60% D11:0.24% D12:0.07% D13:0.04% D14:0.04% D15:0.04% D16:0.03% D17:0.01% D18:0.00% D19:0.00% D21:0.00% D22:0.00% D23:0.00%
+  fc.10     (b) D=0 0.80%; D1:3.20% D2:8.62% D3:16.95% D4:21.10% D5:22.62% D6:15.78% D7:6.47% D8:2.37% D9:1.01% D10:0.60% D11:0.24% D12:0.07% D13:0.04% D14:0.04% D15:0.04% D16:0.03% D17:0.01% D18:0.00% D19:0.00% D21:0.00% D22:0.00% D23:0.00%
+  mproj.10  (a) D=0 87.96%; D1:12.04%
+  mproj.10  (b) D=0 87.96%; D1:12.04%
+  qkv.11    (a) D=0 16.14%; D1:29.56% D2:26.43% D3:25.76% D4:2.09% D5:0.02% D6:0.00%
+  qkv.11    (b) D=0 16.14%; D1:29.56% D2:26.43% D3:25.76% D4:2.09% D5:0.02% D6:0.00%
+  proj.11   (a) D=0 19.77%; D1:58.44% D2:21.22% D3:0.57%
+  proj.11   (b) D=0 6.31%; D1:22.14% D2:38.15% D3:25.78% D4:6.67% D5:0.87% D6:0.10%
+  fc.11     (a) D=0 1.06%; D1:4.10% D2:10.51% D3:18.35% D4:20.78% D5:21.34% D6:14.65% D7:5.01% D8:2.01% D9:1.05% D10:0.67% D11:0.15% D12:0.08% D13:0.07% D14:0.07% D15:0.05% D16:0.03% D17:0.01% D18:0.00% D19:0.00%
+  fc.11     (b) D=0 0.17%; D1:1.27% D2:8.51% D3:20.24% D4:23.09% D5:22.71% D6:14.81% D7:5.01% D8:2.01% D9:1.05% D10:0.67% D11:0.15% D12:0.08% D13:0.07% D14:0.07% D15:0.05% D16:0.03% D17:0.01% D18:0.00% D19:0.00%
+  mproj.11  (a) D=0 0.43%; D1:1.71% D2:5.09% D3:12.59% D4:25.24% D5:37.47% D6:16.29% D7:1.19%
+  mproj.11  (b) D=0 0.00%; D1:0.07% D2:0.76% D3:4.66% D4:11.02% D5:24.42% D6:43.62% D7:11.45% D8:2.80% D9:1.01% D10:0.18%
+
+VERIFIED (each plate cut alone at its stops, carried to the top by core.push):
+  qkv.0     (a) final light, its level and its gauge the machine's own at 648/648
+  proj.0    (a) final light, its level and its gauge the machine's own at 648/648
+  fc.0      (a) final light, its level and its gauge the machine's own at 648/648
+  mproj.0   (a) final light, its level and its gauge the machine's own at 648/648
+  qkv.5     (a) final light, its level and its gauge the machine's own at 648/648
+  proj.5    (a) final light, its level and its gauge the machine's own at 648/648
+  fc.5      (a) final light, its level and its gauge the machine's own at 648/648
+  mproj.5   (a) final light, its level and its gauge the machine's own at 648/648
+  qkv.10    (a) final light, its level and its gauge the machine's own at 648/648
+  proj.10   (a) final light, its level and its gauge the machine's own at 648/648
+  fc.10     (a) final light, its level and its gauge the machine's own at 648/648
+  mproj.10  (a) final light, its level and its gauge the machine's own at 648/648
+  qkv.11    (a) final light, its level and its gauge the machine's own at 648/648; (b) top 5 proved 647/648 (blown 0), proofs naming other words 0
+  proj.11   (a) final light, its level and its gauge the machine's own at 648/648; (b) top 5 proved 647/648 (blown 0), proofs naming other words 0
+  fc.11     (a) final light, its level and its gauge the machine's own at 648/648; (b) top 5 proved 647/648 (blown 0), proofs naming other words 0
+  mproj.11  (a) final light, its level and its gauge the machine's own at 648/648; (b) top 5 proved 647/648 (blown 0), proofs naming other words 0
+(548s, max memory 3203 MB)

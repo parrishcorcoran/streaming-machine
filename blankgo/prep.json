@@ -1,0 +1,8 @@
+{
+ "build_tokens": 2391884,
+ "held_tokens": 247289,
+ "build_covered": 0.9009546449576986,
+ "held_covered": 0.8855832649248451,
+ "rows": 8193,
+ "least_common_kept": 31
+}

@@ -1,0 +1,402 @@
+[
+{
+"plate": "qkv.0",
+"neurons": 2304,
+"start_sets_power": 415,
+"finished_off_grid": 175925,
+"start_off_grid": 207594,
+"values": 1769472
+},
+{
+"plate": "proj.0",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 57302,
+"start_off_grid": 162689,
+"values": 589824
+},
+{
+"plate": "fc.0",
+"neurons": 3072,
+"start_sets_power": 3,
+"finished_off_grid": 175335,
+"start_off_grid": 216565,
+"values": 2359296
+},
+{
+"plate": "mproj.0",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 256604,
+"start_off_grid": 740747,
+"values": 2359296
+},
+{
+"plate": "qkv.1",
+"neurons": 2304,
+"start_sets_power": 380,
+"finished_off_grid": 167427,
+"start_off_grid": 202087,
+"values": 1769472
+},
+{
+"plate": "proj.1",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 50312,
+"start_off_grid": 139324,
+"values": 589824
+},
+{
+"plate": "fc.1",
+"neurons": 3072,
+"start_sets_power": 8,
+"finished_off_grid": 171429,
+"start_off_grid": 220833,
+"values": 2359296
+},
+{
+"plate": "mproj.1",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 275147,
+"start_off_grid": 746601,
+"values": 2359296
+},
+{
+"plate": "qkv.2",
+"neurons": 2304,
+"start_sets_power": 164,
+"finished_off_grid": 164025,
+"start_off_grid": 205734,
+"values": 1769472
+},
+{
+"plate": "proj.2",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 56023,
+"start_off_grid": 183526,
+"values": 589824
+},
+{
+"plate": "fc.2",
+"neurons": 3072,
+"start_sets_power": 3,
+"finished_off_grid": 180228,
+"start_off_grid": 222071,
+"values": 2359296
+},
+{
+"plate": "mproj.2",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 258664,
+"start_off_grid": 776890,
+"values": 2359296
+},
+{
+"plate": "qkv.3",
+"neurons": 2304,
+"start_sets_power": 151,
+"finished_off_grid": 161684,
+"start_off_grid": 192712,
+"values": 1769472
+},
+{
+"plate": "proj.3",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 54217,
+"start_off_grid": 189945,
+"values": 589824
+},
+{
+"plate": "fc.3",
+"neurons": 3072,
+"start_sets_power": 30,
+"finished_off_grid": 187765,
+"start_off_grid": 219060,
+"values": 2359296
+},
+{
+"plate": "mproj.3",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 259601,
+"start_off_grid": 773129,
+"values": 2359296
+},
+{
+"plate": "qkv.4",
+"neurons": 2304,
+"start_sets_power": 248,
+"finished_off_grid": 163988,
+"start_off_grid": 182037,
+"values": 1769472
+},
+{
+"plate": "proj.4",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 58890,
+"start_off_grid": 187107,
+"values": 589824
+},
+{
+"plate": "fc.4",
+"neurons": 3072,
+"start_sets_power": 127,
+"finished_off_grid": 195087,
+"start_off_grid": 222985,
+"values": 2359296
+},
+{
+"plate": "mproj.4",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 254051,
+"start_off_grid": 793071,
+"values": 2359296
+},
+{
+"plate": "qkv.5",
+"neurons": 2304,
+"start_sets_power": 161,
+"finished_off_grid": 162156,
+"start_off_grid": 197033,
+"values": 1769472
+},
+{
+"plate": "proj.5",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 53109,
+"start_off_grid": 193682,
+"values": 589824
+},
+{
+"plate": "fc.5",
+"neurons": 3072,
+"start_sets_power": 34,
+"finished_off_grid": 193955,
+"start_off_grid": 222645,
+"values": 2359296
+},
+{
+"plate": "mproj.5",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 248927,
+"start_off_grid": 817972,
+"values": 2359296
+},
+{
+"plate": "qkv.6",
+"neurons": 2304,
+"start_sets_power": 249,
+"finished_off_grid": 164795,
+"start_off_grid": 206346,
+"values": 1769472
+},
+{
+"plate": "proj.6",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 59783,
+"start_off_grid": 191698,
+"values": 589824
+},
+{
+"plate": "fc.6",
+"neurons": 3072,
+"start_sets_power": 10,
+"finished_off_grid": 189879,
+"start_off_grid": 224752,
+"values": 2359296
+},
+{
+"plate": "mproj.6",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 246275,
+"start_off_grid": 813029,
+"values": 2359296
+},
+{
+"plate": "qkv.7",
+"neurons": 2304,
+"start_sets_power": 469,
+"finished_off_grid": 191922,
+"start_off_grid": 262588,
+"values": 1769472
+},
+{
+"plate": "proj.7",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 86406,
+"start_off_grid": 198860,
+"values": 589824
+},
+{
+"plate": "fc.7",
+"neurons": 3072,
+"start_sets_power": 4,
+"finished_off_grid": 189749,
+"start_off_grid": 223615,
+"values": 2359296
+},
+{
+"plate": "mproj.7",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 254013,
+"start_off_grid": 845455,
+"values": 2359296
+},
+{
+"plate": "qkv.8",
+"neurons": 2304,
+"start_sets_power": 562,
+"finished_off_grid": 211664,
+"start_off_grid": 320213,
+"values": 1769472
+},
+{
+"plate": "proj.8",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 76363,
+"start_off_grid": 156596,
+"values": 589824
+},
+{
+"plate": "fc.8",
+"neurons": 3072,
+"start_sets_power": 10,
+"finished_off_grid": 185404,
+"start_off_grid": 225834,
+"values": 2359296
+},
+{
+"plate": "mproj.8",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 250508,
+"start_off_grid": 936394,
+"values": 2359296
+},
+{
+"plate": "qkv.9",
+"neurons": 2304,
+"start_sets_power": 631,
+"finished_off_grid": 217274,
+"start_off_grid": 344806,
+"values": 1769472
+},
+{
+"plate": "proj.9",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 52011,
+"start_off_grid": 107216,
+"values": 589824
+},
+{
+"plate": "fc.9",
+"neurons": 3072,
+"start_sets_power": 5,
+"finished_off_grid": 184974,
+"start_off_grid": 220634,
+"values": 2359296
+},
+{
+"plate": "mproj.9",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 253265,
+"start_off_grid": 983040,
+"values": 2359296
+},
+{
+"plate": "qkv.10",
+"neurons": 2304,
+"start_sets_power": 474,
+"finished_off_grid": 212761,
+"start_off_grid": 415010,
+"values": 1769472
+},
+{
+"plate": "proj.10",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 48505,
+"start_off_grid": 105984,
+"values": 589824
+},
+{
+"plate": "fc.10",
+"neurons": 3072,
+"start_sets_power": 1,
+"finished_off_grid": 182476,
+"start_off_grid": 219382,
+"values": 2359296
+},
+{
+"plate": "mproj.10",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 253420,
+"start_off_grid": 1064902,
+"values": 2359296
+},
+{
+"plate": "qkv.11",
+"neurons": 2304,
+"start_sets_power": 418,
+"finished_off_grid": 200798,
+"start_off_grid": 430340,
+"values": 1769472
+},
+{
+"plate": "proj.11",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 44902,
+"start_off_grid": 105138,
+"values": 589824
+},
+{
+"plate": "fc.11",
+"neurons": 3072,
+"start_sets_power": 11,
+"finished_off_grid": 188593,
+"start_off_grid": 220025,
+"values": 2359296
+},
+{
+"plate": "mproj.11",
+"neurons": 768,
+"start_sets_power": 0,
+"finished_off_grid": 281229,
+"start_off_grid": 1146047,
+"values": 2359296
+},
+{
+"plate": "head",
+"neurons": 50304,
+"start_sets_power": 237,
+"finished_off_grid": 258196,
+"start_off_grid": 6997629,
+"values": 38633472
+},
+{
+"plate": "embed",
+"neurons": 50304,
+"start_sets_power": 321,
+"finished_off_grid": 3009313,
+"start_off_grid": 3544401,
+"values": 38633472
+}
+]

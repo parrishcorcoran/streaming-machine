@@ -1,0 +1,11 @@
+{
+ "head": {
+  "weights": 38597376,
+  "raw_sheets": 164038848,
+  "raw_order": 48246720,
+  "raw_power": 402056,
+  "packed_sheets": 39318829,
+  "roundtrip": true,
+  "order_floor_bits": 309261314
+ }
+}

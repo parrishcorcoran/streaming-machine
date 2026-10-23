@@ -1,0 +1,150 @@
+plate_look.py  size 70m  order plain  texts 30  greedy True  seeds [20261006, 2, 3]  cases 113  late layers [4, 5]
+  fin: words = fp32's at 480 of 480; head piles identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs t+1): level moved [0.6873, 0.7716, 0.6548, 0.5395, 0.5647, 0.6941]; edges changed side [0.2389, 0.2328, 0.3217, 0.3106, 0.3185, 0.3147]
+  finished: next score below the level, median e-folds by layer [0.537, 0.592, 0.724, 1.27, 3.459, 5.532]
+  fin              top-1 100.0  top-5 100.0  greedy 480/480 texts 30/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 3.6s 1.03 GB
+  b:qkv.0          top-1  90.2  top-5 100.0  greedy 254/480 texts  9/30  | level moved   8   7   7   4   6   6 | first word  10   8  21  52  57  33 | edges   0   3   3   2   2   2 | 8.2s 1.04 GB
+  cb:qkv.0@20261006 top-1  92.3  top-5  99.7  greedy 272/480 texts 11/30  | level moved   7   8   7   4   6   8 | first word  11   9  20  52  57  32 | edges   0   2   3   3   2   2 | 7.8s 1.04 GB
+  cb:qkv.0@2       top-1  92.4  top-5 100.0  greedy 288/480 texts 11/30  | level moved   7   7   6   4   6   6 | first word  10   9  20  52  57  32 | edges   0   2   3   3   2   2 | 7.6s 1.04 GB
+  cb:qkv.0@3       top-1  94.1  top-5  99.8  greedy 273/480 texts 10/30  | level moved   7   6   6   4   5   5 | first word  10   9  21  54  57  33 | edges   0   2   3   2   2   2 | 7.8s 1.04 GB
+  b:proj.0         top-1  99.2  top-5 100.0  greedy 438/480 texts 27/30  | level moved   0   2   2   1   2   3 | first word  10   9  21  52  58  33 | edges   0   1   1   1   1   1 | 4.3s 1.04 GB
+  cb:proj.0@20261006 top-1  98.1  top-5 100.0  greedy 408/480 texts 23/30  | level moved   0   2   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   1   1   1   1   1 | 4.9s 1.04 GB
+  cb:proj.0@2      top-1  97.6  top-5 100.0  greedy 382/480 texts 20/30  | level moved   0   2   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   1   1   1   1   1 | 5.6s 1.04 GB
+  cb:proj.0@3      top-1  98.2  top-5 100.0  greedy 403/480 texts 21/30  | level moved   0   2   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   1   1   1   1   1 | 5.2s 1.04 GB
+  b:fc.0           top-1  89.2  top-5  99.5  greedy 259/480 texts  8/30  | level moved   0  10   8   5   8   8 | first word  10   9  21  52  58  33 | edges   7   3   4   4   3   3 | 8.1s 1.04 GB
+  cb:fc.0@20261006 top-1  87.1  top-5  99.7  greedy 231/480 texts  6/30  | level moved   0  10   9   5   7   8 | first word  10   9  20  52  58  32 | edges   8   3   4   4   3   3 | 9.1s 1.04 GB
+  cb:fc.0@2        top-1  88.9  top-5  99.7  greedy 211/480 texts  7/30  | level moved   0  11  10   5   8   9 | first word  10   9  22  52  58  34 | edges   8   3   5   4   3   3 | 9.0s 1.04 GB
+  cb:fc.0@3        top-1  87.0  top-5  99.7  greedy 236/480 texts  6/30  | level moved   0   9   8   4   7   7 | first word  10   9  22  52  55  32 | edges   8   3   4   4   3   3 | 9.2s 1.04 GB
+  b:mproj.0        top-1  95.3  top-5 100.0  greedy 335/480 texts 14/30  | level moved   0   5   4   3   4   5 | first word  10   9  21  52  57  33 | edges   0   2   2   2   2   1 | 6.8s 1.04 GB
+  cb:mproj.0@20261006 top-1  95.8  top-5 100.0  greedy 376/480 texts 19/30  | level moved   0   4   3   2   4   5 | first word  10   9  21  52  57  32 | edges   0   1   2   2   2   1 | 5.8s 1.04 GB
+  cb:mproj.0@2     top-1  95.5  top-5 100.0  greedy 352/480 texts 17/30  | level moved   0   5   4   2   4   4 | first word  10   9  21  52  57  33 | edges   0   1   2   2   1   1 | 6.5s 1.04 GB
+  cb:mproj.0@3     top-1  95.8  top-5  99.8  greedy 333/480 texts 16/30  | level moved   0   5   4   2   4   4 | first word  10   9  21  52  58  34 | edges   0   1   2   2   1   1 | 6.6s 1.04 GB
+  b:qkv.1          top-1  93.9  top-5 100.0  greedy 298/480 texts 12/30  | level moved   0   7   5   3   5   5 | first word  10   9  21  52  57  33 | edges   0   0   3   2   2   2 | 7.6s 1.04 GB
+  cb:qkv.1@20261006 top-1  92.9  top-5 100.0  greedy 259/480 texts 10/30  | level moved   0   7   4   3   4   5 | first word  10   9  21  52  58  32 | edges   0   0   3   2   2   2 | 8.5s 1.04 GB
+  cb:qkv.1@2       top-1  93.1  top-5 100.0  greedy 239/480 texts  6/30  | level moved   0   7   5   3   5   5 | first word  10   9  21  52  57  33 | edges   0   0   3   2   2   2 | 9.0s 1.04 GB
+  cb:qkv.1@3       top-1  93.9  top-5 100.0  greedy 307/480 texts 10/30  | level moved   0   7   5   3   4   5 | first word  10   9  21  52  57  33 | edges   0   0   3   2   2   2 | 8.3s 1.04 GB
+  b:proj.1         top-1  96.0  top-5  99.8  greedy 316/480 texts 15/30  | level moved   0   0   2   2   3   3 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 7.1s 1.04 GB
+  cb:proj.1@20261006 top-1  96.9  top-5 100.0  greedy 329/480 texts 17/30  | level moved   0   0   2   2   3   3 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 7.1s 1.04 GB
+  cb:proj.1@2      top-1  95.8  top-5 100.0  greedy 324/480 texts 15/30  | level moved   0   0   3   2   3   3 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 7.3s 1.04 GB
+  cb:proj.1@3      top-1  95.7  top-5 100.0  greedy 318/480 texts 16/30  | level moved   0   0   2   2   3   3 | first word  10   9  21  52  57  33 | edges   0   0   2   1   1   1 | 7.4s 1.04 GB
+  b:fc.1           top-1  91.5  top-5  99.7  greedy 256/480 texts 10/30  | level moved   0   0   6   4   5   6 | first word  10   9  21  52  57  33 | edges   0   4   3   3   2   2 | 8.5s 1.04 GB
+  cb:fc.1@20261006 top-1  92.6  top-5  99.8  greedy 288/480 texts 10/30  | level moved   0   0   6   3   5   5 | first word  10   9  21  52  57  33 | edges   0   4   3   3   2   2 | 7.8s 1.04 GB
+  cb:fc.1@2        top-1  92.0  top-5  99.8  greedy 256/480 texts  9/30  | level moved   0   0   6   3   6   5 | first word  10   9  21  52  58  33 | edges   0   4   3   3   2   2 | 8.6s 1.04 GB
+  cb:fc.1@3        top-1  91.8  top-5  99.7  greedy 225/480 texts  7/30  | level moved   0   0   7   4   6   6 | first word  10   9  21  53  57  34 | edges   0   4   3   3   2   2 | 8.9s 1.04 GB
+  b:mproj.1        top-1  98.1  top-5 100.0  greedy 385/480 texts 21/30  | level moved   0   0   1   1   2   2 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 5.4s 1.04 GB
+  cb:mproj.1@20261006 top-1  97.7  top-5 100.0  greedy 404/480 texts 22/30  | level moved   0   0   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 5.0s 1.04 GB
+  cb:mproj.1@2     top-1  98.1  top-5 100.0  greedy 380/480 texts 20/30  | level moved   0   0   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 5.6s 1.04 GB
+  cb:mproj.1@3     top-1  97.6  top-5 100.0  greedy 361/480 texts 19/30  | level moved   0   0   2   1   2   2 | first word  10   9  21  52  57  33 | edges   0   0   1   1   1   1 | 6.0s 1.04 GB
+  b:qkv.2          top-1  95.7  top-5 100.0  greedy 338/480 texts 17/30  | level moved   0   0   6   3   4   4 | first word  10   9  21  53  57  33 | edges   0   0   0   2   1   1 | 6.4s 1.04 GB
+  cb:qkv.2@20261006 top-1  93.9  top-5 100.0  greedy 271/480 texts 12/30  | level moved   0   0   5   2   4   4 | first word  10   9  21  53  58  33 | edges   0   0   0   2   2   1 | 7.7s 1.04 GB
+  cb:qkv.2@2       top-1  95.0  top-5 100.0  greedy 293/480 texts 13/30  | level moved   0   0   5   2   4   4 | first word  10   9  21  52  57  33 | edges   0   0   0   2   1   1 | 7.5s 1.04 GB
+  cb:qkv.2@3       top-1  95.5  top-5 100.0  greedy 352/480 texts 18/30  | level moved   0   0   5   2   4   4 | first word  10   9  21  52  56  34 | edges   0   0   0   2   1   1 | 6.3s 1.04 GB
+  b:proj.2         top-1  95.8  top-5 100.0  greedy 349/480 texts 16/30  | level moved   0   0   0   2   4   4 | first word  10   9  21  53  57  33 | edges   0   0   0   2   2   1 | 6.2s 1.04 GB
+  cb:proj.2@20261006 top-1  96.0  top-5 100.0  greedy 343/480 texts 16/30  | level moved   0   0   0   2   3   3 | first word  10   9  21  53  57  33 | edges   0   0   0   2   2   1 | 6.6s 1.04 GB
+  cb:proj.2@2      top-1  94.5  top-5 100.0  greedy 270/480 texts 12/30  | level moved   0   0   0   2   4   4 | first word  10   9  21  53  58  33 | edges   0   0   0   2   2   1 | 7.9s 1.04 GB
+  cb:proj.2@3      top-1  94.4  top-5 100.0  greedy 267/480 texts 11/30  | level moved   0   0   0   2   4   4 | first word  10   9  21  52  57  33 | edges   0   0   0   2   2   1 | 8.0s 1.04 GB
+  b:fc.2           top-1  90.5  top-5  99.5  greedy 251/480 texts  9/30  | level moved   0   0   0   4   6   6 | first word  10   9  21  52  58  33 | edges   0   0   6   3   3   2 | 8.3s 1.04 GB
+  cb:fc.2@20261006 top-1  92.0  top-5 100.0  greedy 239/480 texts  8/30  | level moved   0   0   0   4   6   6 | first word  10   9  21  53  58  33 | edges   0   0   6   3   2   2 | 8.4s 1.04 GB
+  cb:fc.2@2        top-1  92.8  top-5  99.8  greedy 294/480 texts 10/30  | level moved   0   0   0   4   6   6 | first word  10   9  21  53  58  34 | edges   0   0   6   3   2   2 | 7.8s 1.04 GB
+  cb:fc.2@3        top-1  93.2  top-5 100.0  greedy 279/480 texts 12/30  | level moved   0   0   0   4   6   6 | first word  10   9  21  53  58  34 | edges   0   0   6   3   3   2 | 7.8s 1.04 GB
+  b:mproj.2        top-1  92.6  top-5  99.8  greedy 326/480 texts 15/30  | level moved   0   0   0   1   3   3 | first word  10   9  21  52  57  33 | edges   0   0   0   1   1   1 | 6.7s 1.04 GB
+  cb:mproj.2@20261006 top-1  94.7  top-5  99.8  greedy 307/480 texts 15/30  | level moved   0   0   0   1   2   3 | first word  10   9  21  52  57  32 | edges   0   0   0   1   1   1 | 7.5s 1.04 GB
+  cb:mproj.2@2     top-1  92.6  top-5 100.0  greedy 311/480 texts 13/30  | level moved   0   0   0   1   3   4 | first word  10   9  21  52  57  33 | edges   0   0   0   1   1   1 | 6.9s 1.04 GB
+  cb:mproj.2@3     top-1  93.1  top-5  99.8  greedy 332/480 texts 17/30  | level moved   0   0   0   2   3   4 | first word  10   9  21  52  58  34 | edges   0   0   0   1   1   1 | 6.6s 1.04 GB
+  b:qkv.3          top-1  83.6  top-5  98.7  greedy 158/480 texts  3/30  | level moved   0   0   0  25  11  11 | first word  10   9  21  57  58  36 | edges   0   0   0   0   5   5 | 10.2s 1.04 GB
+  cb:qkv.3@20261006 top-1  80.4  top-5  97.9  greedy 137/480 texts  0/30  | level moved   0   0   0  29  13  13 | first word  10   9  21  39  58  35 | edges   0   0   0   0   5   5 | 11.4s 1.04 GB
+  cb:qkv.3@2       top-1  78.0  top-5  97.1  greedy 102/480 texts  0/30  | level moved   0   0   0  20  12  11 | first word  10   9  21  51  57  34 | edges   0   0   0   0   5   5 | 11.4s 1.04 GB
+  cb:qkv.3@3       top-1  79.9  top-5  98.6  greedy 123/480 texts  1/30  | level moved   0   0   0  27  16  15 | first word  10   9  21  40  59  33 | edges   0   0   0   0   5   6 | 11.2s 1.04 GB
+  b:proj.3         top-1  98.6  top-5 100.0  greedy 409/480 texts 23/30  | level moved   0   0   0   0   2   2 | first word  10   9  21  52  58  33 | edges   0   0   0   0   1   1 | 5.0s 1.04 GB
+  cb:proj.3@20261006 top-1  98.4  top-5 100.0  greedy 414/480 texts 23/30  | level moved   0   0   0   0   2   2 | first word  10   9  21  52  57  33 | edges   0   0   0   0   1   1 | 5.0s 1.04 GB
+  cb:proj.3@2      top-1  98.6  top-5 100.0  greedy 423/480 texts 24/30  | level moved   0   0   0   0   2   2 | first word  10   9  21  52  57  33 | edges   0   0   0   0   1   1 | 4.9s 1.04 GB
+  cb:proj.3@3      top-1  98.4  top-5 100.0  greedy 405/480 texts 23/30  | level moved   0   0   0   0   2   3 | first word  10   9  21  52  57  34 | edges   0   0   0   0   1   1 | 5.3s 1.04 GB
+  b:fc.3           top-1  93.2  top-5 100.0  greedy 274/480 texts 10/30  | level moved   0   0   0   0   6   5 | first word  10   9  21  52  57  33 | edges   0   0   0   4   2   2 | 8.3s 1.04 GB
+  cb:fc.3@20261006 top-1  92.8  top-5 100.0  greedy 247/480 texts  9/30  | level moved   0   0   0   0   5   6 | first word  10   9  21  52  57  33 | edges   0   0   0   4   2   2 | 8.4s 1.04 GB
+  cb:fc.3@2        top-1  92.0  top-5 100.0  greedy 276/480 texts 10/30  | level moved   0   0   0   0   6   5 | first word  10   9  21  52  57  33 | edges   0   0   0   4   2   2 | 8.0s 1.04 GB
+  cb:fc.3@3        top-1  93.4  top-5 100.0  greedy 282/480 texts 12/30  | level moved   0   0   0   0   5   5 | first word  10   9  21  52  57  33 | edges   0   0   0   4   2   2 | 7.6s 1.04 GB
+  b:mproj.3        top-1  97.6  top-5 100.0  greedy 413/480 texts 23/30  | level moved   0   0   0   0   3   2 | first word  10   9  21  52  57  33 | edges   0   0   0   0   1   1 | 5.0s 1.04 GB
+  cb:mproj.3@20261006 top-1  97.1  top-5 100.0  greedy 351/480 texts 17/30  | level moved   0   0   0   0   3   3 | first word  10   9  21  52  57  33 | edges   0   0   0   0   1   1 | 6.6s 1.04 GB
+  cb:mproj.3@2     top-1  97.6  top-5 100.0  greedy 339/480 texts 17/30  | level moved   0   0   0   0   2   3 | first word  10   9  21  52  57  33 | edges   0   0   0   0   1   1 | 6.9s 1.04 GB
+  cb:mproj.3@3     top-1  97.9  top-5 100.0  greedy 412/480 texts 23/30  | level moved   0   0   0   0   3   3 | first word  10   9  21  52  58  33 | edges   0   0   0   0   1   1 | 5.1s 1.04 GB
+  b:qkv.4          top-1  87.6  top-5  99.7  greedy 178/480 texts  2/30  | level moved   0   0   0   0  60   8 | first word  10   9  21  52  32  35 | edges   0   0   0   0   0   3 | 10.8s 1.04 GB
+  cb:qkv.4@20261006 top-1  87.8  top-5  99.5  greedy 207/480 texts  5/30  | level moved   0   0   0   0  64   9 | first word  10   9  21  52  26  35 | edges   0   0   0   0   0   3 | 10.3s 1.04 GB
+  cb:qkv.4@2       top-1  89.1  top-5  99.2  greedy 190/480 texts  2/30  | level moved   0   0   0   0  58   9 | first word  10   9  21  52  30  35 | edges   0   0   0   0   0   3 | 10.5s 1.04 GB
+  cb:qkv.4@3       top-1  88.4  top-5  99.5  greedy 182/480 texts  5/30  | level moved   0   0   0   0  53   8 | first word  10   9  21  52  35  34 | edges   0   0   0   0   0   3 | 10.0s 1.04 GB
+  b:proj.4         top-1 100.0  top-5 100.0  greedy 480/480 texts 30/30  | level moved   0   0   0   0   0   1 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 3.5s 1.04 GB
+  cb:proj.4@20261006 top-1  99.4  top-5 100.0  greedy 438/480 texts 26/30  | level moved   0   0   0   0   0   1 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 4.3s 1.04 GB
+  cb:proj.4@2      top-1  99.7  top-5 100.0  greedy 470/480 texts 29/30  | level moved   0   0   0   0   0   1 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 3.7s 1.04 GB
+  cb:proj.4@3      top-1  99.8  top-5 100.0  greedy 476/480 texts 29/30  | level moved   0   0   0   0   0   1 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 3.5s 1.04 GB
+  b:fc.4           top-1  93.4  top-5  99.8  greedy 251/480 texts 10/30  | level moved   0   0   0   0   0   6 | first word  10   9  21  52  57  33 | edges   0   0   0   0   4   2 | 8.2s 1.04 GB
+  cb:fc.4@20261006 top-1  92.4  top-5 100.0  greedy 222/480 texts  5/30  | level moved   0   0   0   0   0   5 | first word  10   9  21  52  57  33 | edges   0   0   0   0   4   2 | 9.1s 1.04 GB
+  cb:fc.4@2        top-1  93.7  top-5 100.0  greedy 313/480 texts 11/30  | level moved   0   0   0   0   0   6 | first word  10   9  21  52  57  33 | edges   0   0   0   0   4   2 | 7.1s 1.04 GB
+  cb:fc.4@3        top-1  91.3  top-5  99.7  greedy 217/480 texts  6/30  | level moved   0   0   0   0   0   6 | first word  10   9  21  52  57  32 | edges   0   0   0   0   4   2 | 9.4s 1.04 GB
+  b:mproj.4        top-1  96.0  top-5 100.0  greedy 332/480 texts 16/30  | level moved   0   0   0   0   0   4 | first word  10   9  21  52  57  34 | edges   0   0   0   0   0   2 | 6.9s 1.04 GB
+  cb:mproj.4@20261006 top-1  95.5  top-5 100.0  greedy 318/480 texts 12/30  | level moved   0   0   0   0   0   4 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   1 | 7.3s 1.04 GB
+  cb:mproj.4@2     top-1  95.7  top-5 100.0  greedy 326/480 texts 15/30  | level moved   0   0   0   0   0   3 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   1 | 7.0s 1.04 GB
+  cb:mproj.4@3     top-1  97.4  top-5 100.0  greedy 392/480 texts 22/30  | level moved   0   0   0   0   0   4 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   2 | 5.6s 1.04 GB
+  b:qkv.5          top-1  77.7  top-5  97.1  greedy 134/480 texts  1/30  | level moved   0   0   0   0   0  67 | first word  10   9  21  52  57  23 | edges   0   0   0   0   0   0 | 11.6s 1.04 GB
+  cb:qkv.5@20261006 top-1  76.4  top-5  96.5  greedy 117/480 texts  0/30  | level moved   0   0   0   0   0  72 | first word  10   9  21  52  57  19 | edges   0   0   0   0   0   0 | 12.4s 1.04 GB
+  cb:qkv.5@2       top-1  75.1  top-5  95.0  greedy  92/480 texts  1/30  | level moved   0   0   0   0   0  72 | first word  10   9  21  52  57  19 | edges   0   0   0   0   0   0 | 12.3s 1.04 GB
+  cb:qkv.5@3       top-1  75.2  top-5  95.5  greedy 142/480 texts  1/30  | level moved   0   0   0   0   0  72 | first word  10   9  21  52  57  17 | edges   0   0   0   0   0   0 | 10.7s 1.04 GB
+  b:proj.5         top-1  98.6  top-5 100.0  greedy 431/480 texts 25/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 4.8s 1.04 GB
+  cb:proj.5@20261006 top-1  98.6  top-5 100.0  greedy 415/480 texts 23/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 5.1s 1.04 GB
+  cb:proj.5@2      top-1  97.4  top-5 100.0  greedy 382/480 texts 20/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 6.1s 1.04 GB
+  cb:proj.5@3      top-1  98.1  top-5 100.0  greedy 404/480 texts 21/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 5.5s 1.04 GB
+  b:fc.5           top-1  92.1  top-5 100.0  greedy 248/480 texts  8/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   3 | 9.0s 1.04 GB
+  cb:fc.5@20261006 top-1  94.4  top-5 100.0  greedy 289/480 texts 12/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   3 | 7.6s 1.04 GB
+  cb:fc.5@2        top-1  91.2  top-5 100.0  greedy 303/480 texts 13/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   3 | 7.2s 1.04 GB
+  cb:fc.5@3        top-1  93.6  top-5 100.0  greedy 252/480 texts 10/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   3 | 8.1s 1.04 GB
+  b:mproj.5        top-1  92.4  top-5 100.0  greedy 258/480 texts  7/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 8.2s 1.04 GB
+  cb:mproj.5@20261006 top-1  93.4  top-5 100.0  greedy 296/480 texts 12/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 7.8s 1.04 GB
+  cb:mproj.5@2     top-1  93.9  top-5 100.0  greedy 283/480 texts 12/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 7.6s 1.04 GB
+  cb:mproj.5@3     top-1  93.2  top-5 100.0  greedy 231/480 texts  7/30  | level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0 | 8.6s 1.04 GB
+  b:K=qkv          top-1  65.0  top-5  92.0  greedy  70/480 texts  0/30  | level moved   8  10  10  25  59  68 | first word  10   8  20  58  35  23 | edges   0   3   4   4   6   6 | 11.8s 1.04 GB
+  cb:K=qkv@20261006 top-1  65.0  top-5  92.4  greedy  77/480 texts  0/30  | level moved   7  11  11  30  62  70 | first word  11   9  21  39  30  21 | edges   0   2   4   4   6   7 | 12.0s 1.04 GB
+  cb:K=qkv@2       top-1  62.1  top-5  88.3  greedy  65/480 texts  0/30  | level moved   7  10   9  20  61  69 | first word  10   9  20  51  28  22 | edges   0   2   4   4   5   7 | 12.4s 1.04 GB
+  cb:K=qkv@3       top-1  65.0  top-5  90.5  greedy  93/480 texts  0/30  | level moved   7   9  11  28  57  72 | first word  10   9  21  41  35  15 | edges   0   2   4   4   6   8 | 12.7s 1.04 GB
+  b:K=proj         top-1  93.4  top-5 100.0  greedy 267/480 texts  9/30  | level moved   0   2   3   3   5   6 | first word  10   9  21  52  58  33 | edges   0   1   2   2   2   2 | 8.5s 1.04 GB
+  cb:K=proj@20261006 top-1  94.9  top-5 100.0  greedy 293/480 texts 12/30  | level moved   0   2   3   3   5   5 | first word  10   9  21  53  57  33 | edges   0   1   2   2   2   2 | 8.3s 1.04 GB
+  cb:K=proj@2      top-1  91.8  top-5 100.0  greedy 243/480 texts  9/30  | level moved   0   2   3   3   5   5 | first word  10   9  21  53  58  33 | edges   0   1   2   2   2   2 | 9.3s 1.04 GB
+  cb:K=proj@3      top-1  90.5  top-5  99.8  greedy 214/480 texts  7/30  | level moved   0   2   3   3   5   5 | first word  10   9  21  52  57  33 | edges   0   1   2   2   2   2 | 9.9s 1.04 GB
+  b:K=fc           top-1  78.9  top-5  97.3  greedy 127/480 texts  1/30  | level moved   0  10  10   7  12  15 | first word  10   9  21  52  58  33 | edges   7   5   8   7   7   6 | 12.1s 1.04 GB
+  cb:K=fc@20261006 top-1  77.0  top-5  98.2  greedy 137/480 texts  2/30  | level moved   0  10  10   7  12  14 | first word  10   9  20  53  59  33 | edges   8   5   8   7   7   6 | 12.3s 1.04 GB
+  cb:K=fc@2        top-1  82.5  top-5  98.6  greedy 175/480 texts  4/30  | level moved   0  11  11   7  12  14 | first word  10   9  22  52  58  36 | edges   8   5   8   7   7   6 | 11.5s 1.04 GB
+  cb:K=fc@3        top-1  78.9  top-5  98.4  greedy 145/480 texts  1/30  | level moved   0   9  10   6  11  12 | first word  10   9  21  53  56  34 | edges   8   5   8   7   7   6 | 12.1s 1.04 GB
+  b:K=mproj        top-1  85.4  top-5  99.4  greedy 184/480 texts  3/30  | level moved   0   5   4   3   5   7 | first word  10   9  21  52  57  34 | edges   0   2   2   2   2   3 | 10.7s 1.04 GB
+  cb:K=mproj@20261006 top-1  87.3  top-5  99.0  greedy 247/480 texts  9/30  | level moved   0   4   4   2   5   7 | first word  10   9  21  52  57  32 | edges   0   1   2   2   2   3 | 9.8s 1.04 GB
+  cb:K=mproj@2     top-1  87.5  top-5  99.4  greedy 201/480 texts  3/30  | level moved   0   5   4   3   5   6 | first word  10   9  21  52  57  33 | edges   0   1   2   2   2   3 | 11.3s 1.04 GB
+  cb:K=mproj@3     top-1  86.0  top-5  99.7  greedy 199/480 texts  6/30  | level moved   0   5   5   3   5   6 | first word  10   9  21  52  59  34 | edges   0   1   2   2   2   3 | 10.8s 1.04 GB
+
+SUMMARY  (b = surviving foundation removed; cb = scrambled copy, three draws as min..max)
+  finished first-word share by layer: 10.3 8.8 21.0 52.0 57.3 32.9
+  plate     top-1 b     cb draws |   own-layer level moved b / cb |    late level moved b (layers 4-5) |    late first word b | edges own/next b | greedy texts b
+  qkv.0        90.2  92.3.. 94.1 |             7.8 /   6.7..  7.2 |                              6   6 |               57  33 |         2.5/ 2.9 | 9
+  proj.0       99.2  97.6.. 98.2 |             1.7 /   1.8..  1.9 |                              2   3 |               58  33 |         0.7/ 0.9 | 27
+  fc.0         89.2  87.0.. 88.9 |            10.2 /   8.9.. 11.0 |                              8   8 |               58  33 |         7.2/ 3.0 | 8
+  mproj.0      95.3  95.5.. 95.8 |             5.1 /   4.4..  4.7 |                              4   5 |               57  33 |         1.6/ 2.2 | 14
+  qkv.1        93.9  92.9.. 93.9 |             7.4 /   6.7..  7.1 |                              5   5 |               57  33 |         2.8/ 2.4 | 12
+  proj.1       96.0  95.7.. 96.9 |             2.3 /   2.2..  2.5 |                              3   3 |               57  33 |         1.5/ 1.4 | 15
+  fc.1         91.5  91.8.. 92.6 |             5.9 /   5.5..  7.1 |                              5   6 |               57  33 |         4.0/ 3.3 | 10
+  mproj.1      98.1  97.6.. 98.1 |             1.5 /   1.6..  2.1 |                              2   2 |               57  33 |         1.0/ 0.8 | 21
+  qkv.2        95.7  93.9.. 95.5 |             5.5 /   5.1..  5.4 |                              4   4 |               57  33 |         1.8/ 1.4 | 17
+  proj.2       95.8  94.4.. 96.0 |             2.3 /   1.9..  2.4 |                              4   4 |               57  33 |         1.8/ 1.6 | 16
+  fc.2         90.5  92.0.. 93.2 |             3.9 /   3.7..  3.8 |                              6   6 |               58  33 |         5.8/ 3.0 | 9
+  mproj.2      92.6  92.6.. 94.7 |             1.4 /   1.1..  1.6 |                              3   3 |               57  33 |         1.0/ 1.1 | 15
+  qkv.3        83.6  78.0.. 80.4 |            24.8 /  19.6.. 29.2 |                             11  11 |               58  36 |         4.6/ 4.5 | 3
+  proj.3       98.6  98.4.. 98.6 |             1.8 /   1.8..  2.0 |                              2   2 |               58  33 |         0.8/ 0.7 | 23
+  fc.3         93.2  92.0.. 93.4 |             6.1 /   5.3..  5.8 |                              6   5 |               57  33 |         4.5/ 2.4 | 10
+  mproj.3      97.6  97.1.. 97.9 |             2.6 /   2.4..  2.6 |                              3   2 |               57  33 |         1.2/ 1.0 | 23
+  qkv.4        87.6  87.8.. 89.1 |            59.9 /  53.2.. 64.2 |                             60   8 |               32  35 |            3.1/- | 2
+  proj.4      100.0  99.4.. 99.8 |             1.3 /   1.2..  1.4 |                              0   1 |               57  33 |            0.2/- | 30
+  fc.4         93.4  91.3.. 93.7 |             6.2 /   5.4..  5.9 |                              0   6 |               57  33 |         4.0/ 2.2 | 10
+  mproj.4      96.0  95.5.. 97.4 |             3.8 /   3.5..  3.6 |                              0   4 |               57  34 |            1.5/- | 16
+  qkv.5        77.7  75.1.. 76.4 |            67.4 /  71.7.. 72.1 |                              0  67 |               57  23 |                - | 1
+  proj.5       98.6  97.4.. 98.6 |                              - |                              0   0 |               57  33 |                - | 25
+  fc.5         92.1  91.2.. 94.4 |                              - |                              0   0 |               57  33 |            2.9/- | 8
+  mproj.5      92.4  93.2.. 93.9 |                              - |                              0   0 |               57  33 |                - | 7
+  K=qkv        65.0  62.1.. 65.0 |                  (every layer) |                             59  68 |               35  23 |         0.0..6.3 | 0
+  K=proj       93.4  90.5.. 94.9 |                  (every layer) |                              5   6 |               58  33 |         0.0..2.4 | 9
+  K=fc         78.9  77.0.. 82.5 |                  (every layer) |                             12  15 |               58  33 |         5.0..8.0 | 1
+  K=mproj      85.4  86.0.. 87.5 |                  (every layer) |                              5   7 |               57  34 |         0.0..2.9 | 3
+done 899s  peak memory 1.04 GB

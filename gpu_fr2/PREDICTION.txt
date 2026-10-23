@@ -1,0 +1,95 @@
+PREDICTION, written 2026-10-06 before base2_stream_fr2.swift was written or any count or timing was run.
+
+THE TASK'S PREDICTION (as given): dark lines save under 2% of the plate bytes; the plate read rises from about 65
+toward 90 GB/s; the 12 layers from about 3,150 to about 2,300-2,600 us; words/s after the prompt rise about 15-30%.
+
+THE SESSION'S PREDICTION (the session's own reasoning):
+
+1. DARK LINES (a line whose light is exactly 0 after the water level), counted at the new positions of the 30 prompts.
+   The water level puts the brightest line of a light at 15 places, so a line is dark only where it sits under about
+   1/65,536 of the brightest line.
+   - qkv and fc (the light is the stream): under 0.5% of the 768 lines at every layer. The stream's brightest channels
+     are tens to a few hundred times the usual line, so the dark cut-off sits far below where lines gather.
+   - proj (the light is the arrival's output): under 0.2% at every layer.
+   - mproj (the light is the bend's output): the bend gives the far-negative values almost nothing, so lines whose
+     value went below about -3.3 to -3.9 (at the gauge's scale) come out dark: about 2-8% of the 3,072 lines at most
+     layers, most likely about 4%, a few layers higher.
+   - all 48 plates together: 0.7-3% of the plate bytes, most likely about 1.5% (mproj is a third of the plate bytes).
+   - Where the dark lines sit does not matter to the bytes: each line's row is skipped on its own, so the saving is
+     the count alone. A shuffle of the lines would keep every count; it is not a control here and is not run.
+
+2. THE RULE FOR USING DARK LINES, fixed now, before the plate kernel is timed and before any words/s round:
+   the test (skip a line's row when its light is 0) is switched on for a plate kind (qkv, proj, fc, mproj; one
+   decision a kind, all 12 layers together) only if
+       (mean dark lines a new position at that kind, summed over its 12 plates) x (row bytes) / (the measured plate
+       read rate of the new kernel)
+     > (the measured cost of the test at that kind) = GPU time of the new kernel with the test present but never
+       firing (it compares with a value the light never takes) minus GPU time without the test,
+   both from one bench at one real position, many passes each. If the cost is below what the timer can see, the
+   rule counts it as zero and the kind needs at least one dark line a new position on average.
+
+3. THE PLATE READ (same arithmetic, every pile identical):
+   - The new kernel for one new position: each lane reads 16 bytes (8 neighbouring piles of a line) so a simdgroup
+     reads 512 contiguous bytes of one line; each lane carries 8 lines (all 8 rows asked for before any is summed);
+     8 simdgroups of a threadgroup carry 64 lines and add their piles in threadgroup memory; each threadgroup adds
+     its piles into the pile's two narrow 32-bit cells (bottom 15 digits, the rest) with whole-number atomic adds,
+     which are exact in any order. The separate step that added the slices (addparts1) is gone; the cells are
+     cleared by the water-level step just before, and the pile is formed once, where it is used.
+   - Plate read: 65 -> 85-95 GB/s (the top read's 93 is reached with 1-byte loads and 600K threads; here fewer threads
+     but 8 x 16 bytes in flight each).
+   - 12 layers: 3,150 -> 2,350-2,600 us (bytes 170 MB at about 90 GB/s = about 1,890 us, plus about 216 other steps
+     at about 2-3 us; 48 steps fewer than now).
+   - words/s after the prompt: +15 to +25% over base2_stream_fr.swift planes=3 (about 285-310 from about 249).
+   - words/s with the prompt: a smaller rise, +10 to +20% (the prompt runs on the machine's own kernels).
+   - the top read unchanged and exact as before (its kernels are not touched).
+
+----------------------------------------------------------------------------------------------------------------------
+ADDED AFTER THE DARK-LINE COUNT AND THE FIRST WIDE-READ BENCH, BEFORE ANY WORDS/S ROUND (session's)
+Measured, dark lines (count_dark.log, 450 new positions): qkv 0.036%, proj 0.032%, fc 0.046%, mproj 0.185% of the
+lines; all plates 150.7 KB of 169.87 MB a new token = 0.089% of the plate bytes. The task's "under 2%" held; the
+session's 2-8% at mproj was WRONG (0.07-0.40% by layer): the bend's far-negative values stay above 1/65,536 of the
+brightest neuron almost everywhere.
+Measured, plates alone (pbench, position 19 of prompt 0): machine's own read 68.5 GB/s (gate1 + addparts1), the wide
+read 88.5 GB/s (qkv 90.3, proj 72.1, fc 88.4, mproj 92.6). The test with nothing to skip costs +32.9 us over the 48
+plates (qkv +10.6, proj +12.0, fc +3.0, mproj +5.9); the counted dark lines would save at most about 1.7 us a token
+(mproj 104.7 KB / 92.6 GB/s = 1.1 us). THE RULE (fixed above) GIVES: dark lines used at NO plate kind.
+Wide read checked: every pile identical at all 48 plates and 450 new positions (37,324,800 piles); words as before.
+
+NEXT, fewer dependent steps (fuse=1): each light made, levelled (to16) and gauged (gauge_log) by the threadgroup that
+makes it, the cells for the next plate cleared there; the copy joined to the proj add; the head levels (heads16)
+joined to the qkv gauge; the bend joined to the fc gauge. 18 steps a layer -> 10 (+1 a token). Nothing changes value:
+the same arithmetic, sums of whole numbers in another order.
+PREDICTION: every pile, light and water level identical to fuse=0 and to the machine's own read at every plate
+(hashes over all 30 prompts); 12 layers about 2,690 -> 2,300-2,450 us (96 fewer steps at about 2.5-4 us); words/s
+after the prompt about +25 to +35% over base2_stream_fr.swift planes=3 (about 310-335).
+
+----------------------------------------------------------------------------------------------------------------------
+MEASURED (after the prediction above; all built -O; one process at a time)
+Exact:
+  - check=1, final build: every pile of the wide read equal to the machine's own read of the same plate with the same
+    light: 37,324,800 of 37,324,800 (48 plates x 450 new positions); top read top 5 and winner 480/480, no bound broken.
+  - rec=1: each new position's pile, light and water level at every plate hashed: 21,600 of 21,600 equal to the
+    machine's own read (plate=old top=plain) for plate=old planes=3, plate=wide fuse=0, plate=wide fuse=1, and
+    fuse=1 rev=1 (every line block, line and simdgroup sum in reverse: the order-free check).
+    Control: the weights' last digit cut (digits=15) gives 0 of 21,600 equal, though the words still match 29/30.
+  - words: the same 16 words as base2_stream.swift on 30/30 prompts (29/30 equal fp32, the same one difference).
+Speed, 10 alternating rounds, medians (speed_summary.txt):
+  base2_stream.swift   prompt included 220.0
+  base2_stream_fr p3   prompt included 231.3   after the prompt 245.1 (4.080 ms a token)
+  fr2 fuse=0           prompt included 264.8   after the prompt 285.4 (+16.4% over fr p3)
+  fr2 (default)        prompt included 273.9   after the prompt 297.2 (+21.3% over fr p3; +18.4% with the prompt;
+                       +24.5% over base2_stream.swift with the prompt)
+GPU time (bench=50, 3 runs each, medians): 12 layers fr p3 3,253.5 us (271.1 a layer); fr2 fuse=0 2,705.5 (225.5);
+  fr2 2,566.3 (213.9). Whole token 4,121 -> 3,438 us; top read 880 us in all.
+Plates alone (pbench=50): machine's own 68.6 GB/s (2,476 us), wide 89.4 GB/s (1,900 us): qkv 88.6, proj 81.7,
+  fc 88.2, mproj 94.6.
+AGAINST THE PREDICTIONS: task's: dark lines under 2% HELD (0.089%); plate read toward 90 HELD (89.4); layers
+  2,300-2,600 HELD (2,566); words/s after +15-30% HELD (+21.3%). Session's: mproj dark 2-8% WRONG (0.185%); plate
+  read 85-95 HELD; wide read alone, layers 2,350-2,600 just MISSED (2,706); joined steps 2,300-2,450 WRONG (2,566);
+  words/s +25-35% with the joined steps WRONG (+21.3%): the 96 removed steps cost about 1.5 us each in the machine,
+  not 2.5-4 (a removed step's drain was already overlapping the next one's start).
+WHAT BLOCKS NOW: the 12 layers spend 1,900 of 2,566 us reading the 170 MB of plates at about the memory's working
+  speed (89-95 GB/s, the top read 93). The joined steps' own work is about 27 us a layer (attend 8.8, the bend and
+  the mproj level 6.0, the two adds with their levels 4.0 and 3.8, the att level 2.4, the qkv gauge 1.5); the other
+  about 340 us a token is the hand-off: a one-threadgroup step uses one core of 8, then the next plate read ramps up.
+  From here the GPU only goes faster with fewer bytes; the photon cuts do not reach it.

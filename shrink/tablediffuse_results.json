@@ -1,0 +1,2770 @@
+[
+ {
+  "name": "v0 nearest c=32",
+  "spec": {
+   "c": 32,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 30,
+  "grain_steps2": 0.0831,
+  "photons_per_value": 2.37,
+  "stored_bytes": 34641243,
+  "MB": 34.641,
+  "bits_per_value": 7.18,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637386,
+  "width": 12,
+  "secs": 8.3
+ },
+ {
+  "name": "v0 nearest c=33",
+  "spec": {
+   "c": 33,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 28,
+  "grain_steps2": 0.0832,
+  "photons_per_value": 2.04,
+  "stored_bytes": 29795667,
+  "MB": 29.796,
+  "bits_per_value": 6.1757,
+  "roundtrip_ok": true,
+  "coder_bytes": 29791810,
+  "width": 11,
+  "secs": 7.2
+ },
+ {
+  "name": "v0 nearest c=34",
+  "spec": {
+   "c": 34,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 29,
+  "grain_steps2": 0.0835,
+  "photons_per_value": 1.711,
+  "stored_bytes": 24964643,
+  "MB": 24.965,
+  "bits_per_value": 5.1744,
+  "roundtrip_ok": true,
+  "coder_bytes": 24960786,
+  "width": 10,
+  "secs": 6.6
+ },
+ {
+  "name": "v0 nearest c=35",
+  "spec": {
+   "c": 35,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 28,
+  "grain_steps2": 0.0835,
+  "photons_per_value": 1.38,
+  "stored_bytes": 20156782,
+  "MB": 20.157,
+  "bits_per_value": 4.1779,
+  "roundtrip_ok": true,
+  "coder_bytes": 20152925,
+  "width": 9,
+  "secs": 6.4
+ },
+ {
+  "name": "v0 nearest c=36",
+  "spec": {
+   "c": 36,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 25,
+  "grain_steps2": 0.0834,
+  "photons_per_value": 1.054,
+  "stored_bytes": 15431404,
+  "MB": 15.431,
+  "bits_per_value": 3.1984,
+  "roundtrip_ok": true,
+  "coder_bytes": 15427547,
+  "width": 8,
+  "secs": 6.2
+ },
+ {
+  "name": "v0 nearest c=37",
+  "spec": {
+   "c": 37,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "words": 28,
+  "grain_steps2": 0.0834,
+  "photons_per_value": 1.029,
+  "stored_bytes": 14998202,
+  "MB": 14.998,
+  "bits_per_value": 3.1086,
+  "roundtrip_ok": true,
+  "coder_bytes": 14994345,
+  "width": 7,
+  "secs": 6.0
+ },
+ {
+  "name": "v0 screen phase c=32 seed=1",
+  "spec": {
+   "c": 32,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "words": 30,
+  "grain_steps2": 0.0832,
+  "stored_bytes": 34642433,
+  "MB": 34.642,
+  "bits_per_value": 7.1803,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637040,
+  "width": 12,
+  "secs": 8.0
+ },
+ {
+  "name": "v0 screen phase c=32 seed=2",
+  "spec": {
+   "c": 32,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "words": 29,
+  "grain_steps2": 0.0833,
+  "stored_bytes": 34644126,
+  "MB": 34.644,
+  "bits_per_value": 7.1806,
+  "roundtrip_ok": true,
+  "coder_bytes": 34638733,
+  "width": 12,
+  "secs": 8.2
+ },
+ {
+  "name": "v0 screen phase c=32 seed=3",
+  "spec": {
+   "c": 32,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "words": 29,
+  "grain_steps2": 0.0832,
+  "stored_bytes": 34642202,
+  "MB": 34.642,
+  "bits_per_value": 7.1802,
+  "roundtrip_ok": true,
+  "coder_bytes": 34636809,
+  "width": 12,
+  "secs": 8.1
+ },
+ {
+  "name": "v0 screen phase c=32 seed=4",
+  "spec": {
+   "c": 32,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "words": 30,
+  "grain_steps2": 0.0834,
+  "stored_bytes": 34642600,
+  "MB": 34.643,
+  "bits_per_value": 7.1803,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637207,
+  "width": 12,
+  "secs": 7.9
+ },
+ {
+  "name": "v0 screen phase c=34 seed=1",
+  "spec": {
+   "c": 34,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "words": 29,
+  "grain_steps2": 0.0834,
+  "stored_bytes": 24967220,
+  "MB": 24.967,
+  "bits_per_value": 5.1749,
+  "roundtrip_ok": true,
+  "coder_bytes": 24961827,
+  "width": 10,
+  "secs": 6.7
+ },
+ {
+  "name": "v0 screen phase c=34 seed=2",
+  "spec": {
+   "c": 34,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "words": 29,
+  "grain_steps2": 0.0833,
+  "stored_bytes": 24967918,
+  "MB": 24.968,
+  "bits_per_value": 5.175,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962525,
+  "width": 10,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=34 seed=3",
+  "spec": {
+   "c": 34,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "words": 30,
+  "grain_steps2": 0.0834,
+  "stored_bytes": 24967493,
+  "MB": 24.967,
+  "bits_per_value": 5.175,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962100,
+  "width": 10,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=34 seed=4",
+  "spec": {
+   "c": 34,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "words": 29,
+  "grain_steps2": 0.0831,
+  "stored_bytes": 24966771,
+  "MB": 24.967,
+  "bits_per_value": 5.1748,
+  "roundtrip_ok": true,
+  "coder_bytes": 24961378,
+  "width": 10,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=37 seed=1",
+  "spec": {
+   "c": 37,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "words": 27,
+  "grain_steps2": 0.0833,
+  "stored_bytes": 15001810,
+  "MB": 15.002,
+  "bits_per_value": 3.1094,
+  "roundtrip_ok": true,
+  "coder_bytes": 14996417,
+  "width": 7,
+  "secs": 5.8
+ },
+ {
+  "name": "v0 screen phase c=37 seed=2",
+  "spec": {
+   "c": 37,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "words": 24,
+  "grain_steps2": 0.0834,
+  "stored_bytes": 15001942,
+  "MB": 15.002,
+  "bits_per_value": 3.1094,
+  "roundtrip_ok": true,
+  "coder_bytes": 14996549,
+  "width": 7,
+  "secs": 5.7
+ },
+ {
+  "name": "v0 screen phase c=37 seed=3",
+  "spec": {
+   "c": 37,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "words": 23,
+  "grain_steps2": 0.0834,
+  "stored_bytes": 15006308,
+  "MB": 15.006,
+  "bits_per_value": 3.1103,
+  "roundtrip_ok": true,
+  "coder_bytes": 15000915,
+  "width": 7,
+  "secs": 5.7
+ },
+ {
+  "name": "v0 screen phase c=37 seed=4",
+  "spec": {
+   "c": 37,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "words": 27,
+  "grain_steps2": 0.0831,
+  "stored_bytes": 14995967,
+  "MB": 14.996,
+  "bits_per_value": 3.1082,
+  "roundtrip_ok": true,
+  "coder_bytes": 14990574,
+  "width": 7,
+  "secs": 5.7
+ },
+ {
+  "name": "v1 carry to next line, natural order, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines"
+  },
+  "predicted": null,
+  "stored_bytes": 34646845,
+  "MB": 34.647,
+  "bits_per_value": 7.1812,
+  "roundtrip_ok": true,
+  "coder_bytes": 34642988,
+  "width": 12,
+  "words": 29,
+  "grain_steps2": 0.1663,
+  "photons_per_value": 2.37,
+  "secs": 7.8
+ },
+ {
+  "name": "v1 carry to next line, natural order, c=33",
+  "spec": {
+   "c": 33,
+   "how": "lines"
+  },
+  "predicted": null,
+  "stored_bytes": 29803833,
+  "MB": 29.804,
+  "bits_per_value": 6.1774,
+  "roundtrip_ok": true,
+  "coder_bytes": 29799976,
+  "width": 11,
+  "words": 30,
+  "grain_steps2": 0.1663,
+  "photons_per_value": 2.04,
+  "secs": 6.9
+ },
+ {
+  "name": "v1 carry to next line, natural order, c=34",
+  "spec": {
+   "c": 34,
+   "how": "lines"
+  },
+  "predicted": null,
+  "stored_bytes": 24980736,
+  "MB": 24.981,
+  "bits_per_value": 5.1777,
+  "roundtrip_ok": true,
+  "coder_bytes": 24976879,
+  "width": 10,
+  "words": 26,
+  "grain_steps2": 0.1666,
+  "photons_per_value": 1.711,
+  "secs": 6.6
+ },
+ {
+  "name": "v1 carry to next line, natural order, c=35",
+  "spec": {
+   "c": 35,
+   "how": "lines"
+  },
+  "predicted": null,
+  "stored_bytes": 20186859,
+  "MB": 20.187,
+  "bits_per_value": 4.1841,
+  "roundtrip_ok": true,
+  "coder_bytes": 20183002,
+  "width": 9,
+  "words": 24,
+  "grain_steps2": 0.1667,
+  "photons_per_value": 1.381,
+  "secs": 6.2
+ },
+ {
+  "name": "v1 carry to next line, natural order, c=37",
+  "spec": {
+   "c": 37,
+   "how": "lines"
+  },
+  "predicted": null,
+  "stored_bytes": 15103231,
+  "MB": 15.103,
+  "bits_per_value": 3.1304,
+  "roundtrip_ok": true,
+  "coder_bytes": 15099374,
+  "width": 7,
+  "words": 18,
+  "grain_steps2": 0.1668,
+  "photons_per_value": 1.033,
+  "secs": 5.8
+ },
+ {
+  "name": "v1b carry to next line in the top's units, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines",
+   "unit": "top"
+  },
+  "predicted": null,
+  "stored_bytes": 34693708,
+  "MB": 34.694,
+  "bits_per_value": 7.1909,
+  "roundtrip_ok": true,
+  "coder_bytes": 34689851,
+  "width": 12,
+  "words": 29,
+  "grain_steps2": 0.2771,
+  "photons_per_value": 2.369,
+  "secs": 7.7
+ },
+ {
+  "name": "v1c carry to next line in E's units, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines",
+   "unit": "entry"
+  },
+  "predicted": null,
+  "stored_bytes": 34688463,
+  "MB": 34.688,
+  "bits_per_value": 7.1898,
+  "roundtrip_ok": true,
+  "coder_bytes": 34684606,
+  "width": 12,
+  "words": 22,
+  "grain_steps2": 2.2311,
+  "photons_per_value": 2.369,
+  "secs": 7.7
+ },
+ {
+  "name": "v2 carry to next line, random order seed=1, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 34646933,
+  "MB": 34.647,
+  "bits_per_value": 7.1812,
+  "roundtrip_ok": true,
+  "coder_bytes": 34643076,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.1663,
+  "photons_per_value": 2.37,
+  "secs": 7.8
+ },
+ {
+  "name": "v2 carry to next line, random order seed=1, c=34",
+  "spec": {
+   "c": 34,
+   "how": "lines",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 24980908,
+  "MB": 24.981,
+  "bits_per_value": 5.1777,
+  "roundtrip_ok": true,
+  "coder_bytes": 24977051,
+  "width": 10,
+  "words": 27,
+  "grain_steps2": 0.1666,
+  "photons_per_value": 1.71,
+  "secs": 6.5
+ },
+ {
+  "name": "v2 carry to next line, random order seed=1, c=37",
+  "spec": {
+   "c": 37,
+   "how": "lines",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 15103244,
+  "MB": 15.103,
+  "bits_per_value": 3.1304,
+  "roundtrip_ok": true,
+  "coder_bytes": 15099387,
+  "width": 7,
+  "words": 20,
+  "grain_steps2": 0.1667,
+  "photons_per_value": 1.033,
+  "secs": 5.8
+ },
+ {
+  "name": "v2 carry to next line, random order seed=2, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 34647038,
+  "MB": 34.647,
+  "bits_per_value": 7.1812,
+  "roundtrip_ok": true,
+  "coder_bytes": 34643181,
+  "width": 12,
+  "words": 29,
+  "grain_steps2": 0.1663,
+  "photons_per_value": 2.37,
+  "secs": 7.7
+ },
+ {
+  "name": "v2 carry to next line, random order seed=2, c=34",
+  "spec": {
+   "c": 34,
+   "how": "lines",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 24980757,
+  "MB": 24.981,
+  "bits_per_value": 5.1777,
+  "roundtrip_ok": true,
+  "coder_bytes": 24976900,
+  "width": 10,
+  "words": 30,
+  "grain_steps2": 0.1666,
+  "photons_per_value": 1.71,
+  "secs": 6.5
+ },
+ {
+  "name": "v2 carry to next line, random order seed=2, c=37",
+  "spec": {
+   "c": 37,
+   "how": "lines",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 15103400,
+  "MB": 15.103,
+  "bits_per_value": 3.1305,
+  "roundtrip_ok": true,
+  "coder_bytes": 15099543,
+  "width": 7,
+  "words": 20,
+  "grain_steps2": 0.1667,
+  "photons_per_value": 1.033,
+  "secs": 5.8
+ },
+ {
+  "name": "v3 carry to next word, vocabulary order, c=32",
+  "spec": {
+   "c": 32,
+   "how": "words"
+  },
+  "predicted": null,
+  "stored_bytes": 34645933,
+  "MB": 34.646,
+  "bits_per_value": 7.181,
+  "roundtrip_ok": true,
+  "coder_bytes": 34642076,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.1664,
+  "photons_per_value": 2.37,
+  "secs": 7.6
+ },
+ {
+  "name": "v3 carry to next word, vocabulary order, c=34",
+  "spec": {
+   "c": 34,
+   "how": "words"
+  },
+  "predicted": null,
+  "stored_bytes": 24981081,
+  "MB": 24.981,
+  "bits_per_value": 5.1778,
+  "roundtrip_ok": true,
+  "coder_bytes": 24977224,
+  "width": 10,
+  "words": 28,
+  "grain_steps2": 0.1667,
+  "photons_per_value": 1.71,
+  "secs": 6.4
+ },
+ {
+  "name": "v3 carry to next word, vocabulary order, c=37",
+  "spec": {
+   "c": 37,
+   "how": "words"
+  },
+  "predicted": null,
+  "stored_bytes": 15104733,
+  "MB": 15.105,
+  "bits_per_value": 3.1307,
+  "roundtrip_ok": true,
+  "coder_bytes": 15100876,
+  "width": 7,
+  "words": 16,
+  "grain_steps2": 0.1669,
+  "photons_per_value": 1.033,
+  "secs": 5.7
+ },
+ {
+  "name": "v3 carry to next word, random word order seed=1, c=32",
+  "spec": {
+   "c": 32,
+   "how": "words",
+   "word_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 34645764,
+  "MB": 34.646,
+  "bits_per_value": 7.181,
+  "roundtrip_ok": true,
+  "coder_bytes": 34641907,
+  "width": 12,
+  "words": 29,
+  "grain_steps2": 0.1664,
+  "photons_per_value": 2.37,
+  "secs": 7.6
+ },
+ {
+  "name": "v3 carry to next word, random word order seed=1, c=34",
+  "spec": {
+   "c": 34,
+   "how": "words",
+   "word_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 24980555,
+  "MB": 24.981,
+  "bits_per_value": 5.1777,
+  "roundtrip_ok": true,
+  "coder_bytes": 24976698,
+  "width": 10,
+  "words": 27,
+  "grain_steps2": 0.1667,
+  "photons_per_value": 1.71,
+  "secs": 6.6
+ },
+ {
+  "name": "v3 carry to next word, random word order seed=1, c=37",
+  "spec": {
+   "c": 37,
+   "how": "words",
+   "word_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 15103650,
+  "MB": 15.104,
+  "bits_per_value": 3.1305,
+  "roundtrip_ok": true,
+  "coder_bytes": 15099793,
+  "width": 7,
+  "words": 12,
+  "grain_steps2": 0.1668,
+  "photons_per_value": 1.033,
+  "secs": 5.7
+ },
+ {
+  "name": "v4 second order along lines, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines2"
+  },
+  "predicted": null,
+  "stored_bytes": 34670051,
+  "MB": 34.67,
+  "bits_per_value": 7.186,
+  "roundtrip_ok": true,
+  "coder_bytes": 34666194,
+  "width": 12,
+  "words": 29,
+  "grain_steps2": 0.4993,
+  "photons_per_value": 2.37,
+  "secs": 8.1
+ },
+ {
+  "name": "v4 second order along lines, c=34",
+  "spec": {
+   "c": 34,
+   "how": "lines2"
+  },
+  "predicted": null,
+  "stored_bytes": 25019922,
+  "MB": 25.02,
+  "bits_per_value": 5.1858,
+  "roundtrip_ok": true,
+  "coder_bytes": 25016065,
+  "width": 10,
+  "words": 25,
+  "grain_steps2": 0.4994,
+  "photons_per_value": 1.711,
+  "secs": 7.0
+ },
+ {
+  "name": "v4 second order along lines, c=37",
+  "spec": {
+   "c": 37,
+   "how": "lines2"
+  },
+  "predicted": null,
+  "stored_bytes": 15429009,
+  "MB": 15.429,
+  "bits_per_value": 3.1979,
+  "roundtrip_ok": true,
+  "coder_bytes": 15425152,
+  "width": 7,
+  "words": 13,
+  "grain_steps2": 0.4994,
+  "photons_per_value": 1.048,
+  "secs": 6.1
+ },
+ {
+  "name": "v5 Floyd-Steinberg 2-D, c=32",
+  "spec": {
+   "c": 32,
+   "how": "fs"
+  },
+  "predicted": null,
+  "stored_bytes": 34642734,
+  "MB": 34.643,
+  "bits_per_value": 7.1803,
+  "roundtrip_ok": true,
+  "coder_bytes": 34638877,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.1105,
+  "photons_per_value": 2.37,
+  "secs": 8.3
+ },
+ {
+  "name": "v5 Floyd-Steinberg 2-D, c=34",
+  "spec": {
+   "c": 34,
+   "how": "fs"
+  },
+  "predicted": null,
+  "stored_bytes": 24972547,
+  "MB": 24.973,
+  "bits_per_value": 5.176,
+  "roundtrip_ok": true,
+  "coder_bytes": 24968690,
+  "width": 10,
+  "words": 30,
+  "grain_steps2": 0.1109,
+  "photons_per_value": 1.71,
+  "secs": 7.1
+ },
+ {
+  "name": "v5 Floyd-Steinberg 2-D, c=37",
+  "spec": {
+   "c": 37,
+   "how": "fs"
+  },
+  "predicted": null,
+  "stored_bytes": 15041199,
+  "MB": 15.041,
+  "bits_per_value": 3.1176,
+  "roundtrip_ok": true,
+  "coder_bytes": 15037342,
+  "width": 7,
+  "words": 23,
+  "grain_steps2": 0.111,
+  "photons_per_value": 1.03,
+  "secs": 6.2
+ },
+ {
+  "name": "v6 CONTROL v1's grain on random words of the same line, c=32",
+  "spec": {
+   "c": 32,
+   "how": "lines",
+   "shuffle": 632
+  },
+  "words": 28,
+  "grain_steps2": 0.1663,
+  "secs": 5.5
+ },
+ {
+  "name": "v6 CONTROL v1's grain on random words of the same line, c=34",
+  "spec": {
+   "c": 34,
+   "how": "lines",
+   "shuffle": 634
+  },
+  "words": 29,
+  "grain_steps2": 0.1666,
+  "secs": 5.4
+ },
+ {
+  "name": "v6 prints of v1 c=37 (carry to next line)",
+  "spec": {
+   "c": 37,
+   "how": "lines"
+  },
+  "words": 18,
+  "words_top_only": 17,
+  "words_entry_only": 28,
+  "secs": 13.4
+ },
+ {
+  "name": "v6 CONTROL v1's grain on random words of the same line, c=37",
+  "spec": {
+   "c": 37,
+   "how": "lines",
+   "shuffle": 637
+  },
+  "words": 11,
+  "grain_steps2": 0.1668,
+  "secs": 18.6
+ },
+ {
+  "name": "v6 prints of nearest c=37",
+  "spec": {
+   "c": 37,
+   "how": "nearest"
+  },
+  "words": 28,
+  "words_top_only": 29,
+  "words_entry_only": 30,
+  "secs": 13.3
+ },
+ {
+  "name": "v7 spread the owed grain over the word's remaining lines, c=32",
+  "spec": {
+   "c": 32,
+   "how": "spread"
+  },
+  "predicted": null,
+  "stored_bytes": 34641252,
+  "MB": 34.641,
+  "bits_per_value": 7.18,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637395,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.0839,
+  "photons_per_value": 2.37,
+  "secs": 8.1
+ },
+ {
+  "name": "v7 spread the owed grain over the word's remaining lines, c=34",
+  "spec": {
+   "c": 34,
+   "how": "spread"
+  },
+  "predicted": null,
+  "stored_bytes": 24966352,
+  "MB": 24.966,
+  "bits_per_value": 5.1747,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962495,
+  "width": 10,
+  "words": 28,
+  "grain_steps2": 0.0843,
+  "photons_per_value": 1.711,
+  "secs": 6.8
+ },
+ {
+  "name": "v7 spread the owed grain over the word's remaining lines, c=37",
+  "spec": {
+   "c": 37,
+   "how": "spread"
+  },
+  "predicted": null,
+  "stored_bytes": 14999063,
+  "MB": 14.999,
+  "bits_per_value": 3.1088,
+  "roundtrip_ok": true,
+  "coder_bytes": 14995206,
+  "width": 7,
+  "words": 28,
+  "grain_steps2": 0.0842,
+  "photons_per_value": 1.029,
+  "secs": 6.0
+ },
+ {
+  "name": "v7 spread, random line order seed=1, c=32",
+  "spec": {
+   "c": 32,
+   "how": "spread",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 34641290,
+  "MB": 34.641,
+  "bits_per_value": 7.18,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637433,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.0839,
+  "photons_per_value": 2.37,
+  "secs": 7.8
+ },
+ {
+  "name": "v7 spread, random line order seed=1, c=34",
+  "spec": {
+   "c": 34,
+   "how": "spread",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 24966609,
+  "MB": 24.967,
+  "bits_per_value": 5.1748,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962752,
+  "width": 10,
+  "words": 29,
+  "grain_steps2": 0.0843,
+  "photons_per_value": 1.711,
+  "secs": 6.6
+ },
+ {
+  "name": "v7 spread, random line order seed=1, c=37",
+  "spec": {
+   "c": 37,
+   "how": "spread",
+   "line_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 14998999,
+  "MB": 14.999,
+  "bits_per_value": 3.1088,
+  "roundtrip_ok": true,
+  "coder_bytes": 14995142,
+  "width": 7,
+  "words": 28,
+  "grain_steps2": 0.0842,
+  "photons_per_value": 1.029,
+  "secs": 6.1
+ },
+ {
+  "name": "v7 spread, random line order seed=2, c=32",
+  "spec": {
+   "c": 32,
+   "how": "spread",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 34641292,
+  "MB": 34.641,
+  "bits_per_value": 7.18,
+  "roundtrip_ok": true,
+  "coder_bytes": 34637435,
+  "width": 12,
+  "words": 30,
+  "grain_steps2": 0.0839,
+  "photons_per_value": 2.37,
+  "secs": 8.4
+ },
+ {
+  "name": "v7 spread, random line order seed=2, c=34",
+  "spec": {
+   "c": 34,
+   "how": "spread",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 24967266,
+  "MB": 24.967,
+  "bits_per_value": 5.1749,
+  "roundtrip_ok": true,
+  "coder_bytes": 24963409,
+  "width": 10,
+  "words": 28,
+  "grain_steps2": 0.0843,
+  "photons_per_value": 1.71,
+  "secs": 6.9
+ },
+ {
+  "name": "v7 spread, random line order seed=2, c=37",
+  "spec": {
+   "c": 37,
+   "how": "spread",
+   "line_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 14999552,
+  "MB": 15.0,
+  "bits_per_value": 3.1089,
+  "roundtrip_ok": true,
+  "coder_bytes": 14995695,
+  "width": 7,
+  "words": 28,
+  "grain_steps2": 0.0842,
+  "photons_per_value": 1.029,
+  "secs": 6.2
+ },
+ {
+  "name": "v7b spread on screen phase c=34 seed=1",
+  "spec": {
+   "c": 34,
+   "how": "spread on a shifted grid",
+   "seed": 1
+  },
+  "stored_bytes": 24967293,
+  "MB": 24.967,
+  "bits_per_value": 5.1749,
+  "roundtrip_ok": true,
+  "coder_bytes": 24961900,
+  "width": 10,
+  "words": 29,
+  "grain_steps2": 0.0841,
+  "secs": 7.0
+ },
+ {
+  "name": "v7b spread on screen phase c=34 seed=2",
+  "spec": {
+   "c": 34,
+   "how": "spread on a shifted grid",
+   "seed": 2
+  },
+  "stored_bytes": 24968203,
+  "MB": 24.968,
+  "bits_per_value": 5.1751,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962810,
+  "width": 10,
+  "words": 29,
+  "grain_steps2": 0.0841,
+  "secs": 7.1
+ },
+ {
+  "name": "v7b spread on screen phase c=34 seed=3",
+  "spec": {
+   "c": 34,
+   "how": "spread on a shifted grid",
+   "seed": 3
+  },
+  "stored_bytes": 24967744,
+  "MB": 24.968,
+  "bits_per_value": 5.175,
+  "roundtrip_ok": true,
+  "coder_bytes": 24962351,
+  "width": 10,
+  "words": 30,
+  "grain_steps2": 0.0842,
+  "secs": 7.1
+ },
+ {
+  "name": "v7b spread on screen phase c=34 seed=4",
+  "spec": {
+   "c": 34,
+   "how": "spread on a shifted grid",
+   "seed": 4
+  },
+  "stored_bytes": 24966809,
+  "MB": 24.967,
+  "bits_per_value": 5.1748,
+  "roundtrip_ok": true,
+  "coder_bytes": 24961416,
+  "width": 10,
+  "words": 28,
+  "grain_steps2": 0.0839,
+  "secs": 6.9
+ },
+ {
+  "name": "v7b spread on screen phase c=37 seed=1",
+  "spec": {
+   "c": 37,
+   "how": "spread on a shifted grid",
+   "seed": 1
+  },
+  "stored_bytes": 15002601,
+  "MB": 15.003,
+  "bits_per_value": 3.1096,
+  "roundtrip_ok": true,
+  "coder_bytes": 14997208,
+  "width": 7,
+  "words": 26,
+  "grain_steps2": 0.0841,
+  "secs": 6.2
+ },
+ {
+  "name": "v7b spread on screen phase c=37 seed=2",
+  "spec": {
+   "c": 37,
+   "how": "spread on a shifted grid",
+   "seed": 2
+  },
+  "stored_bytes": 15002601,
+  "MB": 15.003,
+  "bits_per_value": 3.1096,
+  "roundtrip_ok": true,
+  "coder_bytes": 14997208,
+  "width": 7,
+  "words": 24,
+  "grain_steps2": 0.0842,
+  "secs": 6.2
+ },
+ {
+  "name": "v7b spread on screen phase c=37 seed=3",
+  "spec": {
+   "c": 37,
+   "how": "spread on a shifted grid",
+   "seed": 3
+  },
+  "stored_bytes": 15007100,
+  "MB": 15.007,
+  "bits_per_value": 3.1105,
+  "roundtrip_ok": true,
+  "coder_bytes": 15001707,
+  "width": 7,
+  "words": 22,
+  "grain_steps2": 0.0842,
+  "secs": 6.2
+ },
+ {
+  "name": "v7b spread on screen phase c=37 seed=4",
+  "spec": {
+   "c": 37,
+   "how": "spread on a shifted grid",
+   "seed": 4
+  },
+  "stored_bytes": 14996817,
+  "MB": 14.997,
+  "bits_per_value": 3.1084,
+  "roundtrip_ok": true,
+  "coder_bytes": 14991424,
+  "width": 7,
+  "words": 27,
+  "grain_steps2": 0.0839,
+  "secs": 6.2
+ },
+ {
+  "name": "v8 counting coder, nearest c=32",
+  "spec": {
+   "c": 32,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "stored_bytes": 33952707,
+  "MB": 33.953,
+  "bits_per_value": 7.0373,
+  "roundtrip_ok": true,
+  "coder_bytes": 33948848,
+  "width": 12,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0831,
+  "photons_per_value": 2.37,
+  "secs": 8.3
+ },
+ {
+  "name": "v8 counting coder, nearest c=33",
+  "spec": {
+   "c": 33,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "stored_bytes": 29145710,
+  "MB": 29.146,
+  "bits_per_value": 6.041,
+  "roundtrip_ok": true,
+  "coder_bytes": 29141851,
+  "width": 11,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0832,
+  "photons_per_value": 2.04,
+  "secs": 7.2
+ },
+ {
+  "name": "v8 counting coder, nearest c=34",
+  "spec": {
+   "c": 34,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "stored_bytes": 24358267,
+  "MB": 24.358,
+  "bits_per_value": 5.0487,
+  "roundtrip_ok": true,
+  "coder_bytes": 24354408,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0835,
+  "photons_per_value": 1.711,
+  "secs": 6.5
+ },
+ {
+  "name": "v8 counting coder, nearest c=35",
+  "spec": {
+   "c": 35,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "stored_bytes": 19595973,
+  "MB": 19.596,
+  "bits_per_value": 4.0616,
+  "roundtrip_ok": true,
+  "coder_bytes": 19592114,
+  "width": 9,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0835,
+  "photons_per_value": 1.38,
+  "secs": 6.2
+ },
+ {
+  "name": "v8 counting coder, nearest c=37",
+  "spec": {
+   "c": 37,
+   "how": "nearest"
+  },
+  "predicted": null,
+  "stored_bytes": 14566325,
+  "MB": 14.566,
+  "bits_per_value": 3.0191,
+  "roundtrip_ok": true,
+  "coder_bytes": 14562466,
+  "width": 7,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0834,
+  "photons_per_value": 1.029,
+  "secs": 5.7
+ },
+ {
+  "name": "v0 screen phase c=33 seed=1",
+  "spec": {
+   "c": 33,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "stored_bytes": 29797007,
+  "MB": 29.797,
+  "bits_per_value": 6.176,
+  "roundtrip_ok": true,
+  "coder_bytes": 29791614,
+  "width": 11,
+  "words": 29,
+  "grain_steps2": 0.0833,
+  "secs": 6.8
+ },
+ {
+  "name": "v0 screen phase c=33 seed=2",
+  "spec": {
+   "c": 33,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "stored_bytes": 29798244,
+  "MB": 29.798,
+  "bits_per_value": 6.1762,
+  "roundtrip_ok": true,
+  "coder_bytes": 29792851,
+  "width": 11,
+  "words": 29,
+  "grain_steps2": 0.0832,
+  "secs": 7.1
+ },
+ {
+  "name": "v0 screen phase c=33 seed=3",
+  "spec": {
+   "c": 33,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "stored_bytes": 29798732,
+  "MB": 29.799,
+  "bits_per_value": 6.1763,
+  "roundtrip_ok": true,
+  "coder_bytes": 29793339,
+  "width": 11,
+  "words": 28,
+  "grain_steps2": 0.0833,
+  "secs": 7.2
+ },
+ {
+  "name": "v0 screen phase c=33 seed=4",
+  "spec": {
+   "c": 33,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "stored_bytes": 29797336,
+  "MB": 29.797,
+  "bits_per_value": 6.176,
+  "roundtrip_ok": true,
+  "coder_bytes": 29791943,
+  "width": 11,
+  "words": 29,
+  "grain_steps2": 0.0835,
+  "secs": 7.1
+ },
+ {
+  "name": "v0 screen phase c=35 seed=1",
+  "spec": {
+   "c": 35,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "stored_bytes": 20157112,
+  "MB": 20.157,
+  "bits_per_value": 4.1779,
+  "roundtrip_ok": true,
+  "coder_bytes": 20151719,
+  "width": 9,
+  "words": 27,
+  "grain_steps2": 0.0834,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=35 seed=2",
+  "spec": {
+   "c": 35,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "stored_bytes": 20156298,
+  "MB": 20.156,
+  "bits_per_value": 4.1778,
+  "roundtrip_ok": true,
+  "coder_bytes": 20150905,
+  "width": 9,
+  "words": 27,
+  "grain_steps2": 0.0834,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=35 seed=3",
+  "spec": {
+   "c": 35,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "stored_bytes": 20158500,
+  "MB": 20.159,
+  "bits_per_value": 4.1782,
+  "roundtrip_ok": true,
+  "coder_bytes": 20153107,
+  "width": 9,
+  "words": 30,
+  "grain_steps2": 0.0834,
+  "secs": 6.6
+ },
+ {
+  "name": "v0 screen phase c=35 seed=4",
+  "spec": {
+   "c": 35,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "stored_bytes": 20156462,
+  "MB": 20.156,
+  "bits_per_value": 4.1778,
+  "roundtrip_ok": true,
+  "coder_bytes": 20151069,
+  "width": 9,
+  "words": 28,
+  "grain_steps2": 0.0835,
+  "secs": 6.6
+ },
+ {
+  "name": "v9 parity D8, c=32",
+  "spec": {
+   "c": 32,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 33349105,
+  "MB": 33.349,
+  "bits_per_value": 6.9122,
+  "roundtrip_ok": true,
+  "coder_bytes": 33343715,
+  "code_word_bytes": 0,
+  "width": 12,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0901,
+  "secs": 8.8
+ },
+ {
+  "name": "v9 parity D8, c=32 phase seed=1",
+  "spec": {
+   "c": 32,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 33350408,
+  "MB": 33.35,
+  "bits_per_value": 6.9125,
+  "roundtrip_ok": true,
+  "coder_bytes": 33343482,
+  "code_word_bytes": 0,
+  "width": 12,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0902,
+  "secs": 8.8
+ },
+ {
+  "name": "v9 parity D8, c=32 phase seed=2",
+  "spec": {
+   "c": 32,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 33352454,
+  "MB": 33.352,
+  "bits_per_value": 6.9129,
+  "roundtrip_ok": true,
+  "coder_bytes": 33345528,
+  "code_word_bytes": 0,
+  "width": 12,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0902,
+  "secs": 9.1
+ },
+ {
+  "name": "v9 parity D8, c=32 phase seed=3",
+  "spec": {
+   "c": 32,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 33350867,
+  "MB": 33.351,
+  "bits_per_value": 6.9126,
+  "roundtrip_ok": true,
+  "coder_bytes": 33343941,
+  "code_word_bytes": 0,
+  "width": 12,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0902,
+  "secs": 9.7
+ },
+ {
+  "name": "v9 parity D8, c=32 phase seed=4",
+  "spec": {
+   "c": 32,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 33353900,
+  "MB": 33.354,
+  "bits_per_value": 6.9132,
+  "roundtrip_ok": true,
+  "coder_bytes": 33346974,
+  "code_word_bytes": 0,
+  "width": 12,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0903,
+  "secs": 9.5
+ },
+ {
+  "name": "v9 parity D8, c=33",
+  "spec": {
+   "c": 33,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 28545985,
+  "MB": 28.546,
+  "bits_per_value": 5.9167,
+  "roundtrip_ok": true,
+  "coder_bytes": 28540595,
+  "code_word_bytes": 0,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0902,
+  "secs": 8.7
+ },
+ {
+  "name": "v9 parity D8, c=33 phase seed=1",
+  "spec": {
+   "c": 33,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 28546748,
+  "MB": 28.547,
+  "bits_per_value": 5.9168,
+  "roundtrip_ok": true,
+  "coder_bytes": 28539822,
+  "code_word_bytes": 0,
+  "width": 11,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0902,
+  "secs": 8.7
+ },
+ {
+  "name": "v9 parity D8, c=33 phase seed=2",
+  "spec": {
+   "c": 33,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 28547883,
+  "MB": 28.548,
+  "bits_per_value": 5.9171,
+  "roundtrip_ok": true,
+  "coder_bytes": 28540957,
+  "code_word_bytes": 0,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0902,
+  "secs": 8.9
+ },
+ {
+  "name": "v9 parity D8, c=33 phase seed=3",
+  "spec": {
+   "c": 33,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 28548419,
+  "MB": 28.548,
+  "bits_per_value": 5.9172,
+  "roundtrip_ok": true,
+  "coder_bytes": 28541493,
+  "code_word_bytes": 0,
+  "width": 11,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0903,
+  "secs": 9.0
+ },
+ {
+  "name": "v9 parity D8, c=33 phase seed=4",
+  "spec": {
+   "c": 33,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 28550387,
+  "MB": 28.55,
+  "bits_per_value": 5.9176,
+  "roundtrip_ok": true,
+  "coder_bytes": 28543461,
+  "code_word_bytes": 0,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0904,
+  "secs": 9.0
+ },
+ {
+  "name": "v9 parity D8, c=34",
+  "spec": {
+   "c": 34,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 23763463,
+  "MB": 23.763,
+  "bits_per_value": 4.9254,
+  "roundtrip_ok": true,
+  "coder_bytes": 23758073,
+  "code_word_bytes": 0,
+  "width": 10,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0904,
+  "secs": 8.4
+ },
+ {
+  "name": "v9 parity D8, c=34 phase seed=1",
+  "spec": {
+   "c": 34,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 23763203,
+  "MB": 23.763,
+  "bits_per_value": 4.9254,
+  "roundtrip_ok": true,
+  "coder_bytes": 23756277,
+  "code_word_bytes": 0,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0903,
+  "secs": 8.3
+ },
+ {
+  "name": "v9 parity D8, c=34 phase seed=2",
+  "spec": {
+   "c": 34,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 23764607,
+  "MB": 23.765,
+  "bits_per_value": 4.9256,
+  "roundtrip_ok": true,
+  "coder_bytes": 23757681,
+  "code_word_bytes": 0,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0902,
+  "secs": 8.4
+ },
+ {
+  "name": "v9 parity D8, c=34 phase seed=3",
+  "spec": {
+   "c": 34,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 23764171,
+  "MB": 23.764,
+  "bits_per_value": 4.9256,
+  "roundtrip_ok": true,
+  "coder_bytes": 23757245,
+  "code_word_bytes": 0,
+  "width": 10,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0904,
+  "secs": 8.4
+ },
+ {
+  "name": "v9 parity D8, c=34 phase seed=4",
+  "spec": {
+   "c": 34,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 23762249,
+  "MB": 23.762,
+  "bits_per_value": 4.9252,
+  "roundtrip_ok": true,
+  "coder_bytes": 23755323,
+  "code_word_bytes": 0,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0901,
+  "secs": 8.4
+ },
+ {
+  "name": "v9 parity D8, c=35",
+  "spec": {
+   "c": 35,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 19005858,
+  "MB": 19.006,
+  "bits_per_value": 3.9393,
+  "roundtrip_ok": true,
+  "coder_bytes": 19000468,
+  "code_word_bytes": 0,
+  "width": 9,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.0904,
+  "secs": 8.2
+ },
+ {
+  "name": "v9 parity D8, c=35 phase seed=1",
+  "spec": {
+   "c": 35,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 19005996,
+  "MB": 19.006,
+  "bits_per_value": 3.9393,
+  "roundtrip_ok": true,
+  "coder_bytes": 18999070,
+  "code_word_bytes": 0,
+  "width": 9,
+  "nmax": 255,
+  "words": 26,
+  "grain_steps2": 0.0903,
+  "secs": 8.0
+ },
+ {
+  "name": "v9 parity D8, c=35 phase seed=2",
+  "spec": {
+   "c": 35,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 19007097,
+  "MB": 19.007,
+  "bits_per_value": 3.9396,
+  "roundtrip_ok": true,
+  "coder_bytes": 19000171,
+  "code_word_bytes": 0,
+  "width": 9,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0903,
+  "secs": 8.2
+ },
+ {
+  "name": "v9 parity D8, c=35 phase seed=3",
+  "spec": {
+   "c": 35,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 19007375,
+  "MB": 19.007,
+  "bits_per_value": 3.9396,
+  "roundtrip_ok": true,
+  "coder_bytes": 19000449,
+  "code_word_bytes": 0,
+  "width": 9,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.0903,
+  "secs": 8.0
+ },
+ {
+  "name": "v9 parity D8, c=35 phase seed=4",
+  "spec": {
+   "c": 35,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 19006360,
+  "MB": 19.006,
+  "bits_per_value": 3.9394,
+  "roundtrip_ok": true,
+  "coder_bytes": 18999434,
+  "code_word_bytes": 0,
+  "width": 9,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0904,
+  "secs": 8.1
+ },
+ {
+  "name": "v10 parity E8, c=32",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 31519520,
+  "MB": 31.52,
+  "bits_per_value": 6.533,
+  "roundtrip_ok": true,
+  "coder_bytes": 29103064,
+  "code_word_bytes": 2411066,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.1433,
+  "secs": 9.3
+ },
+ {
+  "name": "v10 parity E8, c=32 phase seed=1",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 31522906,
+  "MB": 31.523,
+  "bits_per_value": 6.5337,
+  "roundtrip_ok": true,
+  "coder_bytes": 29103458,
+  "code_word_bytes": 2412522,
+  "width": 11,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 9.3
+ },
+ {
+  "name": "v10 parity E8, c=32 phase seed=2",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 31523683,
+  "MB": 31.524,
+  "bits_per_value": 6.5338,
+  "roundtrip_ok": true,
+  "coder_bytes": 29103750,
+  "code_word_bytes": 2413007,
+  "width": 11,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 9.2
+ },
+ {
+  "name": "v10 parity E8, c=32 phase seed=3",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 31523987,
+  "MB": 31.524,
+  "bits_per_value": 6.5339,
+  "roundtrip_ok": true,
+  "coder_bytes": 29104453,
+  "code_word_bytes": 2412608,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.1433,
+  "secs": 9.3
+ },
+ {
+  "name": "v10 parity E8, c=32 phase seed=4",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 31527815,
+  "MB": 31.528,
+  "bits_per_value": 6.5347,
+  "roundtrip_ok": true,
+  "coder_bytes": 29106551,
+  "code_word_bytes": 2414338,
+  "width": 11,
+  "nmax": 255,
+  "words": 30,
+  "grain_steps2": 0.1434,
+  "secs": 8.7
+ },
+ {
+  "name": "v10 parity E8, c=33",
+  "spec": {
+   "c": 33,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 26732522,
+  "MB": 26.733,
+  "bits_per_value": 5.5408,
+  "roundtrip_ok": true,
+  "coder_bytes": 24316466,
+  "code_word_bytes": 2410666,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 8.1
+ },
+ {
+  "name": "v10 parity E8, c=33 phase seed=1",
+  "spec": {
+   "c": 33,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 26734679,
+  "MB": 26.735,
+  "bits_per_value": 5.5412,
+  "roundtrip_ok": true,
+  "coder_bytes": 24315938,
+  "code_word_bytes": 2411815,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 8.2
+ },
+ {
+  "name": "v10 parity E8, c=33 phase seed=2",
+  "spec": {
+   "c": 33,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 26735256,
+  "MB": 26.735,
+  "bits_per_value": 5.5414,
+  "roundtrip_ok": true,
+  "coder_bytes": 24315883,
+  "code_word_bytes": 2412447,
+  "width": 10,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1434,
+  "secs": 8.8
+ },
+ {
+  "name": "v10 parity E8, c=33 phase seed=3",
+  "spec": {
+   "c": 33,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 26736638,
+  "MB": 26.737,
+  "bits_per_value": 5.5416,
+  "roundtrip_ok": true,
+  "coder_bytes": 24317117,
+  "code_word_bytes": 2412595,
+  "width": 10,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1433,
+  "secs": 8.7
+ },
+ {
+  "name": "v10 parity E8, c=33 phase seed=4",
+  "spec": {
+   "c": 33,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 26737608,
+  "MB": 26.738,
+  "bits_per_value": 5.5418,
+  "roundtrip_ok": true,
+  "coder_bytes": 24316086,
+  "code_word_bytes": 2414596,
+  "width": 10,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 8.9
+ },
+ {
+  "name": "v10 parity E8, c=34",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 21973963,
+  "MB": 21.974,
+  "bits_per_value": 4.5545,
+  "roundtrip_ok": true,
+  "coder_bytes": 19554485,
+  "code_word_bytes": 2414088,
+  "width": 9,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 8.6
+ },
+ {
+  "name": "v10 parity E8, c=34 phase seed=1",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 21972042,
+  "MB": 21.972,
+  "bits_per_value": 4.5541,
+  "roundtrip_ok": true,
+  "coder_bytes": 19551073,
+  "code_word_bytes": 2414043,
+  "width": 9,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 8.5
+ },
+ {
+  "name": "v10 parity E8, c=34 phase seed=2",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 21971857,
+  "MB": 21.972,
+  "bits_per_value": 4.5541,
+  "roundtrip_ok": true,
+  "coder_bytes": 19550960,
+  "code_word_bytes": 2413971,
+  "width": 9,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 8.6
+ },
+ {
+  "name": "v10 parity E8, c=34 phase seed=3",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 21973310,
+  "MB": 21.973,
+  "bits_per_value": 4.5544,
+  "roundtrip_ok": true,
+  "coder_bytes": 19551652,
+  "code_word_bytes": 2414732,
+  "width": 9,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 8.6
+ },
+ {
+  "name": "v10 parity E8, c=34 phase seed=4",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 21971258,
+  "MB": 21.971,
+  "bits_per_value": 4.5539,
+  "roundtrip_ok": true,
+  "coder_bytes": 19550924,
+  "code_word_bytes": 2413408,
+  "width": 9,
+  "nmax": 255,
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 8.5
+ },
+ {
+  "name": "v10 parity E8, c=35",
+  "spec": {
+   "c": 35,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 17268110,
+  "MB": 17.268,
+  "bits_per_value": 3.5791,
+  "roundtrip_ok": true,
+  "coder_bytes": 14847762,
+  "code_word_bytes": 2414958,
+  "width": 8,
+  "nmax": 255,
+  "words": 27,
+  "grain_steps2": 0.1434,
+  "secs": 7.4
+ },
+ {
+  "name": "v10 parity E8, c=35 phase seed=1",
+  "spec": {
+   "c": 35,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 17271207,
+  "MB": 17.271,
+  "bits_per_value": 3.5798,
+  "roundtrip_ok": true,
+  "coder_bytes": 14850562,
+  "code_word_bytes": 2413719,
+  "width": 8,
+  "nmax": 255,
+  "words": 22,
+  "grain_steps2": 0.1434,
+  "secs": 7.3
+ },
+ {
+  "name": "v10 parity E8, c=35 phase seed=2",
+  "spec": {
+   "c": 35,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 17269214,
+  "MB": 17.269,
+  "bits_per_value": 3.5794,
+  "roundtrip_ok": true,
+  "coder_bytes": 14847029,
+  "code_word_bytes": 2415259,
+  "width": 8,
+  "nmax": 255,
+  "words": 25,
+  "grain_steps2": 0.1434,
+  "secs": 7.3
+ },
+ {
+  "name": "v10 parity E8, c=35 phase seed=3",
+  "spec": {
+   "c": 35,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 17274000,
+  "MB": 17.274,
+  "bits_per_value": 3.5803,
+  "roundtrip_ok": true,
+  "coder_bytes": 14852215,
+  "code_word_bytes": 2414859,
+  "width": 8,
+  "nmax": 255,
+  "words": 27,
+  "grain_steps2": 0.1434,
+  "secs": 7.3
+ },
+ {
+  "name": "v10 parity E8, c=35 phase seed=4",
+  "spec": {
+   "c": 35,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 17270344,
+  "MB": 17.27,
+  "bits_per_value": 3.5796,
+  "roundtrip_ok": true,
+  "coder_bytes": 14849309,
+  "code_word_bytes": 2414109,
+  "width": 8,
+  "nmax": 255,
+  "words": 25,
+  "grain_steps2": 0.1434,
+  "secs": 7.5
+ },
+ {
+  "name": "v0 screen phase c=36 seed=1",
+  "spec": {
+   "c": 36,
+   "how": "nearest on a shifted grid",
+   "seed": 1
+  },
+  "stored_bytes": 15436669,
+  "MB": 15.437,
+  "bits_per_value": 3.1995,
+  "roundtrip_ok": true,
+  "coder_bytes": 15431276,
+  "width": 8,
+  "words": 27,
+  "grain_steps2": 0.0835,
+  "secs": 6.5
+ },
+ {
+  "name": "v0 screen phase c=36 seed=2",
+  "spec": {
+   "c": 36,
+   "how": "nearest on a shifted grid",
+   "seed": 2
+  },
+  "stored_bytes": 15426196,
+  "MB": 15.426,
+  "bits_per_value": 3.1974,
+  "roundtrip_ok": true,
+  "coder_bytes": 15420803,
+  "width": 8,
+  "words": 27,
+  "grain_steps2": 0.0832,
+  "secs": 6.2
+ },
+ {
+  "name": "v0 screen phase c=36 seed=3",
+  "spec": {
+   "c": 36,
+   "how": "nearest on a shifted grid",
+   "seed": 3
+  },
+  "stored_bytes": 15427436,
+  "MB": 15.427,
+  "bits_per_value": 3.1976,
+  "roundtrip_ok": true,
+  "coder_bytes": 15422043,
+  "width": 8,
+  "words": 24,
+  "grain_steps2": 0.0834,
+  "secs": 5.9
+ },
+ {
+  "name": "v0 screen phase c=36 seed=4",
+  "spec": {
+   "c": 36,
+   "how": "nearest on a shifted grid",
+   "seed": 4
+  },
+  "stored_bytes": 15428426,
+  "MB": 15.428,
+  "bits_per_value": 3.1978,
+  "roundtrip_ok": true,
+  "coder_bytes": 15423033,
+  "width": 8,
+  "words": 24,
+  "grain_steps2": 0.0833,
+  "secs": 5.9
+ },
+ {
+  "name": "v11 parity D8, c=36",
+  "spec": {
+   "c": 36,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 14352295,
+  "MB": 14.352,
+  "bits_per_value": 2.9748,
+  "roundtrip_ok": true,
+  "coder_bytes": 14346905,
+  "code_word_bytes": 0,
+  "width": 8,
+  "nmax": 255,
+  "words": 25,
+  "grain_steps2": 0.0904,
+  "secs": 7.0
+ },
+ {
+  "name": "v11 parity D8, c=36 phase seed=1",
+  "spec": {
+   "c": 36,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 14357531,
+  "MB": 14.358,
+  "bits_per_value": 2.9759,
+  "roundtrip_ok": true,
+  "coder_bytes": 14350605,
+  "code_word_bytes": 0,
+  "width": 8,
+  "nmax": 255,
+  "words": 26,
+  "grain_steps2": 0.0904,
+  "secs": 7.0
+ },
+ {
+  "name": "v11 parity D8, c=36 phase seed=2",
+  "spec": {
+   "c": 36,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 14348408,
+  "MB": 14.348,
+  "bits_per_value": 2.974,
+  "roundtrip_ok": true,
+  "coder_bytes": 14341482,
+  "code_word_bytes": 0,
+  "width": 8,
+  "nmax": 255,
+  "words": 23,
+  "grain_steps2": 0.0902,
+  "secs": 7.1
+ },
+ {
+  "name": "v11 parity D8, c=36 phase seed=3",
+  "spec": {
+   "c": 36,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 14351422,
+  "MB": 14.351,
+  "bits_per_value": 2.9746,
+  "roundtrip_ok": true,
+  "coder_bytes": 14344496,
+  "code_word_bytes": 0,
+  "width": 8,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.0903,
+  "secs": 7.6
+ },
+ {
+  "name": "v11 parity D8, c=36 phase seed=4",
+  "spec": {
+   "c": 36,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 14351654,
+  "MB": 14.352,
+  "bits_per_value": 2.9746,
+  "roundtrip_ok": true,
+  "coder_bytes": 14344728,
+  "code_word_bytes": 0,
+  "width": 8,
+  "nmax": 255,
+  "words": 23,
+  "grain_steps2": 0.0903,
+  "secs": 7.6
+ },
+ {
+  "name": "v11 parity D8, c=37",
+  "spec": {
+   "c": 37,
+   "kind": "D8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 14007137,
+  "MB": 14.007,
+  "bits_per_value": 2.9032,
+  "roundtrip_ok": true,
+  "coder_bytes": 14001747,
+  "code_word_bytes": 0,
+  "width": 7,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.0904,
+  "secs": 7.2
+ },
+ {
+  "name": "v11 parity D8, c=37 phase seed=1",
+  "spec": {
+   "c": 37,
+   "kind": "D8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 14009457,
+  "MB": 14.009,
+  "bits_per_value": 2.9037,
+  "roundtrip_ok": true,
+  "coder_bytes": 14002531,
+  "code_word_bytes": 0,
+  "width": 7,
+  "nmax": 255,
+  "words": 26,
+  "grain_steps2": 0.0903,
+  "secs": 7.3
+ },
+ {
+  "name": "v11 parity D8, c=37 phase seed=2",
+  "spec": {
+   "c": 37,
+   "kind": "D8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 14011520,
+  "MB": 14.012,
+  "bits_per_value": 2.9041,
+  "roundtrip_ok": true,
+  "coder_bytes": 14004594,
+  "code_word_bytes": 0,
+  "width": 7,
+  "nmax": 255,
+  "words": 17,
+  "grain_steps2": 0.0904,
+  "secs": 7.1
+ },
+ {
+  "name": "v11 parity D8, c=37 phase seed=3",
+  "spec": {
+   "c": 37,
+   "kind": "D8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 14013742,
+  "MB": 14.014,
+  "bits_per_value": 2.9046,
+  "roundtrip_ok": true,
+  "coder_bytes": 14006816,
+  "code_word_bytes": 0,
+  "width": 7,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.0904,
+  "secs": 6.7
+ },
+ {
+  "name": "v11 parity D8, c=37 phase seed=4",
+  "spec": {
+   "c": 37,
+   "kind": "D8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 14003109,
+  "MB": 14.003,
+  "bits_per_value": 2.9024,
+  "roundtrip_ok": true,
+  "coder_bytes": 13996183,
+  "code_word_bytes": 0,
+  "width": 7,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.0901,
+  "secs": 6.7
+ },
+ {
+  "name": "v11 parity E8, c=36",
+  "spec": {
+   "c": 36,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 12790504,
+  "MB": 12.791,
+  "bits_per_value": 2.6511,
+  "roundtrip_ok": true,
+  "coder_bytes": 10372036,
+  "code_word_bytes": 2413078,
+  "width": 7,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.1434,
+  "secs": 7.4
+ },
+ {
+  "name": "v11 parity E8, c=36 phase seed=1",
+  "spec": {
+   "c": 36,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 12789991,
+  "MB": 12.79,
+  "bits_per_value": 2.651,
+  "roundtrip_ok": true,
+  "coder_bytes": 10368687,
+  "code_word_bytes": 2414378,
+  "width": 7,
+  "nmax": 255,
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 7.5
+ },
+ {
+  "name": "v11 parity E8, c=36 phase seed=2",
+  "spec": {
+   "c": 36,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 12782435,
+  "MB": 12.782,
+  "bits_per_value": 2.6494,
+  "roundtrip_ok": true,
+  "coder_bytes": 10366070,
+  "code_word_bytes": 2409439,
+  "width": 7,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.1434,
+  "secs": 7.7
+ },
+ {
+  "name": "v11 parity E8, c=36 phase seed=3",
+  "spec": {
+   "c": 36,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 12786077,
+  "MB": 12.786,
+  "bits_per_value": 2.6501,
+  "roundtrip_ok": true,
+  "coder_bytes": 10367262,
+  "code_word_bytes": 2411889,
+  "width": 7,
+  "nmax": 255,
+  "words": 19,
+  "grain_steps2": 0.1434,
+  "secs": 7.6
+ },
+ {
+  "name": "v11 parity E8, c=36 phase seed=4",
+  "spec": {
+   "c": 36,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 12778394,
+  "MB": 12.778,
+  "bits_per_value": 2.6486,
+  "roundtrip_ok": true,
+  "coder_bytes": 10360437,
+  "code_word_bytes": 2411031,
+  "width": 7,
+  "nmax": 255,
+  "words": 24,
+  "grain_steps2": 0.1434,
+  "secs": 7.3
+ },
+ {
+  "name": "v11 parity E8, c=37",
+  "spec": {
+   "c": 37,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "predicted": null,
+  "stored_bytes": 12486933,
+  "MB": 12.487,
+  "bits_per_value": 2.5881,
+  "roundtrip_ok": true,
+  "coder_bytes": 10072595,
+  "code_word_bytes": 2408948,
+  "width": 6,
+  "nmax": 255,
+  "words": 15,
+  "grain_steps2": 0.1434,
+  "secs": 6.5
+ },
+ {
+  "name": "v11 parity E8, c=37 phase seed=1",
+  "spec": {
+   "c": 37,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "predicted": null,
+  "stored_bytes": 12466441,
+  "MB": 12.466,
+  "bits_per_value": 2.5839,
+  "roundtrip_ok": true,
+  "coder_bytes": 10052024,
+  "code_word_bytes": 2407491,
+  "width": 6,
+  "nmax": 255,
+  "words": 18,
+  "grain_steps2": 0.1434,
+  "secs": 6.5
+ },
+ {
+  "name": "v11 parity E8, c=37 phase seed=2",
+  "spec": {
+   "c": 37,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "predicted": null,
+  "stored_bytes": 12473482,
+  "MB": 12.473,
+  "bits_per_value": 2.5854,
+  "roundtrip_ok": true,
+  "coder_bytes": 10057404,
+  "code_word_bytes": 2409152,
+  "width": 6,
+  "nmax": 255,
+  "words": 15,
+  "grain_steps2": 0.1434,
+  "secs": 6.5
+ },
+ {
+  "name": "v11 parity E8, c=37 phase seed=3",
+  "spec": {
+   "c": 37,
+   "kind": "E8",
+   "phase_seed": 3
+  },
+  "predicted": null,
+  "stored_bytes": 12467369,
+  "MB": 12.467,
+  "bits_per_value": 2.5841,
+  "roundtrip_ok": true,
+  "coder_bytes": 10051352,
+  "code_word_bytes": 2409091,
+  "width": 6,
+  "nmax": 255,
+  "words": 18,
+  "grain_steps2": 0.1434,
+  "secs": 6.5
+ },
+ {
+  "name": "v11 parity E8, c=37 phase seed=4",
+  "spec": {
+   "c": 37,
+   "kind": "E8",
+   "phase_seed": 4
+  },
+  "predicted": null,
+  "stored_bytes": 12466773,
+  "MB": 12.467,
+  "bits_per_value": 2.584,
+  "roundtrip_ok": true,
+  "coder_bytes": 10057035,
+  "code_word_bytes": 2402812,
+  "width": 6,
+  "nmax": 255,
+  "words": 16,
+  "grain_steps2": 0.1433,
+  "secs": 6.4
+ },
+ {
+  "name": "v12 FILE tables_E8_c32.tdf",
+  "spec": {
+   "c": 32,
+   "kind": "E8"
+  },
+  "file": "/private/tmp/claude-501/-Users-abundancemachine/06869243-4b02-462e-91c7-0bac29e0c936/scratchpad/tables_E8_c32.tdf",
+  "file_bytes": 31518762,
+  "MB": 31.519,
+  "bits_per_value": 6.5328,
+  "roundtrip_ok": true,
+  "words": 30,
+  "secs": 8.6
+ },
+ {
+  "name": "v12 FILE tables_D8_c34.tdf",
+  "spec": {
+   "c": 34,
+   "kind": "D8"
+  },
+  "file": "/private/tmp/claude-501/-Users-abundancemachine/06869243-4b02-462e-91c7-0bac29e0c936/scratchpad/tables_D8_c34.tdf",
+  "file_bytes": 23762705,
+  "MB": 23.763,
+  "bits_per_value": 4.9252,
+  "roundtrip_ok": true,
+  "words": 28,
+  "secs": 7.8
+ },
+ {
+  "name": "v12 FILE tables_cube_c34.tdf",
+  "spec": {
+   "c": 34,
+   "kind": "cube"
+  },
+  "file": "/private/tmp/claude-501/-Users-abundancemachine/06869243-4b02-462e-91c7-0bac29e0c936/scratchpad/tables_cube_c34.tdf",
+  "file_bytes": 24357504,
+  "MB": 24.358,
+  "bits_per_value": 5.0485,
+  "roundtrip_ok": true,
+  "words": 29,
+  "secs": 6.6
+ },
+ {
+  "name": "v12 WHOLE MACHINE plates_v12_A8.bin + tables_E8_c32.tdf",
+  "plates_bytes": 56742543,
+  "tables_bytes": 31518762,
+  "MB": 88.261,
+  "words": 30,
+  "secs": 6.7
+ },
+ {
+  "name": "v12 WHOLE MACHINE plates_v12_A8.bin + tables_D8_c34.tdf",
+  "plates_bytes": 56742543,
+  "tables_bytes": 23762705,
+  "MB": 80.505,
+  "words": 29,
+  "secs": 6.4
+ },
+ {
+  "name": "v12 WHOLE MACHINE plates_v12_A8.bin + tables_cube_c34.tdf",
+  "plates_bytes": 56742543,
+  "tables_bytes": 24357504,
+  "MB": 81.1,
+  "words": 30,
+  "secs": 5.5
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=32",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 5.1
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=32 phase seed=1",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "words": 30,
+  "grain_steps2": 0.1433,
+  "secs": 5.1
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=32 phase seed=2",
+  "spec": {
+   "c": 32,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "words": 29,
+  "grain_steps2": 0.1433,
+  "secs": 5.1
+ },
+ {
+  "name": "v13 judge route check: E8 c=34 via words(entry=D, top=T)",
+  "words": 28,
+  "secs": 4.4
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=34",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": null
+  },
+  "words": 28,
+  "grain_steps2": 0.1434,
+  "secs": 9.3
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=34 phase seed=1",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 1
+  },
+  "words": 29,
+  "grain_steps2": 0.1434,
+  "secs": 5.1
+ },
+ {
+  "name": "v13 CONTROL E8 grain on random words of the same line, c=34 phase seed=2",
+  "spec": {
+   "c": 34,
+   "kind": "E8",
+   "phase_seed": 2
+  },
+  "words": 27,
+  "grain_steps2": 0.1433,
+  "secs": 5.1
+ }
+]

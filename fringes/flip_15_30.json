@@ -1,0 +1,148 @@
+{
+ "texts": [
+  15,
+  30
+ ],
+ "scores_same": {
+  "both": 15,
+  "plate": 15
+ },
+ "words_same": {
+  "both": 15,
+  "plate": 15
+ },
+ "stats": {
+  "qkv": {
+   "calls": 180,
+   "meetings": 530841600,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 2073600,
+   "ownstack_pile_equal": 0,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "arrival": {
+   "calls": 12960,
+   "meetings": 481075200,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 745200,
+   "ownstack_pile_equal": 1,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "proj": {
+   "calls": 180,
+   "meetings": 176947200,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 691200,
+   "ownstack_pile_equal": 2,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "fc": {
+   "calls": 180,
+   "meetings": 707788800,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 2764800,
+   "ownstack_pile_equal": 260,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "mproj": {
+   "calls": 180,
+   "meetings": 176947200,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 691200,
+   "ownstack_pile_equal": 0,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "head": {
+   "calls": 15,
+   "meetings": 192986880,
+   "counts_changed": 0,
+   "S_changed": 0,
+   "unflipped_pile_wrong": 0,
+   "pile_wrong": 0,
+   "piles": 753855,
+   "ownstack_pile_equal": 0,
+   "ownstack_diff_not_(ts+ws)/2": 0
+  },
+  "qkv|plate": {
+   "calls": 180,
+   "meetings": 530841600,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 2073600,
+   "rec2_wrong": 0
+  },
+  "arrival|plate": {
+   "calls": 12960,
+   "meetings": 481075200,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 745200,
+   "rec2_wrong": 0
+  },
+  "proj|plate": {
+   "calls": 180,
+   "meetings": 176947200,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 691200,
+   "rec2_wrong": 0
+  },
+  "fc|plate": {
+   "calls": 180,
+   "meetings": 707788800,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 2764800,
+   "rec2_wrong": 0
+  },
+  "mproj|plate": {
+   "calls": 180,
+   "meetings": 176947200,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 691200,
+   "rec2_wrong": 0
+  },
+  "head|plate": {
+   "calls": 15,
+   "meetings": 192986880,
+   "tips_not_negated": 0,
+   "S_not_negated": 0,
+   "neg_stack_not_minus": 0,
+   "own_not_negative_plate_product": 0,
+   "pile_wrong": 0,
+   "piles": 753855,
+   "rec2_wrong": 0
+  }
+ }
+}

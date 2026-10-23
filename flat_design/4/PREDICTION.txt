@@ -1,0 +1,65 @@
+DESIGNER 4: FROM THE TIPS BACKWARDS. Written 2026-10-08, before any count in this folder was made.
+
+HIS WORDS (2026-10-08), the only quotes here:
+  "THE FLAT IS THE CANCELLING."
+  "The flat is in BOTH SIDES. And it can be skipped. Or removed it doesnt matter but it has to be BOTH SIDES."
+  "The embedding table and the mlp"
+  "The whole machine is flat, that's the base canceling. The EXTRA photons from the embedding pop up above the flat
+   and are all added per gate that they are in."
+  "Gates and arrivals, that's it, everything flat is what doesn't matter and can cancel."
+
+THE SESSION'S RESTATEMENT (not his words)
+  In the up/hole form every place of the light and of the plate is lit: a photon up or a hole. Every meeting is an up
+  or a down, and nearly all of them pair off: that pairing is the flat. What is left at each place pair is the tip,
+  the extra photons above the flat. The tips alone rebuild every pile. His machine: skip the flat on both sides, and
+  add only the extra photons, at every gate they are in.
+
+WHAT IS MEASURED HERE (GPT-2, base2's own light and plates, a sample: layer 5's qkv, proj, fc, mproj, 24 positions)
+  E1  up/hole place-pair tips: sum over the 16 x 16 place pairs of |N - 2d| (FINDINGS sec. 5's definition)
+  E2  the same in the lit form (sign and 1s: only lit places meet; same signs up, opposite down)
+  E3  the lit tips paired along each diagonal (a + b = d) before taking the size
+  E4  the gate's place sums (each plate place b: the whole light against that place), counted in signed digits
+  E5  the pile's own signed digits
+  each as a share of the up/hole meetings (N x 256) and of plain (lit light x lit plate, binary 1s)
+
+PREDICTIONS
+  P1  E1 / up/hole meetings = the coin toss: 2.88% at the 768-line plates, 1.44% at mproj (3,072 lines).
+  P2  THE UNIT. Up/hole meets every place pair, plain only the lit ones: about 256 / (5.1 x 6.3) = 8x more. So E1 as a
+      share of PLAIN is about 2.88% x 8 = 22-24% at qkv, proj, fc, and about 11% at mproj. The group machine at
+      layer 5 (20.5%, 26.6%, 20.6%, 25.5% of plain) is therefore already AT the place-pair excess at the 768-line
+      plates. The "3%" is 3% of the up/hole meetings, not of plain.
+  P3  E2 / plain: 6-10% (768 lines), 3-6% (mproj).
+  P4  E3 / plain: 1.5-3% (768), 0.8-1.5% (mproj).
+  P5  E4 / plain: 0.3-0.8%.   E5 / plain: 0.02-0.06%.
+  P6  The excess has no floor of its own: the wider the pairing, the smaller it gets, down to the pile's own photons.
+      The work is set by something else (P8).
+  P7  CONTROLS. Shuffle (each position's light across its lines): E1-E5 move under 0.3 points of plain (these are
+      coin-toss quantities; rule 13.3 says they must return chance, and the point of measuring them is the unit, not
+      structure). Order-free (lines reordered the same way on both sides): every number identical. Exact: both tip
+      forms rebuild every pile (0 differ). An independent counter (packed popcounts) gives the same E1 to the photon.
+  P8  THE FLOOR, the session's relation: one ready pile, read by one gate at one place, names one of 2^g patterns, so it
+      carries at most g bits of the plate; the plate holds about 12.5 bits a weight at the places read; so a gate
+      needs at least about 12.5 / g reads per weight it holds, and each read adds the ready pile's own photons
+      (its signed digits, about 4.3: a group's light). With g capped near 12 (the table is rebuilt every token and
+      shared only by the gate-places reading that light), reads alone are about 1.05 x 4.3 / 32 = 14% of plain, and
+      the table and writing add 1.5-4 points per plate. The group machine sits on this relation. 3% would need one
+      read to carry about 50 plate bits, or a ready pile of about 1 photon. Neither is open.
+
+THE ONE METHOD (the session's name: THE TIPS MACHINE AT ITS FLOOR)
+  His picture followed forward is the group machine, read from the tips:
+   - the light's flat cancels once a token inside each ready pile (a random group's ups and holes against each other),
+     shared by every gate;
+   - the plate's flat (every hole) is skipped by the flip: a pattern's complement is the opposite ready pile;
+   - skipping the flat on BOTH sides leaves one cross term, one number a token (X, the light summed) and one a gate
+     (kcorr): that is why it has to be both sides; it costs about 0.05% of plain;
+   - each gate, at each up/hole place, adds the one ready pile its pattern names: the extra photons, added per gate.
+  The one change the tips view adds: the table width at each plate is set by the floor relation, not fixed at 12.
+  Build + writing per group a token, 2^(g-1) x (c_build + c_write), is balanced against the reads it removes,
+  users x c_read / g, users = gates x up/hole places. Fixed from the plate alone, before any light:
+    qkv (2,304 gates), fc (3,072 gates): g = 12 (unchanged)
+    proj, mproj (768 gates): g = 11
+  Sample prediction (layer 5, every pile identical): proj 26.6% -> 25.0%, mproj 25.5% -> 23.6% of plain; qkv, fc
+  unchanged.
+  Whole GPT-2: 711.4M -> about 693M a token, 19.40% -> 18.9% (18.7-19.1%).
+  Whole GPT-2 at the floor (every plate's reads at 12.5/g reads a weight, the table at its balance): 16-17%.
+  This does NOT approach 3%, and P8 says no exact machine of this kind can.

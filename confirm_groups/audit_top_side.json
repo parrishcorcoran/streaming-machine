@@ -1,0 +1,26 @@
+{
+"gpt2": {
+"npos": 648,
+"pwrite_ones": 6175311410,
+"pwrite_naf": 4672507054,
+"theirs_pwrite": 6175311410,
+"cmp_ii": 572942736,
+"cmp_plain": 32566536,
+"cmp_ii_photons": 6107241414,
+"cmp_plain_photons": 346924071,
+"fifth_naf_mean_x1000": 10652,
+"all_words_naf_mean_x1000": 10752
+},
+"qwen": {
+"npos": 613,
+"pwrite_ones": 7869025015,
+"pwrite_naf": 5945294845,
+"theirs_pwrite": 7869025015,
+"cmp_ii": 1211469152,
+"cmp_plain": 93136768,
+"cmp_ii_photons": 12769687150,
+"cmp_plain_photons": 981962368,
+"fifth_naf_mean_x1000": 10543,
+"all_words_naf_mean_x1000": 9606
+}
+}

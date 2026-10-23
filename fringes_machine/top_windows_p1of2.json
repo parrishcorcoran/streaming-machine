@@ -1,0 +1,26 @@
+{
+"counts": {
+"fr|top|top read|standing amounts written at pile scale (divides)": 13265993435,
+"fr|top|top read|standing amounts poured into the piles": 2064340496,
+"fr|top|top read|bound tables built from the light": 3905230941,
+"fr|top|top read|bound adds (table values)": 56581214201,
+"fr|top|top read|bound poured into the highs": 2473441827,
+"cmp|top|top read|compares": 3122697826,
+"fr|top|top read|bound carried down (high and bound)": 10412221696,
+"fr|top|top read|lows of the words read for the 5th-best low": 2004106044,
+"fr|top|top read|words read to the end: standing amount taken off, divide, standing amount": 2465070,
+"plain|top|top read|meetings, plain": 2746260466221,
+"plain|top|rest|top divide (every word)": 20664243338,
+"plain|top|rest|top standing amounts (every word)": 1525119000,
+"fr|top|top read|meetings, plain photons, staged": 532419723920
+},
+"n": 3000,
+"bad": {
+"pieces vs the plain read's piles": 0,
+"counted pile carried = the counted pile": 0,
+"bound broken": 0,
+"a word set aside that is not below the 5th-best": 0,
+"words read to the end vs the plain read": 0,
+"all pairs' meetings = the plain read's": 0
+}
+}

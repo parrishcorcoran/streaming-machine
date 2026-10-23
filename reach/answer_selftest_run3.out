@@ -1,0 +1,24 @@
+free at 16:12:36; running: /usr/bin/time -l python3 reach/answer.py plates=proj.10 selftest=1
+SELF-CHECK: the range form with nothing removed, every step carried in range form (['proj.10'])
+    proj.10 b=1: layer 10 stream range max 0, row median 0; blown rows 0/7200; real move max 0 (9s, 2089 MB)
+    proj.10 b=1: layer 11 stream range max 0, row median 0; blown rows 0/7200; real move max 0 (17s, 2280 MB)
+  proj.10 b=1: digits removed 0; PROVEN at 6000/6000 judge positions (blown at the top 0); bound on a score's move: median 0, max 0; REAL move: median 0, max 0; top 5 changed (real) at 0/6000; bound/real median None (51s, 2280 MB)
+done (51s, max memory 2280 MB)
+       51.07 real        50.71 user         0.35 sys
+          2280341504  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              375452  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 228  involuntary context switches
+        746964696813  instructions retired
+        203636073022  cycles elapsed
+          2272774232  peak memory footprint

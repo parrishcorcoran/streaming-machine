@@ -1,0 +1,18 @@
+STEP 1, THE TOKEN: refs, 648 positions, light real, lines reordered (seed 7); the final light read top place first, the top 5 proved by bounds
+  the plain read on this light gives the saved top 5 at 648/648 (set and order)
+  top 5, gauge bounded: done (10s, 2360 MB); proofs naming other words: 0
+  top 5, gauge given: done (19s); proofs naming other words: 0
+  race winner, gauge bounded: done (29s); proofs naming another word: 0
+  every c from 0 to 16 at 65 positions: proved exactly where c <= the stop at 1105/1105
+
+WHERE THE READ STOPS (place c: the light's places c..15 read; c = 0 means every place)
+  top 5, gauge bounded from the light : median 1, 10/25/50/75/90% [0, 1, 1, 2, 3]; positions by place 0:155 1:223 2:163 3:81 4:22 5:4
+  top 5, gauge given exactly         : median 1, 10/25/50/75/90% [0, 1, 1, 2, 3]; positions by place 0:154 1:221 2:165 3:82 4:22 5:4
+  race winner alone, gauge bounded   : median 5, 10/25/50/75/90% [2, 3, 5, 6, 7]; positions by place 0:18 1:21 2:68 3:73 4:114 5:129 6:124 7:83 8:18
+  positions needing every place (c = 0): top 5 155/648, winner 18/648
+
+WHAT OF THE FINAL LIGHT WAS NEEDED (top 5, gauge bounded), per position: median / mean
+  lines with a read place (|x| >= 2^c): 766 / 764.4 of 768; the rest are needed only as 'below 2^c'
+  places read (top 1 of each line down to c): 84.27% of the light's places; photons read 85.34% of its photons
+  the plain read's meetings of the read part with every word: 85.35% of the plain read's meetings
+(35s, max memory 2361 MB)

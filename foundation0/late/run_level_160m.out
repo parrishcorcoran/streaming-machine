@@ -1,0 +1,17 @@
+level_height.py  size 160m  layers [9, 10, 11]  (every score at 2^-10 of an e-fold; shown in e-folds)
+  layer 9: finished row span (level minus lowest live score), median 27.70 e-folds, 90th 66.23
+    b:qkv.9            moved  41.5%  ripple median  11.72 e-folds (39.3% of the row's span)  | moved rows: old winner change median   +6.28 (|.|   8.74, dropped in 25.5%), new winner  +41.32 (|.|  41.32); old winner was the first word in 60.5%
+    cb:qkv.9@20261006  moved  44.5%  ripple median   9.61 e-folds (32.7% of the row's span)  | moved rows: old winner change median   -1.72 (|.|   6.70, dropped in 59.4%), new winner  +28.65 (|.|  28.72); old winner was the first word in 61.6%
+    cb:qkv.9@2         moved  37.1%  ripple median   9.31 e-folds (31.7% of the row's span)  | moved rows: old winner change median   +1.48 (|.|   6.20, dropped in 41.0%), new winner  +24.15 (|.|  24.24); old winner was the first word in 56.3%
+    cb:qkv.9@3         moved  38.2%  ripple median  10.26 e-folds (33.6% of the row's span)  | moved rows: old winner change median   -1.78 (|.|   6.07, dropped in 59.4%), new winner  +26.43 (|.|  27.05); old winner was the first word in 56.5%
+  layer 10: finished row span (level minus lowest live score), median 63.08 e-folds, 90th 105.95
+    b:qkv.10           moved  53.9%  ripple median  40.57 e-folds (74.3% of the row's span)  | moved rows: old winner change median  +11.43 (|.|  21.27, dropped in 33.2%), new winner  +85.94 (|.|  85.94); old winner was the first word in 65.0%
+    cb:qkv.10@20261006 moved  53.4%  ripple median  38.43 e-folds (68.7% of the row's span)  | moved rows: old winner change median   -0.86 (|.|  17.31, dropped in 51.9%), new winner  +67.07 (|.|  67.51); old winner was the first word in 63.9%
+    cb:qkv.10@2        moved  65.8%  ripple median  60.30 e-folds (105.6% of the row's span)  | moved rows: old winner change median  +18.00 (|.|  31.01, dropped in 32.8%), new winner +101.10 (|.| 101.10); old winner was the first word in 65.9%
+    cb:qkv.10@3        moved  62.3%  ripple median  38.55 e-folds (68.5% of the row's span)  | moved rows: old winner change median   +9.01 (|.|  19.99, dropped in 35.5%), new winner  +93.72 (|.|  93.72); old winner was the first word in 66.4%
+  layer 11: finished row span (level minus lowest live score), median 88.26 e-folds, 90th 162.76
+    b:qkv.11           moved  61.3%  ripple median  57.45 e-folds (67.3% of the row's span)  | moved rows: old winner change median  +10.95 (|.|  34.58, dropped in 41.9%), new winner +136.71 (|.| 136.71); old winner was the first word in 49.1%
+    cb:qkv.11@20261006 moved  57.2%  ripple median  47.82 e-folds (59.7% of the row's span)  | moved rows: old winner change median  +10.56 (|.|  35.45, dropped in 42.2%), new winner +102.00 (|.| 102.01); old winner was the first word in 49.7%
+    cb:qkv.11@2        moved  67.1%  ripple median  75.44 e-folds (85.0% of the row's span)  | moved rows: old winner change median  -10.07 (|.|  48.15, dropped in 56.7%), new winner +111.07 (|.| 111.07); old winner was the first word in 49.6%
+    cb:qkv.11@3        moved  61.1%  ripple median  51.23 e-folds (59.6% of the row's span)  | moved rows: old winner change median   -9.09 (|.|  32.73, dropped in 59.4%), new winner  +79.16 (|.|  79.16); old winner was the first word in 48.5%
+done  peak memory 1.67 GB

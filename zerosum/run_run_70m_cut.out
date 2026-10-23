@@ -1,0 +1,20 @@
+70m, file zerosum_pythia-70m_cut.npz: ['mproj.5.b', 'proj.5.b']...
+loaded foundation0/pythia_base2.py's machine, size 70m (0s, 934 MB)
+plain run: 30 texts (4s, 1272 MB)
+  plain head piles = foundation0/words_pythia-70m.json's piles_sha256 (the machine's own run): 30/30
+  reads 8086: S1 = 0 at 0
+zerosum run (8s, 1801 MB)
+  reads 8086: S1 = 0 at 0
+
+THE ZEROSUM FILE (cut) AGAINST THE PLAIN MACHINE
+  calls digested 51,442: identical 51,442, different 0
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 622/622
+  positions where some read's cut power (the top 1 of the largest lane) moved: 0; positions that differ BEFORE the first such position in their text: 0
+  texts whose top scores (every position, every word) are the same whole numbers: 30/30
+  race winner the same 622/622; top 5 same in order 622/622, same as a set 622/622
+  head piles at the last 16 positions (pythia_base2.py's piles_sha256 form) the same: 30/30
+
+ORDER-FREE CHECK (lanes in a random order, every plate permuted to match): top scores the same whole numbers in 30/30 texts; water-level logs the same 37942/37942
+
+done (12s, peak 2393 MB)

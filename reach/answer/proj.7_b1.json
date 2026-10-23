@@ -1,0 +1,376 @@
+{
+ "plate": "proj.7",
+ "b": 1,
+ "digits_removed": 294471,
+ "rows": 6000,
+ "proven": 0,
+ "blown_at_top": 6000,
+ "bound_median": null,
+ "bound_max": null,
+ "bound_min": null,
+ "real_median": 757,
+ "real_max": 15260,
+ "top5_changed": 39,
+ "top5_changed_rows": [
+  46,
+  301,
+  357,
+  581,
+  624,
+  975,
+  1036,
+  1263,
+  1332,
+  1338,
+  1424,
+  1454,
+  1526,
+  1575,
+  2088,
+  2165,
+  2657,
+  2715,
+  2889,
+  3299,
+  3320,
+  4131,
+  4232,
+  4448,
+  4650,
+  4668,
+  4691,
+  4722,
+  4763,
+  4965,
+  5007,
+  5128,
+  5359,
+  5444,
+  5551,
+  5560,
+  5599,
+  5684,
+  5715
+ ],
+ "bound_over_real_median": null,
+ "worst_rows": [
+  {
+   "row": 3450,
+   "gap": 2,
+   "bound": null,
+   "real": 574,
+   "proven": false
+  },
+  {
+   "row": 2783,
+   "gap": 2,
+   "bound": null,
+   "real": 454,
+   "proven": false
+  },
+  {
+   "row": 1424,
+   "gap": 3,
+   "bound": null,
+   "real": 262,
+   "proven": false
+  },
+  {
+   "row": 4763,
+   "gap": 3,
+   "bound": null,
+   "real": 753,
+   "proven": false
+  },
+  {
+   "row": 4232,
+   "gap": 4,
+   "bound": null,
+   "real": 799,
+   "proven": false
+  },
+  {
+   "row": 3129,
+   "gap": 4,
+   "bound": null,
+   "real": 486,
+   "proven": false
+  },
+  {
+   "row": 1427,
+   "gap": 4,
+   "bound": null,
+   "real": 762,
+   "proven": false
+  },
+  {
+   "row": 1263,
+   "gap": 5,
+   "bound": null,
+   "real": 827,
+   "proven": false
+  },
+  {
+   "row": 3232,
+   "gap": 7,
+   "bound": null,
+   "real": 1110,
+   "proven": false
+  },
+  {
+   "row": 3194,
+   "gap": 7,
+   "bound": null,
+   "real": 1024,
+   "proven": false
+  }
+ ],
+ "layers": [
+  {
+   "where": "qkv.7",
+   "blown_rows": 0,
+   "real_max": 0,
+   "real_row_median": 0,
+   "missed": 0,
+   "range_max": 0,
+   "range_row_median": 0
+  },
+  {
+   "where": "arrival.7",
+   "blown_rows": 0,
+   "real_max": 0,
+   "real_row_median": 0,
+   "missed": 0,
+   "range_max": 0,
+   "range_row_median": 0
+  },
+  {
+   "where": "proj.7",
+   "blown_rows": 0,
+   "real_max": 161,
+   "real_row_median": 24,
+   "missed": 0,
+   "range_max": 1085,
+   "range_row_median": 306
+  },
+  {
+   "where": "stream a 7",
+   "blown_rows": 0,
+   "real_max": 161,
+   "real_row_median": 24,
+   "missed": 0,
+   "range_max": 1085,
+   "range_row_median": 306
+  },
+  {
+   "where": "fc.7",
+   "blown_rows": 0,
+   "real_max": 42,
+   "real_row_median": 19,
+   "missed": 0,
+   "range_max": 1214,
+   "range_row_median": 452
+  },
+  {
+   "where": "bend.7",
+   "blown_rows": 0,
+   "real_max": 36,
+   "real_row_median": 14,
+   "missed": 0,
+   "range_max": 1215,
+   "range_row_median": 386
+  },
+  {
+   "where": "mproj.7",
+   "blown_rows": 0,
+   "real_max": 395,
+   "real_row_median": 79,
+   "missed": 0,
+   "range_max": 279343,
+   "range_row_median": 98394
+  },
+  {
+   "where": "stream 7",
+   "blown_rows": 0,
+   "real_max": 378,
+   "real_row_median": 82,
+   "missed": 0,
+   "range_max": 280253,
+   "range_row_median": 98729
+  },
+  {
+   "where": "qkv.8",
+   "blown_rows": 0,
+   "real_max": 105,
+   "real_row_median": 53,
+   "missed": 0,
+   "range_max": 1019897,
+   "range_row_median": 278998
+  },
+  {
+   "where": "arrival.8",
+   "blown_rows": 6624,
+   "real_max": 113,
+   "real_row_median": 27,
+   "missed": 0,
+   "range_max": 1602715,
+   "range_row_median": 1570
+  },
+  {
+   "where": "proj.8",
+   "blown_rows": 6900,
+   "real_max": 595,
+   "real_row_median": 80,
+   "missed": 0,
+   "range_max": 95774,
+   "range_row_median": 30310
+  },
+  {
+   "where": "stream a 8",
+   "blown_rows": 6900,
+   "real_max": 730,
+   "real_row_median": 114,
+   "missed": 0,
+   "range_max": 99441,
+   "range_row_median": 31495
+  },
+  {
+   "where": "fc.8",
+   "blown_rows": 6900,
+   "real_max": 159,
+   "real_row_median": 47,
+   "missed": 0,
+   "range_max": 6334,
+   "range_row_median": 2042
+  },
+  {
+   "where": "bend.8",
+   "blown_rows": 6900,
+   "real_max": 158,
+   "real_row_median": 34,
+   "missed": 0,
+   "range_max": 5727,
+   "range_row_median": 1826
+  },
+  {
+   "where": "mproj.8",
+   "blown_rows": 6900,
+   "real_max": 684,
+   "real_row_median": 157,
+   "missed": 0,
+   "range_max": 1397159,
+   "range_row_median": 446573
+  },
+  {
+   "where": "stream 8",
+   "blown_rows": 6900,
+   "real_max": 763,
+   "real_row_median": 178,
+   "missed": 0,
+   "range_max": 1496600,
+   "range_row_median": 478068
+  },
+  {
+   "where": "qkv.9",
+   "blown_rows": 6900,
+   "real_max": 169,
+   "real_row_median": 76,
+   "missed": 0,
+   "range_max": 180965,
+   "range_row_median": 57973
+  },
+  {
+   "where": "arrival.9",
+   "blown_rows": 6900,
+   "real_max": 174,
+   "real_row_median": 36,
+   "missed": 0,
+   "range_max": 180965,
+   "range_row_median": 57973
+  },
+  {
+   "where": "proj.9",
+   "blown_rows": 6900,
+   "real_max": 798,
+   "real_row_median": 116,
+   "missed": 0,
+   "range_max": 44973370,
+   "range_row_median": 14408656
+  },
+  {
+   "where": "stream a 9",
+   "blown_rows": 6900,
+   "real_max": 1066,
+   "real_row_median": 211,
+   "missed": 0,
+   "range_max": 46458592,
+   "range_row_median": 14891835
+  },
+  {
+   "where": "fc.9",
+   "blown_rows": 6900,
+   "real_max": 174,
+   "real_row_median": 66,
+   "missed": 0,
+   "range_max": 5508305,
+   "range_row_median": 1392228
+  },
+  {
+   "where": "bend.9",
+   "blown_rows": 6900,
+   "real_max": 174,
+   "real_row_median": 48,
+   "missed": 0,
+   "range_max": 5510992,
+   "range_row_median": 1406342
+  },
+  {
+   "where": "mproj.9",
+   "blown_rows": 7195,
+   "real_max": 1011,
+   "real_row_median": 219,
+   "missed": 0,
+   "range_max": 48015201,
+   "range_row_median": 12539701
+  },
+  {
+   "where": "stream 9",
+   "blown_rows": 7195,
+   "real_max": 993,
+   "real_row_median": 277,
+   "missed": 0,
+   "range_max": 49446318,
+   "range_row_median": 13252076
+  },
+  {
+   "where": "qkv.10",
+   "blown_rows": 7195,
+   "real_max": 185,
+   "real_row_median": 101,
+   "missed": 0,
+   "range_max": 15641439,
+   "range_row_median": 2374182
+  },
+  {
+   "where": "arrival.10",
+   "blown_rows": 7200,
+   "real_max": 201,
+   "real_row_median": 42,
+   "missed": 0
+  },
+  {
+   "where": "proj.10",
+   "blown_rows": 7200,
+   "real_max": 1685,
+   "real_row_median": 182,
+   "missed": 0
+  },
+  {
+   "where": "stream a 10",
+   "blown_rows": 7200,
+   "real_max": 1733,
+   "real_row_median": 326,
+   "missed": 0
+  }
+ ]
+}

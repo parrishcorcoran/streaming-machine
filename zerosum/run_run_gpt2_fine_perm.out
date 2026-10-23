@@ -1,0 +1,20 @@
+gpt2, file zerosum_gpt2.npz: ['mproj.0.b', 'mproj.0.w', 'mproj.1.b', 'mproj.1.w', 'mproj.10.b', 'mproj.10.w']...
+loaded the way judge5.py loads it (2s, 1362 MB)
+plain run: 30 texts (21s, 1960 MB)
+  reads 16200: S1 = 0 at 0; the water level's log the same with S1 left out at 2460 (15.2%)
+zerosum run (41s, 2375 MB)
+  reads 16200: S1 = 0 at 22; the water level's log the same with S1 left out at 15774 (97.4%)
+
+THE ZEROSUM FILE (fine) AGAINST THE PLAIN MACHINE
+  calls digested 206,244: identical 1,606, different 204,638
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 0/648
+  positions where some read's cut power (the top 1 of the largest lane) moved: 18; positions that differ BEFORE the first such position in their text: 461
+  texts whose top scores (every position, every word) are the same whole numbers: 0/30
+  race winner the same 648/648; top 5 same in order 640/648, same as a set 642/648
+  first different call per text: qkv.0 to16~ x30
+  different calls by stage: qkv.0 120, arrival.0 16526, proj.0 60, fc.0 120, bend.0 30, mproj.0 60, stream.0 30, qkv.1 120, arrival.1 16632, proj.1 60, fc.1 120, bend.1 30, mproj.1 60, stream.1 30, qkv.2 120, arrival.2 16632, proj.2 60, fc.2 120, bend.2 30, mproj.2 60, stream.2 30, qkv.3 120, arrival.3 16632, proj.3 60, fc.3 120, bend.3 30, mproj.3 60, stream.3 30, qkv.4 120, arrival.4 16632, proj.4 60, fc.4 120, bend.4 30, mproj.4 60, stream.4 30, qkv.5 120, arrival.5 16632, proj.5 60, fc.5 120, bend.5 30, mproj.5 60, stream.5 30, qkv.6 120, arrival.6 16632, proj.6 60, fc.6 120, bend.6 30, mproj.6 60, stream.6 30, qkv.7 120, arrival.7 16632, proj.7 60, fc.7 120, bend.7 30, mproj.7 60, stream.7 30, qkv.8 120, arrival.8 16632, proj.8 60, fc.8 120, bend.8 30, mproj.8 60, stream.8 30, qkv.9 120, arrival.9 16632, proj.9 60, fc.9 120, bend.9 30, mproj.9 60, stream.9 30, qkv.10 120, arrival.10 16632, proj.10 60, fc.10 120, bend.10 30, mproj.10 60, stream.10 30, qkv.11 120, arrival.11 16632, proj.11 60, fc.11 120, bend.11 30, mproj.11 60, stream.11 30, top 60, top-out 60
+
+ORDER-FREE CHECK (lanes in a random order, every plate permuted to match): top scores the same whole numbers in 30/30 texts; gauged read outputs the same 750/750
+
+done (62s, peak 3377 MB)

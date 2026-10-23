@@ -1,0 +1,8 @@
+=== mode=work skip=all glow=stored  11:13:57
+=== mode=work skip=L6-11 glow=stored  11:15:08
+=== mode=work skip=L11 glow=stored  11:15:47
+=== mode=judge skip=all glow=stored  11:15:58
+=== mode=judge skip=L6-11 glow=stored  11:16:51
+=== mode=judge skip=L11 glow=stored  11:17:36
+=== mode=judge skip=all tags=shuffledtags glow=stored  11:18:14
+=== done 11:19:10

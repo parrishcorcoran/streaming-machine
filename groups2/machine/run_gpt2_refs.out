@@ -1,0 +1,25 @@
+BASE2_GROUPS on refs texts all 30 (648 positions); order seed None; shuffle control True
+    layer  0 done (16s, 1972 MB)
+    layer  1 done (25s, 1972 MB)
+    layer  2 done (34s, 1972 MB)
+    layer  3 done (43s, 1972 MB)
+    layer  4 done (52s, 1972 MB)
+    layer  5 done (61s, 1972 MB)
+    layer  6 done (70s, 1972 MB)
+    layer  7 done (80s, 1972 MB)
+    layer  8 done (89s, 1972 MB)
+    layer  9 done (98s, 1972 MB)
+    layer 10 done (107s, 1972 MB)
+    layer 11 done (116s, 1972 MB)
+
+EXACT: 96 arrays checked against base2.py's own run; positions differing in any: 0; the light at the top identical: True
+  the check path: arrival: q.k from signed digits = base2's product 0, arrival: shares x values from signed digits = base2's product 0, knife: settled outputs = the whole form's (edges differing) 0, knife: shift = the whole form's (positions differing) 0, knife: true H inside the interval 0, position 0: base2's own layer 0 = the stored stream Z0 0, shuffle control: piles = the shuffled light's direct product (rows differing) 0, storage: the whole light in the group form: piles = the machine's (rows differing) 0, the carry in the group form: piles = the machine's (rows differing) 0; fallbacks {'proj pairs not stored': 0, 'proj shift not stored': 0, 'fc shift not stored': 0}
+
+WORK a token (stream part; fc both forms shown):
+  qkv      plain    679,699,985   group form (common)    132,698,796
+  proj     plain    248,461,379   group form (common)     62,883,284
+  fc       plain    902,064,996   group form (common)     16,041,415   whole form  174,716,217   knife  199,196,785
+  mproj    plain    914,738,348   group form (common)    231,896,719
+  arrival  plain     13,053,756   group form (common)      8,020,119
+  rest     plain      4,560,481   group form (common)      4,558,811
+(116s, max memory 1972 MB)

@@ -1,0 +1,30 @@
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:76: RuntimeWarning: divide by zero encountered in matmul
+  whole = float(((X @ Rr) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:76: RuntimeWarning: overflow encountered in matmul
+  whole = float(((X @ Rr) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:76: RuntimeWarning: invalid value encountered in matmul
+  whole = float(((X @ Rr) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:80: RuntimeWarning: divide by zero encountered in matmul
+  o["left"][p] = float(((X[:, dim] @ Rr[dim]) ** 2).sum(1).mean()) / whole
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:80: RuntimeWarning: overflow encountered in matmul
+  o["left"][p] = float(((X[:, dim] @ Rr[dim]) ** 2).sum(1).mean()) / whole
+/Users/abundancemachine/streaming-machine/foundation0/late/lane_light.py:80: RuntimeWarning: invalid value encountered in matmul
+  o["left"][p] = float(((X[:, dim] @ Rr[dim]) ** 2).sum(1).mean()) / whole
+        1.99 real         1.89 user         0.09 sys
+          1297072128  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               80596  page reclaims
+                  47  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  31  voluntary context switches
+                  32  involuntary context switches
+         17283347457  instructions retired
+          7952529162  cycles elapsed
+          1290519752  peak memory footprint

@@ -1,0 +1,46 @@
+[     1s peak 1.44 GB] stored numbers 124,439,808
+[    10s peak 1.61 GB] uncut vs refs_many: 480/480; record inputs are the 5 prompt ids: False
+[    10s peak 1.61 GB] uncut word in judge5_ref top 5: 6000/6000; same top 5992/6000
+[    37s peak 3.03 GB] == tips1: 3.6080 bits a number, 56.122 MB; by part word table 3.566, position rows 4.264, plates 3.621, small pieces 3.612
+[    37s peak 3.03 GB]    wte.weight: 3.5658 bits a number  {"r1": 3.5657, "cells_bits": 0.0}
+[    37s peak 3.03 GB]    wpe.weight: 4.2641 bits a number  {"r1": 4.2617, "cells_bits": 0.0024}
+[    37s peak 3.03 GB]    h.0.attn.c_attn.weight: 3.9212 bits a number  {"r1": 3.9203, "cells_bits": 0.001}
+[    37s peak 3.03 GB]    h.5.ln_1.weight: 0.6832 bits a number  {"r1": 0.5166, "cells_bits": 0.1667}
+[    37s peak 3.03 GB]    rounds over the whole machine: {'r1': 3.606816163309348}; count cells 0.0012
+[    37s peak 3.08 GB]    error share word table 0.2316, position rows 0.2269, plates 0.2305, small pieces 0.2261
+[    47s peak 3.11 GB]    WHOLE first 60 windows: A 531/1200 (44.25%)  B 456 (38.00%)  C 240 (20.00%)
+[    47s peak 3.11 GB]    WHOLE all 300: A 2676/6000 (44.60%)  B 2377 (39.62%)  C 1250 (20.83%)  greedy 34/480  texts 0/30  rec 9/30
+[    56s peak 3.11 GB]    only word table: A 5764/6000 (96.07%)  B 5557 (92.62%)  C 4340 (72.33%)  greedy 110/480  texts 1/30  rec 22/30
+[    66s peak 3.11 GB]    only position rows: A 5999/6000 (99.98%)  B 5999 (99.98%)  C 5753 (95.88%)  greedy 336/480  texts 17/30  rec 28/30
+[    75s peak 3.11 GB]    only plates: A 5249/6000 (87.48%)  B 5230 (87.17%)  C 3511 (58.52%)  greedy 88/480  texts 1/30  rec 21/30
+[    84s peak 3.11 GB]    only small pieces: A 4580/6000 (76.33%)  B 4394 (73.23%)  C 2779 (46.32%)  greedy 67/480  texts 0/30  rec 15/30
+[    93s peak 3.11 GB]    gains (ln .weight) only: A 4555/6000 (75.92%)  B 4086 (68.10%)  C 2642 (44.03%)  greedy 58/480  texts 0/30  rec 14/30
+[   103s peak 3.11 GB]    ln offsets (ln .bias) only: A 5972/6000 (99.53%)  B 5975 (99.58%)  C 5194 (86.57%)  greedy 169/480  texts 5/30  rec 26/30
+[   112s peak 3.11 GB]    plate biases only: A 5960/6000 (99.33%)  B 5967 (99.45%)  C 5118 (85.30%)  greedy 213/480  texts 6/30  rec 27/30
+[   145s peak 3.11 GB] == tips2: 6.5466 bits a number, 101.832 MB; by part word table 6.502, position rows 7.203, plates 6.560, small pieces 6.869
+[   145s peak 3.11 GB]    wte.weight: 6.5017 bits a number  {"r1": 3.5657, "r2": 2.9358, "cells_bits": 0.0001}
+[   145s peak 3.11 GB]    wpe.weight: 7.2027 bits a number  {"r1": 4.2617, "r2": 2.937, "cells_bits": 0.004}
+[   145s peak 3.11 GB]    h.0.attn.c_attn.weight: 6.8609 bits a number  {"r1": 3.9203, "r2": 2.9389, "cells_bits": 0.0017}
+[   145s peak 3.11 GB]    h.5.ln_1.weight: 1.8540 bits a number  {"r1": 0.5166, "r2": 0.7957, "cells_bits": 0.5417}
+[   145s peak 3.11 GB]    rounds over the whole machine: {'r1': 3.606816163309348, 'r2': 2.9376314508329817}; count cells 0.0021
+[   145s peak 3.15 GB]    error share word table 0.0431, position rows 0.0421, plates 0.0429, small pieces 0.0408
+[   154s peak 3.15 GB]    WHOLE first 60 windows: A 1194/1200 (99.50%)  B 1187 (98.92%)  C 1014 (84.50%)
+[   154s peak 3.15 GB]    WHOLE all 300: A 5969/6000 (99.48%)  B 5947 (99.12%)  C 5125 (85.42%)  greedy 168/480  texts 3/30  rec 27/30
+[   163s peak 3.15 GB]    only word table: A 5988/6000 (99.80%)  B 5987 (99.78%)  C 5517 (91.95%)  greedy 259/480  texts 8/30  rec 27/30
+[   173s peak 3.15 GB]    only position rows: A 6000/6000 (100.00%)  B 6000 (100.00%)  C 5973 (99.55%)  greedy 469/480  texts 29/30  rec 30/30
+[   182s peak 3.15 GB]    only plates: A 5996/6000 (99.93%)  B 5993 (99.88%)  C 5530 (92.17%)  greedy 289/480  texts 9/30  rec 28/30
+[   191s peak 3.15 GB]    only small pieces: A 5999/6000 (99.98%)  B 5996 (99.93%)  C 5533 (92.22%)  greedy 238/480  texts 7/30  rec 29/30
+[   192s peak 3.15 GB] == grid4: 2.9362 bits a number, 45.672 MB; by part word table 2.978, position rows 0.675, plates 2.940, small pieces 1.633
+[   192s peak 3.15 GB]    wte.weight: 2.9783 bits a number  {"levels": 2.9574, "cells_and_scales": 0.0208}
+[   192s peak 3.15 GB]    wpe.weight: 0.6754 bits a number  {"levels": 0.654, "cells_and_scales": 0.0214}
+[   192s peak 3.15 GB]    h.0.attn.c_attn.weight: 2.9801 bits a number  {"levels": 2.959, "cells_and_scales": 0.0211}
+[   192s peak 3.15 GB]    h.5.ln_1.weight: 1.4359 bits a number  {"levels": 1.165, "cells_and_scales": 0.2708}
+[   192s peak 3.15 GB]    levels 2.9185; cells and scales 0.0177
+[   193s peak 3.15 GB]    error share word table 0.1675, position rows 0.1359, plates 0.1847, small pieces 0.3838
+[   202s peak 3.15 GB]    WHOLE first 60 windows: A 21/1200 (1.75%)  B 17 (1.42%)  C 1 (0.08%)
+[   202s peak 3.15 GB]    WHOLE all 300: A 106/6000 (1.77%)  B 77 (1.28%)  C 21 (0.35%)  greedy 1/480  texts 0/30  rec 1/30
+[   211s peak 3.15 GB]    only word table: A 784/6000 (13.07%)  B 762 (12.70%)  C 392 (6.53%)  greedy 0/480  texts 0/30  rec 0/30
+[   220s peak 3.15 GB]    only position rows: A 5987/6000 (99.78%)  B 5981 (99.68%)  C 5440 (90.67%)  greedy 286/480  texts 12/30  rec 26/30
+[   230s peak 3.15 GB]    only plates: A 5494/6000 (91.57%)  B 5469 (91.15%)  C 3865 (64.42%)  greedy 94/480  texts 0/30  rec 21/30
+[   239s peak 3.15 GB]    only small pieces: A 3564/6000 (59.40%)  B 3501 (58.35%)  C 1919 (31.98%)  greedy 44/480  texts 0/30  rec 12/30
+[   239s peak 3.15 GB] done

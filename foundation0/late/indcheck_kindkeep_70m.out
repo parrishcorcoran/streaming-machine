@@ -1,0 +1,65 @@
+indcheck_kindkeep.py size 70m: d 512 L 6 heads 8 head 64 turned 16; keep set ['qkv.4', 'qkv.5']
+  s recomputed from the fp16 files: largest relative difference from foundation_share.json 9.42e-05 (qkv.4: 0.156670 vs 0.156655); s range plates 0.0898..0.2834, embed 0.0156, head 0.0143
+  layout check qkv.0   : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  layout check proj.0  : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  layout check fc.0    : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  layout check mproj.5 : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  layout check embed   : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  layout check head    : npz start digit x 2^e vs fp16 start, largest difference 0.500 grid steps
+  cases ['fin', 'b', 'b:K=qkv', 'cb:K=qkv@20261006', 'cb:K=qkv@2', 'mb:K=qkv@1', 'mb:K=qkv@2', 'k', 'ck@20261006', 'ck@2', 'mk@1', 'mk@2']; texts 30 (fed words), greedy on the first 10
+  fin: this checker's finished word = fp32's greedy word at 480 of 480 continuation positions; greedy texts identical to fp32's 10 of 10
+  fin                top-1 30t 100.0 10t 100.0 top-5 100.0 | greedy 10t texts 10 words 160/160 | base-2: top-1 30t 100.0 10t 100.0, same word 100.0%, greedy texts 10, greedy same 160/160 words 10/10 texts | 2.0s 1.16 GB
+                     late level moved 30t   0.0   0.0  10t   0.0   0.0  base-2 30t   0.0   0.0
+                     late first word  30t  57.2  32.9  10t  58.5  31.4  base-2 30t  57.3  32.9
+                     level moved every layer 30t   0.0   0.0   0.0   0.0   0.0   0.0 | edges changed side 30t   0.0   0.0   0.0   0.0   0.0   0.0
+  b                  top-1 30t  52.6 10t  54.5 top-5  82.0 | greedy 10t texts 0 words 18/160 | base-2: top-1 30t  52.6 10t  54.5, same word  99.7%, greedy texts 0, greedy same 160/160 words 10/10 texts | 3.1s 1.46 GB
+                     late level moved 30t  58.5  66.2  10t  57.6  67.0  base-2 30t  58.7  66.2
+                     late first word  30t  35.5  27.2  10t  36.0  27.2  base-2 30t  35.4  27.3
+                     level moved every layer 30t   8.0  15.2  14.9  28.0  58.5  66.2 | edges changed side 30t   7.3   5.8   9.6   9.2  10.2  10.2
+  b:K=qkv            top-1 30t  64.8 10t  65.5 top-5  92.0 | greedy 10t texts 0 words 27/160 | base-2: top-1 30t  65.0 10t  66.0, same word  99.8%, greedy texts 0, greedy same 160/160 words 10/10 texts | 2.9s 1.46 GB
+                     late level moved 30t  58.7  68.6  10t  60.2  70.1  base-2 30t  58.6  68.5
+                     late first word  30t  35.0  22.6  10t  33.1  22.2  base-2 30t  35.0  22.6
+                     level moved every layer 30t   7.8   9.8   9.8  25.1  58.7  68.6 | edges changed side 30t   0.0   2.5   4.0   3.9   5.6   6.3
+  cb:K=qkv@20261006  top-1 30t  65.1 10t  68.0 top-5  92.8 | greedy 10t texts 0 words 30/160 | base-2: top-1 30t  65.0 10t  68.0, same word  99.8%, greedy texts 0, greedy same 160/160 words 10/10 texts | 2.9s 1.46 GB
+                     late level moved 30t  61.7  70.5  10t  62.2  70.3  base-2 30t  61.8  70.4
+                     late first word  30t  30.3  20.5  10t  32.3  21.4  base-2 30t  30.2  20.6
+                     level moved every layer 30t   6.7  10.6  10.5  29.8  61.7  70.5 | edges changed side 30t   0.0   2.4   4.2   4.1   6.0   6.9
+  cb:K=qkv@2         top-1 30t  62.1 10t  62.0 top-5  88.3 | greedy 10t texts 0 words 30/160 | base-2: top-1 30t  62.1 10t  62.0, same word 100.0%, greedy texts 0, greedy same 160/160 words 10/10 texts | 2.9s 1.46 GB
+                     late level moved 30t  61.0  68.8  10t  59.1  71.7  base-2 30t  60.9  68.8
+                     late first word  30t  27.7  22.3  10t  29.9  20.2  base-2 30t  27.8  22.2
+                     level moved every layer 30t   7.2   9.9   8.9  19.9  61.0  68.8 | edges changed side 30t   0.0   2.4   4.2   4.0   5.5   7.2
+  mb:K=qkv@1         top-1 30t  65.3 10t  64.5 top-5  91.2 | greedy 10t texts 0 words 17/160 | 3.0s 1.46 GB
+                     late level moved 30t  64.3  78.6  10t  65.3  78.3
+                     late first word  30t  27.4   8.3  10t  27.4   8.7
+                     level moved every layer 30t   6.6   9.6   9.3  26.9  64.3  78.6 | edges changed side 30t   0.0   2.3   4.0   3.8   5.7   6.9
+  mb:K=qkv@2         top-1 30t  65.1 10t  66.0 top-5  91.8 | greedy 10t texts 0 words 29/160 | 2.9s 1.46 GB
+                     late level moved 30t  64.0  78.9  10t  65.8  80.5
+                     late first word  30t  25.6  11.3  10t  23.0  11.3
+                     level moved every layer 30t   7.0   9.6   8.6  23.2  64.0  78.9 | edges changed side 30t   0.0   2.4   4.3   3.9   5.7   7.0
+  k                  top-1 30t  61.3 10t  60.5 top-5  89.9 | greedy 10t texts 0 words 26/160 | base-2: top-1 30t  61.1 10t  60.5, same word  99.5%, greedy texts 0, greedy same 158/160 words 9/10 texts | 3.0s 1.46 GB
+                     late level moved 30t  18.1  22.2  10t  19.7  23.8  base-2 30t  18.6  22.2
+                     late first word  30t  58.8  36.2  10t  61.4  35.4  base-2 30t  58.7  36.4
+                     level moved every layer 30t   8.0  15.2  14.9  28.0  18.1  22.2 | edges changed side 30t   7.3   5.8   9.6   9.2  10.2   9.5
+  ck@20261006        top-1 30t  60.8 10t  58.5 top-5  89.2 | greedy 10t texts 0 words 18/160 | base-2: top-1 30t  60.5 10t  58.0, same word  99.5%, greedy texts 0, greedy same 160/160 words 10/10 texts | 4.1s 1.46 GB
+                     late level moved 30t  20.1  23.3  10t  22.2  25.7  base-2 30t  20.4  23.2
+                     late first word  30t  58.0  32.5  10t  57.3  32.8  base-2 30t  57.8  32.5
+                     level moved every layer 30t   7.0  15.3  15.2  32.8  20.1  23.3 | edges changed side 30t   7.6   5.7   9.3   9.1   9.8   9.7
+  ck@2               top-1 30t  63.0 10t  63.0 top-5  92.1 | greedy 10t texts 0 words 23/160 | base-2: top-1 30t  63.2 10t  63.0, same word  99.4%, greedy texts 0, greedy same 143/160 words 8/10 texts | 4.0s 1.46 GB
+                     late level moved 30t  19.4  19.8  10t  19.3  21.9  base-2 30t  19.6  19.9
+                     late first word  30t  57.4  36.0  10t  57.8  35.4  base-2 30t  57.2  35.8
+                     level moved every layer 30t   7.2  15.1  14.4  22.1  19.4  19.8 | edges changed side 30t   7.9   5.8   9.3   8.9   9.4   9.4
+  mk@1               top-1 30t  64.6 10t  65.5 top-5  90.8 | greedy 10t texts 0 words 31/160 | 3.9s 1.46 GB
+                     late level moved 30t  18.5  19.0  10t  19.7  21.4
+                     late first word  30t  54.9  34.0  10t  53.7  34.3
+                     level moved every layer 30t   6.7  14.2  13.6  31.5  18.5  19.0 | edges changed side 30t   7.9   5.7   9.3   8.9   9.8   9.7
+  mk@2               top-1 30t  66.1 10t  63.0 top-5  93.1 | greedy 10t texts 0 words 21/160 | 4.0s 1.46 GB
+                     late level moved 30t  19.4  20.6  10t  21.1  22.0
+                     late first word  30t  56.5  34.4  10t  55.6  32.8
+                     level moved every layer 30t   7.2  14.7  14.9  24.1  19.4  20.6 | edges changed side 30t   7.5   5.7   9.6   9.1   9.6   9.2
+
+SUMMARY (top-1 of all positions against this checker's finished machine; draws as min..max)
+  b:K=qkv  30t  b  64.8  rebuilt draws  62.1.. 65.1  own draws  65.1.. 65.3
+  b:K=qkv  10t  b  65.5  rebuilt draws  62.0.. 68.0  own draws  64.5.. 66.0
+  k        30t  b  61.3  rebuilt draws  60.8.. 63.0  own draws  64.6.. 66.1
+  k        10t  b  60.5  rebuilt draws  58.5.. 63.0  own draws  63.0.. 65.5
+done 39s  peak memory 1.46 GB

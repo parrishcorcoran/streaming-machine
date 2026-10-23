@@ -1,0 +1,847 @@
+=== mode=refs seed=1 Wed Oct  7 07:33:58 PDT 2026
+rebuild_gpt2.py mode=refs seed=1  (checker's independent rebuild)
+REFS: texts all 30, 648 positions; grouping seed 1
+    layer  0 done (3s, 2304 MB)
+    layer  1 done (6s, 2395 MB)
+    layer  2 done (9s, 2396 MB)
+    layer  3 done (12s, 2397 MB)
+    layer  4 done (15s, 2397 MB)
+    layer  5 done (18s, 2397 MB)
+    layer  6 done (21s, 2397 MB)
+    layer  7 done (24s, 2397 MB)
+    layer  8 done (27s, 2397 MB)
+    layer  9 done (30s, 2397 MB)
+    layer 10 done (33s, 2397 MB)
+    layer 11 done (36s, 2397 MB)
+EXACT: 99 arrays checked against base2.py's own run (plain_refs.npz); position-arrays differing: 0
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (3s, 2397 MB)
+TOP READ: checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; top 5 = plain_refs 647/648, race winner 648/648
+  position 494: mine [7926, 407, 1016, 523, 1654] scores [-8910946, -8926271, -8961691, -9000182, -9021364]; plain_refs [7926, 407, 1016, 523, 655] scores [-8910946, -8926271, -8961691, -9000182, -9021364]; six best scores [-8910946, -8926271, -8961691, -9000182, -9021364, -9021364]; mine are the five best in order: True
+
+WORK A TOKEN BY PART (648 positions; grouping seed 1)
+  part                  total        a token      delivered   same  of plain
+  qkv          85,988,819,697    132,698,796    132,698,796   True    19.52%
+  proj         40,700,419,345     62,809,289     62,809,289   True    25.28%
+  fc          123,610,945,880    190,757,633    190,757,633   True    21.15%
+  mproj       150,269,073,995    231,896,719    231,896,719   True    25.35%
+  arrival       5,197,037,391      8,020,119      8,020,119   True    61.44%
+  top          52,286,926,052     80,689,701     80,689,701   True     8.93%
+  rest          2,954,109,773      4,558,811      4,558,811   True    99.96%
+  WHOLE       461,007,332,133    711,431,068    711,431,068   True    19.40%
+  of it, the ready piles written: banks 67,491,726, top 9,529,802; without them 634,409,541 = 17.30%
+
+RULE 3 SIDE COUNTS (count only; a token): qkv.0 rows and split 69,262; qkv.0 carry met in signed digits 2,001,667; qkv.0 whole light, group form 12,187,796; qkv.0 carry, group form 1,999,481; proj.0 rows and split 14,965; proj.0 rest light, group form 5,061,145; proj.0 whole light, group form 5,002,115; fc.0 whole light, group form 14,699,339; fc.0 rows and split 45,220; fc.0 rest light, group form 14,460,310
+  qkv.0: stored form 2,070,929, whole light 12,187,796 a token: storage KEPT (+10,116,867)
+  proj.0: stored form 5,076,110, whole light 5,002,115 a token: storage NOT KEPT (-73,995)
+  fc.0: stored form 14,505,531, whole light 14,699,339 a token: storage KEPT (+193,808)
+    side|L0|qkv|storage: the stored form (rows, split, the carry's work): mine 44,881,769 delivered 44,881,769 EQUAL
+    side|L0|qkv|storage: the whole light in the group form: group work: mine 7,897,692,073 delivered 7,897,692,073 EQUAL
+    side|L0|qkv|the carry in the group form: group work: mine 1,295,663,891 delivered 1,295,663,891 EQUAL
+    side|L0|proj|storage: the stored form (rows, split): mine 9,697,265 delivered 9,697,265 EQUAL
+    the delivered fr|L0|proj group items (its stored form's rest): mine 3,279,621,738 delivered 3,279,621,738 EQUAL
+    side|L0|proj|storage: the whole light in the group form: group work: mine 3,241,370,447 delivered 3,241,370,447 EQUAL
+    side|L0|fc|storage: the stored form (rows, split): mine 29,302,745 delivered 29,302,745 EQUAL
+    side|L0|fc|storage: the whole light in the group form: group work: mine 9,525,171,646 delivered 9,525,171,646 EQUAL
+
+THE BANKS AND THE ARRIVAL BY ITEM, a token (mine; delivered record where it exists)
+  arrival  divides                                            1,543,897
+  arrival  q, k and values written                              189,804
+  arrival  scores, signed digits                              2,476,633
+  arrival  shares x values                                    3,795,333
+  arrival  shares' total                                         14,453
+  fc       bends                                              2,130,333
+  fc       biases                                               277,201
+  fc       divides                                            4,613,258
+  fc       light                                                 46,026
+  fc       pwrite                                             9,603,431
+  fc       reads                                            157,810,286
+  fc       sdreads                                            9,885,140
+  fc       split                                                  5,817
+  fc       stored rows read and added                            39,403
+  fc       table                                              6,110,425
+  fc       xoff                                                 200,718
+  fc       xsum                                                  35,595
+  mproj    light                                                191,306
+  mproj    pwrite                                            38,580,255
+  mproj    reads                                            153,675,764
+  mproj    sdreads                                           13,339,504
+  mproj    table                                             25,888,909
+  mproj    xoff                                                  69,997
+  mproj    xsum                                                 150,983
+  proj     light                                                 50,604
+  proj     pwrite                                            10,495,308
+  proj     reads                                             42,634,522
+  proj     sdreads                                            2,878,113
+  proj     table                                              6,656,447
+  proj     xoff                                                  55,612
+  proj     xsum                                                  38,683
+  qkv      light                                                 42,949
+  qkv      pwrite                                             8,812,731
+  qkv      reads                                            106,924,060
+  qkv      sdreads                                           11,001,126
+  qkv      split                                                  6,845
+  qkv      stored rows read and added                            63,897
+  qkv      table                                              5,674,708
+  qkv      xoff                                                 139,456
+  qkv      xsum                                                  33,025
+  rest     bank divides                                       3,454,537
+  rest     biases                                               313,519
+  rest     entry: word + position                                 3,759
+  rest     position 0: the stream after layer 0 read                286
+  rest     stream adds                                          139,193
+  rest     top water level                                       22,938
+  rest     water levels                                         624,580
+
+LAYER BY LAYER AGAINST THE DELIVERED RECORD (totals over the 648 positions)
+  bank, arrival, rest and plain-meeting counts equal to the delivered record: 523; differing: 0
+
+THE TOP READ BY ITEM AGAINST THE DELIVERED PER-POSITION RECORD (gpt2_top_refs.npz), a token
+  table    mine    5,845,979  delivered    5,845,979  positions differing 0/648
+  reads    mine   60,183,083  delivered   60,183,083  positions differing 0/648
+  light    mine        5,671  delivered        5,671  positions differing 0/648
+  bound    mine        1,433  delivered        1,433  positions differing 0/648
+  end      mine          881  delivered          881  positions differing 0/648
+  stand    mine    5,119,216  delivered    5,119,216  positions differing 0/648
+  pwrite   mine    9,529,802  delivered    9,529,802  positions differing 0/648
+  lwrite   mine        3,635  delivered        3,635  positions differing 0/648
+  survivors: delivered array (648, 18), mine (648, 16)
+  survivors after each place equal (last 16 columns aligned at the end): 0/648
+  top 5 = the delivered (ii)'s 648/648, race winner 648/648
+  survivors (median) after each place [(15, 50257), (14, 50257), (13, 50257), (12, 50257), (11, 50257), (10, 50257), (9, 50257), (8, 38992), (7, 3365), (6, 171), (5, 29), (4, 12), (3, 7), (2, 6), (1, 5), (0, 5)]
+done (2397 MB)
+=== mode=refs seed=7 Wed Oct  7 07:35:56 PDT 2026
+rebuild_gpt2.py mode=refs seed=7  (checker's independent rebuild)
+REFS: texts all 30, 648 positions; grouping seed 7
+    layer  0 done (3s, 2304 MB)
+    layer  1 done (6s, 2395 MB)
+    layer  2 done (9s, 2396 MB)
+    layer  3 done (12s, 2432 MB)
+    layer  4 done (15s, 2451 MB)
+    layer  5 done (18s, 2470 MB)
+    layer  6 done (21s, 2489 MB)
+    layer  7 done (25s, 2508 MB)
+    layer  8 done (28s, 2528 MB)
+    layer  9 done (31s, 2547 MB)
+    layer 10 done (34s, 2566 MB)
+    layer 11 done (37s, 2585 MB)
+EXACT: 99 arrays checked against base2.py's own run (plain_refs.npz); position-arrays differing: 0
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (3s, 2620 MB)
+TOP READ: checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; top 5 = plain_refs 647/648, race winner 648/648
+  position 494: mine [7926, 407, 1016, 523, 1654] scores [-8910946, -8926271, -8961691, -9000182, -9021364]; plain_refs [7926, 407, 1016, 523, 655] scores [-8910946, -8926271, -8961691, -9000182, -9021364]; six best scores [-8910946, -8926271, -8961691, -9000182, -9021364, -9021364]; mine are the five best in order: True
+
+WORK A TOKEN BY PART (648 positions; grouping seed 7)
+  part                  total        a token      delivered   same  of plain
+  qkv          86,007,524,892    132,727,662    132,698,796  False    19.53%
+  proj         40,708,779,163     62,822,190     62,809,289  False    25.28%
+  fc          123,517,816,709    190,613,915    190,757,633  False    21.13%
+  mproj       150,280,064,772    231,913,680    231,896,719  False    25.35%
+  arrival       5,197,037,391      8,020,119      8,020,119   True    61.44%
+  top          52,418,133,267     80,892,181     80,689,701  False     8.95%
+  rest          2,954,109,773      4,558,811      4,558,811   True    99.96%
+  WHOLE       461,083,465,967    711,548,559    711,431,068  False    19.41%
+  of it, the ready piles written: banks 67,486,330, top 9,561,872; without them 634,500,356 = 17.30%
+
+RULE 3 SIDE COUNTS (count only; a token): qkv.0 rows and split 69,262; qkv.0 carry met in signed digits 2,001,667; qkv.0 whole light, group form 12,095,908; qkv.0 carry, group form 2,004,499; proj.0 rows and split 14,965; proj.0 rest light, group form 5,054,482; proj.0 whole light, group form 5,005,518; fc.0 whole light, group form 14,533,239; fc.0 rows and split 45,220; fc.0 rest light, group form 14,277,309
+  qkv.0: stored form 2,070,929, whole light 12,095,908 a token: storage KEPT (+10,024,979)
+  proj.0: stored form 5,069,447, whole light 5,005,518 a token: storage NOT KEPT (-63,929)
+  fc.0: stored form 14,322,530, whole light 14,533,239 a token: storage KEPT (+210,710)
+    side|L0|qkv|storage: the stored form (rows, split, the carry's work): mine 44,881,769 delivered 44,881,769 EQUAL
+    side|L0|qkv|storage: the whole light in the group form: group work: mine 7,838,148,383 delivered 7,897,692,073 DIFF -59543690
+    side|L0|qkv|the carry in the group form: group work: mine 1,298,915,382 delivered 1,295,663,891 DIFF +3251491
+    side|L0|proj|storage: the stored form (rows, split): mine 9,697,265 delivered 9,697,265 EQUAL
+    the delivered fr|L0|proj group items (its stored form's rest): mine 3,275,304,529 delivered 3,279,621,738 DIFF -4317209
+    side|L0|proj|storage: the whole light in the group form: group work: mine 3,243,575,834 delivered 3,241,370,447 DIFF +2205387
+    side|L0|fc|storage: the stored form (rows, split): mine 29,302,745 delivered 29,302,745 EQUAL
+    side|L0|fc|storage: the whole light in the group form: group work: mine 9,417,539,122 delivered 9,525,171,646 DIFF -107632524
+
+THE BANKS AND THE ARRIVAL BY ITEM, a token (mine; delivered record where it exists)
+  arrival  divides                                            1,543,897
+  arrival  q, k and values written                              189,804
+  arrival  scores, signed digits                              2,476,633
+  arrival  shares x values                                    3,795,333
+  arrival  shares' total                                         14,453
+  fc       bends                                              2,130,333
+  fc       biases                                               277,201
+  fc       divides                                            4,613,258
+  fc       light                                                 46,026
+  fc       pwrite                                             9,592,899
+  fc       reads                                            157,672,109
+  fc       sdreads                                            9,885,140
+  fc       split                                                  5,817
+  fc       stored rows read and added                            39,403
+  fc       table                                              6,115,416
+  fc       xoff                                                 200,718
+  fc       xsum                                                  35,595
+  mproj    light                                                191,306
+  mproj    pwrite                                            38,578,902
+  mproj    reads                                            153,671,544
+  mproj    sdreads                                           13,339,504
+  mproj    table                                             25,911,444
+  mproj    xoff                                                  69,997
+  mproj    xsum                                                 150,983
+  proj     light                                                 50,604
+  proj     pwrite                                            10,497,374
+  proj     reads                                             42,643,432
+  proj     sdreads                                            2,878,113
+  proj     table                                              6,658,373
+  proj     xoff                                                  55,612
+  proj     xsum                                                  38,683
+  qkv      light                                                 42,949
+  qkv      pwrite                                             8,817,156
+  qkv      reads                                            106,953,898
+  qkv      sdreads                                           11,001,126
+  qkv      split                                                  6,845
+  qkv      stored rows read and added                            63,897
+  qkv      table                                              5,669,311
+  qkv      xoff                                                 139,456
+  qkv      xsum                                                  33,025
+  rest     bank divides                                       3,454,537
+  rest     biases                                               313,519
+  rest     entry: word + position                                 3,759
+  rest     position 0: the stream after layer 0 read                286
+  rest     stream adds                                          139,193
+  rest     top water level                                       22,938
+  rest     water levels                                         624,580
+
+LAYER BY LAYER AGAINST THE DELIVERED RECORD (totals over the 648 positions)
+  DIFF L0   fc     pwrite                                   mine        493,427,956 delivered        501,143,068 (-7,715,112)
+  DIFF L0   fc     reads                                    mine      7,836,004,331 delivered      7,948,996,192 (-112,991,861)
+  DIFF L0   fc     table                                    mine        282,228,265 delivered        280,105,896 (+2,122,369)
+  DIFF L0   mproj  pwrite                                   mine      1,934,587,097 delivered      1,933,897,484 (+689,613)
+  DIFF L0   mproj  reads                                    mine      7,734,066,086 delivered      7,731,235,048 (+2,831,038)
+  DIFF L0   mproj  table                                    mine      1,311,832,644 delivered      1,309,796,829 (+2,035,815)
+  DIFF L1   fc     pwrite                                   mine        523,987,744 delivered        522,930,153 (+1,057,591)
+  DIFF L1   fc     reads                                    mine      8,900,185,727 delivered      8,880,612,263 (+19,573,464)
+  DIFF L1   fc     table                                    mine        333,956,794 delivered        331,490,045 (+2,466,749)
+  DIFF L1   mproj  pwrite                                   mine      2,074,307,696 delivered      2,073,223,547 (+1,084,149)
+  DIFF L1   mproj  reads                                    mine      8,272,526,571 delivered      8,267,624,220 (+4,902,351)
+  DIFF L1   mproj  table                                    mine      1,393,694,089 delivered      1,391,142,211 (+2,551,878)
+  DIFF L1   proj   pwrite                                   mine        548,368,169 delivered        545,758,693 (+2,609,476)
+  DIFF L1   proj   reads                                    mine      2,171,763,159 delivered      2,162,492,144 (+9,271,015)
+  DIFF L1   proj   table                                    mine        346,035,195 delivered        350,950,111 (-4,914,916)
+  DIFF L1   qkv    pwrite                                   mine        518,877,369 delivered        520,156,821 (-1,279,452)
+  DIFF L1   qkv    reads                                    mine      6,175,627,005 delivered      6,195,188,409 (-19,561,404)
+  DIFF L1   qkv    table                                    mine        327,195,407 delivered        329,847,275 (-2,651,868)
+  DIFF L10  fc     pwrite                                   mine        513,049,596 delivered        513,208,630 (-159,034)
+  DIFF L10  fc     reads                                    mine      8,154,952,928 delivered      8,158,657,418 (-3,704,490)
+  DIFF L10  fc     table                                    mine        334,027,570 delivered        332,665,297 (+1,362,273)
+  DIFF L10  mproj  pwrite                                   mine      2,072,112,363 delivered      2,071,831,993 (+280,370)
+  DIFF L10  mproj  reads                                    mine      8,261,467,268 delivered      8,259,949,493 (+1,517,775)
+  DIFF L10  mproj  table                                    mine      1,386,660,377 delivered      1,387,078,677 (-418,300)
+  DIFF L10  proj   pwrite                                   mine        572,136,795 delivered        571,095,514 (+1,041,281)
+  DIFF L10  proj   reads                                    mine      2,413,552,363 delivered      2,409,876,322 (+3,676,041)
+  DIFF L10  proj   table                                    mine        362,173,467 delivered        358,491,342 (+3,682,125)
+  DIFF L10  qkv    pwrite                                   mine        513,717,730 delivered        513,389,289 (+328,441)
+  DIFF L10  qkv    reads                                    mine      6,119,651,764 delivered      6,117,918,945 (+1,732,819)
+  DIFF L10  qkv    table                                    mine        331,960,188 delivered        333,913,973 (-1,953,785)
+  DIFF L11  fc     pwrite                                   mine        498,984,636 delivered        502,001,022 (-3,016,386)
+  DIFF L11  fc     reads                                    mine      8,524,509,096 delivered      8,564,357,046 (-39,847,950)
+  DIFF L11  fc     table                                    mine        316,819,518 delivered        315,027,613 (+1,791,905)
+  DIFF L11  mproj  pwrite                                   mine      2,060,978,806 delivered      2,061,731,674 (-752,868)
+  DIFF L11  mproj  reads                                    mine      8,224,369,681 delivered      8,226,933,485 (-2,563,804)
+  DIFF L11  mproj  table                                    mine      1,368,597,966 delivered      1,364,793,492 (+3,804,474)
+  DIFF L11  proj   pwrite                                   mine        573,162,235 delivered        571,368,061 (+1,794,174)
+  DIFF L11  proj   reads                                    mine      2,259,925,720 delivered      2,252,193,672 (+7,732,048)
+  DIFF L11  proj   table                                    mine        356,483,705 delivered        356,677,158 (-193,453)
+  DIFF L11  qkv    pwrite                                   mine        509,972,245 delivered        510,685,665 (-713,420)
+  DIFF L11  qkv    reads                                    mine      6,074,957,232 delivered      6,082,231,903 (-7,274,671)
+  DIFF L11  qkv    table                                    mine        326,845,293 delivered        327,560,036 (-714,743)
+  DIFF L2   fc     pwrite                                   mine        524,990,832 delivered        523,923,892 (+1,066,940)
+  DIFF L2   fc     reads                                    mine      8,924,666,789 delivered      8,911,138,971 (+13,527,818)
+  DIFF L2   fc     table                                    mine        334,320,227 delivered        333,995,480 (+324,747)
+  DIFF L2   mproj  pwrite                                   mine      2,097,039,125 delivered      2,097,252,153 (-213,028)
+  DIFF L2   mproj  reads                                    mine      8,350,594,347 delivered      8,351,014,852 (-420,505)
+  DIFF L2   mproj  table                                    mine      1,383,572,400 delivered      1,385,295,556 (-1,723,156)
+  DIFF L2   proj   pwrite                                   mine        563,336,759 delivered        566,546,930 (-3,210,171)
+  DIFF L2   proj   reads                                    mine      2,224,134,029 delivered      2,236,012,093 (-11,878,064)
+  DIFF L2   proj   table                                    mine        359,246,596 delivered        358,795,272 (+451,324)
+  DIFF L2   qkv    pwrite                                   mine        521,106,614 delivered        520,538,062 (+568,552)
+  DIFF L2   qkv    reads                                    mine      6,201,186,403 delivered      6,198,882,468 (+2,303,935)
+  DIFF L2   qkv    table                                    mine        335,473,147 delivered        332,829,110 (+2,644,037)
+  DIFF L3   fc     pwrite                                   mine        526,503,864 delivered        526,687,136 (-183,272)
+  DIFF L3   fc     reads                                    mine      8,342,236,450 delivered      8,343,465,469 (-1,229,019)
+  DIFF L3   fc     table                                    mine        337,255,878 delivered        337,983,424 (-727,546)
+  DIFF L3   mproj  pwrite                                   mine      2,094,469,771 delivered      2,093,374,879 (+1,094,892)
+  DIFF L3   mproj  reads                                    mine      8,341,659,571 delivered      8,338,291,174 (+3,368,397)
+  DIFF L3   mproj  table                                    mine      1,389,358,749 delivered      1,388,315,068 (+1,043,681)
+  DIFF L3   proj   pwrite                                   mine        560,372,822 delivered        559,741,653 (+631,169)
+  DIFF L3   proj   reads                                    mine      2,213,758,936 delivered      2,212,642,386 (+1,116,550)
+  DIFF L3   proj   table                                    mine        356,785,285 delivered        354,637,490 (+2,147,795)
+  DIFF L3   qkv    pwrite                                   mine        524,943,674 delivered        525,125,453 (-181,779)
+  DIFF L3   qkv    reads                                    mine      6,242,058,521 delivered      6,242,942,265 (-883,744)
+  DIFF L3   qkv    table                                    mine        334,446,878 delivered        336,238,570 (-1,791,692)
+  DIFF L4   fc     pwrite                                   mine        527,286,759 delivered        525,057,450 (+2,229,309)
+  DIFF L4   fc     reads                                    mine      8,946,803,174 delivered      8,911,635,133 (+35,168,041)
+  DIFF L4   fc     table                                    mine        338,645,624 delivered        340,245,222 (-1,599,598)
+  DIFF L4   mproj  pwrite                                   mine      2,143,156,969 delivered      2,144,903,266 (-1,746,297)
+  DIFF L4   mproj  reads                                    mine      8,513,239,545 delivered      8,518,664,393 (-5,424,848)
+  DIFF L4   mproj  table                                    mine      1,445,143,658 delivered      1,437,167,062 (+7,976,596)
+  DIFF L4   proj   pwrite                                   mine        581,234,512 delivered        579,991,694 (+1,242,818)
+  DIFF L4   proj   reads                                    mine      2,288,239,910 delivered      2,283,192,017 (+5,047,893)
+  DIFF L4   proj   table                                    mine        370,289,173 delivered        374,253,445 (-3,964,272)
+  DIFF L4   qkv    pwrite                                   mine        525,380,187 delivered        523,769,610 (+1,610,577)
+  DIFF L4   qkv    reads                                    mine      6,243,092,526 delivered      6,227,105,468 (+15,987,058)
+  DIFF L4   qkv    table                                    mine        335,314,917 delivered        336,290,507 (-975,590)
+  DIFF L5   fc     pwrite                                   mine        522,163,431 delivered        521,243,166 (+920,265)
+  DIFF L5   fc     reads                                    mine      8,279,497,504 delivered      8,265,777,461 (+13,720,043)
+  DIFF L5   fc     table                                    mine        336,288,173 delivered        337,646,305 (-1,358,132)
+  DIFF L5   mproj  pwrite                                   mine      2,133,584,907 delivered      2,133,758,814 (-173,907)
+  DIFF L5   mproj  reads                                    mine      8,479,482,027 delivered      8,480,652,726 (-1,170,699)
+  DIFF L5   mproj  table                                    mine      1,427,506,504 delivered      1,429,280,286 (-1,773,782)
+  DIFF L5   proj   pwrite                                   mine        548,384,254 delivered        549,584,668 (-1,200,414)
+  DIFF L5   proj   reads                                    mine      2,172,084,860 delivered      2,176,215,628 (-4,130,768)
+  DIFF L5   proj   table                                    mine        337,544,213 delivered        339,249,476 (-1,705,263)
+  DIFF L5   qkv    pwrite                                   mine        519,617,844 delivered        519,276,109 (+341,735)
+  DIFF L5   qkv    reads                                    mine      6,626,016,510 delivered      6,621,531,451 (+4,485,059)
+  DIFF L5   qkv    table                                    mine        335,663,486 delivered        334,568,378 (+1,095,108)
+  DIFF L6   fc     pwrite                                   mine        518,489,581 delivered        518,052,390 (+437,191)
+  DIFF L6   fc     reads                                    mine      8,228,742,234 delivered      8,224,406,866 (+4,335,368)
+  DIFF L6   fc     table                                    mine        335,521,833 delivered        334,806,001 (+715,832)
+  DIFF L6   mproj  pwrite                                   mine      2,161,111,550 delivered      2,162,081,820 (-970,270)
+  DIFF L6   mproj  reads                                    mine      8,576,236,714 delivered      8,580,381,348 (-4,144,634)
+  DIFF L6   mproj  table                                    mine      1,461,037,456 delivered      1,458,100,314 (+2,937,142)
+  DIFF L6   proj   pwrite                                   mine        571,041,087 delivered        570,988,193 (+52,894)
+  DIFF L6   proj   reads                                    mine      2,409,709,230 delivered      2,409,278,130 (+431,100)
+  DIFF L6   proj   table                                    mine        367,208,817 delivered        365,619,432 (+1,589,385)
+  DIFF L6   qkv    pwrite                                   mine        516,270,533 delivered        516,820,373 (-549,840)
+  DIFF L6   qkv    reads                                    mine      6,587,438,908 delivered      6,593,517,603 (-6,078,695)
+  DIFF L6   qkv    table                                    mine        333,896,098 delivered        335,156,691 (-1,260,593)
+  DIFF L7   fc     pwrite                                   mine        520,165,895 delivered        521,283,237 (-1,117,342)
+  DIFF L7   fc     reads                                    mine      8,251,020,495 delivered      8,267,057,706 (-16,037,211)
+  DIFF L7   fc     table                                    mine        335,201,265 delivered        336,804,961 (-1,603,696)
+  DIFF L7   mproj  pwrite                                   mine      2,128,321,203 delivered      2,128,345,922 (-24,719)
+  DIFF L7   mproj  reads                                    mine      8,459,927,074 delivered      8,459,854,209 (+72,865)
+  DIFF L7   mproj  table                                    mine      1,442,853,990 delivered      1,440,620,319 (+2,233,671)
+  DIFF L7   proj   pwrite                                   mine        578,866,823 delivered        579,769,483 (-902,660)
+  DIFF L7   proj   reads                                    mine      2,438,884,371 delivered      2,442,815,482 (-3,931,111)
+  DIFF L7   proj   table                                    mine        366,379,896 delivered        365,505,255 (+874,641)
+  DIFF L7   qkv    pwrite                                   mine        517,785,753 delivered        517,960,210 (-174,457)
+  DIFF L7   qkv    reads                                    mine      6,603,373,909 delivered      6,605,319,691 (-1,945,782)
+  DIFF L7   qkv    table                                    mine        335,173,316 delivered        333,363,558 (+1,809,758)
+  DIFF L8   fc     pwrite                                   mine        525,348,737 delivered        525,296,285 (+52,452)
+  DIFF L8   fc     reads                                    mine      8,918,883,658 delivered      8,917,135,614 (+1,748,044)
+  DIFF L8   fc     table                                    mine        340,248,000 delivered        339,764,817 (+483,183)
+  DIFF L8   mproj  pwrite                                   mine      2,049,834,258 delivered      2,050,931,755 (-1,097,497)
+  DIFF L8   mproj  reads                                    mine      8,184,481,947 delivered      8,187,134,064 (-2,652,117)
+  DIFF L8   mproj  table                                    mine      1,392,915,656 delivered      1,393,763,880 (-848,224)
+  DIFF L8   proj   pwrite                                   mine        587,293,661 delivered        588,260,475 (-966,814)
+  DIFF L8   proj   reads                                    mine      2,471,332,444 delivered      2,474,720,496 (-3,388,052)
+  DIFF L8   proj   table                                    mine        378,792,638 delivered        375,099,822 (+3,692,816)
+  DIFF L8   qkv    pwrite                                   mine        523,233,232 delivered        521,761,646 (+1,471,586)
+  DIFF L8   qkv    reads                                    mine      6,219,317,014 delivered      6,204,290,255 (+15,026,759)
+  DIFF L8   qkv    table                                    mine        339,854,113 delivered        339,927,822 (-73,709)
+  DIFF L9   fc     pwrite                                   mine        521,799,534 delivered        522,197,073 (-397,539)
+  DIFF L9   fc     reads                                    mine      8,864,024,470 delivered      8,867,824,918 (-3,800,448)
+  DIFF L9   fc     table                                    mine        338,276,272 delivered        339,020,391 (-744,119)
+  DIFF L9   mproj  pwrite                                   mine      2,049,624,842 delivered      2,048,672,247 (+952,595)
+  DIFF L9   mproj  reads                                    mine      8,181,109,745 delivered      8,180,160,107 (+949,638)
+  DIFF L9   mproj  table                                    mine      1,387,442,119 delivered      1,390,659,627 (-3,217,508)
+  DIFF L9   proj   pwrite                                   mine        579,906,066 delivered        579,822,962 (+83,104)
+  DIFF L9   proj   reads                                    mine      2,443,533,479 delivered      2,443,090,828 (+442,651)
+  DIFF L9   proj   table                                    mine        365,522,045 delivered        366,591,956 (-1,069,911)
+  DIFF L9   qkv    pwrite                                   mine        522,611,636 delivered        521,166,323 (+1,445,313)
+  DIFF L9   qkv    reads                                    mine      6,213,406,319 delivered      6,197,862,121 (+15,544,198)
+  DIFF L9   qkv    table                                    mine        337,890,401 delivered        337,514,917 (+375,484)
+  bank, arrival, rest and plain-meeting counts equal to the delivered record: 385; differing: 138
+
+THE TOP READ BY ITEM AGAINST THE DELIVERED PER-POSITION RECORD (gpt2_top_refs.npz), a token
+  table    mine    5,786,003  delivered    5,845,979  positions differing 648/648  (total -38,864,596)
+  reads    mine   60,413,469  delivered   60,183,083  positions differing 648/648  (total +149,290,013)
+  light    mine        5,671  delivered        5,671  positions differing 0/648
+  bound    mine        1,433  delivered        1,433  positions differing 0/648
+  end      mine          881  delivered          881  positions differing 0/648
+  stand    mine    5,119,216  delivered    5,119,216  positions differing 0/648
+  pwrite   mine    9,561,872  delivered    9,529,802  positions differing 648/648  (total +20,781,798)
+  lwrite   mine        3,635  delivered        3,635  positions differing 0/648
+  survivors: delivered array (648, 18), mine (648, 16)
+  survivors after each place equal (last 16 columns aligned at the end): 0/648
+  top 5 = the delivered (ii)'s 648/648, race winner 648/648
+  survivors (median) after each place [(15, 50257), (14, 50257), (13, 50257), (12, 50257), (11, 50257), (10, 50257), (9, 50257), (8, 38992), (7, 3365), (6, 171), (5, 29), (4, 12), (3, 7), (2, 6), (1, 5), (0, 5)]
+done (2826 MB)
+=== mode=refs seed=1 texts=0,1,2 reorder=5 Wed Oct  7 07:36:54 PDT 2026
+rebuild_gpt2.py mode=refs seed=1 texts=0,1,2 reorder=5  (checker's independent rebuild)
+REFS: texts [0, 1, 2], 62 positions; grouping seed 1; ORDER-FREE reorder 5
+    layer  0 done (1s, 1999 MB)
+    layer  1 done (2s, 2024 MB)
+    layer  2 done (3s, 2029 MB)
+    layer  3 done (3s, 2030 MB)
+    layer  4 done (4s, 2032 MB)
+    layer  5 done (5s, 2039 MB)
+    layer  6 done (6s, 2041 MB)
+    layer  7 done (6s, 2041 MB)
+    layer  8 done (7s, 2045 MB)
+    layer  9 done (8s, 2045 MB)
+    layer 10 done (9s, 2047 MB)
+    layer 11 done (10s, 2051 MB)
+EXACT: 99 arrays checked against base2.py's own run (plain_refs.npz); position-arrays differing: 0
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (4s, 2376 MB)
+TOP READ: checks {'bound broken (any word)': 17595319, 'a word set aside that is not below the 5th-best': 305, 'words read to the end vs the direct product': 331, "every word's doubled pile from its places vs the direct product": 3115872}; top 5 = plain_refs 62/62, race winner 62/62
+
+WORK A TOKEN BY PART (62 positions; grouping seed 1; reorder 5)
+  part                  total        a token      delivered   same  of plain
+  qkv           8,177,200,411    131,890,329    132,698,796  False    19.40%
+  proj          3,891,700,467     62,769,362     62,809,289  False    25.26%
+  fc           11,755,710,239    189,608,230    190,757,633  False    21.02%
+  mproj        14,400,055,414    232,258,958    231,896,719  False    25.39%
+  arrival         479,926,459      7,740,749      8,020,119  False    59.30%
+  top           5,026,225,186     81,068,148     80,689,701  False     8.97%
+  rest            279,010,275      4,500,166      4,558,811  False    98.68%
+  WHOLE        44,009,828,451    709,835,943    711,431,068  False    19.36%
+  of it, the ready piles written: banks 67,408,166, top 9,516,323; without them 632,911,455 = 17.26%
+
+RULE 3 SIDE COUNTS (count only; a token): qkv.0 rows and split 69,075; qkv.0 carry met in signed digits 1,990,300; qkv.0 whole light, group form 12,128,341; qkv.0 carry, group form 1,976,084; proj.0 rows and split 14,869; proj.0 rest light, group form 5,019,058; proj.0 whole light, group form 4,958,159; fc.0 whole light, group form 14,667,886; fc.0 rows and split 45,164; fc.0 rest light, group form 14,429,595
+  qkv.0: stored form 2,059,374, whole light 12,128,341 a token: storage KEPT (+10,068,967)
+  proj.0: stored form 5,033,927, whole light 4,958,159 a token: storage NOT KEPT (-75,768)
+  fc.0: stored form 14,474,759, whole light 14,667,886 a token: storage KEPT (+193,127)
+
+THE BANKS AND THE ARRIVAL BY ITEM, a token (mine; delivered record where it exists)
+  arrival  divides                                            1,531,833
+  arrival  q, k and values written                              189,504
+  arrival  scores, signed digits                              2,362,633
+  arrival  shares x values                                    3,642,876
+  arrival  shares' total                                         13,904
+  fc       bends                                              2,133,894
+  fc       biases                                               277,148
+  fc       divides                                            4,572,167
+  fc       light                                                 45,614
+  fc       pwrite                                             9,539,828
+  fc       reads                                            156,885,017
+  fc       sdreads                                            9,817,451
+  fc       split                                                  5,807
+  fc       stored rows read and added                            39,358
+  fc       table                                              6,055,311
+  fc       xoff                                                 201,315
+  fc       xsum                                                  35,321
+  mproj    light                                                192,222
+  mproj    pwrite                                            38,621,860
+  mproj    reads                                            153,820,779
+  mproj    sdreads                                           13,407,690
+  mproj    table                                             25,994,384
+  mproj    xoff                                                  70,408
+  mproj    xsum                                                 151,616
+  proj     light                                                 50,560
+  proj     pwrite                                            10,491,408
+  proj     reads                                             42,619,025
+  proj     sdreads                                            2,873,432
+  proj     table                                              6,640,611
+  proj     xoff                                                  55,668
+  proj     xsum                                                  38,660
+  qkv      light                                                 42,590
+  qkv      pwrite                                             8,755,070
+  qkv      reads                                            106,303,677
+  qkv      sdreads                                           10,917,791
+  qkv      split                                                  6,814
+  qkv      stored rows read and added                            63,808
+  qkv      table                                              5,626,489
+  qkv      xoff                                                 141,324
+  qkv      xsum                                                  32,766
+  rest     bank divides                                       3,405,334
+  rest     biases                                               313,499
+  rest     entry: word + position                                 3,767
+  rest     position 0: the stream after layer 0 read                300
+  rest     stream adds                                          138,687
+  rest     top water level                                       22,911
+  rest     water levels                                         615,668
+done (2534 MB)
+=== mode=windows a=0 b=300 Wed Oct  7 07:37:11 PDT 2026
+rebuild_gpt2.py mode=windows a=0 b=300  (checker's independent rebuild)
+WINDOWS 0..300 in chunks of 10: the machine against a fresh run of base2.py's own steps; the top read at positions 3..22
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (3s, 2040 MB)
+    layer  0 done (2s, 2446 MB)
+    layer  1 done (3s, 2503 MB)
+    layer  2 done (5s, 2505 MB)
+    layer  3 done (6s, 2507 MB)
+    layer  4 done (8s, 2508 MB)
+    layer  5 done (9s, 2508 MB)
+    layer  6 done (11s, 2508 MB)
+    layer  7 done (12s, 2509 MB)
+    layer  8 done (14s, 2510 MB)
+    layer  9 done (15s, 2510 MB)
+    layer 10 done (17s, 2510 MB)
+    layer 11 done (18s, 2510 MB)
+  windows 0..9: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (29s, 2510 MB)
+    layer  0 done (2s, 2636 MB)
+    layer  1 done (3s, 2662 MB)
+    layer  2 done (5s, 2668 MB)
+    layer  3 done (6s, 2668 MB)
+    layer  4 done (8s, 2668 MB)
+    layer  5 done (9s, 2668 MB)
+    layer  6 done (11s, 2668 MB)
+    layer  7 done (12s, 2668 MB)
+    layer  8 done (14s, 2668 MB)
+    layer  9 done (15s, 2668 MB)
+    layer 10 done (17s, 2668 MB)
+    layer 11 done (18s, 2668 MB)
+  windows 10..19: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (58s, 2668 MB)
+    layer  0 done (2s, 2668 MB)
+    layer  1 done (3s, 2668 MB)
+    layer  2 done (5s, 2668 MB)
+    layer  3 done (6s, 2668 MB)
+    layer  4 done (8s, 2668 MB)
+    layer  5 done (10s, 2668 MB)
+    layer  6 done (11s, 2668 MB)
+    layer  7 done (13s, 2668 MB)
+    layer  8 done (14s, 2668 MB)
+    layer  9 done (16s, 2668 MB)
+    layer 10 done (17s, 2668 MB)
+    layer 11 done (19s, 2668 MB)
+  windows 20..29: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (89s, 2668 MB)
+    layer  0 done (2s, 2668 MB)
+    layer  1 done (3s, 2668 MB)
+    layer  2 done (5s, 2668 MB)
+    layer  3 done (7s, 2668 MB)
+    layer  4 done (8s, 2668 MB)
+    layer  5 done (10s, 2668 MB)
+    layer  6 done (11s, 2668 MB)
+    layer  7 done (12s, 2668 MB)
+    layer  8 done (14s, 2668 MB)
+    layer  9 done (15s, 2668 MB)
+    layer 10 done (17s, 2668 MB)
+    layer 11 done (19s, 2668 MB)
+  windows 30..39: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (119s, 2668 MB)
+    layer  0 done (2s, 2668 MB)
+    layer  1 done (4s, 2682 MB)
+    layer  2 done (5s, 2682 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (10s, 2690 MB)
+    layer  6 done (12s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (15s, 2690 MB)
+    layer  9 done (17s, 2690 MB)
+    layer 10 done (19s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 40..49: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (152s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (22s, 2690 MB)
+  windows 50..59: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (186s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (12s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (17s, 2690 MB)
+    layer 10 done (19s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 60..69: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (220s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (5s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 70..79: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (253s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (12s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (22s, 2690 MB)
+  windows 80..89: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (288s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 90..99: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (322s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (22s, 2690 MB)
+  windows 100..109: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (356s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 110..119: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (390s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (12s, 2690 MB)
+    layer  7 done (14s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 120..129: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (424s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 130..139: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (458s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (16s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (22s, 2690 MB)
+  windows 140..149: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (493s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (5s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (12s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 150..159: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (528s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (12s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 160..169: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (563s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (5s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 170..179: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (598s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (12s, 2690 MB)
+    layer  6 done (14s, 2690 MB)
+    layer  7 done (16s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 180..189: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (634s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 190..199: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (669s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (12s, 2690 MB)
+    layer  6 done (14s, 2690 MB)
+    layer  7 done (16s, 2690 MB)
+    layer  8 done (18s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 200..209: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (705s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (8s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (21s, 2690 MB)
+    layer 11 done (23s, 2690 MB)
+  windows 210..219: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (740s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (7s, 2690 MB)
+    layer  3 done (9s, 2690 MB)
+    layer  4 done (10s, 2690 MB)
+    layer  5 done (12s, 2690 MB)
+    layer  6 done (14s, 2690 MB)
+    layer  7 done (16s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (18s, 2690 MB)
+    layer 10 done (20s, 2690 MB)
+    layer 11 done (21s, 2690 MB)
+  windows 220..229: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (773s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (4s, 2690 MB)
+    layer  2 done (6s, 2690 MB)
+    layer  3 done (7s, 2690 MB)
+    layer  4 done (9s, 2690 MB)
+    layer  5 done (11s, 2690 MB)
+    layer  6 done (13s, 2690 MB)
+    layer  7 done (15s, 2690 MB)
+    layer  8 done (17s, 2690 MB)
+    layer  9 done (19s, 2690 MB)
+    layer 10 done (22s, 2690 MB)
+    layer 11 done (24s, 2690 MB)
+  windows 230..239: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (810s, 2690 MB)
+    layer  0 done (3s, 2690 MB)
+    layer  1 done (5s, 2690 MB)
+    layer  2 done (7s, 2690 MB)
+    layer  3 done (9s, 2690 MB)
+    layer  4 done (11s, 2690 MB)
+    layer  5 done (13s, 2690 MB)
+    layer  6 done (15s, 2690 MB)
+    layer  7 done (17s, 2690 MB)
+    layer  8 done (20s, 2690 MB)
+    layer  9 done (22s, 2690 MB)
+    layer 10 done (24s, 2690 MB)
+    layer 11 done (26s, 2690 MB)
+  windows 240..249: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (851s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (5s, 2690 MB)
+    layer  2 done (7s, 2690 MB)
+    layer  3 done (9s, 2690 MB)
+    layer  4 done (11s, 2690 MB)
+    layer  5 done (13s, 2690 MB)
+    layer  6 done (15s, 2690 MB)
+    layer  7 done (17s, 2690 MB)
+    layer  8 done (19s, 2690 MB)
+    layer  9 done (22s, 2690 MB)
+    layer 10 done (24s, 2690 MB)
+    layer 11 done (26s, 2690 MB)
+  windows 250..259: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (892s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (3s, 2690 MB)
+    layer  2 done (4s, 2690 MB)
+    layer  3 done (6s, 2690 MB)
+    layer  4 done (7s, 2690 MB)
+    layer  5 done (8s, 2690 MB)
+    layer  6 done (10s, 2690 MB)
+    layer  7 done (11s, 2690 MB)
+    layer  8 done (12s, 2690 MB)
+    layer  9 done (13s, 2690 MB)
+    layer 10 done (15s, 2690 MB)
+    layer 11 done (16s, 2690 MB)
+  windows 260..269: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (919s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (3s, 2690 MB)
+    layer  2 done (4s, 2690 MB)
+    layer  3 done (5s, 2690 MB)
+    layer  4 done (7s, 2690 MB)
+    layer  5 done (8s, 2690 MB)
+    layer  6 done (9s, 2690 MB)
+    layer  7 done (11s, 2690 MB)
+    layer  8 done (12s, 2690 MB)
+    layer  9 done (13s, 2690 MB)
+    layer 10 done (15s, 2690 MB)
+    layer 11 done (16s, 2690 MB)
+  windows 270..279: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (944s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (3s, 2690 MB)
+    layer  2 done (4s, 2690 MB)
+    layer  3 done (5s, 2690 MB)
+    layer  4 done (7s, 2690 MB)
+    layer  5 done (8s, 2690 MB)
+    layer  6 done (9s, 2690 MB)
+    layer  7 done (11s, 2690 MB)
+    layer  8 done (12s, 2690 MB)
+    layer  9 done (13s, 2690 MB)
+    layer 10 done (14s, 2690 MB)
+    layer 11 done (16s, 2690 MB)
+  windows 280..289: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (969s, 2690 MB)
+    layer  0 done (2s, 2690 MB)
+    layer  1 done (3s, 2690 MB)
+    layer  2 done (4s, 2690 MB)
+    layer  3 done (5s, 2690 MB)
+    layer  4 done (7s, 2690 MB)
+    layer  5 done (8s, 2690 MB)
+    layer  6 done (9s, 2690 MB)
+    layer  7 done (11s, 2690 MB)
+    layer  8 done (12s, 2690 MB)
+    layer  9 done (13s, 2690 MB)
+    layer 10 done (14s, 2690 MB)
+    layer 11 done (16s, 2690 MB)
+  windows 290..299: arrays differing 0 (99 arrays); top checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; (994s, 2690 MB)
+EXACT: position-arrays differing from base2's own run in windows 0..300: 0; the top read's checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}
+JUDGE5: judge5.judge in the reference top 5 6000/6000, the same top word 6000/6000; the machine's top 5 = judge5_ref.npz (set and order) 6000/6000
+done (2690 MB)
+=== all done Wed Oct  7 07:53:50 PDT 2026

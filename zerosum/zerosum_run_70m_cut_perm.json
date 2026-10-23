@@ -1,0 +1,31 @@
+{
+ "machine": "70m",
+ "variant": "cut",
+ "plain_stats": {
+  "reads": 8086,
+  "S1=0": 0
+ },
+ "zerosum_stats": {
+  "reads": 8086,
+  "S1=0": 0
+ },
+ "compare": {
+  "calls": 51442,
+  "diff_calls": 0,
+  "same_positions": 622,
+  "power_moved": 0,
+  "differ_before_power_moved": 0,
+  "positions": 622,
+  "scores_same_texts": 30,
+  "win_same": 622,
+  "top5_same": 622,
+  "top5_set_same": 622,
+  "first": {}
+ },
+ "order_free": {
+  "scores_same": 30,
+  "texts": 30,
+  "gauges_same": 37942,
+  "gauges": 37942
+ }
+}

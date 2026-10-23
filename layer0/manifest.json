@@ -1,0 +1,296 @@
+{
+ "what": "layer 0 step 2 tables (see layer0/build.py docstring and base2_layer0.py)",
+ "files": {
+  "Z0_ids.npy": {
+   "shape": [
+    50257
+   ],
+   "dtype": "int32",
+   "bytes": 201156,
+   "sha256": "d26bd84e89c03c3aaa224bab6016731d380f5cf2282bde25edf3d16c82e77a47"
+  },
+  "Z0.npy": {
+   "shape": [
+    50257,
+    768
+   ],
+   "dtype": "int32",
+   "bytes": 154389632,
+   "sha256": "c80ef057a512bcb1c6246d1e42e41b649e9430ddbc518cfe79e033cc97996b1e"
+  },
+  "FT5_ids.npy": {
+   "shape": [
+    50257
+   ],
+   "dtype": "int32",
+   "bytes": 201156,
+   "sha256": "d26bd84e89c03c3aaa224bab6016731d380f5cf2282bde25edf3d16c82e77a47"
+  },
+  "FT5.npy": {
+   "shape": [
+    50257,
+    3072
+   ],
+   "dtype": "int32",
+   "bytes": 617558144,
+   "sha256": "fc4f7153f43ce6a559c0805fca3a372e5c5c1f03ff6ba65eb6aa68ab20599c6d"
+  },
+  "FP5_ids.npy": {
+   "shape": [
+    1024
+   ],
+   "dtype": "int32",
+   "bytes": 4224,
+   "sha256": "91e5fc58e793f15489b8bf17c51649e518c19cd3e1a1ccd0d47a6938831bc6e4"
+  },
+  "FP5.npy": {
+   "shape": [
+    1024,
+    3072
+   ],
+   "dtype": "int32",
+   "bytes": 12583040,
+   "sha256": "697df2fa136950c8b29b2cff2f87c53fafcb20302978b06e2ed8fbb42d0f9f2c"
+  },
+  "FT6_ids.npy": {
+   "shape": [
+    50257
+   ],
+   "dtype": "int32",
+   "bytes": 201156,
+   "sha256": "d26bd84e89c03c3aaa224bab6016731d380f5cf2282bde25edf3d16c82e77a47"
+  },
+  "FT6.npy": {
+   "shape": [
+    50257,
+    3072
+   ],
+   "dtype": "int32",
+   "bytes": 617558144,
+   "sha256": "30871858ed7331cd84c8d518aa0620af8361d2e64dea153226d3459008c53708"
+  },
+  "FP6_ids.npy": {
+   "shape": [
+    1024
+   ],
+   "dtype": "int32",
+   "bytes": 4224,
+   "sha256": "91e5fc58e793f15489b8bf17c51649e518c19cd3e1a1ccd0d47a6938831bc6e4"
+  },
+  "FP6.npy": {
+   "shape": [
+    1024,
+    3072
+   ],
+   "dtype": "int32",
+   "bytes": 12583040,
+   "sha256": "53830116c3a09f7aac32d0a844993f8f59ed883e7073453774a70c253ab57105"
+  },
+  "OWN1_ids.npy": {
+   "shape": [
+    5119
+   ],
+   "dtype": "int32",
+   "bytes": 20604,
+   "sha256": "04f63fada36ddd3914ca6b90a72bf112f87a093075158a1df3cab3ca26a7e1ad"
+  },
+  "OWN1_lo.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "uint32",
+   "bytes": 15725696,
+   "sha256": "cecf0c241beff99e2b21f869d198c23887a76ac3b4dced92c8f424ddea6150d5"
+  },
+  "OWN1_hi.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "int8",
+   "bytes": 3931520,
+   "sha256": "0b756161f175cd84b303a644c82cf90afba97b172bc9366fe4a06a314ac980b3"
+  },
+  "OWN2_ids.npy": {
+   "shape": [
+    5119
+   ],
+   "dtype": "int32",
+   "bytes": 20604,
+   "sha256": "04f63fada36ddd3914ca6b90a72bf112f87a093075158a1df3cab3ca26a7e1ad"
+  },
+  "OWN2_lo.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "uint32",
+   "bytes": 15725696,
+   "sha256": "82a7b2071e349a74b79d0b609bdcfef3907d1d6cfdb5ddba6f9e2c0862a4b392"
+  },
+  "OWN2_hi.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "int8",
+   "bytes": 3931520,
+   "sha256": "8aacef5feaffba3fc1ded1ea9b44debe83b346cba54c66c78b7a1f64b6e72054"
+  },
+  "OWN3_ids.npy": {
+   "shape": [
+    5119
+   ],
+   "dtype": "int32",
+   "bytes": 20604,
+   "sha256": "04f63fada36ddd3914ca6b90a72bf112f87a093075158a1df3cab3ca26a7e1ad"
+  },
+  "OWN3_lo.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "uint32",
+   "bytes": 15725696,
+   "sha256": "6b25ef3a5610811e9cd8cc3b0e13e265dd6cf4f09849b757f3f1fc5870a7c007"
+  },
+  "OWN3_hi.npy": {
+   "shape": [
+    5119,
+    768
+   ],
+   "dtype": "int8",
+   "bytes": 3931520,
+   "sha256": "404b2d9965a5e9fc639f8f86b00b0a60d19e2afd8f8bb3b96aab4b57d864e5fe"
+  }
+ },
+ "tables": {
+  "Z0": {
+   "rows": 50257,
+   "cols": 768,
+   "kind": "int32",
+   "files": [
+    "Z0.npy"
+   ],
+   "ids": "Z0_ids.npy",
+   "largest value": 8220141,
+   "bits": 24,
+   "largest light line": 0,
+   "what": "the stream after layer 0 at position 0, word alone (base2.py's layer 0)"
+  },
+  "FT5": {
+   "rows": 50257,
+   "cols": 3072,
+   "kind": "int32",
+   "files": [
+    "FT5.npy"
+   ],
+   "ids": "FT5_ids.npy",
+   "largest value": 656521151,
+   "bits": 31,
+   "largest light line": 3656,
+   "what": "rshift(wte[w], 5) met with fc.0"
+  },
+  "FP5": {
+   "rows": 1024,
+   "cols": 3072,
+   "kind": "int32",
+   "files": [
+    "FP5.npy"
+   ],
+   "ids": "FP5_ids.npy",
+   "largest value": 945657366,
+   "bits": 31,
+   "largest light line": 10693,
+   "what": "rshift(wpe[p] + proj.0 bias, 5) met with fc.0"
+  },
+  "FT6": {
+   "rows": 50257,
+   "cols": 3072,
+   "kind": "int32",
+   "files": [
+    "FT6.npy"
+   ],
+   "ids": "FT6_ids.npy",
+   "largest value": 328427383,
+   "bits": 30,
+   "largest light line": 1828,
+   "what": "rshift(wte[w], 6) met with fc.0"
+  },
+  "FP6": {
+   "rows": 1024,
+   "cols": 3072,
+   "kind": "int32",
+   "files": [
+    "FP6.npy"
+   ],
+   "ids": "FP6_ids.npy",
+   "largest value": 472839103,
+   "bits": 30,
+   "largest light line": 5347,
+   "what": "rshift(wpe[p] + proj.0 bias, 6) met with fc.0"
+  },
+  "OWN1": {
+   "rows": 5119,
+   "cols": 768,
+   "kind": "split40",
+   "files": [
+    "OWN1_lo.npy",
+    "OWN1_hi.npy"
+   ],
+   "ids": "OWN1_ids.npy",
+   "largest value": 10388934428,
+   "bits": 35,
+   "largest light line": 111472,
+   "what": "rshift(v(w, p), 1) met with proj.0; ids = w x 1024 + p"
+  },
+  "OWN2": {
+   "rows": 5119,
+   "cols": 768,
+   "kind": "split40",
+   "files": [
+    "OWN2_lo.npy",
+    "OWN2_hi.npy"
+   ],
+   "ids": "OWN2_ids.npy",
+   "largest value": 5194381219,
+   "bits": 34,
+   "largest light line": 55736,
+   "what": "rshift(v(w, p), 2) met with proj.0; ids = w x 1024 + p"
+  },
+  "OWN3": {
+   "rows": 5119,
+   "cols": 768,
+   "kind": "split40",
+   "files": [
+    "OWN3_lo.npy",
+    "OWN3_hi.npy"
+   ],
+   "ids": "OWN3_ids.npy",
+   "largest value": 2597233081,
+   "bits": 33,
+   "largest light line": 27868,
+   "what": "rshift(v(w, p), 3) met with proj.0; ids = w x 1024 + p"
+  }
+ },
+ "position 0 shifts, every word": {
+  "s1": {
+   "5": 16278,
+   "6": 33979
+  },
+  "so": {
+   "1": 39773,
+   "2": 10484
+  },
+  "sm": {
+   "5": 50257
+  }
+ },
+ "whole vocabulary, not built": {
+  "OWN (per pair, 3 shifts)": 592284448163,
+  "q, k, v per pair (2,304 values, 5 bytes)": 592855695360
+ },
+ "bytes on disk, tables and ids": 1474317376,
+ "rule": "whole-vocabulary tables built when they fit (at most 6 GB written in this step) and pay (lower the per-token meetings at their plate, stored adds and the split counted). OWN is per pair: built for the pairs of the 30 refs texts and the 300 judge windows only."
+}

@@ -1,0 +1,84 @@
+PREDICTIONS, written before each run (2026-10-06). Results are added below each one after the run, never edited above.
+
+HIS IDEA (2026-10-06), his exact words:
+  "The blank untrained model with random bell curve wieghts! That's the plate and the embedding table! That's the
+  "foundation" we have been looking for." "It should be 100% removable after training. We could even test on a tiny
+  model." "The random weights have random values and everything. That is trained is built on top. It creates the
+  topographical map. That's IT! And the entire thing pre-training could be removed"
+SESSION'S RESTATEMENT (the session's words, not his): finished weight = foundation (the random starting draw, worn
+down by the building) + what was built on top. This folder only BUILDS the test bed; nothing here measures his idea yet.
+
+------------------------------------------------------------------------------------------------------------------
+1. check_step0.py: is step0 the random start?   (prediction is in the script's docstring, copied here)
+   Spreads from Pythia's own build settings (settings/*.yml: small_init sqrt(2/(5d)) for query_key_value,
+   dense_h_to_4h, embed_in, embed_out; wang_init 2/(L sqrt d) for attention.dense and dense_4h_to_h).
+   - every step0 plate centred on 0 (|mean| under 4 standard errors), spread within 1% of the settings' value,
+     68.27/95.45/99.73% inside 1/2/3 sigma (within 0.3 points on the big plates), fourth moment 3.00 +- 0.05
+   - every norm gain exactly 1, every bias and norm offset exactly 0
+   - shuffle control (spread across neurons of each neuron's sum of squares, plate / same values shuffled):
+     1.00 within a few % at step0; well above 1 on most finished plates
+   RESULT (check_step0.log): as predicted on every count.
+   - spread / settings: 0.9942-1.0055 (14m), 0.9981-1.0010 (70m), 0.9987-1.0018 (160m); all within 1%
+   - |mean| / standard error at most 1.67 (14m), 2.08 (70m), 2.10 (160m); all under 4
+   - inside 1/2/3 sigma: 70m and 160m within 0.15 points of 68.27/95.45/99.73 on every plate; 14m's small plates
+     (16k-65k values) within 0.46 points (67.81 at worst, sampling error about 0.36 there)
+   - fourth moment 2.95-3.03 (14m), 2.98-3.02 (70m), 2.99-3.01 (160m)
+   - gains all exactly 1 (13, 13, 25 vectors); biases and offsets all exactly 0 (37, 37, 73 vectors)
+   - shuffle control at step0: 0.87-1.15 (14m), 0.90-1.08 (70m), 0.95-1.14 (160m): the draw and nothing else.
+     Finished plates, per neuron along the output: 1.36-9.42 (14m), 1.38-16.9 (70m), 1.69-20.6 (160m). Per input
+     lane the output word table (embed_out) stands out: 110.7 (14m), 101.1 (70m), 79.2 (160m); a few finished
+     plates sit near 1 or below along that axis (14m L2 fc 0.72, 70m L2 fc 0.84).
+
+------------------------------------------------------------------------------------------------------------------
+2. pythia_convert.py (no prediction needed: a conversion, every value checked to fit 16 places).
+   Found while converting: in pythia-14m the starting draw is LARGER than the finished plate in most neurons, so the
+   start sets the shared power of two on 80,859 of 107,520 neurons (the finished 14m plate sits one place coarser
+   there than it would alone). In 70m: 1,778 of 128,256 (mostly qkv, 1,173 of 9,216). In 160m: 5,126 of 183,552
+   (mostly qkv, 4,322 of 27,648).
+
+------------------------------------------------------------------------------------------------------------------
+3. pythia_base2.py: the base-2 finished machine's words against fp32 Pythia's own 16 greedy words, 30 texts.
+   Basis: the base-2 GPT-2 gave 479 of 480 on refs_many (FINDINGS). This machine has one more rounding per gauge
+   (the gain is not folded into the plate) and, on the 14m, one place less on most neurons (the shared grid).
+   fp32's smallest margins: 14m 0.0037, 0.0043, 0.0071; 70m 0.011, 0.013, 0.015; 160m 0.0053, 0.0062, 0.0073.
+   PREDICTION:
+   - words equal (fp32's words fed in): 14m at least 474 of 480; 70m at least 477; 160m at least 476
+   - texts identical over all 16 words: at least 26 of 30 for each size
+   - every difference at a position where fp32's own margin is under 0.05
+   - shuffle control (machine words against the next text's fp32 words): 1-6% (5-30 of 480), the common words only
+   - order-free check (stream lanes shuffled, every plate permuted to match): every head pile the same whole number,
+     30 of 30 texts, every size run
+   RESULT (run_<size>.log, words_pythia-<size>.json):
+                 words equal      texts identical   shuffle control
+     14m         480 of 480       30 of 30          26 of 480 (5.4%)
+     70m         480 of 480       30 of 30          16 of 480 (3.3%)
+     160m        480 of 480       30 of 30          12 of 480 (2.5%)
+   - Better than predicted on words and texts (predicted at least 474/477/476 and 26 texts). No differences, so the
+     margin prediction is untested. The shuffle control sits inside the predicted 1-6%.
+   - The three closest fp32 calls all held. The base-2 machine's own lead of word 1 over word 2 at those positions:
+     14m 0.00372 -> 0.00113, 0.00433 -> 0.00555, 0.00710 -> 0.00876; 70m 0.01111 -> 0.00993, 0.01257 -> 0.01614,
+     0.01538 -> 0.01285; 160m 0.00531 -> 0.00281, 0.00616 -> 0.00568, 0.00726 -> 0.00644.
+   - NOT PREDICTED (a measure added after the first run): the lead of word 1 over word 2 moves from fp32's by at most
+     0.058 (14m), 0.116 (70m), 0.066 (160m) logits over the 480 positions. On the 70m, with one part put back to
+     float at a time: arrival float 0.028, gauge float 0.052, edge float 0.096, turn float 0.116 (no change). So the
+     whole-number arrival (scores at 2^-10, the e^-d table) moves the lead the most, then the gauge; the turns move
+     nothing. Words 480 of 480 in every one of those runs.
+   - Order-free check (stream lanes shuffled, every plate permuted to match; run_<size>_shuffle.log): every head pile
+     the same whole number, 30 of 30 texts, all three sizes. As predicted.
+   - int64 check (every product as int64 sums, no float64 anywhere; run_<size>_matmulint.log): every head pile the
+     same whole number as the float64-product run, 30 of 30 texts, all three sizes. (macOS's float64 product raises
+     stray divide/overflow flags; this shows they change nothing.)
+   - Still owed before CONFIRMED (rule 10): an independent rebuild by a separate checker.
+
+------------------------------------------------------------------------------------------------------------------
+4. Found while writing the 70m steps between onto the shared grid (base2_pythia-70m-steps.npz, int32, same per-neuron
+   power of two as start and finished): values past 16 places on that grid: step1000 1,001; step10000 1,255,104;
+   step50000 1,116,391 of 70,385,664. The plates in the middle of the building are larger than both the start and the
+   finished plate in some neurons. Not predicted; a looked-at fact, not a test.
+
+------------------------------------------------------------------------------------------------------------------
+5. For the next part (the session's number from the session's restatement, NOT his, NOT yet tested): Pythia's own
+   settings give "weight-decay": 0.1, cosine from lr 1e-3 to 1e-4 (14m, 70m) or 6e-4 to 6e-5 (160m) over 143,000
+   steps, warmup 1%. If every step shaves lr_t x 0.1 of each weight, the start surviving in the finished weight is
+   s = product of (1 - 0.1 lr_t) = 3.9e-4 (14m, 70m) and 9.0e-3 (160m). The settings files do not say which plates
+   take the shave or how the shave is applied; that is assumed here.

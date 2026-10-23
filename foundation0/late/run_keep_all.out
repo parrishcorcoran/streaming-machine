@@ -1,0 +1,14 @@
+14:31:03 start keep_late.py size=160m
+14:36:02 end keep_late.py size=160m (exit 0)
+14:36:02 start keep_late.py size=70m
+14:38:10 end keep_late.py size=70m (exit 0)
+14:38:10 waiting: 81919 2.55936 GB zerosum/recheck_indep_gpt2.py  
+14:39:11 start keep_late.py size=160m order=shuffle cases=b,k greedy=0
+14:39:29 end keep_late.py size=160m order=shuffle cases=b,k greedy=0 (exit 0)
+14:39:29 start keep_late.py size=70m order=shuffle cases=b,k greedy=0
+14:39:42 end keep_late.py size=70m order=shuffle cases=b,k greedy=0 (exit 0)
+14:39:42 start keep_checker.py size=70m
+14:39:49 end keep_checker.py size=70m (exit 0)
+14:39:49 start keep_checker.py size=160m
+14:40:01 end keep_checker.py size=160m (exit 0)
+14:40:01 all done

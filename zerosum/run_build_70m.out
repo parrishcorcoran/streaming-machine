@@ -1,0 +1,26 @@
+
+fine: 63,404 of 65,676 write lines with a nonzero constant; values past 16 places 37  -> zerosum_pythia-70m.npz (78 MB, 8s)
+  lit places attention-out : 1s     8,896,824 ->     9,333,809 ( +4.912%)   single-wave     6,786,313 ->     7,077,700 ( +4.294%)
+  lit places biases        : 1s        33,246 ->        35,328 ( +6.262%)   single-wave        25,582 ->        26,794 ( +4.738%)
+  lit places MLP-out       : 1s    35,319,247 ->    35,458,045 ( +0.393%)   single-wave    26,966,629 ->    27,062,176 ( +0.354%)
+  lit places word rows     : 1s   146,426,735 ->   151,065,012 ( +3.168%)   single-wave   111,601,955 ->   114,707,815 ( +2.783%)
+  lit places all writes    : 1s   190,676,052 ->   195,892,194 ( +2.736%)   single-wave   145,380,479 ->   148,874,485 ( +2.403%)
+cut: arrays changed: ['mproj.5.b', 'proj.5.b']
+     proj.5.b constant -64 stream units
+     mproj.5.b constant -64 stream units
+
+cut: 2 of 65,676 write lines with a nonzero constant; values past 16 places 0  -> zerosum_pythia-70m_cut.npz (0 MB, 9s)
+  lit places attention-out : 1s     8,896,824 ->     8,896,824 ( +0.000%)   single-wave     6,786,313 ->     6,786,313 ( +0.000%)
+  lit places biases        : 1s        33,246 ->        33,292 ( +0.138%)   single-wave        25,582 ->        25,576 ( -0.023%)
+  lit places MLP-out       : 1s    35,319,247 ->    35,319,247 ( +0.000%)   single-wave    26,966,629 ->    26,966,629 ( +0.000%)
+  lit places word rows     : 1s   146,426,735 ->   146,426,735 ( +0.000%)   single-wave   111,601,955 ->   111,601,955 ( +0.000%)
+  lit places all writes    : 1s   190,676,052 ->   190,676,098 ( +0.000%)   single-wave   145,380,479 ->   145,380,473 ( -0.000%)
+
+ctl: 63,404 of 65,676 write lines with a nonzero constant; values past 16 places 35  -> zerosum_pythia-70m_ctl.npz (78 MB, 17s)
+  lit places attention-out : 1s     8,896,824 ->     9,331,708 ( +4.888%)   single-wave     6,786,313 ->     7,077,949 ( +4.297%)
+  lit places biases        : 1s        33,246 ->        35,358 ( +6.353%)   single-wave        25,582 ->        26,776 ( +4.667%)
+  lit places MLP-out       : 1s    35,319,247 ->    35,458,147 ( +0.393%)   single-wave    26,966,629 ->    27,065,196 ( +0.366%)
+  lit places word rows     : 1s   146,426,735 ->   151,075,984 ( +3.175%)   single-wave   111,601,955 ->   114,710,016 ( +2.785%)
+  lit places all writes    : 1s   190,676,052 ->   195,901,197 ( +2.740%)   single-wave   145,380,479 ->   148,879,937 ( +2.407%)
+
+done (17s)

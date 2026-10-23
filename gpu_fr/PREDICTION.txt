@@ -1,0 +1,90 @@
+PREDICTION, written 2026-10-05 before base2_stream_fr.swift was written or run.
+
+THE TASK'S PREDICTION (as given):
+  - the top read reads about half the table's bytes (high plane for all words + low plane for a few hundred), so
+    words/s rise 10-20% after the prompt (about 250-270 words/s);
+  - survivors expected: a few hundred;
+  - the stored layer 0 changes speed by about 1%, possibly negative because of the CPU-to-GPU copy.
+
+THE SESSION'S PREDICTION (the session's own reasoning, from numbers already on disk):
+  - Exact: top 5 (slots and scores) and race winner identical to the plain read at every generated position; every
+    survivor's finished score equal to the plain read's; the bound held for every word; same 16 words as
+    base2_stream.swift on 30/30 prompts, 29/30 equal fp32 (the one difference at "It was a dark and stormy", word 4).
+  - Survivors: MORE than a few hundred. The low bytes' bound is 255 x sum|x| a word. On the light at the top
+    (collapse_top/light_top.npz, light only) sum|x| has median 5.68e5, so the bound's width is about 1.45e8 at pile
+    scale. topband/ measured how many words stay in against a shared bound of that kind: width 2R about 4e8 (after
+    places 18 and up) -> 50,255 still in; 2R about 2.5e7 (after places 14 and up) -> median 68. 1.45e8 sits between,
+    nearer the first. Predicted survivors: median 1,000-10,000 (most likely about 4,000), some positions near all
+    50,257.
+  - Bytes of the top read a token: high plane 38.6 MB + about 3 MB of low bytes (4,000 x 768) against 77.2 MB plain:
+    about 54% of the table's bytes. All plates 169.9 MB unchanged.
+  - Speed after the prompt: the token is not all bytes (about 250 MB a token at 4.46 ms means about half the time is
+    not the memory read), and the cut adds 3 dispatches a token. Predicted +5 to +10% words/s after the prompt over
+    the plain machine measured the same way (about 235-247 if plain is 224), below the task's 250-270.
+  - Prompt included: a smaller rise, +3 to +8%.
+  - Stored layer 0: the carry lights about 25% of the lines at shift 1 (both rows odd) and about 35-40% at shift 2,
+    so it reads about 200-300 plate rows (0.9-1.4 MB) + two stored rows (37 KB) instead of the 3.54 MB plate: about
+    2.2 MB less a token, under 1% of the bytes. The CPU must learn each new word before it can copy that word's row,
+    so the GPU waits on the CPU once a token (tens to a couple hundred microseconds) against about 20 microseconds of
+    bytes saved. Predicted: -1% to -4% words/s after the prompt, so it is NOT kept.
+
+THE RULE FOR THE STORED LAYER 0 (fixed before any run): it is kept only if the median of 5 runs of words/s after the
+prompt WITH it is at or above the median of 5 runs WITHOUT it (both with the top-read cut), and the words are
+identical. Otherwise it is left off.
+
+THE RULE FOR THE TOP READ: it is exact or it is not used. Whatever the survivors, it is reported as measured.
+
+----------------------------------------------------------------------------------------------------------------------
+ADDED AFTER THE TWO-PLANE RUN, BEFORE THE THREE-PLANE ONE (the session's way around the road block; not in the task)
+Measured with two planes: exact everywhere, but survivors median 38,740 (mean 36,198) of 50,257, so 86.0% of the
+table's bytes are read, and words/s after the prompt rose only 1.8%. The low byte's reach (255 x the light's total
+brightness, about 1.45e8 at pile scale) is wider than the spread of the word piles near the top.
+THE WAY AROUND, chosen from the format before any run: the low byte split into its two nibbles (planes=3):
+  w = hi x 256 + mid x 16 + lo, mid and lo unsigned nibbles, each stored word by word (384 bytes a word).
+  stage 1: the high byte for every word (as now); stage 2: the middle nibble for the words still in, reach then
+  15 x the light (about 8.5e6); stage 3: the low nibble for the words still in after stage 2, finished exactly.
+PREDICTION (session's):
+  - exact: top 5, winner, every finished score, both bounds held, at all 480 read positions; words 30/30 as plain.
+  - words still in after stage 2: median 10-40 (most likely about 20; topband kept median 68 at 2R about 2.5e7 and
+    6 at 1.6e6), a few hundred to a few thousand at the worst positions.
+  - table bytes: 38.6 MB + about 36,000 x 384 B (13.9 MB) + a few KB = about 52.5 MB, 68% of the plain 77.2 MB.
+  - the top read runs near the memory's speed (the plain one reads its 77 MB + parts in about 945 us), so the
+    14 MB saved is about 150 us of about 4.04 ms a token less 4 more dispatches: +2.5 to +4.5% words/s after the
+    prompt over the two-plane read (about 253-258), with the stored layer 0 about 257-262.
+
+----------------------------------------------------------------------------------------------------------------------
+ADDED AFTER THE THREE-PLANE TIMING, BEFORE THE HELD-LIGHT KERNELS (session's)
+Measured: three planes exact, words still in after the middle nibble median 12 (predicted 10-40: held), table bytes
+52.5 MB = 68.0% (held), but words/s after the prompt 246.9 against the two-plane 248.2 (predicted +2.5 to +4.5%:
+WRONG). GPU time of the read at a position with 39,540 words in after the high byte: high byte + bounds 532 us; the
+5th-best low and set-aside +45 us; two planes: the low bytes (30 MB) +322 us = at the memory's speed; three planes:
+the middle nibbles (15 MB) +262 us = about 58 GB/s, then +55 us for 5 small dispatches. The blocks: each word still in
+reads the whole light again (3 KB from cache, twice per 4 bytes of nibbles), and the 5th best is found by one
+threadgroup.
+THE WAY AROUND (implementation of the cut's own new parts only; the plain machine's kernels untouched):
+  - the light held still in each lane's registers (24 lines a lane) while the words' bytes stream past: a fixed set of
+    simdgroups, each walking many words still in; no re-read of the light, no indirect dispatch;
+  - the 5th best found in two passes (64 threadgroups, then one simdgroup over their 320).
+PREDICTION: every check as before (exact). Middle nibbles at about the memory's speed: about 160-180 us for 39,540
+words (was 262); each 5th-best pass about 10-15 us (was about 30-40). Three-plane read about 730-780 us against the
+plain 945 (was 894); two-plane about 860-880 (was 898). Words/s after the prompt over plain: three planes +4 to +6%,
+with the stored layer 0 +5.5 to +7.5% (about 257-262); two planes +2 to +3%.
+
+----------------------------------------------------------------------------------------------------------------------
+ADDED AFTER THE HELD-LIGHT BENCH, BEFORE THE LAST TWO CHANGES (session's)
+Measured (position 21, 39,540 words in): exact everywhere; 5th-best + set-aside 45 -> 33 us (predicted 10-15 a pass:
+roughly held); middle nibbles 262 -> 240 us (predicted 160-180: WRONG); the tail after the middle nibble (6 small
+dispatches for about 10 words) 51 us; whole three-plane read 855-885 us against plain 943-946 (predicted 730-780: WRONG).
+What blocks: one word at a time in each simdgroup, each a chain of dependent reads (the list entry, then the word's
+bytes, then its gauge entry); and about 8 us at every encoder boundary, about 10 of them in the read.
+THE CHANGES: (1) two words in flight in each simdgroup (both words' bytes requested before either is summed);
+(2) the whole collapsing read in ONE serial encoder (dispatches still run in order, one after another).
+PREDICTION: exact as before. Middle nibbles 240 -> 170-200 us; the read's small dispatches about 4 us each instead of
+about 8; three-plane read about 760-810 us; words/s after the prompt over plain +3 to +5% (three planes), +4 to +6%
+with the stored layer 0.
+
+----------------------------------------------------------------------------------------------------------------------
+ADDED BEFORE gpu_fr/step_cost.swift (session's): the GPU time of one step that does almost nothing (copy one number),
+2,000 of them in one command buffer, each in its own encoder (as the machine encodes every step), and all in one serial
+encoder. Prediction: 5-8 us a step in its own encoder, 3-6 us in one serial encoder. If so, the token's about 200 steps
+cost about 1.0-1.6 ms of its about 4.0 ms whatever their bytes.

@@ -1,0 +1,10 @@
+keep_checker.py size 160m: fp32 Pythia from its own fp16 files; late qkv rebuilt here ['qkv.10', 'qkv.11', 'qkv.8', 'qkv.9']; base-2 keep set ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']; same: True
+  fin    checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker 100.0%  base-2 100.0%  (0.8s)
+  b      checker word = base-2 case word at 620/622 ( 99.7%);  finished words kept: checker  50.6%  base-2  50.5%  (1.0s)
+  k      checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  59.0%  base-2  59.2%  (0.9s)
+  k_pl   checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  60.5%  base-2  60.5%  (0.8s)
+  rk@1   checker word = base-2 case word at 618/622 ( 99.4%);  finished words kept: checker  52.9%  base-2  52.9%  (0.9s)
+  rk@2   checker word = base-2 case word at 619/622 ( 99.5%);  finished words kept: checker  54.5%  base-2  54.5%  (0.9s)
+  rk@3   checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  54.5%  base-2  54.5%  (0.9s)
+  ck     (own scramble) finished words kept: checker  67.7%  base-2 ck draws  63.7.. 68.2%  (2.9s)
+peak memory 2.53 GB

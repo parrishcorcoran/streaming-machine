@@ -1,0 +1,45 @@
+{
+"counts": {
+"plain|qkv": 440445590376,
+"plain|proj": 161002973341,
+"plain|fc": 584538117335,
+"plain|mproj": 592750449715,
+"plain|arrival": 8458834205,
+"plain|rest": 2955191866,
+"plain|top": 585803218714,
+"sd|qkv": 256395899029,
+"sd|proj": 92768148870,
+"sd|fc": 342833221571,
+"sd|mproj": 353319815240,
+"sd|arrival": 5198034539,
+"sd|rest": 2955191866,
+"sd|top": 357766735849,
+"platesd|qkv": 331873615678,
+"platesd|proj": 121154752146,
+"platesd|fc": 436875339865,
+"platesd|mproj": 447343846085,
+"platesd|top": 456717681973
+},
+"npos": 648,
+"bad": {
+"qkv piles vs plain_refs (rows)": 0,
+"proj piles vs plain_refs (rows)": 0,
+"streams after the arrival vs plain_refs (rows)": 0,
+"fc piles vs plain_refs (rows)": 0,
+"mproj piles vs plain_refs (rows)": 0,
+"streams after the layer vs plain_refs (rows)": 0,
+"light at the top vs plain_refs (positions)": 0,
+"score rows' sha256 vs plain_refs (positions differing)": 0
+},
+"delivered_plain": {
+"qkv": 440445590376,
+"proj": 161002973341,
+"fc": 584538117335,
+"mproj": 592750449715,
+"arrival": 8458834205,
+"rest": 2955191866,
+"top": 585803218714
+},
+"plain_total": 2375954375552,
+"sd_total": 1411237046964
+}

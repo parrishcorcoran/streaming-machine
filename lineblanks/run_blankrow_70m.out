@@ -1,0 +1,119 @@
+BLANK'S WRITES AGAINST THE WORD ROWS, pythia-70m: 622 positions, 6 layers, d 512; c (shave) 6.1184e-04, input table's s 0.0156; plates' s: A0 0.092 M0 0.239 A1 0.201 M1 0.110 A2 0.267 M2 0.118 A3 0.239 M3 0.124 A4 0.091 M4 0.160 A5 0.090 M5 0.158
+  finished: each position's power of two recovered at every plate (writes back digit for digit; positions with more than one fit: 0); (1s, 503 MB)
+
+== 1. THE BLANK'S WRITES (finished light, s x W0 at every write plate) ==
+  rms size a position (stream units, grains/2^16): blank's summed write 2.848; word row 0.626; top stream 76.722; all writes after the row (root of summed squares) 77.503
+  blank's write / word row 4.55;  scrambled blank / row [4.62, 4.72, 4.71];  fresh / row 4.60
+  each plate, the blank part's size against the plate's whole write on the same light (|s W0 x| / |W x|): A0 0.053 M0 0.110 A1 0.121 M1 0.045 A2 0.117 M2 0.042 A3 0.082 M3 0.064 A4 0.071 M4 0.044 A5 0.023 M5 0.030
+  each plate, the blank part against the word row's size: A0 0.35 M0 0.85 A1 0.81 M1 0.55 A2 1.24 M2 2.40 A3 0.68 M3 0.93 A4 0.25 M4 1.71 A5 0.82 M5 2.75
+
+== 2. AT THE SAME POSITION: the blank's summed write against the word's own input row ==
+  (cos, k = -2<a,b>/(|a|^2+|b|^2), g = share of the blank's write the row takes back; pooled; _med per position; cos_word = the parts each position does not share)
+  row whole    REAL        cos +0.0218  cos_med +0.0318  k -0.0091  k_med -0.0146  g -0.0048  size 4.553  ceiling 0.419  cos_word +0.0076
+  row whole    wrong pos 0  cos +0.0150  cos_med +0.0219  k -0.0063  k_med -0.0101  g -0.0033  size 4.553  ceiling 0.419  cos_word -0.0013
+  row whole    wrong pos 1  cos +0.0135  cos_med +0.0203  k -0.0056  k_med -0.0089  g -0.0030  size 4.553  ceiling 0.419  cos_word -0.0032
+  row whole    wrong pos 2  cos +0.0163  cos_med +0.0223  k -0.0068  k_med -0.0095  g -0.0036  size 4.553  ceiling 0.419  cos_word +0.0004
+  row whole    scr0        cos -0.0060  cos_med -0.0104  k +0.0025  k_med +0.0042  g +0.0013  size 4.623  ceiling 0.413  cos_word -0.0028
+  row whole    scr1        cos -0.0094  cos_med -0.0092  k +0.0038  k_med +0.0042  g +0.0020  size 4.721  ceiling 0.405  cos_word +0.0006
+  row whole    scr2        cos -0.0005  cos_med -0.0003  k +0.0002  k_med +0.0001  g +0.0001  size 4.711  ceiling 0.406  cos_word +0.0009
+  row whole    fresh       cos +0.0045  cos_med +0.0036  k -0.0019  k_med -0.0018  g -0.0010  size 4.598  ceiling 0.415  cos_word +0.0012
+  row built_c  REAL        cos +0.0218  cos_med +0.0318  k -0.0091  k_med -0.0146  g -0.0048  size 4.554  ceiling 0.419  cos_word +0.0076
+  row built_c  wrong pos 0  cos +0.0150  cos_med +0.0219  k -0.0063  k_med -0.0101  g -0.0033  size 4.554  ceiling 0.419  cos_word -0.0013
+  row built_c  wrong pos 1  cos +0.0135  cos_med +0.0203  k -0.0056  k_med -0.0089  g -0.0030  size 4.554  ceiling 0.419  cos_word -0.0032
+  row built_c  wrong pos 2  cos +0.0163  cos_med +0.0223  k -0.0068  k_med -0.0095  g -0.0036  size 4.554  ceiling 0.419  cos_word +0.0004
+  row built_c  scr0        cos -0.0060  cos_med -0.0104  k +0.0025  k_med +0.0042  g +0.0013  size 4.623  ceiling 0.413  cos_word -0.0028
+  row built_c  scr1        cos -0.0094  cos_med -0.0092  k +0.0038  k_med +0.0042  g +0.0020  size 4.721  ceiling 0.405  cos_word +0.0006
+  row built_c  scr2        cos -0.0005  cos_med -0.0003  k +0.0002  k_med +0.0001  g +0.0001  size 4.712  ceiling 0.406  cos_word +0.0009
+  row built_c  fresh       cos +0.0045  cos_med +0.0036  k -0.0019  k_med -0.0018  g -0.0010  size 4.598  ceiling 0.415  cos_word +0.0012
+  row built_s  REAL        cos +0.0218  cos_med +0.0317  k -0.0091  k_med -0.0147  g -0.0048  size 4.568  ceiling 0.418  cos_word +0.0077
+  row built_s  wrong pos 0  cos +0.0150  cos_med +0.0218  k -0.0063  k_med -0.0101  g -0.0033  size 4.568  ceiling 0.418  cos_word -0.0012
+  row built_s  wrong pos 1  cos +0.0134  cos_med +0.0203  k -0.0056  k_med -0.0087  g -0.0029  size 4.568  ceiling 0.418  cos_word -0.0032
+  row built_s  wrong pos 2  cos +0.0162  cos_med +0.0220  k -0.0068  k_med -0.0094  g -0.0035  size 4.568  ceiling 0.418  cos_word +0.0004
+  row built_s  scr0        cos -0.0061  cos_med -0.0102  k +0.0025  k_med +0.0041  g +0.0013  size 4.638  ceiling 0.412  cos_word -0.0028
+  row built_s  scr1        cos -0.0095  cos_med -0.0093  k +0.0038  k_med +0.0042  g +0.0020  size 4.736  ceiling 0.404  cos_word +0.0005
+  row built_s  scr2        cos -0.0004  cos_med -0.0001  k +0.0002  k_med +0.0000  g +0.0001  size 4.726  ceiling 0.405  cos_word +0.0011
+  row built_s  fresh       cos +0.0045  cos_med +0.0035  k -0.0019  k_med -0.0017  g -0.0010  size 4.613  ceiling 0.414  cos_word +0.0012
+  each plate separately (row whole): cos pooled REAL | scrambles | wrong positions;  g REAL
+    A0   cos +0.0014 | +0.0041 -0.0077 -0.0114 | +0.0001 +0.0009 -0.0004   g -0.0040  k -0.0009
+    M0   cos +0.0417 | +0.0059 +0.0086 +0.0048 | +0.0036 +0.0038 +0.0027   g -0.0491  k -0.0411
+    A1   cos +0.0126 | +0.0035 +0.0076 -0.0049 | +0.0108 +0.0124 +0.0109   g -0.0155  k -0.0123
+    M1   cos -0.0051 | -0.0100 +0.0081 -0.0016 | -0.0011 +0.0006 -0.0017   g +0.0093  k +0.0043
+    A2   cos -0.0040 | -0.0009 -0.0027 +0.0035 | -0.0008 -0.0026 -0.0029   g +0.0032  k +0.0039
+    M2   cos +0.0069 | +0.0015 -0.0059 -0.0000 | +0.0032 +0.0037 +0.0061   g -0.0029  k -0.0049
+    A3   cos -0.0025 | -0.0067 +0.0032 -0.0008 | +0.0011 -0.0024 -0.0010   g +0.0038  k +0.0024
+    M3   cos +0.0047 | -0.0042 -0.0002 +0.0185 | +0.0059 +0.0039 +0.0036   g -0.0050  k -0.0047
+    A4   cos +0.0005 | +0.0082 +0.0028 +0.0129 | +0.0000 +0.0006 +0.0017   g -0.0021  k -0.0002
+    M4   cos +0.0040 | +0.0037 -0.0030 -0.0016 | +0.0082 +0.0060 +0.0105   g -0.0023  k -0.0035
+    A5   cos -0.0056 | -0.0020 -0.0211 -0.0052 | -0.0055 -0.0060 -0.0063   g +0.0069  k +0.0055
+    M5   cos +0.0143 | -0.0120 -0.0079 -0.0048 | +0.0125 +0.0123 +0.0135   g -0.0052  k -0.0092
+  each layer, attention and MLP together (row whole): cos pooled REAL | scrambles;  k;  g
+    layer  0  cos +0.0389 | +0.0071 +0.0047 -0.0002   k -0.0387  g -0.0421
+    layer  1  cos +0.0075 | -0.0027 +0.0108 -0.0050   k -0.0075  g -0.0077
+    layer  2  cos +0.0043 | +0.0009 -0.0065 +0.0016   k -0.0028  g -0.0016
+    layer  3  cos +0.0023 | -0.0074 +0.0017 +0.0145   k -0.0023  g -0.0020
+    layer  4  cos +0.0040 | +0.0048 -0.0025 +0.0003   k -0.0035  g -0.0023
+    layer  5  cos +0.0120 | -0.0121 -0.0136 -0.0061   k -0.0074  g -0.0041
+
+== 3. SPREAD THIN OVER ALL WORDS: the blank's write averaged over the positions ==
+  mean row at the positions (whole)    cos +0.0847  [lane orders 95%: -0.0869 +0.0882; share as far out 0.059]  k -0.02043  g -0.01037  |mean B|/|it| 8.168 | scr -0.0201 -0.0522 -0.0058 fresh +0.0187
+  mean row at the positions (built_c)  cos +0.0847  [lane orders 95%: -0.0869 +0.0882; share as far out 0.059]  k -0.02043  g -0.01037  |mean B|/|it| 8.169 | scr -0.0201 -0.0522 -0.0058 fresh +0.0187
+  table lane totals (whole)            cos +0.0594  [lane orders 95%: -0.0895 +0.0865; share as far out 0.177]  k -0.00328  g -0.00164  |mean B|/|it| 36.176 | scr -0.0322 +0.0586 +0.0380 fresh +0.0258
+  table lane totals (built_c)          cos +0.0594  [lane orders 95%: -0.0895 +0.0865; share as far out 0.177]  k -0.00328  g -0.00164  |mean B|/|it| 36.176 | scr -0.0322 +0.0586 +0.0380 fresh +0.0258
+  table lane totals (built_s)          cos +0.0593  [lane orders 95%: -0.0895 +0.0865; share as far out 0.178]  k -0.00328  g -0.00164  |mean B|/|it| 36.174 | scr -0.0322 +0.0586 +0.0380 fresh +0.0257
+  each layer's averaged blank write against the table's lane totals (whole): cos [lane orders 95%]
+    L0 +0.058 [-0.088,+0.090]  L1 +0.042 [-0.088,+0.087]  L2 +0.007 [-0.087,+0.084]  L3 -0.021 [-0.088,+0.081]  L4 -0.001 [-0.082,+0.086]  L5 +0.057 [-0.090,+0.087]
+  vs the biases summed over layers                        cos +0.0992 [-0.0905,+0.0879] g -0.9198 | g scr +0.1474 +0.1426 -0.6960 fresh -0.0300
+  vs everything else in the top stream, averaged          cos +0.0266 [-0.0874,+0.0878] g -1.1925 | g scr -1.5557 +0.8003 -2.6461 fresh -4.8916
+  vs the built writes (attention + MLP, no bias), averaged cos +0.0060 [-0.0879,+0.0870] g -0.2623 | g scr -1.7055 +0.6515 -1.9507 fresh -4.8593
+  the table's lean: |table mean row| / rms word row at the positions 0.073;  |mean B| / rms B 0.581
+
+== 6. WHERE THE BLANK'S WRITES GO (finished machine) ==
+  layer: share taken back by all later layers' writes  g_later: blank REAL | scrambles | fresh || built part of the same writes || whole write;  same layer's built write takes back g_same
+    layer  0  g_later -0.6495 | -1.5268 +1.8823 +4.2006 | -3.1044 || +0.5045 || +0.4833;   g_same -1.2949 (scr +0.0285 -0.0426 +0.1008)
+    layer  1  g_later +3.6572 | +2.3281 -1.0293 +0.9478 | +0.5131 || +0.8897 || +0.9018;   g_same -0.2748 (scr -0.1175 -0.1466 +0.1320)
+    layer  2  g_later +0.6094 | +2.3092 +1.1978 -0.6048 | -1.0489 || +1.0895 || +1.0877;   g_same -0.1736 (scr -1.7030 -0.6717 -0.0553)
+    layer  3  g_later +4.4239 | +0.3749 -0.1647 -1.9729 | -0.8394 || -0.2722 || -0.2485;   g_same -0.1387 (scr -0.0699 -0.1056 -0.1550)
+    layer  4  g_later +2.5129 | -1.2361 +2.6383 -1.5821 | -3.0966 || -0.6615 || -0.6570;   g_same +0.6634 (scr +0.2259 +0.5471 +0.1940)
+    layer  5  g_later +0.0000 | +0.0000 +0.0000 +0.0000 | +0.0000 || +0.0000 || +0.0000;   g_same -1.8796 (scr -1.9761 -0.6486 -1.2304)
+  everything else in the top stream takes back g -0.0795 of the blank's summed write (scr -0.6600 +0.3282 -0.9466, fresh -1.6966)
+  |top|^2 / (|top - B|^2 + |B|^2) = 1.0002  (1: they add like coin tosses)
+  share of |B|^2 in the lane level (what every gauge takes out; 1/d = 0.00195): real 0.00261  scr 0.00297 0.00080 0.00120  fresh 0.00110
+
+== 5b. THE BLANK'S WRITES WITH THE SHAVE'S c IN PLACE OF EACH PLATE'S s (finished light) ==
+  row whole    real        cos +0.0178  cos_med +0.0263  k -0.0007  k_med -0.0009  g -0.9029  size 0.020  ceiling 0.039  cos_word +0.0046
+  row whole    wrongpos0   cos +0.0130  cos_med +0.0208  k -0.0005  k_med -0.0008  g -0.6596  size 0.020  ceiling 0.039  cos_word -0.0015
+  row whole    wrongpos1   cos +0.0119  cos_med +0.0191  k -0.0005  k_med -0.0007  g -0.6070  size 0.020  ceiling 0.039  cos_word -0.0029
+  row whole    wrongpos2   cos +0.0147  cos_med +0.0203  k -0.0006  k_med -0.0007  g -0.7479  size 0.020  ceiling 0.039  cos_word +0.0007
+  row whole    scr0        cos -0.0056  cos_med -0.0120  k +0.0002  k_med +0.0004  g +0.2785  size 0.020  ceiling 0.040  cos_word -0.0021
+  row whole    scr1        cos -0.0123  cos_med -0.0160  k +0.0005  k_med +0.0005  g +0.5981  size 0.021  ceiling 0.041  cos_word +0.0002
+  row whole    scr2        cos -0.0008  cos_med -0.0010  k +0.0000  k_med +0.0000  g +0.0371  size 0.020  ceiling 0.041  cos_word -0.0001
+  row whole    fresh       cos +0.0029  cos_med +0.0002  k -0.0001  k_med -0.0000  g -0.1428  size 0.020  ceiling 0.040  cos_word +0.0013
+  row built_c  real        cos +0.0178  cos_med +0.0263  k -0.0007  k_med -0.0009  g -0.9028  size 0.020  ceiling 0.039  cos_word +0.0046
+  row built_c  wrongpos0   cos +0.0130  cos_med +0.0208  k -0.0005  k_med -0.0008  g -0.6595  size 0.020  ceiling 0.039  cos_word -0.0015
+  row built_c  wrongpos1   cos +0.0119  cos_med +0.0191  k -0.0005  k_med -0.0007  g -0.6069  size 0.020  ceiling 0.039  cos_word -0.0029
+  row built_c  wrongpos2   cos +0.0147  cos_med +0.0203  k -0.0006  k_med -0.0007  g -0.7477  size 0.020  ceiling 0.039  cos_word +0.0007
+  row built_c  scr0        cos -0.0056  cos_med -0.0120  k +0.0002  k_med +0.0004  g +0.2786  size 0.020  ceiling 0.040  cos_word -0.0021
+  row built_c  scr1        cos -0.0123  cos_med -0.0160  k +0.0005  k_med +0.0005  g +0.5981  size 0.021  ceiling 0.041  cos_word +0.0002
+  row built_c  scr2        cos -0.0007  cos_med -0.0010  k +0.0000  k_med +0.0000  g +0.0368  size 0.020  ceiling 0.041  cos_word -0.0000
+  row built_c  fresh       cos +0.0029  cos_med +0.0002  k -0.0001  k_med -0.0000  g -0.1427  size 0.020  ceiling 0.040  cos_word +0.0013
+  averaged, against the table's lane totals: cos +0.0586 [-0.0887,+0.0857]  k -0.017497  g -0.3833  |mean Bc|/|table mean row| 0.1528
+
+== 5a. THE FLOOR: the blank machine's own run (every plate the blank, s = 1), its own word rows (the blank rows) ==
+  start: each position's power of two recovered at every plate (writes back digit for digit; positions with more than one fit: 0); (2s, 605 MB)
+  check: the blank's writes as computed here against the machine's own writes (biases 0): largest gap 4.2 grains (rounding only; at most 6 x 2 x 0.5 = 6 expected)
+  rms blank write / rms blank row 25.02
+  REAL        cos +0.0007  cos_med +0.0023  k -0.0001  k_med -0.0002  g -0.0000  size 25.024  ceiling 0.080  cos_word +0.0013
+  wrong pos 0  cos -0.0008  cos_med +0.0006  k +0.0001  k_med -0.0001  g +0.0000  size 25.024  ceiling 0.080  cos_word -0.0004
+  wrong pos 1  cos -0.0004  cos_med +0.0018  k +0.0000  k_med -0.0001  g +0.0000  size 25.024  ceiling 0.080  cos_word +0.0000
+  wrong pos 2  cos -0.0009  cos_med +0.0004  k +0.0001  k_med -0.0000  g +0.0000  size 25.024  ceiling 0.080  cos_word -0.0005
+  scr0        cos +0.0112  cos_med +0.0137  k -0.0009  k_med -0.0010  g -0.0004  size 25.387  ceiling 0.079  cos_word +0.0102
+  scr1        cos -0.0029  cos_med -0.0050  k +0.0002  k_med +0.0004  g +0.0001  size 25.750  ceiling 0.078  cos_word -0.0016
+  scr2        cos -0.0046  cos_med -0.0006  k +0.0004  k_med +0.0001  g +0.0002  size 25.419  ceiling 0.079  cos_word -0.0035
+  fresh       cos -0.0087  cos_med -0.0135  k +0.0007  k_med +0.0011  g +0.0003  size 25.599  ceiling 0.078  cos_word -0.0065
+  each layer: cos L0 +0.0041 L1 +0.0103 L2 -0.0037 L3 -0.0118 L4 -0.0030 L5 +0.0060
+  averaged, vs blank table's lane totals        cos +0.0641 [-0.0872,+0.0875] k -0.00004 g -0.00002 | scr +0.0931 -0.0521 +0.0173 fresh -0.0066
+  averaged, vs mean blank row at the positions  cos -0.0053 [-0.0859,+0.0883] k +0.00012 g +0.00006 | scr +0.0329 -0.0176 -0.0195 fresh -0.0384
+  share of each layer's write the later layers take back, g_later real (scr0, fresh): L0 +0.007 (+0.001,+0.043) L1 +0.012 (-0.030,-0.022) L2 +0.041 (-0.027,-0.016) L3 +0.024 (+0.050,+0.013) L4 +0.012 (+0.013,-0.001)
+  the word row takes back g -0.0000 of the blank machine's summed write; |top|^2 / (|row|^2 + |writes|^2) 1.0001
+
+wrote blankrow_70m.json  (3s, max 605 MB)

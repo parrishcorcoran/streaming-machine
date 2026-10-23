@@ -1,0 +1,45 @@
+THE WHOLE MACHINE CUT TO ITS TIPS, against the crude grid -- prediction, written 2026-10-08 before wholetips.py ran.
+
+His words (2026-10-08): "The WHOLE MODEL has to shrink together, JUST like quantization. The embedding etc all of it,
+JUST like quantization BUT with our precision. The tips needed!"
+Before: "every weight is a vector ... we break down each weight into all its base 2 circles ... only a couple of those
+circles hold the vector and most cancel." "The Lower circles don't matter. And since it's 90% that's what quantization
+does. It crudely cuts out most of the canceling parts cheaply, but it's not exact."
+
+THE BUILD (the session's restatement): every stored number of GPT-2 -- the word table (also the top read), the position
+rows, the 48 plates, every bias, every water-level gain and offset, 124,439,808 numbers -- written in base 2 as single
+waves (signed digits, no two lit places side by side) and cut to its own top k lit places, k = 1, 2, 3, fixed. Each
+number keeps its top circles wherever they sit; every lower circle is dropped. Against it, the crude grid: one even grid
+per row (a plate's row is one neuron's inputs; a word's 768 values; a position's 768; a bias or gain vector is one row),
+its step set by the row's largest number, round to nearest, at 2, 3, 4, 5, 6 bits (2 bits = three levels).
+The cut numbers are exact binary values; fp32 GPT-2 runs them unchanged otherwise.
+
+SESSION'S PREDICTION (from the task, uncertain):
+  tips k = 1 at about 3-3.5 bits a number: full machine's word in the top 5 at 80-90%, same top word 55-70%
+  tips k = 2 at about 5.5-6.5 bits: 95-99% / 85-95%
+  tips k = 3 at about 8-9 bits: nearly all
+  crude grid at 3 bits keeps fewer words than tips k = 1; at 4 bits about the same as k = 1; at 6 bits about the
+  same as k = 2
+  the word table cut costs more words than the plates at the same k
+
+THIS RUN'S OWN EXPECTATIONS, from the picture, before anything ran:
+  - Sizes. k = 1 stores where the top circle sits and its sign. A plate's numbers spread over about 4-5 octaves, so
+    the place costs about 2.5-3 bits and the sign 1: about 3.5-4 bits a number. Each further circle sits 2 or more
+    places below the one above, gap 2 half the time, 3 a quarter, ...: about 2 bits for where, 1 for up or hole. So
+    k = 2 about 6.5-7, k = 3 about 9.5-10. A little above the session's numbers.
+  - Words. The onlyextra run (the base-2 machine, plates and word table cut, 2026-10-08) already gave k = 1: full
+    word in the top 5 83.3%, same top word 51.8%, greedy 38/480. Cutting also the position rows, biases and gains can
+    only add error, so here: k = 1 about 75-83% / 45-52%, greedy 25-45 of 480. k = 2 about 95-98% / 82-90%, greedy
+    150-300. k = 3 about 99% / 95-97%, greedy 330-430.
+  - Where the crude grid stands. In the pile's own picture, "lower" is lower than the pile's top, not lower than
+    each number's own top. A row grid cuts every circle below one line per row: the line sits in the pile's own
+    places. The tips cut below a line per number, so a small number keeps circles that sit far below the row's big
+    numbers -- circles the pile cannot see. So at the same stored size, I expect the crude grid (counted at its floor)
+    to keep about as many words as the tips or more at 4-6 bits. At 2-3 bits I expect the tips to keep more, because
+    the row's largest number sets the line so high that most of the row goes dark. This disagrees with the session's
+    prediction at 4-6 bits; the run decides.
+  - Error-placement control (same errors, put on other numbers of the same row): if the words follow only how much
+    error each row carries, the control keeps about the same words as the version itself.
+  - By part: the word table is read twice (in at the bottom, out at the top read), so its cut should cost more words
+    than any one plate's, but the 48 plates together should cost more than the word table alone. Position rows and
+    the small pieces (biases, gains): small at k >= 2; at k = 1 the gains (error up to a third) could cost a lot.

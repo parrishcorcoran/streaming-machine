@@ -1,0 +1,1062 @@
+{
+ "A": {
+  "qkv.3": {
+   "plain": 4574145203,
+   "uh": {
+    "tips_abs": 1060623592,
+    "tips_sd": 90295183,
+    "tips_nonzero": 46405195,
+    "meetings": 36691771392
+   },
+   "uh_shuffle": {
+    "tips_abs": 1056042804,
+    "tips_sd": 90209919,
+    "tips_nonzero": 46400021,
+    "meetings": 36691771392
+   },
+   "sm": {
+    "tips_abs": 308489565,
+    "tips_sd": 63026195,
+    "tips_nonzero": 36508697,
+    "meetings": 4574145203
+   },
+   "sm_shuffle": {
+    "tips_abs": 301447362,
+    "tips_sd": 62970762,
+    "tips_nonzero": 36722508,
+    "meetings": 4579114500
+   },
+   "sd": {
+    "tips_abs": 241037026,
+    "tips_sd": 62184163,
+    "tips_nonzero": 38402908,
+    "meetings": 2661703444
+   },
+   "sd_shuffle": {
+    "tips_abs": 241582892,
+    "tips_sd": 62511248,
+    "tips_nonzero": 38689500,
+    "meetings": 2663833072
+   },
+   "plain_shuffle": 4579114500
+  },
+  "proj.3": {
+   "plain": 1646969243,
+   "uh": {
+    "tips_abs": 351470296,
+    "tips_sd": 30055357,
+    "tips_nonzero": 15466432,
+    "meetings": 12230590464
+   },
+   "uh_shuffle": {
+    "tips_abs": 352075596,
+    "tips_sd": 30069475,
+    "tips_nonzero": 15466944,
+    "meetings": 12230590464
+   },
+   "sm": {
+    "tips_abs": 106313781,
+    "tips_sd": 22083007,
+    "tips_nonzero": 12644256,
+    "meetings": 1646969243
+   },
+   "sm_shuffle": {
+    "tips_abs": 108569211,
+    "tips_sd": 22290977,
+    "tips_nonzero": 12713774,
+    "meetings": 1647934299
+   },
+   "sd": {
+    "tips_abs": 86647967,
+    "tips_sd": 22093197,
+    "tips_nonzero": 13393766,
+    "meetings": 952068165
+   },
+   "sd_shuffle": {
+    "tips_abs": 86767317,
+    "tips_sd": 22139068,
+    "tips_nonzero": 13427692,
+    "meetings": 952492665
+   },
+   "plain_shuffle": 1647934299
+  },
+  "fc.3": {
+   "plain": 6267647623,
+   "uh": {
+    "tips_abs": 1411606096,
+    "tips_sd": 120346815,
+    "tips_nonzero": 61873902,
+    "meetings": 48922361856
+   },
+   "uh_shuffle": {
+    "tips_abs": 1407931288,
+    "tips_sd": 120271312,
+    "tips_nonzero": 61868372,
+    "meetings": 48922361856
+   },
+   "sm": {
+    "tips_abs": 421675667,
+    "tips_sd": 85386034,
+    "tips_nonzero": 49038506,
+    "meetings": 6267647623
+   },
+   "sm_shuffle": {
+    "tips_abs": 410814094,
+    "tips_sd": 85057284,
+    "tips_nonzero": 49313316,
+    "meetings": 6275193382
+   },
+   "sd": {
+    "tips_abs": 327984683,
+    "tips_sd": 83904618,
+    "tips_nonzero": 51488998,
+    "meetings": 3635831535
+   },
+   "sd_shuffle": {
+    "tips_abs": 328818879,
+    "tips_sd": 84577983,
+    "tips_nonzero": 52115173,
+    "meetings": 3639135707
+   },
+   "plain_shuffle": 6275193382
+  },
+  "mproj.3": {
+   "plain": 6175938477,
+   "uh": {
+    "tips_abs": 706571592,
+    "tips_sd": 35385500,
+    "tips_nonzero": 15696957,
+    "meetings": 48922361856
+   },
+   "uh_shuffle": {
+    "tips_abs": 709500856,
+    "tips_sd": 35417127,
+    "tips_nonzero": 15697350,
+    "meetings": 48922361856
+   },
+   "sm": {
+    "tips_abs": 200265497,
+    "tips_sd": 25089100,
+    "tips_nonzero": 12695739,
+    "meetings": 6175938477
+   },
+   "sm_shuffle": {
+    "tips_abs": 208997904,
+    "tips_sd": 25345461,
+    "tips_nonzero": 12739252,
+    "meetings": 6181707262
+   },
+   "sd": {
+    "tips_abs": 163184210,
+    "tips_sd": 25410815,
+    "tips_nonzero": 13516309,
+    "meetings": 3671193384
+   },
+   "sd_shuffle": {
+    "tips_abs": 163534700,
+    "tips_sd": 25493797,
+    "tips_nonzero": 13573895,
+    "meetings": 3674162800
+   },
+   "plain_shuffle": 6181707262
+  },
+  "qkv.9": {
+   "plain": 4671001137,
+   "uh": {
+    "tips_abs": 1059013968,
+    "tips_sd": 90277554,
+    "tips_nonzero": 46405497,
+    "meetings": 36691771392
+   },
+   "uh_shuffle": {
+    "tips_abs": 1055861376,
+    "tips_sd": 90214916,
+    "tips_nonzero": 46402787,
+    "meetings": 36691771392
+   },
+   "sm": {
+    "tips_abs": 308436229,
+    "tips_sd": 62624315,
+    "tips_nonzero": 36072464,
+    "meetings": 4671001137
+   },
+   "sm_shuffle": {
+    "tips_abs": 304945354,
+    "tips_sd": 62831796,
+    "tips_nonzero": 36447953,
+    "meetings": 4673140168
+   },
+   "sd": {
+    "tips_abs": 243311000,
+    "tips_sd": 61728760,
+    "tips_nonzero": 37677902,
+    "meetings": 2713109040
+   },
+   "sd_shuffle": {
+    "tips_abs": 243730862,
+    "tips_sd": 62062335,
+    "tips_nonzero": 37992635,
+    "meetings": 2714161934
+   },
+   "plain_shuffle": 4673140168
+  },
+  "proj.9": {
+   "plain": 1721413459,
+   "uh": {
+    "tips_abs": 351612224,
+    "tips_sd": 30059576,
+    "tips_nonzero": 15466101,
+    "meetings": 12230590464
+   },
+   "uh_shuffle": {
+    "tips_abs": 352111996,
+    "tips_sd": 30068122,
+    "tips_nonzero": 15467777,
+    "meetings": 12230590464
+   },
+   "sm": {
+    "tips_abs": 110644159,
+    "tips_sd": 22653758,
+    "tips_nonzero": 12777148,
+    "meetings": 1721413459
+   },
+   "sm_shuffle": {
+    "tips_abs": 113086883,
+    "tips_sd": 22834029,
+    "tips_nonzero": 12831961,
+    "meetings": 1722982611
+   },
+   "sd": {
+    "tips_abs": 89834623,
+    "tips_sd": 22651591,
+    "tips_nonzero": 13596697,
+    "meetings": 988289179
+   },
+   "sd_shuffle": {
+    "tips_abs": 89954498,
+    "tips_sd": 22705285,
+    "tips_nonzero": 13637601,
+    "meetings": 988986256
+   },
+   "plain_shuffle": 1722982611
+  },
+  "fc.9": {
+   "plain": 6267322864,
+   "uh": {
+    "tips_abs": 1413831696,
+    "tips_sd": 120389071,
+    "tips_nonzero": 61872946,
+    "meetings": 48922361856
+   },
+   "uh_shuffle": {
+    "tips_abs": 1408147000,
+    "tips_sd": 120279596,
+    "tips_nonzero": 61869247,
+    "meetings": 48922361856
+   },
+   "sm": {
+    "tips_abs": 423114382,
+    "tips_sd": 84145315,
+    "tips_nonzero": 47956105,
+    "meetings": 6267322864
+   },
+   "sm_shuffle": {
+    "tips_abs": 408990022,
+    "tips_sd": 84041243,
+    "tips_nonzero": 48581574,
+    "meetings": 6270953540
+   },
+   "sd": {
+    "tips_abs": 326334606,
+    "tips_sd": 82799723,
+    "tips_nonzero": 50608223,
+    "meetings": 3640748804
+   },
+   "sd_shuffle": {
+    "tips_abs": 326782217,
+    "tips_sd": 83258954,
+    "tips_nonzero": 51062012,
+    "meetings": 3642340143
+   },
+   "plain_shuffle": 6270953540
+  },
+  "mproj.9": {
+   "plain": 6043556901,
+   "uh": {
+    "tips_abs": 703684384,
+    "tips_sd": 35366373,
+    "tips_nonzero": 15696342,
+    "meetings": 48922361856
+   },
+   "uh_shuffle": {
+    "tips_abs": 705578700,
+    "tips_sd": 35378341,
+    "tips_nonzero": 15696187,
+    "meetings": 48922361856
+   },
+   "sm": {
+    "tips_abs": 190367831,
+    "tips_sd": 24428095,
+    "tips_nonzero": 12485569,
+    "meetings": 6043556901
+   },
+   "sm_shuffle": {
+    "tips_abs": 195744158,
+    "tips_sd": 24646183,
+    "tips_nonzero": 12552839,
+    "meetings": 6046080084
+   },
+   "sd": {
+    "tips_abs": 159750873,
+    "tips_sd": 24863022,
+    "tips_nonzero": 13215695,
+    "meetings": 3634419347
+   },
+   "sd_shuffle": {
+    "tips_abs": 159951930,
+    "tips_sd": 24932330,
+    "tips_nonzero": 13270548,
+    "meetings": 3635858630
+   },
+   "plain_shuffle": 6046080084
+  }
+ },
+ "B": {
+  "qkv.3": {
+   "N": 768,
+   "M": 2304,
+   "T": 325,
+   "groups": 64,
+   "plain": 18175497530,
+   "plain_signed": 10605796725,
+   "adds_plain": 3569584086,
+   "gm": {
+    "build": 168663622,
+    "build_n": 42806400,
+    "write": 263240128,
+    "write_n": 42598400,
+    "read": 3576820995,
+    "read_n": 766771200,
+    "read_run": 3292034835,
+    "read_run_n": 705665025,
+    "xsum": 979731,
+    "xsum_n": 249275,
+    "off": 3949056,
+    "off_n": 748800
+   },
+   "flat": {
+    "build": 169927189,
+    "build_n": 42806400,
+    "write": 260749438,
+    "write_n": 42598400,
+    "read": 3547114162,
+    "read_n": 766771200,
+    "read_run": 3264344428,
+    "read_run_n": 705665025,
+    "xsum": 986359,
+    "xsum_n": 249275,
+    "off": 3946752,
+    "off_n": 748800
+   },
+   "stored_add": 7315750,
+   "gm_shuffle": {
+    "build": 168269415,
+    "build_n": 42806400,
+    "write": 262546957,
+    "write_n": 42598400,
+    "read": 3568812513,
+    "read_n": 766771200,
+    "read_run": 3284398017,
+    "read_run_n": 705665025,
+    "xsum": 979750,
+    "xsum_n": 249275,
+    "off": 3949056,
+    "off_n": 748800
+   },
+   "flat_shuffle": {
+    "build": 169419248,
+    "build_n": 42806400,
+    "write": 264823268,
+    "write_n": 42598400,
+    "read": 3596301682,
+    "read_n": 766771200,
+    "read_run": 3309693574,
+    "read_run_n": 705665025,
+    "xsum": 985831,
+    "xsum_n": 249275,
+    "off": 3992832,
+    "off_n": 748800
+   },
+   "stored_add_shuffle": 6050850,
+   "order": {
+    "build": 167946405,
+    "build_n": 42806400,
+    "write": 263240128,
+    "write_n": 42598400,
+    "read": 3576820995,
+    "read_n": 766771200,
+    "read_run": 3292034835,
+    "read_run_n": 705665025,
+    "xsum": 979731,
+    "xsum_n": 249275,
+    "off": 3949056,
+    "off_n": 748800
+   },
+   "sd_light": 981042,
+   "sd_dep": 987654,
+   "sd_light_sh": 981042,
+   "sd_dep_sh": 987107,
+   "energy_light": 1230745404477.0,
+   "energy_dep": 466723563290.0,
+   "energy_light_sh": 1230745404477.0,
+   "energy_dep_sh": 1231200410416.0,
+   "sd_place_sums": 71247961,
+   "sd_xD": 7750636,
+   "run_places_mean": 14.72491455078125
+  },
+  "proj.3": {
+   "N": 768,
+   "M": 768,
+   "T": 325,
+   "groups": 64,
+   "plain": 6527067776,
+   "plain_signed": 3775574923,
+   "adds_plain": 1204065476,
+   "gm": {
+    "build": 177426181,
+    "build_n": 42806400,
+    "write": 281485640,
+    "write_n": 42598400,
+    "read": 1265204392,
+    "read_n": 255590400,
+    "read_run": 1175242858,
+    "read_run_n": 237439150,
+    "xsum": 1036914,
+    "xsum_n": 249275,
+    "off": 1481472,
+    "off_n": 249600
+   },
+   "flat": {
+    "build": 172900094,
+    "build_n": 42806400,
+    "write": 274022475,
+    "write_n": 42598400,
+    "read": 1235270343,
+    "read_n": 255590400,
+    "read_run": 1147488174,
+    "read_run_n": 237439150,
+    "xsum": 1014518,
+    "xsum_n": 249275,
+    "off": 1453056,
+    "off_n": 249600
+   },
+   "stored_add": 2383875,
+   "gm_shuffle": {
+    "build": 177663096,
+    "build_n": 42806400,
+    "write": 281983926,
+    "write_n": 42598400,
+    "read": 1266882528,
+    "read_n": 255590400,
+    "read_run": 1176913903,
+    "read_run_n": 237439150,
+    "xsum": 1036864,
+    "xsum_n": 249275,
+    "off": 1481472,
+    "off_n": 249600
+   },
+   "flat_shuffle": {
+    "build": 178207088,
+    "build_n": 42806400,
+    "write": 281942057,
+    "write_n": 42598400,
+    "read": 1266739464,
+    "read_n": 255590400,
+    "read_run": 1176776970,
+    "read_run_n": 237439150,
+    "xsum": 1037818,
+    "xsum_n": 249275,
+    "off": 1439232,
+    "off_n": 249600
+   },
+   "stored_add_shuffle": 2137200,
+   "order": {
+    "build": 178675668,
+    "build_n": 42806400,
+    "write": 281485640,
+    "write_n": 42598400,
+    "read": 1265204392,
+    "read_n": 255590400,
+    "read_run": 1175242858,
+    "read_run_n": 237439150,
+    "xsum": 1036914,
+    "xsum_n": 249275,
+    "off": 1481472,
+    "off_n": 249600
+   },
+   "sd_light": 1038239,
+   "sd_dep": 1015658,
+   "sd_light_sh": 1038239,
+   "sd_dep_sh": 1039189,
+   "energy_light": 2529025133851.0,
+   "energy_dep": 1275274319577.0,
+   "energy_light_sh": 2529025133851.0,
+   "energy_dep_sh": 2531033283849.0,
+   "sd_place_sums": 24128995,
+   "sd_xD": 2543277,
+   "run_places_mean": 14.863728841145834
+  },
+  "fc.3": {
+   "N": 768,
+   "M": 3072,
+   "T": 325,
+   "groups": 64,
+   "plain": 24930849090,
+   "plain_signed": 14495080678,
+   "adds_plain": 4857647944,
+   "gm": {
+    "build": 169373689,
+    "build_n": 42806400,
+    "write": 264151264,
+    "write_n": 42598400,
+    "read": 4782480205,
+    "read_n": 1022361600,
+    "read_run": 4473171337,
+    "read_run_n": 956280325,
+    "xsum": 986298,
+    "xsum_n": 249275,
+    "off": 5277696,
+    "off_n": 998400
+   },
+   "flat": {
+    "build": 170764251,
+    "build_n": 42806400,
+    "write": 262711930,
+    "write_n": 42598400,
+    "read": 4761262163,
+    "read_n": 1022361600,
+    "read_run": 4453378338,
+    "read_run_n": 956280325,
+    "xsum": 995502,
+    "xsum_n": 249275,
+    "off": 5326848,
+    "off_n": 998400
+   },
+   "stored_add": 9940775,
+   "gm_shuffle": {
+    "build": 169332470,
+    "build_n": 42806400,
+    "write": 263934351,
+    "write_n": 42598400,
+    "read": 4779207028,
+    "read_n": 1022361600,
+    "read_run": 4470317930,
+    "read_run_n": 956280325,
+    "xsum": 986285,
+    "xsum_n": 249275,
+    "off": 5277696,
+    "off_n": 998400
+   },
+   "flat_shuffle": {
+    "build": 170398977,
+    "build_n": 42806400,
+    "write": 265683168,
+    "write_n": 42598400,
+    "read": 4808409394,
+    "read_n": 1022361600,
+    "read_run": 4497588747,
+    "read_run_n": 956280325,
+    "xsum": 992042,
+    "xsum_n": 249275,
+    "off": 5360640,
+    "off_n": 998400
+   },
+   "stored_add_shuffle": 8131500,
+   "order": {
+    "build": 168610614,
+    "build_n": 42806400,
+    "write": 264151264,
+    "write_n": 42598400,
+    "read": 4782480205,
+    "read_n": 1022361600,
+    "read_run": 4473171337,
+    "read_run_n": 956280325,
+    "xsum": 986298,
+    "xsum_n": 249275,
+    "off": 5277696,
+    "off_n": 998400
+   },
+   "sd_light": 987591,
+   "sd_dep": 996814,
+   "sd_light_sh": 987591,
+   "sd_dep_sh": 993329,
+   "energy_light": 1270344725957.0,
+   "energy_dep": 508209018970.0,
+   "energy_light_sh": 1270344725957.0,
+   "energy_dep_sh": 1270868408680.0,
+   "sd_place_sums": 95397461,
+   "sd_xD": 10364551,
+   "run_places_mean": 14.965825398763021
+  },
+  "mproj.3": {
+   "N": 3072,
+   "M": 768,
+   "T": 325,
+   "groups": 256,
+   "plain": 24779367808,
+   "plain_signed": 14720698117,
+   "adds_plain": 4764623922,
+   "gm": {
+    "build": 697160533,
+    "build_n": 171225600,
+    "write": 1057279800,
+    "write_n": 170393600,
+    "read": 4785854660,
+    "read_n": 1022361600,
+    "read_run": 4405808712,
+    "read_run_n": 941192850,
+    "xsum": 4080475,
+    "xsum_n": 998075,
+    "off": 1969920,
+    "off_n": 249600
+   },
+   "flat": {
+    "build": 655138745,
+    "build_n": 171225600,
+    "write": 1042190903,
+    "write_n": 170393600,
+    "read": 4725643924,
+    "read_n": 1022361600,
+    "read_run": 4350354657,
+    "read_run_n": 941192850,
+    "xsum": 3831496,
+    "xsum_n": 998075,
+    "off": 1840128,
+    "off_n": 249600
+   },
+   "stored_add": 2374775,
+   "gm_shuffle": {
+    "build": 700807862,
+    "build_n": 171225600,
+    "write": 1057195577,
+    "write_n": 170393600,
+    "read": 4785690333,
+    "read_n": 1022361600,
+    "read_run": 4405738507,
+    "read_run_n": 941192850,
+    "xsum": 4080336,
+    "xsum_n": 998075,
+    "off": 1969920,
+    "off_n": 249600
+   },
+   "flat_shuffle": {
+    "build": 670524894,
+    "build_n": 171225600,
+    "write": 1047388261,
+    "write_n": 170393600,
+    "read": 4746298428,
+    "read_n": 1022361600,
+    "read_run": 4369425807,
+    "read_run_n": 941192850,
+    "xsum": 3907181,
+    "xsum_n": 998075,
+    "off": 1830912,
+    "off_n": 249600
+   },
+   "stored_add_shuffle": 2471300,
+   "order": {
+    "build": 699634149,
+    "build_n": 171225600,
+    "write": 1057279800,
+    "write_n": 170393600,
+    "read": 4785854660,
+    "read_n": 1022361600,
+    "read_run": 4405808712,
+    "read_run_n": 941192850,
+    "xsum": 4080475,
+    "xsum_n": 998075,
+    "off": 1969920,
+    "off_n": 249600
+   },
+   "sd_light": 4081668,
+   "sd_dep": 3832693,
+   "sd_light_sh": 4081668,
+   "sd_dep_sh": 3908474,
+   "energy_light": 3157316612057.0,
+   "energy_dep": 2593463982207.0,
+   "energy_light_sh": 3157316612057.0,
+   "energy_dep_sh": 2889798756080.0,
+   "sd_place_sums": 24297433,
+   "sd_xD": 2554451,
+   "run_places_mean": 14.729705810546875
+  },
+  "qkv.9": {
+   "N": 768,
+   "M": 2304,
+   "T": 325,
+   "groups": 64,
+   "plain": 18585090179,
+   "plain_signed": 10800390227,
+   "adds_plain": 3615503412,
+   "gm": {
+    "build": 168988936,
+    "build_n": 42806400,
+    "write": 260977363,
+    "write_n": 42598400,
+    "read": 3547967239,
+    "read_n": 766771200,
+    "read_run": 3291339107,
+    "read_run_n": 711267050,
+    "xsum": 986051,
+    "xsum_n": 249275,
+    "off": 4340736,
+    "off_n": 748800
+   },
+   "flat": {
+    "build": 170858309,
+    "build_n": 42806400,
+    "write": 262256449,
+    "write_n": 42598400,
+    "read": 3564474034,
+    "read_n": 766771200,
+    "read_run": 3306518453,
+    "read_run_n": 711267050,
+    "xsum": 996014,
+    "xsum_n": 249275,
+    "off": 3852288,
+    "off_n": 748800
+   },
+   "stored_add": 7148050,
+   "gm_shuffle": {
+    "build": 169365719,
+    "build_n": 42806400,
+    "write": 261475117,
+    "write_n": 42598400,
+    "read": 3553676117,
+    "read_n": 766771200,
+    "read_run": 3296422833,
+    "read_run_n": 711267050,
+    "xsum": 986017,
+    "xsum_n": 249275,
+    "off": 4340736,
+    "off_n": 748800
+   },
+   "flat_shuffle": {
+    "build": 170285794,
+    "build_n": 42806400,
+    "write": 263354246,
+    "write_n": 42598400,
+    "read": 3576950968,
+    "read_n": 766771200,
+    "read_run": 3318040774,
+    "read_run_n": 711267050,
+    "xsum": 990819,
+    "xsum_n": 249275,
+    "off": 4345344,
+    "off_n": 748800
+   },
+   "stored_add_shuffle": 6052475,
+   "order": {
+    "build": 168876652,
+    "build_n": 42806400,
+    "write": 260977363,
+    "write_n": 42598400,
+    "read": 3547967239,
+    "read_n": 766771200,
+    "read_run": 3291339107,
+    "read_run_n": 711267050,
+    "xsum": 986051,
+    "xsum_n": 249275,
+    "off": 4340736,
+    "off_n": 748800
+   },
+   "sd_light": 987285,
+   "sd_dep": 997274,
+   "sd_light_sh": 987285,
+   "sd_dep_sh": 992101,
+   "energy_light": 1022382038268.0,
+   "energy_dep": 525154457422.0,
+   "energy_light_sh": 1022382038268.0,
+   "energy_dep_sh": 1022822871580.0,
+   "sd_place_sums": 69863985,
+   "sd_xD": 7625727,
+   "run_places_mean": 14.841810438368055
+  },
+  "proj.9": {
+   "N": 768,
+   "M": 768,
+   "T": 325,
+   "groups": 64,
+   "plain": 6942438479,
+   "plain_signed": 3980831538,
+   "adds_plain": 1237793336,
+   "gm": {
+    "build": 183746116,
+    "build_n": 42806400,
+    "write": 291808630,
+    "write_n": 42598400,
+    "read": 1306612093,
+    "read_n": 255590400,
+    "read_run": 1237988434,
+    "read_run_n": 242175050,
+    "xsum": 1067214,
+    "xsum_n": 249275,
+    "off": 1522176,
+    "off_n": 249600
+   },
+   "flat": {
+    "build": 176547307,
+    "build_n": 42806400,
+    "write": 286970049,
+    "write_n": 42598400,
+    "read": 1287045862,
+    "read_n": 255590400,
+    "read_run": 1219446722,
+    "read_run_n": 242175050,
+    "xsum": 1027510,
+    "xsum_n": 249275,
+    "off": 1502208,
+    "off_n": 249600
+   },
+   "stored_add": 2386800,
+   "gm_shuffle": {
+    "build": 183002709,
+    "build_n": 42806400,
+    "write": 291996469,
+    "write_n": 42598400,
+    "read": 1307133023,
+    "read_n": 255590400,
+    "read_run": 1238528062,
+    "read_run_n": 242175050,
+    "xsum": 1067303,
+    "xsum_n": 249275,
+    "off": 1522176,
+    "off_n": 249600
+   },
+   "flat_shuffle": {
+    "build": 183548862,
+    "build_n": 42806400,
+    "write": 291732815,
+    "write_n": 42598400,
+    "read": 1306041831,
+    "read_n": 255590400,
+    "read_run": 1237487031,
+    "read_run_n": 242175050,
+    "xsum": 1067604,
+    "xsum_n": 249275,
+    "off": 1502208,
+    "off_n": 249600
+   },
+   "stored_add_shuffle": 2169050,
+   "order": {
+    "build": 182919261,
+    "build_n": 42806400,
+    "write": 291808630,
+    "write_n": 42598400,
+    "read": 1306612093,
+    "read_n": 255590400,
+    "read_run": 1237988434,
+    "read_run_n": 242175050,
+    "xsum": 1067214,
+    "xsum_n": 249275,
+    "off": 1522176,
+    "off_n": 249600
+   },
+   "sd_light": 1068704,
+   "sd_dep": 1028954,
+   "sd_light_sh": 1068704,
+   "sd_dep_sh": 1069013,
+   "energy_light": 3533305071026.0,
+   "energy_dep": 2786031141661.0,
+   "energy_light_sh": 3533305071026.0,
+   "energy_dep_sh": 3536514025232.0,
+   "sd_place_sums": 24434428,
+   "sd_xD": 2619809,
+   "run_places_mean": 15.160196940104166
+  },
+  "fc.9": {
+   "N": 768,
+   "M": 3072,
+   "T": 325,
+   "groups": 64,
+   "plain": 24898429150,
+   "plain_signed": 14460432568,
+   "adds_plain": 4853522517,
+   "gm": {
+    "build": 169671527,
+    "build_n": 42806400,
+    "write": 261452596,
+    "write_n": 42598400,
+    "read": 4736822033,
+    "read_n": 1022361600,
+    "read_run": 4420257963,
+    "read_run_n": 953914975,
+    "xsum": 985305,
+    "xsum_n": 249275,
+    "off": 5760000,
+    "off_n": 998400
+   },
+   "flat": {
+    "build": 171184411,
+    "build_n": 42806400,
+    "write": 262388818,
+    "write_n": 42598400,
+    "read": 4755187089,
+    "read_n": 1022361600,
+    "read_run": 4436947338,
+    "read_run_n": 953914975,
+    "xsum": 997364,
+    "xsum_n": 249275,
+    "off": 5320704,
+    "off_n": 998400
+   },
+   "stored_add": 9979775,
+   "gm_shuffle": {
+    "build": 169329013,
+    "build_n": 42806400,
+    "write": 261163450,
+    "write_n": 42598400,
+    "read": 4732928048,
+    "read_n": 1022361600,
+    "read_run": 4416052386,
+    "read_run_n": 953914975,
+    "xsum": 985271,
+    "xsum_n": 249275,
+    "off": 5760000,
+    "off_n": 998400
+   },
+   "flat_shuffle": {
+    "build": 170402500,
+    "build_n": 42806400,
+    "write": 263347108,
+    "write_n": 42598400,
+    "read": 4769128789,
+    "read_n": 1022361600,
+    "read_run": 4449810123,
+    "read_run_n": 953914975,
+    "xsum": 990717,
+    "xsum_n": 249275,
+    "off": 5726208,
+    "off_n": 998400
+   },
+   "stored_add_shuffle": 8118175,
+   "order": {
+    "build": 168653830,
+    "build_n": 42806400,
+    "write": 261452596,
+    "write_n": 42598400,
+    "read": 4736822033,
+    "read_n": 1022361600,
+    "read_run": 4420257963,
+    "read_run_n": 953914975,
+    "xsum": 985305,
+    "xsum_n": 249275,
+    "off": 5760000,
+    "off_n": 998400
+   },
+   "sd_light": 986565,
+   "sd_dep": 998639,
+   "sd_light_sh": 986565,
+   "sd_dep_sh": 992007,
+   "energy_light": 1061978016168.0,
+   "energy_dep": 557974056671.0,
+   "energy_light_sh": 1061978016168.0,
+   "energy_dep_sh": 1062493088259.0,
+   "sd_place_sums": 93321051,
+   "sd_xD": 10362597,
+   "run_places_mean": 14.928807576497396
+  },
+  "mproj.9": {
+   "N": 3072,
+   "M": 768,
+   "T": 325,
+   "groups": 256,
+   "plain": 24332549344,
+   "plain_signed": 14625169025,
+   "adds_plain": 4758275363,
+   "gm": {
+    "build": 698959803,
+    "build_n": 171225600,
+    "write": 1034106901,
+    "write_n": 170393600,
+    "read": 4692971371,
+    "read_n": 1022361600,
+    "read_run": 4306613855,
+    "read_run_n": 938216500,
+    "xsum": 4063274,
+    "xsum_n": 998075,
+    "off": 1859328,
+    "off_n": 249600
+   },
+   "flat": {
+    "build": 624668018,
+    "build_n": 171225600,
+    "write": 1015185751,
+    "write_n": 170393600,
+    "read": 4617304522,
+    "read_n": 1022361600,
+    "read_run": 4237170029,
+    "read_run_n": 938216500,
+    "xsum": 3635171,
+    "xsum_n": 998075,
+    "off": 1827072,
+    "off_n": 249600
+   },
+   "stored_add": 2348125,
+   "gm_shuffle": {
+    "build": 697342197,
+    "build_n": 171225600,
+    "write": 1034259862,
+    "write_n": 170393600,
+    "read": 4693340470,
+    "read_n": 1022361600,
+    "read_run": 4307072167,
+    "read_run_n": 938216500,
+    "xsum": 4063211,
+    "xsum_n": 998075,
+    "off": 1859328,
+    "off_n": 249600
+   },
+   "flat_shuffle": {
+    "build": 627889561,
+    "build_n": 171225600,
+    "write": 1018815289,
+    "write_n": 170393600,
+    "read": 4631725630,
+    "read_n": 1022361600,
+    "read_run": 4250531239,
+    "read_run_n": 938216500,
+    "xsum": 3657837,
+    "xsum_n": 998075,
+    "off": 1857792,
+    "off_n": 249600
+   },
+   "stored_add_shuffle": 2396875,
+   "order": {
+    "build": 697865466,
+    "build_n": 171225600,
+    "write": 1034106901,
+    "write_n": 170393600,
+    "read": 4692971371,
+    "read_n": 1022361600,
+    "read_run": 4306613855,
+    "read_run_n": 938216500,
+    "xsum": 4063274,
+    "xsum_n": 998075,
+    "off": 1859328,
+    "off_n": 249600
+   },
+   "sd_light": 4064540,
+   "sd_dep": 3636348,
+   "sd_light_sh": 4064540,
+   "sd_dep_sh": 3659022,
+   "energy_light": 2298094995517.0,
+   "energy_dep": 2036320761560.0,
+   "energy_light_sh": 2298094995517.0,
+   "energy_dep_sh": 2260557044048.0,
+   "sd_place_sums": 24037571,
+   "sd_xD": 2541409,
+   "run_places_mean": 14.683125813802084
+  }
+ }
+}

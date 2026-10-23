@@ -1,0 +1,28 @@
+  requirement 11 QKV:q: req_refs_L11.npz; exact needed at 99.8%
+  requirement 11 QKV:k: read by later tokens: exact digits (req.py's own box: exact at 82.9%); exact needed at 100.0%
+  requirement 11 QKV:v: read by later tokens: exact digits (req.py's own box: exact at 71.0%); exact needed at 100.0%
+  requirement 11 A: req_refs_L11.npz; exact needed at 33.2%
+  requirement 11 H: req_refs_L11.npz; exact needed at 15.3%
+  requirement 11 Mw: req_refs_L11.npz; exact needed at 0.2%
+  layer 11 done (37s; 37s, 2987 MB)
+
+NEEDED WORK BY PLATE (refs, 648 positions): photon meetings of the diagonals read, against plain and the extra
+plate        plain/pos   extra | (a) needed  x extra piles early | (b) needed  x extra piles early
+qkv.11      54,778,349   6.64% |     97.70%     14.7      83.86% |     97.70%     14.7      83.86%
+proj.11     20,179,129   6.50% |     99.08%     15.2      80.23% |     97.28%     15.0      93.69%
+fc.11       71,421,088   7.02% |     89.20%     12.7      98.94% |     88.79%     12.7      99.83%
+mproj.11    72,427,812   3.34% |     89.67%     26.8      99.57% |     84.67%     25.3     100.00%
+banks      218,806,379   5.66% |     92.40%     16.3             |     90.44%     16.0
+
+WHERE EACH PILE STOPS (D = the lowest diagonal read; D = 0: the whole pile; shares of the plate's piles, D >= 1 only)
+  qkv.11    (a) D=0 16.14%; D1:29.56% D2:26.43% D3:25.76% D4:2.09% D5:0.02% D6:0.00%
+  qkv.11    (b) D=0 16.14%; D1:29.56% D2:26.43% D3:25.76% D4:2.09% D5:0.02% D6:0.00%
+  proj.11   (a) D=0 19.77%; D1:58.44% D2:21.22% D3:0.57%
+  proj.11   (b) D=0 6.31%; D1:22.14% D2:38.15% D3:25.78% D4:6.67% D5:0.87% D6:0.10%
+  fc.11     (a) D=0 1.06%; D1:4.10% D2:10.51% D3:18.35% D4:20.78% D5:21.34% D6:14.65% D7:5.01% D8:2.01% D9:1.05% D10:0.67% D11:0.15% D12:0.08% D13:0.07% D14:0.07% D15:0.05% D16:0.03% D17:0.01% D18:0.00% D19:0.00%
+  fc.11     (b) D=0 0.17%; D1:1.27% D2:8.51% D3:20.24% D4:23.09% D5:22.71% D6:14.81% D7:5.01% D8:2.01% D9:1.05% D10:0.67% D11:0.15% D12:0.08% D13:0.07% D14:0.07% D15:0.05% D16:0.03% D17:0.01% D18:0.00% D19:0.00%
+  mproj.11  (a) D=0 0.43%; D1:1.71% D2:5.09% D3:12.59% D4:25.24% D5:37.47% D6:16.29% D7:1.19%
+  mproj.11  (b) D=0 0.00%; D1:0.07% D2:0.76% D3:4.66% D4:11.02% D5:24.42% D6:43.62% D7:11.45% D8:2.80% D9:1.01% D10:0.18%
+
+VERIFIED (each plate cut alone at its stops, carried to the top by core.push):
+(37s, max memory 2987 MB)

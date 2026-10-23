@@ -1,0 +1,115 @@
+THE TIPS AND THE BLANK SLATE. Written 2026-10-06, before any measuring run of tips_blank/.
+
+HIS WORDS (2026-10-06), the only words quoted as his:
+  "I really feel like the tips are the only thing the model learned and needs and it's because all the non tips are
+   the blank slate somehowz"
+
+HIS PICTURE, RESTATED (the session's words, not his)
+  Every pile is the light's places meeting the plate's places, line by line. At one place pair (light place a, plate
+  place b) every line is an up meeting (the two places agree) or a down meeting (they disagree). Ups and downs pair off;
+  what is left is the TIP, T = ups - downs = N - 2d. The pile is the tips alone (the tip identity: 15,439,710 of
+  15,439,710 GPT-2 piles). The meetings that paired off are the NON-TIPS. His sentence: the tips are all the building
+  made and all the machine needs, and the non-tips are the blank slate, somehow.
+
+THE SESSION'S READING (the task's, kept as given): two parts.
+  (i) Amount: the tips alone give the answer. The tip identity makes "the tips are all it needs" true by construction
+      (rule 13.4), so it is not tested again; it is checked at every position here only as the exactness check.
+  (ii) Identity: are the non-tips the blank slate? Literal: the paired-off work is the step-0 blank's work. "Somehow":
+      the paired-off work behaves exactly like a blank slate's, whatever made it.
+
+ANALYSIS BEFORE THE RUN (the session's)
+  1. Per meeting, paired off + |tip| = N, the line count. So "the non-tips are blank-sized" and "the tips are
+     blank-sized" are one statement read from two sides (13.4). On one grid, with 2^d weights, the paired-off mass
+     cannot stay at the blank's while the tips grow: wherever the tips grow, the paired-off mass falls by exactly as much.
+  2. The coin-toss law. At any place pair where one side's places are fair coins along the lines, independent of the
+     other side, the tip is a coin toss's leftover: E|T| = N C(N, N/2) / 2^N, a share 3.53% of the lines at 512,
+     2.88% at 768, 2.49% at 1,024, 1.76% at 2,048, 1.44% at 3,072, 7.04% at 128. The blank, a fresh bell draw and the
+     finished plate all pair off at that rate there, whatever made them. That part of the measurement must return the
+     coin toss (13.3); it cannot tell whether the non-tips ARE the blank.
+  3. The places that carry a pattern along the lines are the signs. A value's places above its own top 1 all copy its
+     sign (up/hole form: s_a = sign x (top places all holes)). On the plate that is places 13-15 for most weights; on
+     the light it runs much lower, because each position's largest value sets its power and most values are far below
+     it. Only place pairs where both sides copy signs can leave the coin toss: their tip is the lines where the light's
+     sign and the plate's sign agree minus where they disagree. Those place pairs fill the top diagonals.
+  4. Two things can make the finished top tips depart from the coin toss:
+     (a) a standing pattern: lines whose light keeps one sign at every position, meeting plate rows that keep one sign
+         over all neurons. Seen during the timing run (see "looked at before writing" below): at the Pythia-70m word
+         table, 494 of 512 light lanes keep one sign at all 622 positions, 402 of 512 table rows keep one sign over
+         99% of the 50,304 words, and the two agree (correlation of the patterns 0.997).
+     (b) the token's own pattern: a neuron strongly lit at one position.
+     The light shuffled across its lines (same values) breaks both; a blank or a fresh draw has neither.
+  5. The blank on the finished light: the blank's rows have random signs, so (a) is absent, and (b) is there only as far
+     as the finished plate kept the blank's pattern and the light leans into it. In Pythia the plates keep s = 9-28%
+     (70m) and 7-67% (160m) of the blank's pattern, correlation 0.02-0.25 and 0.02-0.36. The excess of |tip| over the
+     coin toss grows as the square of the lean, so the blank's excess should be at most about 6% (70m) and 13% (160m) of
+     the finished's, at the same diagonal.
+  6. The blank on its own light: each plate is its own draw and never shaped the light it meets (that light comes from
+     the other plates), so it is a coin toss at every diagonal, the top ones included.
+  7. Literal form: Pythia-70m's finished plates hold 0.06% of the blank (160m: 1.2%). On the shared grid that is a few
+     grains of a weight: the finished plate's digits above the lowest few places are not the blank's digits, so the
+     meetings that pair off in the finished machine are not the blank's meetings. This is known before the run (from
+     the shave); the run measures the "somehow" form.
+
+THE TASK'S PREDICTION (as given to the session, kept as written)
+  A: the finished plates pair off at the blank's share within 1 point at every plate, even though 99.9% of
+     Pythia-70m's blank is gone -- so the non-tips are the blank slate "somehow" (blank-like, made again by the
+     building), not literally;
+  B: the paired-off mass grows with the pushes, not held at the blank's;
+  C: the finished tips exceed their light-shuffle at the high diagonals (top 6-10 of 29-31) and match it at the low
+     ones; the blank's tips match their shuffle everywhere;
+  D: as A.
+
+THE BUILDER'S PREDICTION (this session's, written before any measuring run)
+  A (Pythia 70m, 160m; every plate; each diagonal d = a + b, 0-31):
+   A1. Finished, blank and fresh draw, all on the finished light, pair off at the coin-toss value of the plate's line
+       count within 0.3 points at every diagonal below the top 6.
+   A2. At the top diagonals the finished departs: at the word table (head) the top diagonal pairs off under 50% at both
+       sizes (the standing pattern; seen at 70m in the timing run, so only the 160m half of this is a prediction); at q/k/v and MLP-in plates 0.5-10 points below the coin toss at the top 1-3 diagonals; at
+       attention-out and MLP-out plates (proj, mproj) within 2 points of it, either way.
+   A3. The blank and the fresh draw on the finished light: within 0.5 point of the coin toss at every diagonal, the top
+       ones included, at 70m; at 160m the blank's top diagonals may sit 0.1-2 points below it where the plate kept the
+       most blank pattern.
+   A4. The blank on its own light: the coin toss within 0.3 points at every diagonal.
+   A5. With 2^d weights the overall share is set by the top 3 diagonals, so the finished's overall share departs from
+       the blank's by tens of points at the head and by more than 1 point wherever a standing pattern stands. The
+       task's "within 1 point at every plate" fails there and holds at the other plates.
+  B (tiny models w128 L4, recipes A/B/C, snapshots 0, 10, 30, 100, 300, 1000, 2000, 3000; 32 held-out windows = 4,096
+     positions, fixed before the run):
+   B1. Step 0: finished = blank; the pushes-only plate is all zeros (every place a hole above its sign place), so its
+       tips are the light's own place balance, not a pairing.
+   B2. From step 30 on, at every diagonal below the top 4, finished, blank and pushes pair off at the coin-toss value
+       (92.96% at 128 lines, 96.47% at 512) within 0.3 points: the built part brings its own pairing-off, at the same
+       law as the blank.
+   B3. At the top 2-4 diagonals the finished tips grow over the snapshots: at step 3000 the top diagonal pairs off 1-5
+       points below the coin toss at qkv, fc and the head; the pushes-only plate's top tips exceed the finished's; the
+       blank's own top tips on the finished light exceed their shuffle in A and B (the light leans into the blank, as
+       the dodge ratio of up to 1.57 at the down plates showed), less in C.
+   B4. As analysis 1: the paired-off mass on the grid falls exactly where the tips grow. The task's B ("grows with the
+       pushes") can only hold in real units, as the grid's power rises with the pushes; that is the plate's size, not
+       its pairing. The run reports both.
+  C (light shuffled across its lines, every model):
+   C1. The finished tips exceed their shuffle only at the top diagonals (top 2-6), by a few percent at most plates and
+       by several times at the word tables; at every other diagonal the ratio is 1.000 +- 0.005.
+   C2. The Pythia blank's tips on the finished light: ratio 1.00 +- 0.02 at every diagonal at 70m; at 160m up to 1.05 at
+       the top diagonals of the plates that kept the most blank pattern. On its own light: 1.00 +- 0.01 everywhere.
+   C3. The size of each diagonal's signed part of the pile shows the same, more strongly, at the top.
+  D (GPT-2 48 banks and word table; Qwen3-0.6B 196 plates and word table; finished against a fresh draw of each
+     neuron's spread, and against the light shuffle):
+   D1. As A1/A2. Exception: Qwen's o and down plates store 8 significant places, so their low places are dark; there
+       the finished departs from the fresh draw (which has 16 live places) by 0.5-3 points at the low and middle
+       diagonals, and the light shuffle keeps that departure (a format effect, not a pairing).
+   D2. GPT-2's and Qwen's word tables carry a standing pattern at the top diagonal like Pythia's (Qwen's table already
+       showed fringe 2.575% against 2.492% for the shuffle over all place pairs).
+  THE PLAIN ANSWER EXPECTED: (i) "needs" holds exactly, by the tip identity. "The only thing learned" does not: most of
+  the tips' size is the coin toss's leftover, the same size as a blank's; what the building made shows only in the top
+  diagonals' tips. (ii) Literal: no. "Somehow": the non-tips match a blank's at every diagonal but the top few, but they
+  also match a fresh bell draw and the built-only plate, so they are blank-like because every plate's pairing-off
+  leaves the coin toss, not because they are the blank. At the top diagonals, where the building shows, the finished
+  machine pairs off LESS than a blank (bigger tips).
+
+LOOKED AT BEFORE WRITING THIS (timing runs of engine.py, said here so the predictions are read with it):
+  - Pythia-70m word table, first 8,192 words, finished light: paired-off share by diagonal 96.4-96.7% from d = 0 to 25,
+    then 95.6 (26), 90.5 (27), 83.7 (28), 43.5 (29), 4.4% (30); no position needed a 17th light place.
+  - Pythia-70m fc.0 and tiny w128 L4 B step 3000 qkv.0: timing only; the qkv.0 diagonals were 92.96-92.97% to d = 26,
+    then 92.92, 92.64, 91.67, 90.88 at d = 27-30.
+  - The sign counts of the 70m word table and its light quoted in analysis 4(a).

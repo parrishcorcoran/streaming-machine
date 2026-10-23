@@ -1,0 +1,77 @@
+{
+ "32": {
+  "same_D_as_develop_lib": true,
+  "same_T_as_develop_lib": true,
+  "words_two_step": 30,
+  "words_exact_print": 30,
+  "exact_vs_two_step_values_differ": 1552,
+  "words_E_dev_only": 30,
+  "words_T_printed_from_dev_only": 30,
+  "photons_E": 2.37,
+  "e_hist": [
+   0,
+   0,
+   0,
+   0,
+   2,
+   7,
+   7,
+   41,
+   697,
+   6,
+   0,
+   0,
+   8
+  ]
+ },
+ "34": {
+  "same_D_as_develop_lib": true,
+  "same_T_as_develop_lib": true,
+  "words_two_step": 29,
+  "words_exact_print": 29,
+  "exact_vs_two_step_values_differ": 1540,
+  "words_E_dev_only": 29,
+  "words_T_printed_from_dev_only": 29,
+  "photons_E": 1.711,
+  "e_hist": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   7,
+   7,
+   41,
+   697,
+   6,
+   8
+  ]
+ },
+ "37": {
+  "same_D_as_develop_lib": true,
+  "same_T_as_develop_lib": true,
+  "words_two_step": 28,
+  "words_exact_print": 28,
+  "exact_vs_two_step_values_differ": 1566,
+  "words_E_dev_only": 30,
+  "words_T_printed_from_dev_only": 29,
+  "photons_E": 1.029,
+  "e_hist": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   7,
+   7,
+   752
+  ]
+ }
+}

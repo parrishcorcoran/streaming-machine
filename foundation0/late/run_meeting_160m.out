@@ -1,0 +1,23 @@
+level_meeting.py  size 160m  layers [9, 10, 11]  (a look in real numbers at the machine's own whole-number q and k)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: divide by zero encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: overflow encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+/Users/abundancemachine/streaming-machine/foundation0/late/level_meeting.py:83: RuntimeWarning: invalid value encountered in matmul
+  S = (q @ k.T) / np.sqrt(HS); F = np.outer(nq, nk) / np.sqrt(HS)
+  layer 9: finished meeting |q||k|/sqrt(hs) median 11016.5 e-folds; row height median 27.7 (x397.8); median |cos(q,k)| 0.937; bias part of |q| 0.005, of |k| 0.990
+    b:qkv.9            the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.012  (plate share rho 0.033)
+    cb:qkv.9@20261006  the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.012  (plate share rho 0.033)
+    cb:qkv.9@2         the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.012  (plate share rho 0.033)
+    cb:qkv.9@3         the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.012  (plate share rho 0.033)
+  layer 10: finished meeting |q||k|/sqrt(hs) median 38082.6 e-folds; row height median 63.1 (x603.7); median |cos(q,k)| 0.937; bias part of |q| 0.003, of |k| 0.990
+    b:qkv.10           the relief's share of the light leaving the plate: |dq|/|q| 0.003  |dk|/|k| 0.018  (plate share rho 0.034)
+    cb:qkv.10@20261006 the relief's share of the light leaving the plate: |dq|/|q| 0.003  |dk|/|k| 0.017  (plate share rho 0.034)
+    cb:qkv.10@2        the relief's share of the light leaving the plate: |dq|/|q| 0.003  |dk|/|k| 0.018  (plate share rho 0.034)
+    cb:qkv.10@3        the relief's share of the light leaving the plate: |dq|/|q| 0.003  |dk|/|k| 0.018  (plate share rho 0.034)
+  layer 11: finished meeting |q||k|/sqrt(hs) median 41876.4 e-folds; row height median 88.3 (x474.3); median |cos(q,k)| 0.921; bias part of |q| 0.003, of |k| 0.968
+    b:qkv.11           the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.021  (plate share rho 0.042)
+    cb:qkv.11@20261006 the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.021  (plate share rho 0.042)
+    cb:qkv.11@2        the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.020  (plate share rho 0.042)
+    cb:qkv.11@3        the relief's share of the light leaving the plate: |dq|/|q| 0.004  |dk|/|k| 0.020  (plate share rho 0.042)
+done  peak memory 1.70 GB

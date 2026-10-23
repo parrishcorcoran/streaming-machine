@@ -1,0 +1,47 @@
+keep_late.py  size 160m  order plain  texts 30  greedy True  late layers [8, 9, 10, 11]
+  keep set K = ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']: each moves its own late layer's level in [24.5, 41.5, 53.9, 61.4]% of rows (the look, b:<plate>)
+  rule check: smallest late move inside K 24.5% > largest late move outside K 6.6% (fc.0); each K plate's largest move is at its own layer: True
+  random keep draw rk@1: ['proj.2', 'fc.4', 'fc.5', 'fc.9']  (holds a late qkv: False)
+  random keep draw rk@2: ['fc.1', 'qkv.2', 'fc.7', 'mproj.10']  (holds a late qkv: False)
+  random keep draw rk@3: ['proj.0', 'qkv.3', 'qkv.4', 'fc.6']  (holds a late qkv: False)
+  cases ['fin', 'b', 'k', 'k_pl', 'ck@20261006', 'ck@2', 'ck@3', 'rk@1', 'rk@2', 'rk@3']
+  fin: words = fp32's at 480 of 480; head piles identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs t+1): level moved [0.7035, 0.784, 0.7987, 0.5314, 0.467, 0.4249, 0.4521, 0.4137, 0.4382, 0.4245, 0.4083, 0.5975]; edges changed side [0.2285, 0.1418, 0.2581, 0.2904, 0.3096, 0.308, 0.3025, 0.3124, 0.2847, 0.2954, 0.2865, 0.2794]
+  fin          top-1 100.0  top-5 100.0  greedy 480/480 texts 30/30  | cont top-1 100.0 [pairing-broken  2.5] | removed: 0.00% of all weights, 0.00% of plate weights, 0.00% of the foundation's size | lead kept/lost 0.772/None | 6.1s 1.77 GB
+               level moved   0   0   0   0   0   0   0   0   0   0   0   0 | first word   9  11  13  33  67  71  68  63  61  66  71  53 | edges   0   0   0   0   0   0   0   0   0   0   0   0
+  b reproduction: top-1 lists equal to ../remove_160m.json's b in 30 of 30 texts
+  b            top-1  50.5  top-5  79.3  greedy  62/480 texts  0/30  | cont top-1  51.5 [pairing-broken  2.9] | removed: 100.00% of all weights, 100.00% of plate weights, 100.00% of the foundation's size | lead kept/lost 1.264/0.493 | 32.4s 2.02 GB
+               level moved  10  20  23  17  13  14  21  32  36  52  56  66 | first word   9  10  12  38  71  67  62  51  43  36  38  26 | edges   7   4   9  11  13  13  13  13  12  12  12  12
+  wiring check (k against b): levels at layers 0-7 identical: True; knife edges at layers 0-8 identical: True
+  k            top-1  59.2  top-5  83.8  greedy  63/480 texts  0/30  | cont top-1  61.7 [pairing-broken  3.1] | removed: 95.64% of all weights, 91.67% of plate weights, 93.82% of the foundation's size | lead kept/lost 1.143/0.418 | 31.3s 2.02 GB
+               level moved  10  20  23  17  13  14  21  32  19  21  20  22 | first word   9  10  12  38  71  67  62  51  56  59  64  49 | edges   7   4   9  11  13  13  13  13  12  11  11  11
+  wiring check (k_pl against b): levels at layers 0-7 identical: False; knife edges at layers 0-8 identical: False  (k_pl: tables differ, not expected)
+  k_pl         top-1  60.5  top-5  84.7  greedy  82/480 texts  1/30  | cont top-1  63.1 [pairing-broken  2.7] | removed: 48.00% of all weights, 91.67% of plate weights, 89.66% of the foundation's size | lead kept/lost 1.174/0.418 | 30.1s 2.02 GB
+               level moved   9  19  23  16  12  14  21  31  19  20  19  21 | first word   9  10  12  38  70  67  62  51  56  59  65  49 | edges   7   4   9  11  12  13  12  12  12  11  11  10
+  ck@20261006  top-1  63.8  top-5  91.0  greedy  67/480 texts  0/30  | cont top-1  67.1 [pairing-broken  3.3] | removed: 95.64% of all weights, 91.67% of plate weights, 93.82% of the foundation's size | lead kept/lost 1.136/0.418 | 34.5s 2.40 GB
+               level moved  10  17  20  14  12  11  17  26  12  14  14  15 | first word   9  11  12  32  64  69  66  58  64  67  72  57 | edges   7   5   9  10  11  11  10  10  10   9   9   8
+  ck@2         top-1  63.7  top-5  93.1  greedy  62/480 texts  0/30  | cont top-1  66.2 [pairing-broken  3.1] | removed: 95.64% of all weights, 91.67% of plate weights, 93.82% of the foundation's size | lead kept/lost 1.217/0.394 | 34.9s 2.40 GB
+               level moved  10  17  20  14  11   9  18  23  12  13  14  14 | first word   9  12  13  34  69  71  66  60  60  65  69  53 | edges   7   5   9  10  11  11  10  11  10   9   9   8
+  ck@3         top-1  68.2  top-5  91.6  greedy  80/480 texts  1/30  | cont top-1  69.6 [pairing-broken  3.1] | removed: 95.64% of all weights, 91.67% of plate weights, 93.82% of the foundation's size | lead kept/lost 1.118/0.402 | 34.0s 2.40 GB
+               level moved  10  17  19  14  12  12  19  27  15  14  14  15 | first word   9  11  11  34  65  68  66  56  60  64  70  55 | edges   7   4   9  10  11  11  10  11  10  10   9   9
+  rk@1         top-1  52.9  top-5  82.0  greedy  69/480 texts  0/30  | cont top-1  54.0 [pairing-broken  2.9] | removed: 95.27% of all weights, 90.97% of plate weights, 87.00% of the foundation's size | lead kept/lost 1.243/0.459 | 32.0s 2.40 GB
+               level moved  10  20  23  16  13  13  20  30  34  51  54  66 | first word   9  10  12  38  71  68  63  51  43  36  39  26 | edges   7   4   9  11  11  11  12  12  11  10  11  11
+  rk@2         top-1  54.5  top-5  80.9  greedy  67/480 texts  0/30  | cont top-1  56.0 [pairing-broken  3.1] | removed: 94.55% of all weights, 89.58% of plate weights, 86.26% of the foundation's size | lead kept/lost 1.195/0.462 | 31.7s 2.40 GB
+               level moved  10  20  19  16  12  12  20  29  34  51  55  66 | first word   9  10  12  38  71  68  63  53  44  36  38  27 | edges   7   4   9  10  12  12  12  10  11  11  11  11
+  rk@3         top-1  54.5  top-5  81.7  greedy  65/480 texts  0/30  | cont top-1  56.9 [pairing-broken  2.7] | removed: 96.00% of all weights, 92.36% of plate weights, 93.70% of the foundation's size | lead kept/lost 1.275/0.442 | 31.6s 2.40 GB
+               level moved  10  20  23  15  11  13  20  27  31  49  55  66 | first word   9  10  12  36  69  68  62  53  46  38  38  26 | edges   7   4   9  11  12  12  11  11  11  11  11  11
+
+SUMMARY (top-1 / top-5 of all positions; late layers 8, 9, 10, 11)
+  finished first word at the late layers: 61.2 65.8 70.5 53.4
+  b            top-1  50.5  top-5  79.3  greedy texts  0  words  62 | late level moved 35.8 51.8 55.6 66.1 | late first word 43.4 36.0 38.1 26.5 | edges 4.4..13.0 | kept []
+  k            top-1  59.2  top-5  83.8  greedy texts  0  words  63 | late level moved 19.2 20.6 19.5 21.8 | late first word 56.0 59.1 64.4 48.6 | edges 4.4..13.0 | kept ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']
+  k_pl         top-1  60.5  top-5  84.7  greedy texts  1  words  82 | late level moved 18.9 20.3 19.1 21.3 | late first word 56.1 59.2 64.7 48.7 | edges 4.3..12.8 | kept ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']
+  ck@20261006  top-1  63.8  top-5  91.0  greedy texts  0  words  67 | late level moved 12.1 13.8 13.6 14.8 | late first word 63.5 67.2 72.0 57.3 | edges 4.6..10.8 | kept ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']
+  ck@2         top-1  63.7  top-5  93.1  greedy texts  0  words  62 | late level moved 11.6 13.1 13.6 13.8 | late first word 60.1 65.0 68.5 52.5 | edges 4.5..10.8 | kept ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']
+  ck@3         top-1  68.2  top-5  91.6  greedy texts  1  words  80 | late level moved 14.8 13.8 14.0 14.8 | late first word 60.3 64.0 69.7 55.2 | edges 4.5..10.9 | kept ['qkv.8', 'qkv.9', 'qkv.10', 'qkv.11']
+  rk@1         top-1  52.9  top-5  82.0  greedy texts  0  words  69 | late level moved 34.5 50.8 54.4 66.2 | late first word 43.1 36.4 38.9 26.3 | edges 4.4..12.0 | kept ['proj.2', 'fc.4', 'fc.5', 'fc.9']
+  rk@2         top-1  54.5  top-5  80.9  greedy texts  0  words  67 | late level moved 33.5 50.6 55.1 65.9 | late first word 44.4 36.4 38.0 26.8 | edges 3.5..11.9 | kept ['fc.1', 'qkv.2', 'fc.7', 'mproj.10']
+  rk@3         top-1  54.5  top-5  81.7  greedy texts  0  words  65 | late level moved 31.5 49.1 55.2 66.2 | late first word 46.0 37.9 37.8 25.9 | edges 4.4..12.3 | kept ['proj.0', 'qkv.3', 'qkv.4', 'fc.6']
+  k against the scrambled draws: k 59.2, ck 63.7..68.2 (below every draw)
+  k against the random keep sets: k 59.2, rk 52.9..54.5
+done 299s  peak memory 2.40 GB

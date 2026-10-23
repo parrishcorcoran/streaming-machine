@@ -1,0 +1,22 @@
+14m, file zerosum_pythia-14m_ctl.npz: ['embed.w', 'mproj.0.b', 'mproj.0.w', 'mproj.1.b', 'mproj.1.w', 'mproj.2.b']...
+loaded foundation0/pythia_base2.py's machine, size 14m (0s, 219 MB)
+plain run: 30 texts (3s, 565 MB)
+  plain head piles = foundation0/words_pythia-14m.json's piles_sha256 (the machine's own run): 30/30
+  reads 8086: S1 = 0 at 4
+zerosum run (5s, 1110 MB)
+  reads 8086: S1 = 0 at 4
+
+THE ZEROSUM FILE (ctl) AGAINST THE PLAIN MACHINE
+  calls digested 31,474: identical 1,417, different 30,057
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 0/622
+  positions where some read's cut power (the top 1 of the largest lane) moved: 97; positions that differ BEFORE the first such position in their text: 124
+  texts whose top scores (every position, every word) are the same whole numbers: 0/30
+  race winner the same 511/622; top 5 same in order 125/622, same as a set 296/622
+  head piles at the last 16 positions (pythia_base2.py's piles_sha256 form) the same: 0/30
+  first different call per text: ln1.0 to16~ x30
+  different calls by stage: ln1.0 642, qkv.0 60, arrival.0 3136, proj.0 60, ln2.0 642, fc.0 60, bend.0 30, mproj.0 60, stream.0 30, ln1.1 711, qkv.1 60, arrival.1 3205, proj.1 60, ln2.1 711, fc.1 60, bend.1 30, mproj.1 60, stream.1 30, ln1.2 711, qkv.2 60, arrival.2 3206, proj.2 60, ln2.2 711, fc.2 60, bend.2 30, mproj.2 60, stream.2 30, ln1.3 711, qkv.3 60, arrival.3 3178, proj.3 60, ln2.3 711, fc.3 60, bend.3 30, mproj.3 60, stream.3 30, ln1.4 712, qkv.4 60, arrival.4 3207, proj.4 60, ln2.4 712, fc.4 60, bend.4 30, mproj.4 60, stream.4 30, ln1.5 712, qkv.5 60, arrival.5 3155, proj.5 60, ln2.5 712, fc.5 60, bend.5 30, mproj.5 60, stream.5 30, lnf 712, top-out 60
+
+ORDER-FREE CHECK (lanes in a random order, every plate permuted to match): top scores the same whole numbers in 30/30 texts; water-level logs the same 23014/23014
+
+done (8s, peak 1701 MB)

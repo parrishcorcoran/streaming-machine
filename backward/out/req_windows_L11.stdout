@@ -1,0 +1,39 @@
+WORKING BACKWARD: windows  (300 texts, 6000 positions); layers [11]; points ['QKV:q', 'A', 'H', 'Mw']
+  texts 0-9 done (18s; total 18s, 2022 MB)
+  texts 10-19 done (19s; total 38s, 2087 MB)
+  texts 20-29 done (19s; total 57s, 2087 MB)
+  texts 30-39 done (19s; total 76s, 2087 MB)
+  texts 40-49 done (20s; total 96s, 2087 MB)
+  texts 50-59 done (19s; total 115s, 2087 MB)
+  texts 60-69 done (19s; total 134s, 2087 MB)
+  texts 70-79 done (20s; total 153s, 2087 MB)
+  texts 80-89 done (19s; total 172s, 2087 MB)
+  texts 90-99 done (19s; total 192s, 2087 MB)
+  texts 100-109 done (19s; total 211s, 2087 MB)
+  texts 110-119 done (19s; total 230s, 2087 MB)
+  texts 120-129 done (19s; total 249s, 2087 MB)
+  texts 130-139 done (19s; total 268s, 2087 MB)
+  texts 140-149 done (19s; total 287s, 2087 MB)
+  texts 150-159 done (19s; total 306s, 2087 MB)
+  texts 160-169 done (19s; total 325s, 2087 MB)
+  texts 170-179 done (20s; total 345s, 2087 MB)
+  texts 180-189 done (20s; total 365s, 2087 MB)
+  texts 190-199 done (19s; total 384s, 2087 MB)
+  texts 200-209 done (26s; total 410s, 2087 MB)
+  texts 210-219 done (27s; total 438s, 2087 MB)
+  texts 220-229 done (19s; total 457s, 2087 MB)
+  texts 230-239 done (20s; total 477s, 2087 MB)
+  texts 240-249 done (19s; total 496s, 2087 MB)
+  texts 250-259 done (19s; total 515s, 2087 MB)
+  texts 260-269 done (19s; total 535s, 2087 MB)
+  texts 270-279 done (19s; total 554s, 2087 MB)
+  texts 280-289 done (20s; total 573s, 2087 MB)
+  texts 290-299 done (18s; total 592s, 2087 MB)
+
+THE REQUIREMENT AT EACH POINT: the coarsest box +-2^k on every line that still proves the top 5 (set and order).
+  k = -1: the exact value is needed. Shares of the 6000 positions; median k over the positions not needing exact.
+  layer 11 QKV:q : exact needed at  6000 (100.0%); median k   -; k by count -1:6000   [proofs naming other words: 0]
+  layer 11 A     : exact needed at  2519 ( 42.0%); median k   1; k by count -1:2519 0:1133 1:1039 2:754 3:416 4:126 5:13   [proofs naming other words: 0]
+  layer 11 H     : exact needed at  1251 ( 20.8%); median k   2; k by count -1:1251 0:895 1:1069 2:1096 3:836 4:579 5:243 6:31   [proofs naming other words: 0]
+  layer 11 Mw    : exact needed at     7 (  0.1%); median k   9; k by count -1:7 0:6 1:9 2:31 3:72 4:109 5:222 6:463 7:775 8:1145 9:1387 10:1068 11:538 12:163 13:5   [proofs naming other words: 0]
+(592s, max memory 2087 MB)

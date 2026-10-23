@@ -1,0 +1,23 @@
+free at 16:09:14; running: /usr/bin/time -l python3 reach/answer.py plates=qkv.11 selftest=1
+SELF-CHECK: the range form with nothing removed, every step carried in range form (['qkv.11'])
+    qkv.11 b=1: layer 11 stream range max 0, row median 0; blown rows 0/7200; real move max 0 (19s, 2746 MB)
+  qkv.11 b=1: digits removed 0; PROVEN at 6000/6000 judge positions (blown at the top 0); bound on a score's move: median 0, max 0; REAL move: median 0, max 0; top 5 changed (real) at 0/6000; bound/real median None (53s, 2817 MB)
+done (53s, max memory 2817 MB)
+       53.03 real        52.56 user         0.46 sys
+          2817032192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              555575  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 181  involuntary context switches
+        761645130829  instructions retired
+        210682026319  cycles elapsed
+          2809416128  peak memory footprint

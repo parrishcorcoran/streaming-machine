@@ -1,0 +1,13 @@
+=== mode=work skip=none  11:00:49
+=== mode=work skip=all shufmeas=1  11:00:53
+=== mode=work skip=all  11:03:08
+=== mode=work skip=all order=1  11:04:17
+=== mode=work skip=L11 shufmeas=1  11:06:02
+=== mode=work skip=L6-11 shufmeas=1  11:06:17
+=== mode=judge skip=none  11:07:26
+=== mode=judge skip=all  11:08:02
+=== mode=judge skip=L11  11:08:53
+=== mode=judge skip=L6-11  11:09:30
+=== mode=judge skip=all tags=shuffledtags  11:10:13
+=== mode=judge skip=all tags=shuffledlight  11:11:07
+=== done 11:12:07

@@ -1,0 +1,97 @@
+remove_foundation.py  size 160m  order plain  texts 30  greedy True  cases 12
+  fin: the finished machine's own word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs text t+1, same row): water level moved per layer [0.7035, 0.784, 0.7987, 0.5314, 0.467, 0.4249, 0.4521, 0.4137, 0.4382, 0.4245, 0.4083, 0.5975]; knife edges changed side [0.2285, 0.1418, 0.2581, 0.2904, 0.3096, 0.308, 0.3025, 0.3124, 0.2847, 0.2954, 0.2865, 0.2794]
+  fin      top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  2.5% /  7.3%];  greedy words 480/480 texts 30/30 first diff 16.0;  finished lead kept/lost 0.77/0.00;  6.0s  peak 1.79 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.092, 0.364, 0.261, 0.284], [0.108, 0.211, 0.255, 0.425], [0.128, 0.207, 0.254, 0.411], [0.329, 0.133, 0.253, 0.285], [0.669, 0.047, 0.071, 0.213], [0.707, 0.042, 0.051, 0.199], [0.676, 0.045, 0.06, 0.219], [0.632, 0.111, 0.091, 0.166], [0.612, 0.128, 0.051, 0.208], [0.658, 0.097, 0.054, 0.19], [0.705, 0.05, 0.051, 0.194], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None, None, None, None, None, None, None] / held [0.3725, 0.4265, 0.4057, 0.4869, 0.6867, 0.792, 0.7133, 0.7771, 0.9948, 0.9969, 1.0, 1.0]
+  cb       top-1  58.4%  top-5  89.2%  (of 622);  16 continuation: top-1  59.6% top-5  88.8% [pairing-broken  2.9% /  6.9%];  greedy words 35/480 texts 0/30 first diff 0.8;  finished lead kept/lost 1.24/0.42;  36.1s  peak 2.43 GB
+           water level moved by layer [0.099, 0.17, 0.2003, 0.1441, 0.1118, 0.0932, 0.1764, 0.2317, 0.2599, 0.4189, 0.6827, 0.6778]
+           knife edges changed side by layer [0.0703, 0.0451, 0.0854, 0.1015, 0.1062, 0.1076, 0.1029, 0.1051, 0.0961, 0.0965, 0.0949, 0.0981]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.091, 0.347, 0.265, 0.297], [0.117, 0.206, 0.249, 0.429], [0.129, 0.216, 0.25, 0.405], [0.339, 0.13, 0.262, 0.27], [0.694, 0.047, 0.066, 0.194], [0.705, 0.044, 0.052, 0.199], [0.663, 0.051, 0.056, 0.23], [0.602, 0.108, 0.093, 0.196], [0.496, 0.15, 0.064, 0.29], [0.452, 0.155, 0.077, 0.315], [0.297, 0.149, 0.097, 0.457], [0.268, 0.13, 0.142, 0.46]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2638, 0.284, 0.276, 0.2999, 0.3809, 0.3857, 0.4306, 0.5454, 0.9102, 0.9721, 1.0, 1.0] / held [0.3895, 0.4731, 0.4516, 0.5348, 0.7305, 0.828, 0.7768, 0.8534, 0.9986, 0.9994, 1.0, 1.0]
+             'The capital of France is' -> ' currently being used for the construction of the new headquarters of the French National Centre for'
+             'The theory of relativity states that' -> ' the gravitational force is a gravitational field that is not a static, static, and'
+             'The meaning of life is' -> ' a good thing.\n\nThe best thing about being a good thing is to'
+  cb_pl    top-1  59.8%  top-5  90.4%  (of 622);  16 continuation: top-1  60.8% top-5  90.6% [pairing-broken  3.3% /  7.9%];  greedy words 67/480 texts 0/30 first diff 1.2;  finished lead kept/lost 1.20/0.42;  31.3s  peak 2.43 GB
+           water level moved by layer [0.0926, 0.1685, 0.2005, 0.1443, 0.1112, 0.0949, 0.1772, 0.2323, 0.262, 0.4203, 0.6822, 0.681]
+           knife edges changed side by layer [0.0706, 0.0448, 0.085, 0.1013, 0.1061, 0.1074, 0.1028, 0.1051, 0.096, 0.0965, 0.0948, 0.0978]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.091, 0.347, 0.265, 0.296], [0.117, 0.204, 0.249, 0.43], [0.129, 0.217, 0.248, 0.405], [0.34, 0.129, 0.262, 0.269], [0.693, 0.047, 0.066, 0.194], [0.705, 0.044, 0.052, 0.199], [0.662, 0.051, 0.055, 0.231], [0.602, 0.108, 0.094, 0.196], [0.493, 0.15, 0.065, 0.291], [0.453, 0.155, 0.077, 0.315], [0.296, 0.148, 0.097, 0.458], [0.265, 0.131, 0.142, 0.462]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2627, 0.2855, 0.2775, 0.3004, 0.3809, 0.389, 0.4321, 0.5462, 0.9112, 0.9717, 1.0, 1.0] / held [0.3883, 0.4726, 0.4516, 0.5347, 0.7302, 0.8284, 0.7768, 0.8534, 0.9986, 0.9994, 1.0, 1.0]
+             'The capital of France is' -> ' the capital of the capital of the capital of the city of the capital of the'
+             'The theory of relativity states that' -> ' the gravitational force is a gravitational field, and that the gravitational force is a gravitational'
+             'The meaning of life is' -> ' a good place to be.\n\nThe best place to be a good place'
+  cb_tab   top-1  89.4%  top-5  99.7%  (of 622);  16 continuation: top-1  90.2% top-5  99.8% [pairing-broken  2.5% /  6.9%];  greedy words 247/480 texts 6/30 first diff 6.3;  finished lead kept/lost 0.88/0.12;  25.2s  peak 2.43 GB
+           water level moved by layer [0.0263, 0.0207, 0.0206, 0.0106, 0.0063, 0.0034, 0.0069, 0.0082, 0.0051, 0.0096, 0.0106, 0.0065]
+           knife edges changed side by layer [0.0055, 0.004, 0.0057, 0.0059, 0.0056, 0.0051, 0.0045, 0.0045, 0.0038, 0.0036, 0.0033, 0.0033]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.09, 0.368, 0.257, 0.285], [0.108, 0.212, 0.256, 0.424], [0.129, 0.209, 0.255, 0.407], [0.328, 0.133, 0.254, 0.285], [0.668, 0.047, 0.071, 0.215], [0.708, 0.042, 0.051, 0.199], [0.677, 0.045, 0.059, 0.219], [0.631, 0.111, 0.092, 0.166], [0.613, 0.128, 0.051, 0.207], [0.66, 0.098, 0.054, 0.189], [0.706, 0.049, 0.052, 0.193], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.256, 0.2459, 0.2377, 0.2524, 0.347, 0.2948, 0.292, 0.3843, 0.4856, 0.5041, 0.5045, 0.5558] / held [0.376, 0.4313, 0.4115, 0.4904, 0.6886, 0.7935, 0.7161, 0.7802, 0.995, 0.9971, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is home to the city'
+             'The theory of relativity states that' -> ' the universe is a static, static, static, static, static, static,'
+             'The meaning of life is' -> ' not a matter of what we do, but of what we do not do.'
+  ca_L0    top-1  45.3%  top-5  72.7%  (of 622);  16 continuation: top-1  47.5% top-5  73.1% [pairing-broken  4.2% /  9.0%];  greedy words 34/480 texts 0/30 first diff 0.7;  finished lead kept/lost 1.34/0.52;  32.4s  peak 2.43 GB
+           water level moved by layer [0.3832, 0.4675, 0.4749, 0.329, 0.2431, 0.2355, 0.2703, 0.3157, 0.346, 0.349, 0.3464, 0.3974]
+           knife edges changed side by layer [0.1222, 0.1068, 0.1561, 0.1748, 0.1784, 0.1808, 0.1743, 0.1755, 0.1589, 0.1565, 0.1489, 0.1509]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.099, 0.311, 0.241, 0.35], [0.128, 0.184, 0.216, 0.472], [0.119, 0.257, 0.252, 0.372], [0.301, 0.137, 0.273, 0.29], [0.693, 0.05, 0.067, 0.19], [0.713, 0.051, 0.061, 0.175], [0.73, 0.045, 0.049, 0.175], [0.632, 0.071, 0.113, 0.184], [0.566, 0.125, 0.064, 0.245], [0.589, 0.115, 0.058, 0.238], [0.627, 0.066, 0.068, 0.238], [0.467, 0.117, 0.161, 0.254]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2995, 0.3429, 0.3292, 0.3643, 0.4786, 0.5637, 0.5102, 0.6063, 0.9482, 0.9276, 0.9702, 0.9999] / held [0.4377, 0.5283, 0.4956, 0.5821, 0.7605, 0.8529, 0.8051, 0.8359, 0.9985, 0.9996, 1.0, 1.0]
+             'The capital of France is' -> ', a company that has been a victim of the company, the company, the'
+             'The theory of relativity states that' -> ' the theory of the first time-like interaction between the first and the second time'
+             'The meaning of life is' -> ' the way to be.lama.lama\n\n(lama)'
+  cb_L0    top-1  85.7%  top-5  99.7%  (of 622);  16 continuation: top-1  86.2% top-5  99.6% [pairing-broken  2.5% /  7.1%];  greedy words 206/480 texts 2/30 first diff 5.6;  finished lead kept/lost 0.93/0.15;  23.7s  peak 2.43 GB
+           water level moved by layer [0.0926, 0.1526, 0.1512, 0.0912, 0.0557, 0.039, 0.0529, 0.0759, 0.057, 0.0639, 0.0669, 0.0607]
+           knife edges changed side by layer [0.0706, 0.033, 0.0521, 0.0555, 0.0536, 0.0492, 0.0437, 0.0425, 0.0367, 0.0342, 0.0311, 0.0298]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.091, 0.347, 0.265, 0.296], [0.117, 0.199, 0.248, 0.436], [0.124, 0.215, 0.257, 0.404], [0.333, 0.133, 0.255, 0.279], [0.672, 0.048, 0.072, 0.207], [0.704, 0.042, 0.054, 0.201], [0.668, 0.046, 0.065, 0.221], [0.62, 0.11, 0.098, 0.172], [0.601, 0.13, 0.053, 0.216], [0.647, 0.102, 0.057, 0.195], [0.688, 0.054, 0.054, 0.204], [0.527, 0.084, 0.143, 0.246]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2627, 0.2852, 0.2664, 0.2786, 0.3531, 0.3186, 0.3258, 0.4536, 0.6357, 0.6228, 0.6656, 0.9154] / held [0.3883, 0.4677, 0.443, 0.5183, 0.7127, 0.8095, 0.7379, 0.8034, 0.9966, 0.9983, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is known for its high'
+             'The theory of relativity states that' -> ' the universe is a static, non-interacting, non-interacting, non-'
+             'The meaning of life is' -> ' not a matter of what you do, but of what you do with it.'
+  b_head   top-1  85.9%  top-5 100.0%  (of 622);  16 continuation: top-1  87.7% top-5 100.0% [pairing-broken  2.7% /  7.1%];  greedy words 172/480 texts 3/30 first diff 5.0;  finished lead kept/lost 0.94/0.21;  24.9s  peak 2.43 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.092, 0.364, 0.261, 0.284], [0.108, 0.211, 0.255, 0.425], [0.128, 0.207, 0.254, 0.411], [0.329, 0.133, 0.253, 0.285], [0.669, 0.047, 0.071, 0.213], [0.707, 0.042, 0.051, 0.199], [0.676, 0.045, 0.06, 0.219], [0.632, 0.111, 0.091, 0.166], [0.612, 0.128, 0.051, 0.208], [0.658, 0.097, 0.054, 0.19], [0.705, 0.05, 0.051, 0.194], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None, None, None, None, None, None, None] / held [0.3725, 0.4265, 0.4057, 0.4869, 0.6867, 0.792, 0.7133, 0.7771, 0.9948, 0.9969, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is a major tourist destination'
+             'The theory of relativity states that' -> ' the universe is a static, static, static, static, static, static,'
+             'The meaning of life is' -> ' not a matter of what we do, but of what we do with it.'
+  b_emb    top-1  98.2%  top-5 100.0%  (of 622);  16 continuation: top-1  97.9% top-5 100.0% [pairing-broken  2.3% /  7.5%];  greedy words 406/480 texts 22/30 first diff 13.0;  finished lead kept/lost 0.79/0.05;  11.1s  peak 2.43 GB
+           water level moved by layer [0.03, 0.0322, 0.0284, 0.0155, 0.0083, 0.0053, 0.0093, 0.0108, 0.007, 0.0103, 0.0117, 0.0082]
+           knife edges changed side by layer [0.0057, 0.005, 0.0074, 0.0075, 0.0074, 0.0067, 0.0059, 0.0058, 0.0049, 0.0046, 0.0042, 0.0041]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.091, 0.369, 0.257, 0.283], [0.109, 0.209, 0.259, 0.423], [0.13, 0.207, 0.254, 0.409], [0.328, 0.133, 0.255, 0.284], [0.669, 0.047, 0.071, 0.213], [0.709, 0.042, 0.051, 0.198], [0.678, 0.045, 0.06, 0.217], [0.632, 0.111, 0.091, 0.165], [0.612, 0.128, 0.051, 0.209], [0.659, 0.098, 0.055, 0.188], [0.706, 0.05, 0.05, 0.193], [0.534, 0.082, 0.142, 0.242]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2583, 0.2344, 0.2407, 0.2578, 0.347, 0.3095, 0.3126, 0.3848, 0.4958, 0.5034, 0.5066, 0.5986] / held [0.3773, 0.4347, 0.4144, 0.4922, 0.689, 0.7942, 0.7183, 0.7812, 0.9951, 0.9972, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is also home to the'
+             'The theory of relativity states that' -> ' the universe is a static, static, static, static, static, static,'
+             'The meaning of life is' -> ' not a matter of what you do, but of what you do with it.'
+  cb_head  top-1  89.1%  top-5  99.7%  (of 622);  16 continuation: top-1  89.6% top-5  99.8% [pairing-broken  2.3% /  6.9%];  greedy words 228/480 texts 7/30 first diff 6.3;  finished lead kept/lost 0.89/0.13;  24.0s  peak 2.43 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.092, 0.364, 0.261, 0.284], [0.108, 0.211, 0.255, 0.425], [0.128, 0.207, 0.254, 0.411], [0.329, 0.133, 0.253, 0.285], [0.669, 0.047, 0.071, 0.213], [0.707, 0.042, 0.051, 0.199], [0.676, 0.045, 0.06, 0.219], [0.632, 0.111, 0.091, 0.166], [0.612, 0.128, 0.051, 0.208], [0.658, 0.097, 0.054, 0.19], [0.705, 0.05, 0.051, 0.194], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None, None, None, None, None, None, None] / held [0.3725, 0.4265, 0.4057, 0.4869, 0.6867, 0.792, 0.7133, 0.7771, 0.9948, 0.9969, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is known for its famous'
+             'The theory of relativity states that' -> ' the universe is a static, static, static, static, static, static,'
+             'The meaning of life is' -> ' not a matter of what we do, but of what we do not do.'
+  cb_emb   top-1  98.9%  top-5 100.0%  (of 622);  16 continuation: top-1  99.4% top-5 100.0% [pairing-broken  2.5% /  7.5%];  greedy words 450/480 texts 27/30 first diff 15.0;  finished lead kept/lost 0.78/0.02;  8.7s  peak 2.43 GB
+           water level moved by layer [0.0263, 0.0207, 0.0206, 0.0106, 0.0063, 0.0034, 0.0069, 0.0082, 0.0051, 0.0096, 0.0106, 0.0065]
+           knife edges changed side by layer [0.0055, 0.004, 0.0057, 0.0059, 0.0056, 0.0051, 0.0045, 0.0045, 0.0038, 0.0036, 0.0033, 0.0033]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.09, 0.368, 0.257, 0.285], [0.108, 0.212, 0.256, 0.424], [0.129, 0.209, 0.255, 0.407], [0.328, 0.133, 0.254, 0.285], [0.668, 0.047, 0.071, 0.215], [0.708, 0.042, 0.051, 0.199], [0.677, 0.045, 0.059, 0.219], [0.631, 0.111, 0.092, 0.166], [0.613, 0.128, 0.051, 0.207], [0.66, 0.098, 0.054, 0.189], [0.706, 0.049, 0.052, 0.193], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.256, 0.2459, 0.2377, 0.2524, 0.347, 0.2948, 0.292, 0.3843, 0.4856, 0.5041, 0.5045, 0.5558] / held [0.376, 0.4313, 0.4115, 0.4904, 0.6886, 0.7935, 0.7161, 0.7802, 0.995, 0.9971, 1.0, 1.0]
+             'The capital of France is' -> ' located in the city of Paris.\n\nThe city is also home to the'
+             'The theory of relativity states that' -> ' the universe is a static, static, static, static, static, static,'
+             'The meaning of life is' -> " not a matter of the individual's choice, but of the world.\n\n"
+  a_head   top-1   6.3%  top-5   7.9%  (of 622);  16 continuation: top-1   7.1% top-5   8.8% [pairing-broken  2.3% /  7.3%];  greedy words 13/480 texts 0/30 first diff 0.0;  finished lead kept/lost 1.32/0.73;  33.3s  peak 2.43 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.092, 0.364, 0.261, 0.284], [0.108, 0.211, 0.255, 0.425], [0.128, 0.207, 0.254, 0.411], [0.329, 0.133, 0.253, 0.285], [0.669, 0.047, 0.071, 0.213], [0.707, 0.042, 0.051, 0.199], [0.676, 0.045, 0.06, 0.219], [0.632, 0.111, 0.091, 0.166], [0.612, 0.128, 0.051, 0.208], [0.658, 0.097, 0.054, 0.19], [0.705, 0.05, 0.051, 0.194], [0.534, 0.081, 0.141, 0.244]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None, None, None, None, None, None, None] / held [0.3725, 0.4265, 0.4057, 0.4869, 0.6867, 0.792, 0.7133, 0.7771, 0.9948, 0.9969, 1.0, 1.0]
+             'The capital of France is' -> ' preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably'
+             'The theory of relativity states that' -> '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+             'The meaning of life is' -> ' preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably preferably'
+  a_emb    top-1  25.7%  top-5  53.9%  (of 622);  16 continuation: top-1  22.9% top-5  50.0% [pairing-broken  8.1% / 21.2%];  greedy words 49/480 texts 0/30 first diff 0.3;  finished lead kept/lost 1.17/0.66;  32.8s  peak 2.43 GB
+           water level moved by layer [0.5984, 0.6113, 0.6478, 0.4367, 0.3373, 0.3045, 0.3516, 0.3774, 0.3994, 0.3692, 0.3612, 0.4935]
+           knife edges changed side by layer [0.1239, 0.0878, 0.1723, 0.192, 0.2127, 0.2177, 0.214, 0.2141, 0.1919, 0.1896, 0.1801, 0.1768]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.11, 0.249, 0.263, 0.379], [0.12, 0.201, 0.272, 0.407], [0.07, 0.295, 0.259, 0.376], [0.34, 0.122, 0.289, 0.249], [0.893, 0.008, 0.037, 0.062], [0.93, 0.005, 0.03, 0.035], [0.864, 0.024, 0.034, 0.078], [0.773, 0.036, 0.106, 0.085], [0.64, 0.116, 0.055, 0.189], [0.663, 0.103, 0.049, 0.185], [0.705, 0.026, 0.062, 0.208], [0.605, 0.082, 0.131, 0.181]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.3299, 0.3589, 0.3663, 0.3887, 0.4984, 0.5592, 0.5136, 0.629, 0.9427, 0.9053, 0.945, 0.9999] / held [0.4609, 0.5696, 0.4971, 0.5987, 0.8258, 0.9175, 0.8636, 0.8502, 0.999, 0.9997, 1.0, 1.0]
+             'The capital of France is' -> ', the the the the the the the the\n\n to to the to to'
+             'The theory of relativity states that' -> ' that is the the the is is is is ( ( (\n the the the'
+             'The meaning of life is' -> ' of the the the the the the the and the the the the the to to'
+done 289s  peak memory 2.43 GB

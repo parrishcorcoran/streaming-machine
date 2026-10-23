@@ -1,0 +1,20 @@
+P0 plain (1s, 1101 MB); words = refs 480/480
+W0 poured first (3s, 1104 MB); words = refs 480/480
+
+W0 (level poured before the cut) AGAINST P0 (the plain machine), the original files
+  positions identical everywhere (every read, write, stream without its level, top score): 0/622
+  top word the same 621/622; first difference per text: read ln1.1 x30
+
+W1 AGAINST W0: biases, word rows level-free at one stream unit, poured before the cut
+  positions identical everywhere (every read, write, stream without its level, top score): 622/622
+  top word the same 622/622
+
+P1 AGAINST P0: the same lines level-free, the plain machine (cut before pour)
+  positions identical everywhere (every read, write, stream without its level, top score): 0/622
+  top word the same 622/622; first difference per text: read ln1.1 x30
+
+W2 AGAINST W0: the whole fine file (weight rows too), poured before the cut
+  positions identical everywhere (every read, write, stream without its level, top score): 0/622
+  top word the same 622/622; first difference per text: write proj.0 x30
+
+done (7s, peak 1221 MB)

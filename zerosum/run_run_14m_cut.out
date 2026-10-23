@@ -1,0 +1,22 @@
+14m, file zerosum_pythia-14m_cut.npz: ['embed.w', 'mproj.2.b', 'mproj.4.b', 'proj.2.b', 'proj.4.b']...
+loaded foundation0/pythia_base2.py's machine, size 14m (0s, 219 MB)
+plain run: 30 texts (3s, 565 MB)
+  plain head piles = foundation0/words_pythia-14m.json's piles_sha256 (the machine's own run): 30/30
+  reads 8086: S1 = 0 at 4
+zerosum run (5s, 1110 MB)
+  reads 8086: S1 = 0 at 4
+
+THE ZEROSUM FILE (cut) AGAINST THE PLAIN MACHINE
+  calls digested 31,474: identical 30,524, different 950
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 564/622
+  positions where some read's cut power (the top 1 of the largest lane) moved: 3; positions that differ BEFORE the first such position in their text: 0
+  texts whose top scores (every position, every word) are the same whole numbers: 27/30
+  race winner the same 622/622; top 5 same in order 622/622, same as a set 622/622
+  head piles at the last 16 positions (pythia_base2.py's piles_sha256 form) the same: 27/30
+  first different call per text: ln1.3 to16~ x2, ln1.4 to16~ x1
+  different calls by stage: ln1.4 29, qkv.4 6, arrival.4 240, proj.4 6, ln2.4 29, fc.4 6, bend.4 3, mproj.4 6, stream.4 3, ln1.5 48, qkv.5 6, arrival.5 293, proj.5 6, ln2.5 48, fc.5 6, bend.5 3, mproj.5 6, stream.5 3, lnf 62, top-out 6, ln1.3 8, qkv.3 4, arrival.3 99, proj.3 4, ln2.3 8, fc.3 4, bend.3 2, mproj.3 4, stream.3 2
+
+ORDER-FREE CHECK (lanes in a random order, every plate permuted to match): top scores the same whole numbers in 30/30 texts; water-level logs the same 23014/23014
+
+done (8s, peak 1701 MB)

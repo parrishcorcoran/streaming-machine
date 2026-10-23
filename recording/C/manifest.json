@@ -1,0 +1,2980 @@
+{
+ "what": "Phase C recording: the 48 plates and the top table in signed digits (up/down sheets per place, packed over the lines, lines in each neuron's line-up order, order stored, each neuron's power of two). Move 1 alone, no turn.",
+ "places": 17,
+ "plates": {
+  "qkv.0": {
+   "name": "qkv.0",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.0.up",
+     "bytes": 3760128,
+     "sha256": "c5718edcd2d4cddf6f368dc422a24b3e542956d218a9acd762c65f7951313079",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.0.down",
+     "bytes": 3760128,
+     "sha256": "9d1f4b1bf80647b7e50f6b24f1b1eeb8e7807746e7967777b1903ecd8f79e044",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.0.order",
+     "bytes": 2211840,
+     "sha256": "6b358e17f1abb2655970e5c79f34dafb27ff4bee57527b03d2774926802bce78",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.0.power",
+     "bytes": 18432,
+     "sha256": "7fd5bfa3518a996267216a4edc5f270d380fe095e98c04129378047f24a63735",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11228027,
+   "lit_signed": 8448536,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.0": {
+   "name": "proj.0",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.0.up",
+     "bytes": 1253376,
+     "sha256": "1b4f4bb225c40f0c8408829c9e321df304aa02c1a4a63ab48661b4b10712d318",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.0.down",
+     "bytes": 1253376,
+     "sha256": "e6f5cb51cae4fdda9e5f67b79672eea3865590bc12baf196f71121e44bc8bc3e",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.0.order",
+     "bytes": 737280,
+     "sha256": "043eba17bb1083f59aa2c0ffca8315a16f5124912227965bd46ac126e10d65bf",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.0.power",
+     "bytes": 6144,
+     "sha256": "8c8a54ab3dd24d22f4f3d578aaa7cc46d31ea9dfcdec983efac0f19e15416d16",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3684977,
+   "lit_signed": 2779280,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.0": {
+   "name": "fc.0",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.0.up",
+     "bytes": 5013504,
+     "sha256": "a25994b0d927ae36a884ba682f2fd021b9cb5b9472abe9cf6ae3c2b988fce664",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.0.down",
+     "bytes": 5013504,
+     "sha256": "8d9ce647cbefad217d1300258b7a8a2db49ae4a2100c3048df07f0a70cdcef8b",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.0.order",
+     "bytes": 2949120,
+     "sha256": "3c0f507c4d234a5c9b1e1ba06a5838e9c58d68ca879247fc471ad7184798aeae",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.0.power",
+     "bytes": 24576,
+     "sha256": "9c67d9402e3af42c0023bcd929fe4f058bb061bffb263a7cdbe4541f5ecec255",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 13846166,
+   "lit_signed": 10514910,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.0": {
+   "name": "mproj.0",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.0.up",
+     "bytes": 5013504,
+     "sha256": "74003753d22588772f0b53eaae323d6867f3944daa3e2c10e0c32e25e9c611a6",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.0.down",
+     "bytes": 5013504,
+     "sha256": "ba128d1dc9a4fe3d41e72579f4756bb39daa3cad0b53487319e714cf89075cd5",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.0.order",
+     "bytes": 3538944,
+     "sha256": "7f810e4207a10773b08288b0549bb961b2debdf7a62aff268ac65a1c758da8d7",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.0.power",
+     "bytes": 6144,
+     "sha256": "d959e566691b32c8e1f3fa10b6fa4538dedb3ae7ade3a7518615ceb1aae0c19b",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14533260,
+   "lit_signed": 10976039,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.1": {
+   "name": "qkv.1",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.1.up",
+     "bytes": 3760128,
+     "sha256": "41963903a4be21d9ab85cd4f666c05820dcfa062b304636b87111b802d7be495",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.1.down",
+     "bytes": 3760128,
+     "sha256": "69568f3760192320712e83083a5ed3252f6aa46c9d1447fbf0add3762ac7dd8f",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.1.order",
+     "bytes": 2211840,
+     "sha256": "2afcc8d836d410f1a12593db9754fd7bfdde7a5b51174f372f37a686bed6ab32",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.1.power",
+     "bytes": 18432,
+     "sha256": "dffa941b64a552dbc22312402a62212ebe66755c87ee0d2954aa47c801ba4198",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11038315,
+   "lit_signed": 8322664,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.1": {
+   "name": "proj.1",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.1.up",
+     "bytes": 1253376,
+     "sha256": "8958c285d59ffbab1ce0a2b6c74e18948c6e8d1b626a271e1b51583f6162f57b",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.1.down",
+     "bytes": 1253376,
+     "sha256": "3bf3319ff2d6bbfd2071acd05a67fd180ebcbd9195f1cb72db3aaaff090fc3fe",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.1.order",
+     "bytes": 737280,
+     "sha256": "4f55fa9f30a6b27ea4764acf1c16c98ddb71af13901571dbec924538ce5ce292",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.1.power",
+     "bytes": 6144,
+     "sha256": "54781d65bc1627f64c6ed2906343551f3e33d8f9b45394befff36e75fc6b8b28",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3705799,
+   "lit_signed": 2791750,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.1": {
+   "name": "fc.1",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.1.up",
+     "bytes": 5013504,
+     "sha256": "ff4939a11ff3baf01fdb0a3808d61d5a6f36d2eac0478eebfe0e74f50a89a0e4",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.1.down",
+     "bytes": 5013504,
+     "sha256": "4be78783888bac2d83cfc2fe6e127f2df9eb76b2b0f6f3fb131043d91e100564",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.1.order",
+     "bytes": 2949120,
+     "sha256": "3da590cdc597699225468d24bf10a965123962a9e49c119463535cb8d7d33fe4",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.1.power",
+     "bytes": 24576,
+     "sha256": "6f3915afd89767ce30f8f2727f91c9bc1dc1a960c3181107462e0fd4ac8095d9",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 15052701,
+   "lit_signed": 11321008,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.1": {
+   "name": "mproj.1",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.1.up",
+     "bytes": 5013504,
+     "sha256": "3f0f3d6f979758762480a12267d935323313424b5a3ef8568bc9ae38157af965",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.1.down",
+     "bytes": 5013504,
+     "sha256": "69d5052b5b933d4f3280f5d76c7d48bff0a41803b54b3103f982197c07d78f7f",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.1.order",
+     "bytes": 3538944,
+     "sha256": "1f71685d4b3f06acf36a76bc638e1b2883b266ea82add241c1fa0aa8c5a442ed",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.1.power",
+     "bytes": 6144,
+     "sha256": "8aef2cbf1968c6f80499875e52d4a9e337803beb334eacb4cc6bcc60d8f00c3e",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14575731,
+   "lit_signed": 11007395,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.2": {
+   "name": "qkv.2",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.2.up",
+     "bytes": 3760128,
+     "sha256": "36e922181046a71549f500fc97657342358dfba69dfc07c8a01e46c673526fb2",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.2.down",
+     "bytes": 3760128,
+     "sha256": "85a2ccd7aa7e782f37dba35aa550ad1fda9b081428f7d71f3241442c20106ed9",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.2.order",
+     "bytes": 2211840,
+     "sha256": "6266daebf8f60c190923c6050697db90b8a5963b73ff273e93f0b0a4ac978f75",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.2.power",
+     "bytes": 18432,
+     "sha256": "ccd269b882bfd02bfbc8be3cd21e5ca042b100741cd5071b60f1c008ec8e3d7b",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 10812472,
+   "lit_signed": 8172220,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.2": {
+   "name": "proj.2",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.2.up",
+     "bytes": 1253376,
+     "sha256": "b2daf0c945cff65714bfa560caa0b0ab60a4371a6890b2edc31783ef94210626",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.2.down",
+     "bytes": 1253376,
+     "sha256": "03d8aa5e4d89c11b38113d3920917a8e60625797a806639c2d4866737b3d686d",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.2.order",
+     "bytes": 737280,
+     "sha256": "6937b8935b91801aa73652cda5b86bc1da9544dc8ce4943cacece620e38ef37c",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.2.power",
+     "bytes": 6144,
+     "sha256": "86d1702c1a289929c431496322ebeb39e177cd96af9064c839c01f51a4e13b47",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3696841,
+   "lit_signed": 2786503,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.2": {
+   "name": "fc.2",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.2.up",
+     "bytes": 5013504,
+     "sha256": "3dba363f1f9345105d3cd2a6b149eb66c8324edd64735932a26eef924348775b",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.2.down",
+     "bytes": 5013504,
+     "sha256": "f67d2a0298156c3fe2685f69a2343170b0f9a0b03732edcab3f18d7cefbc9170",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.2.order",
+     "bytes": 2949120,
+     "sha256": "f550bafa4410d4c735637250068598bb9187af6bb6f940566ad48bb6f3cb2aa0",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.2.power",
+     "bytes": 24576,
+     "sha256": "f8cc58c9a633cdf6af9a0161a45a6e7ba548d91624e1589a9da7085454402d8e",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 15086996,
+   "lit_signed": 11342807,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.2": {
+   "name": "mproj.2",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.2.up",
+     "bytes": 5013504,
+     "sha256": "c3230ec063589ba8eec3782ac004cd74050b1b524a84e1a0bc6b1c27457ebaad",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.2.down",
+     "bytes": 5013504,
+     "sha256": "b0532e50ab3eb9b5ab3489dbb7e2a9623ee98e05c6a6fd14154fac9be8c926ca",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.2.order",
+     "bytes": 3538944,
+     "sha256": "d10fd202b8b88c8af70ed8a7decc3b9aa6e2a13d77f92a81ed24f39f01fb01eb",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.2.power",
+     "bytes": 6144,
+     "sha256": "6b5b9ba0446c929bd37adcfb5ce63de02a45ccf6e221071b815466f671fe572f",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14662803,
+   "lit_signed": 11065279,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.3": {
+   "name": "qkv.3",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.3.up",
+     "bytes": 3760128,
+     "sha256": "c7f209375735a56a3e290938cb6a15b9b11c0fe6ac2d0f95d4d0459b45ab8315",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.3.down",
+     "bytes": 3760128,
+     "sha256": "c749e0b91c5f7d15577541285d9143dbe87d2716ab1e01755c3d8927b4b54fb0",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.3.order",
+     "bytes": 2211840,
+     "sha256": "327b776786fb0a5f9439a702c8722c423ea075ed4f6a91fb9efbd3fd18686a25",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.3.power",
+     "bytes": 18432,
+     "sha256": "a2d1a48d559ae11339c41a99fbb252d4cbdd288ea232ef74be6da3f1ae1c2e33",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11017948,
+   "lit_signed": 8309505,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.3": {
+   "name": "proj.3",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.3.up",
+     "bytes": 1253376,
+     "sha256": "2a487fadffc1d96d4d969acc19730539125e26ccdbc57a84e07ec65de5913944",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.3.down",
+     "bytes": 1253376,
+     "sha256": "8b0b5773db44f5cf0daa541f65b012eaf13869dfd028dc4d3fea644763c74d20",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.3.order",
+     "bytes": 737280,
+     "sha256": "124805569da88618c8115d089c98c1e2a01d2a307c2115a6926426b3deb4bbfb",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.3.power",
+     "bytes": 6144,
+     "sha256": "f9892ca9272b451868cfd52873ddc48ffb65cace8285bdc10c1637f68e5261f1",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3706019,
+   "lit_signed": 2793920,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.3": {
+   "name": "fc.3",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.3.up",
+     "bytes": 5013504,
+     "sha256": "08eb10e18cc6ea7c8b075ac64bf3719904085906a9546731bd228334fe2a7b39",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.3.down",
+     "bytes": 5013504,
+     "sha256": "b6543add5009f89764e3b4e72113792391d882e6683ff84410f15ac57d657404",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.3.order",
+     "bytes": 2949120,
+     "sha256": "7776f961b37a44bad00f24b7b567ef329a411bcc6a4aeaca5e27766fc71a5138",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.3.power",
+     "bytes": 24576,
+     "sha256": "cb7449d8beac1797be43069499f15477ec429cbe6a0faa635422b493dcf01574",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14991865,
+   "lit_signed": 11281897,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.3": {
+   "name": "mproj.3",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.3.up",
+     "bytes": 5013504,
+     "sha256": "4de02236c881d130c4f1a898d180dfcf714b50f03bcde1d330b25cc1360d64e4",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.3.down",
+     "bytes": 5013504,
+     "sha256": "493006eb692a6135dca2a1bb7ecda50075bdd46c316f69acaee30312688e7829",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.3.order",
+     "bytes": 3538944,
+     "sha256": "0d24ea36ef9ef89cb3969a6db2ed05778d76f182f9849b1bb397fda0428f3574",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.3.power",
+     "bytes": 6144,
+     "sha256": "640dd506dc1e32ca109c3ec5af946924c754c9d5a74dc4d8e0ae86f7bdd7fd42",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14697453,
+   "lit_signed": 11088143,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.4": {
+   "name": "qkv.4",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.4.up",
+     "bytes": 3760128,
+     "sha256": "0a4d098073acc87269b5da068b1d12930fa429c7cb64ab87d00e8ae116f0b311",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.4.down",
+     "bytes": 3760128,
+     "sha256": "c44ac8836ffdf9938004f8853d2df8c99cf28393400491292ec2441f0db74b27",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.4.order",
+     "bytes": 2211840,
+     "sha256": "000df1a34e1cd3c13c4f35460ecd5826c35d59e5fcd261c5bac46f40ab7051c1",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.4.power",
+     "bytes": 18432,
+     "sha256": "911f0e6d40c14a528d07b456731b12b87840ddcdeb5449b82591bf9b634803f6",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11127913,
+   "lit_signed": 8383388,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.4": {
+   "name": "proj.4",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.4.up",
+     "bytes": 1253376,
+     "sha256": "32b139d1535d42ea6660e6b2f4efa1592208afb77a882b1d81ade3416483082c",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.4.down",
+     "bytes": 1253376,
+     "sha256": "f5093e5cc248969d9cefb8cdc74856b979cca80d083b24dd16e90a5d4bd082cd",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.4.order",
+     "bytes": 737280,
+     "sha256": "314bfc585d979886b3888b0651b4ca677b53c1f04d1f4ca29ceeadd39cd95c65",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.4.power",
+     "bytes": 6144,
+     "sha256": "634e3bce08aa1d0adb240b6c36a4df718281ea632a9a2d1c18c665bae17bcecb",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3737280,
+   "lit_signed": 2814042,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.4": {
+   "name": "fc.4",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.4.up",
+     "bytes": 5013504,
+     "sha256": "54902a0e1913b2e44dd52591f0a04147d90c76911bc82ec5d754459176cb9579",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.4.down",
+     "bytes": 5013504,
+     "sha256": "7ddb93c7705e9fa28b0dc15f77f9ad32592a7ea23770b116f13b3bc3da647fe7",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.4.order",
+     "bytes": 2949120,
+     "sha256": "f5828c6e6c21bc28c697beb3d27dad6debb8614d7ce9ed2adf9daff3fbe0e1c6",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.4.power",
+     "bytes": 24576,
+     "sha256": "0837f3220292fa7fe9f1746a8d43498f04e0f70afa4c1451371d9455efe22c26",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14975286,
+   "lit_signed": 11266772,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.4": {
+   "name": "mproj.4",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.4.up",
+     "bytes": 5013504,
+     "sha256": "60506007903bb1990d2567020a4d7100adfc1834a80316c12cadd4b6ad61eb4d",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.4.down",
+     "bytes": 5013504,
+     "sha256": "2518e62f7257968505ebe67aa419d147a316144fffcb42294c5b3d7873e05b7b",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.4.order",
+     "bytes": 3538944,
+     "sha256": "7d1df4af3e64af964b263c442f33950ec1cc8522a70797dc14d0f853df43969e",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.4.power",
+     "bytes": 6144,
+     "sha256": "fb599ede7869b0b336dbb9902b94230483658f5b687804fb05b755bf07a2a137",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14789875,
+   "lit_signed": 11148683,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.5": {
+   "name": "qkv.5",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.5.up",
+     "bytes": 3760128,
+     "sha256": "9779f703439cbb1cb5e8bbd577d22e54c40bd1b22b381c60ba2785afd59b8b79",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.5.down",
+     "bytes": 3760128,
+     "sha256": "1201bf1c45600d99e9e666938833eb06b41076e2a616f017f1a14842c95b50f6",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.5.order",
+     "bytes": 2211840,
+     "sha256": "1e60f756e19ac6e4a3b812e5903c9f1752f810ce4eee99d69a99b5932e299a2c",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.5.power",
+     "bytes": 18432,
+     "sha256": "c54b488712f8f347331dfef64fff2a9fcf4e8f4e1ab537d5124041a3b0005159",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11272572,
+   "lit_signed": 8478859,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.5": {
+   "name": "proj.5",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.5.up",
+     "bytes": 1253376,
+     "sha256": "d6d8cb221f2aff2cb3f83b318ae31c7e1a78eae8206738890955173730b84a68",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.5.down",
+     "bytes": 1253376,
+     "sha256": "5028a33d4c593fcd3640976bd4b5e67b716d13d280f2b4e0e2b4b476530c21ad",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.5.order",
+     "bytes": 737280,
+     "sha256": "d4862e97b7ebce051a2a147d8d9adb75661b6e8cf6b0eab67612db99da7b9231",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.5.power",
+     "bytes": 6144,
+     "sha256": "2dfcfd7dc37996b2f29c23cfd7b1713bb11b6abe5206c500710bf7e03de938fb",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3758662,
+   "lit_signed": 2827737,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.5": {
+   "name": "fc.5",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.5.up",
+     "bytes": 5013504,
+     "sha256": "177290f72bd67ed059515250a9742f3ce8edec8202e2a491a14dbd623c86de4d",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.5.down",
+     "bytes": 5013504,
+     "sha256": "b88b6614b09fa9e31412e6a7a52513b84f8e983d460c9ad7bbeff3ac78f90632",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.5.order",
+     "bytes": 2949120,
+     "sha256": "a0db3a2acea700502b17f94f4e7e9852644c99e671e17c964d7bea681833b562",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.5.power",
+     "bytes": 24576,
+     "sha256": "2ffd46c4ce74b8fd26a142a4ad7d2510ed64efadd3bbc1f7dcb6cbffbd648a8c",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14869116,
+   "lit_signed": 11198166,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.5": {
+   "name": "mproj.5",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.5.up",
+     "bytes": 5013504,
+     "sha256": "6da3d927ce545c4fd193bae644b8c5fe256f634795102bfa07823c612917b71d",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.5.down",
+     "bytes": 5013504,
+     "sha256": "caeac3fdc9cb1113252b7d00b0c7e95aaa5ec51f5be0b4a2121afeac6c259da8",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.5.order",
+     "bytes": 3538944,
+     "sha256": "a7d9c3c7d27f2fc5c1a6b8e4e71f26d13a08a0986b4caa242e8855ec90c343a2",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.5.power",
+     "bytes": 6144,
+     "sha256": "adad9f918482d04a7b70269cb7cdc550910e41ca7758d783f788311320fda20d",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14784060,
+   "lit_signed": 11146443,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.6": {
+   "name": "qkv.6",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.6.up",
+     "bytes": 3760128,
+     "sha256": "c7855caf656dc4d9ebffc059807470a4b6190a136d0ddc42fc9276742e0db7a0",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.6.down",
+     "bytes": 3760128,
+     "sha256": "64159d95272b762af07217378fe4cec0f1f7e3b637f05a2ec375238b8a96f7f9",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.6.order",
+     "bytes": 2211840,
+     "sha256": "6e65f4d44272ff0e1fdf68f0eca99360877b1847496da89103f21ebb28910d12",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.6.power",
+     "bytes": 18432,
+     "sha256": "b349cf516d3386c708047f13d247d37f38fd679dc9e3f0871df761a2c3299742",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11184094,
+   "lit_signed": 8421140,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.6": {
+   "name": "proj.6",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.6.up",
+     "bytes": 1253376,
+     "sha256": "1ebf80f04cb876bccfde28104108fbf3891fde9c14ca5372b8973f00e68ac893",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.6.down",
+     "bytes": 1253376,
+     "sha256": "4c38534dbb5cc1d92a84dc69eeaccc485912d3b50542bc2eb92c3698fca2e251",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.6.order",
+     "bytes": 737280,
+     "sha256": "ceb7d561d4c2207d3cf2aa921d5cca39271a4f4e9ae38f25d4f7a6ca7c34de13",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.6.power",
+     "bytes": 6144,
+     "sha256": "9d6737a773ec859fa55b40eb431232f3aa0a94977002cfd4e16c1ddad78601f7",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3811060,
+   "lit_signed": 2863501,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.6": {
+   "name": "fc.6",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.6.up",
+     "bytes": 5013504,
+     "sha256": "89fd9549fe89a3cc5a1697a3f89df4e8f75f885e314ea997c27d70e3d99d9923",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.6.down",
+     "bytes": 5013504,
+     "sha256": "061cbdb9c6be98ce04e5431b8ad5374d5a7f3da7d6d86e8f915653e85c011a66",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.6.order",
+     "bytes": 2949120,
+     "sha256": "e2a1b49d5c1d5b7ef04b79fee3cfbeb0352e8e7fb0db3fc6eddccb41af10c080",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.6.power",
+     "bytes": 24576,
+     "sha256": "3d1da423b8901f12716ac7fb735ff8f7630297e759d70320ab97ce31433e71fb",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14861636,
+   "lit_signed": 11189805,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.6": {
+   "name": "mproj.6",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.6.up",
+     "bytes": 5013504,
+     "sha256": "ce6ff857f30609d1ae6bc7850c5acbe3f60150df619686cd70f3e951930f9ede",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.6.down",
+     "bytes": 5013504,
+     "sha256": "803a64185aff43859f95939fd3a037c620cf389b75c11eb507c47567cb1d43f5",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.6.order",
+     "bytes": 3538944,
+     "sha256": "f50cc268ae7d620d15e7c4bf045a0e89ded5d912de2e23d38360c54531322792",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.6.power",
+     "bytes": 6144,
+     "sha256": "4030f404a3aa7291909a027ce626b8b3606d4a6b80e0c84e1dec5ff6d927abf4",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14770284,
+   "lit_signed": 11136887,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.7": {
+   "name": "qkv.7",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.7.up",
+     "bytes": 3760128,
+     "sha256": "26fd273687e80ddc26fca8858cb065906e155f9cc8b90a2c7cada4ff33ee5934",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.7.down",
+     "bytes": 3760128,
+     "sha256": "6f91fb76eaf491f5b493c7e40b9862e8c1216c30461ec235498fd289a3024670",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.7.order",
+     "bytes": 2211840,
+     "sha256": "d6a83108f8689ebe30a7a2b8ce0e547fe85bd63b41783d4a31f73ed9f3a3f5f4",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.7.power",
+     "bytes": 18432,
+     "sha256": "57e7cf8fd39bfc46d9704857697f0093e7f76c5a7eaf459d984d2d4a17659b31",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11219923,
+   "lit_signed": 8444818,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.7": {
+   "name": "proj.7",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.7.up",
+     "bytes": 1253376,
+     "sha256": "77ecdae5fe129f42178abe5e6969c934099067fbd058c840a2a643f736631ded",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.7.down",
+     "bytes": 1253376,
+     "sha256": "35cb0fb88e1ad2b437472d33dbb55e779d2529ff03882266d34aa248a7ee9be8",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.7.order",
+     "bytes": 737280,
+     "sha256": "4f27c5af37f3419e968df76848b34dd694a001b914b76bd3f7882d3ab2f25473",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.7.power",
+     "bytes": 6144,
+     "sha256": "d814b9174c0c3191a29387605d3bfa34055eaa124a7184c395ee194c13780ee6",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3806859,
+   "lit_signed": 2858473,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.7": {
+   "name": "fc.7",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.7.up",
+     "bytes": 5013504,
+     "sha256": "c667836b4a84a759f9cc98b9fd78a3a5619ba277ab7fc79d54f32889e6959ca7",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.7.down",
+     "bytes": 5013504,
+     "sha256": "b4bede1b5180794b3e68b2a9038d61f03e0371735f78d45a3589ef1fe0a5b3d0",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.7.order",
+     "bytes": 2949120,
+     "sha256": "d73d902b6164a8b03bb7c0491bcf5441fe2528441cf7639b37405ae6d4afe26b",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.7.power",
+     "bytes": 24576,
+     "sha256": "5eefb1d914eca1c3bbc02649fd102e6d351e8801994933f743730f1efaf1c121",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14844458,
+   "lit_signed": 11183549,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.7": {
+   "name": "mproj.7",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.7.up",
+     "bytes": 5013504,
+     "sha256": "8c3c24f515a20ce753254a563131c6bfd11917c40b5f9068e44ff8110591acb8",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.7.down",
+     "bytes": 5013504,
+     "sha256": "baf5c187602307821d2c515b543e89cbb140355ef9934814ef9f2660762cd5c9",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.7.order",
+     "bytes": 3538944,
+     "sha256": "675513484dd3e7d11ed761ec886242b2541954938676a9d5c8faffc0bba4c3b3",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.7.power",
+     "bytes": 6144,
+     "sha256": "f766d588581ff0e5c1a63bef56680df8782074089202d66f34a51a8bd7bd64d2",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14653456,
+   "lit_signed": 11056894,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.8": {
+   "name": "qkv.8",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.8.up",
+     "bytes": 3760128,
+     "sha256": "12f9b94122955a63089ee17c9ebc5dad7f363ae9275b5cfd973cbc2cbcc07466",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.8.down",
+     "bytes": 3760128,
+     "sha256": "a70f8d14cbf5c7e7392bb72fb3e987ea941b34f526f3f01591a0dfb236415dd5",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.8.order",
+     "bytes": 2211840,
+     "sha256": "45ea48c64ee22a1b6317d6efe81569df2086f8fa1319f0966f7b8b63dd669b6c",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.8.power",
+     "bytes": 18432,
+     "sha256": "4d4f511f6c4e01171829ab49c55b83110cc93729030a89d7d55b48db6995ee21",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11117426,
+   "lit_signed": 8376118,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.8": {
+   "name": "proj.8",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.8.up",
+     "bytes": 1253376,
+     "sha256": "8481ad885d9e5cc376efbde91b306427327f044e41bddc8f6bb4613dfefdb8d3",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.8.down",
+     "bytes": 1253376,
+     "sha256": "044131c091f12944772d88f6cd865556b189ba65539c589ce31ca7d3cc9dbf00",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.8.order",
+     "bytes": 737280,
+     "sha256": "1ba1ed7a0c4236e6633bd3b317e764b541f90fedda14385367a66071e8c56134",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.8.power",
+     "bytes": 6144,
+     "sha256": "f1959169b29aeb42e41b428cceaf319be91fa96e432d2c34065c8756e8c07616",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3842258,
+   "lit_signed": 2884375,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.8": {
+   "name": "fc.8",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.8.up",
+     "bytes": 5013504,
+     "sha256": "bee66568947dbe008db3ec0c4b6f90f5550930824e9daaeb34a5d63cd7babb30",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.8.down",
+     "bytes": 5013504,
+     "sha256": "061112ec85ae4329606ce3f7465322b4fc6bba0941792930337279ace1c3861e",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.8.order",
+     "bytes": 2949120,
+     "sha256": "cd4eb8262e153dd3f820256fa3efcec4f1bf9b13cdd4bd392b8debc665a03815",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.8.power",
+     "bytes": 24576,
+     "sha256": "782b850cfc1fb5f336d76938175fd6aa7c3103e70cdfdfd1a59d64b4d4995aaa",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14951869,
+   "lit_signed": 11250849,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.8": {
+   "name": "mproj.8",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.8.up",
+     "bytes": 5013504,
+     "sha256": "c9ba6c5c320baecdb788024c4ff0c9c4a92f0dde86934ab2194a2efc5c23f815",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.8.down",
+     "bytes": 5013504,
+     "sha256": "fa7a5343e42d8d81fcb3b2c864cc27a3d82c7ccff6774f1a4de9f40680b6cc96",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.8.order",
+     "bytes": 3538944,
+     "sha256": "09f8a27421f2204d87fa4b36439533194e0219801e433050ceaaa8824300f3f7",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.8.power",
+     "bytes": 6144,
+     "sha256": "e084724b7b8e7cb87f3b6b708b2314b9988830d7495cecf49c0bb2cabe55ece4",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14516919,
+   "lit_signed": 10965150,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.9": {
+   "name": "qkv.9",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.9.up",
+     "bytes": 3760128,
+     "sha256": "3d02e1269d02db705d96513e183bfd0cabb9d07120df11243f3a51864a37ad19",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.9.down",
+     "bytes": 3760128,
+     "sha256": "880af7aa65de90959524b07c9807375dab610b013ba8dfb01eab57a27ac563f9",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.9.order",
+     "bytes": 2211840,
+     "sha256": "8cc204fcbf975cef9a06bf8b6d097a1a33ed426dd33140f1703782ff6768e4a5",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.9.power",
+     "bytes": 18432,
+     "sha256": "47f0a496328718aef7e579cbf3aac22d1f308ab152ec80980a46b75bbd3669fa",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11157551,
+   "lit_signed": 8404739,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.9": {
+   "name": "proj.9",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.9.up",
+     "bytes": 1253376,
+     "sha256": "f882c87d4719961f0e2cfce3b72640352d47569ea706e5c255893fc979fd57bf",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.9.down",
+     "bytes": 1253376,
+     "sha256": "dcfae93cdff0625152825d12325b01db614572b4ec1329868d45109c09087dc2",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.9.order",
+     "bytes": 737280,
+     "sha256": "5db5e279aca658643c6f9a3fb65b3db2dad4b67874c9f55c38b44349666565c5",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.9.power",
+     "bytes": 6144,
+     "sha256": "d91a4be63f0d2b3658d58333d1d09c82805ec999738a1510c5e9aa46bd1c10f9",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3809747,
+   "lit_signed": 2862796,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.9": {
+   "name": "fc.9",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.9.up",
+     "bytes": 5013504,
+     "sha256": "6000fe5be72483bf3448f6c09d9cad0cea0a3f9c028a0b279e3db5f57e4f2127",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.9.down",
+     "bytes": 5013504,
+     "sha256": "d4a49b0838f51d8f353e74f2b4f66b5e4ccb8f044979f9ac7b501d7f208d7e13",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.9.order",
+     "bytes": 2949120,
+     "sha256": "4230a5b4602e991f9ffee39e5454f8dd467578635abd9a5f5579e17b3cbe522c",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.9.power",
+     "bytes": 24576,
+     "sha256": "08c4322115cf6e83e245d7594aae4ef049e3129c1202d39eee0d068fb600e0f1",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14969603,
+   "lit_signed": 11261980,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.9": {
+   "name": "mproj.9",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.9.up",
+     "bytes": 5013504,
+     "sha256": "ac7729208744db701450dab55303fea44572a653bc5c8b21370ff63a154ec240",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.9.down",
+     "bytes": 5013504,
+     "sha256": "9d0c769e78b85bc286a15ca3ca92a2a2dea00199aeabd9f5c3dcd7311a912420",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.9.order",
+     "bytes": 3538944,
+     "sha256": "df60b0cbf66c602a794bee89a0aec7efdae0d6d1b6636fa6296b305cc3b6e21e",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.9.power",
+     "bytes": 6144,
+     "sha256": "df426599d33aac8b7080ec3002ecd3dda0e56563bc9325940d1117a23af03d4c",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14656131,
+   "lit_signed": 11057853,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.10": {
+   "name": "qkv.10",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.10.up",
+     "bytes": 3760128,
+     "sha256": "050785d2c782bba36305ce1a01ade832a384102e70e421c4c42b2b1d5218b862",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.10.down",
+     "bytes": 3760128,
+     "sha256": "3ec8becaedff6c0afe84d0f0f23467c6d37f7c334d35a0d0518dd60b617f8915",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.10.order",
+     "bytes": 2211840,
+     "sha256": "6b1370428d323a4a0a8e2eea85d45cdb88c1e72996b15c56b49f98f1bf2c0858",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.10.power",
+     "bytes": 18432,
+     "sha256": "de2404b9f7383d83e9034ec8ba789cd06da3ad71eee0a585a96500dafb90efd4",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11122156,
+   "lit_signed": 8378660,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.10": {
+   "name": "proj.10",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.10.up",
+     "bytes": 1253376,
+     "sha256": "170bbab8a12efe7f9b98df980b55f1519fd6cbb186f813bd393fbf5aadadcc77",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.10.down",
+     "bytes": 1253376,
+     "sha256": "2c18c7501633a6012004261bc597c46ba8037bcd1df1a52a198522f2d95c713e",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.10.order",
+     "bytes": 737280,
+     "sha256": "8ff128a37a9710a322d3aa02d86ab5d248e343b1a693cfd79647a51c614db516",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.10.power",
+     "bytes": 6144,
+     "sha256": "49e9040ff75f80d0ab1436187431cccffb412a596aef94dd4d73ee34450191b7",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3786656,
+   "lit_signed": 2845769,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.10": {
+   "name": "fc.10",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.10.up",
+     "bytes": 5013504,
+     "sha256": "f7110ad7b6b1cb3febce07a0e5742bd59ec62b1205f4e03de56b54d7afdbe997",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.10.down",
+     "bytes": 5013504,
+     "sha256": "ab5dfd5ad9f575ffe4a24a8dd5274613356663af2f489f4bcc659fa496924447",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.10.order",
+     "bytes": 2949120,
+     "sha256": "71e6c2584f4e2abfdf84a62d3713a4162dd89e1ad825b5eb0a93c1c039d16448",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.10.power",
+     "bytes": 24576,
+     "sha256": "a22b2034f4074c08d18457ecfa9d425ca198925d8134e028c5b00a8af745a980",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14797312,
+   "lit_signed": 11151895,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.10": {
+   "name": "mproj.10",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.10.up",
+     "bytes": 5013504,
+     "sha256": "e924a840d5130ead4f6e671d73a483415ca1c2211524e951e38a76d4d1ada121",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.10.down",
+     "bytes": 5013504,
+     "sha256": "9982ebe085a3a0d76e93b7e488eb9ff50ca89154308aac37bfe7d1ca66806282",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.10.order",
+     "bytes": 3538944,
+     "sha256": "c252380f5fea94371c1acfdeabaff82ee003c910d0d812b39535961eb88b57f5",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.10.power",
+     "bytes": 6144,
+     "sha256": "073444fd2a024a21d0d14dfd972640093756c2469e5adab39a42242b0bdfb35e",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14703651,
+   "lit_signed": 11095227,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "qkv.11": {
+   "name": "qkv.11",
+   "lines": 768,
+   "neurons": 2304,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "qkv.11.up",
+     "bytes": 3760128,
+     "sha256": "4382f4d38f891f5b30a58136e8e00ee4ac59ff2f643f1a9f613b536c7e60d2b8",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "down": {
+     "file": "qkv.11.down",
+     "bytes": 3760128,
+     "sha256": "40cae7f9d1ea42dd564382ee684138f215acaee956c66bd5c9fe978bd9252227",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      2304
+     ]
+    },
+    "order": {
+     "file": "qkv.11.order",
+     "bytes": 2211840,
+     "sha256": "1064cdfe8f9e91a47b69f9631e398dc95882a4b62107f551201a6d1939693576",
+     "dtype": "uint8",
+     "shape": [
+      2211840
+     ]
+    },
+    "power": {
+     "file": "qkv.11.power",
+     "bytes": 18432,
+     "sha256": "fa104f16008e790fc5f9d5c225d436842402821808c9ce666c702cd5d33c7d12",
+     "dtype": "int64",
+     "shape": [
+      2304
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 11069444,
+   "lit_signed": 8342311,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "proj.11": {
+   "name": "proj.11",
+   "lines": 768,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "proj.11.up",
+     "bytes": 1253376,
+     "sha256": "3127ccc53bcd4581f1c3fa060b605b6150103053e0ce452a367df4fd5f065100",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "down": {
+     "file": "proj.11.down",
+     "bytes": 1253376,
+     "sha256": "cd26145b259ebb13756dedd114205069167f33f3e9da18161a2e03e35063e51c",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      768
+     ]
+    },
+    "order": {
+     "file": "proj.11.order",
+     "bytes": 737280,
+     "sha256": "71ae83bdbc4c49333e30a17bf4165ed2800dd3d6085407533899dd4070af7ebb",
+     "dtype": "uint8",
+     "shape": [
+      737280
+     ]
+    },
+    "power": {
+     "file": "proj.11.power",
+     "bytes": 6144,
+     "sha256": "35a499b0fe14d27ecc1fbb2c0c815f99e9c00c50f3616c6f126fd1f7366cf5d7",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 3733545,
+   "lit_signed": 2812283,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "fc.11": {
+   "name": "fc.11",
+   "lines": 768,
+   "neurons": 3072,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "fc.11.up",
+     "bytes": 5013504,
+     "sha256": "60a51b4c295f8ed3eb1343cd3aed519a2515686d777541cfb81075e74d603e77",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "down": {
+     "file": "fc.11.down",
+     "bytes": 5013504,
+     "sha256": "7d3b73b3a5b7003cc5cb3c83ec384a6a9739e7d91e4283ac9bfb18400825c862",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      3072
+     ]
+    },
+    "order": {
+     "file": "fc.11.order",
+     "bytes": 2949120,
+     "sha256": "0c8fb49a4898bb2f9c99673c27ad4ac2b001728213e81759b23fe3a986a10a70",
+     "dtype": "uint8",
+     "shape": [
+      2949120
+     ]
+    },
+    "power": {
+     "file": "fc.11.power",
+     "bytes": 24576,
+     "sha256": "391cf42c5738bb5794021bb73aa1974b8fc2b42d25f981cc849b70a2f9ab9e81",
+     "dtype": "int64",
+     "shape": [
+      3072
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 15103260,
+   "lit_signed": 11351047,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "mproj.11": {
+   "name": "mproj.11",
+   "lines": 3072,
+   "neurons": 768,
+   "places": 17,
+   "order_bits": 12,
+   "files": {
+    "up": {
+     "file": "mproj.11.up",
+     "bytes": 5013504,
+     "sha256": "377f3f65ae2d8f859aad948d6f867ac991c4c7ce4a8ff3473c399664825a8dee",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "down": {
+     "file": "mproj.11.down",
+     "bytes": 5013504,
+     "sha256": "6473fbd65b0dbe8644e73ca0990a1feba0d620164c0840443f297024c092e0cd",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      384,
+      768
+     ]
+    },
+    "order": {
+     "file": "mproj.11.order",
+     "bytes": 3538944,
+     "sha256": "e8203405759a639a9680f5eb8835abf09100bb2f6e2f236c66a75743831f3bf5",
+     "dtype": "uint8",
+     "shape": [
+      3538944
+     ]
+    },
+    "power": {
+     "file": "mproj.11.power",
+     "bytes": 6144,
+     "sha256": "9d0234c3a0c19081cad1ad6161e0b8fe4dcb2ef817d37090fc1b48a2a7d2b996",
+     "dtype": "int64",
+     "shape": [
+      768
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 14468127,
+   "lit_signed": 10933371,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 12 bits an entry, np.packbits, high bit first"
+   }
+  },
+  "head": {
+   "name": "head",
+   "lines": 768,
+   "neurons": 50257,
+   "places": 17,
+   "order_bits": 10,
+   "files": {
+    "up": {
+     "file": "head.up",
+     "bytes": 82019424,
+     "sha256": "6f6ba09173855559cc3e7dcae059d1e43ee85929f121dda7408a48d848f57ca1",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      50257
+     ]
+    },
+    "down": {
+     "file": "head.down",
+     "bytes": 82019424,
+     "sha256": "e29ec3feeb162b5c15b0c19e9bffbf3ce096bce8217bca4254cb537994bca400",
+     "dtype": "uint8",
+     "shape": [
+      17,
+      96,
+      50257
+     ]
+    },
+    "order": {
+     "file": "head.order",
+     "bytes": 48246720,
+     "sha256": "afcc8959e7bf30d45a717c6cd8aeb900b97dbf99847fbac20bfbe3c902f819b5",
+     "dtype": "uint8",
+     "shape": [
+      48246720
+     ]
+    },
+    "power": {
+     "file": "head.power",
+     "bytes": 402056,
+     "sha256": "b9176fd607cb376915e66874fe47abebd07d234a906f2962f5465ad2344c2dc0",
+     "dtype": "int64",
+     "shape": [
+      50257
+     ]
+    }
+   },
+   "readback_exact": true,
+   "lit_plain": 189384064,
+   "lit_signed": 147272488,
+   "highest_lit_place": 15,
+   "power_dtype": "int64",
+   "layout": {
+    "up_down": "(place, lines/8, neuron) uint8, np.packbits over lines in line-up rank, top line in the high bit",
+    "order": "(rank, neuron) row-major, 10 bits an entry, np.packbits, high bit first"
+   }
+  }
+ },
+ "rest": {
+  "file": "rest.npz",
+  "bytes": 318942704,
+  "sha256": "62d2104d57ebe47698c17a8938978ba617ff56d705206e6e4284a474c9eade43",
+  "keys": [
+   "arrival",
+   "eps40",
+   "exp2",
+   "fc.0.b",
+   "fc.0.e",
+   "fc.1.b",
+   "fc.1.e",
+   "fc.10.b",
+   "fc.10.e",
+   "fc.11.b",
+   "fc.11.e",
+   "fc.2.b",
+   "fc.2.e",
+   "fc.3.b",
+   "fc.3.e",
+   "fc.4.b",
+   "fc.4.e",
+   "fc.5.b",
+   "fc.5.e",
+   "fc.6.b",
+   "fc.6.e",
+   "fc.7.b",
+   "fc.7.e",
+   "fc.8.b",
+   "fc.8.e",
+   "fc.9.b",
+   "fc.9.e",
+   "head.b",
+   "head.e",
+   "log2",
+   "log2_768",
+   "mproj.0.b",
+   "mproj.0.e",
+   "mproj.1.b",
+   "mproj.1.e",
+   "mproj.10.b",
+   "mproj.10.e",
+   "mproj.11.b",
+   "mproj.11.e",
+   "mproj.2.b",
+   "mproj.2.e",
+   "mproj.3.b",
+   "mproj.3.e",
+   "mproj.4.b",
+   "mproj.4.e",
+   "mproj.5.b",
+   "mproj.5.e",
+   "mproj.6.b",
+   "mproj.6.e",
+   "mproj.7.b",
+   "mproj.7.e",
+   "mproj.8.b",
+   "mproj.8.e",
+   "mproj.9.b",
+   "mproj.9.e",
+   "phi",
+   "proj.0.b",
+   "proj.0.e",
+   "proj.1.b",
+   "proj.1.e",
+   "proj.10.b",
+   "proj.10.e",
+   "proj.11.b",
+   "proj.11.e",
+   "proj.2.b",
+   "proj.2.e",
+   "proj.3.b",
+   "proj.3.e",
+   "proj.4.b",
+   "proj.4.e",
+   "proj.5.b",
+   "proj.5.e",
+   "proj.6.b",
+   "proj.6.e",
+   "proj.7.b",
+   "proj.7.e",
+   "proj.8.b",
+   "proj.8.e",
+   "proj.9.b",
+   "proj.9.e",
+   "qkv.0.b",
+   "qkv.0.e",
+   "qkv.1.b",
+   "qkv.1.e",
+   "qkv.10.b",
+   "qkv.10.e",
+   "qkv.11.b",
+   "qkv.11.e",
+   "qkv.2.b",
+   "qkv.2.e",
+   "qkv.3.b",
+   "qkv.3.e",
+   "qkv.4.b",
+   "qkv.4.e",
+   "qkv.5.b",
+   "qkv.5.e",
+   "qkv.6.b",
+   "qkv.6.e",
+   "qkv.7.b",
+   "qkv.7.e",
+   "qkv.8.b",
+   "qkv.8.e",
+   "qkv.9.b",
+   "qkv.9.e",
+   "wpe",
+   "wte"
+  ],
+  "note": "unchanged numbers of base2_gpt2.npz that are not plates (no '.w' key)"
+ },
+ "totals": {
+  "48 plates": {
+   "weights": 84934656,
+   "up_down_bytes": 360972288,
+   "order_bytes": 113246208,
+   "power_bytes": 663552,
+   "lit_plain": 532609562,
+   "lit_signed": 401395436
+  },
+  "top table": {
+   "weights": 38597376,
+   "up_down_bytes": 164038848,
+   "order_bytes": 48246720,
+   "power_bytes": 402056,
+   "lit_plain": 189384064,
+   "lit_signed": 147272488
+  }
+ }
+}

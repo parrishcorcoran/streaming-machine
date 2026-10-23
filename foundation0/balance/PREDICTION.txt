@@ -1,0 +1,102 @@
+PREDICTION, written 2026-10-06 before any count was made. Results go below, never edited above.
+
+HIS QUESTION, his exact words: "The base blank slate should be equal in ups and downs right? In base 2?"
+Also his: "Any failure is not a pivot."
+
+THE COUNT (the session's set-up, not his words):
+  Each plate's values are written as whole numbers on one power of two per plate, the same power for the starting
+  weights (step0) and the finished weights (step143000) of that plate, chosen so that neither passes 16 places
+  (|value| <= 32767, the 16 places this machine already uses: 15 places of size and the sign).
+  - sign and size: an UP is a 1 in the size of a positive weight, a DOWN is a 1 in the size of a negative weight.
+    Places 0-14 carry size.
+  - signed digits (second form): each whole number written with +1 and -1 digits, no two non-zero digits side by side
+    (one such writing per number). An UP is a +1 digit, a DOWN is a -1 digit. Places 0-15.
+  Coin-toss width: for one place, each weight with a 1 there gives +1 or -1, so a fair draw leaves ups - downs about
+  sqrt(ups + downs). z = (ups - downs)/sqrt(ups + downs); a fair coin gives |z| about 1, beyond 3 in 0.27% of cases.
+  For a whole plate, or one neuron, or one line: net = sum of the values against sqrt(sum of squares)
+  (spread x sqrt(count)).
+  Reference: a fresh bell-curve draw, same spread and same shape as each plate, on the same power of two, counted
+  the same way. Shuffle control (per neuron and per line only): the plate's own values shuffled over the plate.
+  The whole-plate counts do not change under any shuffle (they hold every value), so for those the fresh draw is
+  the only reference.
+
+PREDICTION (the session's):
+ 1. Step 0: every place of every plate balances within the coin-toss width (|z| mostly under 2; a few over 2 among
+    the hundreds of place counts, as a fair coin gives about 5%; essentially none over 3), the whole-plate net within
+    about 3 widths, and about 0.27% of neurons and of lines beyond 3 widths, the same as the fresh draw. Equal ups and
+    downs, up to a leftover about the square root of the count. Both forms (sign and size, signed digits) the same.
+ 2. Step 143000: most places still balance, but some plates and some neurons carry an imbalance far beyond the
+    coin toss, most likely in the word tables and the MLP plates. That excess is part of what was built.
+ 3. (the session's further detail) Where a finished plate is off balance, it is off at the high places, the ones
+    that carry the size; the lowest places stay at the coin toss even on the finished plates.
+ 4. (further) The word tables carry the largest excess along the lane: each hidden lane's weights over all words
+    have a net far beyond the coin toss (the finished output word table spread across lanes was 101x the shuffle
+    in check_step0 for 70m). Per word, a smaller share is off.
+ 5. (further) Shuffle control: on the finished plates, shuffling the plate's values over the plate brings the
+    per-neuron and per-line shares back to about the fresh draw's, unless the whole plate itself is off balance.
+
+------------------------------------------------------------------------------------------------------------------
+RESULT (balance_count.py -> balance_70m.json, balance_160m.json, run_70m.log, run_160m.log; tables in summary.log).
+Independent rebuild (balance_checker.py, torch, place by whole-number division, signed digits digit by digit,
+beyond-3 decided in whole numbers): 304 of 304 (plate, step, form) records identical, 0 mismatches (checker.log).
+Order-free: the shuffled plate gave the same whole-plate ups and downs at every place, every plate (asserted).
+Exact: sum over places of 2^p (ups - downs) = the plate's net, every plate, both forms (asserted).
+
+ 1. Step 0: AS PREDICTED.  70m: 0 of 26 plates, 160m: 0 of 50 plates have a net beyond 3 widths (largest 2.08, 2.10).
+    Places beyond 3: 70m ss 0 of 341, sd 1 of 342 (3.13, qkv.0 place 3); 160m ss 0 of 600, sd 0 of 641. Fresh draw:
+    70m 1 and 0, 160m 1 and 5. Beyond 2: 70m 4.4% / 5.6%, 160m 2.7% / 3.7% (fair coin 4.55%).
+    Neurons with net beyond 3: 0.26% (70m), 0.25% (160m); fresh 0.28%, 0.26%; lines 0.24%, 0.25%.
+ 2. Step 143000: AS PREDICTED in where, with one thing not predicted (see 4).
+    Places beyond 3: 70m ss 74 of 390, sd 26 of 403; 160m ss 71 of 750, sd 22 of 780 (fresh 6, 1, 2, 2).
+    The output word table: place 12 at z -84.7 (70m), +167.8 (160m); 160m whole-plate net +118.7 widths.
+    MLP in: plate nets out to -10.1 / +10.9 widths; 40-63% (70m) and 54-69% (160m) of input lines beyond 3.
+    MLP out: 0.8-48.6% (70m) and 0.4-6.8% (160m) of output lanes beyond 3. Query/key/value 70m: 9-29% of neurons
+    at layers 0, 3, 4, 5. Attention out: at the coin toss or under it everywhere.
+ 3. Signed digits: AS PREDICTED (lower places 9 of 299 beyond 3, the 4 highest live places 17 of 104 at 70m;
+    160m 6 of 580 and 16 of 200). Sign and size: NOT as predicted (lower places 58 of 286, 53 of 550): in sign and
+    size every 1 of a weight carries the weight's sign, so a plate with more up-weights than down-weights shows it
+    at every half-full place, down to place 0.
+ 4. Word tables along the lane: AS PREDICTED (input word table 80.3% / 81.0% of lanes beyond 3, output word table
+    100% / 100%). Per word: NOT PREDICTED in kind: the words are MORE even than the coin toss. Words beyond 3 of
+    50,304: input word table 0 (70m) and 1 (160m), against 120 and 127 at step 0 (fresh 0.27-0.32%); output word
+    table 0 and 9, against 135 and 124 at step 0. Largest word net 2.89 / 3.18 and 1.79 / 3.73 widths (step 0: 4.2-4.4). The same at every plate's lines that write into the stream: attention-out lines 0.00% at all 18 plates,
+    MLP-out lines 0.00% at all 18 plates (fresh 0.1-0.8%). 160m query/key/value neurons 0.00-0.04% at layers 1-7 (7 of 12).
+ 5. Shuffle: AS PREDICTED. Back to about the fresh draw except where the whole plate is off: 160m output word
+    table (plate net +118.7) shuffled per lane 91.7% beyond 3.
+
+------------------------------------------------------------------------------------------------------------------
+6. PREDICTION for balance_even_part.py (written before it runs).
+   What it reads: every set of weights that spans the stream's lanes, its sum over those lanes (its even part: what
+   an even light on every lane meets). Writes into the stream: input word table per word, attention-out per line,
+   MLP-out per line. Reads from the stream: query/key/value per neuron, MLP-in per neuron, output word table per word.
+   On the shared grid, start and finished are whole numbers on the same scale, so the finished even part can be
+   set against the start's even part of the same row.
+   The session's reasoning: the water level takes out each light's level before every read, so a write's even part
+   is never met by any later read. If nothing builds it, the finished even part of each write is the start's own
+   leftover, the same row's, carried through (possibly shrunk); the rest of the row grew, which is why it looks
+   more even than the coin toss.
+   PREDICTION:
+   - writes: finished even part against the start's even part of the same row: agreement (correlation) above 0.9,
+     ratio finished/start between 0 and 1.1; the root-mean-square of the even part in start coin-toss widths no
+     larger at finished than at start.
+   - reads: agreement lower (the gain on each lane tilts the light, so an even read can be built on).
+   - shuffle control (finished row against a different row's start): agreement about 0 (within 3/sqrt(rows)).
+   - order-free: rows permuted together give the same agreement.
+   RESULT (even_part.log, even_part.json):
+   - NOT AS PREDICTED. The finished even part of a row does not agree with the start's even part of the same row:
+     agreement -0.06 to +0.08 on every plate of both sizes, writes and reads alike, inside the shuffle control's own
+     range (-0.05 to +0.09). The start's leftover is not carried through.
+   - What is there instead: for every write the even part is SMALLER than the blank slate's coin-toss leftover.
+     Root-mean-square in the start row's coin-toss width: writes 0.23-0.57 (70m), 0.41-0.88 (160m), against
+     0.97-1.05 at the start; in the finished row's own width 0.13-0.28. Input word table 0.23 / 0.24.
+     Reads are mixed: MLP-in 0.20-0.96 except 70m layer 5 (2.39) and 160m layer 11 (1.33); query/key/value 0.59-0.88
+     at 160m layers 0-5, then 1.13-3.98, and 0.88-19.2 at 70m; output word table 0.95 (70m) and 4.18 (160m).
+   - Shuffle control: about 0 as predicted. Order-free: row sums identical after rows and lanes permuted, every plate.
+   - What blocked the prediction, in the picture's own terms: the reasoning assumed that what no later read can meet
+     is left alone. The count says it is not left alone: the start's level in each write is gone, and the level the
+     finished write adds to the stream is a new one, a quarter to a half of the blank slate's leftover. The way on:
+     follow the even part of each write through the steps between (70m step1000, step10000, step50000, already on the
+     shared grid in base2_pythia-70m-steps.npz) to see when the start's level leaves and when the new one settles.
+     Also for comparison: the agreement of all values start against finished (foundation_share.log, rho) is
+     0.02-0.36 on the layer plates, so on MLP-in (0.12-0.36) and MLP-out at layer 0 (0.18-0.22) the even part
+     lost more of the start than the plate as a whole did; on the word tables (0.004-0.03) the whole start is gone too.

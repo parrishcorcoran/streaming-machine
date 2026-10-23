@@ -1,0 +1,52 @@
+{
+"npos": 613,
+"left_out": {
+"water levels": 987736417,
+"head water: squares": 2118763939,
+"head water: gain x value": 1845451721,
+"head water: divides": 5040747247,
+"turns: products": 10820309903,
+"turns: adds": 890064312,
+"divides (qkv, gu)": 21501013974,
+"bends": 6359047442,
+"arrival: shares' total": 24843937,
+"arrival: divides": 6008573718,
+"stream adds": 263599728
+},
+"plain": {
+"plates": 7261439465649,
+"arrival": 37291701113,
+"top": 2752914626041
+},
+"sd": {
+"plates": 4319985850445,
+"arrival": 20969635984,
+"top": 1631342594104
+},
+"arrival": {
+"plain_scores": 11465996149,
+"plain_values": 25825704964,
+"sd_scores": 6723019739,
+"sd_values": 13805959180,
+"write_q": 208334085,
+"write_k": 90362500,
+"write_v": 141960480
+},
+"theirs_arrival": {
+"plain_scores": 11465996149,
+"plain_values": 25825704964,
+"sd_scores": 6723019739,
+"sd_values": 13805959180,
+"write_q": 208334085,
+"write_k": 90362500,
+"write_v": 141960480
+},
+"theirs_plain": 10051645792803,
+"bad": {
+"light vs capture's record (rows)": 0,
+"the top light vs capture's record (rows)": 0,
+"score rows' sha256 vs capture's record (positions differing)": 0
+},
+"plain_total": 10051645792803,
+"sd_total": 5972298080533
+}

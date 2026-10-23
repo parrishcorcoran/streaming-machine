@@ -1,0 +1,3749 @@
+[
+ {
+  "name": "v0 same E+T (no change)",
+  "spec": {
+   "E": {
+    "how": "same"
+   },
+   "T": {
+    "how": "same"
+   }
+  },
+  "hash": {
+   "E": "6c8ba4a34c112aa4",
+   "T": "251a0f660295faf9"
+  },
+  "photons_E": 5.013,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.0,
+  "over_int16_E": null,
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.0,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 9.2,
+  "store_E": {
+   "rc_bytes": 73951264,
+   "lzma_bytes": 83625844,
+   "rc_rounds": [
+    16308751,
+    14191037,
+    14483786,
+    13318118,
+    9894975,
+    4685380,
+    1017315,
+    51772,
+    43,
+    5,
+    5,
+    5
+   ],
+   "lzma_rounds": [
+    18632328,
+    15561576,
+    15814652,
+    14973268,
+    11598576,
+    5728744,
+    1254664,
+    61728,
+    140,
+    32,
+    32,
+    32
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219,
+    36760895,
+    29992097,
+    16416752,
+    4164579,
+    244015,
+    174,
+    0,
+    0,
+    0
+   ],
+   "side": 72,
+   "roundtrip_ok": true,
+   "bits_per_value": 15.3277,
+   "bits_per_word": 11771.7,
+   "MB": 73.951
+  },
+  "store_T": {
+   "rc_bytes": 56368221,
+   "lzma_bytes": 65257628,
+   "rc_rounds": [
+    16330329,
+    14090464,
+    13137761,
+    8992964,
+    3328344,
+    458059,
+    29887,
+    321,
+    5,
+    5,
+    5,
+    5
+   ],
+   "lzma_rounds": [
+    19491584,
+    15532384,
+    14840604,
+    10667196,
+    4117016,
+    570548,
+    37580,
+    516,
+    32,
+    32,
+    32,
+    32
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095,
+    28469830,
+    12524902,
+    1919675,
+    127707,
+    1511,
+    0,
+    0,
+    0,
+    0
+   ],
+   "side": 72,
+   "roundtrip_ok": true,
+   "bits_per_value": 11.6833,
+   "bits_per_word": 8972.8,
+   "MB": 56.368
+  },
+  "secs_store": 219.7
+ },
+ {
+  "name": "v0 CONTROL E words' values on random lines",
+  "spec": {
+   "E": {
+    "how": "wordshuffle",
+    "seed": 0
+   }
+  },
+  "hash": {
+   "E": "85b6c6d071337824"
+  },
+  "photons_E": 5.013,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9987,
+  "over_int16_E": null,
+  "words": 2,
+  "secs_words": 5.7,
+  "store_E": {
+   "rc_bytes": 75144820,
+   "lzma_bytes": 83640744,
+   "rc_rounds": [
+    17502438,
+    14191116,
+    14483590,
+    13318108,
+    9895034,
+    4685296,
+    1017336,
+    51772,
+    43,
+    5,
+    5,
+    5
+   ],
+   "lzma_rounds": [
+    18651792,
+    15564344,
+    15806080,
+    14971620,
+    11595296,
+    5735532,
+    1254272,
+    61500,
+    140,
+    32,
+    32,
+    32
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219,
+    36760895,
+    29992097,
+    16416752,
+    4164579,
+    244015,
+    174,
+    0,
+    0,
+    0
+   ],
+   "side": 72,
+   "roundtrip_ok": true,
+   "bits_per_value": 15.5751,
+   "bits_per_word": 11961.7,
+   "MB": 75.145
+  },
+  "secs_store": 122.4
+ },
+ {
+  "name": "v0 CONTROL T words' values on random lines",
+  "spec": {
+   "T": {
+    "how": "wordshuffle",
+    "seed": 1
+   }
+  },
+  "hash": {
+   "T": "4c83c60afd0a8617"
+  },
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9983,
+  "over_int16_T": 0,
+  "words": 0,
+  "secs_words": 5.9,
+  "store_T": {
+   "rc_bytes": 58561071,
+   "lzma_bytes": 65417760,
+   "rc_rounds": [
+    18522995,
+    14090490,
+    13137845,
+    8993000,
+    3328380,
+    458061,
+    29887,
+    321,
+    5,
+    5,
+    5,
+    5
+   ],
+   "lzma_rounds": [
+    19653156,
+    15536420,
+    14841628,
+    10660368,
+    4117428,
+    570364,
+    37680,
+    516,
+    32,
+    32,
+    32,
+    32
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095,
+    28469830,
+    12524902,
+    1919675,
+    127707,
+    1511,
+    0,
+    0,
+    0,
+    0
+   ],
+   "side": 72,
+   "roundtrip_ok": true,
+   "bits_per_value": 12.1378,
+   "bits_per_word": 9321.9,
+   "MB": 58.561
+  },
+  "secs_store": 89.4
+ },
+ {
+  "name": "v1 top-4 nearest E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 4
+   }
+  },
+  "hash": {
+   "E": "91bd62ba9a232c52"
+  },
+  "photons_E": 3.897,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.6918,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 9.5,
+  "store_E": {
+   "rc_bytes": 58301724,
+   "lzma_bytes": 64981856,
+   "rc_rounds": [
+    16308751,
+    14191037,
+    14483786,
+    13318118
+   ],
+   "lzma_rounds": [
+    18632328,
+    15561576,
+    15814652,
+    14973268
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219,
+    36760895
+   ],
+   "side": 32,
+   "roundtrip_ok": true,
+   "bits_per_value": 12.0841,
+   "bits_per_word": 9280.6,
+   "MB": 58.302
+  },
+  "secs_store": 94.6
+ },
+ {
+  "name": "v1 top-3 nearest E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 3
+   }
+  },
+  "hash": {
+   "E": "66c4cf92cfeb68e4"
+  },
+  "photons_E": 2.984,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9123,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 5.9,
+  "store_E": {
+   "rc_bytes": 44983601,
+   "lzma_bytes": 50008583,
+   "rc_rounds": [
+    16308751,
+    14191037,
+    14483786
+   ],
+   "lzma_rounds": [
+    18632328,
+    15561576,
+    15814652
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 9.3237,
+   "bits_per_word": 7160.6,
+   "MB": 44.984
+  },
+  "secs_store": 67.9
+ },
+ {
+  "name": "v1 top-2 nearest E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 2
+   }
+  },
+  "hash": {
+   "E": "34bb1078d1fd0492"
+  },
+  "photons_E": 1.999,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9857,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 5.0,
+  "store_E": {
+   "rc_bytes": 30499810,
+   "lzma_bytes": 34193926,
+   "rc_rounds": [
+    16308751,
+    14191037
+   ],
+   "lzma_rounds": [
+    18632328,
+    15561576
+   ],
+   "nsym": [
+    38597376,
+    38589194
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.3216,
+   "bits_per_word": 4855.0,
+   "MB": 30.5
+  },
+  "secs_store": 42.3
+ },
+ {
+  "name": "v1 top-1 nearest E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 1
+   }
+  },
+  "hash": {
+   "E": "7cb69006e2d277eb"
+  },
+  "photons_E": 1.0,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9988,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 16308768,
+   "lzma_bytes": 18632345,
+   "rc_rounds": [
+    16308751
+   ],
+   "lzma_rounds": [
+    18632328
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.3803,
+   "bits_per_word": 2596.1,
+   "MB": 16.309
+  },
+  "secs_store": 21.1
+ },
+ {
+  "name": "v1 top-4 nearest T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 4
+   }
+  },
+  "hash": {
+   "T": "f87d557388489b4a"
+  },
+  "photons_T": 3.529,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.25,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 52551550,
+   "lzma_bytes": 60531800,
+   "rc_rounds": [
+    16330329,
+    14090464,
+    13137761,
+    8992964
+   ],
+   "lzma_rounds": [
+    19491584,
+    15532384,
+    14840604,
+    10667196
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095,
+    28469830
+   ],
+   "side": 32,
+   "roundtrip_ok": true,
+   "bits_per_value": 10.8923,
+   "bits_per_word": 8365.3,
+   "MB": 52.552
+  },
+  "secs_store": 79.5
+ },
+ {
+  "name": "v1 top-3 nearest T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 3
+   }
+  },
+  "hash": {
+   "T": "2092db0d6fead55c"
+  },
+  "photons_T": 2.892,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.6366,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.7,
+  "store_T": {
+   "rc_bytes": 43558581,
+   "lzma_bytes": 49864599,
+   "rc_rounds": [
+    16330329,
+    14090464,
+    13137761
+   ],
+   "lzma_rounds": [
+    19491584,
+    15532384,
+    14840604
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 9.0283,
+   "bits_per_word": 6933.7,
+   "MB": 43.559
+  },
+  "secs_store": 63.7
+ },
+ {
+  "name": "v1 top-2 nearest T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 2
+   }
+  },
+  "hash": {
+   "T": "1dbbdc5df2dfce2d"
+  },
+  "photons_T": 1.987,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9049,
+  "over_int16_T": 0,
+  "words": 25,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 30420815,
+   "lzma_bytes": 35023990,
+   "rc_rounds": [
+    16330329,
+    14090464
+   ],
+   "lzma_rounds": [
+    19491584,
+    15532384
+   ],
+   "nsym": [
+    38597376,
+    38480133
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.3053,
+   "bits_per_word": 4842.4,
+   "MB": 30.421
+  },
+  "secs_store": 42.4
+ },
+ {
+  "name": "v1 top-1 nearest T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 1
+   }
+  },
+  "hash": {
+   "T": "0008d8dab5c464b7"
+  },
+  "photons_T": 0.999,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9878,
+  "over_int16_T": 33,
+  "words": 21,
+  "secs_words": 4.9,
+  "store_T": {
+   "rc_bytes": 16330346,
+   "lzma_bytes": 19491601,
+   "rc_rounds": [
+    16330329
+   ],
+   "lzma_rounds": [
+    19491584
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.3848,
+   "bits_per_word": 2599.5,
+   "MB": 16.33
+  },
+  "secs_store": 21.0
+ },
+ {
+  "name": "v2 top-4 dither E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 4,
+    "seed": 104
+   }
+  },
+  "hash": {
+   "E": "a6d791fdbe752d17"
+  },
+  "photons_E": 3.808,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.6918,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 9.2,
+  "store_E": {
+   "rc_bytes": 58867522,
+   "lzma_bytes": 65283512,
+   "rc_rounds": [
+    16308885,
+    14206751,
+    14531591,
+    13820263
+   ],
+   "lzma_rounds": [
+    18632460,
+    15584632,
+    15859696,
+    15206692
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219,
+    36760895
+   ],
+   "side": 32,
+   "roundtrip_ok": true,
+   "bits_per_value": 12.2014,
+   "bits_per_word": 9370.6,
+   "MB": 58.868
+  },
+  "secs_store": 89.1
+ },
+ {
+  "name": "v2 top-3 dither E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 3,
+    "seed": 103
+   }
+  },
+  "hash": {
+   "E": "58ccaf676332f54f"
+  },
+  "photons_E": 2.878,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9123,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 45726426,
+   "lzma_bytes": 50641683,
+   "rc_rounds": [
+    16309931,
+    14255838,
+    15160630
+   ],
+   "lzma_rounds": [
+    18630924,
+    15625424,
+    16385308
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 9.4776,
+   "bits_per_word": 7278.8,
+   "MB": 45.726
+  },
+  "secs_store": 67.5
+ },
+ {
+  "name": "v2 top-2 dither E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 2,
+    "seed": 102
+   }
+  },
+  "hash": {
+   "E": "36eb0f34f48bdf97"
+  },
+  "photons_E": 1.888,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9857,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 31289988,
+   "lzma_bytes": 34981754,
+   "rc_rounds": [
+    16329078,
+    14960888
+   ],
+   "lzma_rounds": [
+    18645920,
+    16335812
+   ],
+   "nsym": [
+    38597376,
+    38589194
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.4854,
+   "bits_per_word": 4980.8,
+   "MB": 31.29
+  },
+  "secs_store": 45.3
+ },
+ {
+  "name": "v2 top-1 dither E",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 1,
+    "seed": 101
+   }
+  },
+  "hash": {
+   "E": "182315f2dd3368a8"
+  },
+  "photons_E": 0.896,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9988,
+  "over_int16_E": null,
+  "words": 27,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 17051637,
+   "lzma_bytes": 19207617,
+   "rc_rounds": [
+    17051620
+   ],
+   "lzma_rounds": [
+    19207600
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.5343,
+   "bits_per_word": 2714.3,
+   "MB": 17.052
+  },
+  "secs_store": 22.2
+ },
+ {
+  "name": "v2 top-4 dither T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 4,
+    "seed": 204
+   }
+  },
+  "hash": {
+   "T": "9e229e47266450d3"
+  },
+  "photons_T": 3.488,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.25,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.9,
+  "store_T": {
+   "rc_bytes": 52784410,
+   "lzma_bytes": 60549488,
+   "rc_rounds": [
+    16330269,
+    14104210,
+    13170780,
+    9179119
+   ],
+   "lzma_rounds": [
+    19466240,
+    15549420,
+    14867360,
+    10666436
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095,
+    28469830
+   ],
+   "side": 32,
+   "roundtrip_ok": true,
+   "bits_per_value": 10.9405,
+   "bits_per_word": 8402.3,
+   "MB": 52.784
+  },
+  "secs_store": 86.1
+ },
+ {
+  "name": "v2 top-3 dither T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 3,
+    "seed": 203
+   }
+  },
+  "hash": {
+   "T": "eff5097e3ee60988"
+  },
+  "photons_T": 2.807,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.6366,
+  "over_int16_T": 0,
+  "words": 20,
+  "secs_words": 5.0,
+  "store_T": {
+   "rc_bytes": 44091423,
+   "lzma_bytes": 50122083,
+   "rc_rounds": [
+    16333050,
+    14153890,
+    13604456
+   ],
+   "lzma_rounds": [
+    19478180,
+    15590804,
+    15053072
+   ],
+   "nsym": [
+    38597376,
+    38480133,
+    36797095
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 9.1387,
+   "bits_per_word": 7018.6,
+   "MB": 44.091
+  },
+  "secs_store": 67.0
+ },
+ {
+  "name": "v2 top-2 dither T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 2,
+    "seed": 202
+   }
+  },
+  "hash": {
+   "T": "26eb69b53fe1c20f"
+  },
+  "photons_T": 1.88,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9049,
+  "over_int16_T": 0,
+  "words": 7,
+  "secs_words": 5.1,
+  "store_T": {
+   "rc_bytes": 31137890,
+   "lzma_bytes": 35617922,
+   "rc_rounds": [
+    16348650,
+    14789218
+   ],
+   "lzma_rounds": [
+    19465528,
+    16152372
+   ],
+   "nsym": [
+    38597376,
+    38480133
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.4539,
+   "bits_per_word": 4956.6,
+   "MB": 31.138
+  },
+  "secs_store": 44.6
+ },
+ {
+  "name": "v2 top-1 dither T",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 1,
+    "seed": 201
+   }
+  },
+  "hash": {
+   "T": "0b4c92cddf713112"
+  },
+  "photons_T": 0.896,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9878,
+  "over_int16_T": 9178,
+  "words": 0,
+  "secs_words": 5.1,
+  "store_T": {
+   "rc_bytes": 17036830,
+   "lzma_bytes": 20017729,
+   "rc_rounds": [
+    17036813
+   ],
+   "lzma_rounds": [
+    20017712
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.5312,
+   "bits_per_word": 2712.0,
+   "MB": 17.037
+  },
+  "secs_store": 21.9
+ },
+ {
+  "name": "v2 top-2 dither E (second seed)",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 2,
+    "seed": 150
+   }
+  },
+  "hash": {
+   "E": "08186ef728fb92d9"
+  },
+  "photons_E": 1.888,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9857,
+  "over_int16_E": null,
+  "words": 28,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 31291111,
+   "lzma_bytes": 34974874,
+   "rc_rounds": [
+    16329115,
+    14961974
+   ],
+   "lzma_rounds": [
+    18642836,
+    16332016
+   ],
+   "nsym": [
+    38597376,
+    38589194
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.4856,
+   "bits_per_word": 4981.0,
+   "MB": 31.291
+  },
+  "secs_store": 43.4
+ },
+ {
+  "name": "v2 top-2 dither T (second seed)",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 2,
+    "seed": 250
+   }
+  },
+  "hash": {
+   "T": "b77faa1a6713fb62"
+  },
+  "photons_T": 1.88,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9049,
+  "over_int16_T": 0,
+  "words": 8,
+  "secs_words": 5.0,
+  "store_T": {
+   "rc_bytes": 31137380,
+   "lzma_bytes": 35646306,
+   "rc_rounds": [
+    16348662,
+    14788696
+   ],
+   "lzma_rounds": [
+    19496360,
+    16149924
+   ],
+   "nsym": [
+    38597376,
+    38480133
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.4538,
+   "bits_per_word": 4956.5,
+   "MB": 31.137
+  },
+  "secs_store": 43.9
+ },
+ {
+  "name": "v3 cut b=10 nearest E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 10
+   }
+  },
+  "hash": {
+   "E": "0b97d2635bc13027"
+  },
+  "photons_E": 3.14,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9772,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 8.5,
+  "store_E": {
+   "q_bytes": 46346574,
+   "place_bytes": 6742,
+   "side": 22,
+   "width": 12,
+   "lzma_bytes": 49897078,
+   "roundtrip_ok": true,
+   "rc_bytes": 46353338,
+   "bits_per_value": 9.6076,
+   "bits_per_word": 7378.6,
+   "MB": 46.353
+  },
+  "secs_store": 29.7
+ },
+ {
+  "name": "v3 cut b=8 nearest E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 8
+   }
+  },
+  "hash": {
+   "E": "4383ef84a5bd6d1b"
+  },
+  "photons_E": 2.472,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9947,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 4.3,
+  "store_E": {
+   "q_bytes": 36498208,
+   "place_bytes": 6748,
+   "side": 22,
+   "width": 10,
+   "lzma_bytes": 39125942,
+   "roundtrip_ok": true,
+   "rc_bytes": 36504978,
+   "bits_per_value": 7.5663,
+   "bits_per_word": 5810.9,
+   "MB": 36.505
+  },
+  "secs_store": 29.1
+ },
+ {
+  "name": "v3 cut b=6 nearest E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 6
+   }
+  },
+  "hash": {
+   "E": "bfef2b11db29f4ad"
+  },
+  "photons_E": 1.804,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9987,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 4.4,
+  "store_E": {
+   "q_bytes": 26737162,
+   "place_bytes": 6742,
+   "side": 22,
+   "width": 8,
+   "lzma_bytes": 27669038,
+   "roundtrip_ok": true,
+   "rc_bytes": 26743926,
+   "bits_per_value": 5.5432,
+   "bits_per_word": 4257.1,
+   "MB": 26.744
+  },
+  "secs_store": 13.0
+ },
+ {
+  "name": "v3 cut b=4 nearest E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 4
+   }
+  },
+  "hash": {
+   "E": "3959665dd2d2af85"
+  },
+  "photons_E": 1.139,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9997,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 4.4,
+  "store_E": {
+   "q_bytes": 17072152,
+   "place_bytes": 6745,
+   "side": 22,
+   "width": 6,
+   "lzma_bytes": 18922214,
+   "roundtrip_ok": true,
+   "rc_bytes": 17078919,
+   "bits_per_value": 3.5399,
+   "bits_per_word": 2718.7,
+   "MB": 17.079
+  },
+  "secs_store": 21.4
+ },
+ {
+  "name": "v3 cut b=12 nearest T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 12
+   }
+  },
+  "hash": {
+   "T": "dc4ad508e08f468f"
+  },
+  "photons_T": 2.818,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.8752,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.4,
+  "store_T": {
+   "q_bytes": 41235276,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 13,
+   "lzma_bytes": 45936866,
+   "roundtrip_ok": true,
+   "rc_bytes": 41236010,
+   "bits_per_value": 8.5469,
+   "bits_per_word": 6564.0,
+   "MB": 41.236
+  },
+  "secs_store": 31.4
+ },
+ {
+  "name": "v3 cut b=10 nearest T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 10
+   }
+  },
+  "hash": {
+   "T": "fab9d847d102b620"
+  },
+  "photons_T": 2.151,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9688,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.4,
+  "store_T": {
+   "q_bytes": 31412525,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 11,
+   "lzma_bytes": 35381250,
+   "roundtrip_ok": true,
+   "rc_bytes": 31413259,
+   "bits_per_value": 6.511,
+   "bits_per_word": 5000.4,
+   "MB": 31.413
+  },
+  "secs_store": 29.2
+ },
+ {
+  "name": "v3 cut b=8 nearest T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 8
+   }
+  },
+  "hash": {
+   "T": "2b1a9567f1a539d0"
+  },
+  "photons_T": 1.482,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9922,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.4,
+  "store_T": {
+   "q_bytes": 21716962,
+   "place_bytes": 711,
+   "side": 22,
+   "width": 9,
+   "lzma_bytes": 25321710,
+   "roundtrip_ok": true,
+   "rc_bytes": 21717695,
+   "bits_per_value": 4.5014,
+   "bits_per_word": 3457.1,
+   "MB": 21.718
+  },
+  "secs_store": 31.2
+ },
+ {
+  "name": "v3 cut b=6 nearest T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 6
+   }
+  },
+  "hash": {
+   "T": "4391aecc4f9eddaf"
+  },
+  "photons_T": 0.821,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.998,
+  "over_int16_T": 0,
+  "words": 20,
+  "secs_words": 4.4,
+  "store_T": {
+   "q_bytes": 12213877,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 7,
+   "lzma_bytes": 15059682,
+   "roundtrip_ok": true,
+   "rc_bytes": 12214611,
+   "bits_per_value": 2.5317,
+   "bits_per_word": 1944.3,
+   "MB": 12.215
+  },
+  "secs_store": 20.8
+ },
+ {
+  "name": "v4 cut b=10 dither E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 10,
+    "seed": 310
+   }
+  },
+  "hash": {
+   "E": "110b7fdccb95e730"
+  },
+  "photons_E": 3.139,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9772,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 8.8,
+  "store_E": {
+   "q_bytes": 46349899,
+   "place_bytes": 6742,
+   "side": 22,
+   "width": 12,
+   "lzma_bytes": 49894346,
+   "roundtrip_ok": true,
+   "rc_bytes": 46356663,
+   "bits_per_value": 9.6083,
+   "bits_per_word": 7379.1,
+   "MB": 46.357
+  },
+  "secs_store": 29.3
+ },
+ {
+  "name": "v4 cut b=8 dither E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 8,
+    "seed": 308
+   }
+  },
+  "hash": {
+   "E": "d1b56aa5dcb2614b"
+  },
+  "photons_E": 2.471,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9947,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 4.6,
+  "store_E": {
+   "q_bytes": 36508323,
+   "place_bytes": 6748,
+   "side": 22,
+   "width": 10,
+   "lzma_bytes": 39116242,
+   "roundtrip_ok": true,
+   "rc_bytes": 36515093,
+   "bits_per_value": 7.5684,
+   "bits_per_word": 5812.5,
+   "MB": 36.515
+  },
+  "secs_store": 28.3
+ },
+ {
+  "name": "v4 cut b=6 dither E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 6,
+    "seed": 306
+   }
+  },
+  "hash": {
+   "E": "979dc3ed3dca46f0"
+  },
+  "photons_E": 1.805,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9987,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 4.6,
+  "store_E": {
+   "q_bytes": 26757624,
+   "place_bytes": 6742,
+   "side": 22,
+   "width": 8,
+   "lzma_bytes": 27685730,
+   "roundtrip_ok": true,
+   "rc_bytes": 26764388,
+   "bits_per_value": 5.5474,
+   "bits_per_word": 4260.4,
+   "MB": 26.764
+  },
+  "secs_store": 13.0
+ },
+ {
+  "name": "v4 cut b=4 dither E",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 4,
+    "seed": 304
+   }
+  },
+  "hash": {
+   "E": "eb00f841ffabae98"
+  },
+  "photons_E": 1.141,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9997,
+  "over_int16_E": null,
+  "words": 28,
+  "secs_words": 4.6,
+  "store_E": {
+   "q_bytes": 17143165,
+   "place_bytes": 6745,
+   "side": 22,
+   "width": 6,
+   "lzma_bytes": 18977046,
+   "roundtrip_ok": true,
+   "rc_bytes": 17149932,
+   "bits_per_value": 3.5546,
+   "bits_per_word": 2730.0,
+   "MB": 17.15
+  },
+  "secs_store": 22.0
+ },
+ {
+  "name": "v4 cut b=12 dither T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 12,
+    "seed": 412
+   }
+  },
+  "hash": {
+   "T": "1954450fad01cef4"
+  },
+  "photons_T": 2.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.8752,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.7,
+  "store_T": {
+   "q_bytes": 41233869,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 13,
+   "lzma_bytes": 45932770,
+   "roundtrip_ok": true,
+   "rc_bytes": 41234603,
+   "bits_per_value": 8.5466,
+   "bits_per_word": 6563.8,
+   "MB": 41.235
+  },
+  "secs_store": 33.0
+ },
+ {
+  "name": "v4 cut b=10 dither T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 10,
+    "seed": 410
+   }
+  },
+  "hash": {
+   "T": "273c470899f5b633"
+  },
+  "photons_T": 2.149,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9688,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.6,
+  "store_T": {
+   "q_bytes": 31424511,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 11,
+   "lzma_bytes": 35405978,
+   "roundtrip_ok": true,
+   "rc_bytes": 31425245,
+   "bits_per_value": 6.5134,
+   "bits_per_word": 5002.3,
+   "MB": 31.425
+  },
+  "secs_store": 30.1
+ },
+ {
+  "name": "v4 cut b=8 dither T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 8,
+    "seed": 408
+   }
+  },
+  "hash": {
+   "T": "ef1b61bcee97ac9e"
+  },
+  "photons_T": 1.483,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9922,
+  "over_int16_T": 0,
+  "words": 23,
+  "secs_words": 4.5,
+  "store_T": {
+   "q_bytes": 21753498,
+   "place_bytes": 711,
+   "side": 22,
+   "width": 9,
+   "lzma_bytes": 25359122,
+   "roundtrip_ok": true,
+   "rc_bytes": 21754231,
+   "bits_per_value": 4.509,
+   "bits_per_word": 3462.9,
+   "MB": 21.754
+  },
+  "secs_store": 31.5
+ },
+ {
+  "name": "v4 cut b=6 dither T",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 6,
+    "seed": 406
+   }
+  },
+  "hash": {
+   "T": "9f5b531394c7002d"
+  },
+  "photons_T": 0.83,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.998,
+  "over_int16_T": 0,
+  "words": 15,
+  "secs_words": 4.5,
+  "store_T": {
+   "q_bytes": 12416546,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 7,
+   "lzma_bytes": 15254738,
+   "roundtrip_ok": true,
+   "rc_bytes": 12417280,
+   "bits_per_value": 2.5737,
+   "bits_per_word": 1976.6,
+   "MB": 12.417
+  },
+  "secs_store": 21.1
+ },
+ {
+  "name": "v5a both: E cut b=4 + T cut b=12 (nearest)",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 4
+   },
+   "T": {
+    "how": "cut",
+    "b": 12
+   }
+  },
+  "hash": {
+   "E": "3959665dd2d2af85",
+   "T": "dc4ad508e08f468f"
+  },
+  "photons_E": 1.139,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9997,
+  "over_int16_E": null,
+  "photons_T": 2.818,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.8752,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 8.7,
+  "store_E": {
+   "q_bytes": 17072152,
+   "place_bytes": 6745,
+   "side": 22,
+   "width": 6,
+   "lzma_bytes": 18922214,
+   "roundtrip_ok": true,
+   "rc_bytes": 17078919,
+   "bits_per_value": 3.5399,
+   "bits_per_word": 2718.7,
+   "MB": 17.079,
+   "same_table_as": "v3 cut b=4 nearest E"
+  },
+  "store_T": {
+   "q_bytes": 41235276,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 13,
+   "lzma_bytes": 45936866,
+   "roundtrip_ok": true,
+   "rc_bytes": 41236010,
+   "bits_per_value": 8.5469,
+   "bits_per_word": 6564.0,
+   "MB": 41.236,
+   "same_table_as": "v3 cut b=12 nearest T"
+  },
+  "secs_store": 0.4
+ },
+ {
+  "name": "v5b both: E cut b=4 + T cut b=10 (nearest)",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 4
+   },
+   "T": {
+    "how": "cut",
+    "b": 10
+   }
+  },
+  "hash": {
+   "E": "3959665dd2d2af85",
+   "T": "fab9d847d102b620"
+  },
+  "photons_E": 1.139,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9997,
+  "over_int16_E": null,
+  "photons_T": 2.151,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9688,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.6,
+  "store_E": {
+   "q_bytes": 17072152,
+   "place_bytes": 6745,
+   "side": 22,
+   "width": 6,
+   "lzma_bytes": 18922214,
+   "roundtrip_ok": true,
+   "rc_bytes": 17078919,
+   "bits_per_value": 3.5399,
+   "bits_per_word": 2718.7,
+   "MB": 17.079,
+   "same_table_as": "v3 cut b=4 nearest E"
+  },
+  "store_T": {
+   "q_bytes": 31412525,
+   "place_bytes": 712,
+   "side": 22,
+   "width": 11,
+   "lzma_bytes": 35381250,
+   "roundtrip_ok": true,
+   "rc_bytes": 31413259,
+   "bits_per_value": 6.511,
+   "bits_per_word": 5000.4,
+   "MB": 31.413,
+   "same_table_as": "v3 cut b=10 nearest T"
+  },
+  "secs_store": 0.4
+ },
+ {
+  "name": "v5c both: E top-1 + T cut b=8 (nearest)",
+  "spec": {
+   "E": {
+    "how": "topk",
+    "k": 1
+   },
+   "T": {
+    "how": "cut",
+    "b": 8
+   }
+  },
+  "hash": {
+   "E": "7cb69006e2d277eb",
+   "T": "2b1a9567f1a539d0"
+  },
+  "photons_E": 1.0,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9988,
+  "over_int16_E": null,
+  "photons_T": 1.482,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9922,
+  "over_int16_T": 0,
+  "words": 26,
+  "secs_words": 5.2,
+  "store_E": {
+   "rc_bytes": 16308768,
+   "lzma_bytes": 18632345,
+   "rc_rounds": [
+    16308751
+   ],
+   "lzma_rounds": [
+    18632328
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.3803,
+   "bits_per_word": 2596.1,
+   "MB": 16.309,
+   "same_table_as": "v1 top-1 nearest E"
+  },
+  "store_T": {
+   "q_bytes": 21716962,
+   "place_bytes": 711,
+   "side": 22,
+   "width": 9,
+   "lzma_bytes": 25321710,
+   "roundtrip_ok": true,
+   "rc_bytes": 21717695,
+   "bits_per_value": 4.5014,
+   "bits_per_word": 3457.1,
+   "MB": 21.718,
+   "same_table_as": "v3 cut b=8 nearest T"
+  },
+  "secs_store": 1.0
+ },
+ {
+  "name": "v6 plate + top-3 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 3
+    }
+   }
+  },
+  "hash": {
+   "E": "e6f3e5d15f11eb8e"
+  },
+  "photons_E": 4.999,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.901,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 8.9,
+  "store_E": {
+   "rc_bytes": 45896427,
+   "lzma_bytes": 50140683,
+   "rc_rounds": [
+    17258333,
+    14194585,
+    14441690
+   ],
+   "lzma_rounds": [
+    18768520,
+    15574568,
+    15795776
+   ],
+   "nsym": [
+    38597376,
+    38586227,
+    38354668
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 9.5129,
+   "bits_per_word": 7305.9,
+   "MB": 45.896
+  },
+  "secs_store": 64.4
+ },
+ {
+  "name": "v6 plate + top-2 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 2
+    }
+   }
+  },
+  "hash": {
+   "E": "6c465e3b49036da3"
+  },
+  "photons_E": 5.015,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9832,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 5.0,
+  "store_E": {
+   "rc_bytes": 31454732,
+   "lzma_bytes": 34344902,
+   "rc_rounds": [
+    17258333,
+    14194585
+   ],
+   "lzma_rounds": [
+    18768520,
+    15574568
+   ],
+   "nsym": [
+    38597376,
+    38586227
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 6.5196,
+   "bits_per_word": 5007.0,
+   "MB": 31.455
+  },
+  "secs_store": 43.0
+ },
+ {
+  "name": "v6 plate + top-1 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 1
+    }
+   }
+  },
+  "hash": {
+   "E": "27749d0bf1b656e7"
+  },
+  "photons_E": 4.97,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9985,
+  "over_int16_E": null,
+  "words": 29,
+  "secs_words": 5.0,
+  "store_E": {
+   "rc_bytes": 17260142,
+   "lzma_bytes": 18770329,
+   "rc_rounds": [
+    17258333
+   ],
+   "lzma_rounds": [
+    18768520
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 3.5775,
+   "bits_per_word": 2747.5,
+   "MB": 17.26
+  },
+  "secs_store": 21.4
+ },
+ {
+  "name": "v6 plate + top-3 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 3
+    }
+   }
+  },
+  "hash": {
+   "T": "6ab62c2589f007d0"
+  },
+  "photons_T": 3.81,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.6132,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.9,
+  "store_T": {
+   "rc_bytes": 44163562,
+   "lzma_bytes": 49138327,
+   "rc_rounds": [
+    17207486,
+    13973220,
+    12981429
+   ],
+   "lzma_rounds": [
+    18963372,
+    15491096,
+    14682432
+   ],
+   "nsym": [
+    38597376,
+    38417404,
+    36449193
+   ],
+   "side": 27,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 9.1537,
+   "bits_per_word": 7030.0,
+   "MB": 44.164
+  },
+  "secs_store": 63.8
+ },
+ {
+  "name": "v6 plate + top-2 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 2
+    }
+   }
+  },
+  "hash": {
+   "T": "fbc0cb3ce98f61a8"
+  },
+  "photons_T": 3.811,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.8932,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 31182128,
+   "lzma_bytes": 34455890,
+   "rc_rounds": [
+    17207486,
+    13973220
+   ],
+   "lzma_rounds": [
+    18963372,
+    15491096
+   ],
+   "nsym": [
+    38597376,
+    38417404
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 6.4631,
+   "bits_per_word": 4963.6,
+   "MB": 31.182
+  },
+  "secs_store": 44.1
+ },
+ {
+  "name": "v6 plate + top-1 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "topk",
+     "k": 1
+    }
+   }
+  },
+  "hash": {
+   "T": "1bff5b46669d36dd"
+  },
+  "photons_T": 3.753,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9845,
+  "over_int16_T": 0,
+  "words": 24,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 17208903,
+   "lzma_bytes": 18964789,
+   "rc_rounds": [
+    17207486
+   ],
+   "lzma_rounds": [
+    18963372
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 3.5669,
+   "bits_per_word": 2739.3,
+   "MB": 17.209
+  },
+  "secs_store": 26.0
+ },
+ {
+  "name": "v6 plate + cut b=6 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 6
+    }
+   }
+  },
+  "hash": {
+   "E": "8a3aa88dec8aac18"
+  },
+  "photons_E": 5.019,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9982,
+  "over_int16_E": null,
+  "words": 30,
+  "secs_words": 4.3,
+  "store_E": {
+   "q_bytes": 28672460,
+   "place_bytes": 4325,
+   "side": 22,
+   "width": 8,
+   "lzma_bytes": 28955750,
+   "roundtrip_ok": true,
+   "rc_bytes": 28678599,
+   "plate_bytes": 1792,
+   "bits_per_value": 5.9442,
+   "bits_per_word": 4565.1,
+   "MB": 28.679
+  },
+  "secs_store": 12.6
+ },
+ {
+  "name": "v6 plate + cut b=4 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 4
+    }
+   }
+  },
+  "hash": {
+   "E": "73d0db891d06350a"
+  },
+  "photons_E": 5.028,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9995,
+  "over_int16_E": null,
+  "words": 28,
+  "secs_words": 4.3,
+  "store_E": {
+   "q_bytes": 18988587,
+   "place_bytes": 4329,
+   "side": 22,
+   "width": 6,
+   "lzma_bytes": 20211130,
+   "roundtrip_ok": true,
+   "rc_bytes": 18994730,
+   "plate_bytes": 1792,
+   "bits_per_value": 3.937,
+   "bits_per_word": 3023.6,
+   "MB": 18.995
+  },
+  "secs_store": 22.8
+ },
+ {
+  "name": "v6 plate + cut b=2 nearest E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 2
+    }
+   }
+  },
+  "hash": {
+   "E": "74d25a65f220e68f"
+  },
+  "photons_E": 4.879,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 12,
+  "secs_words": 4.5,
+  "store_E": {
+   "q_bytes": 9648731,
+   "place_bytes": 4325,
+   "side": 22,
+   "width": 4,
+   "lzma_bytes": 10570434,
+   "roundtrip_ok": true,
+   "rc_bytes": 9654870,
+   "plate_bytes": 1792,
+   "bits_per_value": 2.0011,
+   "bits_per_word": 1536.9,
+   "MB": 9.655
+  },
+  "secs_store": 23.9
+ },
+ {
+  "name": "v6 plate + cut b=10 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 10
+    }
+   }
+  },
+  "hash": {
+   "T": "07fba8aa0d9db152"
+  },
+  "photons_T": 3.805,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.7557,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.5,
+  "store_T": {
+   "q_bytes": 45711414,
+   "place_bytes": 4592,
+   "side": 22,
+   "width": 12,
+   "lzma_bytes": 48642122,
+   "roundtrip_ok": true,
+   "rc_bytes": 45717428,
+   "plate_bytes": 1400,
+   "bits_per_value": 9.4758,
+   "bits_per_word": 7277.4,
+   "MB": 45.717
+  },
+  "secs_store": 35.0
+ },
+ {
+  "name": "v6 plate + cut b=8 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 8
+    }
+   }
+  },
+  "hash": {
+   "T": "6507fc1a963c69e9"
+  },
+  "photons_T": 3.821,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9389,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.3,
+  "store_T": {
+   "q_bytes": 35959869,
+   "place_bytes": 4593,
+   "side": 22,
+   "width": 10,
+   "lzma_bytes": 37714782,
+   "roundtrip_ok": true,
+   "rc_bytes": 35965884,
+   "plate_bytes": 1400,
+   "bits_per_value": 7.4546,
+   "bits_per_word": 5725.1,
+   "MB": 35.966
+  },
+  "secs_store": 28.9
+ },
+ {
+  "name": "v6 plate + cut b=6 nearest T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "cut",
+     "b": 6
+    }
+   }
+  },
+  "hash": {
+   "T": "fc1d78323b7c471f"
+  },
+  "photons_T": 3.819,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9845,
+  "over_int16_T": 0,
+  "words": 26,
+  "secs_words": 4.3,
+  "store_T": {
+   "q_bytes": 26239635,
+   "place_bytes": 4595,
+   "side": 22,
+   "width": 8,
+   "lzma_bytes": 26647234,
+   "roundtrip_ok": true,
+   "rc_bytes": 26245652,
+   "plate_bytes": 1400,
+   "bits_per_value": 5.4399,
+   "bits_per_word": 4177.8,
+   "MB": 26.246
+  },
+  "secs_store": 14.2
+ },
+ {
+  "name": "v8 check: E unchanged, T printed from E",
+  "spec": {
+   "E": {
+    "how": "same"
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "6c8ba4a34c112aa4",
+   "T": "f148a8ec4cf53f7f"
+  },
+  "photons_E": 5.013,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.0,
+  "over_int16_E": null,
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.0233,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 9.1,
+  "store_E": {
+   "rc_bytes": 73951264,
+   "lzma_bytes": 83625844,
+   "rc_rounds": [
+    16308751,
+    14191037,
+    14483786,
+    13318118,
+    9894975,
+    4685380,
+    1017315,
+    51772,
+    43,
+    5,
+    5,
+    5
+   ],
+   "lzma_rounds": [
+    18632328,
+    15561576,
+    15814652,
+    14973268,
+    11598576,
+    5728744,
+    1254664,
+    61728,
+    140,
+    32,
+    32,
+    32
+   ],
+   "nsym": [
+    38597376,
+    38589194,
+    38400219,
+    36760895,
+    29992097,
+    16416752,
+    4164579,
+    244015,
+    174,
+    0,
+    0,
+    0
+   ],
+   "side": 72,
+   "roundtrip_ok": true,
+   "bits_per_value": 15.3277,
+   "bits_per_word": 11771.7,
+   "MB": 73.951,
+   "same_table_as": "v0 same E+T (no change)"
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 0.3
+ },
+ {
+  "name": "v8 E cut b=12 nearest, T printed",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "403d9aa4073ad708",
+   "T": "2ccd0ebefcd5dd3b"
+  },
+  "photons_E": 3.805,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9123,
+  "over_int16_E": null,
+  "photons_T": 3.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.2838,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 5.0,
+  "store_E": {
+   "q_bytes": 56260008,
+   "place_bytes": 6745,
+   "side": 22,
+   "width": 14,
+   "lzma_bytes": 59901986,
+   "roundtrip_ok": true,
+   "rc_bytes": 56266775,
+   "bits_per_value": 11.6623,
+   "bits_per_word": 8956.6,
+   "MB": 56.267
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 25.7
+ },
+ {
+  "name": "v8 E cut b=10 nearest, T printed",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 10
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "0b97d2635bc13027",
+   "T": "073087e1f2bda90b"
+  },
+  "photons_E": 3.14,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9772,
+  "over_int16_E": null,
+  "photons_T": 3.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.7322,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.8,
+  "store_E": {
+   "q_bytes": 46346574,
+   "place_bytes": 6742,
+   "side": 22,
+   "width": 12,
+   "lzma_bytes": 49897078,
+   "roundtrip_ok": true,
+   "rc_bytes": 46353338,
+   "bits_per_value": 9.6076,
+   "bits_per_word": 7378.6,
+   "MB": 46.353,
+   "same_table_as": "v3 cut b=10 nearest E"
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 0.4
+ },
+ {
+  "name": "v8 E cut b=8 nearest, T printed",
+  "spec": {
+   "E": {
+    "how": "cut",
+    "b": 8
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "4383ef84a5bd6d1b",
+   "T": "363ab160ff59377d"
+  },
+  "photons_E": 2.472,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9947,
+  "over_int16_E": null,
+  "photons_T": 3.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9285,
+  "over_int16_T": 0,
+  "words": 23,
+  "secs_words": 4.8,
+  "store_E": {
+   "q_bytes": 36498208,
+   "place_bytes": 6748,
+   "side": 22,
+   "width": 10,
+   "lzma_bytes": 39125942,
+   "roundtrip_ok": true,
+   "rc_bytes": 36504978,
+   "bits_per_value": 7.5663,
+   "bits_per_word": 5810.9,
+   "MB": 36.505,
+   "same_table_as": "v3 cut b=8 nearest E"
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 0.4
+ },
+ {
+  "name": "v8 E lens exposure c=31, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 31
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "0773348c78034c7d",
+   "T": "a70762b5cc12003b"
+  },
+  "photons_E": 2.694,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9891,
+  "over_int16_E": null,
+  "photons_T": 3.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9006,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.8,
+  "store_E": {
+   "rc_bytes": 39462890,
+   "lzma_bytes": 44053437,
+   "width": 13,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 8.1794,
+   "bits_per_word": 6281.8,
+   "MB": 39.463
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 34.4
+ },
+ {
+  "name": "v8 E lens exposure c=33, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 33
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "f87f6defa46b00de",
+   "T": "368f974bee4ee8d8"
+  },
+  "photons_E": 2.028,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9962,
+  "over_int16_E": null,
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9746,
+  "over_int16_T": 0,
+  "words": 18,
+  "secs_words": 4.7,
+  "store_E": {
+   "rc_bytes": 29701614,
+   "lzma_bytes": 33645437,
+   "width": 11,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.1562,
+   "bits_per_word": 4728.0,
+   "MB": 29.702
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 34.2
+ },
+ {
+  "name": "v8 E lens exposure c=35, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 35
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "69ba159545d9fbe1",
+   "T": "a470642a8bd25f48"
+  },
+  "photons_E": 1.364,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9995,
+  "over_int16_E": null,
+  "photons_T": 3.855,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9939,
+  "over_int16_T": 0,
+  "words": 18,
+  "secs_words": 4.9,
+  "store_E": {
+   "rc_bytes": 20042500,
+   "lzma_bytes": 23434701,
+   "width": 9,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 4.1542,
+   "bits_per_word": 3190.4,
+   "MB": 20.043
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 32.4
+ },
+ {
+  "name": "v8b E lens exposure c=31 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 31,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "c745127d613248b0",
+   "T": "7ebc6b9c85839b22"
+  },
+  "photons_E": 2.699,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9891,
+  "over_int16_E": null,
+  "photons_T": 3.816,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.8977,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 8.8,
+  "store_E": {
+   "rc_bytes": 39508211,
+   "lzma_bytes": 44065297,
+   "width": 13,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 8.1888,
+   "bits_per_word": 6289.0,
+   "MB": 39.508
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 31.5
+ },
+ {
+  "name": "v8b E lens exposure c=33 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 33,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "493d6afe3a2e0aed",
+   "T": "81c0e61a7db692e7"
+  },
+  "photons_E": 2.04,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9962,
+  "over_int16_E": null,
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9716,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.7,
+  "store_E": {
+   "rc_bytes": 29792595,
+   "lzma_bytes": 33681897,
+   "width": 11,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.1751,
+   "bits_per_word": 4742.4,
+   "MB": 29.793
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 34.4
+ },
+ {
+  "name": "v8b E lens exposure c=35 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 35,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "9ee65661dda98933",
+   "T": "4777dba85a10ae17"
+  },
+  "photons_E": 1.38,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9995,
+  "over_int16_E": null,
+  "photons_T": 3.853,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9923,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.6,
+  "store_E": {
+   "rc_bytes": 20153710,
+   "lzma_bytes": 23511245,
+   "width": 9,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 4.1772,
+   "bits_per_word": 3208.1,
+   "MB": 20.154
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 35.7
+ },
+ {
+  "name": "v7 sign only E",
+  "spec": {
+   "E": {
+    "how": "sign"
+   }
+  },
+  "hash": {
+   "E": "6eb4eb84941b0011"
+  },
+  "photons_E": 5.017,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 15,
+  "secs_words": 4.3,
+  "store_E": {
+   "rc_bytes": 4353472,
+   "lzma_bytes": 4899331,
+   "sign_bytes": 4280039,
+   "loud_bytes": 73406,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 0.9023,
+   "bits_per_word": 693.0,
+   "MB": 4.353
+  },
+  "secs_store": 0.9
+ },
+ {
+  "name": "v7 CONTROL sign only, signs on random lines E",
+  "spec": {
+   "E": {
+    "how": "sign",
+    "shuffle": 701
+   }
+  },
+  "hash": {
+   "E": "8ba9210c9e5b0183"
+  },
+  "photons_E": 5.017,
+  "photons_E_before": 5.013,
+  "changed_share_E": 1.0,
+  "over_int16_E": null,
+  "words": 3,
+  "secs_words": 5.4,
+  "store_E": {
+   "rc_bytes": 4953147,
+   "lzma_bytes": 4902259,
+   "sign_bytes": 4879714,
+   "loud_bytes": 73406,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 1.0161,
+   "bits_per_word": 780.4,
+   "MB": 4.902
+  },
+  "secs_store": 2.0
+ },
+ {
+  "name": "v7 plate + sign of departure E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "sign"
+    }
+   }
+  },
+  "hash": {
+   "E": "f00fa519aa10f1b8"
+  },
+  "photons_E": 5.103,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 5.366,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 16,
+  "secs_words": 4.4,
+  "store_E": {
+   "rc_bytes": 4919926,
+   "lzma_bytes": 4901719,
+   "sign_bytes": 4845175,
+   "loud_bytes": 72932,
+   "side": 27,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 1.016,
+   "bits_per_word": 780.3,
+   "MB": 4.902
+  },
+  "secs_store": 0.9
+ },
+ {
+  "name": "v7 sign by chance E",
+  "spec": {
+   "E": {
+    "how": "signdither",
+    "seed": 702
+   }
+  },
+  "hash": {
+   "E": "a7436303bb69c590"
+  },
+  "photons_E": 5.883,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9987,
+  "over_int16_E": null,
+  "words": 6,
+  "secs_words": 4.5,
+  "store_E": {
+   "rc_bytes": 4907771,
+   "lzma_bytes": 4923231,
+   "sign_bytes": 4812623,
+   "loud_bytes": 95121,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 1.0172,
+   "bits_per_word": 781.2,
+   "MB": 4.908
+  },
+  "secs_store": 1.2
+ },
+ {
+  "name": "v7 loudest 16 raw E",
+  "spec": {
+   "E": {
+    "how": "loud",
+    "n": 16
+   }
+  },
+  "hash": {
+   "E": "c9ce0c69281caafc"
+  },
+  "photons_E": 0.021,
+  "photons_E_before": 5.013,
+  "changed_share_E": 1.0,
+  "over_int16_E": null,
+  "words": 0,
+  "secs_words": 5.9,
+  "store_E": {
+   "rc_bytes": 1208054,
+   "lzma_bytes": 1309365,
+   "rc_rounds": [
+    1208037
+   ],
+   "lzma_rounds": [
+    1309348
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 0.2504,
+   "bits_per_word": 192.3,
+   "MB": 1.208
+  },
+  "secs_store": 8.3
+ },
+ {
+  "name": "v7 plate + loudest 64 E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 64
+    }
+   }
+  },
+  "hash": {
+   "E": "08243a06ce9a63d5"
+  },
+  "photons_E": 4.502,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 0.083,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 2,
+  "secs_words": 5.9,
+  "store_E": {
+   "rc_bytes": 3083172,
+   "lzma_bytes": 3163029,
+   "rc_rounds": [
+    3081363
+   ],
+   "lzma_rounds": [
+    3161220
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 0.639,
+   "bits_per_word": 490.8,
+   "MB": 3.083
+  },
+  "secs_store": 19.5
+ },
+ {
+  "name": "v7 plate + loudest 16 E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 16
+    }
+   }
+  },
+  "hash": {
+   "E": "eca65e0b1d09b3f6"
+  },
+  "photons_E": 4.443,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 0.021,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 0,
+  "secs_words": 5.9,
+  "store_E": {
+   "rc_bytes": 1420861,
+   "lzma_bytes": 1399685,
+   "rc_rounds": [
+    1419052
+   ],
+   "lzma_rounds": [
+    1397876
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 0.2901,
+   "bits_per_word": 222.8,
+   "MB": 1.4
+  },
+  "secs_store": 8.2
+ },
+ {
+  "name": "v7 plate + loudest 2 E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 2
+    }
+   }
+  },
+  "hash": {
+   "E": "31c96c36af5b837d"
+  },
+  "photons_E": 4.426,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 0.003,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 0,
+  "secs_words": 5.9,
+  "store_E": {
+   "rc_bytes": 757069,
+   "lzma_bytes": 326853,
+   "rc_rounds": [
+    755260
+   ],
+   "lzma_rounds": [
+    325044
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 0.0677,
+   "bits_per_word": 52.0,
+   "MB": 0.327
+  },
+  "secs_store": 4.6
+ },
+ {
+  "name": "v7 CONTROL plate + 16 random lines E",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 16,
+     "random_lines": 703
+    }
+   }
+  },
+  "hash": {
+   "E": "d440ae5482e16786"
+  },
+  "photons_E": 4.435,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 0.021,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "words": 0,
+  "secs_words": 6.1,
+  "store_E": {
+   "rc_bytes": 1627456,
+   "lzma_bytes": 1584525,
+   "rc_rounds": [
+    1625647
+   ],
+   "lzma_rounds": [
+    1582716
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 0.3284,
+   "bits_per_word": 252.2,
+   "MB": 1.585
+  },
+  "secs_store": 8.8
+ },
+ {
+  "name": "v7 sign only T",
+  "spec": {
+   "T": {
+    "how": "sign"
+   }
+  },
+  "hash": {
+   "T": "95a33d43220617d0"
+  },
+  "photons_T": 4.412,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9994,
+  "over_int16_T": 0,
+  "words": 15,
+  "secs_words": 4.3,
+  "store_T": {
+   "rc_bytes": 4333101,
+   "lzma_bytes": 4879759,
+   "sign_bytes": 4278163,
+   "loud_bytes": 54911,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 0.8981,
+   "bits_per_word": 689.8,
+   "MB": 4.333
+  },
+  "secs_store": 0.8
+ },
+ {
+  "name": "v7 CONTROL sign only, signs on random lines T",
+  "spec": {
+   "T": {
+    "how": "sign",
+    "shuffle": 801
+   }
+  },
+  "hash": {
+   "T": "6d00eb25c2d38ac9"
+  },
+  "photons_T": 4.412,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9997,
+  "over_int16_T": 0,
+  "words": 0,
+  "secs_words": 5.8,
+  "store_T": {
+   "rc_bytes": 4922587,
+   "lzma_bytes": 4882867,
+   "sign_bytes": 4867649,
+   "loud_bytes": 54911,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 1.0121,
+   "bits_per_word": 777.3,
+   "MB": 4.883
+  },
+  "secs_store": 2.0
+ },
+ {
+  "name": "v7 plate + sign of departure T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "sign"
+    }
+   }
+  },
+  "hash": {
+   "T": "8bdfb7ea9ddb1d72"
+  },
+  "photons_T": 3.938,
+  "photons_T_before": 3.817,
+  "photons_T_departure_stored": 3.576,
+  "changed_share_T": 0.9991,
+  "over_int16_T": 0,
+  "words": 9,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 4910665,
+   "lzma_bytes": 4882259,
+   "sign_bytes": 4854251,
+   "loud_bytes": 54987,
+   "side": 27,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 1.0119,
+   "bits_per_word": 777.2,
+   "MB": 4.882
+  },
+  "secs_store": 0.9
+ },
+ {
+  "name": "v7 sign by chance T",
+  "spec": {
+   "T": {
+    "how": "signdither",
+    "seed": 802
+   }
+  },
+  "hash": {
+   "T": "842deba501c94f31"
+  },
+  "photons_T": 5.883,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9987,
+  "over_int16_T": 0,
+  "words": 0,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 4905835,
+   "lzma_bytes": 4882975,
+   "sign_bytes": 4850880,
+   "loud_bytes": 54928,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 1.0121,
+   "bits_per_word": 777.3,
+   "MB": 4.883
+  },
+  "secs_store": 1.1
+ },
+ {
+  "name": "v7 loudest 16 raw T",
+  "spec": {
+   "T": {
+    "how": "loud",
+    "n": 16
+   }
+  },
+  "hash": {
+   "T": "1cb3394f8c414f9a"
+  },
+  "photons_T": 0.021,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9994,
+  "over_int16_T": 33,
+  "words": 4,
+  "secs_words": 6.0,
+  "store_T": {
+   "rc_bytes": 788602,
+   "lzma_bytes": 539317,
+   "rc_rounds": [
+    788585
+   ],
+   "lzma_rounds": [
+    539300
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 0.1118,
+   "bits_per_word": 85.8,
+   "MB": 0.539
+  },
+  "secs_store": 7.2
+ },
+ {
+  "name": "v7 plate + loudest 64 T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 64
+    }
+   }
+  },
+  "hash": {
+   "T": "3a0866d653d03e1f"
+  },
+  "photons_T": 3.281,
+  "photons_T_before": 3.817,
+  "photons_T_departure_stored": 0.083,
+  "changed_share_T": 0.999,
+  "over_int16_T": 0,
+  "words": 9,
+  "secs_words": 6.1,
+  "store_T": {
+   "rc_bytes": 3131987,
+   "lzma_bytes": 3372881,
+   "rc_rounds": [
+    3130570
+   ],
+   "lzma_rounds": [
+    3371464
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 0.6492,
+   "bits_per_word": 498.6,
+   "MB": 3.132
+  },
+  "secs_store": 18.8
+ },
+ {
+  "name": "v7 plate + loudest 16 T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 16
+    }
+   }
+  },
+  "hash": {
+   "T": "98fe47f51b6d7f93"
+  },
+  "photons_T": 3.234,
+  "photons_T_before": 3.817,
+  "photons_T_departure_stored": 0.021,
+  "changed_share_T": 0.999,
+  "over_int16_T": 0,
+  "words": 7,
+  "secs_words": 6.0,
+  "store_T": {
+   "rc_bytes": 1191708,
+   "lzma_bytes": 1349545,
+   "rc_rounds": [
+    1190291
+   ],
+   "lzma_rounds": [
+    1348128
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 0.247,
+   "bits_per_word": 189.7,
+   "MB": 1.192
+  },
+  "secs_store": 7.8
+ },
+ {
+  "name": "v7 plate + loudest 2 T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 2
+    }
+   }
+  },
+  "hash": {
+   "T": "8dc275605eac2b99"
+  },
+  "photons_T": 3.223,
+  "photons_T_before": 3.817,
+  "photons_T_departure_stored": 0.003,
+  "changed_share_T": 0.9991,
+  "over_int16_T": 0,
+  "words": 6,
+  "secs_words": 6.6,
+  "store_T": {
+   "rc_bytes": 617969,
+   "lzma_bytes": 305025,
+   "rc_rounds": [
+    616552
+   ],
+   "lzma_rounds": [
+    303608
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 0.0632,
+   "bits_per_word": 48.6,
+   "MB": 0.305
+  },
+  "secs_store": 4.4
+ },
+ {
+  "name": "v7 CONTROL plate + 16 random lines T",
+  "spec": {
+   "T": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 16,
+     "random_lines": 803
+    }
+   }
+  },
+  "hash": {
+   "T": "ddfcda5fe7d5045c"
+  },
+  "photons_T": 3.234,
+  "photons_T_before": 3.817,
+  "photons_T_departure_stored": 0.021,
+  "changed_share_T": 0.9987,
+  "over_int16_T": 0,
+  "words": 4,
+  "secs_words": 6.7,
+  "store_T": {
+   "rc_bytes": 1480471,
+   "lzma_bytes": 1591193,
+   "rc_rounds": [
+    1479054
+   ],
+   "lzma_rounds": [
+    1589776
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1400,
+   "bits_per_value": 0.3069,
+   "bits_per_word": 235.7,
+   "MB": 1.48
+  },
+  "secs_store": 8.6
+ },
+ {
+  "name": "v9 T top-2 shared tremor",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 2,
+    "seed": 902,
+    "shared": true
+   }
+  },
+  "hash": {
+   "T": "2aeac7f694db71ad"
+  },
+  "photons_T": 1.873,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9049,
+  "over_int16_T": 0,
+  "words": 22,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 31127862,
+   "lzma_bytes": 35662006,
+   "rc_rounds": [
+    16338736,
+    14789104
+   ],
+   "lzma_rounds": [
+    19501116,
+    16160868
+   ],
+   "nsym": [
+    38597376,
+    38480133
+   ],
+   "side": 22,
+   "roundtrip_ok": true,
+   "bits_per_value": 6.4518,
+   "bits_per_word": 4955.0,
+   "MB": 31.128
+  },
+  "secs_store": 45.8
+ },
+ {
+  "name": "v9 T top-1 shared tremor",
+  "spec": {
+   "T": {
+    "how": "topk",
+    "k": 1,
+    "seed": 901,
+    "shared": true
+   }
+  },
+  "hash": {
+   "T": "2c30c01866fffead"
+  },
+  "photons_T": 0.89,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9878,
+  "over_int16_T": 14,
+  "words": 16,
+  "secs_words": 4.8,
+  "store_T": {
+   "rc_bytes": 15906875,
+   "lzma_bytes": 19722413,
+   "rc_rounds": [
+    15906858
+   ],
+   "lzma_rounds": [
+    19722396
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.297,
+   "bits_per_word": 2532.1,
+   "MB": 15.907
+  },
+  "secs_store": 22.5
+ },
+ {
+  "name": "v9 T cut b=8 shared tremor",
+  "spec": {
+   "T": {
+    "how": "cut",
+    "b": 8,
+    "seed": 908,
+    "shared": true
+   }
+  },
+  "hash": {
+   "T": "7af5b6fcbd322642"
+  },
+  "photons_T": 1.48,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9922,
+  "over_int16_T": 0,
+  "words": 26,
+  "secs_words": 4.3,
+  "store_T": {
+   "q_bytes": 21600368,
+   "place_bytes": 711,
+   "side": 22,
+   "width": 9,
+   "lzma_bytes": 25312146,
+   "roundtrip_ok": true,
+   "rc_bytes": 21601101,
+   "bits_per_value": 4.4772,
+   "bits_per_word": 3438.5,
+   "MB": 21.601
+  },
+  "secs_store": 31.9
+ },
+ {
+  "name": "v9 E lens exposure c=32 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 32,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "891b9f2ae87c71b1",
+   "T": "f64e394606dc750b"
+  },
+  "photons_E": 2.37,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9936,
+  "over_int16_E": null,
+  "photons_T": 3.817,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9464,
+  "over_int16_T": 0,
+  "words": 30,
+  "secs_words": 4.6,
+  "store_E": {
+   "rc_bytes": 34638171,
+   "lzma_bytes": 38419381,
+   "width": 12,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 7.1794,
+   "bits_per_word": 5513.8,
+   "MB": 34.638
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 31.5
+ },
+ {
+  "name": "v9 E lens exposure c=34 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 34,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "374901a5776a3f25",
+   "T": "2b05ac8cb477a414"
+  },
+  "photons_E": 1.711,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9984,
+  "over_int16_E": null,
+  "photons_T": 3.826,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9853,
+  "over_int16_T": 0,
+  "words": 29,
+  "secs_words": 4.6,
+  "store_E": {
+   "rc_bytes": 24961571,
+   "lzma_bytes": 28471053,
+   "width": 10,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 5.1737,
+   "bits_per_word": 3973.4,
+   "MB": 24.962
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 33.2
+ },
+ {
+  "name": "v9 E lens exposure c=37 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 37,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "02d5ee9e1092a717",
+   "T": "bdc86fc4c78b304d"
+  },
+  "photons_E": 1.029,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9998,
+  "over_int16_E": null,
+  "photons_T": 3.842,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9961,
+  "over_int16_T": 0,
+  "words": 28,
+  "secs_words": 4.9,
+  "store_E": {
+   "rc_bytes": 14995130,
+   "lzma_bytes": 17610145,
+   "width": 7,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.108,
+   "bits_per_word": 2387.0,
+   "MB": 14.995
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 21.6
+ },
+ {
+  "name": "v9 E lens exposure c=39 cap 12, T printed",
+  "spec": {
+   "E": {
+    "how": "lines",
+    "c": 39,
+    "cap": 12
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "59e7d0f1a1744d15",
+   "T": "87996c99e9eb9a53"
+  },
+  "photons_E": 1.018,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9998,
+  "over_int16_E": null,
+  "photons_T": 3.841,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9963,
+  "over_int16_T": 0,
+  "words": 24,
+  "secs_words": 5.1,
+  "store_E": {
+   "rc_bytes": 14795635,
+   "lzma_bytes": 17061673,
+   "width": 6,
+   "side": 785,
+   "roundtrip_ok": true,
+   "bits_per_value": 3.0667,
+   "bits_per_word": 2355.2,
+   "MB": 14.796
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 20.4
+ },
+ {
+  "name": "v9 whole machine: E sign only, T printed",
+  "spec": {
+   "E": {
+    "how": "sign"
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "6eb4eb84941b0011",
+   "T": "2198e88f8c931cf3"
+  },
+  "photons_E": 5.017,
+  "photons_E_before": 5.013,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "photons_T": 3.915,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9992,
+  "over_int16_T": 0,
+  "words": 9,
+  "secs_words": 5.7,
+  "store_E": {
+   "rc_bytes": 4353472,
+   "lzma_bytes": 4899331,
+   "sign_bytes": 4280039,
+   "loud_bytes": 73406,
+   "side": 27,
+   "roundtrip_ok": true,
+   "bits_per_value": 0.9023,
+   "bits_per_word": 693.0,
+   "MB": 4.353,
+   "same_table_as": "v7 sign only E"
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 0.4
+ },
+ {
+  "name": "v9 whole machine: E plate + loudest 2, T printed",
+  "spec": {
+   "E": {
+    "how": "dark",
+    "inner": {
+     "how": "loud",
+     "n": 2
+    }
+   },
+   "T": {
+    "how": "print"
+   }
+  },
+  "hash": {
+   "E": "31c96c36af5b837d",
+   "T": "fbcb8c222e3cb655"
+  },
+  "photons_E": 4.426,
+  "photons_E_before": 5.013,
+  "photons_E_departure_stored": 0.003,
+  "changed_share_E": 0.9999,
+  "over_int16_E": null,
+  "photons_T": 3.222,
+  "photons_T_before": 3.817,
+  "changed_share_T": 0.9991,
+  "over_int16_T": 0,
+  "words": 4,
+  "secs_words": 7.1,
+  "store_E": {
+   "rc_bytes": 757069,
+   "lzma_bytes": 326853,
+   "rc_rounds": [
+    755260
+   ],
+   "lzma_rounds": [
+    325044
+   ],
+   "nsym": [
+    38597376
+   ],
+   "side": 17,
+   "roundtrip_ok": true,
+   "plate_bytes": 1792,
+   "bits_per_value": 0.0677,
+   "bits_per_word": 52.0,
+   "MB": 0.327,
+   "same_table_as": "v7 plate + loudest 2 E"
+  },
+  "store_T": {
+   "rc_bytes": 2548,
+   "lzma_bytes": 2548,
+   "roundtrip_ok": true,
+   "note": "printed from the stored E through the 768 gains",
+   "bits_per_value": 0.0005,
+   "bits_per_word": 0.4,
+   "MB": 0.003
+  },
+  "secs_store": 2.0
+ }
+]

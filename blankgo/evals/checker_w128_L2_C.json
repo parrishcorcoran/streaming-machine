@@ -1,0 +1,26 @@
+{
+ "worst_loss_diff": 8.881784197001252e-16,
+ "worst_removed_scrambled_diff": 1.7763568394002505e-15,
+ "words": [
+  480,
+  480,
+  480,
+  480,
+  480,
+  480,
+  480,
+  480
+ ],
+ "replay": {
+  "10": {
+   "values": 2510592,
+   "differ": 0,
+   "max_grains": 0
+  },
+  "30": {
+   "values": 2510592,
+   "differ": 0,
+   "max_grains": 0
+  }
+ }
+}

@@ -1,0 +1,326 @@
+{
+ "w64_L2_A_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.024589061737060547
+ },
+ "w64_L2_A_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.025741100311279297
+ },
+ "w64_L2_A_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "float_loss": 5.647188086714134,
+  "float_loss_log": 5.647188086714135,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.1": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 0.7673220634460449
+ },
+ "w64_L2_B_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.023663043975830078
+ },
+ "w64_L2_B_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.02674579620361328
+ },
+ "w64_L2_B_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "float_loss": 4.755717613655882,
+  "float_loss_log": 4.755717613655883,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.1": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 0.3552896976470947
+ },
+ "w64_L2_C_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.9998166814577799,
+  "blank_left_log": 0.9998166814577799,
+  "seconds": 0.041294097900390625
+ },
+ "w64_L2_C_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.9720131255940768,
+  "blank_left_log": 0.9720131255940768,
+  "seconds": 0.3701341152191162
+ },
+ "w64_L2_C_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.8480115480596444,
+  "blank_left_log": 0.8480115480596444,
+  "float_loss": 4.757170715965936,
+  "float_loss_log": 4.757170715965936,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.1": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 3.4293336868286133
+ },
+ "w128_L4_A_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.06543087959289551
+ },
+ "w128_L4_A_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.06500577926635742
+ },
+ "w128_L4_A_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "float_loss": 6.205314698253108,
+  "float_loss_log": 6.205314698253108,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.3": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 0.7222328186035156
+ },
+ "w128_L4_B_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.06161904335021973
+ },
+ "w128_L4_B_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "seconds": 0.06555008888244629
+ },
+ "w128_L4_B_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 1.0,
+  "blank_left_log": 1.0,
+  "float_loss": 4.584312852446409,
+  "float_loss_log": 4.584312852446409,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.3": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 0.7314422130584717
+ },
+ "w128_L4_C_10": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.9998166814774675,
+  "blank_left_log": 0.9998166814774675,
+  "seconds": 0.10487794876098633
+ },
+ "w128_L4_C_300": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.9720131263691534,
+  "blank_left_log": 0.9720131263691534,
+  "seconds": 0.9325339794158936
+ },
+ "w128_L4_C_3000": {
+  "W": true,
+  "Bt": true,
+  "R": true,
+  "SP": true,
+  "undrawn_unshaved": true,
+  "blank_left": 0.8480115519701271,
+  "blank_left_log": 0.8480115519701271,
+  "float_loss": 4.586121407480402,
+  "float_loss_log": 4.586121407480402,
+  "machine_file": {
+   "qkv.0": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "mproj.3": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "head": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   },
+   "wte": {
+    "w": true,
+    "s": true,
+    "power_minimal": true
+   }
+  },
+  "seconds": 8.564916849136353
+ }
+}

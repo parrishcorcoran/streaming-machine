@@ -1,0 +1,98 @@
+BASEDOWN/LINEUP: the light lined up across the tokens at every plate (GPT-2, 48 banks, 648 refs positions)
+  soups (a) each text (19-24 tokens), (b) all 648 positions together; whole numbers only
+  qkv.0    plain 40,058,563,076  cancel (a)  27.4% (b)  70.0%  walk (a) 43.83% (b) 20.10%  landings 30.87%  whole (a) 74.71% (b) 50.98%  | ctl cancel (b)  60.7%  (4s, 196 MB)
+  proj.0   plain 13,288,434,655  cancel (a)  28.1% (b)  64.4%  walk (a) 43.39% (b) 23.96%  landings 30.89%  whole (a) 74.32% (b) 54.88%  | ctl cancel (b)  59.7%  (2s, 227 MB)
+  fc.0     plain 39,726,071,686  cancel (a)  32.1% (b)  74.3%  walk (a) 43.16% (b) 17.89%  landings 35.84%  whole (a) 79.02% (b) 53.74%  | ctl cancel (b)  66.3%  (6s, 363 MB)
+  mproj.0  plain 47,601,441,594  cancel (a)  37.6% (b)  77.5%  walk (a) 39.14% (b) 16.06%  landings 32.61%  whole (a) 71.79% (b) 48.69%  | ctl cancel (b)  73.6%  (6s, 455 MB)
+  qkv.1    plain 35,489,023,252  cancel (a)  27.0% (b)  68.8%  walk (a) 44.82% (b) 21.72%  landings 32.72%  whole (a) 77.55% (b) 54.45%  | ctl cancel (b)  65.5%  (4s, 457 MB)
+  proj.1   plain 12,720,394,119  cancel (a)  33.7% (b)  69.4%  walk (a) 40.79% (b) 21.23%  landings 31.56%  whole (a) 72.38% (b) 52.82%  | ctl cancel (b)  62.4%  (2s, 459 MB)
+  fc.1     plain 49,153,098,214  cancel (a)  27.2% (b)  68.3%  walk (a) 44.48% (b) 21.97%  landings 32.19%  whole (a) 76.68% (b) 54.16%  | ctl cancel (b)  65.1%  (6s, 461 MB)
+  mproj.1  plain 49,287,029,907  cancel (a)  30.9% (b)  70.7%  walk (a) 42.44% (b) 20.33%  landings 32.05%  whole (a) 74.52% (b) 52.41%  | ctl cancel (b)  67.2%  (6s, 469 MB)
+  qkv.2    plain 35,239,293,557  cancel (a)  25.9% (b)  67.2%  walk (a) 45.33% (b) 22.75%  landings 32.74%  whole (a) 78.09% (b) 55.50%  | ctl cancel (b)  64.2%  (4s, 469 MB)
+  proj.2   plain 13,047,808,762  cancel (a)  28.3% (b)  65.0%  walk (a) 43.41% (b) 23.67%  landings 31.16%  whole (a) 74.61% (b) 54.86%  | ctl cancel (b)  60.2%  (2s, 469 MB)
+  fc.2     plain 49,689,600,255  cancel (a)  25.7% (b)  66.7%  walk (a) 45.12% (b) 22.96%  landings 32.01%  whole (a) 77.14% (b) 54.97%  | ctl cancel (b)  63.8%  (6s, 469 MB)
+  mproj.2  plain 49,162,568,797  cancel (a)  31.0% (b)  71.1%  walk (a) 42.30% (b) 20.06%  landings 31.99%  whole (a) 74.33% (b) 52.08%  | ctl cancel (b)  67.9%  (6s, 469 MB)
+  qkv.3    plain 36,275,141,896  cancel (a)  25.0% (b)  65.7%  walk (a) 45.56% (b) 23.54%  landings 32.32%  whole (a) 77.89% (b) 55.87%  | ctl cancel (b)  63.4%  (4s, 469 MB)
+  proj.3   plain 13,068,251,398  cancel (a)  27.0% (b)  64.2%  walk (a) 44.07% (b) 24.04%  landings 31.15%  whole (a) 75.26% (b) 55.22%  | ctl cancel (b)  60.2%  (2s, 469 MB)
+  fc.3     plain 49,751,355,575  cancel (a)  25.0% (b)  65.4%  walk (a) 45.45% (b) 23.66%  landings 31.93%  whole (a) 77.39% (b) 55.60%  | ctl cancel (b)  63.2%  (6s, 469 MB)
+  mproj.3  plain 49,322,821,513  cancel (a)  31.5% (b)  72.1%  walk (a) 42.12% (b) 19.35%  landings 32.10%  whole (a) 74.25% (b) 51.47%  | ctl cancel (b)  69.6%  (6s, 469 MB)
+  qkv.4    plain 36,882,779,205  cancel (a)  24.4% (b)  65.0%  walk (a) 45.83% (b) 23.94%  landings 32.08%  whole (a) 77.92% (b) 56.03%  | ctl cancel (b)  63.0%  (4s, 469 MB)
+  proj.4   plain 13,846,559,023  cancel (a)  26.7% (b)  62.2%  walk (a) 43.83% (b) 24.99%  landings 30.32%  whole (a) 74.18% (b) 55.34%  | ctl cancel (b)  58.3%  (2s, 469 MB)
+  fc.4     plain 50,023,968,675  cancel (a)  24.5% (b)  64.6%  walk (a) 45.69% (b) 24.05%  landings 31.82%  whole (a) 77.52% (b) 55.88%  | ctl cancel (b)  62.8%  (6s, 469 MB)
+  mproj.4  plain 51,497,122,884  cancel (a)  31.0% (b)  71.3%  walk (a) 42.09% (b) 19.78%  landings 31.45%  whole (a) 73.57% (b) 51.26%  | ctl cancel (b)  68.7%  (6s, 469 MB)
+  qkv.5    plain 37,121,068,453  cancel (a)  24.4% (b)  65.0%  walk (a) 45.81% (b) 23.88%  landings 32.00%  whole (a) 77.82% (b) 55.89%  | ctl cancel (b)  63.3%  (5s, 469 MB)
+  proj.5   plain 12,505,814,506  cancel (a)  30.2% (b)  66.3%  walk (a) 42.57% (b) 22.69%  landings 31.90%  whole (a) 74.50% (b) 54.61%  | ctl cancel (b)  60.8%  (2s, 469 MB)
+  fc.5     plain 49,227,716,265  cancel (a)  24.3% (b)  64.8%  walk (a) 45.82% (b) 24.03%  landings 32.07%  whole (a) 77.90% (b) 56.10%  | ctl cancel (b)  63.0%  (7s, 469 MB)
+  mproj.5  plain 50,857,581,608  cancel (a)  31.6% (b)  71.9%  walk (a) 41.85% (b) 19.37%  landings 31.64%  whole (a) 73.52% (b) 51.04%  | ctl cancel (b)  69.4%  (8s, 469 MB)
+  qkv.6    plain 36,579,518,007  cancel (a)  24.6% (b)  65.3%  walk (a) 45.80% (b) 23.73%  landings 32.23%  whole (a) 78.05% (b) 55.97%  | ctl cancel (b)  63.7%  (4s, 469 MB)
+  proj.6   plain 13,831,565,842  cancel (a)  28.5% (b)  62.8%  walk (a) 42.93% (b) 24.61%  landings 30.37%  whole (a) 73.33% (b) 55.00%  | ctl cancel (b)  58.8%  (2s, 469 MB)
+  fc.6     plain 48,890,530,361  cancel (a)  24.9% (b)  65.3%  walk (a) 45.57% (b) 23.76%  landings 32.18%  whole (a) 77.76% (b) 55.95%  | ctl cancel (b)  63.6%  (6s, 469 MB)
+  mproj.6  plain 52,030,187,754  cancel (a)  31.4% (b)  71.5%  walk (a) 41.83% (b) 19.57%  landings 31.30%  whole (a) 73.17% (b) 50.90%  | ctl cancel (b)  68.4%  (6s, 475 MB)
+  qkv.7    plain 36,866,979,501  cancel (a)  25.1% (b)  65.6%  walk (a) 45.48% (b) 23.56%  landings 32.11%  whole (a) 77.60% (b) 55.68%  | ctl cancel (b)  63.9%  (4s, 477 MB)
+  proj.7   plain 13,842,517,577  cancel (a)  28.7% (b)  63.3%  walk (a) 42.81% (b) 24.21%  landings 30.33%  whole (a) 73.17% (b) 54.56%  | ctl cancel (b)  58.2%  (2s, 477 MB)
+  fc.7     plain 49,203,865,283  cancel (a)  25.2% (b)  65.3%  walk (a) 45.43% (b) 23.76%  landings 32.07%  whole (a) 77.52% (b) 55.84%  | ctl cancel (b)  63.6%  (6s, 477 MB)
+  mproj.7  plain 50,866,358,842  cancel (a)  34.7% (b)  73.9%  walk (a) 40.25% (b) 18.03%  landings 31.64%  whole (a) 71.92% (b) 49.69%  | ctl cancel (b)  71.7%  (6s, 485 MB)
+  qkv.8    plain 36,993,931,368  cancel (a)  25.0% (b)  65.1%  walk (a) 45.50% (b) 23.85%  landings 32.02%  whole (a) 77.53% (b) 55.88%  | ctl cancel (b)  63.5%  (4s, 487 MB)
+  proj.8   plain 14,403,515,344  cancel (a)  27.1% (b)  61.0%  walk (a) 43.43% (b) 25.53%  landings 29.79%  whole (a) 73.25% (b) 55.34%  | ctl cancel (b)  57.4%  (2s, 487 MB)
+  fc.8     plain 50,030,308,770  cancel (a)  25.2% (b)  64.9%  walk (a) 45.32% (b) 23.95%  landings 31.82%  whole (a) 77.15% (b) 55.78%  | ctl cancel (b)  63.2%  (6s, 487 MB)
+  mproj.8  plain 48,239,003,151  cancel (a)  35.0% (b)  75.0%  walk (a) 40.42% (b) 17.51%  landings 32.46%  whole (a) 72.91% (b) 50.00%  | ctl cancel (b)  73.4%  (6s, 518 MB)
+  qkv.9    plain 37,122,984,182  cancel (a)  24.5% (b)  64.6%  walk (a) 45.72% (b) 24.16%  landings 31.98%  whole (a) 77.71% (b) 56.15%  | ctl cancel (b)  63.0%  (4s, 518 MB)
+  proj.9   plain 13,864,124,725  cancel (a)  29.0% (b)  63.5%  walk (a) 42.65% (b) 24.16%  landings 30.32%  whole (a) 73.00% (b) 54.50%  | ctl cancel (b)  58.2%  (2s, 518 MB)
+  fc.9     plain 49,736,074,660  cancel (a)  24.8% (b)  64.4%  walk (a) 45.55% (b) 24.22%  landings 31.93%  whole (a) 77.49% (b) 56.16%  | ctl cancel (b)  62.9%  (6s, 518 MB)
+  mproj.9  plain 48,432,994,091  cancel (a)  34.7% (b)  75.1%  walk (a) 40.55% (b) 17.38%  landings 32.43%  whole (a) 73.01% (b) 49.83%  | ctl cancel (b)  72.7%  (6s, 537 MB)
+  qkv.10   plain 36,319,937,479  cancel (a)  25.2% (b)  65.3%  walk (a) 45.52% (b) 23.75%  landings 32.32%  whole (a) 77.85% (b) 56.07%  | ctl cancel (b)  63.9%  (4s, 537 MB)
+  proj.10  plain 13,507,912,046  cancel (a)  30.3% (b)  64.8%  walk (a) 42.19% (b) 23.54%  landings 30.69%  whole (a) 72.91% (b) 54.25%  | ctl cancel (b)  59.4%  (2s, 538 MB)
+  fc.10    plain 48,259,984,561  cancel (a)  26.1% (b)  65.8%  walk (a) 45.08% (b) 23.50%  landings 32.38%  whole (a) 77.47% (b) 55.88%  | ctl cancel (b)  64.2%  (6s, 559 MB)
+  mproj.10 plain 48,520,117,207  cancel (a)  34.9% (b)  74.6%  walk (a) 40.43% (b) 17.71%  landings 32.39%  whole (a) 72.85% (b) 50.13%  | ctl cancel (b)  73.2%  (6s, 559 MB)
+  qkv.11   plain 35,496,370,400  cancel (a)  25.8% (b)  66.5%  walk (a) 45.38% (b) 23.17%  landings 32.68%  whole (a) 78.08% (b) 55.86%  | ctl cancel (b)  64.7%  (4s, 559 MB)
+  proj.11  plain 13,076,075,344  cancel (a)  31.0% (b)  65.9%  walk (a) 42.02% (b) 22.98%  landings 31.22%  whole (a) 73.27% (b) 54.22%  | ctl cancel (b)  58.9%  (2s, 559 MB)
+  fc.11    plain 46,280,865,226  cancel (a)  28.5% (b)  70.1%  walk (a) 44.24% (b) 21.04%  landings 33.24%  whole (a) 77.49% (b) 54.29%  | ctl cancel (b)  68.0%  (6s, 559 MB)
+  mproj.11 plain 46,933,222,367  cancel (a)  34.9% (b)  74.6%  walk (a) 40.55% (b) 17.69%  landings 32.85%  whole (a) 73.44% (b) 50.57%  | ctl cancel (b)  72.9%  (6s, 559 MB)
+
+CHECKS: ref 0, direct 0, bad 0, walk_py 0, of_piles 0, of_counts 0, ctl_direct 0, ctl_bad 0, land_np 0
+  ref = piles differing from plain_refs (rows, 96 runs); direct = the direct product against plain_refs; bad = running products
+  differing from w x x; walk_py = banks where the walk recounted in numpy differs; of_* = order-free piles / counts differing;
+  ctl_* = the shuffle control's piles against its own direct product; land_np = banks where numpy's landing count differs
+
+(a) each text: a token = total / 648
+  qkv   plain   679,699,985  cancel 1s  25.4% (signed  22.1%)  walk  45.37%  landings  32.16% (signed  23.14%)  writing 0.005%  formed 0.006%  WHOLE  77.54%  | direct signed  58.21% | group machine 19.52%  compares 45,976
+  proj  plain   248,461,379  cancel 1s  29.0% (signed  25.6%)  walk  42.86%  landings  30.78% (signed  22.07%)  writing 0.015%  formed 0.019%  WHOLE  73.67%  | direct signed  57.62% | group machine 25.28%  compares 46,065
+  fc    plain   895,020,740  cancel 1s  26.1% (signed  22.7%)  walk  45.11%  landings  32.40% (signed  23.32%)  writing 0.004%  formed 0.005%  WHOLE  77.52%  | direct signed  58.32% | group machine 21.15%  compares 45,984
+  mproj plain   914,738,348  cancel 1s  33.2% (signed  30.9%)  walk  41.18%  landings  32.06% (signed  23.06%)  writing 0.014%  formed 0.019%  WHOLE  73.28%  | direct signed  59.61% | group machine 25.35%  compares 183,816
+  ALL   plain 2,737,920,452  cancel 1s  30.5% (signed  27.8%)  walk  43.66%  landings  32.08% (signed  23.07%)  writing 0.009%  formed 0.011%  WHOLE  75.76%  | direct signed  58.66%  compares 321,841
+
+(b) all 648 together: a token = total / 648
+  qkv   plain   679,699,985  cancel 1s  66.2% (signed  60.2%)  walk  23.16%  landings  32.16% (signed  23.14%)  writing 0.002%  formed 0.007%  WHOLE  55.33%  | direct signed  58.21% | group machine 19.52%  compares 91,952
+  proj  plain   248,461,379  cancel 1s  64.3% (signed  58.6%)  walk  23.84%  landings  30.78% (signed  22.07%)  writing 0.007%  formed 0.020%  WHOLE  54.65%  | direct signed  57.62% | group machine 25.28%  compares 92,130
+  fc    plain   895,020,740  cancel 1s  66.6% (signed  60.6%)  walk  22.99%  landings  32.40% (signed  23.32%)  writing 0.002%  formed 0.005%  WHOLE  55.40%  | direct signed  58.32% | group machine 21.15%  compares 91,968
+  mproj plain   914,738,348  cancel 1s  73.2% (signed  68.8%)  walk  18.59%  landings  32.06% (signed  23.06%)  writing 0.006%  formed 0.021%  WHOLE  50.68%  | direct signed  59.61% | group machine 25.35%  compares 367,671
+  ALL   plain 2,737,920,452  cancel 1s  70.0% (signed  65.0%)  walk  21.64%  landings  32.08% (signed  23.07%)  writing 0.004%  formed 0.012%  WHOLE  53.74%  | direct signed  58.66%  compares 643,721
+
+(a) SHUFFLE CONTROL: a token = total / 648
+  qkv   plain   680,334,405  cancel 1s  22.0% (signed  19.1%)  walk  47.06%  landings  32.13% (signed  23.11%)  writing 0.005%  formed 0.006%  WHOLE  79.20%  | direct signed  58.20% | group machine 19.52%  compares 45,976
+  proj  plain   248,604,777  cancel 1s  19.9% (signed  17.5%)  walk  47.54%  landings  30.76% (signed  22.06%)  writing 0.016%  formed 0.018%  WHOLE  78.34%  | direct signed  57.61% | group machine 25.28%  compares 46,065
+  fc    plain   897,271,726  cancel 1s  22.3% (signed  19.4%)  walk  47.00%  landings  32.31% (signed  23.26%)  writing 0.004%  formed 0.005%  WHOLE  79.32%  | direct signed  58.29% | group machine 21.15%  compares 45,984
+  mproj plain   915,212,293  cancel 1s  29.8% (signed  27.9%)  walk  42.98%  landings  32.05% (signed  23.04%)  writing 0.015%  formed 0.019%  WHOLE  75.06%  | direct signed  59.60% | group machine 25.35%  compares 183,850
+  ALL   plain 2,741,423,201  cancel 1s  26.2% (signed  24.0%)  walk  45.72%  landings  32.04% (signed  23.04%)  writing 0.009%  formed 0.011%  WHOLE  77.78%  | direct signed  58.64%  compares 321,875
+
+(b) SHUFFLE CONTROL: a token = total / 648
+  qkv   plain   680,334,405  cancel 1s  63.5% (signed  57.5%)  walk  24.75%  landings  32.13% (signed  23.11%)  writing 0.003%  formed 0.007%  WHOLE  56.89%  | direct signed  58.20% | group machine 19.52%  compares 91,952
+  proj  plain   248,604,777  cancel 1s  59.3% (signed  53.4%)  walk  26.82%  landings  30.76% (signed  22.06%)  writing 0.008%  formed 0.020%  WHOLE  57.61%  | direct signed  57.61% | group machine 25.28%  compares 92,130
+  fc    plain   897,271,726  cancel 1s  64.1% (signed  58.1%)  walk  24.42%  landings  32.31% (signed  23.26%)  writing 0.002%  formed 0.005%  WHOLE  56.74%  | direct signed  58.29% | group machine 21.15%  compares 91,968
+  mproj plain   915,212,293  cancel 1s  70.7% (signed  66.1%)  walk  20.22%  landings  32.05% (signed  23.04%)  writing 0.006%  formed 0.021%  WHOLE  52.30%  | direct signed  59.60% | group machine 25.35%  compares 367,701
+  ALL   plain 2,741,423,201  cancel 1s  67.1% (signed  61.9%)  walk  23.32%  landings  32.04% (signed  23.04%)  writing 0.004%  formed 0.012%  WHOLE  55.37%  | direct signed  58.64%  compares 643,750
+
+CANCEL SHARE BY PLATE (1s): min / median / max over the 12 layers
+  qkv   a      24.4% /  25.1% /  27.4%
+  qkv   b      64.6% /  65.5% /  70.0%
+  qkv   b_ctl  60.7% /  63.6% /  65.5%
+  proj  a      26.7% /  28.6% /  33.7%
+  proj  b      61.0% /  64.3% /  69.4%
+  proj  b_ctl  57.4% /  59.2% /  62.4%
+  fc    a      24.3% /  25.2% /  32.1%
+  fc    b      64.4% /  65.4% /  74.3%
+  fc    b_ctl  62.8% /  63.6% /  68.0%
+  mproj a      30.9% /  33.1% /  37.6%
+  mproj b      70.7% /  73.0% /  77.5%
+  mproj b_ctl  67.2% /  70.7% /  73.6%
+done (223s, max memory 559 MB)

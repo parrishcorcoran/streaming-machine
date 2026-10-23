@@ -1,0 +1,48 @@
+DESIGNER 2 (THE LIGHT SIDE FIRST). PREDICTIONS WRITTEN BEFORE ANY COUNT IN THIS FOLDER WAS RUN. 2026-10-08.
+
+HIS WORDS (2026-10-08), the only sentences quoted as his:
+  "THE FLAT IS THE CANCELLING." "The flat is in BOTH SIDES. And it can be skipped. Or removed it doesnt matter but it
+  has to be BOTH SIDES." "The embedding table and the mlp" "The whole machine is flat, that's the base canceling. The
+  EXTRA photons from the embedding pop up above the flat and are all added per gate that they are in." "Gates and
+  arrivals, that's it, everything flat is what doesn't matter and can cancel."
+
+THE SESSION'S RESTATEMENT (session's words): the light reaching a plate is the flat plus what pops up above it. Take
+the flat off the light before it meets any plate, and meet the flat with the plate once, on the plate side, so it is
+removed on both sides. Only what pops up is met per token, and it is met through the group table (the light's own ups
+and holes across g lines already paired before any gate reads it).
+
+THE ONE METHOD (session's): THE FLAT HELD ON BOTH SIDES.
+  - each bank's light x_t = S + e_t. S = one fixed whole-number light per bank (the standing light: every line's
+    rounded median over texts 0-14, fixed before texts 15-29 are touched). e_t = x_t - S, exact.
+  - plate side: S . w_j is one stored whole number per neuron per bank (82,944 numbers for the 48 banks).
+  - per token: e_t meets the plate through the group table (up/hole, g = 12, the confirmed machine's own random
+    groups, seed 1); the stored S . w_j is added once per neuron.
+  - identity: x . w = S . w + e . w, whole numbers, so every pile is identical (checked against the direct product).
+
+PREDICTIONS (sample: layers 3 and 9, all four banks, every position of texts 15-29 for the method; every 4th position
+of all 30 texts for the excess)
+ P1 the excess (sum of |tip| over place pairs, each pile):
+    - up/hole, as a share of up/hole meetings (256 x N a pile): 768-line plates 2.8-3.0%, mproj (3,072 lines) 1.4-1.5%
+    - the SAME tips in the project's unit (sum |tip| / plain photon meetings): 768-line plates 21-25%, mproj 10-13%.
+      So "about 3%" is a share of up/hole meetings; counted in plain photons the excess is ABOVE the group machine.
+    - sign and 1s form (plain's own meetings): sum |tip| / plain 4-8% (768 lines), 2.5-5% (mproj)
+    - signed digits form: sum |tip| / plain 3.5-7%
+    - shuffle control (light shuffled across lines): every share within 0.15 points (the excess is the coin toss)
+ P2 the group machine rebuilt on the sample (up/hole, g = 12, 16 places): reads per read 4.5-4.8 photons; read share
+    of plain within 0.5 points of groups/out/uh_gpt2_g12.json at the same plates; every pile exact.
+ P3 where the cancelling left after the group table sits: per neuron and plate place, the 64 (256 at mproj) group
+    reads carry 50-70x the photons of their own sum (97-99% cancel across groups); this part is the neuron's own walk
+    and has no flat across tokens or neurons.
+ P4 the method on texts 15-29:
+    - S's share of the light's energy (sum of squares): qkv and fc 45-80%, proj and mproj 10-65%
+    - the departure's signed digits a value: 96-101% of the light's
+    - the departure's table reads (photons): qkv and fc 96.5-99.5% of the light's; proj and mproj 98.5-100.5%
+    - the whole sample (tables, writing, reads, sums, offsets, stored adds): 97.5-99.8% of the group machine's
+    - shuffle control (light shuffled across lines at every position, S rebuilt the same way): energy share under 5%,
+      reads 99.5-100.5%
+ P5 the plate's sign run (places above a group's largest weight, all equal up to the flip) read once: 14.4-15.0
+    reads a neuron and group instead of 16.
+ P6 whole GPT-2 machine with the method: 19.40% -> 19.10-19.35% of plain. The method cannot go far below the group
+    machine: the flat the light holds is energy on about 5 of 768 lines, not photons.
+ P7 the floor of any table machine at GPT-2's widths (reads >= plate information / log2(table), the table capped by
+    the gates that read it): about 17-18% of plain for the whole machine.

@@ -1,0 +1,44 @@
+free at 16:21:07; running: /usr/bin/time -l python3 reach/answer.py
+  head b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/head_b1.json)
+  mproj.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/mproj.11_b1.json)
+  fc.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/fc.11_b1.json)
+  proj.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/proj.11_b1.json)
+  qkv.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/qkv.11_b1.json)
+  mproj.10 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/mproj.10_b1.json)
+  fc.10 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/fc.10_b1.json)
+    proj.10 b=1: layer 10 stream range max 327935, row median 113857; blown rows 0/7200; real move max 1111 (6s, 2110 MB)
+    proj.10 b=1: layer 11 stream range max -, row median -; blown rows 7200/7200; real move max 12131 (26s, 2313 MB)
+  proj.10 b=1: digits removed 295,285; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 514, max 4304; top 5 changed (real) at 24/6000; bound/real median None (34s, 2313 MB)
+    qkv.10 b=1: layer 10 stream range max 370685261, row median 74652639; blown rows 5074/7200; real move max 1876 (47s, 2313 MB)
+    qkv.10 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  qkv.10 b=1: digits removed 883,827; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 681, max 5510; top 5 changed (real) at 33/6000; bound/real median None (61s, 2436 MB)
+    mproj.9 b=1: layer  9 stream range max 4785, row median 3331; blown rows 0/7200; real move max 609 (63s, 2436 MB)
+    mproj.9 b=1: layer 10 stream range max 1320217, row median 1011373; blown rows 6900/7200; real move max 1252 (79s, 2436 MB)
+Traceback (most recent call last):
+  File "/Users/abundancemachine/streaming-machine/reach/answer.py", line 213, in <module>
+    res = carry(name, b)
+  File "/Users/abundancemachine/streaming-machine/reach/answer.py", line 117, in carry
+    n = f"proj.{l}"; att = V.fill_rows(V.plain, o, P(n)); attm = pk(om, n); REC.append(stats(att, attm, n)); del o, om
+  File "/Users/abundancemachine/streaming-machine/reach/answer.py", line 98, in stats
+    return fin(where, [pstats(X.rows(slice(r0, r0 + 256)), real[r0:r0 + 256]) for r0 in range(0, len(X.c), 256)])
+  File "/Users/abundancemachine/streaming-machine/reach/answer.py", line 95, in fin
+    assert missed == 0, f"a range missed the machine's actual value at {where}"
+AssertionError: a range missed the machine's actual value at proj.11
+       86.54 real        85.74 user         0.79 sys
+          2436120576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              900098  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 286  involuntary context switches
+       1237481079894  instructions retired
+        339845332129  cycles elapsed
+          2355480856  peak memory footprint

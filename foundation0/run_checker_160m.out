@@ -1,0 +1,56 @@
+/Users/abundancemachine/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+`torch_dtype` is deprecated! Use `dtype` instead!
+checker_remove.py size 160m: fp32 Pythia from its own fp16 files, 30 texts, cases 33
+  fin      checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker 100.0%  base-2 100.0%  (0.8s)
+  a        checker word = base-2 case word at 614/622 ( 98.7%);  finished words kept: checker   2.6%  base-2   2.6%  (0.9s)
+  b        checker word = base-2 case word at 620/622 ( 99.7%);  finished words kept: checker  50.6%  base-2  50.5%  (0.9s)
+  ca       checker word = base-2 case word at 0/622 (  0.0%);  finished words kept: checker   0.0%  base-2   0.2%  (2.8s)
+  cb       checker word = base-2 case word at 330/622 ( 53.1%);  finished words kept: checker  61.9%  base-2  58.2%  (2.8s)
+  a_tab    checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker   5.0%  base-2   5.0%  (0.8s)
+  b_tab    checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  85.4%  base-2  85.4%  (0.8s)
+  a_pl     checker word = base-2 case word at 610/622 ( 98.1%);  finished words kept: checker   2.3%  base-2   2.1%  (0.8s)
+  b_pl     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  53.1%  base-2  53.2%  (0.8s)
+  a_L0     checker word = base-2 case word at 618/622 ( 99.4%);  finished words kept: checker  24.3%  base-2  24.4%  (0.7s)
+  b_L0     checker word = base-2 case word at 620/622 ( 99.7%);  finished words kept: checker  80.9%  base-2  80.7%  (0.7s)
+  a_L1     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  51.3%  base-2  51.3%  (0.7s)
+  b_L1     checker word = base-2 case word at 618/622 ( 99.4%);  finished words kept: checker  93.6%  base-2  94.2%  (0.7s)
+  a_L2     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  51.6%  base-2  51.6%  (0.7s)
+  b_L2     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  86.7%  base-2  86.7%  (0.7s)
+  a_L3     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  40.4%  base-2  40.4%  (0.7s)
+  b_L3     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  88.7%  base-2  88.7%  (0.7s)
+  a_L4     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  47.3%  base-2  47.4%  (0.7s)
+  b_L4     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  90.2%  base-2  90.0%  (0.7s)
+  a_L5     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  43.7%  base-2  43.7%  (0.7s)
+  b_L5     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  91.5%  base-2  91.5%  (0.7s)
+  a_L6     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  55.0%  base-2  55.0%  (0.7s)
+  b_L6     checker word = base-2 case word at 620/622 ( 99.7%);  finished words kept: checker  93.2%  base-2  93.6%  (0.7s)
+  a_L7     checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  51.3%  base-2  51.3%  (0.7s)
+  b_L7     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  92.6%  base-2  92.8%  (0.7s)
+  a_L8     checker word = base-2 case word at 619/622 ( 99.5%);  finished words kept: checker  51.3%  base-2  51.1%  (0.7s)
+  b_L8     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  87.1%  base-2  87.3%  (0.7s)
+  a_L9     checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  49.2%  base-2  49.2%  (0.7s)
+  b_L9     checker word = base-2 case word at 620/622 ( 99.7%);  finished words kept: checker  89.7%  base-2  90.0%  (0.7s)
+  a_L10    checker word = base-2 case word at 618/622 ( 99.4%);  finished words kept: checker  30.7%  base-2  30.7%  (0.7s)
+  b_L10    checker word = base-2 case word at 622/622 (100.0%);  finished words kept: checker  87.5%  base-2  87.5%  (0.7s)
+  a_L11    checker word = base-2 case word at 616/622 ( 99.0%);  finished words kept: checker  31.5%  base-2  31.7%  (0.7s)
+  b_L11    checker word = base-2 case word at 621/622 ( 99.8%);  finished words kept: checker  83.4%  base-2  83.6%  (0.7s)
+peak memory 2.52 GB
+       31.34 real        33.80 user         1.37 sys
+          2708226048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              190241  page reclaims
+               39651  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  14  voluntary context switches
+              317971  involuntary context switches
+        379948153449  instructions retired
+        137727898417  cycles elapsed
+          2655357472  peak memory footprint

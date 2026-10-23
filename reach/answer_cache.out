@@ -1,0 +1,20 @@
+free at 16:10:35; running: /usr/bin/time -l python3 reach/answer.py cache=1
+cache written: ['stream_a_0.npy', 'stream_a_1.npy', 'stream_a_10.npy', 'stream_a_11.npy', 'stream_a_2.npy', 'stream_a_3.npy', 'stream_a_4.npy', 'stream_a_5.npy', 'stream_a_6.npy', 'stream_a_7.npy', 'stream_a_8.npy', 'stream_a_9.npy', 'stream_in_0.npy', 'stream_in_1.npy', 'stream_in_10.npy', 'stream_in_11.npy', 'stream_in_2.npy', 'stream_in_3.npy', 'stream_in_4.npy', 'stream_in_5.npy', 'stream_in_6.npy', 'stream_in_7.npy', 'stream_in_8.npy', 'stream_in_9.npy'] (12s, max memory 1599 MB)
+       11.64 real        11.33 user         0.17 sys
+          1599340544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              103227  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 324  voluntary context switches
+                 217  involuntary context switches
+        156383634865  instructions retired
+         44470373078  cycles elapsed
+          1593181744  peak memory footprint

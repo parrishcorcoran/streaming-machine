@@ -1,0 +1,57 @@
+steady_light.py  size 160m: 622 positions; a look in real numbers
+  qkv.0    exact steady   6.2%  mean light  13.6%  left after moving the exact part  95.7%  | glow/plate light 0.0904 (rho 0.1334, x0.68)  | |steady light|/|light| 0.250
+  proj.0   exact steady   1.9%  mean light  10.3%  left after moving the exact part 101.9%  | glow/plate light 0.0428 (rho 0.0521, x0.82)  | |steady light|/|light| 0.128
+  fc.0     exact steady   0.1%  mean light  41.3%  left after moving the exact part  98.2%  | glow/plate light 0.1658 (rho 0.3641, x0.46)  | |steady light|/|light| 0.029
+  mproj.0  exact steady   0.0%  mean light   9.2%  left after moving the exact part 100.0%  | glow/plate light 0.1285 (rho 0.2188, x0.59)
+  qkv.1    exact steady   1.2%  mean light  36.3%  left after moving the exact part  95.4%  | glow/plate light 0.0664 (rho 0.0995, x0.67)  | |steady light|/|light| 0.111
+  proj.1   exact steady   0.4%  mean light  11.2%  left after moving the exact part  99.8%  | glow/plate light 0.0449 (rho 0.0701, x0.64)  | |steady light|/|light| 0.067
+  fc.1     exact steady   2.3%  mean light  34.7%  left after moving the exact part  94.0%  | glow/plate light 0.1291 (rho 0.2161, x0.60)  | |steady light|/|light| 0.149
+  mproj.1  exact steady   0.0%  mean light  11.3%  left after moving the exact part 100.0%  | glow/plate light 0.0532 (rho 0.0692, x0.77)
+  qkv.2    exact steady   0.5%  mean light  31.7%  left after moving the exact part  99.6%  | glow/plate light 0.1020 (rho 0.1465, x0.70)  | |steady light|/|light| 0.068
+  proj.2   exact steady   0.2%  mean light  11.3%  left after moving the exact part 100.0%  | glow/plate light 0.0994 (rho 0.1107, x0.90)  | |steady light|/|light| 0.044
+  fc.2     exact steady   0.7%  mean light  33.9%  left after moving the exact part  98.5%  | glow/plate light 0.1292 (rho 0.2434, x0.53)  | |steady light|/|light| 0.083
+  mproj.2  exact steady   0.0%  mean light   9.4%  left after moving the exact part 100.0%  | glow/plate light 0.0367 (rho 0.0741, x0.50)
+  qkv.3    exact steady   0.7%  mean light  37.0%  left after moving the exact part  97.0%  | glow/plate light 0.0279 (rho 0.0869, x0.32)  | |steady light|/|light| 0.081
+  proj.3   exact steady   0.4%  mean light  18.5%  left after moving the exact part  99.9%  | glow/plate light 0.1099 (rho 0.1105, x0.99)  | |steady light|/|light| 0.061
+  fc.3     exact steady   0.8%  mean light  29.5%  left after moving the exact part 105.0%  | glow/plate light 0.1316 (rho 0.2235, x0.59)  | |steady light|/|light| 0.086
+  mproj.3  exact steady   0.0%  mean light   7.9%  left after moving the exact part 100.0%  | glow/plate light 0.0262 (rho 0.0671, x0.39)
+  qkv.4    exact steady   1.5%  mean light  35.4%  left after moving the exact part  92.7%  | glow/plate light 0.0225 (rho 0.1001, x0.22)  | |steady light|/|light| 0.123
+  proj.4   exact steady   0.3%  mean light  27.8%  left after moving the exact part 100.4%  | glow/plate light 0.0716 (rho 0.0824, x0.87)  | |steady light|/|light| 0.049
+  fc.4     exact steady   0.8%  mean light  23.7%  left after moving the exact part 104.0%  | glow/plate light 0.1371 (rho 0.1846, x0.74)  | |steady light|/|light| 0.089
+  mproj.4  exact steady   0.0%  mean light   8.9%  left after moving the exact part 100.0%  | glow/plate light 0.0421 (rho 0.0524, x0.80)
+  qkv.5    exact steady   1.3%  mean light  36.6%  left after moving the exact part  91.9%  | glow/plate light 0.0116 (rho 0.0694, x0.17)  | |steady light|/|light| 0.115
+  proj.5   exact steady   0.4%  mean light  16.4%  left after moving the exact part 100.0%  | glow/plate light 0.0435 (rho 0.0522, x0.83)  | |steady light|/|light| 0.065
+  fc.5     exact steady   1.2%  mean light  26.0%  left after moving the exact part 106.1%  | glow/plate light 0.1310 (rho 0.1794, x0.73)  | |steady light|/|light| 0.111
+  mproj.5  exact steady   0.0%  mean light  16.5%  left after moving the exact part 100.0%  | glow/plate light 0.0453 (rho 0.0544, x0.83)
+  qkv.6    exact steady   1.2%  mean light  26.8%  left after moving the exact part  95.0%  | glow/plate light 0.0049 (rho 0.0361, x0.14)  | |steady light|/|light| 0.109
+  proj.6   exact steady   0.3%  mean light  17.3%  left after moving the exact part  99.5%  | glow/plate light 0.0327 (rho 0.0328, x1.00)  | |steady light|/|light| 0.052
+  fc.6     exact steady   1.5%  mean light  24.9%  left after moving the exact part 106.2%  | glow/plate light 0.1258 (rho 0.1736, x0.72)  | |steady light|/|light| 0.123
+  mproj.6  exact steady   0.0%  mean light   8.9%  left after moving the exact part 100.0%  | glow/plate light 0.0404 (rho 0.0510, x0.79)
+  qkv.7    exact steady   0.8%  mean light  23.8%  left after moving the exact part  95.0%  | glow/plate light 0.0044 (rho 0.0294, x0.15)  | |steady light|/|light| 0.088
+  proj.7   exact steady   0.2%  mean light  16.0%  left after moving the exact part  99.7%  | glow/plate light 0.0187 (rho 0.0239, x0.78)  | |steady light|/|light| 0.048
+  fc.7     exact steady   1.9%  mean light  24.9%  left after moving the exact part 108.9%  | glow/plate light 0.1326 (rho 0.1775, x0.75)  | |steady light|/|light| 0.137
+  mproj.7  exact steady   0.0%  mean light   9.9%  left after moving the exact part 100.0%  | glow/plate light 0.0362 (rho 0.0517, x0.70)
+  qkv.8    exact steady   1.7%  mean light  24.6%  left after moving the exact part  94.8%  | glow/plate light 0.0054 (rho 0.0315, x0.17)  | |steady light|/|light| 0.130
+  proj.8   exact steady   0.1%  mean light  15.3%  left after moving the exact part  99.5%  | glow/plate light 0.0265 (rho 0.0383, x0.69)  | |steady light|/|light| 0.037
+  fc.8     exact steady   2.0%  mean light  28.2%  left after moving the exact part 106.4%  | glow/plate light 0.1491 (rho 0.1897, x0.79)  | |steady light|/|light| 0.143
+  mproj.8  exact steady   0.0%  mean light  24.6%  left after moving the exact part 100.0%  | glow/plate light 0.0449 (rho 0.0579, x0.78)
+  qkv.9    exact steady   0.9%  mean light  37.4%  left after moving the exact part  91.6%  | glow/plate light 0.0055 (rho 0.0333, x0.17)  | |steady light|/|light| 0.095
+  proj.9   exact steady   0.1%  mean light  12.8%  left after moving the exact part 100.0%  | glow/plate light 0.0287 (rho 0.0350, x0.82)  | |steady light|/|light| 0.037
+  fc.9     exact steady   2.1%  mean light  23.6%  left after moving the exact part 110.5%  | glow/plate light 0.1530 (rho 0.1974, x0.77)  | |steady light|/|light| 0.146
+  mproj.9  exact steady   0.0%  mean light  27.9%  left after moving the exact part 100.0%  | glow/plate light 0.0388 (rho 0.0621, x0.63)
+  qkv.10   exact steady   0.6%  mean light  56.3%  left after moving the exact part  93.0%  | glow/plate light 0.0059 (rho 0.0342, x0.17)  | |steady light|/|light| 0.079
+  proj.10  exact steady   0.3%  mean light  14.0%  left after moving the exact part 100.2%  | glow/plate light 0.0324 (rho 0.0372, x0.87)  | |steady light|/|light| 0.057
+  fc.10    exact steady   2.1%  mean light  28.0%  left after moving the exact part 111.8%  | glow/plate light 0.1472 (rho 0.1965, x0.75)  | |steady light|/|light| 0.148
+  mproj.10 exact steady   0.0%  mean light  46.1%  left after moving the exact part 100.0%  | glow/plate light 0.0343 (rho 0.0596, x0.58)
+  qkv.11   exact steady   0.2%  mean light  47.9%  left after moving the exact part  96.5%  | glow/plate light 0.0068 (rho 0.0424, x0.16)  | |steady light|/|light| 0.041
+  proj.11  exact steady   0.3%  mean light  64.4%  left after moving the exact part  93.9%  | glow/plate light 0.0098 (rho 0.0419, x0.23)  | |steady light|/|light| 0.057
+  fc.11    exact steady   1.2%  mean light  35.4%  left after moving the exact part 104.6%  | glow/plate light 0.1199 (rho 0.1732, x0.69)  | |steady light|/|light| 0.110
+  mproj.11 exact steady   0.0%  mean light  67.2%  left after moving the exact part 100.0%  | glow/plate light 0.0160 (rho 0.0476, x0.34)
+  head     exact steady   9.7%  mean light  98.3%  left after moving the exact part  48.1%  | glow/plate light 0.0003 (rho 0.0079, x0.04)  | |steady light|/|light| 0.311
+
+by kind (median over layers): exact steady / mean light / left after moving the exact part / glow over rho
+  qkv      1.0%   35.9%   95.0%  x0.17
+  proj     0.3%   15.7%   99.9%  x0.83
+  fc       1.3%   28.1%  105.5%  x0.73
+  mproj    0.0%   10.6%  100.0%  x0.66
+peak memory 2.55 GB

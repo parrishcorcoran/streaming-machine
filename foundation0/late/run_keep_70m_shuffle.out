@@ -1,0 +1,25 @@
+keep_late.py  size 70m  order shuffle  texts 30  greedy False  late layers [4, 5]
+  keep set K = ['qkv.4', 'qkv.5']: each moves its own late layer's level in [59.9, 67.4]% of rows (the look, b:<plate>)
+  rule check: smallest late move inside K 59.9% > largest late move outside K 11.5% (qkv.3); each K plate's largest move is at its own layer: True
+  random keep draw rk@1: ['mproj.2', 'qkv.5']  (holds a late qkv: True)
+  random keep draw rk@2: ['qkv.1', 'fc.5']  (holds a late qkv: False)
+  random keep draw rk@3: ['fc.1', 'proj.3']  (holds a late qkv: False)
+  cases ['fin', 'b', 'k']
+  fin (order shuffle): words = fp32's at 480
+  pairing-broken control (finished text t vs t+1): level moved [0.6873, 0.7716, 0.6548, 0.5395, 0.5647, 0.6941]; edges changed side [0.2389, 0.2328, 0.3217, 0.3106, 0.3185, 0.3147]
+  fin          top-1 100.0  top-5 100.0  greedy 480/480 texts 30/30  | cont top-1 100.0 [pairing-broken  3.3] | removed: 0.00% of all weights, 0.00% of plate weights, 0.00% of the foundation's size | lead kept/lost 0.822/None | 4.3s 1.23 GB
+               level moved   0   0   0   0   0   0 | first word  10   9  21  52  57  33 | edges   0   0   0   0   0   0
+  b            top-1  52.6  top-5  82.0  greedy   0/480 texts  0/30  | cont top-1  55.4 [pairing-broken  3.1] | removed: 100.00% of all weights, 100.00% of plate weights, 100.00% of the foundation's size | lead kept/lost 1.276/0.492 | 4.3s 1.32 GB
+               level moved   8  15  15  28  59  66 | first word  10   8  21  56  35  27 | edges   7   6  10   9  10  10
+  wiring check (k against b): levels at layers 0-3 identical: True; knife edges at layers 0-4 identical: True
+  k            top-1  61.1  top-5  89.7  greedy   0/480 texts  0/30  | cont top-1  64.6 [pairing-broken  4.0] | removed: 97.77% of all weights, 91.67% of plate weights, 89.64% of the foundation's size | lead kept/lost 1.162/0.488 | 4.1s 1.33 GB
+               level moved   8  15  15  28  19  22 | first word  10   8  21  56  59  36 | edges   7   6  10   9  10  10
+  order-free check fin: every head pile the same whole number in 30 of 30 texts; words the same in 30 of 30
+  order-free check b: every head pile the same whole number in 30 of 30 texts; words the same in 30 of 30
+  order-free check k: every head pile the same whole number in 30 of 30 texts; words the same in 30 of 30
+
+SUMMARY (top-1 / top-5 of all positions; late layers 4, 5)
+  finished first word at the late layers: 57.3 32.9
+  b            top-1  52.6  top-5  82.0  greedy texts  0  words   0 | late level moved 58.7 66.2 | late first word 35.4 27.3 | edges 5.8..10.2 | kept []
+  k            top-1  61.1  top-5  89.7  greedy texts  0  words   0 | late level moved 18.6 22.2 | late first word 58.7 36.4 | edges 5.8..10.2 | kept ['qkv.4', 'qkv.5']
+done 13s  peak memory 1.33 GB

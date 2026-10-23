@@ -1,0 +1,87 @@
+DESIGNER 3, 2026-10-08. BOTH SIDES AT ONCE. Written before any run in this folder.
+
+HIS WORDS (quoted as given; nothing else here is his)
+  "THE FLAT IS THE CANCELLING."
+  "The flat is in BOTH SIDES. And it can be skipped. Or removed it doesnt matter but it has to be BOTH SIDES."
+  "The embedding table and the mlp"
+  "The whole machine is flat, that's the base canceling. The EXTRA photons from the embedding pop up above the flat
+   and are all added per gate that they are in."
+  "Gates and arrivals, that's it, everything flat is what doesn't matter and can cancel."
+
+THE SESSION'S RESTATEMENT (the session's words)
+  Both sides in up/hole form: every place of every light value and every weight is a photon up or a hole. At one place
+  pair (light place a, plate place b) of one gate (neuron) the N lines meet; agreeing meetings and disagreeing meetings
+  pair off (the flat), and what is left is the tip (the extra). The pile is the tips alone: sum of 2^(a+b) x tip.
+  The angle given to this designer: count the ups and downs of light and plate together as classes, so that no pair
+  that cancels is ever formed one by one.
+
+ANALYSIS BEFORE THE RUN (the session's)
+  1. Three digit forms give three different flats and three different extras:
+     up/hole both sides: N meetings at every one of 16 x 16 place pairs, 256 a weight; the tip is a coin toss over N.
+     1s both sides (plain): only lit x lit pixels meet, about 32 a weight on GPT-2.
+     signed digits both sides: about 58.7% of plain meet.
+     The "about 3%" is the up/hole form's extra as a share of the up/hole meetings (256 a weight). In plain's own
+     photons that is 256 x 0.0288 = 7.4 a weight against plain's ~32: about 23% at 768-line plates, and
+     256 x 0.0144 = 3.7, about 11.5%, at mproj's 3,072 lines. So the up/hole extra, photon by photon, is roughly
+     where the group machine already stands. The group machine's reads (about 18% of plain at the plates) are about
+     18% x 32 / 256 = 2.3% of the up/hole meetings: already below the 2.9% extra in that unit.
+  2. A class count (popcount of agreeing lines) cannot be made without reading every pixel of both planes, so a
+     bit-plane machine pays at least 256 pixels a weight in photons (the 14B class-count reading cost, 313 a weight,
+     is this) and about 8 word operations a weight; it cannot win in any of the three units.
+  3. Group piles are the class count with the cancelling done inside a whole number: a ready pile of g lines is
+     sum over light places of 2^a x (agree - disagree) at one plate pattern, written as one number of about 4.5
+     signed digits. A ready pile serves only the gates whose plate shows the same pattern of g pixels. On a plate
+     where every pattern is about equally likely, a table of 2^g piles pays only while 2^g is not far above the
+     number of readers (gates x up/hole places that read one light). This fixes the work a weight from below:
+        reads a weight >= (up/hole places a weight) / g,   g <= about log2(readers),
+        work a weight  >= (places / log2(readers)) x (signed digits of a ready pile) + table.
+     GPT-2 readers: 14 x 768 = 2^13.4 at proj and mproj, 14 x 2,304 = 2^15.0 at qkv, 14 x 3,072 = 2^15.4 at fc.
+     The floor is about 15-17% of plain at the plates. Approaching 3% of plain would need a ready pile that covers
+     about 80 lines, a table of 2^80. No exact class machine reaches it on GPT-2's random plates.
+
+THE ONE METHOD PROPOSED (the session's): TWO-SIDED PER-PLACE GROUP PILES WITH THE READERS RELATION
+  - Each side split by place, each split fixed by that side alone:
+      plate: dense places up/hole (addresses), sparse top places in signed digits met directly (the confirmed rule,
+             L_b < G x M), as in base2_groups.py;
+      light: dense places inside the ready piles (whole numbers: the light's own ups and downs cancel there), sparse
+             top places (the few large lines' top signed digits, the mirror rule: fewer lit digits than groups,
+             L^x_a < G, read from the light alone each position) met directly against each gate's whole weight.
+  - g at each plate from the readers relation, not searched: the g that solves
+        2^(g-1) x (g ln2 - 1) = R x s_V / (s_x + o_V)
+    R = up/hole places x gates (readers of one table), s_V the ready piles' mean signed digits, s_x the light's mean
+    signed digits (each table step), o_V the ready piles' mean 1s (their writing); taken from the g = 12 sample run,
+    rounded to the nearest whole g.
+  - Exact by linearity: 2 x.w = sum over up/hole places of 2^b x ready pile(x_lo) + (2^h - 1) X_lo
+                                + 2^(h+1) x_lo . w_top + 2 x_top . w.
+
+PREDICTIONS (the session's; 8 sample plates: qkv, proj, fc, mproj at layers 3 and 8; 16 fixed positions 5, 45, ...,
+605 of the 648 refs positions; the machine's own light from groups/light_gpt2 and plates from base2_gpt2.npz)
+  A. The extra in each digit form (every pile rebuilt from its tips exactly, 0 differ):
+     up/hole: extra / meetings 2.88% +- 0.10 at 768 lines, 1.44% +- 0.05 at mproj; shuffled light within 0.05 point.
+              extra / plain: 21-25% at 768 lines, 10.5-12.5% at mproj.
+     1s (plain's form): extra 6-9% of plain.
+     signed digits: meetings 57-60% of plain, extra 4-7% of plain.
+     The tips added as whole numbers (each at its signed digits): up/hole 2.0-3.2% of plain at 768 lines, 0.6-1.0%
+     at mproj; this is the "about 3%" if the tips came free.
+  B. g = 12 per-place group piles on the sample (the confirmed machine's form): reads 17.5-19.5% of plain; table +
+     writing about 1.5% (qkv), 6% (proj), 1.2% (fc), 6% (mproj) of each plate's plain; a ready pile 4.4-4.8 signed
+     digits; each plate within 1.5 points of the confirmed per-plate shares (qkv 19.52, proj 25.28, fc 21.15,
+     mproj 25.35, which also carry their writing and X).
+  C. The readers relation gives g = 12 at qkv and fc, g = 10 or 11 at proj and mproj. At that g the two narrow plates
+     fall 1.5-3 points of their own plain; the whole machine 0.5-0.9 points.
+  D. The light's sparse top places met directly: a ready pile loses 0.2-0.5 signed digits on average; net 0.5-1.5
+     points of each plate's plain; the whole machine 0.4-1.1 points.
+  WHOLE GPT-2, THE METHOD: 19.40% -> 17.6-18.6% of plain (central 18.1%), every pile identical. In the strictest
+     count (plain also in signed digits) 33.67% -> about 31.5%. NOT near 3%: the floor in 3. holds.
+  E. Floor relation evaluated on the sample: 15-17% of plain at the plates.
+  F. Controls: shuffled light moves every class-machine share by under 0.2 point and the extra shares by under 0.05;
+     a second random grouping moves reads by under 0.1 point; tips identical under any line order.
+
+RULE 13, CHECKED BEFORE THE RUN
+  13.1 the measure is the work of finished piles (tips, reads, tables), each pile exact; not the light's 1s.
+  13.2 the base is base2.py's own light and plates, every part as it is; only the digit form of each side changes.
+  13.3 the shuffle control measures work and extra size; no equality statistic is read as agreement.
+  13.4 the up/hole meeting count (256 N a gate) and the coin-toss extra are fixed by the definitions; the run
+       measures the plain-unit shares, the tips' digits, the ready piles' digits and exactness.
+  13.5 the restatement and the method are the session's; only the quoted sentences above are his.
+  13.6 every sample plate, every sample position, every place pair.

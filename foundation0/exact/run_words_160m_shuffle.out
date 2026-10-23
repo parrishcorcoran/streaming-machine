@@ -1,0 +1,25 @@
+remove_exact.py  size 160m  order shuffle  texts 30  greedy True  cases ['fin', 'k', 'p']
+  c from the never-built rows 1.180269e-02 -> 12673038 x 2^-30;  the settings' product 8.961508e-03 -> 9622346 x 2^-30
+  fin: the finished machine's word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to ../pythia_base2.py's run in 30 of 30 texts (lanes shuffled)
+  k    top-1  94.37%  top-5 100.00%  (of 622);  16 continuation top-1  94.17% [pairing-broken  2.5%];  greedy words 308/480 texts 11/30;  piles identical: positions 0/622 texts 0/30;  20.6s  peak 2.53 GB
+       the finished word's lead moved by: median 0.13015  99th pct 0.59076  max 1.48477 logits
+       positions lost (finished lead -> here): t0p16 0.0434->-0.0208, t2p4 0.0764->-0.2070, t3p11 0.0842->-0.0501, t5p9 0.1127->-0.1110, t5p14 0.0782->-0.0924, t9p1 0.2393->-0.0376, t9p2 0.3125->-0.0370, t9p3 0.1145->-0.0019, t10p4 0.0194->-0.0785, t10p20 0.2006->-0.0872, t11p15 0.1498->-0.1022, t11p18 0.1996->-0.0975 ...
+       weights changed on the grid: 160,304,007 of 162,201,600 (98.83%), mean |change| 39.09 grains, largest 386; inside the finished weight's own 11-place grain 6.6%
+       by kind: qkv 99.0% mean 46.63 max 386 in-grain 4%  proj 98.2% mean 20.23 max 196 in-grain 7%  fc 99.4% mean 55.36 max 385 in-grain 3%  mproj 97.4% mean 13.75 max 172 in-grain 9%  head 98.9% mean 28.14 max 386 in-grain 13%  embed 99.4% mean 56.00 max 386 in-grain 3%
+       text 0 'The capital of France is': here ' located in the city of Paris.\n\nThe city is home to the French'  finished ' located in the city of Paris.\n\nThe city is also home to the'
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the United States.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 3 'The quick brown fox': here 'es, the quick brown foxes, and the quick brown foxes, are'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 5 'My favorite food is': here " the chicken.\n\nI'm not sure if I'm eating the chicken,"  finished ' the chicken.\n\nI have a chicken that I have never had before.'
+  p    top-1  95.66%  top-5 100.00%  (of 622);  16 continuation top-1  95.21% [pairing-broken  2.3%];  greedy words 327/480 texts 13/30;  piles identical: positions 0/622 texts 0/30;  19.2s  peak 2.53 GB
+       the finished word's lead moved by: median 0.09885  99th pct 0.47108  max 1.34615 logits
+       positions lost (finished lead -> here): t0p16 0.0434->-0.0203, t2p4 0.0764->-0.1398, t3p11 0.0842->-0.0406, t5p9 0.1127->-0.0550, t5p14 0.0782->-0.0555, t10p4 0.0194->-0.0721, t10p20 0.2006->-0.0224, t11p15 0.1498->-0.0503, t11p18 0.1996->-0.0180, t12p3 0.0356->-0.1558, t12p7 0.0064->-0.1064, t13p13 0.0679->-0.1730 ...
+       weights changed on the grid: 159,726,058 of 162,201,600 (98.47%), mean |change| 29.68 grains, largest 293; inside the finished weight's own 11-place grain 8.7%
+       by kind: qkv 98.7% mean 35.41 max 293 in-grain 6%  proj 97.7% mean 15.36 max 149 in-grain 9%  fc 99.2% mean 42.03 max 292 in-grain 4%  mproj 96.7% mean 10.44 max 131 in-grain 12%  head 98.5% mean 21.37 max 293 in-grain 17%  embed 99.2% mean 42.52 max 293 in-grain 4%
+       text 0 'The capital of France is': here ' located in the city of Paris.\n\nThe city is home to the French'  finished ' located in the city of Paris.\n\nThe city is also home to the'
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the United States.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 3 'The quick brown fox': here 'es, the quick brown foxes, and the quick brown foxes, the'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 5 'My favorite food is': here " the chicken.\n\nI'm not sure if I'm eating the chicken,"  finished ' the chicken.\n\nI have a chicken that I have never had before.'
+  order-free check, fin: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, k: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, p: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+done 47s  peak memory 2.53 GB

@@ -1,0 +1,213 @@
+free at 16:23:41; running: /usr/bin/time -l python3 reach/answer.py
+  head b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/head_b1.json)
+  mproj.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/mproj.11_b1.json)
+  fc.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/fc.11_b1.json)
+  proj.11 b=1: already done (/Users/abundancemachine/streaming-machine/reach/answer/proj.11_b1.json)
+    qkv.11 b=1: layer 11 stream range max 411519578, row median 68726495; blown rows 6388/7200; real move max 16299 (13s, 2113 MB)
+  qkv.11 b=1: digits removed 885,701; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 627, max 4672; top 5 changed (real) at 38/6000; bound/real median None (46s, 2113 MB)
+    mproj.10 b=1: layer 10 stream range max 10530, row median 7207; blown rows 0/7200; real move max 1534 (48s, 2113 MB)
+    mproj.10 b=1: layer 11 stream range max -, row median -; blown rows 7200/7200; real move max 14124 (64s, 2309 MB)
+  mproj.10 b=1: digits removed 1,177,789; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 500, max 4290; top 5 changed (real) at 29/6000; bound/real median None (72s, 2309 MB)
+    fc.10 b=1: layer 10 stream range max 72088, row median 50817; blown rows 0/7200; real move max 1281 (77s, 2309 MB)
+    fc.10 b=1: layer 11 stream range max -, row median -; blown rows 7200/7200; real move max 15400 (94s, 2309 MB)
+  fc.10 b=1: digits removed 1,178,408; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 597, max 7712; top 5 changed (real) at 35/6000; bound/real median None (102s, 2309 MB)
+    proj.10 b=1: layer 10 stream range max 327935, row median 113857; blown rows 0/7200; real move max 1111 (108s, 2389 MB)
+    proj.10 b=1: layer 11 stream range max -, row median -; blown rows 7200/7200; real move max 12131 (128s, 2389 MB)
+  proj.10 b=1: digits removed 295,285; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 514, max 4304; top 5 changed (real) at 24/6000; bound/real median None (136s, 2389 MB)
+    qkv.10 b=1: layer 10 stream range max 370685261, row median 74652639; blown rows 5074/7200; real move max 1876 (149s, 2389 MB)
+    qkv.10 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  qkv.10 b=1: digits removed 883,827; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 681, max 5510; top 5 changed (real) at 33/6000; bound/real median None (163s, 2500 MB)
+    mproj.9 b=1: layer  9 stream range max 4785, row median 3331; blown rows 0/7200; real move max 609 (165s, 2500 MB)
+    mproj.9 b=1: layer 10 stream range max 1320217, row median 1011373; blown rows 6900/7200; real move max 1252 (181s, 2500 MB)
+    mproj.9 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  mproj.9 b=1: digits removed 1,179,587; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 605, max 6333; top 5 changed (real) at 30/6000; bound/real median None (197s, 2505 MB)
+    fc.9 b=1: layer  9 stream range max 44191, row median 33237; blown rows 0/7200; real move max 592 (202s, 2505 MB)
+    fc.9 b=1: layer 10 stream range max 4241694, row median 3538024; blown rows 6900/7200; real move max 1798 (214s, 2505 MB)
+    fc.9 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  fc.9 b=1: digits removed 1,180,322; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 671, max 5855; top 5 changed (real) at 31/6000; bound/real median None (228s, 2505 MB)
+    proj.9 b=1: layer  9 stream range max 234800, row median 83269; blown rows 0/7200; real move max 418 (234s, 2505 MB)
+    proj.9 b=1: layer 10 stream range max 4847695, row median 2066141; blown rows 6900/7200; real move max 1383 (251s, 2505 MB)
+    proj.9 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  proj.9 b=1: digits removed 295,083; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 617, max 6069; top 5 changed (real) at 34/6000; bound/real median None (266s, 2505 MB)
+    qkv.9 b=1: layer  9 stream range max 195844246, row median 42399926; blown rows 5838/7200; real move max 955 (279s, 2505 MB)
+    qkv.9 b=1: layer 10 stream range max 241064609, row median 186819799; blown rows 6900/7200; real move max 1862 (291s, 2505 MB)
+    qkv.9 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  qkv.9 b=1: digits removed 884,419; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 788, max 9857; top 5 changed (real) at 29/6000; bound/real median None (308s, 2505 MB)
+    mproj.8 b=1: layer  8 stream range max 4699, row median 3410; blown rows 0/7200; real move max 578 (310s, 2505 MB)
+    mproj.8 b=1: layer  9 stream range max 747842, row median 582933; blown rows 6900/7200; real move max 932 (327s, 2505 MB)
+    mproj.8 b=1: layer 10 stream range max -, row median -; blown rows 7200/7200; real move max 1833 (338s, 2505 MB)
+    mproj.8 b=1: every row unbounded after stream 10; the real machine carried on to the top
+  mproj.8 b=1: digits removed 1,179,441; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 690, max 11376; top 5 changed (real) at 38/6000; bound/real median None (348s, 2505 MB)
+    fc.8 b=1: layer  8 stream range max 43630, row median 34140; blown rows 0/7200; real move max 529 (352s, 2505 MB)
+    fc.8 b=1: layer  9 stream range max 2034348, row median 1679110; blown rows 6900/7200; real move max 918 (365s, 2505 MB)
+    fc.8 b=1: every row unbounded after stream a 10; the real machine carried on to the top
+  fc.8 b=1: digits removed 1,179,435; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 749, max 11432; top 5 changed (real) at 44/6000; bound/real median None (386s, 2505 MB)
+    proj.8 b=1: layer  8 stream range max 251368, row median 98517; blown rows 0/7200; real move max 436 (391s, 2505 MB)
+    proj.8 b=1: layer  9 stream range max 2704942, row median 1169565; blown rows 6900/7200; real move max 930 (408s, 2505 MB)
+    proj.8 b=1: layer 10 stream range max 113416235, row median 113416235; blown rows 7199/7200; real move max 1881 (421s, 2505 MB)
+    proj.8 b=1: every row unbounded after stream a 11; the real machine carried on to the top
+  proj.8 b=1: digits removed 294,559; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 700, max 8305; top 5 changed (real) at 42/6000; bound/real median None (431s, 2505 MB)
+    qkv.8 b=1: layer  8 stream range max 221383204, row median 44815581; blown rows 6066/7200; real move max 1212 (444s, 2505 MB)
+    qkv.8 b=1: layer  9 stream range max 82612867, row median 66653710; blown rows 6900/7200; real move max 1216 (455s, 2505 MB)
+    qkv.8 b=1: every row unbounded after stream a 10; the real machine carried on to the top
+  qkv.8 b=1: digits removed 885,346; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 830, max 18279; top 5 changed (real) at 41/6000; bound/real median None (473s, 2505 MB)
+    mproj.7 b=1: layer  7 stream range max 4376, row median 3218; blown rows 0/7200; real move max 567 (475s, 2505 MB)
+    mproj.7 b=1: layer  8 stream range max 544538, row median 408112; blown rows 6900/7200; real move max 866 (491s, 2505 MB)
+    mproj.7 b=1: layer  9 stream range max -, row median -; blown rows 7200/7200; real move max 1010 (501s, 2505 MB)
+    mproj.7 b=1: every row unbounded after stream 9; the real machine carried on to the top
+  mproj.7 b=1: digits removed 1,177,669; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 756, max 10697; top 5 changed (real) at 38/6000; bound/real median None (513s, 2505 MB)
+    fc.7 b=1: layer  7 stream range max 52095, row median 41278; blown rows 0/7200; real move max 588 (518s, 2505 MB)
+    fc.7 b=1: layer  8 stream range max 1322903, row median 1063871; blown rows 6900/7200; real move max 913 (530s, 2505 MB)
+    fc.7 b=1: layer  9 stream range max -, row median -; blown rows 7200/7200; real move max 1197 (543s, 2505 MB)
+    fc.7 b=1: every row unbounded after stream 9; the real machine carried on to the top
+  fc.7 b=1: digits removed 1,179,341; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 791, max 17815; top 5 changed (real) at 45/6000; bound/real median None (555s, 2505 MB)
+    proj.7 b=1: layer  7 stream range max 280253, row median 98729; blown rows 0/7200; real move max 378 (561s, 2505 MB)
+    proj.7 b=1: layer  8 stream range max 1496600, row median 478068; blown rows 6900/7200; real move max 763 (577s, 2505 MB)
+    proj.7 b=1: layer  9 stream range max 49446318, row median 13252076; blown rows 7195/7200; real move max 993 (588s, 2505 MB)
+    proj.7 b=1: every row unbounded after stream a 10; the real machine carried on to the top
+  proj.7 b=1: digits removed 294,471; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 757, max 15260; top 5 changed (real) at 39/6000; bound/real median None (601s, 2505 MB)
+    qkv.7 b=1: layer  7 stream range max 204821075, row median 46042999; blown rows 5975/7200; real move max 1089 (613s, 2505 MB)
+    qkv.7 b=1: layer  8 stream range max 36109264, row median 26572013; blown rows 6900/7200; real move max 1036 (625s, 2505 MB)
+    qkv.7 b=1: every row unbounded after stream a 9; the real machine carried on to the top
+  qkv.7 b=1: digits removed 883,158; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 856, max 16985; top 5 changed (real) at 49/6000; bound/real median None (642s, 2505 MB)
+    mproj.6 b=1: layer  6 stream range max 2101, row median 1617; blown rows 0/7200; real move max 296 (644s, 2505 MB)
+    mproj.6 b=1: layer  7 stream range max 513634, row median 409875; blown rows 6900/7200; real move max 877 (660s, 2505 MB)
+    mproj.6 b=1: layer  8 stream range max -, row median -; blown rows 7200/7200; real move max 885 (670s, 2505 MB)
+    mproj.6 b=1: every row unbounded after stream 8; the real machine carried on to the top
+  mproj.6 b=1: digits removed 1,178,476; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 788, max 16010; top 5 changed (real) at 50/6000; bound/real median None (684s, 2505 MB)
+    fc.6 b=1: layer  6 stream range max 48507, row median 38485; blown rows 0/7200; real move max 631 (689s, 2505 MB)
+    fc.6 b=1: layer  7 stream range max 1294567, row median 1088012; blown rows 6900/7200; real move max 773 (701s, 2505 MB)
+    fc.6 b=1: layer  8 stream range max -, row median -; blown rows 7200/7200; real move max 1037 (713s, 2505 MB)
+    fc.6 b=1: every row unbounded after stream 8; the real machine carried on to the top
+  fc.6 b=1: digits removed 1,179,614; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 826, max 16705; top 5 changed (real) at 39/6000; bound/real median None (726s, 2505 MB)
+    proj.6 b=1: layer  6 stream range max 250758, row median 111224; blown rows 0/7200; real move max 342 (733s, 2505 MB)
+    proj.6 b=1: layer  7 stream range max 1510423, row median 639505; blown rows 6900/7200; real move max 768 (749s, 2505 MB)
+    proj.6 b=1: layer  8 stream range max 70289172, row median 33468875; blown rows 7191/7200; real move max 983 (760s, 2505 MB)
+    proj.6 b=1: every row unbounded after stream a 9; the real machine carried on to the top
+  proj.6 b=1: digits removed 294,721; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 806, max 14548; top 5 changed (real) at 34/6000; bound/real median None (775s, 2505 MB)
+    qkv.6 b=1: layer  6 stream range max 190119253, row median 26886264; blown rows 6482/7200; real move max 735 (788s, 2505 MB)
+    qkv.6 b=1: layer  7 stream range max 37062100, row median 26477420; blown rows 6900/7200; real move max 1082 (798s, 2505 MB)
+    qkv.6 b=1: every row unbounded after stream a 8; the real machine carried on to the top
+  qkv.6 b=1: digits removed 883,835; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 873, max 25885; top 5 changed (real) at 47/6000; bound/real median None (817s, 2505 MB)
+    mproj.5 b=1: layer  5 stream range max 2026, row median 1527; blown rows 0/7200; real move max 228 (819s, 2505 MB)
+    mproj.5 b=1: layer  6 stream range max 613891, row median 449027; blown rows 6900/7200; real move max 628 (835s, 2505 MB)
+    mproj.5 b=1: layer  7 stream range max -, row median -; blown rows 7200/7200; real move max 1242 (846s, 2505 MB)
+    mproj.5 b=1: every row unbounded after stream 7; the real machine carried on to the top
+  mproj.5 b=1: digits removed 1,178,621; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 838, max 16688; top 5 changed (real) at 46/6000; bound/real median None (862s, 2505 MB)
+    fc.5 b=1: layer  5 stream range max 57407, row median 43085; blown rows 0/7200; real move max 766 (866s, 2505 MB)
+    fc.5 b=1: layer  6 stream range max 1517101, row median 1233386; blown rows 6900/7200; real move max 787 (879s, 2505 MB)
+    fc.5 b=1: layer  7 stream range max -, row median -; blown rows 7200/7200; real move max 1031 (892s, 2505 MB)
+    fc.5 b=1: every row unbounded after stream 7; the real machine carried on to the top
+  fc.5 b=1: digits removed 1,178,423; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 868, max 29825; top 5 changed (real) at 42/6000; bound/real median None (907s, 2505 MB)
+    proj.5 b=1: layer  5 stream range max 344354, row median 146857; blown rows 0/7200; real move max 455 (914s, 2505 MB)
+    proj.5 b=1: layer  6 stream range max 2213596, row median 1003172; blown rows 6900/7200; real move max 807 (929s, 2505 MB)
+    proj.5 b=1: layer  7 stream range max -, row median -; blown rows 7200/7200; real move max 1146 (941s, 2505 MB)
+    proj.5 b=1: every row unbounded after stream 7; the real machine carried on to the top
+  proj.5 b=1: digits removed 294,528; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 832, max 13681; top 5 changed (real) at 44/6000; bound/real median None (957s, 2505 MB)
+    qkv.5 b=1: layer  5 stream range max 163427950, row median 33783950; blown rows 6496/7200; real move max 939 (969s, 2505 MB)
+    qkv.5 b=1: layer  6 stream range max 34071620, row median 24962681; blown rows 6900/7200; real move max 1022 (980s, 2505 MB)
+    qkv.5 b=1: every row unbounded after stream a 7; the real machine carried on to the top
+  qkv.5 b=1: digits removed 884,562; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 888, max 39742; top 5 changed (real) at 46/6000; bound/real median None (1001s, 2505 MB)
+    mproj.4 b=1: layer  4 stream range max 4341, row median 3046; blown rows 0/7200; real move max 533 (1003s, 2505 MB)
+    mproj.4 b=1: layer  5 stream range max 635032, row median 419528; blown rows 6900/7200; real move max 2900 (1020s, 2505 MB)
+    mproj.4 b=1: layer  6 stream range max -, row median -; blown rows 7200/7200; real move max 2902 (1030s, 2505 MB)
+    mproj.4 b=1: every row unbounded after stream 6; the real machine carried on to the top
+  mproj.4 b=1: digits removed 1,178,806; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 872, max 21011; top 5 changed (real) at 49/6000; bound/real median None (1047s, 2505 MB)
+    fc.4 b=1: layer  4 stream range max 58474, row median 44411; blown rows 0/7200; real move max 572 (1051s, 2505 MB)
+    fc.4 b=1: layer  5 stream range max 1746666, row median 1508289; blown rows 6900/7200; real move max 3079 (1064s, 2505 MB)
+    fc.4 b=1: layer  6 stream range max -, row median -; blown rows 7200/7200; real move max 2952 (1076s, 2505 MB)
+    fc.4 b=1: every row unbounded after stream 6; the real machine carried on to the top
+  fc.4 b=1: digits removed 1,179,284; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 895, max 22215; top 5 changed (real) at 54/6000; bound/real median None (1093s, 2505 MB)
+    proj.4 b=1: layer  4 stream range max 360462, row median 213286; blown rows 0/7200; real move max 655 (1100s, 2505 MB)
+    proj.4 b=1: layer  5 stream range max 2131886, row median 952098; blown rows 6900/7200; real move max 846 (1115s, 2505 MB)
+    proj.4 b=1: layer  6 stream range max 53203468, row median 21337541; blown rows 7195/7200; real move max 1044 (1127s, 2505 MB)
+    proj.4 b=1: every row unbounded after stream a 7; the real machine carried on to the top
+  proj.4 b=1: digits removed 294,427; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 856, max 29987; top 5 changed (real) at 40/6000; bound/real median None (1145s, 2505 MB)
+    qkv.4 b=1: layer  4 stream range max 201897683, row median 115814; blown rows 6615/7200; real move max 936 (1158s, 2505 MB)
+    qkv.4 b=1: layer  5 stream range max 38729126, row median 30445804; blown rows 6900/7200; real move max 1091 (1168s, 2505 MB)
+    qkv.4 b=1: every row unbounded after stream a 6; the real machine carried on to the top
+  qkv.4 b=1: digits removed 884,133; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 943, max 33622; top 5 changed (real) at 46/6000; bound/real median None (1191s, 2505 MB)
+    mproj.3 b=1: layer  3 stream range max 16790, row median 10779; blown rows 0/7200; real move max 1424 (1193s, 2505 MB)
+    mproj.3 b=1: layer  4 stream range max 588772, row median 380196; blown rows 6900/7200; real move max 4592 (1208s, 2505 MB)
+    mproj.3 b=1: layer  5 stream range max 148518507, row median 102840351; blown rows 7064/7200; real move max 4578 (1220s, 2505 MB)
+    mproj.3 b=1: every row unbounded after stream a 6; the real machine carried on to the top
+  mproj.3 b=1: digits removed 1,177,238; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 908, max 40415; top 5 changed (real) at 45/6000; bound/real median None (1247s, 2505 MB)
+    fc.3 b=1: layer  3 stream range max 63225, row median 44314; blown rows 0/7200; real move max 3149 (1252s, 2505 MB)
+    fc.3 b=1: layer  4 stream range max 2041320, row median 1578922; blown rows 6900/7200; real move max 6253 (1266s, 2505 MB)
+    fc.3 b=1: layer  5 stream range max -, row median -; blown rows 7200/7200; real move max 6641 (1279s, 2505 MB)
+    fc.3 b=1: every row unbounded after stream 5; the real machine carried on to the top
+  fc.3 b=1: digits removed 1,180,025; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 947, max 24829; top 5 changed (real) at 50/6000; bound/real median None (1298s, 2505 MB)
+    proj.3 b=1: layer  3 stream range max 431326, row median 232173; blown rows 0/7200; real move max 2466 (1304s, 2505 MB)
+    proj.3 b=1: layer  4 stream range max 3173138, row median 1606308; blown rows 6900/7200; real move max 2622 (1317s, 2505 MB)
+    proj.3 b=1: layer  5 stream range max 29985352, row median 21806934; blown rows 7198/7200; real move max 2173 (1330s, 2505 MB)
+    proj.3 b=1: every row unbounded after stream a 6; the real machine carried on to the top
+  proj.3 b=1: digits removed 294,179; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 905, max 37416; top 5 changed (real) at 44/6000; bound/real median None (1350s, 2505 MB)
+    qkv.3 b=1: layer  3 stream range max 230322618, row median 135180; blown rows 6743/7200; real move max 1852 (1362s, 2505 MB)
+    qkv.3 b=1: layer  4 stream range max 39226405, row median 34459944; blown rows 6900/7200; real move max 1999 (1372s, 2505 MB)
+    qkv.3 b=1: every row unbounded after stream a 5; the real machine carried on to the top
+  qkv.3 b=1: digits removed 884,261; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 946, max 29629; top 5 changed (real) at 45/6000; bound/real median None (1397s, 2505 MB)
+    mproj.2 b=1: layer  2 stream range max 14106, row median 5633; blown rows 0/7200; real move max 3646 (1399s, 2505 MB)
+    mproj.2 b=1: layer  3 stream range max 1779765, row median 1310660; blown rows 6900/7200; real move max 6324 (1416s, 2505 MB)
+    mproj.2 b=1: layer  4 stream range max 647155195, row median 525600202; blown rows 6928/7200; real move max 8132 (1429s, 2505 MB)
+    mproj.2 b=1: every row unbounded after stream a 5; the real machine carried on to the top
+  mproj.2 b=1: digits removed 1,179,158; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1029, max 40375; top 5 changed (real) at 46/6000; bound/real median None (1452s, 2505 MB)
+    fc.2 b=1: layer  2 stream range max 51301, row median 34664; blown rows 0/7200; real move max 4690 (1457s, 2505 MB)
+    fc.2 b=1: layer  3 stream range max 4122797, row median 3042908; blown rows 6900/7200; real move max 10501 (1470s, 2505 MB)
+    fc.2 b=1: every row unbounded after stream a 4; the real machine carried on to the top
+  fc.2 b=1: digits removed 1,179,891; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1010, max 27770; top 5 changed (real) at 58/6000; bound/real median None (1501s, 2505 MB)
+    proj.2 b=1: layer  2 stream range max 354656, row median 229593; blown rows 0/7200; real move max 6094 (1507s, 2505 MB)
+    proj.2 b=1: layer  3 stream range max 13391977, row median 9279961; blown rows 6900/7200; real move max 9118 (1519s, 2505 MB)
+    proj.2 b=1: every row unbounded after stream a 4; the real machine carried on to the top
+  proj.2 b=1: digits removed 294,960; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 995, max 35215; top 5 changed (real) at 52/6000; bound/real median None (1546s, 2505 MB)
+    qkv.2 b=1: layer  2 stream range max 159661832, row median 955302; blown rows 6846/7200; real move max 5349 (1559s, 2505 MB)
+    qkv.2 b=1: layer  3 stream range max 561171216, row median 478973474; blown rows 6900/7200; real move max 10657 (1571s, 2505 MB)
+    qkv.2 b=1: every row unbounded after stream a 4; the real machine carried on to the top
+  qkv.2 b=1: digits removed 885,033; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1044, max 39783; top 5 changed (real) at 49/6000; bound/real median None (1596s, 2505 MB)
+    mproj.1 b=1: layer  1 stream range max 11564, row median 5674; blown rows 0/7200; real move max 928 (1598s, 2505 MB)
+    mproj.1 b=1: layer  2 stream range max 25568645, row median 21962581; blown rows 6900/7200; real move max 9383 (1614s, 2505 MB)
+    mproj.1 b=1: every row unbounded after stream a 3; the real machine carried on to the top
+  mproj.1 b=1: digits removed 1,179,483; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1069, max 43275; top 5 changed (real) at 53/6000; bound/real median None (1643s, 2514 MB)
+    fc.1 b=1: layer  1 stream range max 31860, row median 24562; blown rows 0/7200; real move max 1124 (1648s, 2514 MB)
+    fc.1 b=1: layer  2 stream range max 202409489, row median 147639525; blown rows 6900/7200; real move max 15394 (1660s, 2514 MB)
+    fc.1 b=1: every row unbounded after stream a 3; the real machine carried on to the top
+  fc.1 b=1: digits removed 1,179,908; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1079, max 58858; top 5 changed (real) at 50/6000; bound/real median None (1691s, 2519 MB)
+    proj.1 b=1: layer  1 stream range max 290749, row median 206641; blown rows 0/7200; real move max 3436 (1698s, 2519 MB)
+    proj.1 b=1: layer  2 stream range max 1448764636, row median 1105144991; blown rows 6900/7200; real move max 8457 (1713s, 2519 MB)
+    proj.1 b=1: every row unbounded after stream a 3; the real machine carried on to the top
+  proj.1 b=1: digits removed 294,903; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1099, max 32407; top 5 changed (real) at 62/6000; bound/real median None (1740s, 2519 MB)
+    qkv.1 b=1: layer  1 stream range max 13699659, row median 8188406; blown rows 6900/7200; real move max 5001 (1752s, 2519 MB)
+    qkv.1 b=1: every row unbounded after stream a 2; the real machine carried on to the top
+  qkv.1 b=1: digits removed 885,020; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1137, max 40343; top 5 changed (real) at 53/6000; bound/real median None (1784s, 2519 MB)
+    mproj.0 b=1: layer  0 stream range max 6166, row median 3422; blown rows 0/7200; real move max 677 (1786s, 2519 MB)
+    mproj.0 b=1: layer  1 stream range max -, row median -; blown rows 7200/7200; real move max 10204 (1802s, 2519 MB)
+    mproj.0 b=1: every row unbounded after stream 1; the real machine carried on to the top
+  mproj.0 b=1: digits removed 1,179,639; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1130, max 50368; top 5 changed (real) at 48/6000; bound/real median None (1830s, 2519 MB)
+    fc.0 b=1: layer  0 stream range max 79277, row median 49022; blown rows 0/7200; real move max 994 (1834s, 2519 MB)
+    fc.0 b=1: layer  1 stream range max -, row median -; blown rows 7200/7200; real move max 11414 (1854s, 2519 MB)
+    fc.0 b=1: every row unbounded after stream 1; the real machine carried on to the top
+  fc.0 b=1: digits removed 1,178,009; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1192, max 57985; top 5 changed (real) at 64/6000; bound/real median None (1881s, 2519 MB)
+    proj.0 b=1: layer  0 stream range max 367976, row median 239990; blown rows 0/7200; real move max 1209 (1888s, 2519 MB)
+    proj.0 b=1: every row unbounded after stream a 1; the real machine carried on to the top
+  proj.0 b=1: digits removed 294,744; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1167, max 109710; top 5 changed (real) at 67/6000; bound/real median None (1923s, 2519 MB)
+    qkv.0 b=1: layer  0 stream range max 143171802, row median 92448571; blown rows 6902/7200; real move max 1497 (1936s, 2519 MB)
+    qkv.0 b=1: every row unbounded after stream a 1; the real machine carried on to the top
+  qkv.0 b=1: digits removed 884,223; PROVEN at 0/6000 judge positions (blown at the top 6000); bound on a score's move: median None, max None; REAL move: median 1194, max 57764; top 5 changed (real) at 60/6000; bound/real median None (1967s, 2519 MB)
+done (1967s, max memory 2519 MB)
+     1967.57 real      1949.51 user        17.88 sys
+          2519597056  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            17554972  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  47  voluntary context switches
+                6789  involuntary context switches
+      27372180254736  instructions retired
+       7661714733124  cycles elapsed
+          2362476968  peak memory footprint

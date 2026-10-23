@@ -1,0 +1,94 @@
+  text 0 (4s)
+  text 3 (9s)
+  text 6 (14s)
+  text 9 (19s)
+  text 12 (25s)
+  text 15 (29s)
+  text 18 (34s)
+  text 21 (39s)
+  text 24 (42s)
+  text 27 (44s)
+
++-1 at layer 10 Rout: top 5 proved 9/217
+   gauge LS range             #1: median width              0.0
+   gauged bank out            #1: median width              8.0
+   arrival out                #1: median width             20.5
+   plain bank out             #1: median width          3,088.2
+   gauge LS range             #2: median width            401.5
+   gauged bank out            #2: median width          9,180.0
+   bend out                   #1: median width          1,050.0
+   plain bank out             #2: median width        969,706.8
+   final light (x16) width    #1: median width          1,921.8
+   final gauge LS range       #1: median width         60,799.5
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 QKV:q: top 5 proved 1/217
+   arrival out                #1: median width              2.0
+   plain bank out             #1: median width            780.0
+   gauge LS range             #1: median width             82.5
+   gauged bank out            #1: median width          2,173.5
+   bend out                   #1: median width            256.5
+   plain bank out             #2: median width        224,281.0
+   final light (x16) width    #1: median width            420.5
+   final gauge LS range       #1: median width         10,850.8
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 QKV:k: top 5 proved 41/217
+   arrival out                #1: median width              0.0
+   plain bank out             #1: median width             41.0
+   gauge LS range             #1: median width              3.8
+   gauged bank out            #1: median width            115.5
+   bend out                   #1: median width             14.0
+   plain bank out             #2: median width         12,910.2
+   final light (x16) width    #1: median width             23.5
+   final gauge LS range       #1: median width            598.8
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 QKV:v: top 5 proved 60/217
+   arrival out                #1: median width              0.0
+   plain bank out             #1: median width              9.0
+   gauge LS range             #1: median width              1.0
+   gauged bank out            #1: median width             27.0
+   bend out                   #1: median width              4.5
+   plain bank out             #2: median width          3,228.0
+   final light (x16) width    #1: median width              6.0
+   final gauge LS range       #1: median width            134.5
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 ATT: top 5 proved 0/217
+   plain bank out             #1: median width            175.5
+   gauge LS range             #1: median width             14.0
+   gauged bank out            #1: median width            496.5
+   bend out                   #1: median width             60.5
+   plain bank out             #2: median width         51,088.8
+   final light (x16) width    #1: median width             98.0
+   final gauge LS range       #1: median width          2,329.5
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 A: top 5 proved 142/217
+   gauge LS range             #1: median width              0.0
+   gauged bank out            #1: median width              5.0
+   bend out                   #1: median width              1.0
+   plain bank out             #1: median width            791.0
+   final light (x16) width    #1: median width              2.0
+   final gauge LS range       #1: median width             34.8
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 H: top 5 proved 180/217
+   bend out                   #1: median width              1.0
+   plain bank out             #1: median width            355.0
+   final light (x16) width    #1: median width              1.0
+   final gauge LS range       #1: median width             15.0
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 E: top 5 proved 135/217
+   plain bank out             #1: median width            911.5
+   final light (x16) width    #1: median width              2.0
+   final gauge LS range       #1: median width             37.5
+   blown (positions)          #1: median width              0.0
+
++-1 at layer 11 Mw: top 5 proved 217/217
+   final light (x16) width    #1: median width              0.0
+   final gauge LS range       #1: median width              0.0
+   blown (positions)          #1: median width              0.0
+(44s, max memory 1755 MB)

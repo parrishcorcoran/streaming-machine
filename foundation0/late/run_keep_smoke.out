@@ -1,0 +1,23 @@
+keep_late.py  size 70m  order plain  texts 2  greedy False  late layers [4, 5]
+  keep set K = ['qkv.4', 'qkv.5']: each moves its own late layer's level in [59.9, 67.4]% of rows (the look, b:<plate>)
+  rule check: smallest late move inside K 59.9% > largest late move outside K 11.5% (qkv.3); each K plate's largest move is at its own layer: True
+  random keep draw rk@1: ['mproj.2', 'qkv.5']  (holds a late qkv: True)
+  random keep draw rk@2: ['qkv.1', 'fc.5']  (holds a late qkv: False)
+  random keep draw rk@3: ['fc.1', 'proj.3']  (holds a late qkv: False)
+  cases ['fin', 'b', 'k']
+  fin: words = fp32's at 32 of 32; head piles identical (sha256) to pythia_base2.py's run in 2 of 2 texts
+  pairing-broken control (finished text t vs t+1): level moved [0.7014, 0.7361, 0.7153, 0.7083, 0.7153, 0.7778]; edges changed side [0.1937, 0.2179, 0.3117, 0.3048, 0.304, 0.3046]
+  fin          top-1 100.0  top-5 100.0  greedy  32/32 texts  2/2  | cont top-1 100.0 [pairing-broken  6.2] | removed: 0.00% of all weights, 0.00% of plate weights, 0.00% of the foundation's size | lead kept/lost 0.817/None | 0.4s 0.90 GB
+               level moved   0   0   0   0   0   0 | first word  13  12  19  44  44  29 | edges   0   0   0   0   0   0
+  b reproduction: top-1 lists equal to ../remove_70m.json's b in 2 of 2 texts
+  b            top-1  48.7  top-5  94.9  greedy   0/32 texts  0/2  | cont top-1  50.0 [pairing-broken  0.0] | removed: 100.00% of all weights, 100.00% of plate weights, 100.00% of the foundation's size | lead kept/lost 1.526/0.704 | 0.5s 0.99 GB
+               level moved   7  17  18  35  60  74 | first word  13  11  17  47  34  22 | edges   7   6  10  10  11  10
+  wiring check (k against b): levels at layers 0-3 identical: True; knife edges at layers 0-4 identical: True
+  k            top-1  48.7  top-5  97.4  greedy   0/32 texts  0/2  | cont top-1  46.9 [pairing-broken  3.1] | removed: 97.77% of all weights, 91.67% of plate weights, 89.64% of the foundation's size | lead kept/lost 1.526/0.639 | 0.3s 0.99 GB
+               level moved   7  17  18  35  26  24 | first word  13  11  17  47  50  35 | edges   7   6  10  10  11  10
+
+SUMMARY (top-1 / top-5 of all positions; late layers 4, 5)
+  finished first word at the late layers: 44.3 29.0
+  b            top-1  48.7  top-5  94.9  greedy texts  0  words   0 | late level moved 59.8 73.7 | late first word 34.1 22.3 | edges 5.8..10.6 | kept []
+  k            top-1  48.7  top-5  97.4  greedy texts  0  words   0 | late level moved 25.7 24.3 | late first word 50.3 35.5 | edges 5.8..10.6 | kept ['qkv.4', 'qkv.5']
+done 1s  peak memory 0.99 GB

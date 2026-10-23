@@ -1,0 +1,12 @@
+12:50:30 start 160m
+13:41:23 start 70m
+13:56:22 waiting: 76699 1.74878 GB zerosum/zerosum_run.py machine=gpt2
+13:57:22 waiting: 76699 1.74878 GB zerosum/zerosum_run.py machine=gpt2
+13:58:22 waiting: 76953 2.39938 GB zerosum/zerosum_run.py machine=gpt2
+13:59:22 waiting: 76953 2.13022 GB zerosum/zerosum_run.py machine=gpt2
+14:00:23 waiting: 76953 2.13022 GB zerosum/zerosum_run.py machine=gpt2
+14:01:23 waiting: 77157 2.35774 GB zerosum/zerosum_run.py machine=gpt2
+14:02:23 waiting: 77157 2.12759 GB zerosum/zerosum_run.py machine=gpt2
+14:03:23 waiting: 77157 2.12759 GB zerosum/zerosum_run.py machine=gpt2
+14:04:23 start order-free check
+14:06:13 all done

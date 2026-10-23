@@ -1,0 +1,11 @@
+REFERENCE RUN of qwen_base2.py's own steps on the 30 greedy texts (619 positions, 480 read places)
+  layer 6 done (32s, 659 MB)
+  layer 13 done (72s, 659 MB)
+  layer 20 done (111s, 659 MB)
+  layer 27 done (153s, 659 MB)
+  the read done (207s, 1963 MB)
+  vs words_ref.json: pile 0 of 3360 differ, arrival 0 of 840 differ, stream 0 of 1680 differ, top light 0 of 30 differ
+  the race winner at the read places = the next greedy word: 480 of 480
+  vs words_ref's read: score rows 0 differ, top 5 0 differ
+  prompts = refs_qwen.json's: 30 of 30; the 16 words generated = words_ref's words 30 of 30; = fp32's own words 28 of 30
+done, max memory 1963 MB

@@ -1,0 +1,4 @@
+plain: head piles = words_pythia-160m.json at 30/30
+fine: head piles the same as the plain machine's at 0/30 texts (differ: [0, 1, 2, 3, 4, 5, 6, 7]); words the same 480/480  (7s)
+ctl: head piles the same as the plain machine's at 0/30 texts (differ: [0, 1, 2, 3, 4, 5, 6, 7]); words the same 480/480  (11s)
+done (11s)

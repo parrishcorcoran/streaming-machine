@@ -1,0 +1,13 @@
+[     1s peak 1.44 GB] stored numbers 124,439,808
+[    28s peak 2.23 GB] ('tips', 1): record's judge 3/30
+[    28s peak 2.33 GB]    wte.weight: dark 0.00%  median error/own size 0.1720  row's largest / middle 5.65
+[    28s peak 2.43 GB]    h.5.mlp.c_fc.weight: dark 0.00%  median error/own size 0.1715  row's largest / middle 4.98
+[    28s peak 2.43 GB]    h.5.attn.c_attn.weight: dark 0.00%  median error/own size 0.1716  row's largest / middle 5.11
+[    60s peak 2.43 GB] ('tips', 2): record's judge 27/30
+[    61s peak 2.43 GB]    wte.weight: dark 0.00%  median error/own size 0.0225  row's largest / middle 5.65
+[    61s peak 2.43 GB]    h.5.mlp.c_fc.weight: dark 0.00%  median error/own size 0.0225  row's largest / middle 4.98
+[    61s peak 2.43 GB]    h.5.attn.c_attn.weight: dark 0.00%  median error/own size 0.0225  row's largest / middle 5.11
+[    62s peak 2.43 GB] ('grid', 4): record's judge 0/30
+[    62s peak 2.43 GB]    wte.weight: dark 23.03%  median error/own size 0.2010  row's largest / middle 5.65
+[    63s peak 2.43 GB]    h.5.mlp.c_fc.weight: dark 19.40%  median error/own size 0.1713  row's largest / middle 4.98
+[    63s peak 2.43 GB]    h.5.attn.c_attn.weight: dark 21.02%  median error/own size 0.1807  row's largest / middle 5.11

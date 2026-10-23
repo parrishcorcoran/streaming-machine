@@ -1,0 +1,3 @@
+plain base2.py, every prefix of the 30 refs texts: 648 words; its words = fp32 GPT-2's refs at 479/480 (175s)
+cut: base2.py's own forward with the zerosum arrays: the word the same as plain at 648/648 positions; differ at []  (349s)
+done (349s)

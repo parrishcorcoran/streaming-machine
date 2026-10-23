@@ -1,0 +1,42 @@
+{
+ "qkv.5.real": {
+  "added": 484365974,
+  "left_place": 9546867,
+  "left_pile": 1093970
+ },
+ "qkv.5.shuffle": {
+  "added": 485012648,
+  "left_place": 9544470,
+  "left_pile": 1104673
+ },
+ "proj.5.real": {
+  "added": 174056794,
+  "left_place": 3027014,
+  "left_pile": 359311
+ },
+ "proj.5.shuffle": {
+  "added": 173734436,
+  "left_place": 3027733,
+  "left_pile": 372971
+ },
+ "fc.5.real": {
+  "added": 606216284,
+  "left_place": 11983990,
+  "left_pile": 1475480
+ },
+ "fc.5.shuffle": {
+  "added": 606425762,
+  "left_place": 11953231,
+  "left_pile": 1468046
+ },
+ "mproj.5.real": {
+  "added": 689680280,
+  "left_place": 3255558,
+  "left_pile": 369244
+ },
+ "mproj.5.shuffle": {
+  "added": 689200043,
+  "left_place": 3256163,
+  "left_pile": 379981
+ }
+}

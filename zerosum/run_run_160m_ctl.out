@@ -1,0 +1,20 @@
+160m, file zerosum_pythia-160m_ctl.npz: ['embed.w', 'mproj.0.b', 'mproj.0.w', 'mproj.1.b', 'mproj.1.w', 'mproj.10.b']...
+loaded foundation0/pythia_base2.py's machine, size 160m (0s, 1888 MB)
+plain run: 30 texts (7s, 2283 MB)
+  plain head piles = foundation0/words_pythia-160m.json's piles_sha256 (the machine's own run): 30/30
+  reads 15550: S1 = 0 at 0
+zerosum run (14s, 2759 MB)
+  reads 15550: S1 = 0 at 0
+
+THE ZEROSUM FILE (ctl) AGAINST THE PLAIN MACHINE
+  calls digested 142,018: identical 19,891, different 122,127
+  (the cut light at each read and the stream compared without their level: x - x[lane 0]; the cut's power apart)
+  positions with every per-position row of every call identical: 0/622
+  positions where some read's cut power (the top 1 of the largest lane) moved: 36; positions that differ BEFORE the first such position in their text: 313
+  texts whose top scores (every position, every word) are the same whole numbers: 0/30
+  race winner the same 622/622; top 5 same in order 515/622, same as a set 571/622
+  head piles at the last 16 positions (pythia_base2.py's piles_sha256 form) the same: 0/30
+  first different call per text: ln1.0 to16~ x30
+  different calls by stage: ln1.0 697, qkv.0 60, arrival.0 9589, proj.0 60, ln2.0 697, fc.0 60, bend.0 30, mproj.0 60, stream.0 30, ln1.1 712, qkv.1 60, arrival.1 9576, proj.1 60, ln2.1 712, fc.1 60, bend.1 30, mproj.1 60, stream.1 30, ln1.2 712, qkv.2 60, arrival.2 9597, proj.2 60, ln2.2 712, fc.2 60, bend.2 30, mproj.2 60, stream.2 30, ln1.3 711, qkv.3 60, arrival.3 9594, proj.3 60, ln2.3 711, fc.3 60, bend.3 30, mproj.3 60, stream.3 30, ln1.4 709, qkv.4 60, arrival.4 9348, proj.4 60, ln2.4 709, fc.4 60, bend.4 30, mproj.4 60, stream.4 30, ln1.5 711, qkv.5 60, arrival.5 9363, proj.5 60, ln2.5 711, fc.5 60, bend.5 30, mproj.5 60, stream.5 30, ln1.6 709, qkv.6 60, arrival.6 9554, proj.6 60, ln2.6 709, fc.6 60, bend.6 30, mproj.6 60, stream.6 30, ln1.7 710, qkv.7 60, arrival.7 8913, proj.7 60, ln2.7 710, fc.7 60, bend.7 30, mproj.7 60, stream.7 30, ln1.8 710, qkv.8 60, arrival.8 7428, proj.8 60, ln2.8 710, fc.8 60, bend.8 30, mproj.8 60, stream.8 30, ln1.9 710, qkv.9 60, arrival.9 7048, proj.9 60, ln2.9 710, fc.9 60, bend.9 30, mproj.9 60, stream.9 30, ln1.10 711, qkv.10 60, arrival.10 5659, proj.10 60, ln2.10 711, fc.10 60, bend.10 30, mproj.10 60, stream.10 30, ln1.11 712, qkv.11 60, arrival.11 5058, proj.11 60, ln2.11 712, fc.11 60, bend.11 30, mproj.11 60, stream.11 30, lnf 712, top-out 60
+
+done (14s, peak 2759 MB)

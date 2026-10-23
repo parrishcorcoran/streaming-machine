@@ -1,0 +1,22 @@
+free at 16:15:18; running: /usr/bin/time -l python3 reach/answer.py plates=head selftest=1
+SELF-CHECK: the range form with nothing removed, every step carried in range form (['head'])
+  head b=1: digits removed 0; PROVEN at 6000/6000 judge positions (blown at the top 0); bound on a score's move: median 0, max 0; REAL move: median 0, max 0; top 5 changed (real) at 0/6000; bound/real median None (37s, 2655 MB)
+done (37s, max memory 2655 MB)
+       37.31 real        37.12 user         0.18 sys
+          2655354880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              177059  page reclaims
+                  18  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                 139  involuntary context switches
+        522800640842  instructions retired
+        149479786600  cycles elapsed
+          2649884880  peak memory footprint

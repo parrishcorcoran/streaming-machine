@@ -1,0 +1,29 @@
+remove_foundation.py  size 14m  order shuffle  texts 30  greedy False  cases 5
+  fin (order shuffle): words = fp32's at 480
+  pairing-broken control (finished text t vs text t+1, same row): water level moved per layer [0.735, 0.587, 0.5292, 0.7518, 0.7045, 0.7217]; knife edges changed side [0.3135, 0.339, 0.3846, 0.347, 0.3223, 0.3401]
+  fin      top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  5.4% / 12.3%];  finished lead kept/lost 0.77/0.00;  3.6s  peak 0.43 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.065, 0.41, 0.155, 0.37], [0.053, 0.513, 0.304, 0.131], [0.22, 0.163, 0.369, 0.248], [0.213, 0.138, 0.146, 0.503], [0.271, 0.148, 0.104, 0.477], [0.113, 0.354, 0.171, 0.362]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.4108, 0.5303, 0.4727, 0.5091, 0.4918, 0.6164]
+  a        top-1   0.0%  top-5   0.0%  (of 622);  16 continuation: top-1   0.0% top-5   0.0% [pairing-broken  0.0% /  0.0%];  finished lead kept/lost 0.00/0.77;  3.6s  peak 0.53 GB
+           water level moved by layer [0.8057, 0.8163, 0.7665, 0.8792, 0.8649, 0.8425]
+           knife edges changed side by layer [0.4517, 0.5052, 0.4996, 0.5094, 0.4982, 0.4972]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.115, 0.165, 0.117, 0.603], [0.133, 0.207, 0.101, 0.558], [0.125, 0.209, 0.174, 0.492], [0.136, 0.159, 0.102, 0.604], [0.144, 0.149, 0.109, 0.598], [0.116, 0.177, 0.114, 0.594]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.377, 0.5103, 0.4069, 0.493, 0.4711, 0.6057] / held [0.6499, 0.6166, 0.7024, 0.5896, 0.6493, 0.678]
+  b        top-1  15.4%  top-5  41.3%  (of 622);  16 continuation: top-1  15.2% top-5  40.8% [pairing-broken  4.6% / 14.6%];  finished lead kept/lost 1.24/0.72;  3.6s  peak 0.53 GB
+           water level moved by layer [0.1461, 0.3602, 0.3767, 0.3336, 0.3678, 0.6014]
+           knife edges changed side by layer [0.1408, 0.1874, 0.2375, 0.2212, 0.2059, 0.2209]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.062, 0.389, 0.156, 0.392], [0.041, 0.595, 0.249, 0.114], [0.129, 0.221, 0.4, 0.25], [0.208, 0.177, 0.115, 0.5], [0.22, 0.18, 0.085, 0.515], [0.068, 0.465, 0.149, 0.317]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2693, 0.463, 0.3256, 0.3447, 0.3288, 0.5876] / held [0.4416, 0.5712, 0.6783, 0.6988, 0.6234, 0.6658]
+  cb       top-1  17.7%  top-5  36.0%  (of 622);  16 continuation: top-1  19.4% top-5  37.7% [pairing-broken  2.7% /  7.7%];  finished lead kept/lost 1.45/0.68;  3.8s  peak 0.73 GB
+           water level moved by layer [0.1119, 0.3036, 0.3894, 0.3442, 0.3847, 0.5819]
+           knife edges changed side by layer [0.1385, 0.1956, 0.2249, 0.2159, 0.2013, 0.2207]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.076, 0.387, 0.155, 0.382], [0.06, 0.561, 0.259, 0.12], [0.129, 0.212, 0.366, 0.293], [0.247, 0.156, 0.14, 0.457], [0.206, 0.219, 0.123, 0.452], [0.143, 0.353, 0.146, 0.359]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2689, 0.4155, 0.3197, 0.3526, 0.3503, 0.5742] / held [0.4317, 0.5766, 0.6894, 0.6899, 0.5972, 0.6783]
+  b_tab    top-1  97.3%  top-5 100.0%  (of 622);  16 continuation: top-1  97.9% top-5 100.0% [pairing-broken  5.4% / 12.7%];  finished lead kept/lost 0.81/0.02;  3.6s  peak 0.73 GB
+           water level moved by layer [0.0097, 0.0068, 0.0114, 0.0122, 0.0148, 0.0241]
+           knife edges changed side by layer [0.0028, 0.0045, 0.005, 0.0041, 0.0038, 0.0035]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.065, 0.41, 0.152, 0.372], [0.052, 0.512, 0.306, 0.13], [0.217, 0.164, 0.368, 0.25], [0.211, 0.139, 0.145, 0.505], [0.268, 0.147, 0.106, 0.478], [0.114, 0.358, 0.171, 0.357]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2452, 0.2903, 0.2143, 0.3069, 0.2721, 0.4618] / held [0.4133, 0.5309, 0.48, 0.5145, 0.5015, 0.6291]
+done 18s  peak memory 0.73 GB

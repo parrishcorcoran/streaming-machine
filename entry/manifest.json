@@ -1,0 +1,275 @@
+{
+ "what": "qkv.0 entry for every word and position (see entry/build.py docstring and base2_entry.py)",
+ "plate": "base2_gpt2.npz qkv.0.w (int16, 768 x 2304)",
+ "neurons": 2304,
+ "files": {
+  "ZP0_ids.npy": {
+   "shape": [
+    50257
+   ],
+   "dtype": "int32",
+   "bytes": 201156,
+   "sha256": "d26bd84e89c03c3aaa224bab6016731d380f5cf2282bde25edf3d16c82e77a47"
+  },
+  "ZP0_lo.npy": {
+   "shape": [
+    50257,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 463168640,
+   "sha256": "7198174f15346e051ebd41f3edbfe8e672e2a661b24c1c90fb5b26d2350f1ede"
+  },
+  "ZP0_hi.npy": {
+   "shape": [
+    50257,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 115792256,
+   "sha256": "5bbd056156dadc49b1c84d937cf34b0a5e89623436e56483c0f371b1052c282f"
+  },
+  "Z1023_ids.npy": {
+   "shape": [
+    17994
+   ],
+   "dtype": "int32",
+   "bytes": 72104,
+   "sha256": "b47bb620925eb0b37c507954a31845fff70c5e03974b3ea95ecfc709b381a7c7"
+  },
+  "Z1023_lo.npy": {
+   "shape": [
+    17994,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 165832832,
+   "sha256": "4244e2d2f1f737f9e8dea0f6c537671a0d550b08e7ac2f2176e1da9d1ad4e2c2"
+  },
+  "Z1023_hi.npy": {
+   "shape": [
+    17994,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 41458304,
+   "sha256": "3c31f193f246d45866f686456d9527abd68d367403dca6f3de0c606edc22a0ec"
+  },
+  "T2_ids.npy": {
+   "shape": [
+    50257
+   ],
+   "dtype": "int32",
+   "bytes": 201156,
+   "sha256": "d26bd84e89c03c3aaa224bab6016731d380f5cf2282bde25edf3d16c82e77a47"
+  },
+  "T2_lo.npy": {
+   "shape": [
+    50257,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 463168640,
+   "sha256": "deb50efbfaa1c9b313c8089d20c3a345696c9cc10364eb572f8d0cadace38a33"
+  },
+  "T2_hi.npy": {
+   "shape": [
+    50257,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 115792256,
+   "sha256": "cd9bf467019cf704fb65401dbe709316e1931c264f966ccd3660c26a575d0159"
+  },
+  "T1_ids.npy": {
+   "shape": [
+    50121
+   ],
+   "dtype": "int32",
+   "bytes": 200612,
+   "sha256": "a2c797f730d1f04bc925d666681bf89b0390b5e328b421ceab64ab94d50d9116"
+  },
+  "T1_lo.npy": {
+   "shape": [
+    50121,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 461915264,
+   "sha256": "1848f0fbe4f6f4ec14087e8588354d7734f30c0923581ef147c2e00502e11cd7"
+  },
+  "T1_hi.npy": {
+   "shape": [
+    50121,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 115478912,
+   "sha256": "c99f25bfeef641c69490f896598efde670af632407a556c6af509f35cd6acda7"
+  },
+  "P2_ids.npy": {
+   "shape": [
+    1023
+   ],
+   "dtype": "int32",
+   "bytes": 4220,
+   "sha256": "b3cfee451d00aa1ba6a59e8f6abcaa5f22d7ad385d2946833aeb93a131bb481c"
+  },
+  "P2_lo.npy": {
+   "shape": [
+    1023,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 9428096,
+   "sha256": "cf02dff4e6bb65f2999fd7fc4495dcf14327a65389e9c3bd2300ac48c9b74ef8"
+  },
+  "P2_hi.npy": {
+   "shape": [
+    1023,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 2357120,
+   "sha256": "ece631fcfd0d48301caf5afc896bdaef9ab0fe3fc760a2a4fbc9573178a34b81"
+  },
+  "P1_ids.npy": {
+   "shape": [
+    663
+   ],
+   "dtype": "int32",
+   "bytes": 2780,
+   "sha256": "d1991db0bc85ce95e7fbc8528383da70835babc8fb5fd5442ac08a93b0ff295b"
+  },
+  "P1_lo.npy": {
+   "shape": [
+    663,
+    2304
+   ],
+   "dtype": "uint32",
+   "bytes": 6110336,
+   "sha256": "668a91fca9552cedbf82dd2bccb679644faf6a753b62e142d3bc3d1c64d23d4a"
+  },
+  "P1_hi.npy": {
+   "shape": [
+    663,
+    2304
+   ],
+   "dtype": "int8",
+   "bytes": 1527680,
+   "sha256": "067d160ac05c447364cf341c0fe58d962b4e24a63dd6cd6d49bac2828529b053"
+  },
+  "survey_s.npz": {
+   "shape": "count (8,1024) int64, wmask (50257,) uint8, pmask (1024,) uint8",
+   "dtype": "npz",
+   "bytes": 117565,
+   "sha256": "1f6f0be90ba26ad81c4acb67c5311345d2374376f2aa070d4f35e730d2df3fa0"
+  }
+ },
+ "tables": {
+  "ZP0": {
+   "rows": 50257,
+   "kind": "split40",
+   "files": [
+    "ZP0_lo.npy",
+    "ZP0_hi.npy"
+   ],
+   "ids": "ZP0_ids.npy",
+   "largest value": 2529555551,
+   "bits": 33,
+   "largest light line": 19996
+  },
+  "Z1023": {
+   "rows": 17994,
+   "kind": "split40",
+   "files": [
+    "Z1023_lo.npy",
+    "Z1023_hi.npy"
+   ],
+   "ids": "Z1023_ids.npy",
+   "largest value": 21874348844,
+   "bits": 36,
+   "largest light line": 32767
+  },
+  "T2": {
+   "rows": 50257,
+   "kind": "split40",
+   "files": [
+    "T2_lo.npy",
+    "T2_hi.npy"
+   ],
+   "ids": "T2_ids.npy",
+   "largest value": 5477714185,
+   "bits": 34,
+   "largest light line": 29248
+  },
+  "T1": {
+   "rows": 50121,
+   "kind": "split40",
+   "files": [
+    "T1_lo.npy",
+    "T1_hi.npy"
+   ],
+   "ids": "T1_ids.npy",
+   "largest value": 10955310681,
+   "bits": 35,
+   "largest light line": 37476
+  },
+  "P2": {
+   "rows": 1023,
+   "kind": "split40",
+   "files": [
+    "P2_lo.npy",
+    "P2_hi.npy"
+   ],
+   "ids": "P2_ids.npy",
+   "largest value": 5351232944,
+   "bits": 34,
+   "largest light line": 26562
+  },
+  "P1": {
+   "rows": 663,
+   "kind": "split40",
+   "files": [
+    "P1_lo.npy",
+    "P1_hi.npy"
+   ],
+   "ids": "P1_ids.npy",
+   "largest value": 10603791696,
+   "bits": 35,
+   "largest light line": 41960
+  }
+ },
+ "survey": {
+  "pairs": 51463168,
+  "s": {
+   "0": {
+    "pairs": 17994,
+    "words": 17994,
+    "positions": 1
+   },
+   "1": {
+    "pairs": 15590639,
+    "words": 50121,
+    "positions": 663
+   },
+   "2": {
+    "pairs": 35804278,
+    "words": 50257,
+    "positions": 1023
+   },
+   "4": {
+    "pairs": 50257,
+    "words": 50257,
+    "positions": 1
+   }
+  },
+  "never": [
+   3
+  ]
+ },
+ "exactness bound": "largest light line x largest plate column sum of sizes (6,711,670) < 2^53 checked per chunk",
+ "bytes on disk, tables and ids": 1962712364,
+ "why": "Chosen: rounded-row tips (the pilot's layout) at s = 1 and 2, and the whole pair pile at the two shifts that belong to one position each (s = 4 only at position 0, s = 0 only at position 1023): the same one row per word as the pilot's word tip there, and nothing left to meet. Measured on the 648 refs positions (entry/measure.py): the carry meets 2,660,261 photons a token against 61,818,770 plain (23.2x fewer). The residue layout (one unrounded tip per word and position, the s low digits of every line meeting the plate) would take 590,757,120 bytes (30% of these 1,962,712,364) but meets 11,272,158 photons a token, 4.2x the carry. Per-token work was put first. Values are 33-36 bits signed, so each is stored in 5 bytes: lo (uint32) + hi (int8), value = hi x 2^32 + lo.",
+ "shift 3": "never occurs: entry/survey_s.py over all 51,463,168 (word, position) pairs"
+}

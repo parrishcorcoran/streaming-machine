@@ -1,0 +1,773 @@
+{
+ "full": {
+  "spec": {
+   "kind": "full"
+  },
+  "bits_a_number": 32.0,
+  "MB": 497.759232,
+  "bits_by_part": {
+   "word table": 32.0,
+   "position rows": 32.0,
+   "plates": 32.0,
+   "small pieces": 32.0
+  },
+  "table_and_scale_bits_a_number": 0.0,
+  "changed": 0.0,
+  "error_share": {
+   "word table": 0.0,
+   "position rows": 0.0,
+   "plates": 0.0,
+   "small pieces": 0.0
+  },
+  "whole": {
+   "full_word_in_version_top5": 6000,
+   "version_word_in_full_top5": 6000,
+   "same_top": 6000,
+   "judged": 6000,
+   "greedy_words": 480,
+   "greedy_texts": 30,
+   "greedy_before_first_diff": 480,
+   "record_next_word": 30
+  },
+  "seconds": 9,
+  "mem": "1900 peak, 1855 now MB"
+ },
+ "fp16": {
+  "spec": {
+   "kind": "fp16"
+  },
+  "bits_a_number": 16.0,
+  "MB": 248.879616,
+  "bits_by_part": {
+   "word table": 16.0,
+   "position rows": 16.0,
+   "plates": 16.0,
+   "small pieces": 16.0
+  },
+  "table_and_scale_bits_a_number": 0.0,
+  "changed": 0.9998712148446902,
+  "error_share": {
+   "word table": 0.00020670518893222637,
+   "position rows": 0.00020279430830727092,
+   "plates": 0.00020723541394653902,
+   "small pieces": 0.00020368588926233686
+  },
+  "whole": {
+   "full_word_in_version_top5": 6000,
+   "version_word_in_full_top5": 6000,
+   "same_top": 5987,
+   "judged": 6000,
+   "greedy_words": 467,
+   "greedy_texts": 28,
+   "greedy_before_first_diff": 464,
+   "record_next_word": 30
+  },
+  "seconds": 10,
+  "mem": "2414 peak, 2304 now MB"
+ },
+ "tips_k1": {
+  "spec": {
+   "kind": "tips",
+   "k": 1
+  },
+  "bits_a_number": 3.6079944357798426,
+  "MB": 56.12226685668899,
+  "bits_by_part": {
+   "word table": 3.5657825916506125,
+   "position rows": 4.264059819846385,
+   "plates": 3.6210966365327133,
+   "small pieces": 3.6119888120907007
+  },
+  "table_and_scale_bits_a_number": 0.0011782724704943292,
+  "changed": 0.9999998553517537,
+  "error_share": {
+   "word table": 0.23159807777907668,
+   "position rows": 0.2269178351101679,
+   "plates": 0.23049615780244068,
+   "small pieces": 0.22613074645648798
+  },
+  "bits_by_round": {
+   "r1": 3.606816163309348
+  },
+  "whole": {
+   "full_word_in_version_top5": 2676,
+   "version_word_in_full_top5": 2377,
+   "same_top": 1250,
+   "judged": 6000,
+   "greedy_words": 34,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 11,
+   "record_next_word": 3
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 5764,
+    "version_word_in_full_top5": 5557,
+    "same_top": 4340,
+    "judged": 6000,
+    "greedy_words": 110,
+    "greedy_texts": 1,
+    "greedy_before_first_diff": 91,
+    "record_next_word": 21
+   },
+   "position rows": {
+    "full_word_in_version_top5": 5999,
+    "version_word_in_full_top5": 5999,
+    "same_top": 5753,
+    "judged": 6000,
+    "greedy_words": 336,
+    "greedy_texts": 17,
+    "greedy_before_first_diff": 328,
+    "record_next_word": 27
+   },
+   "plates": {
+    "full_word_in_version_top5": 5249,
+    "version_word_in_full_top5": 5230,
+    "same_top": 3511,
+    "judged": 6000,
+    "greedy_words": 88,
+    "greedy_texts": 1,
+    "greedy_before_first_diff": 60,
+    "record_next_word": 18
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 4580,
+    "version_word_in_full_top5": 4394,
+    "same_top": 2779,
+    "judged": 6000,
+    "greedy_words": 67,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 39,
+    "record_next_word": 16
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 1080,
+   "version_word_in_full_top5": 12,
+   "same_top": 7,
+   "judged": 6000,
+   "greedy_words": 0,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 0,
+   "record_next_word": 1
+  },
+  "seconds": 67,
+  "mem": "2869 peak, 2231 now MB"
+ },
+ "tips_k2": {
+  "spec": {
+   "kind": "tips",
+   "k": 2
+  },
+  "bits_a_number": 6.546579665005026,
+  "MB": 101.83188957124122,
+  "bits_by_part": {
+   "word table": 6.501654274692528,
+   "position rows": 7.202657442387288,
+   "plates": 6.560460417152173,
+   "small pieces": 6.868678117147065
+  },
+  "table_and_scale_bits_a_number": 0.0021320508626949987,
+  "changed": 0.9999934988649292,
+  "error_share": {
+   "word table": 0.04310081715102836,
+   "position rows": 0.04206989377550665,
+   "plates": 0.04290512679567389,
+   "small pieces": 0.040770389913118606
+  },
+  "bits_by_round": {
+   "r1": 3.606816163309348,
+   "r2": 2.937631450832982
+  },
+  "whole": {
+   "full_word_in_version_top5": 5969,
+   "version_word_in_full_top5": 5947,
+   "same_top": 5125,
+   "judged": 6000,
+   "greedy_words": 168,
+   "greedy_texts": 3,
+   "greedy_before_first_diff": 142,
+   "record_next_word": 27
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 5988,
+    "version_word_in_full_top5": 5987,
+    "same_top": 5517,
+    "judged": 6000,
+    "greedy_words": 259,
+    "greedy_texts": 8,
+    "greedy_before_first_diff": 224,
+    "record_next_word": 29
+   },
+   "position rows": {
+    "full_word_in_version_top5": 6000,
+    "version_word_in_full_top5": 6000,
+    "same_top": 5973,
+    "judged": 6000,
+    "greedy_words": 469,
+    "greedy_texts": 29,
+    "greedy_before_first_diff": 469,
+    "record_next_word": 30
+   },
+   "plates": {
+    "full_word_in_version_top5": 5996,
+    "version_word_in_full_top5": 5993,
+    "same_top": 5530,
+    "judged": 6000,
+    "greedy_words": 289,
+    "greedy_texts": 9,
+    "greedy_before_first_diff": 268,
+    "record_next_word": 28
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 5999,
+    "version_word_in_full_top5": 5996,
+    "same_top": 5533,
+    "judged": 6000,
+    "greedy_words": 238,
+    "greedy_texts": 7,
+    "greedy_before_first_diff": 227,
+    "record_next_word": 28
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 4300,
+   "version_word_in_full_top5": 3327,
+   "same_top": 2207,
+   "judged": 6000,
+   "greedy_words": 19,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 15,
+   "record_next_word": 13
+  },
+  "seconds": 67,
+  "mem": "2992 peak, 2346 now MB"
+ },
+ "tips_k3": {
+  "spec": {
+   "kind": "tips",
+   "k": 3
+  },
+  "bits_a_number": 9.544079262625893,
+  "MB": 148.45792387224347,
+  "bits_by_part": {
+   "word table": 9.498554846386794,
+   "position rows": 10.202578389100248,
+   "plates": 9.557572816415261,
+   "small pieces": 10.312043697719627
+  },
+  "table_and_scale_bits_a_number": 0.003103058468235502,
+  "changed": 0.9998811634296317,
+  "error_share": {
+   "word table": 0.008134574869349221,
+   "position rows": 0.007990519995749013,
+   "plates": 0.008094564182726319,
+   "small pieces": 0.007615716714113448
+  },
+  "bits_by_round": {
+   "r1": 3.606816163309348,
+   "r2": 2.937631450832982,
+   "r3": 2.9965285900153273
+  },
+  "whole": {
+   "full_word_in_version_top5": 5998,
+   "version_word_in_full_top5": 5996,
+   "same_top": 5653,
+   "judged": 6000,
+   "greedy_words": 285,
+   "greedy_texts": 9,
+   "greedy_before_first_diff": 255,
+   "record_next_word": 30
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 5998,
+    "version_word_in_full_top5": 5995,
+    "same_top": 5666,
+    "judged": 6000,
+    "greedy_words": 267,
+    "greedy_texts": 9,
+    "greedy_before_first_diff": 245,
+    "record_next_word": 30
+   },
+   "position rows": {
+    "full_word_in_version_top5": 6000,
+    "version_word_in_full_top5": 6000,
+    "same_top": 5994,
+    "judged": 6000,
+    "greedy_words": 468,
+    "greedy_texts": 29,
+    "greedy_before_first_diff": 467,
+    "record_next_word": 30
+   },
+   "plates": {
+    "full_word_in_version_top5": 6000,
+    "version_word_in_full_top5": 6000,
+    "same_top": 5896,
+    "judged": 6000,
+    "greedy_words": 428,
+    "greedy_texts": 25,
+    "greedy_before_first_diff": 424,
+    "record_next_word": 30
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 6000,
+    "version_word_in_full_top5": 6000,
+    "same_top": 5918,
+    "judged": 6000,
+    "greedy_words": 447,
+    "greedy_texts": 27,
+    "greedy_before_first_diff": 444,
+    "record_next_word": 30
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 5986,
+   "version_word_in_full_top5": 5950,
+   "same_top": 5338,
+   "judged": 6000,
+   "greedy_words": 215,
+   "greedy_texts": 6,
+   "greedy_before_first_diff": 203,
+   "record_next_word": 29
+  },
+  "seconds": 68,
+  "mem": "2992 peak, 2289 now MB"
+ },
+ "grid_b2": {
+  "spec": {
+   "kind": "grid",
+   "b": 2
+  },
+  "bits_a_number": 0.4205965226559813,
+  "MB": 6.5423688155972455,
+  "bits_by_part": {
+   "word table": 0.4292446542142724,
+   "position rows": 0.18398820587064857,
+   "plates": 0.4191821099939255,
+   "small pieces": 0.19325787572704847
+  },
+  "table_and_scale_bits_a_number": 0.01737411873859529,
+  "changed": 0.9999997508835757,
+  "error_share": {
+   "word table": 0.8955417226662541,
+   "position rows": 0.6505578544775121,
+   "plates": 0.8884263952587238,
+   "small pieces": 0.8076862817935333
+  },
+  "plain_bits_a_number": 2.0172707434585564,
+  "whole": {
+   "full_word_in_version_top5": 13,
+   "version_word_in_full_top5": 0,
+   "same_top": 0,
+   "judged": 6000,
+   "greedy_words": 0,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 0,
+   "record_next_word": 0
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 1194,
+    "version_word_in_full_top5": 1395,
+    "same_top": 713,
+    "judged": 6000,
+    "greedy_words": 39,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 4,
+    "record_next_word": 4
+   },
+   "position rows": {
+    "full_word_in_version_top5": 4782,
+    "version_word_in_full_top5": 4534,
+    "same_top": 3010,
+    "judged": 6000,
+    "greedy_words": 67,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 32,
+    "record_next_word": 11
+   },
+   "plates": {
+    "full_word_in_version_top5": 1528,
+    "version_word_in_full_top5": 1494,
+    "same_top": 694,
+    "judged": 6000,
+    "greedy_words": 31,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 1,
+    "record_next_word": 3
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 3,
+    "version_word_in_full_top5": 2,
+    "same_top": 0,
+    "judged": 6000,
+    "greedy_words": 0,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 0,
+    "record_next_word": 0
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 0,
+   "version_word_in_full_top5": 0,
+   "same_top": 0,
+   "judged": 6000,
+   "greedy_words": 0,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 0,
+   "record_next_word": 0
+  },
+  "seconds": 63,
+  "mem": "3012 peak, 2338 now MB"
+ },
+ "grid_b3": {
+  "spec": {
+   "kind": "grid",
+   "b": 3
+  },
+  "bits_a_number": 1.793810118318138,
+  "MB": 27.9026733389958,
+  "bits_by_part": {
+   "word table": 1.827903742292838,
+   "position rows": 0.44522948817560487,
+   "plates": 1.7922429624592844,
+   "small pieces": 0.7863304088992498
+  },
+  "table_and_scale_bits_a_number": 0.017488808725902246,
+  "changed": 0.9999998312437126,
+  "error_share": {
+   "word table": 0.3896155268753481,
+   "position rows": 0.262126047174603,
+   "plates": 0.4019593200059882,
+   "small pieces": 0.540761259292238
+  },
+  "plain_bits_a_number": 3.0172707434585564,
+  "whole": {
+   "full_word_in_version_top5": 405,
+   "version_word_in_full_top5": 185,
+   "same_top": 51,
+   "judged": 6000,
+   "greedy_words": 1,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 0,
+   "record_next_word": 1
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 821,
+    "version_word_in_full_top5": 414,
+    "same_top": 140,
+    "judged": 6000,
+    "greedy_words": 1,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 0,
+    "record_next_word": 1
+   },
+   "position rows": {
+    "full_word_in_version_top5": 5974,
+    "version_word_in_full_top5": 5964,
+    "same_top": 5305,
+    "judged": 6000,
+    "greedy_words": 212,
+    "greedy_texts": 6,
+    "greedy_before_first_diff": 185,
+    "record_next_word": 26
+   },
+   "plates": {
+    "full_word_in_version_top5": 2473,
+    "version_word_in_full_top5": 2466,
+    "same_top": 1243,
+    "judged": 6000,
+    "greedy_words": 43,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 8,
+    "record_next_word": 6
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 14,
+    "version_word_in_full_top5": 5,
+    "same_top": 2,
+    "judged": 6000,
+    "greedy_words": 1,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 0,
+    "record_next_word": 0
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 5,
+   "version_word_in_full_top5": 2,
+   "same_top": 0,
+   "judged": 6000,
+   "greedy_words": 0,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 0,
+   "record_next_word": 0
+  },
+  "seconds": 63,
+  "mem": "3012 peak, 2288 now MB"
+ },
+ "grid_b4": {
+  "spec": {
+   "kind": "grid",
+   "b": 4
+  },
+  "bits_a_number": 2.9361819597260053,
+  "MB": 45.67223991517098,
+  "bits_by_part": {
+   "word table": 2.9782856913445985,
+   "position rows": 0.675446853395267,
+   "plates": 2.9398436104401298,
+   "small pieces": 1.6326138151094596
+  },
+  "table_and_scale_bits_a_number": 0.017684244578712306,
+  "changed": 0.9999996785594526,
+  "error_share": {
+   "word table": 0.1675271725056391,
+   "position rows": 0.13586478526845128,
+   "plates": 0.18465559190517547,
+   "small pieces": 0.38375949471724274
+  },
+  "plain_bits_a_number": 4.017270743458556,
+  "whole": {
+   "full_word_in_version_top5": 106,
+   "version_word_in_full_top5": 77,
+   "same_top": 21,
+   "judged": 6000,
+   "greedy_words": 1,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 1,
+   "record_next_word": 0
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 784,
+    "version_word_in_full_top5": 762,
+    "same_top": 392,
+    "judged": 6000,
+    "greedy_words": 0,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 0,
+    "record_next_word": 1
+   },
+   "position rows": {
+    "full_word_in_version_top5": 5987,
+    "version_word_in_full_top5": 5981,
+    "same_top": 5440,
+    "judged": 6000,
+    "greedy_words": 286,
+    "greedy_texts": 12,
+    "greedy_before_first_diff": 267,
+    "record_next_word": 26
+   },
+   "plates": {
+    "full_word_in_version_top5": 5494,
+    "version_word_in_full_top5": 5469,
+    "same_top": 3865,
+    "judged": 6000,
+    "greedy_words": 94,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 62,
+    "record_next_word": 18
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 3564,
+    "version_word_in_full_top5": 3501,
+    "same_top": 1919,
+    "judged": 6000,
+    "greedy_words": 44,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 18,
+    "record_next_word": 10
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 149,
+   "version_word_in_full_top5": 106,
+   "same_top": 42,
+   "judged": 6000,
+   "greedy_words": 1,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 1,
+   "record_next_word": 0
+  },
+  "seconds": 63,
+  "mem": "3012 peak, 2317 now MB"
+ },
+ "grid_b5": {
+  "spec": {
+   "kind": "grid",
+   "b": 5
+  },
+  "bits_a_number": 4.015322265966407,
+  "MB": 62.45824147937308,
+  "bits_by_part": {
+   "word table": 4.062961042468147,
+   "position rows": 0.9685313182899967,
+   "plates": 4.0238426406151895,
+   "small pieces": 2.6447315483379112
+  },
+  "table_and_scale_bits_a_number": 0.018049143888103716,
+  "changed": 0.9999996544514116,
+  "error_share": {
+   "word table": 0.07817794951280513,
+   "position rows": 0.07987224721487388,
+   "plates": 0.09063810850892215,
+   "small pieces": 0.1083685791047924
+  },
+  "plain_bits_a_number": 5.017270743458556,
+  "whole": {
+   "full_word_in_version_top5": 1937,
+   "version_word_in_full_top5": 1989,
+   "same_top": 1004,
+   "judged": 6000,
+   "greedy_words": 16,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 10,
+   "record_next_word": 9
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 2566,
+    "version_word_in_full_top5": 2798,
+    "same_top": 1391,
+    "judged": 6000,
+    "greedy_words": 16,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 9,
+    "record_next_word": 8
+   },
+   "position rows": {
+    "full_word_in_version_top5": 5995,
+    "version_word_in_full_top5": 5996,
+    "same_top": 5624,
+    "judged": 6000,
+    "greedy_words": 277,
+    "greedy_texts": 12,
+    "greedy_before_first_diff": 259,
+    "record_next_word": 27
+   },
+   "plates": {
+    "full_word_in_version_top5": 5935,
+    "version_word_in_full_top5": 5931,
+    "same_top": 4966,
+    "judged": 6000,
+    "greedy_words": 120,
+    "greedy_texts": 2,
+    "greedy_before_first_diff": 108,
+    "record_next_word": 22
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 5338,
+    "version_word_in_full_top5": 5239,
+    "same_top": 3626,
+    "judged": 6000,
+    "greedy_words": 94,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 69,
+    "record_next_word": 19
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 711,
+   "version_word_in_full_top5": 653,
+   "same_top": 334,
+   "judged": 6000,
+   "greedy_words": 1,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 1,
+   "record_next_word": 1
+  },
+  "seconds": 63,
+  "mem": "3012 peak, 2301 now MB"
+ },
+ "grid_b6": {
+  "spec": {
+   "kind": "grid",
+   "b": 6
+  },
+  "bits_a_number": 5.054926784014472,
+  "MB": 78.62926480710229,
+  "bits_by_part": {
+   "word table": 5.106291812210401,
+   "position rows": 1.3564483297187404,
+   "plates": 5.067559243298926,
+   "small pieces": 3.844425378759304
+  },
+  "table_and_scale_bits_a_number": 0.018725197647363776,
+  "changed": 0.9999993651549189,
+  "error_share": {
+   "word table": 0.03781584123160775,
+   "position rows": 0.04948308395467477,
+   "plates": 0.04511927914366762,
+   "small pieces": 0.06477020661979109
+  },
+  "plain_bits_a_number": 6.017270743458556,
+  "whole": {
+   "full_word_in_version_top5": 4528,
+   "version_word_in_full_top5": 4861,
+   "same_top": 2817,
+   "judged": 6000,
+   "greedy_words": 41,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 21,
+   "record_next_word": 14
+  },
+  "by_part": {
+   "word table": {
+    "full_word_in_version_top5": 4716,
+    "version_word_in_full_top5": 5012,
+    "same_top": 2903,
+    "judged": 6000,
+    "greedy_words": 28,
+    "greedy_texts": 0,
+    "greedy_before_first_diff": 16,
+    "record_next_word": 15
+   },
+   "position rows": {
+    "full_word_in_version_top5": 6000,
+    "version_word_in_full_top5": 5999,
+    "same_top": 5776,
+    "judged": 6000,
+    "greedy_words": 316,
+    "greedy_texts": 15,
+    "greedy_before_first_diff": 310,
+    "record_next_word": 30
+   },
+   "plates": {
+    "full_word_in_version_top5": 5991,
+    "version_word_in_full_top5": 5991,
+    "same_top": 5461,
+    "judged": 6000,
+    "greedy_words": 283,
+    "greedy_texts": 10,
+    "greedy_before_first_diff": 272,
+    "record_next_word": 26
+   },
+   "small pieces": {
+    "full_word_in_version_top5": 5872,
+    "version_word_in_full_top5": 5862,
+    "same_top": 4620,
+    "judged": 6000,
+    "greedy_words": 133,
+    "greedy_texts": 1,
+    "greedy_before_first_diff": 99,
+    "record_next_word": 23
+   }
+  },
+  "control_errors_shuffled_in_row": {
+   "full_word_in_version_top5": 3184,
+   "version_word_in_full_top5": 3401,
+   "same_top": 1781,
+   "judged": 6000,
+   "greedy_words": 25,
+   "greedy_texts": 0,
+   "greedy_before_first_diff": 12,
+   "record_next_word": 9
+  },
+  "seconds": 63,
+  "mem": "3012 peak, 2296 now MB"
+ }
+}

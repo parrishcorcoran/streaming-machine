@@ -1,0 +1,37 @@
+EVERY WRITE INTO THE STREAM ADDED TOGETHER, pythia-160m: 25 write plates on one scale 2^-19
+  blank   : per write line rms z  E 1.002  A 1.006  M 1.001 | lane totals rms z  E 0.98  A 1.04  M 0.95  all 0.98 | r(E,M) -0.005  cancel 0.998  (2s, 1187 MB)
+  finished: per write line rms z  E 0.205  A 0.178  M 0.143 | lane totals rms z  E 13.93  A 0.98  M 1.89  all 11.09 | r(E,M) -0.024  cancel 0.995  (2s, 1220 MB)
+  fresh_b : per write line rms z  E 1.000  A 0.996  M 1.002 | lane totals rms z  E 1.02  A 0.99  M 1.06  all 1.02 | r(E,M) -0.007  cancel 0.997  (3s, 1444 MB)
+  fresh_f : per write line rms z  E 0.998  A 0.994  M 1.003 | lane totals rms z  E 1.02  A 1.02  M 1.02  all 1.03 | r(E,M) +0.030  cancel 1.028  (4s, 1445 MB)
+
+== A1. each write line's total over the lanes, in its own coin-toss width (rms z; % beyond 3) ==
+  group                                blank           finished            fresh_b            fresh_f   | re-dealt over the plate: blank  finished
+  word rows (input table)    1.002 (0.25%)    0.205 (0.00%)    1.000 (0.30%)    0.998 (0.29%)   |   0.998   1.000
+  attention-out rows         1.006 (0.31%)    0.178 (0.00%)    0.996 (0.29%)    0.994 (0.17%)   |   0.987   1.003
+  MLP-out rows               1.001 (0.21%)    0.143 (0.00%)    1.002 (0.26%)    1.003 (0.24%)   |   0.997   0.997
+
+== A2. each stream lane's total over the write lines, in the lane's coin-toss width (rms z; % of 768 lanes beyond 3; largest |z|) ==
+  group                                        blank                   finished                    fresh_b                    fresh_f   | each line re-dealt across its lanes: blank  finished
+  word rows (input table)     0.98 ( 0.26%)    3.4    13.93 (80.99%)   44.1     1.02 ( 0.52%)    3.4     1.02 ( 0.52%)    3.7   |    1.04    0.99
+  attention-out rows          1.04 ( 0.00%)    3.0     0.98 ( 0.13%)    3.3     0.99 ( 0.13%)    3.1     1.02 ( 0.39%)    3.3   |    0.99    0.99
+  MLP-out rows                0.95 ( 0.00%)    2.9     1.89 ( 9.77%)    8.5     1.06 ( 0.26%)    3.7     1.02 ( 0.39%)    3.4   |    0.98    0.97
+  attention + MLP             0.95 ( 0.13%)    3.2     1.79 ( 7.55%)    7.8     1.04 ( 0.39%)    3.9     1.02 ( 0.78%)    3.5   |    0.97    0.98
+  ALL write lines             0.98 ( 0.26%)    3.3    11.09 (76.17%)   35.2     1.02 ( 0.39%)    3.5     1.03 ( 0.13%)    3.3   |    1.02    0.99
+  finished biases, summed over layers, per lane in the all-lines width: rms z 0.09; all write lines + biases: rms z 11.09 (76.17% beyond 3)
+  per plate, finished lane totals rms z: embed 13.93  proj.0 1.01  proj.1 0.96  proj.2 0.98  proj.3 1.01  proj.4 1.01  proj.5 1.00  proj.6 1.06  proj.7 1.00  proj.8 0.97  proj.9 1.00  proj.10 1.06  proj.11 1.01  mproj.0 0.96  mproj.1 0.91  mproj.2 1.07  mproj.3 1.43  mproj.4 1.55  mproj.5 1.44  mproj.6 1.67  mproj.7 1.47  mproj.8 1.16  mproj.9 1.26  mproj.10 1.21  mproj.11 2.23
+  per plate, blank    lane totals rms z: embed 0.98  proj.0 1.04  proj.1 0.98  proj.2 0.99  proj.3 1.00  proj.4 1.02  proj.5 0.99  proj.6 1.03  proj.7 1.04  proj.8 0.97  proj.9 1.01  proj.10 1.02  proj.11 1.02  mproj.0 0.97  mproj.1 0.96  mproj.2 0.97  mproj.3 1.02  mproj.4 1.02  mproj.5 1.03  mproj.6 0.99  mproj.7 0.98  mproj.8 0.99  mproj.9 1.03  mproj.10 1.00  mproj.11 1.00
+
+== A3. the lane totals of one group against another's, lane by lane: r (the lanes in a random order: 95% range) and the cancel ratio ==
+  word table vs MLP        blank r -0.005 [-0.071,+0.071] cancel 0.998  finished r -0.024 [-0.070,+0.070] cancel 0.995  fresh_b r -0.007 [-0.073,+0.076] cancel 0.997  fresh_f r +0.030 [-0.068,+0.067] cancel 1.028
+  word table vs attention  blank r -0.003 [-0.070,+0.069] cancel 0.999  finished r -0.042 [-0.071,+0.074] cancel 0.998  fresh_b r +0.029 [-0.069,+0.071] cancel 1.006  fresh_f r +0.011 [-0.072,+0.071] cancel 1.006
+  attention vs MLP         blank r -0.037 [-0.069,+0.073] cancel 0.969  finished r +0.006 [-0.068,+0.073] cancel 1.003  fresh_b r -0.007 [-0.069,+0.072] cancel 0.995  fresh_f r +0.031 [-0.072,+0.071] cancel 1.021
+  order-free: the word table's lane totals with its rows summed in a random order equal: True
+
+== B. the machine's own writes, 622 positions: Q = (top stream)^2 / sum of every write^2 (1: coin toss; below 1: they cancel) ==
+  run                                Q   rms z  Q level out | lanes scrambled  positions scrambled | r(word, MLP) cancel | r(word, attn) | r(attn, MLP) | r(word,MLP) lanes scr / pos scr
+  the blank machine's own        0.976   0.991        0.976 |           1.002                0.979 | -0.000 1.000 | +0.003 | -0.016 | -0.001 / -0.003
+                               r(word row, MLP write at layer l): +0.001 +0.002 +0.005 +0.003 +0.003 -0.006 -0.002 +0.001 -0.014 -0.001 +0.007 +0.000   attention: +0.000 -0.001 +0.000 -0.000 -0.003 +0.004 +0.002 -0.004 +0.004 +0.008 -0.005 +0.003
+  the finished machine's own     0.742   1.148        0.742 |           1.002                1.139 | +0.011 1.000 | +0.010 | +0.459 | -0.001 / +0.008
+                               r(word row, MLP write at layer l): +0.068 -0.007 -0.005 +0.001 -0.012 -0.006 -0.004 -0.003 +0.006 -0.002 -0.007 +0.010   attention: +0.013 -0.002 +0.001 -0.002 +0.002 -0.005 -0.006 -0.009 +0.005 +0.004 +0.003 +0.015
+
+done (41s, max memory 2604 MB)

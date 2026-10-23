@@ -1,0 +1,14 @@
+remove_foundation.py  size 14m  order plain  texts 30  greedy False  cases 2
+  fin: the finished machine's own word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs text t+1, same row): water level moved per layer [0.735, 0.587, 0.5292, 0.7518, 0.7045, 0.7217]; knife edges changed side [0.3135, 0.339, 0.3846, 0.347, 0.3223, 0.3401]
+  fin      top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  5.4% / 12.3%];  finished lead kept/lost 0.77/0.00;  3.5s  peak 0.38 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.065, 0.41, 0.155, 0.37], [0.053, 0.513, 0.304, 0.131], [0.22, 0.163, 0.369, 0.248], [0.213, 0.138, 0.146, 0.503], [0.271, 0.148, 0.104, 0.477], [0.113, 0.354, 0.171, 0.362]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.4108, 0.5303, 0.4727, 0.5091, 0.4918, 0.6164]
+  b        top-1  15.4%  top-5  41.3%  (of 622);  16 continuation: top-1  15.2% top-5  40.8% [pairing-broken  4.6% / 14.6%];  finished lead kept/lost 1.24/0.72;  3.5s  peak 0.53 GB
+           water level moved by layer [0.1461, 0.3602, 0.3767, 0.3336, 0.3678, 0.6014]
+           knife edges changed side by layer [0.1408, 0.1874, 0.2375, 0.2212, 0.2059, 0.2209]
+           who sets the level, by layer [first word, the row itself, the row before, other]: [[0.062, 0.389, 0.156, 0.392], [0.041, 0.595, 0.249, 0.114], [0.129, 0.221, 0.4, 0.25], [0.208, 0.177, 0.115, 0.5], [0.22, 0.18, 0.085, 0.515], [0.068, 0.465, 0.149, 0.317]]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2693, 0.463, 0.3256, 0.3447, 0.3288, 0.5876] / held [0.4416, 0.5712, 0.6783, 0.6988, 0.6234, 0.6658]
+done 7s  peak memory 0.53 GB

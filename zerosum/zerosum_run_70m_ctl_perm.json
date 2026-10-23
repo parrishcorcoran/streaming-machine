@@ -1,0 +1,33 @@
+{
+ "machine": "70m",
+ "variant": "ctl",
+ "plain_stats": {
+  "reads": 8086,
+  "S1=0": 0
+ },
+ "zerosum_stats": {
+  "reads": 8086,
+  "S1=0": 0
+ },
+ "compare": {
+  "calls": 51442,
+  "diff_calls": 46672,
+  "same_positions": 0,
+  "power_moved": 25,
+  "differ_before_power_moved": 390,
+  "positions": 622,
+  "scores_same_texts": 0,
+  "win_same": 610,
+  "top5_same": 399,
+  "top5_set_same": 508,
+  "first": {
+   "ln1.0 to16~": 30
+  }
+ },
+ "order_free": {
+  "scores_same": 30,
+  "texts": 30,
+  "gauges_same": 37942,
+  "gauges": 37942
+ }
+}

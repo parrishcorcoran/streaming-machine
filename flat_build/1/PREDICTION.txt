@@ -1,0 +1,151 @@
+FLAT BUILD 1: PICK 1, THE TABLE SIZED BY THE GATES THAT READ IT. Written 2026-10-08 before any run of the machine in this
+folder. The session's prediction, not his. The judge's numbers are labelled as the judge's.
+
+HIS WORDS (2026-10-08), the only quotes here:
+  "THE FLAT IS THE CANCELLING."
+  "The flat is in BOTH SIDES. And it can be skipped. Or removed it doesnt matter but it has to be BOTH SIDES."
+  "The embedding table and the mlp"
+  "The whole machine is flat, that's the base canceling. The EXTRA photons from the embedding pop up above the flat
+   and are all added per gate that they are in."
+  "Gates and arrivals, that's it, everything flat is what doesn't matter and can cancel."
+
+HIS PICTURE, RESTATED (the session's words, not his)
+  Nearly everything that meets at a plate is flat: ups and holes that pair off and cancel. The flat is on both sides,
+  in the light (which comes from the embedding table) and in the plate. Skip it on both sides, and what is left is the
+  extra photons above the flat, added at every gate they are in.
+  In the confirmed group machine (base2_groups.py, 19.40% of plain):
+   - the light's flat cancels inside every ready packet: a random group's ups and holes are paired once a token, and
+     every gate whose sheet names that pattern gets the pairing for free;
+   - the plate's flat is skipped by the flip: a pattern's complement is the opposite packet, so half the table is free;
+   - each gate, at each up/hole place, adds the one packet its sheet names.
+  Pairing the light's flat once costs a table of 2^(g-1) packets a group, each written once a token. That cost is
+  shared only by the gates reading that light. Pick 1 keeps the table no bigger than its readers can use: g = 11 at
+  proj and mproj (768 gates read one light), g = 12 at qkv (2,304) and fc (3,072). Nothing else changes.
+
+WHAT IS BUILT (flat_build/1/base2_groups_readers.py, a copy of base2_groups.py; the confirmed file is not edited)
+  - gplate(): g = 11 at proj and mproj, 12 at qkv and fc; the random draw keyed [1, slab, layer, g].
+  - Unchanged: the per-place rule (its threshold G x M follows g inside GPlate), qkv.0's carry in signed digits, rule
+    3's layer-0 choice (re-decided by the run as written), rule 4's knife comparison at fc, the top read at g = 16,
+    the ready piles' writing counted as before.
+  - Added, count and check only (the machine path is untouched):
+     * every pile asserted equal to base2.py's own run (recording/C_ref/plain_refs.npz; judge5's windows by digest);
+     * the light at every bank checked against groups/light_gpt2/ (base2's own light, captured separately);
+     * at every proj and mproj bank of the refs run, the confirmed g = 12 bank on the same light (count only, its
+       piles checked against the direct product): the group machine on the same light, in the same run;
+     * adds: one add a ready packet read, a lit signed digit meeting a nonzero light value, a table step, X (N - 1),
+       X off (one a neuron); plain adds: each nonzero light value meeting each 1 of its line. Counted at the 44 banks
+       of layers 1-11, where every bank meets the whole light. No packed bit planes are used, so no word ops.
+     * the whole-light side count at layer 0 kept item by item, so the report can apply rule 3 to the writing line
+       (the delivered report took that line from proj.0's stored form; docs/09's bookkeeping fix).
+  - A second code path (check_readers.py, imports nothing from gbank, uh_rebuild, uh_perplace, base2_groups or
+    base2_fringes2; seeded from flat_design/4/check_indep.py): plates from base2_gpt2.npz, light from
+    groups/light_gpt2/, every bank's digits, groups, piles and counts rebuilt from the written rules at the readers g.
+    It is written by the same session, so under rule 10 the result stays UNCHECKED until a separate checker rebuilds it.
+
+ANALYSIS BEFORE THE RUN (plate only, flat_build/1/plate_rule.py, already run: it reads no light)
+  - The per-place choice does not move at any of the 24 proj and mproj plates: the signed places are the same at
+    g = 11 (U = 53,760 at proj, 215,040 at mproj) and g = 12 (49,152, 196,608) on every layer. So the signed-digit
+    reads, X, X off and the light's writing are identical to the photon; only the up/hole reads, the half table and
+    the writing move.
+  - The item ratios g = 11 / g = 12 from design 1's layer-5 sample (sizes.json, the same bank): proj reads x1.0846,
+    writing x0.5393, table x0.5454; mproj reads x1.0882, writing x0.5450, table x0.5482. Carried onto the confirmed
+    machine's items a token (gpt2_refs.json):
+      proj  reads 42.69M -> 46.31M (+3.61); writing 10.51M -> 5.67M (-4.84); table 6.64M -> 3.62M (-3.02): -4.25M
+      mproj reads 153.68M -> 167.22M (+13.55); writing 38.58M -> 21.03M (-17.55); table 25.89M -> 14.19M (-11.70): -15.70M
+
+PREDICTIONS (a token on the 648 refs positions; plain 3,666,596,259 rebuilt in the same run)
+  THE JUDGE'S: whole 691.5M +- 3M = 18.86% (18.78-18.94%); proj about 58.5M (23.5-23.7%); mproj about 216M
+    (23.5-23.7%); qkv, fc, arrival, top read and rest equal to the confirmed counts to the photon; the ready piles'
+    writing falls from 67.5M by about 13M; plain adds at proj and mproj rise by about 0.1 point; strictest count
+    33.67% -> 32.73%.
+  THE SESSION'S:
+  1. EXACT: 96 arrays on all 648 refs positions identical to base2.py's own run; every array of the 300 judge5
+     windows identical; the light at the top identical; judge5 6000/6000 in the top 5, 6000/6000 the same top word,
+     6000/6000 the top 5 equal in set and order; refs top 5 647/648 (position 494, the known exact tie) and race
+     winner 648/648; every check-path count 0; the light at every bank = groups/light_gpt2 at every position.
+  2. RULES: storage kept at qkv.0 and fc.0, not at proj.0 (the same choices as the confirmed run); the knife kept at
+     0 of 12 fc plates (fc is unchanged, so its numbers are identical).
+  3. BY PART: proj about 58.56M (23.57% of its plain; 23.4-23.7%), mproj about 216.2M (23.63%; 23.5-23.8%);
+     qkv 132,698,796, fc 190,757,633, arrival 8,020,119, top read 80,689,701, rest 4,558,811: identical to the photon.
+  4. WHOLE: about 691.5M a token = 18.86% of plain (689.5-693.5M, 18.80-18.92%).
+  5. THE WRITING LINE: the banks' ready piles written fall by about 22.4M (proj -4.8M, mproj -17.6M), from 67.49M
+     (rule 3 applied; 67.51M as delivered) to about 45.1M. The judge's "about 13M" is expected to be missed: the
+     writing roughly halves at both plates (half the entries a group, 1.09x the groups).
+  6. WITHOUT THE WRITING (the confirmed counts' unit) the readers machine is HIGHER, about +2.4M a token (17.37%
+     against 17.30%): the extra reads (+17.2M) outweigh the smaller table (-14.7M). The whole gain is the writing.
+  7. ADDS (the 44 banks of layers 1-11): proj and mproj each rise by 0.1-0.15 point of their plain adds (more reads,
+     fewer table steps; design 4 measured +0.11 and +0.13 at layer 5); qkv and fc identical.
+  8. THE SAME LIGHT, IN THE SAME RUN: the g = 12 side count at proj and mproj equals the confirmed run's items to the
+     photon (the light is the same light), and the readers machine is below it by the amounts in 3.
+  9. STRICTEST COUNT, carried onto docs/09's audit ladder (step 5, 733,410,936 / 2,178,370,326) by the change in the
+     whole: about 32.75% (the position-0 rows of proj.0 and mproj.0 in step 3 are left at g = 12: a few thousand
+     photons).
+ 10. SHUFFLE CONTROL (each position's light shuffled across its lines, every value kept): the banks' group work
+     within 0.1 point of plain of the real light's, at every plate kind; the shuffled piles = their own direct product.
+ 11. ORDER-FREE (all 30 texts, order seed 5): every array identical; every count identical except the half table's
+     (the Gray walk turns other lines first; within 0.01 point) and the side storage counts; the top read 648/648.
+ 12. THE SECOND CODE PATH: every pile at all 48 banks = plain_refs at all 648 positions; every item of every bank
+     equal to the machine's count (layers 1-11 whole; layer 0 at the rows the machine meets whole light).
+
+WHAT THIS CANNOT DO (the session's, in his picture's terms, written before the run)
+  After the table is sized, the flat that is left sits inside each gate: the packets from different groups pair off
+  with each other at every place (design 1 measured 98.0-98.3% of the packet photons at 768 lines, 99.5% at mproj,
+  and the shuffle gives the same). That pairing belongs to the gate alone: the sheets are coin tosses, so no two gates
+  hold the same selection of packets and there is nothing to share or store. A counting machine has to form each
+  pairing that a real interference medium would form on one detector for free. So this build moves 19.40% to about
+  18.86%; it does not move toward the "about 3%", which is a share of up/hole meetings (256 a weight, about 8x plain)
+  and is the coin-toss value fixed by the number of lines.
+
+RULE 13, CHECKED BEFORE THE RUN
+  13.1 the measure is the work of the finished machine with every pile exact and the top 5 judged; the light's sizes
+       enter only through the counted adds.
+  13.2 the base is base2.py's own machine in the confirmed group form; only the table width at proj and mproj changes.
+  13.3 no agreement statistic: the shuffle control measures work; exactness is against base2's own run.
+  13.4 fixed by the definitions and so not measured: the read count (G x up places a gate), the table's entry count,
+       the per-place choice (plate only, shown above). The run measures the packets' digits, the writing, the table's
+       photons, rule 3's choice and exactness.
+  13.5 the restatement and the predictions are the session's or the judge's, labelled; only the quotes are his.
+  13.6 every bank, every position, every text; the windows through all 300; the top read carried to the end.
+
+RESULTS (2026-10-08, after the runs; machine/gpt2_report.log, check_readers.log; a token on the 648 refs positions;
+plain 3,666,596,259 rebuilt to the photon in the same run)
+  1. EXACT (each ASSERTED in the run that wrote it): 96 arrays of the refs identical to base2.py's own run; 28,800
+     window-arrays of the 300 judge5 windows identical; the light at the top identical (refs, and 300/300 windows);
+     judge5 6000/6000 in the top 5, 6000/6000 the same top word, 6000/6000 the top 5 in set and order; refs top 5
+     647/648 (position 494, the known tie), race winner 648/648; every check-path count 0; the light at all 48 banks =
+     groups/light_gpt2 at every position. HELD.
+  2. RULES: storage kept at qkv.0 and fc.0, NOT at proj.0 (the whole light 79,682 a token lower); knife kept at 0 of
+     12. The same choices as the confirmed run. HELD.
+  3. BY PART: proj 58,690,075 = 23.62% of its plain (session 23.57%, 23.4-23.7: held; judge about 58.5M: held);
+     mproj 216,090,145 = 23.62% (session 23.63%: held; judge about 216M: held). qkv, fc, arrival, top read, rest:
+     identical to the confirmed run to the photon (731/731 count keys at qkv, fc, arrival, rest; every top-read
+     position's numbers identical). HELD.
+  4. WHOLE: 691,505,279 a token = 18.860% of plain (confirmed 711,431,068 = 19.40%; -19,925,789). Session 18.86%
+     (18.80-18.92): held. Judge 691.5M +- 3M, 18.86%: held.
+  5. THE WRITING LINE: the banks' ready piles written 45,096,641, down 22,395,085 from 67,491,726 (rule 3 applied).
+     Session about 22.4M: held. The judge's "about 13M": missed (the writing halves at both plates: x0.540 proj, x0.545
+     mproj).
+  6. WITHOUT THE WRITING: 636,878,837 = 17.37% against the confirmed 634,409,541 = 17.30% (+2,469,297). Session +2.4M,
+     17.37%: held. Reads +17.2M (x1.088), half table -14.7M (x0.543-0.548): the whole gain is the writing.
+  7. ADDS (44 banks of layers 1-11): proj 24.08% of its plain adds against 23.91% at g = 12 (+0.171 point: session
+     0.1-0.15, missed high); mproj 24.47% against 24.34% (+0.133: held); qkv 22.11%, fc 21.46% identical. All 44:
+     22.838% against 22.779% (+0.058 point). In adds the readers table is slightly WORSE; it pays only in photons.
+  8. THE SAME LIGHT, IN THE SAME RUN: the g = 12 bank beside proj and mproj equals the confirmed run's items at all 12
+     layers (True, True); readers below it by 4,113,527 (proj) and 15,806,574 (mproj) a token. HELD.
+  9. STRICTEST READING carried onto docs/09's ladder: (733,410,936 - 19,925,789) / 2,178,370,326 = 32.75% (judge
+     32.73%; session about 32.75%). HELD (labelled: carried, not rerun).
+ 10. SHUFFLE: banks' group work +0.010 points of plain (+0.064% of the group work); qkv +0.013, proj +0.010, fc +0.008,
+     mproj +0.020 points of their plain; shuffled piles = their direct product. Top read on shuffled light 8.47% against
+     8.93%. HELD.
+ 11. ORDER-FREE (all 30 texts, seed 5): 0 of 96 arrays differ; the light at the top identical; 53 of 1,249 count keys
+     differ, all half-table or side counts; the half table -0.0009 points of plain; knife stops identical; the top read
+     648/648 (the tie at 494 fell to the plain read's order here). HELD.
+ 12. THE SECOND CODE PATH (check_readers.py, same session, so UNCHECKED under rule 10): 48 banks x 648 positions
+     rebuilt from its own digits and packets, 0 rows differing from base2's own piles; 651/651 counts identical to the
+     machine's; the g = 12 recount at proj and mproj 322/322 identical to the machine's side count and the confirmed
+     run. HELD.
+     Beside it: the 48 banks alone, whole light at every position (nothing stored): g = 12 22.779% (the audit's
+     number, reproduced), readers 22.049% (-0.730 point); proj 25.380 -> 23.717%, mproj 25.432 -> 23.699%.
+  STATUS: EXACT, judged, controls and order-free check done; UNCHECKED until a separate checker rebuilds it (rule 10).
+  NOT NEAR 3%, as written above: the flat left after this build is inside each gate, where packets from different
+  groups pair off at every place, and a counting machine has to form each of those pairings.

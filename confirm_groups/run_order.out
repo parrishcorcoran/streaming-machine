@@ -1,0 +1,173 @@
+=== mode=refs seed=1 texts=0,1,2 Wed Oct  7 07:54:11 PDT 2026
+rebuild_gpt2.py mode=refs seed=1 texts=0,1,2  (checker's independent rebuild)
+REFS: texts [0, 1, 2], 62 positions; grouping seed 1
+    layer  0 done (1s, 2000 MB)
+    layer  1 done (2s, 2026 MB)
+    layer  2 done (3s, 2031 MB)
+    layer  3 done (4s, 2032 MB)
+    layer  4 done (4s, 2035 MB)
+    layer  5 done (5s, 2038 MB)
+    layer  6 done (6s, 2045 MB)
+    layer  7 done (7s, 2045 MB)
+    layer  8 done (8s, 2048 MB)
+    layer  9 done (9s, 2052 MB)
+    layer 10 done (10s, 2054 MB)
+    layer 11 done (11s, 2056 MB)
+EXACT: 99 arrays checked against base2.py's own run (plain_refs.npz); position-arrays differing: 0
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (4s, 2303 MB)
+TOP READ: checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; top 5 = plain_refs 62/62, race winner 62/62
+
+WORK A TOKEN BY PART (62 positions; grouping seed 1)
+  part                  total        a token      delivered   same  of plain
+  qkv           8,177,578,488    131,896,427    132,698,796  False    19.41%
+  proj          3,893,000,023     62,790,323     62,809,289  False    25.27%
+  fc           11,755,862,278    189,610,682    190,757,633  False    21.02%
+  mproj        14,399,455,270    232,249,279    231,896,719  False    25.39%
+  arrival         479,926,459      7,740,749      8,020,119  False    59.30%
+  top           5,028,840,354     81,110,328     80,689,701  False     8.97%
+  rest            279,010,275      4,500,166      4,558,811  False    98.68%
+  WHOLE        44,013,673,147    709,897,954    711,431,068  False    19.36%
+  of it, the ready piles written: banks 67,408,166, top 9,516,323; without them 632,973,466 = 17.26%
+
+RULE 3 SIDE COUNTS (count only; a token): qkv.0 rows and split 69,075; qkv.0 carry met in signed digits 1,990,300; qkv.0 whole light, group form 12,135,708; qkv.0 carry, group form 1,974,433; proj.0 rows and split 14,869; proj.0 rest light, group form 5,022,588; proj.0 whole light, group form 4,958,465; fc.0 whole light, group form 14,680,701; fc.0 rows and split 45,164; fc.0 rest light, group form 14,441,369
+  qkv.0: stored form 2,059,374, whole light 12,135,708 a token: storage KEPT (+10,076,334)
+  proj.0: stored form 5,037,457, whole light 4,958,465 a token: storage NOT KEPT (-78,991)
+  fc.0: stored form 14,486,533, whole light 14,680,701 a token: storage KEPT (+194,167)
+
+THE BANKS AND THE ARRIVAL BY ITEM, a token (mine; delivered record where it exists)
+  arrival  divides                                            1,531,833
+  arrival  q, k and values written                              189,504
+  arrival  scores, signed digits                              2,362,633
+  arrival  shares x values                                    3,642,876
+  arrival  shares' total                                         13,904
+  fc       bends                                              2,133,894
+  fc       biases                                               277,148
+  fc       divides                                            4,572,167
+  fc       light                                                 45,614
+  fc       pwrite                                             9,539,828
+  fc       reads                                            156,885,017
+  fc       sdreads                                            9,817,451
+  fc       split                                                  5,807
+  fc       stored rows read and added                            39,358
+  fc       table                                              6,057,763
+  fc       xoff                                                 201,315
+  fc       xsum                                                  35,321
+  mproj    light                                                192,222
+  mproj    pwrite                                            38,621,860
+  mproj    reads                                            153,820,779
+  mproj    sdreads                                           13,407,690
+  mproj    table                                             25,984,704
+  mproj    xoff                                                  70,408
+  mproj    xsum                                                 151,616
+  proj     light                                                 50,560
+  proj     pwrite                                            10,491,408
+  proj     reads                                             42,619,025
+  proj     sdreads                                            2,873,432
+  proj     table                                              6,661,571
+  proj     xoff                                                  55,668
+  proj     xsum                                                  38,660
+  qkv      light                                                 42,590
+  qkv      pwrite                                             8,755,070
+  qkv      reads                                            106,303,677
+  qkv      sdreads                                           10,917,791
+  qkv      split                                                  6,814
+  qkv      stored rows read and added                            63,808
+  qkv      table                                              5,632,587
+  qkv      xoff                                                 141,324
+  qkv      xsum                                                  32,766
+  rest     bank divides                                       3,405,334
+  rest     biases                                               313,499
+  rest     entry: word + position                                 3,767
+  rest     position 0: the stream after layer 0 read                300
+  rest     stream adds                                          138,687
+  rest     top water level                                       22,911
+  rest     water levels                                         615,668
+done (2516 MB)
+=== mode=refs seed=1 texts=0,1,2 reorder=5 Wed Oct  7 07:54:31 PDT 2026
+rebuild_gpt2.py mode=refs seed=1 texts=0,1,2 reorder=5  (checker's independent rebuild)
+REFS: texts [0, 1, 2], 62 positions; grouping seed 1; ORDER-FREE reorder 5
+    layer  0 done (1s, 2001 MB)
+    layer  1 done (2s, 2024 MB)
+    layer  2 done (3s, 2027 MB)
+    layer  3 done (4s, 2032 MB)
+    layer  4 done (5s, 2037 MB)
+    layer  5 done (6s, 2040 MB)
+    layer  6 done (7s, 2053 MB)
+    layer  7 done (7s, 2055 MB)
+    layer  8 done (8s, 2057 MB)
+    layer  9 done (9s, 2059 MB)
+    layer 10 done (10s, 2061 MB)
+    layer 11 done (11s, 2063 MB)
+EXACT: 99 arrays checked against base2.py's own run (plain_refs.npz); position-arrays differing: 0
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], signed places [12, 13, 14, 15], kcorr -1, read order [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+  top table laid (4s, 2388 MB)
+TOP READ: checks {'bound broken (any word)': 0, 'a word set aside that is not below the 5th-best': 0, 'words read to the end vs the direct product': 0, "every word's doubled pile from its places vs the direct product": 0}; top 5 = plain_refs 62/62, race winner 62/62
+
+WORK A TOKEN BY PART (62 positions; grouping seed 1; reorder 5)
+  part                  total        a token      delivered   same  of plain
+  qkv           8,177,200,411    131,890,329    132,698,796  False    19.40%
+  proj          3,891,700,467     62,769,362     62,809,289  False    25.26%
+  fc           11,755,710,239    189,608,230    190,757,633  False    21.02%
+  mproj        14,400,055,414    232,258,958    231,896,719  False    25.39%
+  arrival         479,926,459      7,740,749      8,020,119  False    59.30%
+  top           5,026,225,186     81,068,148     80,689,701  False     8.97%
+  rest            279,010,275      4,500,166      4,558,811  False    98.68%
+  WHOLE        44,009,828,451    709,835,943    711,431,068  False    19.36%
+  of it, the ready piles written: banks 67,408,166, top 9,516,323; without them 632,911,455 = 17.26%
+
+RULE 3 SIDE COUNTS (count only; a token): qkv.0 rows and split 69,075; qkv.0 carry met in signed digits 1,990,300; qkv.0 whole light, group form 12,128,341; qkv.0 carry, group form 1,976,084; proj.0 rows and split 14,869; proj.0 rest light, group form 5,019,058; proj.0 whole light, group form 4,958,159; fc.0 whole light, group form 14,667,886; fc.0 rows and split 45,164; fc.0 rest light, group form 14,429,595
+  qkv.0: stored form 2,059,374, whole light 12,128,341 a token: storage KEPT (+10,068,967)
+  proj.0: stored form 5,033,927, whole light 4,958,159 a token: storage NOT KEPT (-75,768)
+  fc.0: stored form 14,474,759, whole light 14,667,886 a token: storage KEPT (+193,127)
+
+THE BANKS AND THE ARRIVAL BY ITEM, a token (mine; delivered record where it exists)
+  arrival  divides                                            1,531,833
+  arrival  q, k and values written                              189,504
+  arrival  scores, signed digits                              2,362,633
+  arrival  shares x values                                    3,642,876
+  arrival  shares' total                                         13,904
+  fc       bends                                              2,133,894
+  fc       biases                                               277,148
+  fc       divides                                            4,572,167
+  fc       light                                                 45,614
+  fc       pwrite                                             9,539,828
+  fc       reads                                            156,885,017
+  fc       sdreads                                            9,817,451
+  fc       split                                                  5,807
+  fc       stored rows read and added                            39,358
+  fc       table                                              6,055,311
+  fc       xoff                                                 201,315
+  fc       xsum                                                  35,321
+  mproj    light                                                192,222
+  mproj    pwrite                                            38,621,860
+  mproj    reads                                            153,820,779
+  mproj    sdreads                                           13,407,690
+  mproj    table                                             25,994,384
+  mproj    xoff                                                  70,408
+  mproj    xsum                                                 151,616
+  proj     light                                                 50,560
+  proj     pwrite                                            10,491,408
+  proj     reads                                             42,619,025
+  proj     sdreads                                            2,873,432
+  proj     table                                              6,640,611
+  proj     xoff                                                  55,668
+  proj     xsum                                                  38,660
+  qkv      light                                                 42,590
+  qkv      pwrite                                             8,755,070
+  qkv      reads                                            106,303,677
+  qkv      sdreads                                           10,917,791
+  qkv      split                                                  6,814
+  qkv      stored rows read and added                            63,808
+  qkv      table                                              5,626,489
+  qkv      xoff                                                 141,324
+  qkv      xsum                                                  32,766
+  rest     bank divides                                       3,405,334
+  rest     biases                                               313,499
+  rest     entry: word + position                                 3,767
+  rest     position 0: the stream after layer 0 read                300
+  rest     stream adds                                          138,687
+  rest     top water level                                       22,911
+  rest     water levels                                         615,668
+done (2543 MB)
+=== all done Wed Oct  7 07:54:51 PDT 2026

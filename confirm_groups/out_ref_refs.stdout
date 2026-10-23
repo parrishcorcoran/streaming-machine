@@ -1,0 +1,12 @@
+REFERENCE RUN of qwen_base2.py's own steps on the 30 refs texts (613 positions)
+  layer 6 done (31s, 650 MB)
+  layer 13 done (62s, 650 MB)
+  layer 20 done (93s, 650 MB)
+  layer 27 done (126s, 650 MB)
+  the read done (175s, 1858 MB)
+  piles vs capture's record: 0 of 3360 differ
+  score rows vs capture's: 0 of 613 differ; top 5 0 differ; race winner 0 differ
+  vs qwen_fringes/ref.json: pile 0 of 3360 differ, arrival 0 of 840 differ, stream 0 of 1680 differ, top light 0 of 30 differ
+  read vs ref.json: score rows 0 differ, top 5 0 differ, winners 0 differ
+  top light vs capture's top_light.npy: 0 rows differ; ex 0; LS 0
+done, max memory 1858 MB

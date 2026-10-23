@@ -1,0 +1,92 @@
+remove_foundation.py  size 70m  order plain  texts 30  greedy True  cases 13
+  fin: the finished machine's own word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs text t+1, same row): water level moved per layer [0.6873, 0.7716, 0.6548, 0.5395, 0.5647, 0.6941]; knife edges changed side [0.2389, 0.2328, 0.3217, 0.3106, 0.3185, 0.3147]
+  fin      top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  3.3% /  7.1%];  greedy words 480/480 texts 30/30 first diff 16.0;  finished lead kept/lost 0.82/0.00;  4.2s  peak 1.06 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.3914, 0.4222, 0.4377, 0.6723, 0.9636, 0.9954]
+  cb       top-1  52.6%  top-5  85.4%  (of 622);  16 continuation: top-1  52.3% top-5  84.8% [pairing-broken  3.3% /  6.9%];  greedy words 51/480 texts 0/30 first diff 1.0;  finished lead kept/lost 1.39/0.49;  14.9s  peak 1.45 GB
+           water level moved by layer [0.0724, 0.1512, 0.1446, 0.2209, 0.6054, 0.6869]
+           knife edges changed side by layer [0.0793, 0.0575, 0.0933, 0.0892, 0.094, 0.1031]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2453, 0.301, 0.2742, 0.5736, 0.9135, 0.9864] / held [0.4102, 0.4594, 0.5026, 0.7004, 0.9954, 0.9999]
+             'The capital of France is' -> ' the country of the country of the country of the country of the country of the'
+             'The theory of relativity states that' -> ' the only possible solution is the existence of a possible solution, the only possible solution'
+             'The meaning of life is' -> ' not only a simple but complex, and it is not only a simple but complex'
+  cb_tab   top-1  94.1%  top-5 100.0%  (of 622);  16 continuation: top-1  94.2% top-5 100.0% [pairing-broken  3.5% /  7.5%];  greedy words 318/480 texts 11/30 first diff 9.7;  finished lead kept/lost 0.88/0.08;  7.8s  peak 1.45 GB
+           water level moved by layer [0.0087, 0.0103, 0.0072, 0.0053, 0.0108, 0.0139]
+           knife edges changed side by layer [0.0037, 0.0029, 0.0033, 0.0028, 0.0024, 0.0024]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.205, 0.2702, 0.2202, 0.3502, 0.5076, 0.5192] / held [0.3935, 0.4258, 0.4421, 0.6753, 0.9666, 0.9961]
+             'The capital of France is' -> ' the capital of the country, the capital of the country, the capital of the'
+             'The theory of relativity states that' -> ' the universe is a closed system of equations. The theory of relativity is a closed'
+             'The meaning of life is' -> ' not a question of law, but a question of law.\n\nThe question'
+  cb_pl    top-1  52.7%  top-5  86.2%  (of 622);  16 continuation: top-1  52.7% top-5  85.4% [pairing-broken  3.5% /  7.3%];  greedy words 63/480 texts 1/30 first diff 1.6;  finished lead kept/lost 1.39/0.49;  13.0s  peak 1.45 GB
+           water level moved by layer [0.0722, 0.1491, 0.1436, 0.2232, 0.6056, 0.6843]
+           knife edges changed side by layer [0.0794, 0.0573, 0.0932, 0.0891, 0.094, 0.103]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2454, 0.3006, 0.2742, 0.5828, 0.9121, 0.9867] / held [0.41, 0.4585, 0.5016, 0.6997, 0.9957, 0.9999]
+             'The capital of France is' -> ' the capital of the country, and the capital of the country is the capital of'
+             'The theory of relativity states that' -> ' the only possible solution is the solution is the only possible solution, which is the'
+             'The meaning of life is' -> ' not only a but also a life, it is also a life, it is'
+  ca       top-1   0.0%  top-5   0.0%  (of 622);  16 continuation: top-1   0.0% top-5   0.0% [pairing-broken  0.0% /  0.0%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.82;  15.3s  peak 1.45 GB
+           water level moved by layer [0.5929, 0.6962, 0.7046, 0.792, 0.8418, 0.8315]
+           knife edges changed side by layer [0.2041, 0.2831, 0.3808, 0.3873, 0.4001, 0.4497]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.3348, 0.3919, 0.3774, 0.6269, 0.9479, 0.9932] / held [0.4905, 0.5107, 0.6874, 0.8483, 0.9976, 0.9997]
+             'The capital of France is' -> ' employee v v v v v v v v v v v v v v v'
+             'The theory of relativity states that' -> ' Mumbai vhoBR employeeBR employeeRadhoexistence Mumbai Wheho inwardho Mumbai'
+             'The meaning of life is' -> 'ho employee WheRad inward vho v inward vhoho Wheod Heroho'
+  ca_L0    top-1  25.1%  top-5  43.4%  (of 622);  16 continuation: top-1  27.3% top-5  45.0% [pairing-broken  4.0% / 10.6%];  greedy words 21/480 texts 0/30 first diff 0.3;  finished lead kept/lost 1.80/0.66;  13.3s  peak 1.45 GB
+           water level moved by layer [0.4253, 0.5541, 0.4911, 0.5771, 0.636, 0.628]
+           knife edges changed side by layer [0.1667, 0.1954, 0.2507, 0.2461, 0.2601, 0.2583]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.3199, 0.3698, 0.3345, 0.6401, 0.936, 0.9918] / held [0.4791, 0.5247, 0.6296, 0.7027, 0.9863, 0.9986]
+             'The capital of France is' -> ' the new New New New New New New New New New New New New New New'
+             'The theory of relativity states that' -> ' by Einstein’s new Einstein’s new Einstein’s new Einstein’s'
+             'The meaning of life is' -> ' life is life is life is life is life is life is life is life is'
+  cb_L0    top-1  84.4%  top-5  99.0%  (of 622);  16 continuation: top-1  86.2% top-5  99.0% [pairing-broken  3.8% /  7.5%];  greedy words 190/480 texts 4/30 first diff 5.6;  finished lead kept/lost 1.02/0.24;  10.3s  peak 1.45 GB
+           water level moved by layer [0.0722, 0.1366, 0.1125, 0.0661, 0.1011, 0.1011]
+           knife edges changed side by layer [0.0794, 0.0422, 0.0569, 0.0493, 0.0432, 0.0391]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.2454, 0.2849, 0.2725, 0.34, 0.5436, 0.682] / held [0.41, 0.4583, 0.4877, 0.7079, 0.9842, 0.9982]
+             'The capital of France is' -> ' the capital of the country, which is the capital of the country, which is'
+             'The theory of relativity states that' -> ' the universe is a closed system. The theory of relativity is a closed system.'
+             'The meaning of life is' -> ' not the same as that of the same person.\n\nThe first sentence is'
+  b_head   top-1  90.0%  top-5  99.8%  (of 622);  16 continuation: top-1  91.2% top-5 100.0% [pairing-broken  3.3% /  7.1%];  greedy words 212/480 texts 6/30 first diff 6.0;  finished lead kept/lost 0.94/0.17;  10.1s  peak 1.45 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.3914, 0.4222, 0.4377, 0.6723, 0.9636, 0.9954]
+             'The capital of France is' -> ' the capital of the country, and the capital of the country is the capital of'
+             'The theory of relativity states that' -> ' the universe is a quantum system, and the universe is a quantum system.\n'
+             'The meaning of life is' -> ' not the same as that of life itself.\n\nThe meaning of life is'
+  b_emb    top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  3.3% /  7.1%];  greedy words 480/480 texts 30/30 first diff 16.0;  finished lead kept/lost 0.82/0.00;  4.2s  peak 1.45 GB
+           water level moved by layer [0.0099, 0.0099, 0.0084, 0.0089, 0.015, 0.0146]
+           knife edges changed side by layer [0.0032, 0.0033, 0.0039, 0.0033, 0.0028, 0.0027]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.25, 0.268, 0.231, 0.2941, 0.5035, 0.5021] / held [0.3935, 0.4257, 0.443, 0.677, 0.9672, 0.9961]
+             'The capital of France is' -> ' the capital of the country, and the capital of the country is the capital of'
+             'The theory of relativity states that' -> ' the universe is a closed system of equations. The theory of relativity is a closed'
+             'The meaning of life is' -> ' not a question of life, but a question of life.\n\nThe question'
+  cb_head  top-1  94.5%  top-5 100.0%  (of 622);  16 continuation: top-1  94.6% top-5 100.0% [pairing-broken  3.5% /  7.5%];  greedy words 345/480 texts 14/30 first diff 10.6;  finished lead kept/lost 0.88/0.10;  8.2s  peak 1.45 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.3914, 0.4222, 0.4377, 0.6723, 0.9636, 0.9954]
+             'The capital of France is' -> ' the capital of the country, and the capital of the country is the capital of'
+             'The theory of relativity states that' -> ' the universe is a closed system of equations. The theory of relativity is a closed'
+             'The meaning of life is' -> ' not a question of law, but a question of law.\n\nThe question'
+  cb_emb   top-1  99.5%  top-5 100.0%  (of 622);  16 continuation: top-1  99.4% top-5 100.0% [pairing-broken  3.3% /  6.9%];  greedy words 452/480 texts 27/30 first diff 15.1;  finished lead kept/lost 0.82/0.04;  5.4s  peak 1.45 GB
+           water level moved by layer [0.0087, 0.0103, 0.0072, 0.0053, 0.0108, 0.0139]
+           knife edges changed side by layer [0.0037, 0.0029, 0.0033, 0.0028, 0.0024, 0.0024]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.205, 0.2702, 0.2202, 0.3502, 0.5076, 0.5192] / held [0.3935, 0.4258, 0.4421, 0.6753, 0.9666, 0.9961]
+             'The capital of France is' -> ' the capital of the country, and the capital of the country is the capital of'
+             'The theory of relativity states that' -> ' the universe is a closed system of equations. The theory of relativity is a closed'
+             'The meaning of life is' -> ' not a question of life, but a question of life.\n\nThe question'
+  a_head   top-1   0.0%  top-5   7.4%  (of 622);  16 continuation: top-1   0.0% top-5   8.8% [pairing-broken  0.0% /  4.2%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.82;  13.5s  peak 1.45 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [None, None, None, None, None, None] / held [0.3914, 0.4222, 0.4377, 0.6723, 0.9636, 0.9954]
+             'The capital of France is' -> ' mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass'
+             'The theory of relativity states that' -> ' mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass'
+             'The meaning of life is' -> ' mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass mass'
+  a_emb    top-1  26.7%  top-5  46.5%  (of 622);  16 continuation: top-1  27.5% top-5  46.5% [pairing-broken  6.5% / 20.4%];  greedy words 56/480 texts 0/30 first diff 0.3;  finished lead kept/lost 1.51/0.66;  13.4s  peak 1.45 GB
+           water level moved by layer [0.5777, 0.628, 0.5439, 0.4618, 0.5125, 0.5627]
+           knife edges changed side by layer [0.1544, 0.1691, 0.2327, 0.2337, 0.2315, 0.2194]
+           the finished machine's first arrival's share of its row (median), rows whose level moved [0.3298, 0.3832, 0.3485, 0.5436, 0.8225, 0.9791] / held [0.4951, 0.5255, 0.6469, 0.8374, 0.9997, 0.9999]
+             'The capital of France is' -> '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+             'The theory of relativity states that' -> ' that the the the the the the a a the the the the a the the'
+             'The meaning of life is' -> '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+done 134s  peak memory 1.45 GB

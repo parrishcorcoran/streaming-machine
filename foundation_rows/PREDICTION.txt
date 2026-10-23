@@ -1,0 +1,136 @@
+FOUNDATION ROWS: THE BITS EVERY WORD SHARES IN THE INPUT WORD TABLES. PREDICTIONS, written 2026-10-07 before any
+count was run. Results go below, after the runs; nothing above the RESULTS line is edited after a run.
+
+HIS WORDS (2026-10-07), the only sentence quoted as his:
+  "If we convert embedding table into base 2 can we find the base foundation that is in every token? Should be the
+  same on ALL of them, some exact data from every single one"
+
+THE SESSION'S RESTATEMENT (the session's words, not his): write every word's row of the input table in base 2. If
+there is a foundation shared by all words, then at some (lane, place) every single word has the same bit. Those bits
+are exact data present in every row; they can be written once, and each word stored as foundation + its own exact
+remainder.
+
+THE GRID (the session's reasoning): bits only line up across words if all words in a lane sit on one power of two.
+So each lane is written on the finest place any of its words needs (its lowest lit place), every value an exact
+whole number there. The places a lane spans are then set by its largest value (the top) and that grid (the bottom).
+
+PREDICTION HANDED TO THIS RUN (the session's, copied as given):
+  beyond the fresh draw, bits shared by every single word appear only at the sign and top places of a few big lanes
+  (GPT-2: the same few lanes as T's column; Pythia: many lanes, since its tables lean hard; Qwen: few), broken in the
+  rest by a handful of rare or never-built rows; with the 99.9% version (exceptions stored), the shared bits are a
+  real foundation, but storing it once saves little beyond per-lane coding (under 0.3 bits a value), because a
+  per-lane coder already pays almost nothing for a bit that never changes.
+
+THIS RUN'S PREDICTION, worked out before the run (numbers the run can miss):
+  Places a lane takes on its own finest grid (from a first look at the tops and bottoms only, no counts yet):
+  GPT-2 fp32 24-51 (median 41), Qwen bf16 22-42 (median 27), Pythia fp16 21-23, GPT-2 as the machine writes it
+  (2^-16) about 17-19.
+
+  1. Cells where ALL words agree (sign-and-size):
+     - the top magnitude place is lit by the lane's largest value, so never shared; the bottom place is lit by the
+       word that set the grid, so never shared. A shared sign needs every word on one side of zero.
+     - GPT-2 machine (2^-16): 0-10 shared cells, all of them signs of the few lanes standing furthest from zero; the
+       fresh draw with no level 0; the fresh draw with each lane's level and spread within +-3 of the table.
+     - GPT-2 fp32 and Qwen bf16: tens to a few hundred more shared cells, all in the low places below the writing's
+       window (24 places fp32, 8 bf16) where only the very smallest values reach. These are the float writing's own
+       dark places: the fresh draw written the same way (fp32 / bf16) gives the same count within 30%; the fresh
+       draw rounded straight onto the grid gives 0 there.
+     - Pythia finished: few shared signs (0-10), because the 241 never-built rows sit near zero with the blank's
+       random signs and break every leaning lane; with those 241 rows set aside, shared signs in 5-40% of lanes.
+       Blank (step0): 0 signs; the same fp16 low-place count as the finished table within 30%.
+     - Two's complement: the same count of shared signs (the sign is the top place); no extra shared places
+       (each lane takes the fewest places that hold it).
+  2. At 99.9% and 99% of words: the top 1-2 magnitude places of almost every lane (leading zeros: only the few
+     biggest words light them), in the table and in every fresh draw alike; the float writings add the low places.
+     Nothing in the middle places beyond the draws. In two's complement the top places of a lane with no level
+     agree only about half the time (sign extension copies the sign).
+  3. Storing the foundation once: exact version, raw places save exactly the shared cells (a fraction of a bit a
+     value for GPT-2 machine and Pythia; more for fp32 and bf16, all of it the writing's dark places); per-lane
+     value-histogram floor: exactly 0 change (taking away bits every word shares is one-to-one inside a lane);
+     per-place floor and real bytes: under 0.01 bits a value. 99.9% version: within +-0.05 bits a value of the
+     table under per-lane coding, the exceptions eating what the shared bits save.
+  4. The shared signs sit in the lanes whose level stands furthest from zero against their spread (the standing
+     column), GPT-2's among T's column lanes; the words that break them are the never-built and rare rows near the
+     centre of the table, plus a handful of the loudest words.
+
+CONTROLS (what each one can and cannot show):
+  fresh0-grid      a bell with each lane's own spread and no level, rounded straight onto the table's lane grid
+  freshlane-grid   a bell with each lane's own level and spread, rounded onto the table's lane grid
+  fresh0-written   the same bell written the way the table writes values (fp32 / bf16 / fp16), on its own grid
+  freshlane-written
+  blank            Pythia step0 (the random start), fp16 like the finished table
+  laneshuffle      each lane's values re-dealt over the words: it keeps every lane's set of values, so it MUST
+                   return the item-1 counts digit for digit (rule 13.3). It is the null for none of them. Used only
+                   for what it does break: which words carry the exceptions (are they the same few words in every
+                   lane, or scattered).
+  The finding is what exceeds the fresh draws and the blank.
+
+RESULTS (added after the runs)
+(2026-10-07, count.py; every total rebuilt by check.py by other means: AND/OR over the words, frexp grids, numpy's
+own float types, bit planes from the bytes. ALL AGREE on all five tables, per-lane counts identical. Logs:
+count_<table>.log / .json, counts_<table>.npz, check_<table>.log.)
+
+THE GRID, places a lane takes (each lane on its own finest power of two):
+  GPT-2 as the machine writes it: every lane 2^-16, 14-17 magnitude places (median 16), 13,028 sign-and-size cells
+  GPT-2 fp32: 2^-51 .. 2^-25 (median 2^-42), 24-51 places (median 41.5), 32,547 cells
+  Qwen bf16: 2^-44 .. 2^-25 (median 2^-29), 22-42 places (median 27), 29,348 cells
+  Pythia 70m / 160m fp16 (finished and blank): every lane 2^-24, 21-23 places, 11,768 / 17,269 cells
+
+ITEM 1. Cells shared by ALL words, sign-and-size / two's complement:
+  GPT-2 machine        18 / 18   = 14 lane signs + 4 top places (lane 36: place 14 lit in every word, 13 dark in
+                                   every word; lane 496: places 12 and 13 lit in every word)
+  GPT-2 fp32          378 / 365  = the same 18 + 360 / 347 low places
+  Qwen                450 / 410  all low places; with the 267 never-a-token rows set aside 451 / 410
+  Pythia 70m            1 / 0    one place under a lone outlier's top; 241 never-built rows set aside: still 1 / 0
+  Pythia 160m           1 / 0    the same
+  At 99.9%: GPT-2 machine 708 / 41, fp32 5,938 / 5,270, Qwen 9,827 / 8,852, Pythia 503 / 0 and 373 / 0.
+  At 99%:   GPT-2 machine 793 / 85, fp32 8,318 / 7,616, Qwen 12,955 / 11,973, Pythia 2,037 / 1,528 and 2,672 / 2,292.
+  Two's complement shares nothing in Pythia even at 99.9%: no lane has a sign 99.9% of its words share.
+
+ITEM 2. Controls, cells shared by ALL words (sign-and-size / two's complement):
+  fresh0-grid: 0 / 0 in every table. freshlane-grid: GPT-2 19 / 19 (8 signs, 9 top, 2 mid), fp32 20 / 20, Qwen 0,
+  Pythia 0. fresh0-written: GPT-2 fp32 353 / 357, Qwen 418 / 405, all low; Pythia 0. freshlane-written: fp32 330 / 352
+  (7 signs, 9 top, 2 mid, 312 low), Qwen 396 / 392 low, Pythia 0. Blank: 0 / 0 (70m and 160m).
+  laneshuffle: every (lane, place) count identical to the table's in all five (asserted). It keeps every lane's set
+  of values, so it had to; it is the null for nothing in item 1 (rule 13.3).
+  At 99.9%, the top places (leading zeros) are the draws' too: fresh0-grid 605 (GPT-2), 628 (fp32), 656 (Qwen), 474 /
+  342 (Pythia); the low places are the writing's: fresh0-written 5,446 low (fp32), 8,932 low (Qwen), 0 at 99.9% and
+  1,536 / 2,304 at 99% (Pythia, the same as the blank).
+  BEYOND THE DRAWS AND THE BLANK: only in GPT-2: the 14 signs and the 4 top places of lanes 36 and 496. Nothing in
+  Pythia's or Qwen's input tables.
+
+ITEM 3. Foundation row stored once, word = foundation + remainder (+ exceptions), every round trip exact (whole
+  numbers; the stored fp32 / fp16 / bf16 bits for sign-and-size). Bits a value, table -> foundation form:
+  GPT-2 machine, ALL (18 cells): raw 16.9635 -> 16.9404; per-place 15.0273 -> 15.0276; per-lane 14.2932 -> 14.2935;
+     real bytes 73,901,104 -> 73,900,408 (-696). Two's complement: +152 bytes.
+  GPT-2 machine, 99.9% (708 cells, 8,571 exceptions): raw -> 16.0461 (leading zeros); per-place -> 15.0278;
+     per-lane -> 14.2963; real bytes -40,756 (-0.06%).
+  GPT-2 fp32 ALL: per-place +0.0008, real bytes -4,556; 99.9%: per-place +0.0005, real bytes -178,956 (-0.13%).
+  Qwen ALL: per-place +0.0001, real bytes +7,504; 99.9% (9,827 cells, 177,579 exceptions): per-place +0.0018,
+     per-lane +0.023, real bytes -909,976 (-0.38%); two's complement -1,110,308 (-0.46%).
+  Pythia 70m / 160m ALL: real bytes -932 / -9,924; 99.9%: -17,384 / -22,956.
+  The coder's own jitter: Pythia's two's-complement forms with NO foundation cell came out -2,416 and +4,464 bytes.
+  Every per-place and per-lane floor goes UP by the foundation row's own cost; the real-byte gains of the 99.9%
+  forms are lzma paying more than a per-place coder for nearly-constant planes (Qwen: lzma 12.195 bits a value
+  against the per-place floor 11.839), not information.
+
+ITEM 4. GPT-2: the 14 shared-sign lanes rank 1-6, 8-10, 15, 20, 29, 32 and 36 by |level / spread| (rank 7, lane
+  107, does not share its sign); 9 of them are among T's 10 biggest column lanes (36, 430, 496, 314, 6, 442, 703, 374, 479). A bell with each
+  lane's level and spread shares the sign in 36, 314, 374, 430, 442, 496, 703 (and 107, where the table does not).
+  The table holds 7 more: 6, 142, 232, 362, 408, 479, 762, where the side toward zero stops at 1.4-2.7 spreads while
+  a bell of 50,257 words reaches 4.13 (lane 314: z +10.65, the nearest word 0.99 spreads under the level, the far
+  side 9.0). Lanes 36, 430, 496 stand 178, 204, 244 spreads from zero; even there only the top 1-2 places are shared,
+  because the words' spread (plus carries) reaches the places under them.
+  Breakers: the sign lanes at 99.9% but not all (627, 167, 503, 365, 77, 102, 326) are broken by 100 (word, lane) on
+  99 words (byte tokens 94-114 in lane 102; fragments like 'izoph', ' Vaugh', 'ModLoader'); only one word in two
+  lanes. Pythia: no lane to break; the 99.9% top places are broken by the most used words (' the', ',', '\n',
+  '<|endoftext|>'); the never-built rows break nothing. Qwen: the 99.9% low places are broken by the rows nearest the
+  table's centre (rare CJK, Hebrew, Arabic pieces, 0.18-0.4 of the median word's distance), 153 of the 267
+  never-a-token rows among them.
+
+AGAINST THE PREDICTIONS: GPT-2 as predicted (the signs of T's column lanes, a few top places), but 18 cells, above
+the 0-10 written; Pythia WRONG: its input tables do not lean at all (0 shared signs, 0 even at 99.9%, 0 with the
+never-built rows set aside; the lean is in the output table only); Qwen 0, below "few". "Broken by a handful of
+rare or never-built rows": wrong for Pythia and Qwen (there is nothing to break), half right for GPT-2's 99.9% sign
+lanes. Float low places matched by the written draw within 30%: right (360 vs 353 / 312; 450 vs 418 / 396).
+Storage: right; storing the foundation once saves nothing a per-lane or per-place coder does not already have.

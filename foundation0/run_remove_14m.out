@@ -1,0 +1,241 @@
+remove_foundation.py  size 14m  order plain  texts 30  greedy True  cases 37
+  fin: the finished machine's own word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to pythia_base2.py's run in 30 of 30 texts
+  pairing-broken control (finished text t vs text t+1, same row): water level moved per layer [0.735, 0.587, 0.5292, 0.7518, 0.7045, 0.7217]; knife edges changed side [0.3135, 0.339, 0.3846, 0.347, 0.3223, 0.3401]
+  fin      top-1 100.0%  top-5 100.0%  (of 622);  16 continuation: top-1 100.0% top-5 100.0% [pairing-broken  5.4% / 12.3%];  greedy words 480/480 texts 30/30 first diff 16.0;  finished lead kept/lost 0.77/0.00;  3.5s  peak 0.38 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+  a        top-1   0.0%  top-5   0.0%  (of 622);  16 continuation: top-1   0.0% top-5   0.0% [pairing-broken  0.0% /  0.0%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.0s  peak 0.53 GB
+           water level moved by layer [0.8057, 0.8163, 0.7665, 0.8792, 0.8649, 0.8425]
+           knife edges changed side by layer [0.4517, 0.5052, 0.4996, 0.5094, 0.4982, 0.4972]
+             'The capital of France is' -> ' appellants trenches stalled implanted equality thereforeskip npm appellants insertions lined Solo RootSeveral appellants insertions'
+             'The theory of relativity states that' -> ' expl societies conferenceно Motor agonist Yuanно cafe LOG beginmysql intracellular wish\n\toi'
+             'The meaning of life is' -> ' sist Series sist Series sist\\,$ sist Heights insertions(){ appellants elimination therefore excluding ecthor'
+  b        top-1  15.4%  top-5  41.3%  (of 622);  16 continuation: top-1  15.2% top-5  40.8% [pairing-broken  4.6% / 14.6%];  greedy words 12/480 texts 0/30 first diff 0.2;  finished lead kept/lost 1.24/0.72;  6.9s  peak 0.53 GB
+           water level moved by layer [0.1461, 0.3602, 0.3767, 0.3336, 0.3678, 0.6014]
+           knife edges changed side by layer [0.1408, 0.1874, 0.2375, 0.2212, 0.2059, 0.2209]
+             'The capital of France is' -> ' a is a is a is a is a is a is a is a is'
+             'The theory of relativity states that' -> ' the asteritors is not to this is a is a that you is not to'
+             'The meaning of life is' -> ' not to it not to it not to it not to it in that it not'
+  ca       top-1   0.0%  top-5   0.0%  (of 622);  16 continuation: top-1   0.0% top-5   0.0% [pairing-broken  0.0% /  0.0%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.3s  peak 0.71 GB
+           water level moved by layer [0.7572, 0.799, 0.7289, 0.8788, 0.8843, 0.8104]
+           knife edges changed side by layer [0.4093, 0.4708, 0.4867, 0.5028, 0.4631, 0.4454]
+             'The capital of France is' -> 'eps microphonegrand Nonusted်unsafeusted drugs Be-aq 123)))elsvers'
+             'The theory of relativity states that' -> ' witness scaffolds Ryangencygni i witness188188188RU188RUunnable� rises'
+             'The meaning of life is' -> 'elscomponentselselselselsкоulesustedко peptidesustedко Sout Everyone doc'
+  cb       top-1  17.7%  top-5  36.0%  (of 622);  16 continuation: top-1  19.4% top-5  37.7% [pairing-broken  2.7% /  7.7%];  greedy words 12/480 texts 0/30 first diff 0.2;  finished lead kept/lost 1.45/0.68;  7.2s  peak 0.71 GB
+           water level moved by layer [0.1119, 0.3036, 0.3894, 0.3442, 0.3847, 0.5819]
+           knife edges changed side by layer [0.1385, 0.1956, 0.2249, 0.2159, 0.2013, 0.2207]
+             'The capital of France is' -> ' On The. The On The. The. The On The. The. The'
+             'The theory of relativity states that' -> '.9-1-1-1-1-1-1-1'
+             'The meaning of life is' -> ' On The. The. The. The. The. The. The. The'
+  a_tab    top-1   0.0%  top-5   0.2%  (of 622);  16 continuation: top-1   0.0% top-5   0.0% [pairing-broken  0.0% /  0.6%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.6503, 0.5562, 0.5697, 0.7977, 0.7707, 0.6634]
+           knife edges changed side by layer [0.378, 0.3692, 0.4098, 0.3531, 0.3374, 0.3532]
+             'The capital of France is' -> ' pizzaosine composer oscill]. {osine commentaryosine IanKNOWNKNOWN healingFilename genotype genotype'
+             'The theory of relativity states that' -> 'osine genotype genotype genotype genotype jointly á � � � ′ � � � �'
+             'The meaning of life is' -> 'osine)(\\removeromaromaromaromaromaromaosine]. pizzaky mixinguzosine'
+  b_tab    top-1  97.3%  top-5 100.0%  (of 622);  16 continuation: top-1  97.9% top-5 100.0% [pairing-broken  5.4% / 12.7%];  greedy words 411/480 texts 23/30 first diff 13.6;  finished lead kept/lost 0.81/0.02;  4.0s  peak 0.71 GB
+           water level moved by layer [0.0097, 0.0068, 0.0114, 0.0122, 0.0148, 0.0241]
+           knife edges changed side by layer [0.0028, 0.0045, 0.005, 0.0041, 0.0038, 0.0035]
+             'The capital of France is' -> ' the United States.\n\nThe city is the city of Paris, and the'
+             'The theory of relativity states that' -> ' is the same as in the Einstein-Jupiter spacetime, the Einstein-J'
+             'The meaning of life is' -> ' the same as the fact that the life of the world is not the same as'
+  ca_tab   top-1   0.3%  top-5   0.6%  (of 622);  16 continuation: top-1   0.2% top-5   0.4% [pairing-broken  0.0% /  0.0%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.56/0.77;  7.3s  peak 0.71 GB
+           water level moved by layer [0.6178, 0.5283, 0.5148, 0.7044, 0.6533, 0.6444]
+           knife edges changed side by layer [0.3015, 0.345, 0.3668, 0.3193, 0.2981, 0.3114]
+             'The capital of France is' -> ' comment definitions J¨= Product definitions= 118ailed 118ailed contributor playspecagent'
+             'The theory of relativity states that' -> '��������\r\nagent 61ICUri= Product definitions'
+             'The meaning of life is' -> '=leep(( mode calculated= an store comment=someschedptrIC calculated='
+  cb_tab   top-1  97.9%  top-5 100.0%  (of 622);  16 continuation: top-1  98.1% top-5 100.0% [pairing-broken  5.4% / 12.3%];  greedy words 420/480 texts 22/30 first diff 13.5;  finished lead kept/lost 0.80/0.03;  4.4s  peak 0.71 GB
+           water level moved by layer [0.0173, 0.0106, 0.0072, 0.0118, 0.0114, 0.0228]
+           knife edges changed side by layer [0.0027, 0.0043, 0.0046, 0.004, 0.0036, 0.0035]
+             'The capital of France is' -> ' the United States.\n\nThe city is the city of Paris, and the'
+             'The theory of relativity states that' -> ' is the same as in the Einstein-Jupiter spacetime, the Einstein-J'
+             'The meaning of life is' -> ' the same as the fact that the first one is the same.\n\nThe'
+  a_pl     top-1   0.2%  top-5   0.5%  (of 622);  16 continuation: top-1   0.2% top-5   0.4% [pairing-broken  0.0% /  0.0%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 5.42/0.77;  7.1s  peak 0.71 GB
+           water level moved by layer [0.7728, 0.8095, 0.7593, 0.8488, 0.8573, 0.837]
+           knife edges changed side by layer [0.3861, 0.472, 0.4829, 0.4863, 0.4877, 0.4991]
+             'The capital of France is' -> 'poons pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori pylori'
+             'The theory of relativity states that' -> 'aliana:*".леistarżaliana are,\'"tics+$\'si=`aliana are'
+             'The meaning of life is' -> 'ubuntumberploadmbergels»mberploadîtistarceivedcreateElementgivecreateElementithirds'
+  b_pl     top-1  15.6%  top-5  41.2%  (of 622);  16 continuation: top-1  15.4% top-5  40.8% [pairing-broken  4.6% / 14.6%];  greedy words 12/480 texts 0/30 first diff 0.2;  finished lead kept/lost 1.25/0.72;  6.9s  peak 0.71 GB
+           water level moved by layer [0.1432, 0.3598, 0.3737, 0.3345, 0.3606, 0.6018]
+           knife edges changed side by layer [0.1408, 0.1876, 0.2367, 0.221, 0.2056, 0.2205]
+             'The capital of France is' -> ' a is a is a is a is a is a is a is a is'
+             'The theory of relativity states that' -> ' the asteritors is not to this is a will not to that you is not'
+             'The meaning of life is' -> ' not to it not to it not to it not to it in that it not'
+  ca_pl    top-1   0.3%  top-5   0.6%  (of 622);  16 continuation: top-1   0.2% top-5   0.6% [pairing-broken  0.0% /  0.4%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.82/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.6719, 0.7851, 0.7479, 0.8378, 0.8615, 0.818]
+           knife edges changed side by layer [0.3176, 0.4607, 0.4889, 0.4958, 0.4649, 0.4478]
+             'The capital of France is' -> 'zzlesenantelyENC:`.")lestteeeneeneeneeneeneeneen'
+             'The theory of relativity states that' -> '{}{s{}{s"}\\].izesisesgrily?).sudesBankroslavciesriesют'
+             'The meaning of life is' -> "s consequence standpointries waysriess standpointUTERS way waysoslav:`')."
+  cb_pl    top-1  17.0%  top-5  35.5%  (of 622);  16 continuation: top-1  18.5% top-5  36.9% [pairing-broken  2.9% /  7.7%];  greedy words 13/480 texts 0/30 first diff 0.2;  finished lead kept/lost 1.32/0.68;  6.9s  peak 0.71 GB
+           water level moved by layer [0.1077, 0.3062, 0.3864, 0.3446, 0.3813, 0.5819]
+           knife edges changed side by layer [0.1389, 0.1957, 0.2247, 0.2155, 0.2007, 0.2202]
+             'The capital of France is' -> ' On The. The On The. The. The. The. The. The'
+             'The theory of relativity states that' -> '.9-1-1-1-1-1-1-1'
+             'The meaning of life is' -> ' On The. The. The. The. The. The. The. The'
+  a_L0     top-1   2.6%  top-5   6.4%  (of 622);  16 continuation: top-1   3.1% top-5   7.1% [pairing-broken  2.7% /  7.9%];  greedy words 5/480 texts 0/30 first diff 0.0;  finished lead kept/lost 2.01/0.75;  7.0s  peak 0.71 GB
+           water level moved by layer [0.7728, 0.6503, 0.5688, 0.7994, 0.7986, 0.7154]
+           knife edges changed side by layer [0.3861, 0.4524, 0.4617, 0.4423, 0.4247, 0.4336]
+             'The capital of France is' -> '/(1./~~~ingpnes ( ( ( ( ( ( ('
+             'The theory of relativity states that' -> '\nward and and andspring and/ andstttttt'
+             'The meaning of life is' -> '======. alia. andencies- and to to tos and to to to'
+  b_L0     top-1  37.8%  top-5  67.0%  (of 622);  16 continuation: top-1  36.5% top-5  65.8% [pairing-broken  5.6% / 14.4%];  greedy words 26/480 texts 0/30 first diff 0.3;  finished lead kept/lost 1.19/0.62;  6.9s  peak 0.71 GB
+           water level moved by layer [0.1432, 0.337, 0.3416, 0.2939, 0.3015, 0.421]
+           knife edges changed side by layer [0.1408, 0.1712, 0.2051, 0.1834, 0.1579, 0.1636]
+             'The capital of France is' -> ' the " in the-k.s.s.s.s.s'
+             'The theory of relativity states that' -> ' the "\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+             'The meaning of life is' -> ' a love of a love of a love of a love of a love of a'
+  ca_L0    top-1   2.3%  top-5   9.6%  (of 622);  16 continuation: top-1   2.7% top-5  10.2% [pairing-broken  2.1% /  5.8%];  greedy words 11/480 texts 0/30 first diff 0.1;  finished lead kept/lost 0.53/0.77;  6.9s  peak 0.71 GB
+           water level moved by layer [0.6719, 0.5798, 0.636, 0.8193, 0.788, 0.7259]
+           knife edges changed side by layer [0.3176, 0.4052, 0.4649, 0.4473, 0.4094, 0.4174]
+             'The capital of France is' -> 'ed,anian,ag.incin,iah:`tahambledaterallyudedHECK'
+             'The theory of relativity states that' -> "illard-atted.'.Decided.ASP.ins\nns- 2006-"
+             'The meaning of life is' -> 'izableimetric.aponsities"asimetric,ittalizationavirusavirusavirusavirusavirus'
+  cb_L0    top-1  44.4%  top-5  72.0%  (of 622);  16 continuation: top-1  47.1% top-5  73.8% [pairing-broken  5.8% / 12.1%];  greedy words 48/480 texts 0/30 first diff 0.8;  finished lead kept/lost 1.29/0.48;  6.8s  peak 0.71 GB
+           water level moved by layer [0.1077, 0.291, 0.3129, 0.291, 0.2525, 0.3877]
+           knife edges changed side by layer [0.1389, 0.1727, 0.1868, 0.1645, 0.1432, 0.1505]
+             'The capital of France is' -> " the American. The story is not the same. I don't well. I"
+             'The theory of relativity states that' -> ' The.1.0.0.0.0.0.0.'
+             'The meaning of life is' -> ' The. The. The. The. The. The. The. The.'
+  a_L1     top-1   1.8%  top-5   4.7%  (of 622);  16 continuation: top-1   2.3% top-5   5.6% [pairing-broken  1.0% /  5.4%];  greedy words 4/480 texts 0/30 first diff 0.0;  finished lead kept/lost 1.24/0.76;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.6786, 0.6841, 0.6951, 0.6305, 0.7601]
+           knife edges changed side by layer [0.0, 0.3996, 0.4328, 0.4387, 0.3931, 0.3948]
+             'The capital of France is' -> ' she ( wasdoch\n ( formce- "\n (\n "\n ('
+             'The theory of relativity states that' -> ' ( is she ( form ( is� ( she ( is� ( is�'
+             'The meaning of life is' -> 'zen were’. their " she ( is will\n \'  " I ( form'
+  b_L1     top-1  63.2%  top-5  88.4%  (of 622);  16 continuation: top-1  65.0% top-5  89.2% [pairing-broken  5.4% / 12.1%];  greedy words 60/480 texts 0/30 first diff 1.6;  finished lead kept/lost 1.19/0.35;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.1144, 0.1909, 0.1934, 0.1702, 0.2673]
+           knife edges changed side by layer [0.0, 0.1077, 0.1311, 0.1063, 0.0907, 0.0908]
+             'The capital of France is' -> ' the French and French.\n\nThe French was in French.\n\nThe'
+             'The theory of relativity states that' -> ' the "the "the "the "the "the "the "the "'
+             'The meaning of life is' -> ' the "the "the "the "the "the "the "the "'
+  ca_L1    top-1   0.2%  top-5   1.9%  (of 622);  16 continuation: top-1   0.2% top-5   1.0% [pairing-broken  0.0% /  0.6%];  greedy words 4/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.26/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.723, 0.617, 0.56, 0.568, 0.7314]
+           knife edges changed side by layer [0.0, 0.3396, 0.4322, 0.4634, 0.4176, 0.4083]
+             'The capital of France is' -> 'armac oferveiantusionetyunct.uginosa :=juvant. Incně\r\net'
+             'The theory of relativity states that' -> 'neumensionitolrombeteffAc_itolitalarmac"),erveiluve ('
+             'The meaning of life is' -> 'obacterium and}$). of.ropic\'"a.rops” themideetapseerve'
+  cb_L1    top-1  66.9%  top-5  90.8%  (of 622);  16 continuation: top-1  69.0% top-5  91.5% [pairing-broken  5.8% / 11.0%];  greedy words 73/480 texts 0/30 first diff 1.9;  finished lead kept/lost 1.26/0.29;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.1178, 0.2365, 0.1888, 0.1921, 0.2656]
+           knife edges changed side by layer [0.0, 0.1067, 0.1291, 0.1125, 0.0934, 0.0949]
+             'The capital of France is' -> ' the United States, and the United States are the United States and the United States'
+             'The theory of relativity states that' -> ' are not in the\xa0the\xa0the\xa0the\xa0the\xa0the\xa0the'
+             'The meaning of life is' -> ' the same as in the two.\n\nThe following facts in the same way'
+  a_L2     top-1   2.1%  top-5   5.6%  (of 622);  16 continuation: top-1   2.3% top-5   6.2% [pairing-broken  0.6% /  3.3%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.42/0.77;  6.9s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.6698, 0.6242, 0.4806, 0.6803]
+           knife edges changed side by layer [0.0, 0.0, 0.4112, 0.4428, 0.3821, 0.3936]
+             'The capital of France is' -> 'ised synchronousignmentchleities basisalities basisalities basisalities basis provisionurallyютieties'
+             'The theory of relativity states that' -> ', basisatement- aised briefial argument>]ollah)izationventionistized'
+             'The meaning of life is' -> '."," BASIS " connectionтерs "\n S")] existence present.),ism,”.'
+  b_L2     top-1  71.1%  top-5  93.2%  (of 622);  16 continuation: top-1  72.3% top-5  93.3% [pairing-broken  4.8% / 12.1%];  greedy words 93/480 texts 1/30 first diff 2.4;  finished lead kept/lost 1.17/0.28;  6.5s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0819, 0.1419, 0.1119, 0.1867]
+           knife edges changed side by layer [0.0, 0.0, 0.0712, 0.074, 0.0664, 0.0672]
+             'The capital of France is' -> ' the Yemeni and is the only one that is the most important part of the'
+             'The theory of relativity states that' -> ' is not the basis of the theory of relativity.\n\nThe theory of relativity'
+             'The meaning of life is' -> ' the basis of the life of the world, and the world is the world that'
+  ca_L2    top-1   2.6%  top-5   4.8%  (of 622);  16 continuation: top-1   0.8% top-5   3.5% [pairing-broken  0.4% /  1.9%];  greedy words 9/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.67/0.80;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.6453, 0.5211, 0.462, 0.6883]
+           knife edges changed side by layer [0.0, 0.0, 0.3508, 0.4591, 0.3922, 0.3896]
+             'The capital of France is' -> 'rientsthensoes\r functioneratesters\r\n\n\teling youreatederatecks7554\r'
+             'The theory of relativity states that' -> 'heres.DE\n\n and asora\n\nathadoc\nerasm m'
+             'The meaning of life is' -> 'ry\r functionierno?_\neracentcksobar.oricesesyses\r\n\t\t'
+  cb_L2    top-1  68.6%  top-5  92.8%  (of 622);  16 continuation: top-1  71.5% top-5  94.2% [pairing-broken  5.4% / 11.2%];  greedy words 88/480 texts 1/30 first diff 2.0;  finished lead kept/lost 1.18/0.32;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0579, 0.1685, 0.1491, 0.2141]
+           knife edges changed side by layer [0.0, 0.0, 0.0678, 0.0734, 0.0693, 0.075]
+             'The capital of France is' -> ' the\n\nCarmoria, and the city of Paris, the city'
+             'The theory of relativity states that' -> ' the "a priori" and the gravitational field" is a non-linear problem'
+             'The meaning of life is' -> ' the "natural" and the natural" and the natural is the natural.\n'
+  a_L3     top-1   1.4%  top-5   4.5%  (of 622);  16 continuation: top-1   1.5% top-5   4.8% [pairing-broken  2.3% /  3.5%];  greedy words 5/480 texts 0/30 first diff 0.0;  finished lead kept/lost 1.24/0.76;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.7373, 0.44, 0.6989]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.3954, 0.4285, 0.4124]
+             'The capital of France is' -> "\n}sendp's\n't_n`tarink\r\n'ts"
+             'The theory of relativity states that' -> '\nny-one\'msky this\'t\'skygetige\'d\'t " admit'
+             'The meaning of life is' -> "\njest-`jarfun($($_($baz></ghso'soho"
+  b_L3     top-1  65.1%  top-5  86.7%  (of 622);  16 continuation: top-1  66.5% top-5  86.9% [pairing-broken  5.4% / 14.2%];  greedy words 80/480 texts 0/30 first diff 1.6;  finished lead kept/lost 1.18/0.35;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.1959, 0.1715, 0.2542]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0687, 0.0889, 0.0997]
+             'The capital of France is' -> ' the capital of the city, and the city is the capital of the city.'
+             'The theory of relativity states that' -> ' the willen is a new and is not a new.\n\nThe first'
+             'The meaning of life is' -> ' the word that the word is a word, and the word is a word,'
+  ca_L3    top-1   0.8%  top-5   1.8%  (of 622);  16 continuation: top-1   0.8% top-5   2.1% [pairing-broken  0.6% /  1.9%];  greedy words 2/480 texts 0/30 first diff 0.0;  finished lead kept/lost 1.65/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.8197, 0.421, 0.6292]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.3524, 0.4193, 0.3875]
+             'The capital of France is' -> "ardardgradleodbin1';2abin1'.\n\n」\\])."
+             'The theory of relativity states that' -> 'e75547554\'">)/�s-awning’s1��-0'
+             'The meaning of life is' -> 's)\',**^)$-"**)|$(.\\")$-1\'1 this1\'));'
+  cb_L3    top-1  60.8%  top-5  86.2%  (of 622);  16 continuation: top-1  63.5% top-5  87.7% [pairing-broken  5.4% / 13.3%];  greedy words 54/480 texts 0/30 first diff 1.2;  finished lead kept/lost 1.27/0.37;  6.7s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.1875, 0.1423, 0.25]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0663, 0.0803, 0.0904]
+             'The capital of France is' -> ' the first to have a new home in the United Kingdom.\n\nThe first'
+             'The theory of relativity states that' -> ' is the first of the following:\n\nThe following:\n\nThe following'
+             'The meaning of life is' -> ' the first to the "wonderful" (a.a.a.'
+  a_L4     top-1   1.3%  top-5   2.4%  (of 622);  16 continuation: top-1   1.7% top-5   3.1% [pairing-broken  0.6% /  1.2%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 2.87/0.76;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.8353, 0.6786]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.3736, 0.4001]
+             'The capital of France is' -> '\n}eralditolendrophyriderideunctionunctionaturationkeitalbumreatolateplicity'
+             'The theory of relativity states that' -> 'uego}\n}eraldypseamiliesercasekb Hockeypathykb\n}ricaids'
+             'The meaning of life is' -> 'yler$/!’ootingaminationaminationpoons?’aminationaminationaminationaminationaminationaminationaminationamination'
+  b_L4     top-1  74.0%  top-5  97.1%  (of 622);  16 continuation: top-1  76.7% top-5  97.3% [pairing-broken  5.8% / 12.9%];  greedy words 124/480 texts 1/30 first diff 3.4;  finished lead kept/lost 1.17/0.24;  6.2s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.2002, 0.1588]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0468, 0.059]
+             'The capital of France is' -> ' a very important part of the United States.\n\nThe United States is a'
+             'The theory of relativity states that' -> '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+             'The meaning of life is' -> ' the same as the other two of the most important things in the world.\n'
+  ca_L4    top-1   0.0%  top-5   0.6%  (of 622);  16 continuation: top-1   0.0% top-5   0.8% [pairing-broken  0.0% /  0.6%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.8188, 0.7365]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.3238, 0.4055]
+             'The capital of France is' -> '*effectscreateElement to‘‘‘‘thened”), thenittal’’ then'
+             'The theory of relativity states that' -> 'MOESMhdadunesstderr//�effects\x92’’’’’’’'
+             'The meaning of life is' -> 'sUSYOTEASEABILITYWHMrikarendanASEcontinuedASEcontinuedльASEcontinued(),'
+  cb_L4    top-1  75.7%  top-5  98.4%  (of 622);  16 continuation: top-1  76.5% top-5  98.8% [pairing-broken  4.8% / 12.3%];  greedy words 91/480 texts 0/30 first diff 2.2;  finished lead kept/lost 1.11/0.26;  6.5s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.2335, 0.1423]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0442, 0.061]
+             'The capital of France is' -> ' the most in the world in the world in the world in the world in the'
+             'The theory of relativity states that' -> ' is the “a priori” and is “a priori” the “a priori'
+             'The meaning of life is' -> ' the same as the meaning of the meaning of the meaning of the meaning of the'
+  a_L5     top-1   0.0%  top-5   1.6%  (of 622);  16 continuation: top-1   0.0% top-5   1.7% [pairing-broken  0.0% /  1.9%];  greedy words 0/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.8788]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.3758]
+             'The capital of France is' -> 'aiella======breadBankrше WARRANTIESiellaitismizophrenNdEx WARRANTIES WARRANTIEStranslatedtranslatedtranslated'
+             'The theory of relativity states that' -> '?\'BankrotryNdExotryNdExotryὲ,"ANK"izophrenNdExπειATIONALNdEx'
+             'The meaning of life is' -> 'what\'"openhAND"}](#*-kindppabread__sciously-\'blogger"======'
+  b_L5     top-1  72.2%  top-5  94.1%  (of 622);  16 continuation: top-1  76.0% top-5  96.2% [pairing-broken  5.2% / 11.9%];  greedy words 64/480 texts 0/30 first diff 1.8;  finished lead kept/lost 1.18/0.26;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.4924]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0389]
+             'The capital of France is' -> ' the "in the face of the city" and is the city of Paris.'
+             'The theory of relativity states that' -> ' the "theoretical" is not a real-world" and that is,'
+             'The meaning of life is' -> ' the "the" and "the" of the "the" and "the'
+  ca_L5    top-1   0.0%  top-5   0.5%  (of 622);  16 continuation: top-1   0.0% top-5   0.6% [pairing-broken  0.0% /  0.0%];  greedy words 1/480 texts 0/30 first diff 0.0;  finished lead kept/lost 0.00/0.77;  7.0s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.7872]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.335]
+             'The capital of France is' -> 'ESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULT'
+             'The theory of relativity states that' -> 'enignaire TennmatemateftematenairematerrorESULTfteftepoonsligtESULT'
+             'The meaning of life is' -> 'ESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULTESULT'
+  cb_L5    top-1  70.4%  top-5  95.8%  (of 622);  16 continuation: top-1  72.7% top-5  96.9% [pairing-broken  5.2% / 11.9%];  greedy words 91/480 texts 0/30 first diff 1.7;  finished lead kept/lost 1.20/0.26;  6.6s  peak 0.71 GB
+           water level moved by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.4768]
+           knife edges changed side by layer [0.0, 0.0, 0.0, 0.0, 0.0, 0.0398]
+             'The capital of France is' -> ' the American capital of France, France, France, France, France, France,'
+             'The theory of relativity states that' -> ' the same, the same, the same, the same, the same, the'
+             'The meaning of life is' -> ' the same as the meaning of life, which is the same as the meaning of'
+done 245s  peak memory 0.71 GB
+      245.46 real       243.03 user         2.32 sys
+           758824960  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               75074  page reclaims
+                  36  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  70  voluntary context switches
+                 942  involuntary context switches
+       2966804816296  instructions retired
+        981750853267  cycles elapsed
+           747783008  peak memory footprint

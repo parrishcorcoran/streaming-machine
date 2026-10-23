@@ -1,0 +1,17 @@
+plate_look.py  size 160m  order shuffle  texts 30  greedy True  seeds [20261006, 2, 3]  cases 5  late layers [8, 9, 10, 11]
+  fin (order shuffle): words = fp32's at 480
+  pairing-broken control (finished text t vs t+1): level moved [0.7035, 0.784, 0.7987, 0.5314, 0.467, 0.4249, 0.4521, 0.4137, 0.4382, 0.4245, 0.4083, 0.5975]; edges changed side [0.2285, 0.1418, 0.2581, 0.2904, 0.3096, 0.308, 0.3025, 0.3124, 0.2847, 0.2954, 0.2865, 0.2794]
+  finished: next score below the level, median e-folds by layer [0.504, 0.547, 0.576, 0.917, 1.502, 2.165, 1.761, 1.948, 5.517, 6.076, 15.231, 16.67]
+  fin              top-1 100.0  top-5 100.0  greedy 480/480 texts 30/30  | level moved   0   0   0   0   0   0   0   0   0   0   0   0 | first word   9  11  13  33  67  71  68  63  61  66  71  53 | edges   0   0   0   0   0   0   0   0   0   0   0   0 | 6.1s 1.89 GB
+  b:qkv.11         top-1  86.3  top-5  99.4  greedy 131/480 texts  1/30  | level moved   0   0   0   0   0   0   0   0   0   0   0  61 | first word   9  11  13  33  67  71  68  63  61  66  71  27 | edges   0   0   0   0   0   0   0   0   0   0   0   0 | 28.6s 1.89 GB
+  cb:qkv.11@20261006 top-1  88.6  top-5  99.4  greedy 222/480 texts  7/30  | level moved   0   0   0   0   0   0   0   0   0   0   0  57 | first word   9  11  13  33  67  71  68  63  61  66  71  29 | edges   0   0   0   0   0   0   0   0   0   0   0   0 | 23.7s 1.89 GB
+  b:fc.0           top-1  85.9  top-5  99.8  greedy 186/480 texts  2/30  | level moved   0  13  13   9   5   4   5   7   6   7   6   6 | first word   9  11  15  36  67  71  68  63  61  64  70  53 | edges   7   3   4   5   5   5   4   4   3   3   3   3 | 23.0s 1.89 GB
+  b:K=qkv          top-1  72.0  top-5  93.7  greedy  94/480 texts  1/30  | level moved   9  10  13   9  10  10  19  25  28  46  52  62 | first word   9  10  12  35  67  68  61  55  47  40  40  28 | edges   0   2   3   5   5   6   6   6   5   6   6   7 | 29.2s 1.89 GB
+
+SUMMARY  (b = surviving foundation removed; cb = scrambled copy, three draws as min..max)
+  finished first-word share by layer: 9.2 10.8 12.8 32.9 66.9 70.7 67.6 63.2 61.2 65.8 70.5 53.4
+  plate     top-1 b     cb draws |   own-layer level moved b / cb |   late level moved b (layers 8-11) |    late first word b | edges own/next b | greedy texts b
+  qkv.11       86.3  88.6.. 88.6 |            61.4 /  57.2.. 57.2 |                      0   0   0  61 |       61  66  71  27 |                - | 1
+  fc.0         85.9            - |                           12.8 |                      6   7   6   6 |       61  64  70  53 |         6.6/ 2.5 | 2
+  K=qkv        72.0            - |                  (every layer) |                     28  46  52  62 |       47  40  40  28 |         0.0..6.7 | 1
+done 111s  peak memory 1.89 GB

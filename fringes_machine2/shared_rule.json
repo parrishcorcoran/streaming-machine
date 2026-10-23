@@ -1,0 +1,386 @@
+{
+"qkv.0": {
+"gaps_lit": 8798475,
+"w_lit": 8448536,
+"takes": false,
+"gaps_ones": 11753148,
+"w_ones": 11228027,
+"own_gaps_lit": 4133883
+},
+"proj.0": {
+"gaps_lit": 2888855,
+"w_lit": 2779280,
+"takes": false,
+"gaps_ones": 3851571,
+"w_ones": 3684977,
+"own_gaps_lit": 1337104
+},
+"fc.0": {
+"gaps_lit": 11142274,
+"w_lit": 10514910,
+"takes": false,
+"gaps_ones": 14788781,
+"w_ones": 13846166,
+"own_gaps_lit": 5118435
+},
+"mproj.0": {
+"gaps_lit": 11383357,
+"w_lit": 10976039,
+"takes": false,
+"gaps_ones": 15149175,
+"w_ones": 14533260,
+"own_gaps_lit": 3604675
+},
+"qkv.1": {
+"gaps_lit": 8644501,
+"w_lit": 8322664,
+"takes": false,
+"gaps_ones": 11520326,
+"w_ones": 11038315,
+"own_gaps_lit": 3973408
+},
+"proj.1": {
+"gaps_lit": 2892950,
+"w_lit": 2791750,
+"takes": false,
+"gaps_ones": 3854946,
+"w_ones": 3705799,
+"own_gaps_lit": 1339501
+},
+"fc.1": {
+"gaps_lit": 11729934,
+"w_lit": 11321008,
+"takes": false,
+"gaps_ones": 15665858,
+"w_ones": 15052701,
+"own_gaps_lit": 5512590
+},
+"mproj.1": {
+"gaps_lit": 11413435,
+"w_lit": 11007395,
+"takes": false,
+"gaps_ones": 15195243,
+"w_ones": 14575731,
+"own_gaps_lit": 3643407
+},
+"qkv.2": {
+"gaps_lit": 8488494,
+"w_lit": 8172220,
+"takes": false,
+"gaps_ones": 11289832,
+"w_ones": 10812472,
+"own_gaps_lit": 3823512
+},
+"proj.2": {
+"gaps_lit": 2885665,
+"w_lit": 2786503,
+"takes": false,
+"gaps_ones": 3847484,
+"w_ones": 3696841,
+"own_gaps_lit": 1331091
+},
+"fc.2": {
+"gaps_lit": 11753721,
+"w_lit": 11342807,
+"takes": false,
+"gaps_ones": 15707513,
+"w_ones": 15086996,
+"own_gaps_lit": 5523263
+},
+"mproj.2": {
+"gaps_lit": 11469059,
+"w_lit": 11065279,
+"takes": false,
+"gaps_ones": 15281865,
+"w_ones": 14662803,
+"own_gaps_lit": 3686492
+},
+"qkv.3": {
+"gaps_lit": 8630542,
+"w_lit": 8309505,
+"takes": false,
+"gaps_ones": 11494769,
+"w_ones": 11017948,
+"own_gaps_lit": 3951611
+},
+"proj.3": {
+"gaps_lit": 2898172,
+"w_lit": 2793920,
+"takes": false,
+"gaps_ones": 3863792,
+"w_ones": 3706019,
+"own_gaps_lit": 1339035
+},
+"fc.3": {
+"gaps_lit": 11684178,
+"w_lit": 11281897,
+"takes": false,
+"gaps_ones": 15597064,
+"w_ones": 14991865,
+"own_gaps_lit": 5458805
+},
+"mproj.3": {
+"gaps_lit": 11494044,
+"w_lit": 11088143,
+"takes": false,
+"gaps_ones": 15317174,
+"w_ones": 14697453,
+"own_gaps_lit": 3700815
+},
+"qkv.4": {
+"gaps_lit": 8698453,
+"w_lit": 8383388,
+"takes": false,
+"gaps_ones": 11600407,
+"w_ones": 11127913,
+"own_gaps_lit": 4016233
+},
+"proj.4": {
+"gaps_lit": 2917167,
+"w_lit": 2814042,
+"takes": false,
+"gaps_ones": 3895322,
+"w_ones": 3737280,
+"own_gaps_lit": 1361874
+},
+"fc.4": {
+"gaps_lit": 11668046,
+"w_lit": 11266772,
+"takes": false,
+"gaps_ones": 15574235,
+"w_ones": 14975286,
+"own_gaps_lit": 5437387
+},
+"mproj.4": {
+"gaps_lit": 11555499,
+"w_lit": 11148683,
+"takes": false,
+"gaps_ones": 15409637,
+"w_ones": 14789875,
+"own_gaps_lit": 3761275
+},
+"qkv.5": {
+"gaps_lit": 8786443,
+"w_lit": 8478859,
+"takes": false,
+"gaps_ones": 11734695,
+"w_ones": 11272572,
+"own_gaps_lit": 4107898
+},
+"proj.5": {
+"gaps_lit": 2928364,
+"w_lit": 2827737,
+"takes": false,
+"gaps_ones": 3911546,
+"w_ones": 3758662,
+"own_gaps_lit": 1368531
+},
+"fc.5": {
+"gaps_lit": 11591967,
+"w_lit": 11198166,
+"takes": false,
+"gaps_ones": 15460218,
+"w_ones": 14869116,
+"own_gaps_lit": 5361808
+},
+"mproj.5": {
+"gaps_lit": 11546862,
+"w_lit": 11146443,
+"takes": false,
+"gaps_ones": 15397438,
+"w_ones": 14784060,
+"own_gaps_lit": 3751858
+},
+"qkv.6": {
+"gaps_lit": 8731899,
+"w_lit": 8421140,
+"takes": false,
+"gaps_ones": 11654402,
+"w_ones": 11184094,
+"own_gaps_lit": 4048432
+},
+"proj.6": {
+"gaps_lit": 2967302,
+"w_lit": 2863501,
+"takes": false,
+"gaps_ones": 3968611,
+"w_ones": 3811060,
+"own_gaps_lit": 1408364
+},
+"fc.6": {
+"gaps_lit": 11587926,
+"w_lit": 11189805,
+"takes": false,
+"gaps_ones": 15452592,
+"w_ones": 14861636,
+"own_gaps_lit": 5354169
+},
+"mproj.6": {
+"gaps_lit": 11534494,
+"w_lit": 11136887,
+"takes": false,
+"gaps_ones": 15376049,
+"w_ones": 14770284,
+"own_gaps_lit": 3735087
+},
+"qkv.7": {
+"gaps_lit": 8751203,
+"w_lit": 8444818,
+"takes": false,
+"gaps_ones": 11681360,
+"w_ones": 11219923,
+"own_gaps_lit": 4068581
+},
+"proj.7": {
+"gaps_lit": 2960886,
+"w_lit": 2858473,
+"takes": false,
+"gaps_ones": 3958489,
+"w_ones": 3806859,
+"own_gaps_lit": 1401577
+},
+"fc.7": {
+"gaps_lit": 11580811,
+"w_lit": 11183549,
+"takes": false,
+"gaps_ones": 15448407,
+"w_ones": 14844458,
+"own_gaps_lit": 5349639
+},
+"mproj.7": {
+"gaps_lit": 11456408,
+"w_lit": 11056894,
+"takes": false,
+"gaps_ones": 15260937,
+"w_ones": 14653456,
+"own_gaps_lit": 3653453
+},
+"qkv.8": {
+"gaps_lit": 8680760,
+"w_lit": 8376118,
+"takes": false,
+"gaps_ones": 11574459,
+"w_ones": 11117426,
+"own_gaps_lit": 3997235
+},
+"proj.8": {
+"gaps_lit": 2983950,
+"w_lit": 2884375,
+"takes": false,
+"gaps_ones": 3994656,
+"w_ones": 3842258,
+"own_gaps_lit": 1422846
+},
+"fc.8": {
+"gaps_lit": 11650499,
+"w_lit": 11250849,
+"takes": false,
+"gaps_ones": 15545313,
+"w_ones": 14951869,
+"own_gaps_lit": 5414861
+},
+"mproj.8": {
+"gaps_lit": 11367818,
+"w_lit": 10965150,
+"takes": false,
+"gaps_ones": 15126572,
+"w_ones": 14516919,
+"own_gaps_lit": 3566129
+},
+"qkv.9": {
+"gaps_lit": 8709555,
+"w_lit": 8404739,
+"takes": false,
+"gaps_ones": 11614320,
+"w_ones": 11157551,
+"own_gaps_lit": 4025410
+},
+"proj.9": {
+"gaps_lit": 2962170,
+"w_lit": 2862796,
+"takes": false,
+"gaps_ones": 3961047,
+"w_ones": 3809747,
+"own_gaps_lit": 1401985
+},
+"fc.9": {
+"gaps_lit": 11662026,
+"w_lit": 11261980,
+"takes": false,
+"gaps_ones": 15567197,
+"w_ones": 14969603,
+"own_gaps_lit": 5431052
+},
+"mproj.9": {
+"gaps_lit": 11460788,
+"w_lit": 11057853,
+"takes": false,
+"gaps_ones": 15268016,
+"w_ones": 14656131,
+"own_gaps_lit": 3657571
+},
+"qkv.10": {
+"gaps_lit": 8687422,
+"w_lit": 8378660,
+"takes": false,
+"gaps_ones": 11583742,
+"w_ones": 11122156,
+"own_gaps_lit": 4003107
+},
+"proj.10": {
+"gaps_lit": 2944018,
+"w_lit": 2845769,
+"takes": false,
+"gaps_ones": 3935708,
+"w_ones": 3786656,
+"own_gaps_lit": 1386864
+},
+"fc.10": {
+"gaps_lit": 11552051,
+"w_lit": 11151895,
+"takes": false,
+"gaps_ones": 15398461,
+"w_ones": 14797312,
+"own_gaps_lit": 5325965
+},
+"mproj.10": {
+"gaps_lit": 11493962,
+"w_lit": 11095227,
+"takes": false,
+"gaps_ones": 15322641,
+"w_ones": 14703651,
+"own_gaps_lit": 3698215
+},
+"qkv.11": {
+"gaps_lit": 8645383,
+"w_lit": 8342311,
+"takes": false,
+"gaps_ones": 11520342,
+"w_ones": 11069444,
+"own_gaps_lit": 3970487
+},
+"proj.11": {
+"gaps_lit": 2919357,
+"w_lit": 2812283,
+"takes": false,
+"gaps_ones": 3896188,
+"w_ones": 3733545,
+"own_gaps_lit": 1359924
+},
+"fc.11": {
+"gaps_lit": 11749199,
+"w_lit": 11351047,
+"takes": false,
+"gaps_ones": 15695728,
+"w_ones": 15103260,
+"own_gaps_lit": 5543472
+},
+"mproj.11": {
+"gaps_lit": 11340301,
+"w_lit": 10933371,
+"takes": false,
+"gaps_ones": 15086486,
+"w_ones": 14468127,
+"own_gaps_lit": 3554458
+}
+}

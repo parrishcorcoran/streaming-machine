@@ -1,0 +1,72 @@
+free at 16:22:34; running: /usr/bin/time -l python3 reach/reach_check.py
+48 plates at all 7,848 positions; 2,000 single digits a plate
+  qkv.0   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 884,223 of 8,448,536 (10.47%), their meetings 10.49% of the plate's (2s, 1319 MB)
+  proj.0  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,744 of 2,779,280 (10.61%), their meetings 10.61% of the plate's (2s, 1486 MB)
+  fc.0    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,009 of 10,514,910 (11.20%), their meetings 11.39% of the plate's (4s, 1723 MB)
+  mproj.0 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,639 of 10,976,039 (10.75%), their meetings 10.75% of the plate's (5s, 2019 MB)
+  qkv.1   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 885,020 of 8,322,664 (10.63%), their meetings 10.64% of the plate's (6s, 2019 MB)
+  proj.1  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,903 of 2,791,750 (10.56%), their meetings 10.56% of the plate's (7s, 2019 MB)
+  fc.1    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,908 of 11,321,008 (10.42%), their meetings 10.43% of the plate's (8s, 2019 MB)
+  mproj.1 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,483 of 11,007,395 (10.72%), their meetings 10.72% of the plate's (10s, 2019 MB)
+  qkv.2   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 885,033 of 8,172,220 (10.83%), their meetings 10.84% of the plate's (11s, 2019 MB)
+  proj.2  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,960 of 2,786,503 (10.59%), their meetings 10.59% of the plate's (12s, 2019 MB)
+  fc.2    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,891 of 11,342,807 (10.40%), their meetings 10.41% of the plate's (13s, 2019 MB)
+  mproj.2 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,158 of 11,065,279 (10.66%), their meetings 10.66% of the plate's (15s, 2019 MB)
+  qkv.3   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 884,261 of 8,309,505 (10.64%), their meetings 10.65% of the plate's (17s, 2019 MB)
+  proj.3  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,179 of 2,793,920 (10.53%), their meetings 10.53% of the plate's (17s, 2019 MB)
+  fc.3    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,180,025 of 11,281,897 (10.46%), their meetings 10.47% of the plate's (19s, 2019 MB)
+  mproj.3 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,177,238 of 11,088,143 (10.62%), their meetings 10.62% of the plate's (20s, 2019 MB)
+  qkv.4   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 884,133 of 8,383,388 (10.55%), their meetings 10.55% of the plate's (21s, 2019 MB)
+  proj.4  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,427 of 2,814,042 (10.46%), their meetings 10.47% of the plate's (22s, 2019 MB)
+  fc.4    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,284 of 11,266,772 (10.47%), their meetings 10.47% of the plate's (24s, 2019 MB)
+  mproj.4 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,806 of 11,148,683 (10.57%), their meetings 10.58% of the plate's (25s, 2019 MB)
+  qkv.5   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 884,562 of 8,478,859 (10.43%), their meetings 10.44% of the plate's (27s, 2019 MB)
+  proj.5  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,528 of 2,827,737 (10.42%), their meetings 10.42% of the plate's (28s, 2019 MB)
+  fc.5    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,423 of 11,198,166 (10.52%), their meetings 10.53% of the plate's (29s, 2019 MB)
+  mproj.5 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,621 of 11,146,443 (10.57%), their meetings 10.58% of the plate's (30s, 2019 MB)
+  qkv.6   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 883,835 of 8,421,140 (10.50%), their meetings 10.50% of the plate's (32s, 2019 MB)
+  proj.6  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,721 of 2,863,501 (10.29%), their meetings 10.30% of the plate's (32s, 2019 MB)
+  fc.6    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,614 of 11,189,805 (10.54%), their meetings 10.55% of the plate's (34s, 2019 MB)
+  mproj.6 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,476 of 11,136,887 (10.58%), their meetings 10.59% of the plate's (36s, 2019 MB)
+  qkv.7   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 883,158 of 8,444,818 (10.46%), their meetings 10.46% of the plate's (37s, 2019 MB)
+  proj.7  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,471 of 2,858,473 (10.30%), their meetings 10.30% of the plate's (38s, 2019 MB)
+  fc.7    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,341 of 11,183,549 (10.55%), their meetings 10.55% of the plate's (39s, 2019 MB)
+  mproj.7 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,177,669 of 11,056,894 (10.65%), their meetings 10.65% of the plate's (41s, 2019 MB)
+  qkv.8   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 885,346 of 8,376,118 (10.57%), their meetings 10.57% of the plate's (42s, 2019 MB)
+  proj.8  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 294,559 of 2,884,375 (10.21%), their meetings 10.21% of the plate's (43s, 2019 MB)
+  fc.8    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,435 of 11,250,849 (10.48%), their meetings 10.49% of the plate's (44s, 2019 MB)
+  mproj.8 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,441 of 10,965,150 (10.76%), their meetings 10.76% of the plate's (46s, 2019 MB)
+  qkv.9   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 884,419 of 8,404,739 (10.52%), their meetings 10.53% of the plate's (47s, 2019 MB)
+  proj.9  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 295,083 of 2,862,796 (10.31%), their meetings 10.31% of the plate's (48s, 2019 MB)
+  fc.9    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,180,322 of 11,261,980 (10.48%), their meetings 10.49% of the plate's (49s, 2019 MB)
+  mproj.9 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,179,587 of 11,057,853 (10.67%), their meetings 10.67% of the plate's (51s, 2019 MB)
+  qkv.10  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 883,827 of 8,378,660 (10.55%), their meetings 10.55% of the plate's (52s, 2019 MB)
+  proj.10 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 295,285 of 2,845,769 (10.38%), their meetings 10.38% of the plate's (53s, 2019 MB)
+  fc.10   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,178,408 of 11,151,895 (10.57%), their meetings 10.57% of the plate's (54s, 2019 MB)
+  mproj.10: single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,177,789 of 11,095,227 (10.62%), their meetings 10.62% of the plate's (56s, 2019 MB)
+  qkv.11  : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 885,701 of 8,342,311 (10.62%), their meetings 10.62% of the plate's (57s, 2019 MB)
+  proj.11 : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 295,409 of 2,812,283 (10.50%), their meetings 10.53% of the plate's (58s, 2019 MB)
+  fc.11   : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,180,131 of 11,351,047 (10.40%), their meetings 10.41% of the plate's (59s, 2019 MB)
+  mproj.11: single digits whose real removal changes a kept value: 2000/2000; place-0 digits 1,177,841 of 10,933,371 (10.77%), their meetings 10.78% of the plate's (60s, 2019 MB)
+  head    : single digits whose real removal changes a kept value: 2000/2000; place-0 digits 19,293,680 of 147,272,488 (13.10%), their meetings 13.10% of the plate's (61s, 2154 MB)
+
+ALL 49 PLATES: single digits whose real removal changes a kept value 98,000/98,000
+saved reach/reach_check.json (61s, max memory 2154 MB)
+       61.08 real        60.50 user         0.52 sys
+          2154954752  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              657618  page reclaims
+                  28  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                 120  involuntary context switches
+        342539595242  instructions retired
+        252666611727  cycles elapsed
+          2087929824  peak memory footprint

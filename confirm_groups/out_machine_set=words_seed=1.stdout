@@ -1,0 +1,31 @@
+THE GROUP MACHINE (checker's rebuild) on words: 30 texts, 619 positions; seed 1, reorder None, shuffle control False
+  layer  0 done (11s, 1096 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  1 done (22s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  2 done (32s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  3 done (43s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  4 done (54s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  5 done (64s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  6 done (75s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  7 done (85s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  8 done (96s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer  9 done (107s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 10 done (117s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 11 done (128s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 12 done (139s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 13 done (150s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 14 done (161s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 15 done (172s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 16 done (183s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 17 done (193s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 18 done (204s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 19 done (215s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 20 done (226s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 21 done (237s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 22 done (248s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 23 done (259s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 24 done (269s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 25 done (280s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 26 done (291s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  layer 27 done (301s, 1117 MB) checks so far {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+  checks: {'slab piles vs the direct product (rows differing)': 0, "table: the walk's count vs the relation (positions differing)": 0}
+done, max memory 1117 MB

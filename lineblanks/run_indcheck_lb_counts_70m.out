@@ -1,0 +1,147 @@
+INDEPENDENT CHECK of way2 / pairs / totals, pythia-70m
+
+0. the stored plates as fp16 numbers: share of q 2^e exactly representable in fp16
+    proj.0.w: 1.000000
+    proj.0.s: 1.000000
+    fc.3.w: 1.000000
+    fc.3.s: 1.000000
+    embed.w: 1.000000
+    embed.s: 1.000000
+
+1. WAY 2 recounted (shares of plain; blank and finished compared digit for digit with way2_70m.json)
+    SAME qkv.5 blank Lf plain: mine 11417961812  stored 11417961812
+    SAME qkv.5 blank Lf walk: mine 2560213163  stored 2560213163
+    SAME qkv.5 blank Lf pours: mine 4226563202  stored 4226563202
+    SAME qkv.5 blank Lf writing: mine 1373611  stored 1373611
+    SAME qkv.5 blank Lf way2: mine 6788149976  stored 6788149976
+    SAME qkv.5 blank Lb plain: mine 17469040785  stored 17469040785
+    SAME qkv.5 blank Lb walk: mine 3708673174  stored 3708673174
+    SAME qkv.5 blank Lb pours: mine 5348527022  stored 5348527022
+    SAME qkv.5 blank Lb writing: mine 2101821  stored 2101821
+    SAME qkv.5 blank Lb way2: mine 9059302017  stored 9059302017
+    SAME qkv.5 blank zero gaps: mine 66197  stored 66197
+    SAME qkv.5 finished Lf plain: mine 11826790751  stored 11826790751
+    SAME qkv.5 finished Lf walk: mine 2559171495  stored 2559171495
+    SAME qkv.5 finished Lf pours: mine 4328862401  stored 4328862401
+    SAME qkv.5 finished Lf writing: mine 1373611  stored 1373611
+    SAME qkv.5 finished Lf way2: mine 6889407507  stored 6889407507
+    SAME qkv.5 finished Lb plain: mine 18139278602  stored 18139278602
+    SAME qkv.5 finished Lb walk: mine 3714791029  stored 3714791029
+    SAME qkv.5 finished Lb pours: mine 5451332904  stored 5451332904
+    SAME qkv.5 finished Lb writing: mine 2101821  stored 2101821
+    SAME qkv.5 finished Lb way2: mine 9168225754  stored 9168225754
+    SAME qkv.5 finished zero gaps: mine 65847  stored 65847
+  qkv.5: way 2 share on Lf  mine: blank 59.4515%  finished 58.2526%  fresh_b 59.4326%  fresh_f 58.0530%  | stored: blank 59.4515%  finished 58.2526%  fresh_b 59.4433%  fresh_f 58.0501%
+  qkv.5: way 2 share on Lb  mine: blank 51.8592% finished 50.5435%
+  qkv.5: zero gaps mine: blank 8.42%  finished 8.38%  fresh_b 8.50%  fresh_f 8.11%  | stored: blank 8.42%  finished 8.38%  fresh_b 8.46%  fresh_f 8.10%
+  qkv.5: neurons in a random order, Lf (mine / stored): blank 105.42% / 105.39%  finished 102.68% / 102.68%  fresh_b 105.41% / 105.40%  fresh_f 102.25% / 102.19%
+  qkv.5 walk by cumulative sums equals x @ w: blank True, finished True
+  (9s, 965 MB)
+    SAME mproj.2 blank Lf plain: mine 19769106838  stored 19769106838
+    SAME mproj.2 blank Lf walk: mine 5579045770  stored 5579045770
+    SAME mproj.2 blank Lf pours: mine 6493542526  stored 6493542526
+    SAME mproj.2 blank Lf writing: mine 6928544  stored 6928544
+    SAME mproj.2 blank Lf way2: mine 12079516840  stored 12079516840
+    SAME mproj.2 blank Lb plain: mine 21013083261  stored 21013083261
+    SAME mproj.2 blank Lb walk: mine 5828873402  stored 5828873402
+    SAME mproj.2 blank Lb pours: mine 6717575513  stored 6717575513
+    SAME mproj.2 blank Lb writing: mine 7364261  stored 7364261
+    SAME mproj.2 blank Lb way2: mine 12553813176  stored 12553813176
+    SAME mproj.2 blank zero gaps: mine 33672  stored 33672
+    SAME mproj.2 finished Lf plain: mine 20050666191  stored 20050666191
+    SAME mproj.2 finished Lf walk: mine 5717530135  stored 5717530135
+    SAME mproj.2 finished Lf pours: mine 6545371153  stored 6545371153
+    SAME mproj.2 finished Lf writing: mine 6928544  stored 6928544
+    SAME mproj.2 finished Lf way2: mine 12269829832  stored 12269829832
+    SAME mproj.2 finished Lb plain: mine 21309109546  stored 21309109546
+    SAME mproj.2 finished Lb walk: mine 5973043943  stored 5973043943
+    SAME mproj.2 finished Lb pours: mine 6769038241  stored 6769038241
+    SAME mproj.2 finished Lb writing: mine 7364261  stored 7364261
+    SAME mproj.2 finished Lb way2: mine 12749446445  stored 12749446445
+    SAME mproj.2 finished zero gaps: mine 31365  stored 31365
+  mproj.2: way 2 share on Lf  mine: blank 61.1030%  finished 61.1941%  fresh_b 61.1301%  fresh_f 61.1737%  | stored: blank 61.1030%  finished 61.1941%  fresh_b 61.1051%  fresh_f 61.2015%
+  mproj.2: way 2 share on Lb  mine: blank 59.7428% finished 59.8310%
+  mproj.2: zero gaps mine: blank 3.22%  finished 3.00%  fresh_b 3.24%  fresh_f 2.97%  | stored: blank 3.22%  finished 3.00%  fresh_b 3.21%  fresh_f 2.97%
+  mproj.2: neurons in a random order, Lf (mine / stored): blank 97.72% / 97.72%  finished 97.84% / 97.86%  fresh_b 97.77% / 97.76%  fresh_f 97.82% / 97.85%
+  (2s, 1254 MB)
+    SAME head blank Lf plain: mine 631063929609  stored 631063929609
+    SAME head blank Lf walk: mine 14772061653  stored 14772061653
+    SAME head blank Lf pours: mine 185083193112  stored 185083193112
+    SAME head blank Lf writing: mine 2252648  stored 2252648
+    SAME head blank Lf way2: mine 199857507413  stored 199857507413
+    SAME head blank Lb plain: mine 589162001171  stored 589162001171
+    SAME head blank Lb walk: mine 13908889934  stored 13908889934
+    SAME head blank Lb pours: mine 177785477341  stored 177785477341
+    SAME head blank Lb writing: mine 2103083  stored 2103083
+    SAME head blank Lb way2: mine 191696470358  stored 191696470358
+    SAME head blank zero gaps: mine 21297275  stored 21297275
+    SAME head finished Lf plain: mine 654043856005  stored 654043856005
+    SAME head finished Lf walk: mine 6145989769  stored 6145989769
+    SAME head finished Lf pours: mine 189049165070  stored 189049165070
+    SAME head finished Lf writing: mine 2252648  stored 2252648
+    SAME head finished Lf way2: mine 195197407487  stored 195197407487
+    SAME head finished Lb plain: mine 610893341581  stored 610893341581
+    SAME head finished Lb walk: mine 5951221852  stored 5951221852
+    SAME head finished Lb pours: mine 181651840339  stored 181651840339
+    SAME head finished Lb writing: mine 2103083  stored 2103083
+    SAME head finished Lb way2: mine 187605165274  stored 187605165274
+    SAME head finished zero gaps: mine 24001545  stored 24001545
+  head: way 2 share on Lf  mine: blank 31.6699%  finished 29.8447%  fresh_b 31.6716%  fresh_f 30.3562%  | stored: blank 31.6699%  finished 29.8447%  fresh_b 31.6741%  fresh_f 30.3580%
+  head: way 2 share on Lb  mine: blank 32.5371% finished 30.7100%
+  head: zero gaps mine: blank 82.69%  finished 93.19%  fresh_b 82.69%  fresh_f 78.23%  | stored: blank 82.69%  finished 93.19%  fresh_b 82.69%  fresh_f 78.22%
+  head: neurons in a random order, Lf (mine / stored): blank 90.37% / 90.36%  finished 77.84% / 77.84%  fresh_b 90.37% / 90.37%  fresh_f 87.01% / 87.02%
+  (158s, 2419 MB)
+  pooled from the stored JSON, Lf: blank 40.45%  finished 39.13%  fresh_b 40.46%  fresh_f 39.18%
+  pooled from the stored JSON, Lb: blank 41.11%  finished 39.89%  fresh_b 41.12%  fresh_f 39.96%
+
+2. UPS PAIRED WITH DOWNS by size (one sort a line; blank and finished compared with pairs_70m.json)
+    SAME proj.3 blank rows (left, whole, |net|): mine (45793647, 807079051, 35784683)  stored (45793647, 807079051, 35784683)
+    SAME proj.3 blank cols (left, whole, |net|): mine (46079233, 807079051, 36722387)  stored (46079233, 807079051, 36722387)
+    SAME proj.3 finished rows (left, whole, |net|): mine (66907586, 1809370404, 12560006)  stored (66907586, 1809370404, 12560006)
+    SAME proj.3 finished cols (left, whole, |net|): mine (121602832, 1809370404, 86889408)  stored (121602832, 1809370404, 86889408)
+  proj.3 rows: left/whole mine: blank 5.674%  finished 3.698%  fresh_b 5.621%  fresh_f 5.807%  redeal_b 5.546%  redeal_f 6.871%  | stored: blank 5.674%  finished 3.698%  fresh_b 5.793%  fresh_f 5.752%  redeal_b 5.657%  redeal_f 6.828%
+  proj.3 cols: left/whole mine: blank 5.709%  finished 6.721%  fresh_b 5.751%  fresh_f 5.725%  redeal_b 5.772%  redeal_f 6.854%  | stored: blank 5.709%  finished 6.721%  fresh_b 5.551%  fresh_f 5.876%  redeal_b 5.642%  redeal_f 6.752%
+  proj.3: finished / blank rows 0.65x  cols 1.18x  (0s, 2419 MB)
+    SAME fc.4 blank rows (left, whole, |net|): mine (173111989, 6122966257, 134307055)  stored (173111989, 6122966257, 134307055)
+    SAME fc.4 blank cols (left, whole, |net|): mine (349636655, 6122966257, 272113885)  stored (349636655, 6122966257, 272113885)
+    SAME fc.4 finished rows (left, whole, |net|): mine (920051017, 6293983541, 903907323)  stored (920051017, 6293983541, 903907323)
+    SAME fc.4 finished cols (left, whole, |net|): mine (318124769, 6293983541, 216239785)  stored (318124769, 6293983541, 216239785)
+  fc.4 rows: left/whole mine: blank 2.827%  finished 14.618%  fresh_b 2.920%  fresh_f 3.114%  redeal_b 2.821%  redeal_f 3.140%  | stored: blank 2.827%  finished 14.618%  fresh_b 2.787%  fresh_f 2.954%  redeal_b 2.809%  redeal_f 3.155%
+  fc.4 cols: left/whole mine: blank 5.710%  finished 5.054%  fresh_b 5.685%  fresh_f 5.677%  redeal_b 5.778%  redeal_f 5.897%  | stored: blank 5.710%  finished 5.054%  fresh_b 5.713%  fresh_f 5.532%  redeal_b 5.667%  redeal_f 6.041%
+  fc.4: finished / blank rows 5.17x  cols 0.89x  (0s, 2419 MB)
+    SAME head blank rows (left, whole, |net|): mine (853397980, 150607107874, 650541904)  stored (853397980, 150607107874, 650541904)
+    SAME head blank cols (left, whole, |net|): mine (8580751306, 150607107874, 6663426234)  stored (8580751306, 150607107874, 6663426234)
+    head blank: median lane has 50.1332% of words on its majority sign; |mean word column| / rms word column 0.0043
+    SAME head finished rows (left, whole, |net|): mine (724268467780, 733561811656, 724267398340)  stored (724268467780, 733561811656, 724267398340)
+    SAME head finished cols (left, whole, |net|): mine (12980172764, 733561811656, 6184866150)  stored (12980172764, 733561811656, 6184866150)
+    head finished: median lane has 99.9066% of words on its majority sign; |mean word column| / rms word column 0.9575
+  head rows: left/whole mine: blank 0.567%  finished 98.733%  fresh_b 0.585%  fresh_f 0.549%  redeal_b 0.574%  redeal_f 0.807%  | stored: blank 0.567%  finished 98.733%  fresh_b 0.586%  fresh_f 0.570%  redeal_b 0.578%  redeal_f 0.817%
+  head cols: left/whole mine: blank 5.697%  finished 1.769%  fresh_b 5.673%  fresh_f 5.319%  redeal_b 5.681%  redeal_f 4.278%  | stored: blank 5.697%  finished 1.769%  fresh_b 5.716%  fresh_f 5.328%  redeal_b 5.696%  redeal_f 4.305%
+  head: finished / blank rows 174.24x  cols 0.31x  (8s, 2490 MB)
+    SAME embed blank rows (left, whole, |net|): mine (8598204865, 150554652255, 6695842581)  stored (8598204865, 150554652255, 6695842581)
+    SAME embed blank cols (left, whole, |net|): mine (863066281, 150554652255, 661706247)  stored (863066281, 150554652255, 661706247)
+    SAME embed finished rows (left, whole, |net|): mine (5842472822, 167441144078, 1478047858)  stored (5842472822, 167441144078, 1478047858)
+    SAME embed finished cols (left, whole, |net|): mine (10901163768, 167441144078, 10832197816)  stored (10901163768, 167441144078, 10832197816)
+  embed rows: left/whole mine: blank 5.711%  finished 3.489%  fresh_b 5.694%  fresh_f 5.700%  redeal_b 5.693%  redeal_f 5.744%  | stored: blank 5.711%  finished 3.489%  fresh_b 5.705%  fresh_f 5.690%  redeal_b 5.696%  redeal_f 5.736%
+  embed cols: left/whole mine: blank 0.573%  finished 6.510%  fresh_b 0.584%  fresh_f 0.557%  redeal_b 0.577%  redeal_f 0.585%  | stored: blank 0.573%  finished 6.510%  fresh_b 0.570%  fresh_f 0.582%  redeal_b 0.577%  redeal_f 0.583%
+  embed: finished / blank rows 0.61x  cols 11.36x  (8s, 2593 MB)
+
+3A. EVERY WRITE LINE ADDED (real values from ldexp, one scale)
+  blank   : per line rms z  E 1.004  A 1.010  M 0.998
+  blank   : lane totals rms z (beyond 3, max): E 0.96 (0.20%, 3.0)  A 0.98 (0.00%, 3.0)  M 0.98 (0.20%, 3.0)  AM 1.01 (0.39%, 3.3)  EAM 0.97 (0.00%, 2.7)
+  blank   : r(E, M) +0.0292  cancel 1.0145  my lane-order 95% range [-0.084, +0.087];  lane totals equal to stored T: {'E': True, 'A': True, 'M': True}
+  stored  : per line E 1.004 A 1.010 M 0.998; lanes E 0.96  A 0.98  M 0.98  AM 1.01  EAM 0.97; r(E,M) +0.0292 cancel 1.0145
+  finished: per line rms z  E 0.215  A 0.207  M 0.204
+  finished: lane totals rms z (beyond 3, max): E 14.90 (80.27%, 64.9)  A 1.03 (0.39%, 3.5)  M 1.97 (10.35%, 6.2)  AM 1.84 (8.01%, 5.2)  EAM 13.53 (79.30%, 55.8)
+  finished: r(E, M) +0.0851  cancel 1.0100  my lane-order 95% range [-0.081, +0.086];  lane totals equal to stored T: {'E': True, 'A': True, 'M': True}
+  finished biases: rms z 0.069; all write lines + biases rms z 13.53 (79.49% beyond 3)
+  stored  : per line E 0.215 A 0.207 M 0.204; lanes E 14.90  A 1.03  M 1.97  AM 1.84  EAM 13.53; r(E,M) +0.0851 cancel 1.0100
+
+3B. THE MACHINE'S OWN WRITES: Q = sum (top)^2 / sum of every write^2
+  start   : Q 0.9802  lanes scrambled 0.9982  positions scrambled 0.9837 | standing pairs -0.016  word pairs -0.004 | M2-M5 -0.002  M2-M4 -0.001  A5-M5 standing +0.008 | shares M5 0.126 M2 0.129 word 0.0016
+  stored  : Q 0.9802  lanes scrambled 1.0005  positions scrambled 0.9827
+  finished: Q 0.9799  lanes scrambled 1.0041  positions scrambled 1.3408 | standing pairs +0.356  word pairs -0.376 | M2-M5 -0.229  M2-M4 -0.204  A5-M5 standing +0.375 | shares M5 0.550 M2 0.217 word 0.0001
+  stored  : Q 0.9799  lanes scrambled 0.9965  positions scrambled 1.3424
+
+exact comparisons that differ: 0 []
+done (187s, max memory 2593 MB)

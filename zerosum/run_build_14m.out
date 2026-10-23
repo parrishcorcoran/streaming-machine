@@ -1,0 +1,28 @@
+
+fine: 53,457 of 54,156 write lines with a nonzero constant; values past 16 places 2  -> zerosum_pythia-14m.npz (16 MB, 2s)
+  lit places attention-out : 1s       550,421 ->       590,569 ( +7.294%)   single-wave       420,548 ->       446,906 ( +6.268%)
+  lit places biases        : 1s         7,599 ->         8,154 ( +7.304%)   single-wave         5,893 ->         6,273 ( +6.448%)
+  lit places MLP-out       : 1s     2,201,324 ->     2,278,446 ( +3.503%)   single-wave     1,681,669 ->     1,733,388 ( +3.075%)
+  lit places word rows     : 1s    35,954,904 ->    37,136,787 ( +3.287%)   single-wave    27,457,334 ->    28,249,500 ( +2.885%)
+  lit places all writes    : 1s    38,714,248 ->    40,013,956 ( +3.357%)   single-wave    29,565,444 ->    30,436,067 ( +2.945%)
+cut: arrays changed: ['embed.w', 'mproj.2.b', 'mproj.4.b', 'proj.2.b', 'proj.4.b']
+     proj.2.b constant 32 stream units
+     mproj.2.b constant 32 stream units
+     proj.4.b constant -32 stream units
+     mproj.4.b constant -32 stream units
+
+cut: 37,648 of 54,156 write lines with a nonzero constant; values past 16 places 2  -> zerosum_pythia-14m_cut.npz (15 MB, 3s)
+  lit places attention-out : 1s       550,421 ->       550,421 ( +0.000%)   single-wave       420,548 ->       420,548 ( +0.000%)
+  lit places biases        : 1s         7,599 ->         7,632 ( +0.434%)   single-wave         5,893 ->         5,921 ( +0.475%)
+  lit places MLP-out       : 1s     2,201,324 ->     2,201,324 ( +0.000%)   single-wave     1,681,669 ->     1,681,669 ( +0.000%)
+  lit places word rows     : 1s    35,954,904 ->    35,948,850 ( -0.017%)   single-wave    27,457,334 ->    27,456,033 ( -0.005%)
+  lit places all writes    : 1s    38,714,248 ->    38,708,227 ( -0.016%)   single-wave    29,565,444 ->    29,564,171 ( -0.004%)
+
+ctl: 53,457 of 54,156 write lines with a nonzero constant; values past 16 places 2  -> zerosum_pythia-14m_ctl.npz (16 MB, 5s)
+  lit places attention-out : 1s       550,421 ->       590,565 ( +7.293%)   single-wave       420,548 ->       447,002 ( +6.290%)
+  lit places biases        : 1s         7,599 ->         8,103 ( +6.632%)   single-wave         5,893 ->         6,230 ( +5.719%)
+  lit places MLP-out       : 1s     2,201,324 ->     2,277,127 ( +3.444%)   single-wave     1,681,669 ->     1,733,441 ( +3.079%)
+  lit places word rows     : 1s    35,954,904 ->    37,136,138 ( +3.285%)   single-wave    27,457,334 ->    28,252,086 ( +2.894%)
+  lit places all writes    : 1s    38,714,248 ->    40,011,933 ( +3.352%)   single-wave    29,565,444 ->    30,438,759 ( +2.954%)
+
+done (5s)

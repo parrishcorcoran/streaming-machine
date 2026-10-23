@@ -1,0 +1,38 @@
+{
+ "qkv": {
+  "base": 14.7385,
+  "line": 14.7411,
+  "neuron": 14.7455,
+  "both": 14.7494,
+  "control_base": 14.7395,
+  "control_line": 14.7419,
+  "n": 21233664
+ },
+ "proj": {
+  "base": 14.9218,
+  "line": 14.9285,
+  "neuron": 14.9299,
+  "both": 14.9419,
+  "control_base": 14.9192,
+  "control_line": 14.9262,
+  "n": 7077888
+ },
+ "fc": {
+  "base": 14.811,
+  "line": 14.7975,
+  "neuron": 14.8177,
+  "both": 14.8056,
+  "control_base": 14.8104,
+  "control_line": 14.8118,
+  "n": 28311552
+ },
+ "mproj": {
+  "base": 14.4439,
+  "line": 14.454,
+  "neuron": 14.446,
+  "both": 14.4592,
+  "control_base": 14.4442,
+  "control_line": 14.4563,
+  "n": 28311552
+ }
+}

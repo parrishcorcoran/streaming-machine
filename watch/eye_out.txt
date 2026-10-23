@@ -1,0 +1,188 @@
+CHECKS
+  (a) every count recomputed from traj_lines_shuffled.npz: 3812 of 3812 identical
+  top-down height moves here vs report M1 real: identical;  sign flips here 1184125 vs report 1184125
+  (b) each line's 24 writes in its own order: 0 of 497664 final values differ
+  eye-level heights, all snapshots (-1 = dark .. 15):
+    real -1:5896  +0:11674  +1:22963  +2:46812  +3:95364  +4:279019  +5:642886  +6:670726  +7:1238908  +8:2113128  +9:3060347  +10:2808469  +11:1141399  +12:195545  +13:60792  +14:47672  +15:0
+    b    -1:11912  +0:23303  +1:47277  +2:95767  +3:201725  +4:493470  +5:768300  +6:1291987  +7:2150472  +8:2991509  +9:2700271  +10:1176709  +11:290356  +12:87853  +13:63843  +14:46846  +15:0
+  water (eye level): the position's power of two, rise per write (-4..8+):
+    real -4:0  -3:30  -2:0  -1:114  +0:12072  +1:2602  +2:61  +3:610  +4:63  +5:0  +6:0  +7:0  +8:0
+    b    -4:13  -3:11  -2:10  -1:72  +0:13267  +1:1209  +2:255  +3:257  +4:176  +5:140  +6:113  +7:25  +8:4
+
+E1  THINNESS PER WRITE (light before vs after one write, each at its own water)
+  eye real  photons of change / photons of light 51000160/61037391 (835)   values unchanged 130872/11943936 (10)
+            height moves 0 5571148/11943936 (466)  1 4115284/11943936 (344)  2+ 2257504/11943936 (189)   (up 254, down 279);  direction flips 1182910/11932782 (99)
+            change's top place below the light's: 2+ places 5887339/11807666 (498)  4+ 2284266/11807666 (193)  1 215  level or above 285
+  eye b     photons of change / photons of light 42585252/55515557 (767)   values unchanged 110255/11943936 (9)
+            height moves 0 6492781/11943936 (543)  1 3522881/11943936 (294)  2+ 1928274/11943936 (161)   (up 222, down 234);  direction flips 1107942/11920841 (92)
+            change's top place below the light's: 2+ places 6916922/11822358 (585)  4+ 3308727/11822358 (279)  1 167  level or above 247
+  top real  photons of change / photons of light 90527994/100938455 (896)   values unchanged 221/11943936 (0)
+            height moves 0 6104239/11943936 (511)  1 3830465/11943936 (320)  2+ 2009232/11943936 (168)   (up 305, down 183);  direction flips 1184125/11943774 (99)
+            change's top place below the light's: 2+ places 6612944/11943619 (553)  4+ 2599347/11943619 (217)  1 167  level or above 278
+  top b     photons of change / photons of light 90527994/103928330 (871)   values unchanged 221/11943936 (0)
+            height moves 0 6885949/11943936 (576)  1 3264321/11943936 (273)  2+ 1793666/11943936 (150)   (up 266, down 156);  direction flips 1099552/11943830 (92)
+            change's top place below the light's: 2+ places 7474743/11943647 (625)  4+ 3745346/11943647 (313)  1 130  level or above 243
+  only where the water did not move (same power of two before and after):
+  eye real  photons of change / photons of light 37745920/47172641 (800)   values unchanged 129018/9271296 (13)
+            height moves 0 5089610/9271296 (548)  1 2933020/9271296 (316)  2+ 1248666/9271296 (134)   (up 268, down 182);  direction flips 759710/9263732 (82)
+            change's top place below the light's: 2+ places 5384363/9138379 (589)  4+ 2204130/9138379 (241)  1 170  level or above 240
+  eye b     photons of change / photons of light 34137169/46697528 (731)   values unchanged 108366/10189056 (10)
+            height moves 0 6221019/10189056 (610)  1 2781538/10189056 (272)  2+ 1186499/10189056 (116)   (up 233, down 156);  direction flips 727010/10169726 (71)
+            change's top place below the light's: 2+ places 6660008/10070627 (661)  4+ 3266908/10070627 (324)  1 134  level or above 204
+  top real  photons of change / photons of light 70147162/79377453 (883)   values unchanged 144/9271296 (0)
+            height moves 0 5001483/9271296 (539)  1 2993341/9271296 (322)  2+ 1276472/9271296 (137)   (up 273, down 187);  direction flips 777273/9271211 (83)
+            change's top place below the light's: 2+ places 5447015/9271108 (587)  4+ 2177310/9271108 (234)  1 171  level or above 241
+  top b     photons of change / photons of light 77359507/90206298 (857)   values unchanged 191/10197504 (0)
+            height moves 0 6202342/10197504 (608)  1 2779188/10197504 (272)  2+ 1215974/10197504 (119)   (up 235, down 156);  direction flips 748038/10197455 (73)
+            change's top place below the light's: 2+ places 6764226/10197289 (663)  4+ 3429229/10197289 (336)  1 131  level or above 204
+  change's top place minus the light's top place (lit light, change != 0; tails folded at -12 and +8):
+    eye real -12:1297  -11:4089  -10:14470  -9:36966  -8:78197  -7:149833  -6:287074  -5:658028  -4:1054312  -3:1537581  -2:2065492  -1:2544265  +0:1708067  +1:791262  +2:428722  +3:226497  +4:115551  +5:57399  +6:28090  +7:13045  +8:7429
+    eye b    -12:6261  -11:7676  -10:19149  -9:55952  -8:134077  -7:274034  -6:511277  -5:898341  -4:1401960  -3:1756547  -2:1851648  -1:1982265  +0:1474875  +1:709871  +2:368962  +3:191181  +4:96801  +5:47302  +6:21512  +7:8509  +8:4158
+    top real -12:12763  -11:13042  -10:26042  -9:51821  -8:100028  -7:190322  -6:360166  -5:669327  -4:1175836  -3:1803709  -2:2209888  -1:2006050  +0:1378888  +1:818172  +2:481845  +3:292632  +4:169485  +5:90291  +6:46832  +7:23391  +8:23089
+    top b    -12:33169  -11:28462  -10:52037  -9:97947  -8:183112  -7:330789  -6:580684  -5:971668  -4:1467478  -3:1851093  -2:1878304  -1:1561731  +0:1110422  +1:718974  +2:449321  +3:279339  +4:165293  +5:91020  +6:46690  +7:23194  +8:22920
+  height move hist (-8..8):
+    eye real -8:11893  -7:16039  -6:33049  -5:68875  -4:152263  -3:330999  -2:639342  -1:2080399  +0:5571148  +1:2034885  +2:536886  +3:239473  +4:117582  +5:58130  +6:28716  +7:13968  +8:10289
+    eye b    -8:14502  -7:19378  -6:40234  -5:78931  -4:144229  -3:260157  -2:522451  -1:1715330  +0:6492781  +1:1807551  +2:456323  +3:202656  +4:99175  +5:49318  +6:23949  +7:10671  +8:6300
+    top real -8:9957  -7:10139  -6:20497  -5:40655  -4:82717  -3:170491  -2:390873  -1:1465347  +0:6104239  +1:2365118  +2:614933  +3:311238  +4:173113  +5:91146  +6:46881  +7:23412  +8:23180
+    top b    -8:8278  -7:8228  -6:16619  -5:33483  -4:67368  -3:139229  -2:316856  -1:1282425  +0:6885949  +1:1981896  +2:557218  +3:294605  +4:167461  +5:91336  +6:46784  +7:23226  +8:22975
+  per write (thousandths): change/light photons | height stays | direction flips | change 2+ places below light | water moved (positions of 648);  each eye-real eye-b top-real
+   layer  0 arrival  992 1010 1009 |   84  117  289 |  218  411  210 |   66   75  283 |  648  645
+   layer  0 edge    1077  979 1110 |  186  235  150 |  318  233  319 |  157  218  123 |  639  293
+   layer  1 arrival  843  913  901 |  476  324  478 |  106  169  106 |  507  323  510 |    4  201
+   layer  1 edge     852  871  903 |  449  385  468 |  116  139  108 |  477  398  501 |   31  145
+   layer  2 arrival  799  844  875 |  548  422  544 |   81  120   82 |  595  445  595 |    0  130
+   layer  2 edge     857  817  905 |  456  469  469 |  113  104  108 |  482  498  505 |   43   90
+   layer  3 arrival  788  799  868 |  560  499  567 |   70   95   72 |  603  534  620 |   34   70
+   layer  3 edge     856  783  899 |  442  520  484 |  102   88  104 |  478  558  521 |  106   68
+   layer  4 arrival  783  768  861 |  564  545  588 |   65   78   67 |  607  589  647 |   59   54
+   layer  4 edge     853  755  893 |  425  567  504 |   93   72   94 |  463  614  549 |  185   45
+   layer  5 arrival  784  750  865 |  561  573  580 |   67   67   69 |  605  623  638 |   73   54
+   layer  5 edge     846  744  897 |  439  581  497 |   97   66   99 |  472  632  540 |  155   56
+   layer  6 arrival  774  732  864 |  580  598  592 |   62   59   65 |  627  652  650 |   47   49
+   layer  6 edge     832  726  899 |  478  605  497 |   95   60   96 |  508  661  539 |   76   51
+   layer  7 arrival  755  716  857 |  619  617  615 |   55   53   58 |  673  674  678 |   14   47
+   layer  7 edge     832  713  899 |  488  623  498 |   94   53   95 |  516  682  539 |   44   49
+   layer  8 arrival  766  704  860 |  600  634  612 |   55   49   58 |  652  693  675 |   40   48
+   layer  8 edge     849  690  907 |  442  659  481 |   98   47  100 |  463  722  515 |  129   26
+   layer  9 arrival  754  689  851 |  608  657  642 |   47   45   49 |  668  718  712 |   76   36
+   layer  9 edge     856  682  912 |  412  669  473 |   98   44  100 |  436  733  504 |  236   26
+   layer 10 arrival  739  680  844 |  617  671  667 |   43   44   44 |  674  736  740 |   86   31
+   layer 10 edge     862  676  919 |  401  677  459 |  102   42  104 |  422  741  486 |  218   32
+   layer 11 arrival  860  665  860 |  313  695  638 |   65   39   50 |  355  762  713 |  454   17
+   layer 11 edge     851  665  920 |  434  694  463 |  107   41  109 |  465  760  497 |   83   22
+
+E2  BOBBING: each line at each position, its 25 snapshots (24 moves)
+  eye real  height: reverse 2491325/3618411 (688) of back-to-back moves (continue 1127086);  skipping stays: reverse 3739965/5875124 (636);  moves 6372788/11943936 (533)
+            value:  reverse 5947527/11216069 (530) of back-to-back moves;  skipping stays: reverse 5968604/11315400 (527)
+            direction: flips back right after a flip 303999/1128084 (269);  flips after a keep 769032/10302856 (74)
+            flips per line (0..12+): +0:90112  +1:127623  +2:87507  +3:66134  +4:47223  +5:32428  +6:20720  +7:12346  +8:7082  +9:3490  +10:1729  +11:755  +12:515
+  eye b     height: reverse 1918302/2938177 (652) of back-to-back moves (continue 1019875);  skipping stays: reverse 3081135/4953497 (622);  moves 5451155/11943936 (456)
+            value:  reverse 5575080/11239371 (496) of back-to-back moves;  skipping stays: reverse 5622455/11336017 (495)
+            direction: flips back right after a flip 250611/1084344 (231);  flips after a keep 650308/10328895 (62)
+            flips per line (0..12+): +0:87794  +1:131140  +2:97295  +3:70917  +4:47215  +5:29254  +6:17079  +7:9121  +8:4516  +9:2067  +10:808  +11:336  +12:122
+  top real  height: reverse 2072262/3212408 (645) of back-to-back moves (continue 1140146);  skipping stays: reverse 3066704/5342036 (574);  moves 5839697/11943936 (488)
+            value:  reverse 5662229/11445880 (494) of back-to-back moves;  skipping stays: reverse 5662294/11446051 (494)
+            direction: flips back right after a flip 307232/1129673 (271);  flips after a keep 772240/10316389 (74)
+            flips per line (0..12+): +0:92046  +1:127808  +2:85323  +3:64711  +4:47298  +5:32991  +6:21009  +7:12549  +8:7169  +9:3632  +10:1778  +11:824  +12:526
+  top b     height: reverse 1634541/2635780 (620) of back-to-back moves (continue 1001239);  skipping stays: reverse 2612450/4560326 (572);  moves 5057987/11943936 (423)
+            value:  reverse 5462826/11445851 (477) of back-to-back moves;  skipping stays: reverse 5462930/11446051 (477)
+            direction: flips back right after a flip 251611/1080167 (232);  flips after a keep 646036/10365967 (62)
+            flips per line (0..12+): +0:90328  +1:132599  +2:95693  +3:69251  +4:46372  +5:29117  +6:17043  +7:9226  +8:4555  +9:2103  +10:851  +11:348  +12:178
+
+E3  THE SURFACE BETWEEN PULSES: same snapshot, position p-1 -> p (c = another random position in place of p-1; c2 = each line's positions in its own random order)
+  eye real  photons of change / photons of light 62124341/60398466 (1028)   values unchanged 4847/11865600 (0)
+            height moves 0 2605036/11865600 (219)  1 3994708/11865600 (336)  2+ 5265856/11865600 (443)   (up 411, down 368);  direction flips 4353883/11854847 (367)
+            change's top place below the light's: 2+ places 2044355/11855082 (172)  4+ 544801/11855082 (45)  1 161  level or above 666
+  eye c     photons of change / photons of light 63999711/60449047 (1058)   values unchanged 4467/11865600 (0)
+            height moves 0 2348972/11865600 (197)  1 3863453/11865600 (325)  2+ 5653175/11865600 (476)   (up 419, down 382);  direction flips 5473943/11854985 (461)
+            change's top place below the light's: 2+ places 1475113/11855600 (124)  4+ 371564/11855600 (31)  1 132  level or above 743
+  eye c2    photons of change / photons of light 62407842/59003187 (1057)   values unchanged 4741/11865600 (0)
+            height moves 0 2178386/11865600 (183)  1 3574643/11865600 (301)  2+ 6112571/11865600 (515)   (up 411, down 404);  direction flips 4933702/11847215 (416)
+            change's top place below the light's: 2+ places 1526467/11851378 (128)  4+ 385866/11851378 (32)  1 137  level or above 733
+  top real  photons of change / photons of light 101385099/100667640 (1007)   values unchanged 122/11865600 (0)
+            height moves 0 2764133/11865600 (232)  1 4156088/11865600 (350)  2+ 4945379/11865600 (416)   (up 391, down 375);  direction flips 4348715/11865419 (366)
+            change's top place below the light's: 2+ places 2184937/11865389 (184)  4+ 594124/11865389 (50)  1 164  level or above 650
+  top c     photons of change / photons of light 103241264/100672515 (1025)   values unchanged 873/11865600 (0)
+            height moves 0 2514638/11865600 (211)  1 4052084/11865600 (341)  2+ 5298878/11865600 (446)   (up 401, down 386);  direction flips 5485431/11865411 (462)
+            change's top place below the light's: 2+ places 1589480/11864630 (133)  4+ 409780/11864630 (34)  1 136  level or above 729
+  top c2    photons of change / photons of light 102269495/100666461 (1015)   values unchanged 107/11865600 (0)
+            height moves 0 2605474/11865600 (219)  1 4075454/11865600 (343)  2+ 5184672/11865600 (436)   (up 390, down 390);  direction flips 4908192/11865416 (413)
+            change's top place below the light's: 2+ places 1870980/11865400 (157)  4+ 491131/11865400 (41)  1 151  level or above 690
+  change's top place minus the light's top place (-12..+8):
+    eye real -12:198  -11:599  -10:2638  -9:7341  -8:17048  -7:35173  -6:71083  -5:140235  -4:270486  -3:514930  -2:984624  -1:1908828  +0:2809536  +1:2184496  +2:1260133  +3:708604  +4:429835  +5:269523  +6:139204  +7:59948  +8:40620
+    eye c    -12:127  -11:316  -10:1528  -9:4766  -8:10919  -7:23282  -6:47529  -5:95021  -4:188076  -3:369679  -2:733870  -1:1571119  +0:2956039  +1:2602543  +2:1442613  +3:776138  +4:459656  +5:294926  +6:161685  +7:69548  +8:46220
+    eye c2   -12:118  -11:310  -10:1483  -9:4826  -8:11247  -7:24199  -6:49350  -5:99364  -4:194969  -3:383361  -2:757240  -1:1630439  +0:3284628  +1:2220152  +2:1279370  +3:757732  +4:485779  +5:318395  +6:186693  +7:92332  +8:69391
+    top real -12:2249  -11:2441  -10:4769  -9:9697  -8:19298  -7:38646  -6:76544  -5:150884  -4:289596  -3:549595  -2:1041218  -1:1956965  +0:2841810  +1:2272773  +2:1282086  +3:661552  +4:332262  +5:166555  +6:83229  +7:41523  +8:41697
+    top c    -12:1458  -11:1628  -10:3282  -9:6539  -8:12858  -7:25983  -6:51878  -5:102615  -4:203539  -3:397993  -2:781707  -1:1617767  +0:2961048  +1:2736355  +2:1487219  +3:737673  +4:368076  +5:183654  +6:91847  +7:45863  +8:45648
+    top c2   -12:1859  -11:1992  -10:3869  -9:7887  -8:15562  -7:31360  -6:62243  -5:123915  -4:242444  -3:471449  -2:908400  -1:1796302  +0:2982653  +1:2481972  +2:1354912  +3:686016  +4:345782  +5:172667  +6:87234  +7:43246  +8:43636
+  per snapshot, eye: change/light photons | height stays | direction flips;  each real c c2
+   snapshot  0  1003 1018 |  261  236 |  413  428
+   snapshot  4  1044 1057 |  210  201 |  410  449
+   snapshot  8  1044 1062 |  204  193 |  392  465
+   snapshot 12  1039 1066 |  206  188 |  372  469
+   snapshot 16  1027 1062 |  221  199 |  353  468
+   snapshot 20  1027 1065 |  213  186 |  348  470
+   snapshot 24  1022 1063 |  221  193 |  349  475
+  bobbing along the positions of a text (each line, each snapshot):
+  eye real  height: reverse 5040743/6959279 (724) of back-to-back moves (continue 1918536);  skipping stays: reverse 6177398/8684937 (711);  moves 9260564/11865600 (780)
+            value:  reverse 7183297/11280365 (636) of back-to-back moves;  skipping stays: reverse 7185854/11284753 (636)
+            direction: flips back right after a flip 1857605/4144687 (448);  flips after a keep 2221591/7129788 (311)
+            flips per line (0..12+): +0:14277  +1:12747  +2:17503  +3:21006  +4:33670  +5:44679  +6:61262  +7:70828  +8:72194  +9:65968  +10:56322  +11:41821  +12:63723
+  eye c2    height: reverse 5602644/7634490 (733) of back-to-back moves (continue 2031846);  skipping stays: reverse 6591157/9111238 (723);  moves 9687214/11865600 (816)
+            value:  reverse 7519987/11280569 (666) of back-to-back moves;  skipping stays: reverse 7522538/11284859 (666)
+            direction: flips back right after a flip 2345910/4692142 (499);  flips after a keep 2345181/6571528 (356)
+            flips per line (0..12+): +0:13875  +1:1947  +2:19740  +3:6578  +4:28910  +5:20080  +6:51502  +7:46291  +8:76331  +9:68572  +10:77629  +11:59086  +12:105459
+  top real  height: reverse 5013523/6794746 (737) of back-to-back moves (continue 1781223);  skipping stays: reverse 6174902/8525483 (724);  moves 9101467/11865600 (767)
+            value:  reverse 7182128/11289365 (636) of back-to-back moves;  skipping stays: reverse 7182205/11289478 (636)
+            direction: flips back right after a flip 1859145/4141039 (448);  flips after a keep 2230630/7148300 (312)
+            flips per line (0..12+): +0:15010  +1:12399  +2:17744  +3:20896  +4:34073  +5:44637  +6:61287  +7:70312  +8:72212  +9:65906  +10:55795  +11:41425  +12:64304
+  top c2    height: reverse 5285549/7036209 (751) of back-to-back moves (continue 1750660);  skipping stays: reverse 6410896/8684142 (738);  moves 9260126/11865600 (780)
+            value:  reverse 7526126/11289401 (666) of back-to-back moves;  skipping stays: reverse 7526183/11289493 (666)
+            direction: flips back right after a flip 2333301/4670397 (499);  flips after a keep 2336964/6618942 (353)
+            flips per line (0..12+): +0:15010  +1:2124  +2:20593  +3:6812  +4:29617  +5:20113  +6:51363  +7:45901  +8:76064  +9:67709  +10:77688  +11:58517  +12:104489
+
+E4  SHARED MOTION AND RESTORING (per write; one group = one position's 768 lines)
+  eye real  pairs of moving lines moving the same way 933592514/1472776315 (633);  groups with 3/4+ of movers one way 3067/15552 (197)
+            rising share of movers per group (sixteenths 0..16): +0:332  +1:1230  +2:1024  +3:97  +4:68  +5:82  +6:56  +7:227  +8:2749  +9:5941  +10:2889  +11:488  +12:65  +13:39  +14:91  +15:168  +16:6
+  eye b     pairs of moving lines moving the same way 713982856/1122517231 (636);  groups with 3/4+ of movers one way 2003/15552 (128)
+            rising share of movers per group (sixteenths 0..16): +0:522  +1:652  +2:426  +3:237  +4:104  +5:161  +6:119  +7:159  +8:2838  +9:7643  +10:2136  +11:391  +12:51  +13:16  +14:50  +15:47  +16:0
+  top real  pairs of moving lines moving the same way 661358288/1175920130 (562);  groups with 3/4+ of movers one way 1092/15552 (70)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:0  +2:0  +3:0  +4:0  +5:27  +6:94  +7:374  +8:3201  +9:6838  +10:3438  +11:488  +12:439  +13:256  +14:397  +15:0  +16:0
+  top b     pairs of moving lines moving the same way 528467625/919403340 (574);  groups with 3/4+ of movers one way 656/15552 (42)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:0  +2:0  +3:0  +4:0  +5:0  +6:1  +7:132  +8:3111  +9:8272  +10:2715  +11:665  +12:51  +13:146  +14:457  +15:2  +16:0
+  only where the water did not move:
+  eye real  pairs of moving lines moving the same way 406639566/779533171 (521);  groups with 3/4+ of movers one way 271/12072 (22)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:0  +2:25  +3:27  +4:49  +5:44  +6:47  +7:227  +8:2747  +9:5855  +10:2648  +11:199  +12:14  +13:38  +14:28  +15:118  +16:6
+  eye b     pairs of moving lines moving the same way 337409666/639111367 (527);  groups with 3/4+ of movers one way 123/13267 (9)
+            rising share of movers per group (sixteenths 0..16): +0:9  +1:7  +2:19  +3:20  +4:14  +5:21  +6:38  +7:138  +8:2812  +9:7622  +10:2118  +11:382  +12:34  +13:10  +14:10  +15:13  +16:0
+  top real  pairs of moving lines moving the same way 412898278/791696125 (521);  groups with 3/4+ of movers one way 13/12072 (1)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:0  +2:0  +3:0  +4:0  +5:17  +6:73  +7:335  +8:2821  +9:5896  +10:2715  +11:202  +12:2  +13:9  +14:2  +15:0  +16:0
+  top b     pairs of moving lines moving the same way 338365418/641439207 (527);  groups with 3/4+ of movers one way 19/13278 (1)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:0  +2:0  +3:0  +4:0  +5:0  +6:1  +7:118  +8:2893  +9:7650  +10:2231  +11:366  +12:19  +13:0  +14:0  +15:0  +16:0
+  restoring (height before the write; top-down heights are counted above the position's own water, -1 = under it or dark):
+  eye real  top quarter (12..15): moves down 107539/296528 (362), up 40;  bottom quarter (0..3): moves up 149687/164068 (912), down 27
+            by height, down/stay/up in thousandths:  -1:0/11/988  0:5/15/978  1:18/27/954  2:25/41/933  3:32/83/883  4:40/373/586  5:79/513/407  6:196/181/622  7:279/262/458  8:319/365/314  9:299/499/200  10:294/602/103  11:343/616/40  12:407/556/36  13:335/581/83  14:206/793/0
+  eye b     top quarter (12..15): moves down 73603/191061 (385), up 44;  bottom quarter (0..3): moves up 287890/355327 (810), down 74
+            by height, down/stay/up in thousandths:  -1:0/13/986  0:13/24/961  1:32/44/923  2:60/80/858  3:97/158/743  4:133/352/513  5:221/309/468  6:259/367/372  7:242/497/259  8:206/632/161  9:214/697/87  10:313/638/47  11:508/453/38  12:550/395/54  13:299/639/61  14:180/819/0
+  top real  top quarter (12..15): moves down 21590/296475 (72), up 136;  bottom quarter (0..3): moves up 184054/491035 (374), down 101
+            by height, down/stay/up in thousandths:  -1:174/174/650  0:219/350/430  1:141/512/346  2:83/602/313  3:63/508/427  4:64/204/731  5:101/128/770  6:164/165/670  7:233/249/516  8:256/372/370  9:209/538/252  10:155/696/148  11:125/790/84  12:92/795/112  13:43/751/205  14:26/824/149
+  top b     top quarter (12..15): moves down 17832/190799 (93), up 159;  bottom quarter (0..3): moves up 311231/514132 (605), down 117
+            by height, down/stay/up in thousandths:  -1:108/113/778  0:147/220/631  1:124/294/581  2:105/312/581  3:115/260/624  4:156/229/614  5:207/283/508  6:230/376/392  7:203/511/284  8:151/655/192  9:114/744/141  10:106/740/152  11:125/640/234  12:133/627/239  13:74/790/134  14:42/919/38
+  restoring, only where the water did not move:
+  eye real  top quarter (12..15): moves down 10213/182037 (56), up 40;  bottom quarter (0..3): moves up 107337/120266 (892), down 31
+            by height, down/stay/up in thousandths:  -1:0/15/984  0:7/20/972  1:22/35/942  2:30/51/917  3:37/104/858  4:38/426/535  5:62/581/356  6:183/191/625  7:256/275/468  8:268/394/337  9:207/566/226  10:148/730/121  11:118/833/48  12:77/888/33  13:21/882/95  14:15/984/0
+  eye b     top quarter (12..15): moves down 1680/114153 (14), up 59;  bottom quarter (0..3): moves up 252683/315354 (801), down 76
+            by height, down/stay/up in thousandths:  -1:0/14/985  0:14/25/959  1:33/46/919  2:63/84/852  3:100/168/731  4:129/369/501  5:209/320/470  6:239/382/377  7:208/526/265  8:151/683/165  9:110/800/88  10:93/858/48  11:77/871/51  12:31/871/96  13:6/916/77  14:7/992/0
+  between pulses (p-1 -> p, one group = one pair of positions at one snapshot):
+  eye real  pairs of moving lines moving the same way 1595397854/2789621500 (571);  groups with 3/4+ of movers one way 2185/15450 (141)
+            rising share of movers per group (sixteenths 0..16): +0:0  +1:14  +2:142  +3:563  +4:864  +5:1139  +6:1781  +7:2888  +8:2851  +9:1586  +10:1256  +11:907  +12:545  +13:208  +14:131  +15:575  +16:0
+  eye c     pairs of moving lines moving the same way 1687882197/2938177409 (574);  groups with 3/4+ of movers one way 2464/15450 (159)
+            rising share of movers per group (sixteenths 0..16): +0:1  +1:12  +2:171  +3:711  +4:910  +5:1286  +6:1808  +7:2751  +8:2425  +9:1681  +10:1238  +11:890  +12:635  +13:227  +14:94  +15:609  +16:0
+  eye c2    pairs of moving lines moving the same way 1866770152/3052519896 (611);  groups with 3/4+ of movers one way 3159/15450 (204)
+            rising share of movers per group (sixteenths 0..16): +0:820  +1:193  +2:169  +3:320  +4:1114  +5:14  +6:13  +7:4936  +8:5096  +9:18  +10:22  +11:1088  +12:360  +13:150  +14:177  +15:960  +16:0
+  eye real  top quarter (12..15): moves down 149217/286504 (520), up 68;  bottom quarter (0..3): moves up 167065/169515 (985), down 6
+            by height, down/stay/up in thousandths:  -1:0/0/999  0:0/1/997  1:1/2/995  2:4/5/990  3:10/10/979  4:17/18/964  5:34/34/930  6:80/80/838  7:148/138/713  8:244/205/550  9:388/283/327  10:579/288/132  11:737/215/46  12:667/271/60  13:289/564/146  14:213/786/0
+  eye c     top quarter (12..15): moves down 172001/287604 (598), up 76;  bottom quarter (0..3): moves up 166458/168508 (987), down 5
+            by height, down/stay/up in thousandths:  -1:0/1/998  0:0/1/997  1:1/2/995  2:4/3/992  3:8/8/982  4:15/15/968  5:29/30/940  6:74/72/853  7:137/126/736  8:230/190/578  9:384/271/343  10:616/261/121  11:817/146/35  12:748/184/66  13:373/455/170  14:277/722/0
+  eye c2    top quarter (12..15): moves down 153360/250708 (611), up 78;  bottom quarter (0..3): moves up 292469/297679 (982), down 7
+            by height, down/stay/up in thousandths:  -1:0/0/999  0:0/1/998  1:2/2/994  2:5/6/988  3:11/13/975  4:24/29/946  5:54/50/895  6:119/81/798  7:203/133/662  8:308/191/500  9:457/251/291  10:650/239/109  11:806/154/39  12:735/190/74  13:429/414/156  14:359/640/0

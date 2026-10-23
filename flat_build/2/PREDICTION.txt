@@ -1,0 +1,136 @@
+BUILD OF PICK 2: THE PLATE'S SIGN RUN, READ ONCE IN EVERY (GATE, GROUP) PAIR. Written 2026-10-08, BEFORE any run in
+this folder. The session's prediction, not his. Results are added beside each prediction after the runs.
+
+HIS WORDS (2026-10-08), the only sentences quoted as his:
+  "THE FLAT IS THE CANCELLING." "The flat is in BOTH SIDES. And it can be skipped. Or removed it doesnt matter but it
+  has to be BOTH SIDES." "The embedding table and the mlp" "The whole machine is flat, that's the base canceling. The
+  EXTRA photons from the embedding pop up above the flat and are all added per gate that they are in." "Gates and
+  arrivals, that's it, everything flat is what doesn't matter and can cancel."
+
+THE SESSION'S RESTATEMENT (session's words, in his picture)
+  The flat is in both sides, and it has to be skipped on both sides.
+  - Light side: a random group of g light lines meets every up/hole sheet once a token in the group table; the light's
+    ups and holes pair off inside every ready pile there, once, and every gate whose sheet matches gets that pairing.
+  - Plate side: every weight is 16 places of ups and holes (w + 2^15). Above a (gate, group)'s own largest weight,
+    every sheet c..14 is the sign sheet (place 15) flipped. Those sheets are flat: in the doubled pile they cancel
+    against each other and against the sign sheet, all but one copy, which stands at place c:
+        sum over b = c..15 of 2^b (2 bit_b - 1) = 2^c (2 bit_15 - 1)          (bit_b = 1 - bit_15 for b = c..14)
+    So that gate meets that group's sign sheet ONCE, at place c, and skips sheets c+1..15 and their photons.
+  - Every place of every plate is up/hole (no signed digits anywhere), so the per-place choice is retired; the run
+    takes its place, decided per (gate, group) by the plate alone, before any light is seen.
+  - c for a cell = the smallest c with every weight of the gate in that group in [-2^c, 2^c).
+  - The identity per line: sum over b of 2^b (2 bit_b - 1) = 2w + 1, so 2 x.w = (sum of the read packets, each at its
+    place) - X; X the light summed, taken once from each gate (kcorr = -1); the halving is a shift. Exact.
+
+WHAT IS RUN (flat_build/2/machine.py, its own kernel flat_build/2/runm.c; the confirmed machine groups2/gbank.py is
+imported unchanged as the baseline, nothing existing is edited)
+  GPT-2, all 48 banks (qkv, proj, fc, mproj x 12 layers), the machine's own light at all 648 refs positions
+  (groups/light_gpt2/), plates from base2_gpt2.npz, every pile against recording/C_ref/plain_refs.npz (assert).
+  The top read is NOT covered (the design's counts are the 48 banks; the top read stays the confirmed one).
+  Two table sizes:
+    g12  g = 12 at every bank: pick 2 alone, set beside gbank at g = 12 on the same light (the task's 22.78%).
+    gR   g by readers (11 at proj and mproj, 12 at qkv and fc): pick 2 stacked on pick 1, beside gbank at gR.
+  Groups: the confirmed draw, key [1, slab, layer, g].
+  Runs per bank and g: A (gbank, confirmed per-place), C (the run), A and C on the shuffled light (each position's
+  light shuffled across its lines, every value kept), and C order-free (groups in a random order, each group's lines in
+  a random order, the place parts summed in a random order).
+  WORK COUNTED (photons, the project's unit, per position, then a token = the mean over the 648 positions):
+    light (its 1s), half table (the Gray walk's relation), every half-table entry read written in signed digits (its
+    1s), every read (the ready pile's signed digits), every signed digit met (its light value's signed digits; none in
+    C), X (N - 1 adds of light values), X taken from each gate. Against plain photon meetings (lit light x lit plate).
+  ADDS: every read is one add; every lit signed digit met by a nonzero light value one add; the half table
+    (g - 1 + 2^(g-1) - 1 adds a group); X (N - 1); its take-away (M). Against plain adds (nonzero light x plate 1s).
+  No packed bit planes, so no word-op count.
+  Independent check path flat_build/2/check.py (numpy only, shares no code with machine.py, runm.c or gbank: its own
+  groups, cells, patterns, table and reads): every pile and every counted item, bank by bank. The same session wrote
+  both, so it is NOT a separate checker under rule 10.
+
+PREDICTIONS
+  P1  EXACT: every pile of all 48 banks at all 648 positions identical to plain_refs, at g12 and gR, main and
+      order-free; the shuffled-light piles identical to the shuffled light's direct product; the cell identity
+      asserted on every bank.
+  P2  READ COUNTS (fixed by the plate, the same at every position): at gR equal number for number to the judge's
+      cellrule_counts.json formC_everywhere_uh_reads at every one of the 48 banks: qkv 26,236,717, proj 9,666,449,
+      fc 35,212,265, mproj 37,795,137 a position (summed over layers).
+  P3  BASELINE: gbank at g = 12 on this light = 22.78% of the banks' plain photons (2,737,920,452 a token), +-0.01.
+  P4  PICK 2 ALONE (g12): the read work (reads + signed-digit reads) falls 3.0-4.0%; by kind about qkv -5.1M,
+      proj -1.15M, fc -5.3M, mproj -6.0M a token, together about -17.5M (-15 to -20M).
+      The entries written: C's set of entries read contains A's in every cell (above c both read the sign sheet's
+      entry), so pwrite rises by 0 to +1%.
+      Table, light, X and its take-away: identical to the photon.
+      BANKS: 22.78% -> about 22.15% (22.05-22.25%) of plain.
+  P5  PICK 1 + PICK 2 (gR): gbank at gR about 22.05% (21.95-22.15%; pick 1 alone, from sizes.py's -1.78 / -1.71
+      points at proj / mproj); with the run about 21.43% (21.30-21.55%), a saving of about 17M a token on top of
+      pick 1.
+  P6  ADDS: the group work in adds falls 3.5-4.5% (reads dominate the adds; C reads c + 1 a cell against A's h plus
+      its top digits). As a share of plain adds: A about 23.5% (22.5-24.5), C about 22.5% (21.5-23.5).
+  P7  SHUFFLE CONTROL: the read counts are identical by construction (plate alone); the run's saving (A - C) on the
+      shuffled light within 0.05 point of plain of the real light's, and each machine's total within 0.1 point.
+  P8  ORDER-FREE: piles identical; reads count, read photons and entries written identical; the table within 0.01
+      point (the walk turns other lines); X identical.
+  P9  WHOLE MACHINE (not run here; a projection from the banks): 711.4M - about 17.5M = about 694M a token = 18.9%
+      for pick 2 alone; stacked on pick 1 (691.5M predicted) about 674M = 18.4%. Nowhere near 3%: the run removes
+      one of about 15 sheets a cell, and the packets left still cancel across groups inside each gate (98%).
+  P10 THE INDEPENDENT PATH agrees with every pile and every count, bank by bank, to the photon.
+
+RULE 13, CHECKED BEFORE THE RUN
+  13.1 the measure is the work of the finished piles, every pile exact; the light's 1s enter only as the counted
+       writing, as in every earlier count.
+  13.2 the base is the machine's own plates and light; the plate is only written in a different exact digit form,
+       cell by cell; nothing is reshaped.
+  13.3 no equality statistic: the shuffle measures work.
+  13.4 the read counts are fixed by the definition (plate alone) and are stated as such (P2); the run measures the
+       photons, the entries written, and exactness.
+  13.5 the restatement above is the session's, labelled so.
+  13.6 every bank, every position, both g; nothing cut short.
+
+RESULTS (2026-10-08; out/report.log, out/machine_g12.log, out/machine_gR.log, out/check_g12.log, out/check_gR.log,
+out/plate_shuffle.log; a token = the mean over the 648 refs positions; banks' plain 2,737,920,452 photons a token)
+  P1  HELD. Every pile of all 48 banks at all 648 positions identical to plain_refs at g12 and gR, main and order-free
+      (asserted); the shuffled-light piles identical to the shuffled light's direct product; the cell identity and
+      "every sheet above c is the flipped sign sheet" asserted on every bank; the walked table's photons = the
+      relation's at every position.
+  P2  HELD. Read counts at gR equal the judge's cellrule_counts.json at all 48 banks: qkv 26,236,717, proj 9,666,449,
+      fc 35,212,265, mproj 37,795,137 a position.
+  P3  HELD. gbank at g = 12 on this light: 623,670,084 a token = 22.779% (predicted 22.78 +- 0.01).
+  P4  HELD. Pick 2 alone (g12): 606,323,024 a token = 22.145% (predicted 22.15, 22.05-22.25); -17,347,061 a token
+      (-0.634 point). By kind: qkv -5.10M (pred -5.1), proj -1.11M (-1.15), fc -5.34M (-5.3), mproj -5.79M (-6.0).
+      Read work (reads + signed-digit reads) 96.58% of A's (predicted a 3.0-4.0% fall: 3.42%). Entries written
+      +0.088% (predicted 0 to +1%). Table, light, X and its take-away identical to the photon.
+      By item: reads +18.01M, signed-digit reads -35.42M (all gone), entries written +0.06M.
+  P5  HELD. gR: gbank 603,683,247 = 22.049% (pred 22.05, 21.95-22.15); with the run 586,545,570 = 21.423% (pred 21.43,
+      21.30-21.55); -17,137,677 a token on top of pick 1.
+  P6  HELD. Adds: C/A 95.80% at g12, 95.87% at gR (predicted a 3.5-4.5% fall). Share of plain adds (531,469,716 a
+      token): A 22.81% (pred 22.5-24.5), C 21.86% (pred 21.5-23.5); gR: A 22.87%, C 21.93%.
+  P7  HELD. Light shuffled: A -0.016 point, C -0.031 point; the run's saving -0.649 against -0.634 real (g12);
+      gR -0.641 against -0.626.
+  P8  HELD overall, one kind just over. Order-free: piles, reads count, read photons, entries written and X identical
+      at every bank; the table +0.0003 point overall (g12), -0.0009 (gR); by kind within 0.01 point except proj at g12,
+      -0.0115 point (predicted within 0.01).
+  P9  PROJECTION ONLY (the whole machine was not run end to end with pick 2; no judge5 run): the confirmed machine's
+      711,431,068 less the banks' change without qkv.0 (read there from storage, in signed digits): 694,189,083
+      = 18.93% (pick 2 alone); with pick 1's bank change measured here (-19,986,837) and pick 2 at gR (-17,032,601):
+      674,411,630 = 18.39%. fc.0 takes its rest light in the whole machine, not the whole light, so its share is
+      approximate.
+  P10 HELD (same session, so UNCHECKED under rule 10). check.py, numpy only, its own groups, cells (min/max), full
+      table by doubling, Gray walk enumerated, entries up to the flip: 48 of 48 banks at g12 and 48 of 48 at gR with
+      every pile exact and every counted item equal to machine.py's to the photon.
+  P11 MISSED. Each gate's weights shuffled across the lines: C's reads +0.00% (104,950,896 against 104,948,917 a
+      position), the run's saving 0.648 point against 0.634 real (102.3% of the real; predicted 70-95%). Every pile
+      exact on the shuffled plate. So the saving is NOT the plate's arrangement: it is set by the sizes of each gate's
+      own values (how far a random 12 of them reach below place 15), and the shuffle gives it back whole. Lines that
+      are large for many gates at once do not raise the read count measurably.
+  THE CELLS (plate only, g12): c = 15 (nothing skipped) in 15.4% (qkv), 19.5% (proj), 20.1% (fc), 7.5% (mproj) of
+      cells; c = 14 (one sheet skipped) in 55-64%; c = 13 in 16-29%; c <= 12 in 1-7%. Reads a cell 14.68-15.02.
+      Every gate's weights fill its own 16 places, so the flat above a random group of 12 of them is 1-2 sheets thick.
+
+ADDED BEFORE ITS RUN (2026-10-08, after the main runs, before plate_shuffle.py ran): THE PLATE SHUFFLE CONTROL
+  The light shuffle cannot touch the run: c is set by the plate alone. The plate's own control: each gate's weights
+  shuffled across the light lines (every gate keeps exactly its own values; which line carries which value is broken),
+  the same groups, the same light, at g12. A and C both rebuilt on the shuffled plate; piles against the shuffled
+  plate's direct product.
+  P11 The per-place rule (A) is unchanged (its counts by place are over the whole plate), so A's read count is the same.
+      C's read count rises on the shuffled plate: GPT-2 has lines whose weights are large for many gates at once; in
+      the real plate they raise c only in the one group that holds that line, shuffled they spread over every group.
+      Prediction: C's reads on the shuffled plate 0.3-2% above the real plate's; the run's saving (A - C) on the
+      shuffled plate 70-95% of the real plate's.

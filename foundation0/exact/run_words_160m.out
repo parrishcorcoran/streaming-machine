@@ -1,0 +1,76 @@
+remove_exact.py  size 160m  order plain  texts 30  greedy True  cases ['fin', 'k', 'p', 'ck1', 'ck2', 'ck3', 'cp1', 'cp2', 'cp3']
+  c from the never-built rows 1.180269e-02 -> 12673038 x 2^-30;  the settings' product 8.961508e-03 -> 9622346 x 2^-30
+  fin: the finished machine's word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to ../pythia_base2.py's run in 30 of 30 texts
+  k    top-1  94.37%  top-5 100.00%  (of 622);  16 continuation top-1  94.17% [pairing-broken  2.5%];  greedy words 308/480 texts 11/30;  piles identical: positions 0/622 texts 0/30;  20.1s  peak 2.27 GB
+       the finished word's lead moved by: median 0.13015  99th pct 0.59076  max 1.48477 logits
+       positions lost (finished lead -> here): t0p16 0.0434->-0.0208, t2p4 0.0764->-0.2070, t3p11 0.0842->-0.0501, t5p9 0.1127->-0.1110, t5p14 0.0782->-0.0924, t9p1 0.2393->-0.0376, t9p2 0.3125->-0.0370, t9p3 0.1145->-0.0019, t10p4 0.0194->-0.0785, t10p20 0.2006->-0.0872, t11p15 0.1498->-0.1022, t11p18 0.1996->-0.0975 ...
+       weights changed on the grid: 160,304,007 of 162,201,600 (98.83%), mean |change| 39.09 grains, largest 386; inside the finished weight's own 11-place grain 6.6%
+       by kind: qkv 99.0% mean 46.63 max 386 in-grain 4%  proj 98.2% mean 20.23 max 196 in-grain 7%  fc 99.4% mean 55.36 max 385 in-grain 3%  mproj 97.4% mean 13.75 max 172 in-grain 9%  head 98.9% mean 28.14 max 386 in-grain 13%  embed 99.4% mean 56.00 max 386 in-grain 3%
+       text 0 'The capital of France is': here ' located in the city of Paris.\n\nThe city is home to the French'  finished ' located in the city of Paris.\n\nThe city is also home to the'
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the United States.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 3 'The quick brown fox': here 'es, the quick brown foxes, and the quick brown foxes, are'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 5 'My favorite food is': here " the chicken.\n\nI'm not sure if I'm eating the chicken,"  finished ' the chicken.\n\nI have a chicken that I have never had before.'
+  p    top-1  95.66%  top-5 100.00%  (of 622);  16 continuation top-1  95.21% [pairing-broken  2.3%];  greedy words 327/480 texts 13/30;  piles identical: positions 0/622 texts 0/30;  18.8s  peak 2.27 GB
+       the finished word's lead moved by: median 0.09885  99th pct 0.47108  max 1.34615 logits
+       positions lost (finished lead -> here): t0p16 0.0434->-0.0203, t2p4 0.0764->-0.1398, t3p11 0.0842->-0.0406, t5p9 0.1127->-0.0550, t5p14 0.0782->-0.0555, t10p4 0.0194->-0.0721, t10p20 0.2006->-0.0224, t11p15 0.1498->-0.0503, t11p18 0.1996->-0.0180, t12p3 0.0356->-0.1558, t12p7 0.0064->-0.1064, t13p13 0.0679->-0.1730 ...
+       weights changed on the grid: 159,726,058 of 162,201,600 (98.47%), mean |change| 29.68 grains, largest 293; inside the finished weight's own 11-place grain 8.7%
+       by kind: qkv 98.7% mean 35.41 max 293 in-grain 6%  proj 97.7% mean 15.36 max 149 in-grain 9%  fc 99.2% mean 42.03 max 292 in-grain 4%  mproj 96.7% mean 10.44 max 131 in-grain 12%  head 98.5% mean 21.37 max 293 in-grain 17%  embed 99.2% mean 42.52 max 293 in-grain 4%
+       text 0 'The capital of France is': here ' located in the city of Paris.\n\nThe city is home to the French'  finished ' located in the city of Paris.\n\nThe city is also home to the'
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the United States.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 3 'The quick brown fox': here 'es, the quick brown foxes, and the quick brown foxes, the'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 5 'My favorite food is': here " the chicken.\n\nI'm not sure if I'm eating the chicken,"  finished ' the chicken.\n\nI have a chicken that I have never had before.'
+  ck1  top-1  95.50%  top-5 100.00%  (of 622);  16 continuation top-1  96.04% [pairing-broken  3.1%];  greedy words 302/480 texts 14/30;  piles identical: positions 0/622 texts 0/30;  28.0s  peak 2.59 GB
+       the finished word's lead moved by: median 0.10124  99th pct 0.42530  max 0.94188 logits
+       positions lost (finished lead -> here): t1p0 0.0354->-0.2292, t1p13 0.1603->-0.0120, t2p4 0.0764->-0.0760, t4p8 0.1956->-0.1426, t5p9 0.1127->-0.0223, t7p2 0.0439->-0.0246, t8p1 0.0835->-0.0857, t9p3 0.1145->-0.1004, t10p11 0.0851->-0.0197, t10p15 0.3163->-0.0933, t11p6 0.0716->-0.0345, t12p3 0.0356->-0.0002 ...
+       weights changed on the grid: 160,302,981 of 162,201,600 (98.83%), mean |change| 39.09 grains, largest 608; inside the finished weight's own 11-place grain 6.6%
+       by kind: qkv 99.0% mean 46.63 max 608 in-grain 4%  proj 98.2% mean 20.23 max 203 in-grain 7%  fc 99.4% mean 55.36 max 474 in-grain 3%  mproj 97.4% mean 13.76 max 181 in-grain 9%  head 98.9% mean 28.14 max 540 in-grain 13%  embed 99.4% mean 56.00 max 483 in-grain 3%
+       text 1 'Once upon a time': here ', the world was a place of peace and harmony, and the people were the'  finished ', the world was a place of peace and harmony.\n\nThe world was'
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the American settlers.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 4 'Water boils at': here ' a rate of about 1,000 gallons per minute.\n\nThe water is'  finished ' a rate of about 1.5 gallons per minute.\n\nThe water is'
+       text 5 'My favorite food is': here ' the chicken.\n\nI love the chicken. I love the chicken. I'  finished ' the chicken.\n\nI have a chicken that I have never had before.'
+  ck2  top-1  94.53%  top-5 100.00%  (of 622);  16 continuation top-1  95.00% [pairing-broken  2.5%];  greedy words 326/480 texts 13/30;  piles identical: positions 0/622 texts 0/30;  25.9s  peak 2.59 GB
+       the finished word's lead moved by: median 0.09100  99th pct 0.52207  max 0.95956 logits
+       positions lost (finished lead -> here): t0p16 0.0434->-0.0058, t1p17 0.2824->-0.1300, t3p4 0.0028->-0.0435, t4p1 0.0330->-0.0341, t7p2 0.0439->-0.2172, t10p4 0.0194->-0.2664, t10p8 0.3629->-0.0316, t10p14 0.1272->-0.1690, t10p18 0.2813->-0.4135, t12p3 0.0356->-0.0697, t12p13 0.1905->-0.0713, t13p16 0.1210->-0.0510 ...
+       weights changed on the grid: 160,303,821 of 162,201,600 (98.83%), mean |change| 39.09 grains, largest 576; inside the finished weight's own 11-place grain 6.6%
+       by kind: qkv 99.0% mean 46.64 max 576 in-grain 4%  proj 98.2% mean 20.23 max 190 in-grain 7%  fc 99.4% mean 55.36 max 442 in-grain 3%  mproj 97.4% mean 13.75 max 177 in-grain 9%  head 98.9% mean 28.14 max 534 in-grain 13%  embed 99.4% mean 56.00 max 508 in-grain 3%
+       text 0 'The capital of France is': here ' located in the city of Paris.\n\nThe city is home to the largest'  finished ' located in the city of Paris.\n\nThe city is also home to the'
+       text 1 'Once upon a time': here ', the world was a place of peace and harmony.\n\nThe first time'  finished ', the world was a place of peace and harmony.\n\nThe world was'
+       text 3 'The quick brown fox': here 'es are the most common in the area, but the other two are more common'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 10 'The largest planet in our solar system is': here ' the Milky Way, and it is the only one that has a large amount of'  finished ' the Sun, and it is the largest planet in the universe. The Sun is'
+  ck3  top-1  94.86%  top-5 100.00%  (of 622);  16 continuation top-1  95.21% [pairing-broken  2.3%];  greedy words 354/480 texts 16/30;  piles identical: positions 0/622 texts 0/30;  23.9s  peak 2.59 GB
+       the finished word's lead moved by: median 0.08736  99th pct 0.51432  max 1.17516 logits
+       positions lost (finished lead -> here): t1p0 0.0354->-0.1595, t4p1 0.0330->-0.1409, t6p11 0.1540->-0.0522, t7p2 0.0439->-0.0760, t9p4 0.0860->-0.0420, t10p10 0.0198->-0.0355, t11p0 0.1737->-0.0975, t11p6 0.0716->-0.1401, t11p9 0.0255->-0.0306, t12p3 0.0356->-0.1063, t13p16 0.1210->-0.4180, t13p18 0.1046->-0.0004 ...
+       weights changed on the grid: 160,303,082 of 162,201,600 (98.83%), mean |change| 39.09 grains, largest 610; inside the finished weight's own 11-place grain 6.6%
+       by kind: qkv 99.0% mean 46.64 max 610 in-grain 4%  proj 98.2% mean 20.23 max 190 in-grain 7%  fc 99.4% mean 55.36 max 471 in-grain 3%  mproj 97.4% mean 13.75 max 181 in-grain 9%  head 98.9% mean 28.14 max 477 in-grain 13%  embed 99.4% mean 56.00 max 534 in-grain 3%
+       text 6 'The theory of relativity states that': here ' the universe is a static, non-interacting, non-interacting, non-'  finished ' the universe is a static, static, static, static, static, static,'
+       text 9 'Two plus two equals': here ' to one.\n\nThe first is the number of times the number of times'  finished ' to two equals to two equals to two equals to two equals to two equals to'
+       text 10 'The largest planet in our solar system is': here ' the Sun, which is the largest known object in the Universe. The Sun is'  finished ' the Sun, and it is the largest planet in the universe. The Sun is'
+       text 11 'She opened the door and saw': here ' the man standing there.\n\n"I\'m sorry," she said. "'  finished ' the woman standing there, her face pale and her eyes wide. She was wearing'
+  cp1  top-1  97.27%  top-5 100.00%  (of 622);  16 continuation top-1  97.50% [pairing-broken  2.7%];  greedy words 366/480 texts 19/30;  piles identical: positions 0/622 texts 0/30;  22.4s  peak 2.59 GB
+       the finished word's lead moved by: median 0.07609  99th pct 0.33867  max 0.76811 logits
+       positions lost (finished lead -> here): t1p0 0.0354->-0.1643, t2p4 0.0764->-0.0375, t4p8 0.1956->-0.0605, t7p2 0.0439->-0.0098, t8p1 0.0835->-0.0416, t9p3 0.1145->-0.0415, t10p15 0.3163->-0.0355, t11p6 0.0716->-0.0122, t13p16 0.1210->-0.1363, t22p4 0.0229->-0.0045, t23p8 0.0595->-0.0427, t23p9 0.0286->-0.0869 ...
+       weights changed on the grid: 159,728,638 of 162,201,600 (98.48%), mean |change| 29.68 grains, largest 462; inside the finished weight's own 11-place grain 8.7%
+       by kind: qkv 98.7% mean 35.41 max 462 in-grain 6%  proj 97.7% mean 15.36 max 154 in-grain 9%  fc 99.2% mean 42.03 max 360 in-grain 4%  mproj 96.7% mean 10.44 max 137 in-grain 12%  head 98.5% mean 21.37 max 410 in-grain 17%  embed 99.2% mean 42.52 max 367 in-grain 4%
+       text 2 'In 1492, Columbus': here ', Ohio, was the first city to be founded by the American settlers.\n'  finished ' was the first city to be founded by the Spanish, and the first city to'
+       text 4 'Water boils at': here ' a rate of about 1,000 gallons per minute.\n\nThe water is'  finished ' a rate of about 1.5 gallons per minute.\n\nThe water is'
+       text 9 'Two plus two equals': here ' the number of times the number of times the number of times the number of times'  finished ' to two equals to two equals to two equals to two equals to two equals to'
+       text 10 'The largest planet in our solar system is': here ' the Sun, and it is the largest known planet in the Universe. The Sun'  finished ' the Sun, and it is the largest planet in the universe. The Sun is'
+  cp2  top-1  95.18%  top-5 100.00%  (of 622);  16 continuation top-1  95.62% [pairing-broken  2.5%];  greedy words 339/480 texts 14/30;  piles identical: positions 0/622 texts 0/30;  25.4s  peak 2.59 GB
+       the finished word's lead moved by: median 0.06485  99th pct 0.42633  max 0.89047 logits
+       positions lost (finished lead -> here): t1p17 0.2824->-0.0535, t3p4 0.0028->-0.0320, t4p1 0.0330->-0.0199, t7p2 0.0439->-0.1517, t10p4 0.0194->-0.1942, t10p14 0.1272->-0.0294, t10p18 0.2813->-0.1774, t12p3 0.0356->-0.0453, t12p13 0.1905->-0.0104, t13p16 0.1210->-0.0655, t13p18 0.1046->-0.0388, t14p2 0.0552->-0.0835 ...
+       weights changed on the grid: 159,729,166 of 162,201,600 (98.48%), mean |change| 29.68 grains, largest 437; inside the finished weight's own 11-place grain 8.7%
+       by kind: qkv 98.7% mean 35.41 max 437 in-grain 6%  proj 97.7% mean 15.36 max 144 in-grain 9%  fc 99.2% mean 42.03 max 336 in-grain 4%  mproj 96.7% mean 10.44 max 134 in-grain 12%  head 98.5% mean 21.37 max 405 in-grain 17%  embed 99.2% mean 42.52 max 386 in-grain 4%
+       text 1 'Once upon a time': here ', the world was a place of peace and harmony.\n\nThe first time'  finished ', the world was a place of peace and harmony.\n\nThe world was'
+       text 3 'The quick brown fox': here 'es are the most common in the area, but the other two are more common'  finished 'es, the quick brown foxes, the quick brown foxes, the quick'
+       text 10 'The largest planet in our solar system is': here ' the Sun, and it is the only planet in the solar system that has a'  finished ' the Sun, and it is the largest planet in the universe. The Sun is'
+       text 12 'def fibonacci(n):': here '\n    """\n    Returns the Fibonacci number of n.\n    '  finished '\n    """\n    Returns the number of Fibonacci numbers.\n    '
+  cp3  top-1  95.66%  top-5 100.00%  (of 622);  16 continuation top-1  96.04% [pairing-broken  2.5%];  greedy words 363/480 texts 17/30;  piles identical: positions 0/622 texts 0/30;  23.6s  peak 2.59 GB
+       the finished word's lead moved by: median 0.06699  99th pct 0.41237  max 1.14070 logits
+       positions lost (finished lead -> here): t1p0 0.0354->-0.1196, t4p1 0.0330->-0.0974, t6p11 0.1540->-0.0027, t7p2 0.0439->-0.0383, t9p4 0.0860->-0.0170, t10p10 0.0198->-0.0220, t11p0 0.1737->-0.0259, t11p6 0.0716->-0.0843, t11p9 0.0255->-0.0138, t13p16 0.1210->-0.3228, t14p2 0.0552->-0.1426, t14p5 0.0099->-0.0630 ...
+       weights changed on the grid: 159,728,629 of 162,201,600 (98.48%), mean |change| 29.68 grains, largest 463; inside the finished weight's own 11-place grain 8.7%
+       by kind: qkv 98.7% mean 35.41 max 463 in-grain 6%  proj 97.7% mean 15.36 max 144 in-grain 9%  fc 99.2% mean 42.03 max 357 in-grain 4%  mproj 96.7% mean 10.44 max 137 in-grain 12%  head 98.5% mean 21.37 max 362 in-grain 17%  embed 99.2% mean 42.52 max 405 in-grain 4%
+       text 6 'The theory of relativity states that': here ' the universe is a static, non-interacting, non-interacting, non-'  finished ' the universe is a static, static, static, static, static, static,'
+       text 9 'Two plus two equals': here ' to one.\n\nThe first is the number of times the number of times'  finished ' to two equals to two equals to two equals to two equals to two equals to'
+       text 10 'The largest planet in our solar system is': here ' the Sun, which is the largest known planet in the Universe. The Sun is'  finished ' the Sun, and it is the largest planet in the universe. The Sun is'
+       text 11 'She opened the door and saw': here ' the man standing there.\n\n"I\'m sorry," she said. "'  finished ' the woman standing there, her face pale and her eyes wide. She was wearing'
+done 195s  peak memory 2.59 GB

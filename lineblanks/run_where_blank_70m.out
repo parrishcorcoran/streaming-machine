@@ -1,0 +1,26 @@
+WHERE THE BLANK'S WRITES GO, pythia-70m: 622 positions; powers of two recovered (0s, 217 MB)
+  20 scrambles done (3s, 292 MB)
+  5 fresh draws done (4s, 292 MB)
+
+== a. the share of each layer's blank write taken back by all later layers' writes ==
+   layer | WORD part: real  scr mean +- spread  z  fresh(5)  || built part  | STANDING part: real  scr mean +- spread  z  || built part
+   L0   | +1.0355  +0.0068 +- 0.1734  z  +5.9  [+0.128 +0.010 +0.230 +0.352 -0.222]  || +0.6246  | -15.069  +5.385 +- 19.854  z  -1.0  || -0.821
+   L1   | +0.9823  +0.0690 +- 0.2055  z  +4.4  [+0.365 -0.465 +0.359 -0.842 +0.082]  || +0.7425  | +16.628  +1.891 +- 15.273  z  +1.0  || +2.433
+   L2   | +1.0313  -0.0961 +- 1.0676  z  +1.1  [+0.625 -1.207 +0.626 -1.061 +0.151]  || +1.0956  | -2.877  +0.658 +- 6.077  z  -0.6  || +1.028
+   L3   | +0.3490  +0.1917 +- 0.9689  z  +0.2  [-2.091 -1.650 +0.440 +1.017 +0.277]  || -0.0132  | +13.044  +1.659 +- 8.388  z  +1.4  || -1.097
+   L4   | -0.6928  +0.0087 +- 0.7551  z  -0.9  [-0.433 -0.022 -1.090 +0.505 +0.560]  || -0.6485  | +7.476  -0.621 +- 5.017  z  +1.6  || -0.704
+
+== b. the summed blank write against everything else in the top stream, the word row, and the biases ==
+   everything else in the top stream, word parts    share taken back +0.4887   scrambles +0.0079 +- 0.0694   z  +6.9   fresh [-0.053 -0.184 +0.075 -0.153 -0.147]
+   everything else in the top stream, standing      share taken back -1.1925   scrambles +0.1563 +- 1.4336   z  -0.9   fresh [-0.918 -0.195 +1.751 -0.138 +2.033]
+   the word row, word parts                         share taken back -0.0019   scrambles -0.0002 +- 0.0009   z  -2.0   fresh [-0.000 +0.001 +0.001 +0.001 +0.001]
+   the word row, standing                           share taken back -0.0104   scrambles +0.0006 +- 0.0047   z  -2.3   fresh [-0.004 -0.004 +0.001 -0.006 +0.004]
+   the biases summed over layers (standing)         share taken back -0.9198   scrambles +0.0237 +- 0.4955   z  -1.9   fresh [-0.646 +0.408 +0.531 -0.405 -0.579]
+
+== c. how big the blank's writes so far are in the stream each gauge reads (pooled squares) ==
+   entering layer l (l = L: the top): |blank so far|^2 / |stream|^2, whole and word parts:  L0 0.0000/0.0000  L1 0.0058/0.0083  L2 0.0052/0.0066  L3 0.0019/0.0020  L4 0.0022/0.0023  L5 0.0069/0.0076  L6 0.0014/0.0148
+
+== d. context: each layer's whole write (as added, no bias) against the word row, word parts: cos ==
+   L0 whole +0.039 blank +0.041  L1 whole -0.019 blank -0.003  L2 whole +0.001 blank +0.002  L3 whole -0.005 blank -0.001  L4 whole -0.009 blank -0.006  L5 whole -0.002 blank -0.000
+
+wrote where_blank_70m.json (4s, max 302 MB)

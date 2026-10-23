@@ -1,0 +1,118 @@
+{
+ "light": "real",
+ "order": 0,
+ "layers": [
+  0
+ ],
+ "per_layer": {
+  "0": {
+   "edges": 1990656,
+   "dark": 1753099,
+   "zero": 11,
+   "bright": 237546,
+   "g0": 3881,
+   "g0_dark": 3748,
+   "g0_bright": 122,
+   "sum_o": 5803616815,
+   "sum_g": 12691472390,
+   "sum_out": 15401702335,
+   "sum_g_dark": 11144778955,
+   "sum_g_bright": 1546693435,
+   "sum_out_bright": 4256923380,
+   "glow_mirror_equal": 1881475,
+   "glow_mirror_maxdiff": 5,
+   "we2_min": -16,
+   "W_open": 1713272642094386,
+   "W_glow": 1084286620790105,
+   "W_out": 1320913427740695,
+   "lines": 497664,
+   "lines_glow_gt_open": 175701,
+   "lines_glow_gt_out": 232493,
+   "lines_open_gt_out": 310995,
+   "lines_out_zero": 0,
+   "W_machine_minus_exact": 394720343789,
+   "groups": [
+    {
+     "edges": 5138,
+     "g0": 3742,
+     "sum_o": 0,
+     "sum_g": 7356,
+     "sum_out": 7356,
+     "W_open": 0,
+     "W_glow": 17717924956,
+     "meet_plain": 1082184
+    },
+    {
+     "edges": 315081,
+     "g0": 0,
+     "sum_o": 0,
+     "sum_g": 512763180,
+     "sum_out": 512763180,
+     "W_open": 0,
+     "W_glow": 96670708707475,
+     "meet_plain": 5972635138
+    },
+    {
+     "edges": 1432880,
+     "g0": 6,
+     "sum_o": 0,
+     "sum_g": 10632008419,
+     "sum_out": 10632008419,
+     "W_open": 0,
+     "W_glow": 836052635253886,
+     "meet_plain": 35396585842
+    },
+    {
+     "edges": 236373,
+     "g0": 15,
+     "sum_o": 5529492380,
+     "sum_g": 1546443194,
+     "sum_out": 3983049186,
+     "W_open": 1415163612320037,
+     "W_glow": 332814104454878,
+     "meet_plain": 6186189666
+    },
+    {
+     "edges": 1184,
+     "g0": 118,
+     "sum_o": 274124435,
+     "sum_g": 250241,
+     "sum_out": 273874194,
+     "W_open": 721166639262539,
+     "W_glow": 668034973126,
+     "meet_plain": 44948764
+    }
+   ],
+   "meet_plain": 47601441594,
+   "meet_open": 6612961991,
+   "meet_glow": 47029248364,
+   "meet_plain_dark": 41370303164,
+   "adds_join": 497664
+  }
+ },
+ "checks": {
+  "g_negative": 0,
+  "o_minus_g_not_out": 0,
+  "dark_glow_not_minus_out": 0,
+  "write_identity": 0,
+  "groups_add_to_open_write": 0,
+  "groups_add_to_glow_write": 0,
+  "g16_negative": 0,
+  "g16_identity": 0,
+  "fc_pile_vs_saved_run": 0,
+  "mproj_pile_vs_saved_run": 0,
+  "stream_vs_saved_run": 0
+ },
+ "digests": {
+  "0": {
+   "H": "c0d692fafb04c8e72227e24c3266a02856194e6b1b268f536a71ceb5b27b597c",
+   "out": "f78bd9f290db60d8c1a6709b49ed1ac96538bb4cea7c5056c141dc95ba0bcc5a",
+   "g": "d3dca599be3685129b19ef84d190a9888b7626b2d361659b609384859c00da0b",
+   "W_open": "f5eee3f4cba7b73e75b3e15bff05a9eda9d3448fe6055ad4ddf7e2812d6b1bb3",
+   "W_glow": "2769a3ea2c015ba3670756a069348630df42fa4d0f3808eddd4036370c9d98f4",
+   "W_out": "99eb699823e7081be9f36c3a8e113ecea75f84fbcd04ca333c2e08de087488d0",
+   "g16": "a06df3024281976046d0ea16036be53b35e87f6ba3d8e6b877020e1918146da9",
+   "sh": "1b4d1ee26bf21dded90dbde6c5f4166b626804b1b2c360af2b5c4afa04d0f81d"
+  }
+ }
+}

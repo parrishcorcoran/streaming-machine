@@ -1,0 +1,8 @@
+THE TOP READ (checker's rebuild) on orderfree: 63 positions; seed 1, reorder 4242, words relabelled True
+  top table laid: up/hole places [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], signed places lit [14, 15], 4,638,101 lit signed digits, kcorr -1, groups 64; (16s, 1658 MB)
+  places read, top down: [15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]; B(b) [49151, 16383, 8191, 4095, 2047, 1023, 511, 255, 127, 63, 31, 15, 7, 3, 1, 0]
+    6/63 positions read (1s, 1705 MB) {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+    63/63 positions read (8s, 1759 MB) {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+  checks: {'piles from the group parts vs the direct product (words)': 0, 'bound broken (any word, check)': 0, 'a word set aside that is not below the 5th-best': 0, 'a finished doubled pile is odd': 0, 'words read to the end: pile vs the direct product': 0, "words read to the end vs the plain read's score": 0}
+  top 5 = the plain read's 63/63, race winner 63/63
+done, max memory 1759 MB

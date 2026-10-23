@@ -1,0 +1,37 @@
+{
+"K": {
+"qkv|real|shared": 68467237979,
+"qkv|real|signed": 46550357360,
+"qkv|shuffled|shared": 68971809940,
+"qkv|shuffled|signed": 46576417758,
+"scores|real|signed": 308671792,
+"scores|real|plain": 547774365,
+"mix|real|signed": 474376587,
+"mix|real|plain": 887329792,
+"scores|shuffled|signed": 308253020,
+"scores|shuffled|plain": 546835678,
+"mix|shuffled|signed": 470071184,
+"mix|shuffled|plain": 877807372,
+"proj|real|shared": 25693823682,
+"proj|real|signed": 18904780465,
+"proj|shuffled|shared": 25852405337,
+"proj|shuffled|signed": 18908647851,
+"fc|real|shared": 100444985828,
+"fc|real|signed": 66458340902,
+"fc|shuffled|shared": 96305696517,
+"fc|shuffled|signed": 66589291212,
+"mproj|real|shared": 123230516739,
+"mproj|real|signed": 72094230195,
+"mproj|shuffled|shared": 123803827412,
+"mproj|shuffled|signed": 72124779627
+},
+"n": 127,
+"texts": [
+0,
+5,
+10,
+15,
+20,
+25
+]
+}

@@ -1,0 +1,39 @@
+ONLY THE EXTRA -- prediction, written 2026-10-08 before onlyextra.py ran.
+
+His words (2026-10-08): "TERNARY and 4 bit quantization proves it's not necessary to store all the extras."
+"Ternary is 10x smaller and is the worst way to get rid of the extra. We already proved the extra is all we need"
+
+The picture (the session's restatement): every weight and every light value is a stack of photons on circles of 2.
+The low photons are speckle that cancels in every pile (the flat is the cancelling). The extra stands above the flat
+in the top corner, where the light's top photons meet the plate's top photons. So keep only each weight's top k
+photons (single waves: up or hole, never two side by side), meet only the light's top j photons, and the token
+should come through.
+
+Fixed points, none searched: k = 1, 2, 3 (plates and the word table; the top table printed from the cut word table
+through the 768 whole-number gains, as the machine builds it). j = full, 3, 2 at every plate and at the top read.
+
+SESSION'S PREDICTION (from the task, uncertain):
+  k = 1: judge5 top 5 kept at 55-75%, same top word 35-55% (the record's 19/30)
+  k = 2: 90-97% / 75-90%
+  k = 3: 98-100% / 92-99%
+  light j = 3 on top of any k: a few points more lost
+  stored bits a weight: about 3.4 (k=1), 6-7 (k=2), 9 (k=3); none below ternary's 1.58
+  work: about 5-15% of plain at k=2, j=3
+  random-digit control (same count, not the top): loses most words
+
+THIS RUN'S OWN EXPECTATIONS, from the picture, before anything ran:
+  - Top k photons in single waves leave a value off by at most a third of its last kept photon, so the error on each
+    weight is about 1/3 (k=1), 1/12 (k=2), 1/48 (k=3) of the weight at worst. That error is speckle of the same kind
+    as the flat, but it does not cancel as well as the grain below place 3, because it is as big as the weight's own
+    third or fourth place, which is where the extra starts (docs/08: the extra reaches 5-7 diagonals down).
+  - So k=1 should lose a good share of words, k=2 should hold most, k=3 nearly all. Same ranges as above.
+  - Stored: k=1 carries a top place (about 2.3-2.5 bits) and a sign (1 bit): about 3.4. Each further photon about
+    2.8-3 bits (where among coin-flip places, plus up or hole). k=2 about 6.2, k=3 about 9. The word table costs a
+    little more per value than a plate (its places spread wider).
+  - Work at the plates, counted as lit light photons times lit plate photons: plain base 2 is about 6-7 ones a light
+    value times 6-7 ones a weight. k=2, j=3 is at most 2 x 3 = 6 a product, so about 10-15% of plain; the top read
+    stays near its plain cost because the printed top table has many photons whatever k is.
+  - Random k photons: the kept one is often a low photon, so the weight lands far below itself: most words lost even
+    at k=3. Shuffled within the plate: no words beyond chance (top 5 near 0).
+  - Order-free: reordering every plate's lines with the light, and relabelling the words at the top, gives identical
+    piles and identical words.

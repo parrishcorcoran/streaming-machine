@@ -1,0 +1,17 @@
+remove_exact.py  size 70m  order shuffle  texts 30  greedy True  cases ['fin', 'k', 'p']
+  c from the never-built rows 6.118418e-04 -> 656960 x 2^-30;  the settings' product 3.865910e-04 -> 415099 x 2^-30
+  fin: the finished machine's word = fp32's at 480 of 480 continuation positions; head piles of the last 16 positions identical (sha256) to ../pythia_base2.py's run in 30 of 30 texts (lanes shuffled)
+  k    top-1 100.00%  top-5 100.00%  (of 622);  16 continuation top-1 100.00% [pairing-broken  3.3%];  greedy words 480/480 texts 30/30;  piles identical: positions 0/622 texts 0/30;  4.6s  peak 1.56 GB
+       the finished word's lead moved by: median 0.01295  99th pct 0.11851  max 0.17500 logits
+       weights changed on the grid: 60,205,193 of 70,385,664 (85.54%), mean |change| 2.60 grains, largest 20; inside the finished weight's own 11-place grain 62.6%
+       by kind: qkv 82.2% mean 2.78 max 20 in-grain 45%  proj 82.6% mean 2.27 max 20 in-grain 52%  fc 90.5% mean 3.45 max 20 in-grain 41%  mproj 75.9% mean 1.48 max 19 in-grain 58%  head 82.2% mean 1.77 max 14 in-grain 93%  embed 90.7% mean 3.50 max 20 in-grain 42%
+  p    top-1  99.84%  top-5 100.00%  (of 622);  16 continuation top-1  99.79% [pairing-broken  3.3%];  greedy words 476/480 texts 29/30;  piles identical: positions 0/622 texts 0/30;  4.7s  peak 1.56 GB
+       the finished word's lead moved by: median 0.00934  99th pct 0.08104  max 0.12610 logits
+       positions lost (finished lead -> here): t25p14 0.0300->-0.0109
+       weights changed on the grid: 54,631,649 of 70,385,664 (77.62%), mean |change| 1.63 grains, largest 13; inside the finished weight's own 11-place grain 73.6%
+       by kind: qkv 74.7% mean 1.74 max 13 in-grain 58%  proj 73.2% mean 1.42 max 13 in-grain 66%  fc 85.1% mean 2.17 max 13 in-grain 56%  mproj 63.4% mean 0.91 max 12 in-grain 72%  head 72.3% mean 1.10 max 9 in-grain 97%  embed 85.4% mean 2.20 max 13 in-grain 57%
+       text 25 'Shakespeare wrote': here ', "the most important of all is the fact that the most important of all'  finished ', "the most important of all is the fact that the author is not a'
+  order-free check, fin: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, k: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+  order-free check, p: every head pile at every position the same whole number as the plain run in 30 of 30 texts
+done 14s  peak memory 1.56 GB

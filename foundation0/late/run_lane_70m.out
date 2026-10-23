@@ -1,0 +1,33 @@
+lane_light.py  size 70m: 622 positions; a look in real numbers; p = (0.05, 0.1, 0.25, 0.5)
+  qkv.0    glow left with the relief kept on the brightest p of the lanes:  5% ->  61.2%  10% ->  55.5%  25% ->  43.7%  50% ->  27.2%   | the light's share in those lanes:  39.0  44.5  56.3  72.9
+  proj.0   glow left with the relief kept on the brightest p of the lanes:  5% ->  74.8%  10% ->  63.1%  25% ->  42.0%  50% ->  21.6%   | the light's share in those lanes:  24.5  36.3  58.1  78.0
+  fc.0     glow left with the relief kept on the brightest p of the lanes:  5% ->  12.7%  10% ->  11.3%  25% ->   8.6%  50% ->   5.2%   | the light's share in those lanes:  87.2  88.7  91.4  94.8
+  mproj.0  glow left with the relief kept on the brightest p of the lanes:  5% ->  70.9%  10% ->  62.5%  25% ->  46.4%  50% ->  26.5%   | the light's share in those lanes:  29.8  37.5  53.0  72.3
+  qkv.1    glow left with the relief kept on the brightest p of the lanes:  5% ->  56.1%  10% ->  51.1%  25% ->  40.0%  50% ->  24.5%   | the light's share in those lanes:  43.9  48.8  60.0  75.4
+  proj.1   glow left with the relief kept on the brightest p of the lanes:  5% ->  76.3%  10% ->  66.5%  25% ->  47.5%  50% ->  26.7%   | the light's share in those lanes:  23.5  33.3  52.3  73.3
+  fc.1     glow left with the relief kept on the brightest p of the lanes:  5% ->  43.6%  10% ->  39.3%  25% ->  30.4%  50% ->  18.4%   | the light's share in those lanes:  56.4  60.6  69.5  81.4
+  mproj.1  glow left with the relief kept on the brightest p of the lanes:  5% ->  74.6%  10% ->  66.7%  25% ->  48.2%  50% ->  26.2%   | the light's share in those lanes:  25.3  33.4  51.5  73.4
+  qkv.2    glow left with the relief kept on the brightest p of the lanes:  5% ->  43.5%  10% ->  39.6%  25% ->  30.7%  50% ->  18.5%   | the light's share in those lanes:  56.1  60.0  68.9  81.2
+  proj.2   glow left with the relief kept on the brightest p of the lanes:  5% ->  80.2%  10% ->  69.6%  25% ->  46.9%  50% ->  23.1%   | the light's share in those lanes:  19.2  29.6  52.7  76.3
+  fc.2     glow left with the relief kept on the brightest p of the lanes:  5% ->  45.7%  10% ->  41.5%  25% ->  32.1%  50% ->  19.4%   | the light's share in those lanes:  53.8  58.1  67.5  80.2
+  mproj.2  glow left with the relief kept on the brightest p of the lanes:  5% ->   4.7%  10% ->   4.2%  25% ->   3.2%  50% ->   1.8%   | the light's share in those lanes:  95.3  95.8  96.8  98.2
+  qkv.3    glow left with the relief kept on the brightest p of the lanes:  5% ->  56.3%  10% ->  48.4%  25% ->  32.3%  50% ->  16.2%   | the light's share in those lanes:  43.8  51.9  67.9  83.9
+  proj.3   glow left with the relief kept on the brightest p of the lanes:  5% ->  76.6%  10% ->  65.3%  25% ->  42.0%  50% ->  21.3%   | the light's share in those lanes:  22.1  33.4  56.9  78.1
+  fc.3     glow left with the relief kept on the brightest p of the lanes:  5% ->  57.8%  10% ->  52.4%  25% ->  40.0%  50% ->  24.0%   | the light's share in those lanes:  42.5  48.0  60.2  76.1
+  mproj.3  glow left with the relief kept on the brightest p of the lanes:  5% ->  48.5%  10% ->  39.5%  25% ->  26.5%  50% ->  13.9%   | the light's share in those lanes:  49.2  58.5  72.3  85.6
+  qkv.4    glow left with the relief kept on the brightest p of the lanes:  5% ->  67.4%  10% ->  53.9%  25% ->  30.7%  50% ->  12.7%   | the light's share in those lanes:  32.9  45.7  68.9  86.9
+  proj.4   glow left with the relief kept on the brightest p of the lanes:  5% ->  82.7%  10% ->  70.1%  25% ->  44.2%  50% ->  20.3%   | the light's share in those lanes:  18.0  29.8  54.9  79.7
+  fc.4     glow left with the relief kept on the brightest p of the lanes:  5% ->  63.9%  10% ->  56.8%  25% ->  41.6%  50% ->  23.1%   | the light's share in those lanes:  36.0  43.6  58.9  77.0
+  mproj.4  glow left with the relief kept on the brightest p of the lanes:  5% ->  43.8%  10% ->  36.5%  25% ->  22.5%  50% ->  10.3%   | the light's share in those lanes:  56.2  63.5  77.5  89.8
+  qkv.5    glow left with the relief kept on the brightest p of the lanes:  5% ->   4.1%  10% ->   2.6%  25% ->   1.5%  50% ->   0.8%   | the light's share in those lanes:  95.8  97.4  98.5  99.2
+  proj.5   glow left with the relief kept on the brightest p of the lanes:  5% ->  21.8%  10% ->  17.2%  25% ->  11.3%  50% ->   5.5%   | the light's share in those lanes:  78.9  83.0  88.7  94.5
+  fc.5     glow left with the relief kept on the brightest p of the lanes:  5% ->  55.0%  10% ->  46.5%  25% ->  33.3%  50% ->  19.6%   | the light's share in those lanes:  45.1  53.5  66.5  80.5
+  mproj.5  glow left with the relief kept on the brightest p of the lanes:  5% ->  23.3%  10% ->  18.6%  25% ->  10.9%  50% ->   4.5%   | the light's share in those lanes:  76.4  81.3  89.1  95.5
+  head     glow left with the relief kept on the brightest p of the lanes:  5% ->  81.9%  10% ->  71.3%  25% ->  46.9%  50% ->  21.7%   | the light's share in those lanes:  18.2  28.4  52.9  78.3
+
+by kind (median over layers): glow left at p = 5%, 10%, 25%, 50%
+  qkv     56.2%   49.7%   31.5%   17.3%
+  proj    76.5%   65.9%   43.1%   21.4%
+  fc      50.4%   44.0%   32.7%   19.5%
+  mproj   46.2%   38.0%   24.5%   12.1%
+peak memory 1.21 GB

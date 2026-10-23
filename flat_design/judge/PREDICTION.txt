@@ -1,0 +1,33 @@
+JUDGE, 2026-10-08. Written before runcount.py runs. The session's prediction, not his.
+
+QUESTION: design 2's plate sign run (places c..top of a (gate, group) cell hold one pattern up to the flip, read once)
+was measured only on the pure up/hole form. How much does it add ON TOP OF the confirmed per-place machine?
+Counted from the plates alone (no light): reads per (gate, group) cell, all 48 GPT-2 banks, groups keyed [1, slab,
+layer, g] at g = 12 (and g = 11 at proj, mproj, the readers relation).
+
+FORMS (each exact by the centred identity: sum_{b<h} 2^b (2 bit_b - 1) = 2 w_lo + 1 for any h, so h may differ by cell)
+  A  confirmed per-place: h from the plate (L_b < G x M), every cell reads h places; top digits w_hi met directly
+  B  A plus the run inside the up/hole places: a cell whose w_lo all lie in [-2^c, 2^c) reads c + 1 places
+  C  design 2's form: no per-place split, the run on the full 16 places (reads c + 1), no top digits
+  D  per cell: the cell's own split place h_jk = 1 + the cell's top place with any lit signed digit of the centred
+     residue... (simplest exact form: h_jk = 1 + c, i.e. the run, PLUS the per-place top digits only where the cell
+     has them): reads min(h, c + 1) where c from w itself; top digits only for cells whose c + 1 > h.
+
+PREDICTION
+  B saves 0.5-1.5% of A's reads (most cells' w_lo reach place 12-13): about 0.1-0.25 points of plain.
+  C's reads per cell 14.7-15.2 (design 2's measurement), above A's 14 (15 at qkv).
+  D saves 3-8% of A's up/hole reads plus most of the top digits at cells that have none: 0.4-1.2 points of plain.
+
+RESULTS (after runcount.py and cellrule_counts.py ran; plates alone, all 48 GPT-2 banks; every cell's identity
+asserted: the read places, with the run collapsed, give 2 w_lo + 1 back for every line and gate, at every split place)
+  read-equivalents (top digits priced 87/100 of a read) against the confirmed per-place form, g by readers:
+             B (run inside A)   C (design 2's form)   BC (cheaper per cell)   D (any split 8..16 per cell)
+    qkv          99.01%              95.74%                95.48%                  95.24%
+    proj         99.57%              97.55%                97.22%                  96.99%
+    fc           99.09%              96.51%                96.28%                  96.03%
+    mproj        99.51%              96.93%                96.56%                  96.34%
+  B saves 0.4-1.0% (predicted 0.5-1.5%: held at qkv, fc, mproj; proj 0.43% just under).
+  C reads a cell 14.65-15.02 (predicted 14.7-15.2: mproj 14.647 just under). NOT predicted: C, which drops every top
+    digit, is cheaper than A by 2.5-4.3% of the read work by itself.
+  D-type gain about 0.5 point of plain on the whole machine (predicted 0.4-1.2: held), and C alone is within 0.3% of D.
+  cellrule_counts.json: the exact read and top-digit counts a position, bank by bank, for the build to match.

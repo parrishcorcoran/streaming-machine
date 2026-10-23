@@ -1,0 +1,138 @@
+{
+ "qkv.5": {
+  "real": {
+   "P": 48,
+   "N": 768,
+   "M": 2304,
+   "plain": 2704252188,
+   "signed": 1574314903,
+   "pile_sd_digits": 1093970,
+   "uh_places": 16,
+   "uh_meetings": 21743271936,
+   "uh_excess": 627322688,
+   "sm_excess": 179776448,
+   "sd_excess": 141761875,
+   "sd_diag_excess": 50751449,
+   "sd_diag_digits": 6052679,
+   "sd_pair_digits": 36225389
+  },
+  "shuffle": {
+   "P": 48,
+   "N": 768,
+   "M": 2304,
+   "plain": 2706463513,
+   "signed": 1575380184,
+   "pile_sd_digits": 1105136,
+   "uh_places": 16,
+   "uh_meetings": 21743271936,
+   "uh_excess": 625699968,
+   "sm_excess": 177105680,
+   "sd_excess": 142042462,
+   "sd_diag_excess": 50878750,
+   "sd_diag_digits": 6141677,
+   "sd_pair_digits": 36453126
+  }
+ },
+ "proj.5": {
+  "real": {
+   "P": 48,
+   "N": 768,
+   "M": 768,
+   "plain": 921730646,
+   "signed": 534986467,
+   "pile_sd_digits": 359311,
+   "uh_places": 16,
+   "uh_meetings": 7247757312,
+   "uh_excess": 208540096,
+   "sm_excess": 60483784,
+   "sd_excess": 49318295,
+   "sd_diag_excess": 17285523,
+   "sd_diag_digits": 2070257,
+   "sd_pair_digits": 12693502
+  },
+  "shuffle": {
+   "P": 48,
+   "N": 768,
+   "M": 768,
+   "plain": 921978699,
+   "signed": 535105347,
+   "pile_sd_digits": 373040,
+   "uh_places": 16,
+   "uh_meetings": 7247757312,
+   "uh_excess": 208601840,
+   "sm_excess": 61648448,
+   "sd_excess": 49366967,
+   "sd_diag_excess": 17339423,
+   "sd_diag_digits": 2088047,
+   "sd_pair_digits": 12723468
+  }
+ },
+ "fc.5": {
+  "real": {
+   "P": 48,
+   "N": 768,
+   "M": 3072,
+   "plain": 3606020381,
+   "signed": 2097118380,
+   "pile_sd_digits": 1475480,
+   "uh_places": 16,
+   "uh_meetings": 28991029248,
+   "uh_excess": 836593728,
+   "sm_excess": 241227616,
+   "sd_excess": 188570906,
+   "sd_diag_excess": 67609824,
+   "sd_diag_digits": 8059612,
+   "sd_pair_digits": 48144465
+  },
+  "shuffle": {
+   "P": 48,
+   "N": 768,
+   "M": 3072,
+   "plain": 3609081094,
+   "signed": 2098385844,
+   "pile_sd_digits": 1466048,
+   "uh_places": 16,
+   "uh_meetings": 28991029248,
+   "uh_excess": 834516160,
+   "sm_excess": 235619424,
+   "sd_excess": 188908320,
+   "sd_diag_excess": 67659800,
+   "sd_diag_digits": 8146528,
+   "sd_pair_digits": 48404404
+  }
+ },
+ "mproj.5": {
+  "real": {
+   "P": 48,
+   "N": 3072,
+   "M": 768,
+   "plain": 3813393993,
+   "signed": 2259039996,
+   "pile_sd_digits": 369244,
+   "uh_places": 16,
+   "uh_meetings": 28991029248,
+   "uh_excess": 419001344,
+   "sm_excess": 124612640,
+   "sd_excess": 100131772,
+   "sd_diag_excess": 35376186,
+   "sd_diag_digits": 2420026,
+   "sd_pair_digits": 15478870
+  },
+  "shuffle": {
+   "P": 48,
+   "N": 3072,
+   "M": 768,
+   "plain": 3815910112,
+   "signed": 2260373155,
+   "pile_sd_digits": 380775,
+   "uh_places": 16,
+   "uh_meetings": 28991029248,
+   "uh_excess": 420993536,
+   "sm_excess": 129071440,
+   "sd_excess": 100258987,
+   "sd_diag_excess": 35540457,
+   "sd_diag_digits": 2428817,
+   "sd_pair_digits": 15510241
+  }
+ }
+}

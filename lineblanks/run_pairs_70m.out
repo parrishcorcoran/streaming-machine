@@ -1,0 +1,76 @@
+UPS PAIRED WITH DOWNS BY SIZE, pythia-70m: 26 plates; left / whole pooled over each plate's lines
+  qkv.0    left/whole  rows (n  1536): blank 3.423% shuffled_b 3.439% finished 3.880% shuffled_f 3.753% fresh_b 3.428% fresh_f 3.772% | cols (n   512): blank 5.602% shuffled_b 5.811% finished 7.042% shuffled_f 6.537% fresh_b 5.717% fresh_f 5.741%  (0s, 87 MB)
+  proj.0   left/whole  rows (n   512): blank 5.603% shuffled_b 5.698% finished 4.276% shuffled_f 6.519% fresh_b 5.625% fresh_f 6.291% | cols (n   512): blank 5.778% shuffled_b 5.702% finished 6.150% shuffled_f 6.723% fresh_b 5.658% fresh_f 5.704%  (0s, 97 MB)
+  fc.0     left/whole  rows (n  2048): blank 2.883% shuffled_b 2.837% finished 9.526% shuffled_f 2.860% fresh_b 2.876% fresh_f 2.895% | cols (n   512): blank 5.650% shuffled_b 5.754% finished 3.525% shuffled_f 5.729% fresh_b 5.758% fresh_f 5.827%  (1s, 156 MB)
+  mproj.0  left/whole  rows (n   512): blank 5.702% shuffled_b 5.684% finished 3.494% shuffled_f 5.902% fresh_b 5.741% fresh_f 5.741% | cols (n  2048): blank 2.936% shuffled_b 2.824% finished 2.645% shuffled_f 3.002% fresh_b 2.860% fresh_f 2.943%  (0s, 156 MB)
+  qkv.1    left/whole  rows (n  1536): blank 3.294% shuffled_b 3.285% finished 3.745% shuffled_f 3.686% fresh_b 3.185% fresh_f 3.535% | cols (n   512): blank 5.765% shuffled_b 5.622% finished 4.723% shuffled_f 6.093% fresh_b 5.710% fresh_f 5.722%  (0s, 156 MB)
+  proj.1   left/whole  rows (n   512): blank 5.702% shuffled_b 5.714% finished 3.534% shuffled_f 5.993% fresh_b 5.900% fresh_f 5.878% | cols (n   512): blank 5.962% shuffled_b 5.793% finished 5.618% shuffled_f 5.789% fresh_b 5.584% fresh_f 5.818%  (0s, 158 MB)
+  fc.1     left/whole  rows (n  2048): blank 3.004% shuffled_b 2.860% finished 11.150% shuffled_f 3.219% fresh_b 2.872% fresh_f 3.069% | cols (n   512): blank 5.651% shuffled_b 5.720% finished 4.362% shuffled_f 6.089% fresh_b 5.789% fresh_f 5.708%  (0s, 158 MB)
+  mproj.1  left/whole  rows (n   512): blank 5.663% shuffled_b 5.659% finished 3.696% shuffled_f 6.277% fresh_b 5.683% fresh_f 5.997% | cols (n  2048): blank 2.910% shuffled_b 2.929% finished 3.176% shuffled_f 3.179% fresh_b 2.891% fresh_f 2.880%  (0s, 158 MB)
+  qkv.2    left/whole  rows (n  1536): blank 3.297% shuffled_b 3.358% finished 3.463% shuffled_f 3.556% fresh_b 3.263% fresh_f 3.522% | cols (n   512): blank 5.792% shuffled_b 5.812% finished 5.221% shuffled_f 6.202% fresh_b 5.576% fresh_f 5.755%  (0s, 158 MB)
+  proj.2   left/whole  rows (n   512): blank 5.727% shuffled_b 5.721% finished 3.797% shuffled_f 6.096% fresh_b 5.727% fresh_f 6.102% | cols (n   512): blank 5.819% shuffled_b 5.762% finished 5.989% shuffled_f 6.342% fresh_b 5.501% fresh_f 5.485%  (0s, 158 MB)
+  fc.2     left/whole  rows (n  2048): blank 2.872% shuffled_b 2.837% finished 10.312% shuffled_f 3.746% fresh_b 2.803% fresh_f 3.833% | cols (n   512): blank 5.591% shuffled_b 5.683% finished 4.738% shuffled_f 6.893% fresh_b 5.728% fresh_f 5.734%  (0s, 158 MB)
+  mproj.2  left/whole  rows (n   512): blank 5.684% shuffled_b 5.779% finished 3.697% shuffled_f 5.860% fresh_b 5.694% fresh_f 5.821% | cols (n  2048): blank 2.828% shuffled_b 3.013% finished 3.281% shuffled_f 2.965% fresh_b 2.873% fresh_f 2.953%  (0s, 159 MB)
+  qkv.3    left/whole  rows (n  1536): blank 3.297% shuffled_b 3.307% finished 5.776% shuffled_f 7.263% fresh_b 3.290% fresh_f 7.521% | cols (n   512): blank 5.713% shuffled_b 5.693% finished 15.893% shuffled_f 12.183% fresh_b 5.737% fresh_f 5.563%  (0s, 159 MB)
+  proj.3   left/whole  rows (n   512): blank 5.674% shuffled_b 5.657% finished 3.698% shuffled_f 6.828% fresh_b 5.793% fresh_f 5.752% | cols (n   512): blank 5.709% shuffled_b 5.642% finished 6.721% shuffled_f 6.752% fresh_b 5.551% fresh_f 5.876%  (0s, 159 MB)
+  fc.3     left/whole  rows (n  2048): blank 2.901% shuffled_b 2.812% finished 9.387% shuffled_f 2.935% fresh_b 2.852% fresh_f 3.016% | cols (n   512): blank 5.585% shuffled_b 5.683% finished 4.932% shuffled_f 5.981% fresh_b 5.759% fresh_f 5.578%  (0s, 159 MB)
+  mproj.3  left/whole  rows (n   512): blank 5.632% shuffled_b 5.641% finished 3.714% shuffled_f 6.236% fresh_b 5.647% fresh_f 5.903% | cols (n  2048): blank 2.856% shuffled_b 2.858% finished 3.606% shuffled_f 3.110% fresh_b 2.927% fresh_f 2.927%  (0s, 159 MB)
+  qkv.4    left/whole  rows (n  1536): blank 3.379% shuffled_b 3.365% finished 7.752% shuffled_f 6.734% fresh_b 3.237% fresh_f 6.639% | cols (n   512): blank 5.908% shuffled_b 5.634% finished 11.075% shuffled_f 11.230% fresh_b 5.669% fresh_f 5.833%  (0s, 159 MB)
+  proj.4   left/whole  rows (n   512): blank 5.860% shuffled_b 5.583% finished 3.701% shuffled_f 5.729% fresh_b 5.713% fresh_f 5.716% | cols (n   512): blank 5.581% shuffled_b 5.668% finished 5.915% shuffled_f 6.257% fresh_b 5.691% fresh_f 5.690%  (0s, 159 MB)
+  fc.4     left/whole  rows (n  2048): blank 2.827% shuffled_b 2.809% finished 14.618% shuffled_f 3.155% fresh_b 2.787% fresh_f 2.954% | cols (n   512): blank 5.710% shuffled_b 5.667% finished 5.054% shuffled_f 6.041% fresh_b 5.713% fresh_f 5.532%  (0s, 159 MB)
+  mproj.4  left/whole  rows (n   512): blank 5.764% shuffled_b 5.818% finished 4.005% shuffled_f 6.362% fresh_b 5.740% fresh_f 5.931% | cols (n  2048): blank 2.882% shuffled_b 2.954% finished 3.522% shuffled_f 3.199% fresh_b 2.920% fresh_f 2.857%  (0s, 159 MB)
+  qkv.5    left/whole  rows (n  1536): blank 3.326% shuffled_b 3.277% finished 5.118% shuffled_f 5.769% fresh_b 3.353% fresh_f 5.694% | cols (n   512): blank 5.696% shuffled_b 5.669% finished 8.007% shuffled_f 9.718% fresh_b 5.845% fresh_f 5.765%  (0s, 159 MB)
+  proj.5   left/whole  rows (n   512): blank 5.877% shuffled_b 5.849% finished 3.497% shuffled_f 5.705% fresh_b 5.811% fresh_f 5.494% | cols (n   512): blank 5.531% shuffled_b 5.745% finished 5.891% shuffled_f 5.575% fresh_b 5.702% fresh_f 5.791%  (0s, 159 MB)
+  fc.5     left/whole  rows (n  2048): blank 2.879% shuffled_b 2.819% finished 14.171% shuffled_f 3.269% fresh_b 2.835% fresh_f 3.048% | cols (n   512): blank 5.637% shuffled_b 5.804% finished 9.073% shuffled_f 6.129% fresh_b 5.675% fresh_f 5.700%  (0s, 159 MB)
+  mproj.5  left/whole  rows (n   512): blank 5.649% shuffled_b 5.697% finished 3.651% shuffled_f 5.924% fresh_b 5.723% fresh_f 5.717% | cols (n  2048): blank 2.869% shuffled_b 2.859% finished 9.213% shuffled_f 2.940% fresh_b 2.852% fresh_f 2.903%  (0s, 159 MB)
+  head     left/whole  rows (n 50304): blank 0.567% shuffled_b 0.578% finished 98.733% shuffled_f 0.817% fresh_b 0.586% fresh_f 0.570% | cols (n   512): blank 5.697% shuffled_b 5.696% finished 1.769% shuffled_f 4.305% fresh_b 5.716% fresh_f 5.328%  (12s, 1367 MB)
+  embed    left/whole  rows (n   512): blank 5.711% shuffled_b 5.696% finished 3.489% shuffled_f 5.736% fresh_b 5.705% fresh_f 5.690% | cols (n 50304): blank 0.573% shuffled_b 0.577% finished 6.510% shuffled_f 0.583% fresh_b 0.570% fresh_f 0.582%  (10s, 1367 MB)
+
+== along each LINE (row): left / whole pooled over the plate kind (|net| / whole after the slash) ==
+  kind                    n     bell band |           blank         finished          fresh_b          fresh_f       shuffled_b       shuffled_f  | what one line is
+  qkv                  1536   3.06%-4.08% |   3.34% / 2.59%    5.67% / 4.27%    3.29% / 2.52%    5.68% / 3.96%    3.34% / 2.57%    5.72% / 4.05%  | an input lane across the q, k, v neurons
+  attention out         512   5.30%-7.07% |   5.75% / 4.47%    3.76% / 0.86%    5.76% / 4.49%    5.91% / 4.53%    5.71% / 4.46%    6.15% / 4.56%  | a write line across the stream lanes
+  MLP in               2048   2.65%-3.54% |   2.89% / 2.25%   11.47% /11.03%    2.84% / 2.17%    3.14% / 2.27%    2.83% / 2.19%    3.20% / 2.34%  | an input lane across the MLP neurons
+  MLP out               512   5.30%-7.07% |   5.68% / 4.40%    3.70% / 0.87%    5.71% / 4.43%    5.85% / 4.43%    5.70% / 4.43%    6.10% / 4.56%  | a write line (one MLP neuron) across the stream lanes
+  output word table   50304   0.54%-0.71% |   0.57% / 0.43%   98.73% /98.73%    0.59% / 0.45%    0.57% / 0.47%    0.58% / 0.43%    0.82% / 0.38%  | a lane across the 50,304 words
+  input word table      512   5.30%-7.07% |   5.71% / 4.45%    3.49% / 0.88%    5.71% / 4.43%    5.69% / 4.41%    5.70% / 4.42%    5.74% / 4.44%  | a word's row across the lanes (a write)
+
+== along each NEURON COLUMN: left / whole pooled over the plate kind (|net| / whole after the slash) ==
+  kind                    n     bell band |           blank         finished          fresh_b          fresh_f       shuffled_b       shuffled_f  | what one line is
+  qkv                   512   5.30%-7.07% |   5.75% / 4.48%    9.49% / 7.61%    5.71% / 4.43%    5.75% / 4.50%    5.71% / 4.45%    9.61% / 6.92%  | a q/k/v neuron across its input lanes
+  attention out         512   5.30%-7.07% |   5.73% / 4.47%    6.02% / 4.60%    5.62% / 4.33%    5.71% / 4.46%    5.73% / 4.46%    6.24% / 4.66%  | a stream lane across the write lines
+  MLP in                512   5.30%-7.07% |   5.64% / 4.36%    5.23% / 3.54%    5.74% / 4.46%    5.68% / 4.41%    5.72% / 4.44%    6.14% / 4.60%  | an MLP neuron across its input lanes
+  MLP out              2048   2.65%-3.54% |   2.89% / 2.25%    4.29% / 3.53%    2.88% / 2.23%    2.91% / 2.26%    2.90% / 2.27%    3.07% / 2.24%  | a stream lane across the MLP neurons
+  output word table     512   5.30%-7.07% |   5.70% / 4.42%    1.77% / 0.84%    5.72% / 4.43%    5.33% / 4.35%    5.70% / 4.41%    4.30% / 3.73%  | a word across the lanes
+  input word table    50304   0.54%-0.71% |   0.57% / 0.44%    6.51% / 6.47%    0.57% / 0.44%    0.58% / 0.45%    0.58% / 0.44%    0.58% / 0.44%  | a lane across the 50,304 words
+
+== finished against blank, plate by plate: left/whole finished / blank (rows, cols) ==
+  qkv.0    rows   1.13x  cols   1.26x   | blank/fresh_b rows  1.00 cols  0.98   | shuffled_f/fresh_f rows  1.00 cols  1.14
+  proj.0   rows   0.76x  cols   1.06x   | blank/fresh_b rows  1.00 cols  1.02   | shuffled_f/fresh_f rows  1.04 cols  1.18
+  fc.0     rows   3.30x  cols   0.62x   | blank/fresh_b rows  1.00 cols  0.98   | shuffled_f/fresh_f rows  0.99 cols  0.98
+  mproj.0  rows   0.61x  cols   0.90x   | blank/fresh_b rows  0.99 cols  1.03   | shuffled_f/fresh_f rows  1.03 cols  1.02
+  qkv.1    rows   1.14x  cols   0.82x   | blank/fresh_b rows  1.03 cols  1.01   | shuffled_f/fresh_f rows  1.04 cols  1.06
+  proj.1   rows   0.62x  cols   0.94x   | blank/fresh_b rows  0.97 cols  1.07   | shuffled_f/fresh_f rows  1.02 cols  0.99
+  fc.1     rows   3.71x  cols   0.77x   | blank/fresh_b rows  1.05 cols  0.98   | shuffled_f/fresh_f rows  1.05 cols  1.07
+  mproj.1  rows   0.65x  cols   1.09x   | blank/fresh_b rows  1.00 cols  1.01   | shuffled_f/fresh_f rows  1.05 cols  1.10
+  qkv.2    rows   1.05x  cols   0.90x   | blank/fresh_b rows  1.01 cols  1.04   | shuffled_f/fresh_f rows  1.01 cols  1.08
+  proj.2   rows   0.66x  cols   1.03x   | blank/fresh_b rows  1.00 cols  1.06   | shuffled_f/fresh_f rows  1.00 cols  1.16
+  fc.2     rows   3.59x  cols   0.85x   | blank/fresh_b rows  1.02 cols  0.98   | shuffled_f/fresh_f rows  0.98 cols  1.20
+  mproj.2  rows   0.65x  cols   1.16x   | blank/fresh_b rows  1.00 cols  0.98   | shuffled_f/fresh_f rows  1.01 cols  1.00
+  qkv.3    rows   1.75x  cols   2.78x   | blank/fresh_b rows  1.00 cols  1.00   | shuffled_f/fresh_f rows  0.97 cols  2.19
+  proj.3   rows   0.65x  cols   1.18x   | blank/fresh_b rows  0.98 cols  1.03   | shuffled_f/fresh_f rows  1.19 cols  1.15
+  fc.3     rows   3.24x  cols   0.88x   | blank/fresh_b rows  1.02 cols  0.97   | shuffled_f/fresh_f rows  0.97 cols  1.07
+  mproj.3  rows   0.66x  cols   1.26x   | blank/fresh_b rows  1.00 cols  0.98   | shuffled_f/fresh_f rows  1.06 cols  1.06
+  qkv.4    rows   2.29x  cols   1.87x   | blank/fresh_b rows  1.04 cols  1.04   | shuffled_f/fresh_f rows  1.01 cols  1.93
+  proj.4   rows   0.63x  cols   1.06x   | blank/fresh_b rows  1.03 cols  0.98   | shuffled_f/fresh_f rows  1.00 cols  1.10
+  fc.4     rows   5.17x  cols   0.89x   | blank/fresh_b rows  1.01 cols  1.00   | shuffled_f/fresh_f rows  1.07 cols  1.09
+  mproj.4  rows   0.69x  cols   1.22x   | blank/fresh_b rows  1.00 cols  0.99   | shuffled_f/fresh_f rows  1.07 cols  1.12
+  qkv.5    rows   1.54x  cols   1.41x   | blank/fresh_b rows  0.99 cols  0.97   | shuffled_f/fresh_f rows  1.01 cols  1.69
+  proj.5   rows   0.60x  cols   1.07x   | blank/fresh_b rows  1.01 cols  0.97   | shuffled_f/fresh_f rows  1.04 cols  0.96
+  fc.5     rows   4.92x  cols   1.61x   | blank/fresh_b rows  1.02 cols  0.99   | shuffled_f/fresh_f rows  1.07 cols  1.08
+  mproj.5  rows   0.65x  cols   3.21x   | blank/fresh_b rows  0.99 cols  1.01   | shuffled_f/fresh_f rows  1.04 cols  1.01
+  head     rows 174.24x  cols   0.31x   | blank/fresh_b rows  0.97 cols  1.00   | shuffled_f/fresh_f rows  1.43 cols  0.81
+  embed    rows   0.61x  cols  11.36x   | blank/fresh_b rows  1.00 cols  1.01   | shuffled_f/fresh_f rows  1.01 cols  1.00
+
+ORDER-FREE: each line in a random order, the same left: [('proj.0', True), ('fc.0', True), ('head', True)]
+done (29s, max memory 1367 MB)

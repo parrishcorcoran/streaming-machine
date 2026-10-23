@@ -1,0 +1,12 @@
+store_exact.py  size 160m:  c 1.180269e-02 (12673038 x 2^-30),  settings' product 8.961508e-03 (9622346 x 2^-30)
+  per kind: lit places a weight (change against W) | bits a weight at the floor (change against W, minus = saved)
+  qkv           21,233,664 values | lit/wt W 4.3079  Dk 4.7768 (+10.89%)  Dp 4.7771 (+10.89%)  scrambled Dk +10.89%..+10.90%  Dp +10.90%..+10.91% | bits/wt W 14.5504  Dk -0.00153  Dp -0.00118  scrambled Dk +0.00010..+0.00011  Dp +0.00005..+0.00006
+  proj           7,077,888 values | lit/wt W 4.3132  Dk 4.7902 (+11.06%)  Dp 4.7905 (+11.07%)  scrambled Dk +11.06%..+11.07%  Dp +11.06%..+11.07% | bits/wt W 14.6007  Dk -0.00031  Dp -0.00024  scrambled Dk +0.00001..+0.00001  Dp +0.00001..+0.00001
+  fc            28,311,552 values | lit/wt W 4.3369  Dk 4.8806 (+12.54%)  Dp 4.8812 (+12.55%)  scrambled Dk +12.56%..+12.57%  Dp +12.57%..+12.57% | bits/wt W 14.8266  Dk -0.00300  Dp -0.00229  scrambled Dk +0.00007..+0.00007  Dp +0.00004..+0.00004
+  mproj         28,311,552 values | lit/wt W 4.3009  Dk 4.7338 (+10.06%)  Dp 4.7337 (+10.06%)  scrambled Dk +10.07%..+10.07%  Dp +10.07%..+10.07% | bits/wt W 14.4042  Dk -0.00034  Dp -0.00026  scrambled Dk +0.00001..+0.00001  Dp +0.00000..+0.00000
+  head          38,633,472 values | lit/wt W 4.3643  Dk 5.4212 (+24.22%)  Dp 5.4216 (+24.23%)  scrambled Dk +24.22%..+24.22%  Dp +24.23%..+24.23% | bits/wt W 15.8894  Dk -0.00003  Dp -0.00002  scrambled Dk +0.00002..+0.00002  Dp +0.00001..+0.00001
+  embed         38,633,472 values | lit/wt W 4.3345  Dk 4.8853 (+12.71%)  Dp 4.8952 (+12.94%)  scrambled Dk +13.02%..+13.02%  Dp +13.02%..+13.03% | bits/wt W 14.8740  Dk -0.03956  Dp -0.01012  scrambled Dk +0.00245..+0.00247  Dp +0.00160..+0.00162
+  all          162,201,600 values | lit/wt W 4.3317  Dk 4.9673 (+14.67%)  Dp 4.9699 (+14.73%)  scrambled Dk +14.75%..+14.76%  Dp +14.76%..+14.76% | bits/wt W 14.9713  Dk -0.01023  Dp -0.00303  scrambled Dk +0.00061..+0.00062  Dp +0.00040..+0.00040
+  embed: 241       185,088 values | lit/wt W 2.6569  Dk 0.0206 (-99.23%)  Dp 1.9864 (-25.23%)  scrambled Dk +6.81%..+6.97%  Dp +4.61%..+4.86% | bits/wt W 8.1943  Dk -8.18334  Dp -2.05427  scrambled Dk +0.49697..+0.50315  Dp +0.32570..+0.33096
+  embed: rest   38,448,384 values | lit/wt W 4.3426  Dk 4.9087 (+13.04%)  Dp 4.9092 (+13.05%)  scrambled Dk +13.04%..+13.04%  Dp +13.04%..+13.05% | bits/wt W 14.9061  Dk -0.00036  Dp -0.00028  scrambled Dk +0.00006..+0.00007  Dp +0.00004..+0.00004
+done 20s  peak memory 1.72 GB

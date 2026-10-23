@@ -1,0 +1,42 @@
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:91: RuntimeWarning: divide by zero encountered in matmul
+  Y = X @ Rr; whole = float((Y ** 2).sum(1).mean()); fullW = float(((X @ W) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:91: RuntimeWarning: overflow encountered in matmul
+  Y = X @ Rr; whole = float((Y ** 2).sum(1).mean()); fullW = float(((X @ W) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:91: RuntimeWarning: invalid value encountered in matmul
+  Y = X @ Rr; whole = float((Y ** 2).sum(1).mean()); fullW = float(((X @ W) ** 2).sum(1).mean())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:92: RuntimeWarning: divide by zero encountered in matmul
+  xm = X.mean(0); mean = float(((xm @ Rr) ** 2).sum())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:92: RuntimeWarning: overflow encountered in matmul
+  xm = X.mean(0); mean = float(((xm @ Rr) ** 2).sum())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:92: RuntimeWarning: invalid value encountered in matmul
+  xm = X.mean(0); mean = float(((xm @ Rr) ** 2).sum())
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:94: RuntimeWarning: divide by zero encountered in matmul
+  exact = float(((c @ Rr) ** 2).sum()) if c is not None else 0.0
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:94: RuntimeWarning: overflow encountered in matmul
+  exact = float(((c @ Rr) ** 2).sum()) if c is not None else 0.0
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:94: RuntimeWarning: invalid value encountered in matmul
+  exact = float(((c @ Rr) ** 2).sum()) if c is not None else 0.0
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:95: RuntimeWarning: divide by zero encountered in matmul
+  left = float((((X - c[None, :]) @ Rr) ** 2).sum(1).mean()) / whole if c is not None else 1.0
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:95: RuntimeWarning: overflow encountered in matmul
+  left = float((((X - c[None, :]) @ Rr) ** 2).sum(1).mean()) / whole if c is not None else 1.0
+/Users/abundancemachine/streaming-machine/foundation0/late/steady_light.py:95: RuntimeWarning: invalid value encountered in matmul
+  left = float((((X - c[None, :]) @ Rr) ** 2).sum(1).mean()) / whole if c is not None else 1.0
+        4.38 real         3.88 user         0.24 sys
+          2741207040  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              168737  page reclaims
+                  52  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 304  voluntary context switches
+                1004  involuntary context switches
+         40949812168  instructions retired
+         16366057758  cycles elapsed
+          2735491400  peak memory footprint

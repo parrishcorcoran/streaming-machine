@@ -1,0 +1,134 @@
+PREDICTIONS, written before any run in this folder (2026-10-06). Results go below the line at the end, never above it.
+
+HIS SENTENCE (2026-10-06), his exact words:
+  "If the blank slate were saved somewhere you would be able to remove EXACTLY each blank weight exactly"
+
+HIS PICTURE, in his words as far as he gave them: the blank slate is the blank plate and word tables, the random bell
+curve weights before anything was built. Pythia's blank slate IS saved (step0, base2_pythia-<size>.npz keys .s).
+
+WHAT IS ALREADY KNOWN (../remove_*.log, ../foundation_rows.log):
+  - case a (W - W0: every whole blank weight removed, digit for digit) lost every word at every size.
+  - the 241 input-table rows the light never reached are c x their blank start, one c per size:
+    14m 6.112e-4, 70m 6.118e-4, 160m 1.1803e-2 (foundation_check.json c_med, the number foundation_rows.py uses).
+
+SESSION'S READING (the session's words, not his): the shave is the only thing that acts on the blank part alone; every
+building push lands on the sum, so what is left of each blank weight inside the finished weight is exactly c x that
+blank weight. Example: blank +10, c = 0.0006, built +7: finished 7.006; removing the whole blank gives -2.994 (a hole
+dug for 10 that is no longer there); removing what is left of it (0.006) gives 7.000.
+
+WHAT IS RUN (remove_exact.py): on the base-2 machines (14m, 70m, 160m, the machine of ../pythia_base2.py copied
+unchanged), every plate (qkv, proj, fc, mproj of every layer) and both word tables written as W - round(c x W0), whole
+numbers on the shared 16-place grid, c as a whole number at 2^-30. Gains, norm offsets and biases untouched (their
+blank is the constant 1 or 0). Cases:
+  k      c from the never-built rows (one c per size, read, not fitted)
+  p      the settings' product (3.865910e-4 for 14m and 70m, 8.961508e-3 for 160m) as a second exact shave reading
+  ck1-3  k with W0 scrambled within each plate (3 draws; the same values, positions scrambled, each written on the
+         grid of the neuron it lands in, as ../remove_foundation.py's shuffled_start)
+  cp1-3  p with W0 scrambled the same way
+Against the finished machine, at all 622 positions of the 30 texts (each text's words, then the finished machine's 16
+greedy words fed in): top-1, top-5 judge (the finished word inside the case's top 5), the 16 greedy words run on the
+case's own words, texts identical over all 16, piles identical (every head pile the same whole number, per position
+and per text). How many weights change at all on the 16-place grid, by how many grains.
+Storage (store_exact.py): bits a weight at the floor (each neuron's own spread) and lit places a weight (signed digits)
+of W - round(c x W0) and W - round(P x W0) against W, per plate kind, and the same with W0 scrambled.
+
+------------------------------------------------------------------------------------------------------------------
+(0) THE SESSION'S PREDICTION as handed to this run, copied as given:
+    "every weight changes by about c x its blank value: a few grains at 14m/70m, about 50 grains at 160m. Words: 100%
+    at 70m and 14m, 95% or more at 160m; the scrambled control the same (the change is too small to tell real from
+    scrambled). Storage saving under 0.01 bits a weight. So the blank, removed exactly as it stands in the finished
+    weight, is 100% removable, and it is almost nothing, because the building had already shaved it away."
+
+(1) THIS RUN'S OWN ANALYSIS, before any run here.
+    The size of what is removed. A digit on the grid is at most 32767, so round(c x W0) is at most 20 grains at 14m and
+    70m and 387 at 160m. At 14m the blank sets the grid's power in 80,859 of 107,520 neurons, so its digits fill the
+    16 places (spread about 8,000-10,000 grains): c x W0 is a median 3-6 grains there. At 70m and 160m the finished
+    plate sets the power; the blank is 0.13-0.97 (70m) and 0.19-0.84 (160m) of the plate's size, so c x W0 is a median
+    1-2 grains at 70m and 15-50 grains at 160m.
+    - weights that change at all (round(c x W0) not 0): 14m 88-96%, 70m 50-90%, 160m 97% or more.
+    - against each plate's own size, what is removed is a relief of c x |W0|/|W|: 1.6e-4 to 1.5e-3 (14m), 8e-5 to
+      6e-4 (70m), 2e-3 to 1e-2 (160m). Case b (the measured share s per plate, 0.02-0.55 of the plate) moved the
+      piles enough to lose half the words or more; this is 100-1000 times smaller at 14m and 70m, 10-40 times
+      smaller at 160m.
+    Words, case k:
+    - piles identical: 0 of 622 positions at every size (every plate changes, so every head pile moves in its low
+      places).
+    - the finished word's lead over its runner-up moves by a median of 0.002-0.02 logits (14m, 70m), 0.02-0.08 (160m).
+    - top-1: 14m 99.0% or more (at most 6 of 622 positions differ), 70m 99.5% or more (at most 3), 160m 96-99.5%.
+      top-5 judge: 99.8% or more at 14m and 70m, 99.5% or more at 160m.
+    - greedy: texts identical 14m 27 or more of 30, 70m 28 or more, 160m 20-28.
+    - case p removes 0.63 x (14m, 70m) and 0.76 x (160m) of what k removes: the same or fewer words lost.
+    - controls ck, cp: within the draw-to-draw spread of the real case at 14m and 70m. At 160m the real case loses as
+      many words as the scrambled or more (case b at 160m lost 7.7 points more than its scrambled control), but with
+      only a few positions lost the difference will sit inside the spread of the three draws.
+    Storage (the same measures as ../foundation_share.py):
+    - bits a weight at the floor, plates: under 0.002 saved at 14m and 70m, under 0.01 at 160m (the spread changes
+      by about c x (2s - c) x (|W0|/|W|)^2 of itself).
+    - input word table: 0.02 bits a weight saved at 14m and 70m, 0.04 at 160m, nearly all of it from the 241
+      never-built rows going to 0 (they are 0.48% of the table at 4.2 and 8.2 bits a weight). Output table: under 0.002.
+      Scrambled: plates within 0.002 of the real case; the input table loses that 0.02-0.04 (its 241 rows are not
+      zeroed by a scrambled blank).
+    - lit places a weight: UP 6-14% at every plate kind and size, real and scrambled alike, and down to nearly 0 on
+      the 241 rows. The finished plates were written from 11-place values (fp16), so their low places on the 16-place
+      grid stand empty; the shave's few grains fill them. That is the format (rule 5), not the information.
+    A look (weights only, not a test of his sentence): the finished weight as saved holds 11 places, so each finished
+    weight carries its own writing grain. Share of weights whose round(c x W0) is no more than half that grain (the
+    blank's remainder sits inside the finished weight's own rounding): 14m 10-30%, 70m 40-70%, 160m under 5%.
+    So, the session's reading holds on the machine if k keeps every word or loses only the positions whose finished
+    lead is a few hundredths of a logit or less; the blank remainder is then removable, and it is a few grains.
+
+==================================================================================================================
+RESULTS (added after the runs)
+Files: remove_exact_<size>.log/.json (words), remove_exact_<size>-shuffle.log/.json (order-free), store_exact_<size>.log/.json
+(storage), checker_exact_<size>.log (independent rebuild), run_*.out/.err (with /usr/bin/time; largest peak 2.59 GB, the 160m words run).
+Finished machine at every size: its words = fp32's 480/480, its head piles identical (sha256) to ../pythia_base2.py's 30/30.
+
+WORDS (all 622 positions; the 16 greedy words run on each case's own words):
+              lost of 622   top-1    top-5    greedy words  texts   piles identical   finished lead moved (logits)
+  14m  k            6       99.04%   100%     460/480       27/30   0/622 positions   median 0.013  max 0.115
+       p            3       99.52%   100%     480/480       30/30   0/622             median 0.008  max 0.143
+       ck1-3     6, 7, 12   99.04 / 98.87 / 98.07           25-29                     median 0.013-0.015
+       cp1-3     3, 3, 10   99.52 / 99.52 / 98.39           27-30                     median 0.009-0.010
+  70m  k            0       100%     100%     480/480       30/30   0/622             median 0.013  max 0.175
+       p            1       99.84%   100%     476/480       29/30   0/622             median 0.009  max 0.126
+       ck1-3     1, 0, 1    99.84 / 100 / 99.84             29-30                     median 0.010-0.012
+       cp1-3     0, 0, 1    100 / 100 / 99.84               30                        median 0.007-0.009
+  160m k           35       94.37%   100%     308/480       11/30   0/622             median 0.130  max 1.485
+       p           27       95.66%   100%     327/480       13/30   0/622             median 0.099  max 1.346
+       ck1-3    28, 34, 32  95.50 / 94.53 / 94.86           13-16                     median 0.087-0.101
+       cp1-3    17, 30, 27  97.27 / 95.18 / 95.66           14-19                     median 0.065-0.076
+  Every lost position was a near tie in the finished machine: finished lead at most 0.034 (14m k), 0.030 (70m p),
+  0.31 (160m k; median 0.10). Pairing-broken control (case words vs the next text's finished words): 2.3-5.4%.
+  Order-free check (stream lanes shuffled, every plate permuted to match): fin, k, p every head pile the same whole
+  number as the plain run, 30/30 texts, all three sizes.
+WEIGHTS CHANGED on the 16-place grid, case k: 14m 91.05% (mean 3.63 grains, largest 20); 70m 85.54% (mean 2.60,
+  largest 20); 160m 98.83% (mean 39.1, largest 386; qkv 46.6, fc 55.4, embed 56.0, head 28.1, proj 20.2, mproj 13.8).
+  The rest round to 0. Case p: 85.9% / 77.6% / 98.5%, mean 2.29 / 1.63 / 29.7 grains.
+  The look: share of weights whose round(c x W0) is no more than half the finished weight's own 11-place grain:
+  14m 26.7%, 70m 62.6%, 160m 6.6%.
+STORAGE (bits a weight at the floor, minus = saved; lit places a weight against W):
+  plates (qkv, proj, fc, mproj), k: 14m -0.0002..-0.0005; 70m -0.00005..-0.00014; 160m -0.0003..-0.0030.
+  output table: 0.00000 / 0.00000 / -0.00003.  input table: -0.0202 / -0.0202 / -0.0396, all of it from the 241
+  never-built rows (they go from 4.22 / 4.20 / 8.19 bits a weight to 0.00 / 0.00 / 0.01; the other 50,063 rows save
+  0.00001 / 0.00001 / 0.00036). Whole machine: -0.0093 / -0.0074 / -0.0102 bits a weight. p: -0.0031 / -0.0024 / -0.0030.
+  Scrambled (both readings, 3 draws): +0.0004..+0.0011 bits a weight (costs), plates within 0.0001 of 0.
+  lit places, k: whole machine +8.42% (14m), +15.42% (70m), +14.67% (160m); by kind +7 to +13%, the output table +8.6%,
+  +20.8%, +24.2%. Scrambled within 0.1 point of the real case. The 241 rows: -99.7%, -99.4%, -99.2%.
+INDEPENDENT REBUILD (checker_exact.py: ../pythia_base2.py imported as it stands, shave by divmod, lit places by a
+  digit-at-a-time loop, spreads by np.std): fin, k, p head piles identical at every position 30/30 texts, top-1 the
+  same, weights changed the same in every kind, lit places and floor bits the same for W, Dk, Dp in every kind, all
+  three sizes: ALL CHECKS PASS. The scrambled controls' words were not rebuilt separately.
+
+AGAINST THE PREDICTIONS:
+  session's (0): weights change by a few grains at 14m/70m (yes: 3.6, 2.6) and about 50 at 160m (39); but not every
+    weight: 9% / 14% / 1% round to 0. Words 100% at 70m: yes (30/30 texts). 100% at 14m: no, 99.04% top-1, 27/30
+    texts. 95% or more at 160m: no, 94.37% top-1, 11/30 texts (top-5 100%). Scrambled the same: yes at 14m and 70m;
+    at 160m the real k is at the top of the scrambled range (35 lost vs 28-34) and moves the leads more than all
+    three draws (median 0.130 vs 0.087-0.101; p 0.099 vs 0.065-0.076). Storage under 0.01 bits a weight: yes on every
+    plate kind; the whole 160m saves 0.0102, all from the 241 rows of the input table.
+  this run's (1): weights changed: in range at all sizes. Piles identical 0: yes. Lead moved 14m/70m: in range;
+    160m: no (0.130, predicted 0.02-0.08). top-1: 14m at the limit (6 of 622 lost, predicted at most 6), 70m yes,
+    160m no (94.37, predicted 96-99.5). top-5: yes. Greedy texts: 14m 27 (at the limit), 70m yes, 160m no (11,
+    predicted 20-28). p loses the same or fewer: yes at 14m and 160m, no at 70m (1 against 0). Controls: as
+    predicted. Storage: every number in range. Lit places 6-14%: no for the output table at 70m and 160m (+20.8%,
+    +24.2%) and the whole 70m (+15.4%). The look: 14m and 70m in range, 160m 6.6% (predicted under 5%).

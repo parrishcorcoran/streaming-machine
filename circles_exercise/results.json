@@ -1,0 +1,137 @@
+[
+ {
+  "label": "Q8_0 (8-bit)",
+  "bits_fixed": 8.5,
+  "bits_floor": 7.95,
+  "hand_deg": 0.3134,
+  "mean_deg": 0.0603,
+  "max_deg": 0.3935,
+  "past_edge": 0
+ },
+ {
+  "label": "Q4_0 (4-bit)",
+  "bits_fixed": 4.5,
+  "bits_floor": 4.222,
+  "hand_deg": 5.0492,
+  "mean_deg": 0.9396,
+  "max_deg": 6.4947,
+  "past_edge": 0
+ },
+ {
+  "label": "top 1 circle(s)",
+  "bits_fixed": 6.008,
+  "bits_floor": 3.588,
+  "hand_deg": 11.3271,
+  "mean_deg": 2.0941,
+  "max_deg": 27.266,
+  "past_edge": 4
+ },
+ {
+  "label": "top 2 circle(s)",
+  "bits_fixed": 10.957,
+  "bits_floor": 6.516,
+  "hand_deg": 2.6303,
+  "mean_deg": 0.39,
+  "max_deg": 21.946,
+  "past_edge": 0
+ },
+ {
+  "label": "top 3 circle(s)",
+  "bits_fixed": 15.531,
+  "bits_floor": 9.355,
+  "hand_deg": 0.4856,
+  "mean_deg": 0.0603,
+  "max_deg": 9.7665,
+  "past_edge": 2
+ },
+ {
+  "label": "top 4 circle(s)",
+  "bits_fixed": 17.441,
+  "bits_floor": 11.366,
+  "hand_deg": 0.075,
+  "mean_deg": 0.0036,
+  "max_deg": 0.1613,
+  "past_edge": 0
+ },
+ {
+  "label": "top 5 circle(s)",
+  "bits_fixed": 18.695,
+  "bits_floor": 11.751,
+  "hand_deg": 0.0,
+  "mean_deg": 0.0,
+  "max_deg": 0.0,
+  "past_edge": 0
+ },
+ {
+  "label": "keep >= 2^-5",
+  "bits_fixed": 2.993,
+  "bits_floor": 1.545,
+  "hand_deg": 26.068,
+  "mean_deg": 5.1562,
+  "max_deg": 21.946,
+  "past_edge": 0
+ },
+ {
+  "label": "keep >= 2^-6",
+  "bits_fixed": 3.953,
+  "bits_floor": 2.796,
+  "hand_deg": 12.4941,
+  "mean_deg": 2.5156,
+  "max_deg": 21.946,
+  "past_edge": 0
+ },
+ {
+  "label": "keep >= 2^-7",
+  "bits_fixed": 5.645,
+  "bits_floor": 3.945,
+  "hand_deg": 6.453,
+  "mean_deg": 1.2812,
+  "max_deg": 9.7665,
+  "past_edge": 2
+ },
+ {
+  "label": "keep >= 2^-8",
+  "bits_fixed": 6.967,
+  "bits_floor": 5.166,
+  "hand_deg": 3.2157,
+  "mean_deg": 0.6327,
+  "max_deg": 9.7665,
+  "past_edge": 2
+ },
+ {
+  "label": "keep >= 2^-9",
+  "bits_fixed": 8.985,
+  "bits_floor": 6.271,
+  "hand_deg": 1.6257,
+  "mean_deg": 0.3146,
+  "max_deg": 0.937,
+  "past_edge": 1
+ },
+ {
+  "label": "keep >= 2^-10",
+  "bits_fixed": 11.07,
+  "bits_floor": 7.415,
+  "hand_deg": 0.8017,
+  "mean_deg": 0.1544,
+  "max_deg": 0.6105,
+  "past_edge": 1
+ },
+ {
+  "label": "keep >= 2^-11",
+  "bits_fixed": 13.344,
+  "bits_floor": 8.498,
+  "hand_deg": 0.4051,
+  "mean_deg": 0.0747,
+  "max_deg": 0.1795,
+  "past_edge": 0
+ },
+ {
+  "label": "keep >= 2^-12",
+  "bits_fixed": 14.759,
+  "bits_floor": 9.645,
+  "hand_deg": 0.1807,
+  "mean_deg": 0.029,
+  "max_deg": 0.0908,
+  "past_edge": 0
+ }
+]

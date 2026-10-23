@@ -1,0 +1,34 @@
+{
+ "0": {
+  "blank_sets_power": 0,
+  "neurons": 17666
+ },
+ "10": {
+  "blank_sets_power": 110,
+  "neurons": 17666
+ },
+ "30": {
+  "blank_sets_power": 371,
+  "neurons": 17666
+ },
+ "100": {
+  "blank_sets_power": 314,
+  "neurons": 17666
+ },
+ "300": {
+  "blank_sets_power": 217,
+  "neurons": 17666
+ },
+ "1000": {
+  "blank_sets_power": 40,
+  "neurons": 17666
+ },
+ "2000": {
+  "blank_sets_power": 18,
+  "neurons": 17666
+ },
+ "3000": {
+  "blank_sets_power": 22,
+  "neurons": 17666
+ }
+}

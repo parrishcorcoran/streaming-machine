@@ -1,0 +1,81 @@
+WAY 2 on the blank and the finished plates, pythia-160m: 49 plates x 4 versions x 2 lights, 622 positions
+  qkv.0    way 2 on Lf: blank 49.86%  finished 49.94%  fresh_b 49.85%  fresh_f 49.87%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (4s, 146 MB)
+  proj.0   way 2 on Lf: blank 56.45%  finished 56.83%  fresh_b 56.47%  fresh_f 56.77%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (1s, 162 MB)
+  fc.0     way 2 on Lf: blank 49.96%  finished 50.03%  fresh_b 49.94%  fresh_f 50.10%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (5s, 250 MB)
+  mproj.0  way 2 on Lf: blank 59.82%  finished 60.43%  fresh_b 59.83%  fresh_f 60.41%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (6s, 346 MB)
+  qkv.1    way 2 on Lf: blank 50.98%  finished 51.11%  fresh_b 50.96%  fresh_f 51.09%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.1   way 2 on Lf: blank 56.86%  finished 57.22%  fresh_b 56.87%  fresh_f 57.16%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.1     way 2 on Lf: blank 48.86%  finished 48.88%  fresh_b 48.84%  fresh_f 49.00%   piles differing 0; order-free []  (4s, 346 MB)
+  mproj.1  way 2 on Lf: blank 58.24%  finished 58.78%  fresh_b 58.21%  fresh_f 58.79%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.2    way 2 on Lf: blank 50.67%  finished 50.67%  fresh_b 50.66%  fresh_f 50.64%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.2   way 2 on Lf: blank 55.52%  finished 55.99%  fresh_b 55.52%  fresh_f 55.96%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.2     way 2 on Lf: blank 48.60%  finished 48.65%  fresh_b 48.61%  fresh_f 48.72%   piles differing 0; order-free []  (4s, 346 MB)
+  mproj.2  way 2 on Lf: blank 58.01%  finished 58.62%  fresh_b 58.02%  fresh_f 58.63%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.3    way 2 on Lf: blank 50.72%  finished 50.78%  fresh_b 50.73%  fresh_f 50.74%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.3   way 2 on Lf: blank 55.72%  finished 56.19%  fresh_b 55.65%  fresh_f 56.24%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.3     way 2 on Lf: blank 48.35%  finished 48.40%  fresh_b 48.36%  fresh_f 48.49%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.3  way 2 on Lf: blank 57.69%  finished 58.29%  fresh_b 57.68%  fresh_f 58.32%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.4    way 2 on Lf: blank 50.52%  finished 50.64%  fresh_b 50.53%  fresh_f 50.61%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.4   way 2 on Lf: blank 56.47%  finished 57.05%  fresh_b 56.50%  fresh_f 57.04%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.4     way 2 on Lf: blank 48.10%  finished 48.22%  fresh_b 48.10%  fresh_f 48.27%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.4  way 2 on Lf: blank 56.87%  finished 57.51%  fresh_b 56.88%  fresh_f 57.53%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.5    way 2 on Lf: blank 50.27%  finished 50.30%  fresh_b 50.29%  fresh_f 50.28%   piles differing 0; order-free []  (4s, 346 MB)
+  proj.5   way 2 on Lf: blank 56.30%  finished 56.96%  fresh_b 56.32%  fresh_f 56.94%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.5     way 2 on Lf: blank 48.26%  finished 48.37%  fresh_b 48.23%  fresh_f 48.40%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.5  way 2 on Lf: blank 57.68%  finished 58.35%  fresh_b 57.67%  fresh_f 58.33%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.6    way 2 on Lf: blank 49.89%  finished 49.89%  fresh_b 49.90%  fresh_f 49.84%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.6   way 2 on Lf: blank 56.11%  finished 56.65%  fresh_b 56.10%  fresh_f 56.67%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.6     way 2 on Lf: blank 48.20%  finished 48.25%  fresh_b 48.21%  fresh_f 48.30%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.6  way 2 on Lf: blank 57.30%  finished 57.94%  fresh_b 57.27%  fresh_f 57.93%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.7    way 2 on Lf: blank 50.80%  finished 50.59%  fresh_b 50.81%  fresh_f 50.50%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.7   way 2 on Lf: blank 56.32%  finished 56.81%  fresh_b 56.32%  fresh_f 56.83%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.7     way 2 on Lf: blank 48.05%  finished 48.09%  fresh_b 48.04%  fresh_f 48.14%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.7  way 2 on Lf: blank 58.02%  finished 58.72%  fresh_b 58.02%  fresh_f 58.70%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.8    way 2 on Lf: blank 50.97%  finished 50.58%  fresh_b 50.99%  fresh_f 50.44%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.8   way 2 on Lf: blank 57.13%  finished 57.42%  fresh_b 57.15%  fresh_f 57.41%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.8     way 2 on Lf: blank 47.70%  finished 47.75%  fresh_b 47.70%  fresh_f 47.81%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.8  way 2 on Lf: blank 58.88%  finished 59.70%  fresh_b 58.86%  fresh_f 59.68%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.9    way 2 on Lf: blank 52.89%  finished 52.27%  fresh_b 52.88%  fresh_f 52.16%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.9   way 2 on Lf: blank 57.07%  finished 57.23%  fresh_b 57.01%  fresh_f 57.23%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.9     way 2 on Lf: blank 47.45%  finished 47.49%  fresh_b 47.45%  fresh_f 47.56%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.9  way 2 on Lf: blank 59.65%  finished 60.55%  fresh_b 59.63%  fresh_f 60.51%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.10   way 2 on Lf: blank 55.14%  finished 54.31%  fresh_b 55.15%  fresh_f 54.13%   piles differing 0; order-free []  (3s, 346 MB)
+  proj.10  way 2 on Lf: blank 57.52%  finished 57.77%  fresh_b 57.51%  fresh_f 57.79%   piles differing 0; order-free []  (1s, 346 MB)
+  fc.10    way 2 on Lf: blank 47.53%  finished 47.56%  fresh_b 47.53%  fresh_f 47.60%   piles differing 0; order-free []  (5s, 346 MB)
+  mproj.10 way 2 on Lf: blank 61.64%  finished 62.75%  fresh_b 61.62%  fresh_f 62.76%   piles differing 0; order-free []  (5s, 346 MB)
+  qkv.11   way 2 on Lf: blank 56.66%  finished 55.76%  fresh_b 56.65%  fresh_f 55.60%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (4s, 346 MB)
+  proj.11  way 2 on Lf: blank 58.11%  finished 58.32%  fresh_b 58.07%  fresh_f 58.33%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (1s, 346 MB)
+  fc.11    way 2 on Lf: blank 48.32%  finished 48.34%  fresh_b 48.31%  fresh_f 48.39%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (6s, 346 MB)
+  mproj.11 way 2 on Lf: blank 63.08%  finished 64.41%  fresh_b 63.10%  fresh_f 64.40%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (6s, 346 MB)
+  head     way 2 on Lf: blank 31.72%  finished 29.81%  fresh_b 31.72%  fresh_f 30.32%   piles differing 0; order-free [(0, True, 0), (0, True, 0)]  (151s, 1736 MB)
+
+== the finished machine's own light (Lf), shares of the plain meetings of the same light; pooled over layers ==
+  kind                n/line | way 2 share:  blank  finished  fresh_b  fresh_f | walk/plain b / f | pours/plain b / f | zero gaps b / f / fb / ff | neurons shuffled b / f | light shuffled walk/plain f: real ctl
+  qkv                   2304 |         51.41%  51.25%   51.42%   51.18% | 18.36% 18.36% | 33.05% 32.89% | 12.15% 11.89% 12.15% 11.84% |  97.38%  96.76% | 18.36% 18.35%
+  attention out          768 |         56.62%  57.02%   56.61%   57.01% | 23.84% 25.07% | 32.76% 31.93% |  6.40%  4.35%  6.40%  4.32% |  95.31%  95.04% | 25.07% 25.07%
+  MLP in                3072 |         48.26%  48.31%   48.25%   48.37% | 16.10% 16.22% | 32.15% 32.08% | 15.91% 15.73% 15.91% 15.53% |  95.30%  95.30% | 16.22% 16.23%
+  MLP out                768 |         58.74%  59.51%   58.73%   59.50% | 24.06% 26.06% | 34.65% 33.43% |  8.12%  4.35%  8.13%  4.33% |  99.80%  99.09% | 26.06% 26.06%
+  output word table    50304 |         31.72%  29.81%   31.72%   30.32% |  2.28%  1.09% | 29.44% 28.72% | 83.74% 92.39% 83.74% 78.14% |  91.52%  79.54% |  1.09%  1.11%
+  ALL 49 plates: way 2 share blank 44.86%  finished 44.31%  fresh_b 44.86%  fresh_f 44.27%;  plain a position: blank 4,044,427,616  finished 4,215,875,211  fresh_b 4,044,398,862  fresh_f 4,293,241,114
+  work the line-up takes away a position (plain - way 2): blank 2,230,038,594  finished 2,347,693,376  fresh_b 2,230,079,194  fresh_f 2,392,526,275
+
+== the blank machine's own light (Lb), shares of the plain meetings of the same light; pooled over layers ==
+  kind                n/line | way 2 share:  blank  finished  fresh_b  fresh_f | walk/plain b / f | pours/plain b / f | zero gaps b / f / fb / ff | neurons shuffled b / f | light shuffled walk/plain f: real ctl
+  qkv                   2304 |         48.13%  47.89%   48.14%   47.84% | 17.92% 17.90% | 30.21% 29.99% | 12.15% 11.89% 12.15% 11.84% |  93.01%  92.27% | 17.90% 17.90%
+  attention out          768 |         54.43%  54.79%   54.42%   54.78% | 23.47% 24.67% | 30.93% 30.09% |  6.40%  4.35%  6.40%  4.32% |  92.50%  92.21% | 24.67% 24.67%
+  MLP in                3072 |         45.74%  45.79%   45.74%   45.85% | 15.79% 15.91% | 29.95% 29.87% | 15.91% 15.73% 15.91% 15.53% |  91.88%  91.88% | 15.91% 15.91%
+  MLP out                768 |         56.77%  57.44%   56.76%   57.44% | 23.53% 25.51% | 33.21% 31.91% |  8.12%  4.35%  8.13%  4.33% |  96.98%  96.17% | 25.51% 25.51%
+  output word table    50304 |         32.58%  30.73%   32.58%   31.23% |  2.25%  1.10% | 30.33% 29.63% | 83.74% 92.39% 83.74% 78.14% |  91.74%  80.01% |  1.10%  1.10%
+  ALL 49 plates: way 2 share blank 44.53%  finished 44.11%  fresh_b 44.53%  fresh_f 44.09%;  plain a position: blank 4,327,810,255  finished 4,506,279,786  fresh_b 4,327,775,259  fresh_f 4,577,017,830
+  work the line-up takes away a position (plain - way 2): blank 2,400,435,729  finished 2,518,553,259  fresh_b 2,400,476,943  fresh_f 2,559,062,446
+
+EXACT: walk piles differing from the direct product: 0 position-plates over 392 walks; order-free walks down in a random line order: 18, piles differing 0, pours equal 18/18, walks not closing at 0: 0
+
+== the input word table (one power of two per word) ==
+  version   | ones/wt  signed/wt | rows across lanes: gap lit/wt  zero gaps  shuffled | lanes across words: gap lit/wt  zero gaps  shuffled | one-word light: way 2 / plain
+  blank     |   5.667     4.322 |        1.8495     4.44%   4.6770 |         0.2010    80.15%   4.6794 | 132.02%
+  finished  |   5.687     4.334 |        1.8631     4.62%   4.7056 |         0.2111    79.15%   4.7179 | 131.41%
+  fresh_b   |   5.666     4.322 |        1.8490     4.44%   4.6763 |         0.2011    80.15%   4.6792 | 132.02%
+  fresh_f   |   5.688     4.335 |        1.8624     4.63%   4.7049 |         0.2113    79.13%   4.7191 | 132.01%
+
+done (355s, max memory 1819 MB)

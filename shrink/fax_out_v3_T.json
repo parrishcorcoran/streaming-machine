@@ -1,0 +1,1 @@
+[{"name": "v3 single-wave pages, alone", "table": "T", "bits_per_value": 14.7441, "total_MB": 71.135, "roundtrip_ok": true}, {"name": "v4 single-wave pages, skip", "table": "T", "bits_per_value": 12.0552, "total_MB": 58.162, "roundtrip_ok": true}]
